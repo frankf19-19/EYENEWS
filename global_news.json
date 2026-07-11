@@ -1,75 +1,1027 @@
 {
-  "updated": "初始資料 · 待 GitHub Actions 首次執行後自動更新",
-  "source": "Google News (Global/EN)",
+  "updated": "2026-07-11 07:51 UTC",
+  "source": "Google News (Global/EN) · 重點:Google 翻譯(免費)",
   "items": {
     "myopia": [
       {
-        "title": "(sample) Global 近視控制 news",
-        "link": "#",
-        "source": "Google News",
-        "date": "2026-07-11",
-        "summary": "International coverage.",
-        "keypoint": "(範例)全球近視控制相關新聞的繁中重點會顯示於此。"
+        "title": "Early Intervention Helps Prevent Childhood Myopia",
+        "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNYU5qNDVGR2R6dXNXRHdSOGREdWkwQnM2NEVZaUgxLWJ4S2J0aWhwR2Z4VW1EZmJLMjEteEJSRzZmVXI1SWVQbHQ5WVpLaHRWYW9GMlZvZzk0OU1mTTkyOTBydVJHM25IT2hxdGNldmF2Q0U5aENWUy1vRWZZQ21jM0JFRDBPMHg2by0xMGtoZDVqMDdD?oc=5",
+        "source": "OHSU",
+        "date": "2026-01-21",
+        "summary": "Early Intervention Helps Prevent Childhood Myopia OHSU",
+        "keypoint": "早期介入有助於預防兒童近視"
+      },
+      {
+        "title": "AI-guided personalized predictions on myopia progression and interventions",
+        "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE9fakF6WlFoQ180bEZhZmZUZzVHZVdBVW9vbEkzV0J1VzRqckxYakVxVXl2UFJ0ZUtFUmxadmozcHZUY3ZpdzVDM1Y0Ri1XMTVzZDVyaE1TRkZtQ0E3ZjBZ?oc=5",
+        "source": "Nature",
+        "date": "2026-01-12",
+        "summary": "AI-guided personalized predictions on myopia progression and interventions Nature",
+        "keypoint": "人工智慧引導的近視進展個人化預測和介入措施"
+      },
+      {
+        "title": "A Narrative Review of Childhood Myopia Management Across the NHS and Private Sector in the UK",
+        "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQYlNlRzdNZHBrSmJUTlVHamRXNlBZakFmQXRtR3FxQVdaWVJkSFE0VENlYW9fN21adGNqYVJWb09zYjhOMTFhSXlaYVJNdXJaSWhhV2VFcE9TMjJfRFRKdnc0RzN2VjN3VTFlRWdOWUZoRW10LUxWdnVtTC02NzBsemxTeW9mLUU4bllKUzItMjJSS3J1ci00RnRwTUZZSjhSVURYczk1TUF4N2xsdUdFYVBBUkVrdUYtLWZyWjR4RnNCdG51LUF5MVA3MFI?oc=5",
+        "source": "Cureus",
+        "date": "2026-03-07",
+        "summary": "A Narrative Review of Childhood Myopia Management Across the NHS and Private Sector in the UK Cureus",
+        "keypoint": "英國 NHS 和私營部門兒童近視管理的敘述回顧"
+      },
+      {
+        "title": "East Meets West: Myopia Management in the US and China",
+        "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOenJqU1pDRnhZelJqZzJHM0FHYU5SVzBNTUtDalVNd3lzTERSWFFuaXNZdy1JMkZXamxDS24yRmp5UmpkYmlmeEpCSmJoNDBUaEhUVlRONmJ6c2EwZmFnb251MU54ejY4eGZ4MjVNSTl0Tmt1WXJxTklwSG41NXBDRm9pRjlWaGltSTVWdmgwNmJWd1NTV3VaaTJocw?oc=5",
+        "source": "Review of Optometry",
+        "date": "2025-11-15",
+        "summary": "East Meets West: Myopia Management in the US and China Review of Optometry",
+        "keypoint": "東西方相遇：美國與中國的近視管理"
+      },
+      {
+        "title": "Myopia Management",
+        "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9Bc0pQMVptVE5GNDNJYXBBTi04ak90TmV6NHcxRXNIZFp5dkJaR1pqWU5Sc1pjVGloelZfRGtCZGdRYlc1TkFjZEJ2SnZ5U2JEZWhwTlR3cFcydW9fbzlMc3hiUGdWclo3THRZ?oc=5",
+        "source": "EssilorLuxottica",
+        "date": "2025-12-05",
+        "summary": "Myopia Management EssilorLuxottica",
+        "keypoint": "近視管理"
+      },
+      {
+        "title": "Treating myopia today: US-focused treatments, challenges, and global insights",
+        "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNWVNseE5mUzdDQ0hEN0oyUldXbHlWN0NSMmtSWmE4Y2lBa0xoZVNiYlZ4cG1WZzhkaFBmOHVZNGFFMWlCSURtTzVyelRURVJ0VEVNTURna1JhQzFNVC1peEtzZGFjdjd0QjBRRFk0YU04b09XcTRzNkktbUJnbVdWRFU5YlQwdEM4TWhfVEEzdGgwakRLOXpGWk01OGxpemx1Q0FBMFg3bXRMdzhjZ0RIM3VWcmk?oc=5",
+        "source": "Ophthalmology Times Europe",
+        "date": "2025-10-13",
+        "summary": "Treating myopia today: US-focused treatments, challenges, and global insights Ophthalmology Times Europe",
+        "keypoint": "當今治療近視：以美國為中心的治療方法、挑戰和全球見解"
+      },
+      {
+        "title": "Myopia treatment trends outlined in The Vision Council's recent report",
+        "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPNUVJVko0T2xTQnRaMHQ0UkNJVmJLSlFLMFcwVFFWZGktX3QtU2NWSVJocW5DTDloam9ZNjdsSTZEOFlIV053WTltM21jTWNudFk1RDFDLTE0c0xyb2lRTl9rbUVXY3NHRFZVWEYtR2Q5UFNzMTBCSEhfWnNZUHI3Smp3eDJTajlIV2M3OGNrWHpsQXdjeVBObldVVnlWbG5QMU5OUVpBN21nUQ?oc=5",
+        "source": "Optometry Times",
+        "date": "2025-09-12",
+        "summary": "Myopia treatment trends outlined in The Vision Council's recent report Optometry Times",
+        "keypoint": "視力委員會最近的報告概述了近視治療趨勢"
+      },
+      {
+        "title": "Q&A: Evaluating 24-month outcomes with Abiliti 1-Day in pediatric myopia control",
+        "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPclc3MUtFR3VqakJlWFNQaVBiM1NPWUxuUzI0ZGZGaWl2bS12dEw1eXNzRUF4TE5BOFRsNnhHRXRvc1VMRXRlZ1BXTmJVa0xqTVRsYkxtR1FFenFJXzNOeEpGTkd0dExBNmJkVnRSY3dPSVdHZG9KN1JiSkVIVG11TUJNRUI2QWQ1NFJ5bEVubHdDRHpTMThJeHFfZVd1NGVKQ3g4QlNwcldRZ2tnRjRTc1h6RQ?oc=5",
+        "source": "Ophthalmology Times Europe",
+        "date": "2026-06-01",
+        "summary": "Q&A: Evaluating 24-month outcomes with Abiliti 1-Day in pediatric myopia control Ophthalmology Times Europe",
+        "keypoint": "問與答：評估 Abiliti 1-Day 在兒童近視控制的 24 個月結果"
+      },
+      {
+        "title": "FDA does not approve SYD-101 for slowing pediatric myopia",
+        "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQdVp5bWNWbzEyel83Y1VoZlV3TmpsUklzbmxsMXM0elI4Q01ZMkdDanI2SFVjV2pSQy15VGlhb3ZsVW9JNWU0Z0tPNXo1MzNXbTRxR21OLXFZMDhESENpWncxRnBEVGZuZ283NXdJSGFjdDBnYl9MODhLdXN1czAzWHJaUE9ia1AwcGszcXphUWZnMlJrUFRJVXFOQUh5cElJaFZhQWl3azYzZw?oc=5",
+        "source": "Healio",
+        "date": "2025-10-24",
+        "summary": "FDA does not approve SYD-101 for slowing pediatric myopia Healio",
+        "keypoint": "FDA 未核准 SYD-101 用於減緩兒童近視"
+      },
+      {
+        "title": "New Study Finds Low-Dose Eye Drops Successful in Managing Adult Myopia for 24 Hours",
+        "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNc2dhbWZqUE92WXQ3cDA1bUFZOXlyWkRxNE9XbFk1dmx0bHdOQi01cWFuVjRSLUxJNEtKR0k1aUVyV2hqQXVraG1FVkxZS3lDS2Q5V2JQVndXeEZPZFdzYzI0eU5LbFNfRm16OXlCRmxXVm1XSWhrZmc5WjQwZ0duQW9JQTg3R01iRXBrazZpNA?oc=5",
+        "source": "University of Houston",
+        "date": "2026-05-04",
+        "summary": "New Study Finds Low-Dose Eye Drops Successful in Managing Adult Myopia for 24 Hours University of Houston",
+        "keypoint": "新研究發現低劑量眼藥水可成功控製成年近視 24 小時"
+      },
+      {
+        "title": "Evaluating the effect of a new myopia control spectacle lens among children in Israel: 24-month results",
+        "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE4waDVhOTUtS0JnbHUzaWdyUEtzMmxHUVJtbWNmWm84dFZ3SHFXMnRtSy1weHl6UEZKY2JSek9MaDlrLTEwMml1RTNFd0tUVU5DaVJTcnp0TDE4NjE0OEcw?oc=5",
+        "source": "Nature",
+        "date": "2026-05-09",
+        "summary": "Evaluating the effect of a new myopia control spectacle lens among children in Israel: 24-month results Nature",
+        "keypoint": "評估新型近視控制鏡片對以色列兒童的效果：24 個月的結果"
+      },
+      {
+        "title": "First Myopia Control Spectacle Lens Approved in the US",
+        "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOWmFqMm5iaXdsYndnVHRVY1RFaUNEYk9yU2VGS09JZm5aOTRicUNQcmNzRk44cThqRV80VllfbkxIR05YbHdoN0pCV1h6MmZwRTh2QV9rZXVRSGFxWVg4bnBvakhjOUZITHdLemVvMzBqV09Ua0ZRN3BaOTJqYzVkVGMwUVBTNnBOSjh1MXRKUW9HSkhydHpsSUZNN0dwZDNuZnEw?oc=5",
+        "source": "Review of Optometry",
+        "date": "2025-09-25",
+        "summary": "First Myopia Control Spectacle Lens Approved in the US Review of Optometry",
+        "keypoint": "首款近視控制鏡片在美國獲得批准"
+      },
+      {
+        "title": "Myopia prevention as a standard of care: The role of low-dose atropine",
+        "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOQks4VDdJMVhuNkI4VkUzRzJqMm1jNi1qNkxnWEpVTFZHeWJDbExad010eXIyVDRya2x4T3BrelF0b3EtZFBKWlpsTUtmeDFpSENkeFR6NGVFSi1zZmszeUphZlBQeVotZC1WcWxITTV1TmVucEhmSWdCUWp4VTVJbnJodGs1OXVBRDdfUGlsWmJoZE9qb0hZT3hDaXA2NVE1bnlaZmF5R3o?oc=5",
+        "source": "Optometry Times",
+        "date": "2026-07-03",
+        "summary": "Myopia prevention as a standard of care: The role of low-dose atropine Optometry Times",
+        "keypoint": "預防近視作為護理標準：低劑量阿托品的作用"
+      },
+      {
+        "title": "Insights into atropine usage",
+        "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNRlI1aGpkMmpmeEtSSlFJWHlkek5SRU1KaHpUNWw5M1Bxa3oxRGZscTFJVlNMN1NWRkRURmJYbkh6a3k1OGVEMWk4VHpZZGFrcWFYdUFCZ0UxdGhWSUxUdzNkZGVZb0h3S1ZEOHVHa1lUSFFIdGMzUllMX2d2SDh6dDVBbDFubWg1S1RjaThEVzR6UzY1U0NwREVjRDZuY0RKN2Mxbm5XV0ZIeGFUbHFkdEZNbHdSTHVYeXFlbDE0Nk1IeV80Z29vTDV6X3c2UQ?oc=5",
+        "source": "Ophthalmology Times Europe",
+        "date": "2025-10-07",
+        "summary": "Insights into atropine usage Ophthalmology Times Europe",
+        "keypoint": "關於阿托品使用的見解"
+      },
+      {
+        "title": "IMI Update Highlights Continued Engagement with Myopia Management",
+        "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPNzdTdERiV0JBdXVXc1V2S1F0N1JqUmdUVnJSZGtfanZhSTh2VjJmVF8yaENZQWtLUDZieHF2MWRfdW8tZXVMaG1lVEtGRW9YbFE2RHNPeGFpN0d4THRQZ2wtNnUzOHNkN2pCTlRHRFRvNXBvWnF1REdRUlRLRlRBa3Ruck1IVEJsSk5lZUlYTkJwSVYtaEwxeHlFYXl5eDR6X1VhemdrcldOaG8?oc=5",
+        "source": "Review of Optometry",
+        "date": "2025-09-24",
+        "summary": "IMI Update Highlights Continued Engagement with Myopia Management Review of Optometry",
+        "keypoint": "IMI 更新強調持續參與近視管理"
+      },
+      {
+        "title": "Efficacy and safety of orthokeratology sequentially combined with escalating atropine concentrations for myopia control in children | Scientific Reports",
+        "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE1uYUNVd0RUWldEaU9jRWVGUlpYckpnSWVmb1dXNVppQ2VzMU5sV1dpTlBkWExkbi13SWxQUXdrX2NJbjFVaFlrZEhrcTlqSUhuWFctMW5GUUVURENHVFRB?oc=5",
+        "source": "Nature",
+        "date": "2025-11-06",
+        "summary": "Efficacy and safety of orthokeratology sequentially combined with escalating atropine concentrations for myopia control in children | Scientific Reports Nature",
+        "keypoint": "角膜塑形術序貫聯合阿托品濃度升高控制兒童近視的有效性和安全性科學報告"
+      },
+      {
+        "title": "Some red light therapy devices may exceed safety levels for myopia control, study suggests",
+        "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOS083cEJMUzNObndmN0tid0ZGOVNuOUMwTnc2VENMMF9BYUM3cVdRSDlCODRyR1JRUW1zNGFmZC1lX0tpcks1V0ZaOFQzQjVOcC1ReFlRb3cwWlpEeXVrUHZCSU1ad3RUMklnQnpLUlp1NmlsZlJ3ano0M2l2XzhVTHltNDNFWndQTi1IaXgtcVkxYm53aS1EOFF5MDlRNTlnYTBpTUVYSDlFZW9QenRCRXNqX2dXd09lM2ZXcG8yVWNwVW8?oc=5",
+        "source": "Optometry Times",
+        "date": "2026-02-09",
+        "summary": "Some red light therapy devices may exceed safety levels for myopia control, study suggests Optometry Times",
+        "keypoint": "研究表明，一些紅光治療設備可能超出近視控制的安全水平"
+      },
+      {
+        "title": "Which Matters More: Reducing Axial Length or Refractive Error Progression?",
+        "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQQnRXc1BYeEw1NkxPaHhMQzVqVTZLUVV0a09Zek43WXJrOFphajV3MVIyVmZVeFVWM1MxUTI1QU1oWXB1ajlWOVZmSzJIRC1pS0xEWnhCNkdRYUtmUGJxbDhCYVF2UEh2UFdhU0REUkIwSVFLM3RMcnVpTDlaSGRadU93WjVNUElQVlgxMVB3WmpJNmQxMW1pbGdoUEd4ZE4yR05Ja2V1bkJqMnlTMlVDSFFMRDY?oc=5",
+        "source": "Review of Optometry",
+        "date": "2025-08-15",
+        "summary": "Which Matters More: Reducing Axial Length or Refractive Error Progression? Review of Optometry",
+        "keypoint": "哪個比較重要：減少眼軸長度或屈光不正進展？"
       }
     ],
     "contactlens": [
       {
-        "title": "(sample) Global 隱形眼鏡 news",
-        "link": "#",
-        "source": "Google News",
-        "date": "2026-07-11",
-        "summary": "International coverage.",
-        "keypoint": "(範例)全球隱形眼鏡相關新聞的繁中重點會顯示於此。"
+        "title": "Efficacy of Contact Lens-Based Interventions in Slowing Myopia Progression in Children: A Systematic Review",
+        "link": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxObTMzU3JHclZNbDk2b0U5ZVVrM1REajJDNFJkUVVPc3dkakt5RVBpbHFXVG9NQ2stakNlX3I4dFNRbjg3bU5NaDJ6LTZKRWpVLXM3UDJ0Q2xIRXNfc2pDTjRIaTlzWmkwUDRsVzFzSE9VTzRfNmt1Y2ZqRGtCazlla1VaRF92aDY0bldwM1hydXJ5VWxYYUZQNkY0STh3dzVzeThmd2o3YmZxRm81NW9YN1VrWkZUaTJlNDAxMGRRUEp1T3htMjBGWjByZlJFNXY1Q2V1aGdueWd3QnFQVHc?oc=5",
+        "source": "Cureus",
+        "date": "2025-10-10",
+        "summary": "Efficacy of Contact Lens-Based Interventions in Slowing Myopia Progression in Children: A Systematic Review Cureus",
+        "keypoint": "以隱形眼鏡為基礎的介入措施在減緩兒童近視進展的功效：系統性評價"
+      },
+      {
+        "title": "How to Launch Your Specialty Contact Lens Practice",
+        "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOM3FaWFpuRUxRcm9IZlVsRzNIVmhzN0xFcEVTTWtNeXNCWDVFM2hQcTBscVY3bFNqY1RWNm9NSWJ4N1FXbnlvb0s1cmRMai00WWh4NDR2UjdlU3hFSDd2cEczZWM4Sm80Y044MjUtbnRFRHNWQ2dSTnhIV2JWVlJmWWdnWUhvTGgxTGxYWnhqbzBEWGRqMW5V?oc=5",
+        "source": "Review of Optometry",
+        "date": "2025-08-15",
+        "summary": "How to Launch Your Specialty Contact Lens Practice Review of Optometry",
+        "keypoint": "如何開展專業隱形眼鏡實踐"
+      },
+      {
+        "title": "Euclid Vision Corporation launches new Be Free Day lens for myopia management",
+        "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNTkFwSXZaVXlubjZDR054T2Y1ZEpYekV0VE9mTmo5aHNzdDI0NG4xQVY5WndKYjdIWHBELTgtOXMwUHljSExBNlNrLUhLMkRzSnpGbGc0OU1XanM4Y3VLTDk5eXJINzVvQjlYOWduc0FScDBlQzBxUVRiX0RSMDFva01sUlZCM3dNMWhxcm9vMDdJbXAtVld0dGJXeGsyYmhjeDZzMFBPR2Z6YmxBV1RfTjRjQQ?oc=5",
+        "source": "Optometry Times",
+        "date": "2026-01-08",
+        "summary": "Euclid Vision Corporation launches new Be Free Day lens for myopia management Optometry Times",
+        "keypoint": "Euclid Vision Corporation 推出用於近視管理的新型 Be Free Day 鏡片"
+      },
+      {
+        "title": "Daily disposable contact lenses set to power market rebound in 2026",
+        "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNaWlfbmExazVXMXpqRkdhN05ad0dOY2ZwMWRSSzZYa0lodEZsVWxQY0lTRko1OHhKakR4dVUxTFFWMjNCQ1JCNmNUSFNxWEJMYk80ZzRlb2hKeVVnZG1KLVNMNUtkNUlCZmJ3cVNRTG9rSlBnRWhUS0RFZU5XalctUjVOOWdNMnBzdTNOT0tqUlVlRDJSR1BwZEpRWExpVjN1ZWw0Z3VyYmhBZw?oc=5",
+        "source": "Reuters",
+        "date": "2026-02-18",
+        "summary": "Daily disposable contact lenses set to power market rebound in 2026 Reuters",
+        "keypoint": "日拋隱形眼鏡將推動 2026 年市場反彈"
+      },
+      {
+        "title": "Contact Lens Market Size to Hit USD 26.64 Billion by 2033, Driven by Rising Vision Care Awareness and Technological Advancements – SNS Insider",
+        "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTFAxVGF0dTNDUXQxWmpraGxYaXVNLWpqemFnZUxRenh5ZzBvMlhvX21VOGxPcHpSdVJhVHBfV2EwRVFjRmxidm9jWDkwQzVKbnlibGdydnBSTnJySTZGRzdpN09WaXRCWmlMbU9vNHU4aGZsckZoR1BESzBnNmFnWE0?oc=5",
+        "source": "Yahoo Finance",
+        "date": "2026-01-16",
+        "summary": "Contact Lens Market Size to Hit USD 26.64 Billion by 2033, Driven by Rising Vision Care Awareness and Technological Advancements – SNS Insider Yahoo Finance",
+        "keypoint": "在視力保健意識不斷提高和技術進步的推動下，隱形眼鏡市場規模到 2033 年將達到 266.4 億美元 – SNS Insider"
+      },
+      {
+        "title": "Contact lenses with non‑refractive opaque features for paediatric myopia: a randomised, safety pilot trial",
+        "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE5fUTl4Qi15cWMxSVc3b2JnSjN0bWxUTHp0dG9KdVM1bF92LVM5SVUtaEVGUlhUWExEQXdKWnBVT2tEQ3ItZUVkaWVRbTJOMUJJUzNsT3JGaEpvSk1CZTg0?oc=5",
+        "source": "Nature",
+        "date": "2026-04-22",
+        "summary": "Contact lenses with non‑refractive opaque features for paediatric myopia: a randomised, safety pilot trial Nature",
+        "keypoint": "用於兒童近視的具有非屈光不透明特徵的隱形眼鏡：隨機、安全試驗試驗"
+      },
+      {
+        "title": "CooperVision to Launch MyDay® MiSight® 1 day Myopia Control Soft Contact Lenses",
+        "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxQOHZGZmdGekpwU0JfM3hWb2FaT3dhdDhtb2pZY1RVUjRXT3hMQ1VJcGR3Z0htVUhacXdjVndCVko4RGM3R1dLY3MxSjk0TWo0UEdKMHFaRmthMG5YZGJqajhzUGV2RmZXcGoyVVRMV2hLa3JoRUt5WG1ISkZVV091dVBYR0tEcnRpY0I5dEptREZGOGZGcXFlU0RvanBYYl9RbEQ0cElQR3dDbUtjMTJxY3RPOVVrVEctcURVSXlNaFVOSkJIdVd5ZHZZdVU1QQ?oc=5",
+        "source": "PR Newswire",
+        "date": "2026-01-06",
+        "summary": "CooperVision to Launch MyDay® MiSight® 1 day Myopia Control Soft Contact Lenses PR Newswire",
+        "keypoint": "CooperVision 將推出 MyDay® MiSight® 1 天近視控制軟式隱形眼鏡"
+      },
+      {
+        "title": "U.S. Contact Lenses Market Size & Outlook, 2026-2033",
+        "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNV3pzNGlyX3k0b0FTMVRYNlYyS0F5UXBCbVZjUTlBR0JSRklBcUhEQmpjYkg5cUg2ZDZvbVBvSC1NajJERkxwZkN0bW5IeGRtMnBmaU9sN043UHdzNDEyVDkwdjA2QkxSa3A4SlAzRm1lRGVLWHRNQWUwcDBpZXIzWXNpVDFmaXJmUFFTQlJ3?oc=5",
+        "source": "Grand View Research",
+        "date": "2026-03-30",
+        "summary": "U.S. Contact Lenses Market Size & Outlook, 2026-2033 Grand View Research",
+        "keypoint": "美國隱形眼鏡市場規模及展望，2026-2033"
+      },
+      {
+        "title": "New lens approved by FDA promises to slow nearsightedness in children",
+        "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOcW1DNTM5aV9tamZ0bEhwOGlSeWJKS0hmaDFQTV9IZ25iUG5rZmRMRjJSQ3VXcnFYVDZadzl0ZnZyc2xkOFpRcVVoZWM4ZnAzREZ3Z3dCNEU3MXBscHNfcDBsTjlRWnRaTkV5NUhoMG5jOUZQUXNPaG1jNHdRUjhSUEo3YklOXzgxbGx4ZXc3cFExR0hFS1hlMEZleUNUY2xqQ3ZadFBva3g?oc=5",
+        "source": "PBS",
+        "date": "2025-12-01",
+        "summary": "New lens approved by FDA promises to slow nearsightedness in children PBS",
+        "keypoint": "FDA核准的新型鏡片可望減緩兒童近視"
+      },
+      {
+        "title": "Q&A: BLINK2 Data Support Early Initiation of Multifocal Contact Lenses for Myopia Control",
+        "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPSDNJOGVRZDRZNFh0OVZ1VXNReU1mTTdWUGt1LVVPbWFEQWhmdnBuTHE3djduaFBuMENuX2ZaTDhmN0laZUlscmwwd0VYaDlObXBjSzEwQzJLSy1FM0FrUTFfWnlfall2Y19rYzBuVUcyX1RvVVkzaXNGdk5Hal9ac1otejNISjRveEFHaFFVNFk3bnd0LTJ5dElxSHRrVDR3LVctVXF6T2h6Y1p1QVplSks2M1MzNXFQaVFJdTBITkVTV2s?oc=5",
+        "source": "Physician's Weekly",
+        "date": "2026-07-08",
+        "summary": "Q&A: BLINK2 Data Support Early Initiation of Multifocal Contact Lenses for Myopia Control Physician's Weekly",
+        "keypoint": "Q&A：BLINK2數據支援儘早啟用多焦點隱形眼鏡控制近視"
+      },
+      {
+        "title": "Disposable Contact Lenses Market Size, Share | Forecast, 2034",
+        "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQd0NtNV9CR1pIRlk0d1lCaE9CcEh2TUYxSDk0RFM1LVFieGszeFdCNW5NdDFsVlh2YndCWlFpMF9aVXpMZDRVNm9COG4zcE1lN3BHZTdSckc1MnhuZEl3eGlHMVd5UGU3Y2dSMHdyQUhnbDRkTWFqZ3B5SmFaM0toeE1zS3BnR3RSTWxvZER4b2NHUTBEWlZuRFZqclM?oc=5",
+        "source": "Fortune Business Insights",
+        "date": "2026-06-15",
+        "summary": "Disposable Contact Lenses Market Size, Share | Forecast, 2034 Fortune Business Insights",
+        "keypoint": "拋棄式隱形眼鏡市場規模、分享|預測，2034 年"
+      },
+      {
+        "title": "Asia Pacific Contact Lenses Market Size & Share Report, 2034",
+        "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQYjBSYU9ORTNheS1Jc3dIVGlyYXl5cHpSaHNMUlZzRlBHQVk3UXRKcERBRXZqd1VUcWFSYmFEY0pGYThxSlQ0dmJBaEE1MGlkenhpWW82ZjZPSHBnWTZSeHhHOUJFNmJpdmtxS2Q3QmdXX0ppTF8tZEl0SGpzOUtIOXpMeEV2aHBrenhORQ?oc=5",
+        "source": "Market Data Forecast",
+        "date": "2026-04-13",
+        "summary": "Asia Pacific Contact Lenses Market Size & Share Report, 2034 Market Data Forecast",
+        "keypoint": "2034 年亞太地區隱形眼鏡市場規模及份額報告"
+      },
+      {
+        "title": "Soft Contact Lens Wear Appears Safe for Pediatric Myopia Control",
+        "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNdDhPdEE4R3V5UlBUREc0VlE4SzNPYjdZSUc1MjN5SWtUM18xajRNUUtpelhHaV9CTW9COWp3TVlJd3N0YzB0c0JPWjJIRk9EV2NlQlJ4dVd4OFA1bmI1NXl5UEl4V3pUdFVCRkhEX0tuWVhxRk13d2xUVmNENlpYTVdmMURBX3l1QVBFTEhyRlROY19mSmFGZzM5cFNzbFVJVC1mVTRKT0piZGJvTFJSYQ?oc=5",
+        "source": "Review of Optometry",
+        "date": "2026-05-12",
+        "summary": "Soft Contact Lens Wear Appears Safe for Pediatric Myopia Control Review of Optometry",
+        "keypoint": "配戴軟式隱形眼鏡對於控制兒童近視似乎是安全的"
+      },
+      {
+        "title": "AAOpt 2025 recap: What's new in contact lens technology, trends, and more",
+        "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNT0VHanJWcmg3VmdtN1BpVDFvVHFnS1FSZnc0V3M5SUhzU28tRkgzTVUwS0I0YlgzeUY4YkhLVW1aOWRyVVpQNm10dk9vZ2VibXNjcHZkUXRxVnNrS3E3YWJoMTRRdy15NHdDNUR4NHdKMy1tX2x5eHBGZ0Z5Y3NYWUxFVF9zN3JYVFU2RG5EMXpwN0VDVmFUdldSRFRSbzFGLUlGQ1hOU1NDZw?oc=5",
+        "source": "Optometry Times",
+        "date": "2025-11-07",
+        "summary": "AAOpt 2025 recap: What's new in contact lens technology, trends, and more Optometry Times",
+        "keypoint": "AAOpt 2025 回顧：隱形眼鏡技術的最新動態、趨勢等"
+      },
+      {
+        "title": "Global Contact Lenses Market Forecast 2026-2036: Growth Driven by Myopia Surge and Daily Disposable Lenses",
+        "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQaWhNbGpGVEZjd0tnT2xjWTZ4NVhCcTByTWI0VmFVQUNWWm1BWW56WWVlRXFnWEJmTF9tQ2NwVjdoeTRvMGhWeEhHQ1N6czlTakdyZVNNX0c5bjJiaTNYenFRcThqd3dhcUI4OEhkZTFNc0hVcU5OSUFCX0VBUGNTdU4taGN4b0ZOenNZ?oc=5",
+        "source": "Yahoo Finance",
+        "date": "2026-02-10",
+        "summary": "Global Contact Lenses Market Forecast 2026-2036: Growth Driven by Myopia Surge and Daily Disposable Lenses Yahoo Finance",
+        "keypoint": "2026-2036 年全球隱形眼鏡市場預測：近視激增和日拋鏡片推動成長"
+      },
+      {
+        "title": "New design peripheral defocus spectacle lens vs. single-vision for slowing myopia progression in children: randomized controlled trial",
+        "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFBrQ1NPbXVZa3dOdmFBaVBLWVluWUdwQU94b0lrZ3FPOE9XUG9YenQzNi1hLUxySzFKN09POEhsVWJDaFBmZk5KNVNnaWhEdE5RR2RsTUhtcmc2QjFLX3pn?oc=5",
+        "source": "Nature",
+        "date": "2025-11-13",
+        "summary": "New design peripheral defocus spectacle lens vs. single-vision for slowing myopia progression in children: randomized controlled trial Nature",
+        "keypoint": "新設計的周邊散焦眼鏡片與單光眼鏡片在減緩兒童近視進展的比較：隨機對照試驗"
+      },
+      {
+        "title": "Are You Capitalizing on the Newest Contact Lens Capabilities?",
+        "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNd2RlcE5wWm9Rc1kzTXZBX1pPaVQ3aUlhcGZPSlZMWFlNcjRCb2t2UGxucVRCVXppUVc3bllHWE9kOEJmY0NtSVpaMWRGdWRTTEdQQndvVGxnT0FlemVjblF4WGJXZENwZnZLYUZTbzVOM1FjdXM4Z0VSeXdXS1JLY1pPZnJoZjlWNXJQOGRWbXY3RHRubWsxZENPcWZ3RHlsRXo1Zw?oc=5",
+        "source": "Review of Optometry",
+        "date": "2025-08-15",
+        "summary": "Are You Capitalizing on the Newest Contact Lens Capabilities? Review of Optometry",
+        "keypoint": "您是否正在利用最新的隱形眼鏡功能？"
+      },
+      {
+        "title": "Significant ocular residual astigmatism reduces the effect of orthokeratology lenses in controlling myopia",
+        "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE5iQmVKdERXWEdSbFRsaDNrRnZaV21BWFlwOHVjakNCWTZlb2c3VzM4UTVUZzh1Z0xUTkpHZHFiblBCbm9Bc3RROGo4eVpsQ3BnZHVDSDNUbllRcE5OTVpj?oc=5",
+        "source": "Nature",
+        "date": "2026-02-04",
+        "summary": "Significant ocular residual astigmatism reduces the effect of orthokeratology lenses in controlling myopia Nature",
+        "keypoint": "明顯的眼部殘餘散光降低了角膜塑形鏡控制近視的效果"
       }
     ],
     "lens": [
       {
-        "title": "(sample) Global 鏡片/驗光 news",
-        "link": "#",
-        "source": "Google News",
-        "date": "2026-07-11",
-        "summary": "International coverage.",
-        "keypoint": "(範例)全球鏡片/驗光相關新聞的繁中重點會顯示於此。"
+        "title": "First Myopia Control Spectacle Lens Approved in the US",
+        "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOWmFqMm5iaXdsYndnVHRVY1RFaUNEYk9yU2VGS09JZm5aOTRicUNQcmNzRk44cThqRV80VllfbkxIR05YbHdoN0pCV1h6MmZwRTh2QV9rZXVRSGFxWVg4bnBvakhjOUZITHdLemVvMzBqV09Ua0ZRN3BaOTJqYzVkVGMwUVBTNnBOSjh1MXRKUW9HSkhydHpsSUZNN0dwZDNuZnEw?oc=5",
+        "source": "Review of Optometry",
+        "date": "2025-09-25",
+        "summary": "First Myopia Control Spectacle Lens Approved in the US Review of Optometry",
+        "keypoint": "首款近視控制鏡片在美國獲得批准"
+      },
+      {
+        "title": "Evaluating the effect of a new myopia control spectacle lens among children in Israel: 24-month results",
+        "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE4waDVhOTUtS0JnbHUzaWdyUEtzMmxHUVJtbWNmWm84dFZ3SHFXMnRtSy1weHl6UEZKY2JSek9MaDlrLTEwMml1RTNFd0tUVU5DaVJTcnp0TDE4NjE0OEcw?oc=5",
+        "source": "Nature",
+        "date": "2026-05-09",
+        "summary": "Evaluating the effect of a new myopia control spectacle lens among children in Israel: 24-month results Nature",
+        "keypoint": "評估新型近視控制鏡片對以色列兒童的效果：24 個月的結果"
+      },
+      {
+        "title": "Myopia Correction Spectacles Receive Marketing Authorization From US FDA",
+        "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOd0pCU3kxWV9SdFh4QTFrd3RldVBIM3AwLUhJV3Jic0hXUVlFUFJxWXhESl9mN3o5czc5ZnpNeDFhYUFmOGVJQ0FSMlBXODJRSkdoMXZaWlBpV1lyQVBlZ05GN0RsRmhJVXdWZjhjalpTZ0RqWVR1OG9sSmtjbEVDQlI2RkgzZm9qOUhSOXJFenhkUEV4cjJJd09QU2ZPdnppVFBZYVJYWnFXT1U?oc=5",
+        "source": "Ophthalmology Advisor",
+        "date": "2025-09-30",
+        "summary": "Myopia Correction Spectacles Receive Marketing Authorization From US FDA Ophthalmology Advisor",
+        "keypoint": "近視矯正眼鏡獲得美國FDA上市許可"
+      },
+      {
+        "title": "FDA authorizes Essilor Stellest spectacle lenses for myopia control",
+        "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOSmhFT3pZRlN2MzVDU2VKcWU2NVBaLUZsUU1CREdCLVdLbmg5QkVsdTAwZkNhajE1VDVXRFJxQ2hTNWNGc3R1SjRiVEwyWHloaU5YNjh2LTY3aG9zOUdDMi1YTVZoNndmTWltdTA3bVFybjBmdUFOOEFkbEZUamNUMklwWGx3YlcxVG9TLTJVS1FDWkR6dGpsMHU4aV9RR3hQSTdDS3NjYl9fLTAwR3p6YU9zV0k?oc=5",
+        "source": "Healio",
+        "date": "2025-09-26",
+        "summary": "FDA authorizes Essilor Stellest spectacle lenses for myopia control Healio",
+        "keypoint": "FDA 授權依視路 Stellest 眼鏡片用於控制近視"
+      },
+      {
+        "title": "FDA authorizes first eyeglass lenses to slow nearsightedness in children in the US",
+        "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPMzg0MHNtZnhRalZsWWdWUVUwS1hGdXJReld0MHpwYmlNdnp5QWU3RFFiMlNncmJORVFMQk9oSXFYVWllN1pUM2YxMzRYRlN6QkpDdmtScGg2NGstazd2UDloWnE3RHJLb3ZMN2tvaTZmYlZITzAyX1J2cEN5SEFqUHk3SzlXVHp1Nlg4YkwzMUpLTFk?oc=5",
+        "source": "CNN",
+        "date": "2025-09-26",
+        "summary": "FDA authorizes first eyeglass lenses to slow nearsightedness in children in the US CNN",
+        "keypoint": "FDA 批准第一款眼鏡鏡片在美國減緩兒童近視"
+      },
+      {
+        "title": "Freeform vs. Aspheric Spectacle Lenses: A Comprehensive Review of Optical Performance, Clinical Outcomes, and Patient Considerations",
+        "link": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxONXB0NXBobnkzOWJZV1BYMmxadEJpY1dKaG9KU2YxVFQ0Q09kUTl4SmhjTGVRZTVFOGFDeldzTHZyU0JRdVZTR3JNclJsZTNBSVFISTdoa3Vyd0cwdnZaaGdTdmVLNEhRRWxnVjJldjJJbDIyaXZXb1F0a0FELWw5bmlQUmZBY29jcm82Q1lMVHM4VWtCQ05uX2JaT1hwUDVDZzJZOXRrdjZ5WXNDZU9Ib3Zpci1rOE1kckN2dGJaZ2FDMTNBWUV2S2NtZktmTUVoOWlHZ3FRbjJWQTM1ZV9fX0MzOHdKdFZyaVd4STBGekR5S0FwSFVIMGJTSQ?oc=5",
+        "source": "Cureus",
+        "date": "2026-02-21",
+        "summary": "Freeform vs. Aspheric Spectacle Lenses: A Comprehensive Review of Optical Performance, Clinical Outcomes, and Patient Considerations Cureus",
+        "keypoint": "自由曲面與非球面眼鏡鏡片：光學性能、臨床結果和患者考慮因素的綜合回顧"
+      },
+      {
+        "title": "First Approval of Eyeglass Lenses for Children With Myopia",
+        "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTFBkWEdfSFE0Q1g5VHhkMTFKWVpzMldGSy0zM1Izd3l0bXI4UHJkS0NCaFRaeGNlSXN6RWhEM2NZN3gtd2Z2QjdDRlNvRGdLc24tOW1mVzJrVGJoS1MyQTRGcnVhb2ZNT0FxOEE5bExlTzBGc0dBc1ROeUFR?oc=5",
+        "source": "MedPage Today",
+        "date": "2025-09-26",
+        "summary": "First Approval of Eyeglass Lenses for Children With Myopia MedPage Today",
+        "keypoint": "首次核准兒童近視眼鏡鏡片"
+      },
+      {
+        "title": "PPG TRIVEX lens material outperforms polycarbonate in impact resistance and optical clarity, new study shows",
+        "link": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxNUGJFN00xSzZObVlWX3N6SDNXVV93TVNmRWd3Rmd4LWl5SWlyOWE5cEliVVhRWUs0Z2w1Mm5lSmFPM3hyVVR3QTNXLUhfb3c1RTkwTzR6bWE3R2F6SlZqRjctbm9XSEtvMUZUUThqSkFicUREd3pyXzR1WDY0NW5ibDYyT2g4eUZlaHV4WXR2bC1HNE1mZ2VWTzNHb2FZM0hTdC0zOVJIdHIyT2VlTGZGelZJam1PN3dCZ3QzTHpnd0RRZndfSm5NR0FINDVEbmRhM3F3MFF5NVpZVmozcUNQSTE2UDJvMDhZUFdqSjdRanNPNUZhTnluMHM1VGc?oc=5",
+        "source": "PPG",
+        "date": "2025-08-26",
+        "summary": "PPG TRIVEX lens material outperforms polycarbonate in impact resistance and optical clarity, new study shows PPG",
+        "keypoint": "新研究表明 PPG TRIVEX 鏡片材料在抗衝擊性和光學清晰度方面優於聚碳酸酯"
+      },
+      {
+        "title": "A Clearer Future For Nearsighted Children? FDA Authorizes Novel Eyeglass Lens To Correct Myopia",
+        "link": "https://news.google.com/rss/articles/CBMinwJBVV95cUxOTzAtVmV2MHpHTGZwSHNPYzNpOGpCRWVqQ1Z4UC1uVUVXSTdDemZSTG13NGVWd2hzSmE5VFFxZGxDUEUwVElzbWpNbzM2YkNGOHl3ZngyLXJqQ3dXSFdyZThORGVHYi1DUFo2VzFMbEJXLTdTYjNYOUJsTW9sODRBa3BQM2xlZUlBaHptU0tMOHFycDZjT2FqWmRJT2VnbFZxTzl4UDNmN2N3eXZ1Vk8xQ1RRM21VVDdmdW5LZVdFQVdCSFg1MGZzelplTU54TjUxM2VIWG4tVWl3bGwtb2ZJM0c1R1J6U25GQ1c0ZmY0VTQ3OEV3eUFYSEdOVkl0RTA3dVBaTmhwY0xwaTJRU21KN3JaVzRoZHFsNmFRajN4dw?oc=5",
+        "source": "insights.citeline.com",
+        "date": "2025-09-30",
+        "summary": "A Clearer Future For Nearsighted Children? FDA Authorizes Novel Eyeglass Lens To Correct Myopia insights.citeline.com",
+        "keypoint": "近視兒童的未來更光明？ FDA 授權新型鏡片矯正近視"
+      },
+      {
+        "title": "EssilorLuxottica wins FDA OK for myopia-slowing eyeglass lenses",
+        "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQUmxiRk43NW0zU2F6cTJFLXh1blJGWHA3ZVpOR2Yxb1g5R1VLRjRCdC1FQllMMVRwV3ZuUE8xVld6dDlFN29yVkZWd2hWOU9YTTFXN2l1dXY3bEdlR25tY1JpN3E0MFhNT3BrXzE2ZG05bUJCOXphakFRQ25ONWRKU2tHWGJEZzBiMHBYOTlUY1Y?oc=5",
+        "source": "MedTech Dive",
+        "date": "2025-09-29",
+        "summary": "EssilorLuxottica wins FDA OK for myopia-slowing eyeglass lenses MedTech Dive",
+        "keypoint": "EssilorLuxottica 減緩近視眼鏡鏡片獲得 FDA 批准"
+      },
+      {
+        "title": "New design peripheral defocus spectacle lens vs. single-vision for slowing myopia progression in children: randomized controlled trial",
+        "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFBrQ1NPbXVZa3dOdmFBaVBLWVluWUdwQU94b0lrZ3FPOE9XUG9YenQzNi1hLUxySzFKN09POEhsVWJDaFBmZk5KNVNnaWhEdE5RR2RsTUhtcmc2QjFLX3pn?oc=5",
+        "source": "Nature",
+        "date": "2025-11-13",
+        "summary": "New design peripheral defocus spectacle lens vs. single-vision for slowing myopia progression in children: randomized controlled trial Nature",
+        "keypoint": "新設計的周邊散焦眼鏡片與單光眼鏡片在減緩兒童近視進展的比較：隨機對照試驗"
+      },
+      {
+        "title": "Newton launches spectacle lens for screen-centric lifestyle",
+        "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOZERkRWEwRWZaSUlySEM1NUY5TDNjcGlQX2tyUlpBaXFVMlk0ZVZoc3lQN2NxUGtqZUFZbmstT3VZSk9TRjFRZXN3MnkzN2FFbWRQakVEa2xnaDhZZWZid1k3Mm1uQTl4NkJ4NEcwdzFxWXV3cExnUTBxMzR4ZmJWbU9MOTlPdE9MdVhTbGNidkJpQlVzVkZrYzctOFdUZVJVZTRNeDVfeTI?oc=5",
+        "source": "Healio",
+        "date": "2025-09-18",
+        "summary": "Newton launches spectacle lens for screen-centric lifestyle Healio",
+        "keypoint": "牛頓推出眼鏡鏡片，適合以螢幕為中心的生活方式"
+      },
+      {
+        "title": "Second-Gen Stellest Lens More Effective in Slowing AL Elongation, Study Shows",
+        "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNdVR1QlZhMHlLSTdmMmNkMXdVNjBkY2Z2MHdnR3NuaFFZMzNQa1NxcWlQbk85M0JLc29GNF80dlpNTHdqSkVEUExqTjV4WmxTbURyUXF5VmxsSlNrQnMtUThhSzVjU04xYVItZXJBVmNmVUk5WEhCSXFlRlg4VzFWb0FyOFA3UVlHXzVzSktwWG1SeHVYbUVLcEFQbWNjVC1oS0xFdDRJTjN1OGxVcDlqa0QwX2g1dVhP?oc=5",
+        "source": "Review of Optometry",
+        "date": "2025-11-21",
+        "summary": "Second-Gen Stellest Lens More Effective in Slowing AL Elongation, Study Shows Review of Optometry",
+        "keypoint": "研究表明，第二代 Stellest 鏡片在減緩 AL 伸長方面更有效"
+      },
+      {
+        "title": "Study: One Year of DOT Spectacles Slowed Myopia Progression in Chinese Children",
+        "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQVlZVMTRFX1FBendKelpnT3JtMXJNalJFYlBubmE1ZkJzeHQtRWNQeDZCNHMxaXlCU1VYcHlmMkFwMXdkcVBkS3F6bTlpcFdSUGkwVWswRWpNazlvNzJSdTJJd01oSV9XUkNjM3ZBUXpMS3VKZldiMy1IdEJjR2VMemhHY1F3cVFTRlZNRWJIZXVkaTRKTG91WHY4TVh1QmpzSm1VZjBjeHFKZnlDQWRQUUZQUGFRSGhmb3ZZWDFyOUVqalk?oc=5",
+        "source": "Review of Optometry",
+        "date": "2026-03-16",
+        "summary": "Study: One Year of DOT Spectacles Slowed Myopia Progression in Chinese Children Review of Optometry",
+        "keypoint": "研究：配戴 DOT 眼鏡一年可減緩華人兒童近視進展"
+      },
+      {
+        "title": "Myopia Glasses: Evolution or Threat?",
+        "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPYWVCdGtGaXZiSDlxUktnU3dBbVQ5OGIwdlc5cS1OYkpmYlhhcTRoc1lfc3AzTmFKWjNxUktkMjI5Q015UFlQYWV6QmdpOExVMW04VUhJTXpSYml2VGIyNWRDZ3pRcmo0Vm1ZeU0tMEJ2WU5sb25HaUNLMVB2dzIxRUN3?oc=5",
+        "source": "Review of Optometry",
+        "date": "2025-11-15",
+        "summary": "Myopia Glasses: Evolution or Threat? Review of Optometry",
+        "keypoint": "近視眼鏡：進化還是威脅？"
+      },
+      {
+        "title": "Pupil Size Influences Efficacy of Peripheral Defocus Spectacle Lenses for Myopia",
+        "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQN05xVTVXMk5RejZKVzRzTFJjRFZLVGo2Y3ZzYVNmRHllTVI1TlE1NGd6OHhqaGxWTV9QaW96dGJ6RWJ1c192SmZSMXNGZVN4WFMxaG0zWnZKSTZXcC1VdkI5TkN0VGpnUWdYSE9SSHk3RHhnS1kzSDJxOHdiUUE0VmdNSXZmVG04c1g4cnBjOUwweW12UHR4MDJCU1hjZDdRekk2THNvX0RsbF9RY25xNlNyN2RtSG44cm55Vm5PUXlaWHVseUE?oc=5",
+        "source": "Review of Optometry",
+        "date": "2026-01-16",
+        "summary": "Pupil Size Influences Efficacy of Peripheral Defocus Spectacle Lenses for Myopia Review of Optometry",
+        "keypoint": "瞳孔大小影響週邊離焦近視鏡鏡片的功效"
+      },
+      {
+        "title": "Study Finds No Clear Benefit from Adding Atropine to HAL Lens Wear for Myopia",
+        "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPY25CRTYyVFVlX1A5WFZyQU85UGpvQWRMYmRhTldGWkpjVV9zcTVWWHVHSlVDQ2FpWk1qbmVZUkhMeW9QQ0xyR1RLcU4zcVpWVFVtNlhfZzJISEx1cGFCMDl3THZYVDFSTjkzZHFoTXNyVDB6bnk1NzZNVThxWURYaV8xbDhtWXRpS0tIZldNcFNPUzVWNjFWdk82R041ZXlXeW1aTWdaa3VyVTk4b3FZWmZoRE9OSnlhMzFvd3NNNzFaUQ?oc=5",
+        "source": "Review of Optometry",
+        "date": "2026-01-09",
+        "summary": "Study Finds No Clear Benefit from Adding Atropine to HAL Lens Wear for Myopia Review of Optometry",
+        "keypoint": "研究發現在 HAL 鏡片配戴中添加阿托品對近視沒有明顯益處"
+      },
+      {
+        "title": "‘Autofocus’ glasses can change their lenses in real time",
+        "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1tdUdCV2toQzdlTlk4Zko5bXJnMmtTU29qRVp1NWp5UXBqdnRCaGdRNXN4SXdoaWp2LVloNzRRQ09iNU45Y2RfMndfR1ZYclJqNzlrYjZteHpIVC1rR05iMm43SEM0Wk9GUThFTzNVdWxRczdLWXc?oc=5",
+        "source": "CNN",
+        "date": "2026-01-06",
+        "summary": "‘Autofocus’ glasses can change their lenses in real time CNN",
+        "keypoint": "「自動對焦」眼鏡可即時更換鏡片"
       }
     ],
     "device": [
       {
-        "title": "(sample) Global 眼科醫材 news",
-        "link": "#",
-        "source": "Google News",
-        "date": "2026-07-11",
-        "summary": "International coverage.",
-        "keypoint": "(範例)全球眼科醫材相關新聞的繁中重點會顯示於此。"
+        "title": "Sustainable reuse of ophthalmic devices: a novel solution for reprocessing point-of-care equipment",
+        "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNTXBlYmd4WmNCaW0telotcmxDN0NDNUFjcDgwVEFTdl9Fa3FfNVdZT19xZ0N0dnZYV1F5VzBNYjNWaDJaRUFaYnFFOGZMaENKS0NteWFRcWN1Zi1LR214WHRjcktSNXZLNkVBQnF2bWNwZXZqem5MTkF5VlRjdE9nM2xFUEo5YzQxMDU5UjdtLW9GVG5YWTlLNFozckZSSzhnckJWNHU0MHROblRTcGpERUdlVldYenJWa1BCNlBrSkp5VzNxX1RZ?oc=5",
+        "source": "EyeWorld",
+        "date": "2026-07-07",
+        "summary": "Sustainable reuse of ophthalmic devices: a novel solution for reprocessing point-of-care equipment EyeWorld",
+        "keypoint": "眼科設備的永續再利用：護理點設備再處理的新穎解決方案"
+      },
+      {
+        "title": "From lab to clinic: Advancing ophthalmic technology",
+        "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQeVo1c3k1VFF3V1plQ0l6TUU4WHRScFJNdTUzcGVUSDlGT0g1and1a2c4VWYtUkFNRUVjdVhhaUhMYUJQUzg2RjlfMUxsSWJGX3UyQlBvR1dQSjBLSWVoZTAxaWZSTUVjdHZJNVAzNnVkMUd5OG96aWgwb1NuX21iYnQxb29uUC1LaEsyXzNKVU92VnVo?oc=5",
+        "source": "Ophthalmology Times Europe",
+        "date": "2025-10-30",
+        "summary": "From lab to clinic: Advancing ophthalmic technology Ophthalmology Times Europe",
+        "keypoint": "從實驗室到診所：推進眼科技術"
+      },
+      {
+        "title": "Why Enzymatic Pretreatment Products Are Not Appropriate for Ophthalmic Instruments",
+        "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQZGEwTktVVUExY2xzT0s0WjhYOXF0cE5RcktQNVFudGFQaXlMUWVBWFgzcU9KaEZJekppdmxtQ3hwRjUwcVE1RklWZEhQaFQ0Y3AtOEh6S0lfRXhRU2xwdFI4QUk0SE5nTzE0cXM1UmM0RmdrU0prZ2dYbnZEdTdDOEVoRkFNa0FIczA3WDhHYk1jRFJBbGRubWhWOEVrZTRzT0ZDS2tBdE5seHkweFhSaQ?oc=5",
+        "source": "Association of periOperative Registered Nurses | AORN",
+        "date": "2025-08-14",
+        "summary": "Why Enzymatic Pretreatment Products Are Not Appropriate for Ophthalmic Instruments Association of periOperative Registered Nurses | AORN",
+        "keypoint": "為什麼酵素預處理產品不適合眼科儀器"
+      },
+      {
+        "title": "Ophthalmic Equipment Market - Global Forecast to 2030 with Case Studies from Zeiss, Indian Government, and Heidelberg Engineering",
+        "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNRFdraGxrdUpNa2hNU0tfTk5vNzdXT0lLX1loa25jY2EzcGlWd2tfMXVoWTkwdS00ZUdEYUNteFBjcGo4YlB1ZThvMkxWdDBJRFhLeDRQT1U1U1JwQlBFYTNIQklyUE55bndrZkdTanJuTnZUaU9oVDNnd2x3UlZkejZ2RXdXS1NKYk1FbFNnWU45Rnc?oc=5",
+        "source": "Yahoo Finance",
+        "date": "2026-02-04",
+        "summary": "Ophthalmic Equipment Market - Global Forecast to 2030 with Case Studies from Zeiss, Indian Government, and Heidelberg Engineering Yahoo Finance",
+        "keypoint": "眼科設備市場 - 到 2030 年的全球預測（蔡司、印度政府和海德堡工程公司的案例研究）"
+      },
+      {
+        "title": "INAMI & CO. on Precision Ophthalmic Devices, Custom Surgical Instruments, and the Push Toward Digital Integration",
+        "link": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxNMDgtVTFYX2x3dzcyYjAzbjFCQlR2THo3ZTRQSUFrU0tuaFRadG9oRXRYRnYzeE1sMVFJOU1zX3RRVFpwUFdPM2I4alZVUkwyMmgtLWZ6NTBzdnZBcXRfQl9mUW5sMVlfUHRMRjhoZjdTWkt0bEZFcGlZX1ZmODR0dC1jVkNkMHloNE1zd2VBTU8wRHdKdy1GTWY0dFBDalBPWmZ6bUF3Qk02Zk5qRnBHWVE3MU5jUWx0WDNpYjhpenJrb183eFV4NHoxUlNzZUw0bUl5UWk0b1RpUzRFTndBTXBGNE5nMVJudXRvWA?oc=5",
+        "source": "The Worldfolio",
+        "date": "2026-03-30",
+        "summary": "INAMI & CO. on Precision Ophthalmic Devices, Custom Surgical Instruments, and the Push Toward Digital Integration The Worldfolio",
+        "keypoint": "INAMI & CO. 談精密眼科設備、定製手術器材和數位整合的發展"
+      },
+      {
+        "title": "Marco Lombart named exclusive US distributor for Haag-Streit diagnostic technology",
+        "link": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxOZ3FjRFhzWVdmR0ZCMWdGZTVqbm9ySlMxVDRBU1A2aUtqajZQNXJHNG94a0p1OHFMZVRFM2xQazgtNUZweDBMOXZBRFZiLXN3RDM2dWJCTXdoeTBiTGNPOXdsTnc4cTVmMTdLOHZaWTFMNGoybjFOTmlNcUNqVmNOSzdrdVN3Y0E0ZTVIOU1HZS00V25qQ3B5c1ZVQW9QUnJ5UVZLUV81TWRvNEJiM2d2U2Nkc2Q4MUJDRmo2Tjl2SDRWS1kwREV3TE1OelRxMGZk?oc=5",
+        "source": "Eyes On Eyecare",
+        "date": "2026-04-28",
+        "summary": "Marco Lombart named exclusive US distributor for Haag-Streit diagnostic technology Eyes On Eyecare",
+        "keypoint": "Marco Lombart 被任命為 Haag-Streit 診斷技術美國獨家經銷商"
+      },
+      {
+        "title": "Microplastics exposures in cataract surgery and potential clinical concerns",
+        "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFBzN0lwZG9yM2dHc0xkdmVIaVUwNG9OaWR0V2R3ck9SQmI2RWwxNlNITC1PendoT254TG04dVVaYlhUWFRlMXpyLVJOcDFVT2YxUTRMOTVvQkxtTVQzcDlr?oc=5",
+        "source": "Nature",
+        "date": "2026-03-10",
+        "summary": "Microplastics exposures in cataract surgery and potential clinical concerns Nature",
+        "keypoint": "白內障手術中的微塑膠暴露和潛在的臨床問題"
+      },
+      {
+        "title": "Eye surgeons identify three critical ophthalmology innovation needs",
+        "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNcHplYVNONzZlWlRTX282NEsyTTc5MWNRall4cjA4Skxja0ZoV21KRUJtMmVKXzZvMHRlUTZkS0hLMnQ2eHNrQW9GMXF0YXFwa3RIeXVRNE90RkJTa0xIdDNGbHpuaTVsQzk1UUlFU0NGLThmdmxuSEMwWDNfZVplLXVlcGl4RE5qalRMZEJhNk1JZmZMNXk0VUdDd0pycnh4YVFLRDdDNjV6Tk53a25KX0Nn?oc=5",
+        "source": "Medical Design & Outsourcing",
+        "date": "2025-09-16",
+        "summary": "Eye surgeons identify three critical ophthalmology innovation needs Medical Design & Outsourcing",
+        "keypoint": "眼外科醫生確定了三個關鍵的眼科創新需求"
+      },
+      {
+        "title": "New bioimaging device shows promise for detecting eye and heart conditions",
+        "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOYU9ySVRBY1ZYQXpkcEplOFpMSS1Qek5nODlwdXRCenlOSG1fMHlmYzNtSW1FTFlMeDlFUTRDenNZOFlNZ05GbkNMazB5QmxDYzlmTmNIUmxpekZlRlo3ZW5HTnlnNjdJOURfcFMwSUdGNzlOVUw5WE9jQUdsVVNGbWpjNEVqZUZyMWpIM3pYY1p3MUhfRURpSHZ1SGhvN1RXajJMTFl4SzEyd252SVhDbUtFRU45TVRmdEZ6aHE1WQ?oc=5",
+        "source": "News-Medical",
+        "date": "2025-08-13",
+        "summary": "New bioimaging device shows promise for detecting eye and heart conditions News-Medical",
+        "keypoint": "新型生物影像設備可望檢測眼睛和心臟疾病"
+      },
+      {
+        "title": "Research on Cadaver Eyes Suggests New Laser Surgery Will Be Safe, Effective for Glaucoma Patients",
+        "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPb2FBUHBJZU03b3JqajBjODVDbFVwU1JfUXhxb2ljdk9hV1JpV002NVZaR0xBaUVaZXVlQTFRSEN4RTAzMWtMMjZKN1ZkT3JRanNqRUJaREc1blEwNWtFYzFVcXlMVFYtblBCYllpNDI4UWQ0WjAxYVNlMGVkT2lDd0RUcVDSAZQBQVVfeXFMTURwVmszaGVBSldSbmI1QjMwcXlmX1JQSnFoLWVQUkxMQ0N5RUN3R3g2OXp3ZE9ZWWpBRURkTWw3S2RQWU5UYlVZNzVZWTNyQ3VCU3ZDZkswNHREZEZZcHpSWWhIVm82UFh6aG9YNmhybW1TT0haSjFSejZSeWpOUHE2RmN1V2szLXNMRWxCbUdsNjVDOQ?oc=5",
+        "source": "CU Anschutz newsroom",
+        "date": "2026-02-24",
+        "summary": "Research on Cadaver Eyes Suggests New Laser Surgery Will Be Safe, Effective for Glaucoma Patients CU Anschutz newsroom",
+        "keypoint": "屍體眼睛研究顯示新的雷射手術對青光眼患者來說是安全有效的"
+      },
+      {
+        "title": "BVI Medical gains CE mark for eye surgery platform",
+        "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQX3lNRkU0RnYzaDBiT25DbHNra1Ywc0NsbnB5dEl6Wk5ERzI5M2ZOZkdSSy1sMUl6OU9JTC1McUxwMkl2c0d4ejduMlozR0hUOUNLbDQ0YUdQZ2dfajU3ZjBIZHFkLWZFUDY4bDVPRGVWU0k2cGZ3SndzWmNEMHZTYUtzaXJXZW4zeW5lM1lPMWpENDlhOWpfVEJn?oc=5",
+        "source": "Medical Device Network",
+        "date": "2026-04-21",
+        "summary": "BVI Medical gains CE mark for eye surgery platform Medical Device Network",
+        "keypoint": "BVI Medical 眼科手術平台獲得 CE 標誌"
+      },
+      {
+        "title": "AI vs the Human Eye: Can Algorithms See What Ophthalmologists Miss?",
+        "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQMENJTUl1bTRSZXFfX2JqS1RQR2wwU0lFNnBiYmVkYjdyLVQwQ0VNX0U1UU1YMXI4cl9HMjJneHdXTDRDQUd3TnQ0LXpkNTZyR0s3cmNweWVpZW51b3Q3Z2JqY0YxQ2d6dmplZVJsb0ZmVVIza0c1VWZ2enZCYmxiUVBUbDZyQ0xjMjhOUG1ubktpLUQ0OEo0ZGdxRVhUVExmU0FJ?oc=5",
+        "source": "the-scientist.com",
+        "date": "2026-06-04",
+        "summary": "AI vs the Human Eye: Can Algorithms See What Ophthalmologists Miss? the-scientist.com",
+        "keypoint": "人工智慧與人眼：演算法能看到眼科醫生錯過的東西嗎？"
+      },
+      {
+        "title": "Y.ora Vision launches to deliver surgical device for glaucoma",
+        "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE5qWndhM2ptMWVucDB5UmRabnJlUWotdXNjOVpiV3VQclF0a2dmcnhCZVBmdXZWWG1aSW5XNzNuY25zTDNiUHdVMlNCakd0ZWFqcDB0OW5sSUZobWJfSkF6TVNINTNBY0p2b2lvOHBsT0lDLUxfM1Rfbw?oc=5",
+        "source": "MassDevice",
+        "date": "2025-10-16",
+        "summary": "Y.ora Vision launches to deliver surgical device for glaucoma MassDevice",
+        "keypoint": "Y.ora Vision 推出青光眼手術設備"
+      },
+      {
+        "title": "Hexiris Ophthalmics Marks Scientific Milestones, Launches",
+        "link": "https://news.google.com/rss/articles/CBMisAJBVV95cUxPQXM2S2xwaEVSODg5dUs2ekVfSWJYNl81OTkzbEt2MjVVODdMMFQ3Ym14YTFGc3NtTkJzbjM4NVMzUF9lQ3Nzd2NGNS1oMDB3ZGFCRXRMaGEzU0dBdkVrb3dLdGpTdWY2QjVqeWdSMGs5WmVuTzlhT1VfbDZkS053eHBiaW5xal9QbVREUGNaNlM2dE5PSl9iNTZYS19iTWFDSmF0M3pmVkwyNHhrS28xSy04eXBWbUZqaUdXS2lZOXhiVFlCdDc1N2JRemRtT1h1LU55cTlseE9PQVdPcHMycFRXTmVmQlgwSzEteUktVDBQeXdRdkROMmJZTXo5X29aTXpfbjJmT25ZOVNORWV6RldBTlhZcmgyTEZldGo3cnVaVTJzWG56UkNCYjU2ZkZm?oc=5",
+        "source": "GlobeNewswire",
+        "date": "2026-06-08",
+        "summary": "Hexiris Ophthalmics Marks Scientific Milestones, Launches GlobeNewswire",
+        "keypoint": "Hexiris 眼科標誌著科學里程碑並推出"
+      },
+      {
+        "title": "BVI, VirtuaLens will showcase new technologies at ESCRS 2025",
+        "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPekN4SEw0RncwTWNfR0Q3WjY2RHdQZU5JdmRYNWNrOGFmNVc1azFNZFJqSWpjQzIxdkFjYUY2MHdhU3JMVlZkY0J3VDFQV256U0hCV1JkMXhxbGFtc0NYRFQ0NnZoMUFFVXhyWGdPcVBVd0FSRGdNUXRDSUllMThfMnhDUkpjZlA3MjNrUFZOaGdoeTl1cXM0QTM1cVBLMElwb19NNG5CRQ?oc=5",
+        "source": "Ophthalmology Times Europe",
+        "date": "2025-09-11",
+        "summary": "BVI, VirtuaLens will showcase new technologies at ESCRS 2025 Ophthalmology Times Europe",
+        "keypoint": "BVI、VirtuaLens 將在 ESCRS 2025 上展示新技術"
+      },
+      {
+        "title": "Sustainability in glaucoma",
+        "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBKMDAxclpZUlBMLVlETmFVcll4M0JLRHJ5eVFHMjJDN1p0RE4tOWJzZkpsN3hRN3ZaOFA1eFBmaGVZbzh1RTYzdGlrOW05TGVRbmVXLTU2SVVMdkU0Rm9LcFkyZlg0dlIt?oc=5",
+        "source": "EyeWorld",
+        "date": "2025-07-15",
+        "summary": "Sustainability in glaucoma EyeWorld",
+        "keypoint": "青光眼的可持續性"
+      },
+      {
+        "title": "Leveraging fundus images for on device eye disease diagnosis with AI powered lightweight software hardware framework",
+        "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE1yZVlQbGNCVE4xdUR1NklzelEyZFpiVDRFdTFfZ2hJSFhxVjgtNnp6VHdvNE9BVFFSV2Ixc21pbGgwSmdqQXcwU3RGMm1SelNrdzhHdWlsd0FieVdBdTVB?oc=5",
+        "source": "Nature",
+        "date": "2025-11-04",
+        "summary": "Leveraging fundus images for on device eye disease diagnosis with AI powered lightweight software hardware framework Nature",
+        "keypoint": "利用人工智慧驅動的輕量軟體硬體框架，利用眼底影像進行設備眼疾診斷"
+      },
+      {
+        "title": "Visionix and iCare officially merge portfolios",
+        "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPZkZfVXV2Ymp2c2FOX1E1bU50MGY2Vk9VOEhFb1ZIenp6MkM2cTZSUEFCOXpzS2RuWF9Ud1A5bF9ld1VEckxFMHJGUTJMSE1aUnlZQlBQeGVOa2cxaEdhMGh0SWQ4cnR4RGNDV1pVbHgxUHVFQ0prRmJCdVZSdC1mRG5DUFdOcm9LQ21zS1pha2tSRzFoUFRxWE9TMjdUYmN0?oc=5",
+        "source": "Eyes On Eyecare",
+        "date": "2026-06-02",
+        "summary": "Visionix and iCare officially merge portfolios Eyes On Eyecare",
+        "keypoint": "Visionix 與 iCare 正式合併產品組合"
       }
     ],
     "pharma": [
       {
-        "title": "(sample) Global 眼藥/藥物 news",
-        "link": "#",
-        "source": "Google News",
-        "date": "2026-07-11",
-        "summary": "International coverage.",
-        "keypoint": "(範例)全球眼藥/藥物相關新聞的繁中重點會顯示於此。"
+        "title": "Motugivatrep eye drops for dry eye disease launch in Japan",
+        "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPMGIxRzFxWU1nSEtNUkVjMWljR0tCTnFvREVUQjJZQndyc0V4UXR4bFRwWndvM21OMzh4Wi0tZ19sWVlETkJGY3lnQTZySVJJd01QckRWdVpwTWMzU1dka2VJbGVMTFJQekc4eE1PQk5MWnhYYzRzenl4QlhmWkdVQzdXSUZnOG9VcGQwNWoyNEhZRHJpWTJGNXRpVmxLQTg?oc=5",
+        "source": "Ophthalmology Times Europe",
+        "date": "2026-04-14",
+        "summary": "Motugivatrep eye drops for dry eye disease launch in Japan Ophthalmology Times Europe",
+        "keypoint": "用於治療乾眼症的 Motugivatrep 眼藥水在日本上市"
+      },
+      {
+        "title": "New eye drop formulation shows promise for dry eye disease",
+        "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNLVpnZDZSZ2FiU0xGaUl6RGlSSTUxWFpUYWpyQ3hQX0VYLVhYYlZxV2JudmZ0LTJYRF9jS1RQTFl4VHBpQjF5b1JJSGF2MGRmZXNBYlFyRGZsbldJMWNBTVBiajRyX2RsUXRZdXlGdHpFQVRWby03OWNtRzlGWlhsdXI0dU5sMUo4NVhqMUNuUDk3TTBCRC0tS3ZXQjM3WUtHdnVkT1M3SWtndw?oc=5",
+        "source": "News-Medical",
+        "date": "2026-05-21",
+        "summary": "New eye drop formulation shows promise for dry eye disease News-Medical",
+        "keypoint": "新型眼藥水配方可望治療乾眼症"
+      },
+      {
+        "title": "Acoltremon Improves Tear Production and Symptoms in Dry Eye Disease",
+        "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOY2FpYjdBdzNXRXRuN2xTczFnbkVJTFVIRzdvR1RCQ182QU1Lbm5UYlBHT3NkN1JWVDBrZTVjRVc0SUxlSm9ROTFBOUd0QWF5VW9UbG1YRXh6U01GcFZPVFM0N3Q1bzlta285dHBrcTR3VTExYmhIVzFicFh4aEJGR05MRTBRUEx3emlvV1JQNA?oc=5",
+        "source": "Ophthalmology Advisor",
+        "date": "2025-11-12",
+        "summary": "Acoltremon Improves Tear Production and Symptoms in Dry Eye Disease Ophthalmology Advisor",
+        "keypoint": "Acoltremon 改善淚液產生和乾眼症症狀"
+      },
+      {
+        "title": "Comparison of clinical and inflammatory markers for dry eye disease following phacoemulsification and manual small incision cataract surgery (MSICS)",
+        "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE1OUnpiOTVwVzJhSW5NQUlpc0ZhSHZLM0hUdHVMMFVwRU9jZFN6aXVrQmE1Q2VEVmZ5aGJhSTZFWVg3MGtHZEwxSTgwbE9DUXZleVdSSHRrVFM1RnhUOGdN?oc=5",
+        "source": "Nature",
+        "date": "2026-01-19",
+        "summary": "Comparison of clinical and inflammatory markers for dry eye disease following phacoemulsification and manual small incision cataract surgery (MSICS) Nature",
+        "keypoint": "超音波乳化吸出術和手法小切口白內障手術（MSCICS）後乾眼症的臨床和發炎標記比較"
+      },
+      {
+        "title": "How to Soothe Dry Eye Disease Symptoms at Home",
+        "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNUHhoZTFWQUJDd0o4Wkhtc0hycHM3X21XTWVwQ2c4cHNRSmhyTGxwT2tTcGtxczVBT1p6V2dDRWtQWngwZ0tiUWVKQURTUnpiV2k0MnMzRWhQbEthZ0NqaVgzMkthdjBwODNfZnFmY3RsZ2xlcHRGZXdhMGk0TWZsSA?oc=5",
+        "source": "HealthCentral",
+        "date": "2025-12-15",
+        "summary": "How to Soothe Dry Eye Disease Symptoms at Home HealthCentral",
+        "keypoint": "如何在家緩解乾眼症症狀"
+      },
+      {
+        "title": "Mixed signals and mounting frustrations: ophthalmologists on dry eye disease",
+        "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQMk9aUUdDNDQ3TUFTNW91MlUxZkxZZ0N6ekp6NkxfaUlxVTc0eUFUWF9TVFFQVnRBWEIxS0x6VHozMFdZcmRUcG1pV3hOcFBLaUNuTEw4UVpXTkQ5SV9mLVd0Z3NnRFRQb0ROSUQ1U2t1ZTFmNHdoQVk4NnVLcWNKZnNEWFdMYmpKU3JPeUVNTXR3d3Z5WFZBMlZRWnVkcWQzRkRGUFZXX0pSZ09B?oc=5",
+        "source": "Ophthalmology Times Europe",
+        "date": "2026-03-09",
+        "summary": "Mixed signals and mounting frustrations: ophthalmologists on dry eye disease Ophthalmology Times Europe",
+        "keypoint": "混合訊號與日益增加的挫折感：眼科醫師對乾眼症的研究"
+      },
+      {
+        "title": "MicroRNA Eye Drop Improves Symptoms and Signs of Dry Eye Disease and Corneal Repair",
+        "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPMkRoVlo1TFFJYklreU5uZFVyVFJHNWhwamhrSkxDUTdBNnVKSGNBemt4aWpMTGxuUERBMkx3M2ZMRmhueEhULUUweGpDQkVYLTE0TGNQdC1JVWJPa3NWZFN6bXZBV2VtUjFkcHVHQmk2TjhrbmthQmVYeXl5aml0TEd4ZURXcEphTmdIamVsZEU1TWhBV3M5NjR1MzYtLWJXdGt0RkZR?oc=5",
+        "source": "Ophthalmology Advisor",
+        "date": "2025-10-22",
+        "summary": "MicroRNA Eye Drop Improves Symptoms and Signs of Dry Eye Disease and Corneal Repair Ophthalmology Advisor",
+        "keypoint": "MicroRNA 眼藥水改善乾眼症和角膜修復的症狀和徵象"
+      },
+      {
+        "title": "Intense pulsed light treatment improved tear film quality and reduced ocular surface inflammation in dry eye patients",
+        "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE9qVUotM1NzWUNreU9wMG9iWkNyZFJZc2N5WWJRWEZvRGpvclY0RnhhYUExOUNBdTFJd0V0SjdZR0NsU2RsdjlxX3l0cjdtZmVHNmk2X3hTOS1fNnZNSHJn?oc=5",
+        "source": "Nature",
+        "date": "2025-12-21",
+        "summary": "Intense pulsed light treatment improved tear film quality and reduced ocular surface inflammation in dry eye patients Nature",
+        "keypoint": "強烈脈衝光治療可改善乾眼患者的淚膜品質並減少眼表炎症"
+      },
+      {
+        "title": "Top 5 Complications from Dry Eye Disease to Watch For",
+        "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQdFY0VDZqYlBueXBfeEQxWU93aXY1NFlQX2pZaUZVRHNhR0VaN2tCUHBxUGU2SmY5T1h3VEpucGdzbEZsSGp5aXFNYTBWN0RoOFEyX3JmNV9KYXNCVVZWb3ZkS1JiSzRzSXFpZVNueldxRUdKeS1oYnpzM2RmeW5aeGRiVjQ2d3k2?oc=5",
+        "source": "HealthCentral",
+        "date": "2025-12-03",
+        "summary": "Top 5 Complications from Dry Eye Disease to Watch For HealthCentral",
+        "keypoint": "需要注意的 5 種乾眼症併發症"
+      },
+      {
+        "title": "Ocular surface: Targeted therapies for a multifactorial problem",
+        "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPdmtSNzRBd0MyWmVSNTF2Y2pGNVZUVU5BMkFoSFA0QVdhTW9CNWx0eG5NYnhhZG5ZSWJ1enRlaW5oaWRZR0VoLURWaWN0dWdWemlFWTd5RGJ4emZjZGNtNU53NmhIdHhZaVNzMFJWUTI3NUxnMy1SdWppWkNLSUVTVElqbjFNTEZkLXJLa3k0djlBX3BWOXdCT1NudmJZb1NzOXVyeA?oc=5",
+        "source": "Ophthalmology Times Europe",
+        "date": "2025-10-08",
+        "summary": "Ocular surface: Targeted therapies for a multifactorial problem Ophthalmology Times Europe",
+        "keypoint": "眼表：針對多因子問題的標靶治療"
+      },
+      {
+        "title": "Dry Eye Disease Prevalence High Among Eye Care Professionals",
+        "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQcElDeHdMS0R3dzV6Ukc2TFNOUlE5dGdFYUxRa1o2MW1BYy1XTXpNRGY2TGZVeWZya2ZiblZhZDAzaE90Q0VYb2tmWGxOQ1haOUx2RXBrZmxKeHdLV2QzVmVJY211QlZBbjhjajZDSGFkdjNpbWdtSHZBR3Y2ZGtGUUdqblQ4MXJqdUJlOER4MmFZQ2U3NkktV0N3Y2E0a3RQQzhMVS1B?oc=5",
+        "source": "Ophthalmology Advisor",
+        "date": "2026-04-07",
+        "summary": "Dry Eye Disease Prevalence High Among Eye Care Professionals Ophthalmology Advisor",
+        "keypoint": "眼保健專業人員乾眼症盛行率很高"
+      },
+      {
+        "title": "Building a dry eye clinic around intense pulsed light treatment",
+        "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQR2RDUlZoLXdGNGJ0UF83aU1ua1REVzVJdHc4SVYydGhwelU3YzU5M25vZmcwR2lKX2tXekphbGRuX1ZDcjRJVGJVNEttZUtkVVVQRHVxN1YyMUtfQkNYN2g2SmVNT0hJV2ZfQlV6aV9NeUs1ODI4Ml9oVkhxT0RXdjBQaHUteV9aZk9DTE9wUmM4OE9VS0FpajE4UEgzR3ZXMjJBTmxR?oc=5",
+        "source": "Ophthalmology Times Europe",
+        "date": "2026-02-23",
+        "summary": "Building a dry eye clinic around intense pulsed light treatment Ophthalmology Times Europe",
+        "keypoint": "圍繞強烈脈衝光治療建立乾眼診所"
+      },
+      {
+        "title": "Perfluorohexyloctane Improves Meibomian Gland Dysfunction Dry Eye of Various Severities",
+        "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQbHpwamdsWXJTbkQwamdfNG0wRU1wblVGLUF0OWZTSndQcmNab1pfSHJ1N01uZXZqekozUk9BSEVLNzdWS2U5RTNILTlmOTFVRUdzMjhLdGZCVzRVZWFBUi1UM056MFpVV1lueTRhaEZENE9QdVFTaVVuZ09nOElzX3N1TEFzcGlOck4xai1kRHg0TEU0X0Rv?oc=5",
+        "source": "Ophthalmology Advisor",
+        "date": "2026-04-20",
+        "summary": "Perfluorohexyloctane Improves Meibomian Gland Dysfunction Dry Eye of Various Severities Ophthalmology Advisor",
+        "keypoint": "全氟己辛烷改善瞼板腺功能障礙各種嚴重程度的乾眼症"
+      },
+      {
+        "title": "The role of management in surgical outcomes: Treating dry eye before, during, and after",
+        "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQZVZTaWhVY3ZqcWZ4c0FSTDBQRWUwQ2hWTEdYYzZxb19JZFZ1aGVuVFFLQmVCb0UteVJDQXRXYmRFM1JQSmZPQllmUzJjQkZBektDWUc2cDZNTGIxSXV2NmRSaVAzWXJfSjduWkdzX3d5VHZDRjR3NE1qd2ZrQjlrYXFPTEdRVk9TTzZHN3NPUDAwSC00U0RxLXNJZjc?oc=5",
+        "source": "Ophthalmology Times Europe",
+        "date": "2026-04-12",
+        "summary": "The role of management in surgical outcomes: Treating dry eye before, during, and after Ophthalmology Times Europe",
+        "keypoint": "管理在手術結果中的作用：術前、術中和術後乾眼的治療"
+      },
+      {
+        "title": "Topical Insulin Could Provide a Wave of New Corneal, Glaucoma Therapies",
+        "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOV3d1d3A3ZVRYXzh5N251anFtU1FHWDNSZ1MzRnNLaTdkQ0h4Y3NkRW1Renh0eVhVbFlFY2Q0N2lzbVFYX0lnaVh2bDNQb3k5azA5UXJiYlhpUUR4WXgzd3J3TVZuTjBYeWdUUlVOaXJ6RDA0Z2dfTzNlTTJDdm5OV2J5VlVjVGc?oc=5",
+        "source": "Ophthalmology Advisor",
+        "date": "2026-04-22",
+        "summary": "Topical Insulin Could Provide a Wave of New Corneal, Glaucoma Therapies Ophthalmology Advisor",
+        "keypoint": "局部胰島素可以提供一波新的角膜、青光眼治療方法"
+      },
+      {
+        "title": "Next-generation dry eye therapies with Rahul Tonk, MD, MBA",
+        "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNcTdhUE45VHVQeEZyUmNFVHg1c3lqWGE5Y2JSSHl4RlBwMzQzQm9lUm9iLXV5TXQ4dmJqQ09ZRmRoN1hVZ0pQeHl1cU9yU3pJMGZ5SnlFSWVmeHVtVEp5UERiZkFvSG53bllyQ2NFNU9ReDhORFlaYkxqQmxXRVNSRUs1ZHFGNThrRFZ2N0o5WGVJazFFLVBr?oc=5",
+        "source": "Ophthalmology Times Europe",
+        "date": "2026-02-16",
+        "summary": "Next-generation dry eye therapies with Rahul Tonk, MD, MBA Ophthalmology Times Europe",
+        "keypoint": "Rahul Tonk（醫學博士、工商管理碩士）的下一代乾眼療法"
+      },
+      {
+        "title": "Q1 2026 happenings in ophthalmology: Major highlights",
+        "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQUG9uNDhRMkVzQWxZckRCWkVWeXdhS2ZBQ2tWamRoazFzQWhHVWt4dmRnYllBZkxTRENwR2JxQmdnbkU3VTR3eVFVRV9RR0gwalFNZmJMTElablFEWnZ2Q0hWaUNWUHdxTXVtVU1NY3VHeTdhYmlpQzZIYkJmR2dUY2FiRlhhOFNJY3o4eHMtZ0RBYUlKbXk0?oc=5",
+        "source": "Ophthalmology Times Europe",
+        "date": "2026-03-27",
+        "summary": "Q1 2026 happenings in ophthalmology: Major highlights Ophthalmology Times Europe",
+        "keypoint": "2026 年第一季眼科動態：主要亮點"
+      },
+      {
+        "title": "Refractory dry eye care: How systemic conditions change the game",
+        "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPOXlCNl9ZajgtdXQ0Yy1fQ3JpZmVUblBSU2VJVktyd3JDZnRvVWYzSUVxcHg3SFdQV2dnQjlwejRrV0J5azNyYTVrRHUzNmwwdXhBcFB3eXEzRTdjTUYwTzIyWDhjY09VWVVEeHZOR1gzRk5qRmlRSllGWVV6RXBTTVphRmJTdExPTHBFMEpmSkFmV2p1bXRGTlBNLW82SVR4X3dmSDl3?oc=5",
+        "source": "Ophthalmology Times Europe",
+        "date": "2025-12-27",
+        "summary": "Refractory dry eye care: How systemic conditions change the game Ophthalmology Times Europe",
+        "keypoint": "難治性乾眼症護理：全身性疾病如何改變遊戲規則"
       }
     ],
     "health": [
       {
-        "title": "(sample) Global 視力保健 news",
-        "link": "#",
-        "source": "Google News",
-        "date": "2026-07-11",
-        "summary": "International coverage.",
-        "keypoint": "(範例)全球視力保健相關新聞的繁中重點會顯示於此。"
+        "title": "China launches WHO SPECS 2030 Initiative and National Action Plan to strengthen access to vision care",
+        "link": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxNSTBseG1pRDhYTFFwMEgyd2lyU0ZtQlVrRlpEaW14OG1ac0MwR3hHcUFnRk16WllYaDFHdGhsdzN6TFJCV0dtbmlBOHZGSFloSEhrWHN1YkZJWG5aTloyQmpUbEM0MGxTMHBFMXdYaWNnR2Z6dnVkWm12YkpUc25WaFhaZGNPUUY1VXExS3lMNW5Bb0JCZ1lHWFd2S1BNZ25fdzMxc205bmp6YW9uRmwtSHVseC1ZM3RweHFkaXpJX3RjY2dYbVp3bkVJajROb3VURXdrTG9Ub1VGQ3k1Y0hsakJGQ0RvTEY5cl9TM1pyQQ?oc=5",
+        "source": "World Health Organization (WHO)",
+        "date": "2025-10-24",
+        "summary": "China launches WHO SPECS 2030 Initiative and National Action Plan to strengthen access to vision care World Health Organization (WHO)",
+        "keypoint": "中國啟動世界衛生組織 SPECS 2030 倡議和國家行動計畫以加強視力保健服務"
+      },
+      {
+        "title": "These Euless high schoolers are looking to increase eye health awareness",
+        "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOdmhKcTdlTnZFUG1NRHlfYjFJZkE2dDQ4dWJWZEVsSmV6SHY0eGJyOHZFdy05ZUJmSENoZTN4VHdXcTlscVRKV3Z5NGVWWFAtdWdIMjFrZ0RkQmpmam1NaUFnbk16eTVFWFNDZC1ZMFRzWHdYYUppZ1VCS0ZtXzlLMFBfcmVDVExPcU83bDBidnFyTUJlMkRueTRjMENubzN1LVp6NUlPajNjaU1PU1VxeWtR?oc=5",
+        "source": "Fort Worth Report",
+        "date": "2026-05-19",
+        "summary": "These Euless high schoolers are looking to increase eye health awareness Fort Worth Report",
+        "keypoint": "這些尤利斯高中生希望能提高眼睛健康意識"
+      },
+      {
+        "title": "April is Women's Eye Health and Safety Month at Prevent Blindness, Aimed at Providing Women with Resources Needed to Help Save Vision",
+        "link": "https://news.google.com/rss/articles/CBMilgJBVV95cUxQN3c5djdBWnZhc1RFSXUxUVRnZm45SjVHLWtFYUQ5MEttMzk2TTRYRFVNUTZ1bVdkVnBaRnRrTkJ5cFhHejBkZzZiY29YMWJ1LWUySV8wZE1WQTFoU3lQNG1KRk9RRGhkNGI5dXZUWEJEd2FCZUdBb28xSklZZm9yNV9lUlZtQWE1ZGpKVDFKZEhPVG8wMEFmdVZfSzVkelNMcVkyMk1KbWpxXzZ0VXNDOUNCYUhvNXRONkRkYVhXZlJqTzhmRzk2RG9MQUd6ZVdmQ2NOWDFlQ1JMYXVtTm5iUGNQR1pIRUZDX3Y2Vlp3eVNFTW80YXdaUTFidUYwQm9lZ3RfRVlBVGdHRGtrb08yUHVHanF4UQ?oc=5",
+        "source": "PR Newswire",
+        "date": "2026-03-26",
+        "summary": "April is Women's Eye Health and Safety Month at Prevent Blindness, Aimed at Providing Women with Resources Needed to Help Save Vision PR Newswire",
+        "keypoint": "四月是女性眼睛健康與安全預防失明月，旨在為女性提供幫助挽救視力所需的資源"
+      },
+      {
+        "title": "Workplace Eye Awareness Month: Eye care clinicians are not exempt from safety procedures",
+        "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPWEpQWnhJdUtNVEk5S25EV3hKbU9aOG0tbE9ENmU2LXZWeFg4TWQwaS1LQzBMNXlPcF9uVmtEZkM0bE16LU81ZVNWS2M2MDVtWERWWjhLM09VM3RsQWRRUnU1Nk90WERaaWYyT2NZTzN2OEI2UkZMSHpUVVQ0Q1hpRTdvekdZT052c0FCRFlJN0tqT3VmcTV2c19oNWxMYmlRSDJ3N3lyVUVWVERBMFdrcm9fS0Yway14YVhsdmVUWV9xdFNnSkE?oc=5",
+        "source": "Ophthalmology Times Europe",
+        "date": "2026-03-02",
+        "summary": "Workplace Eye Awareness Month: Eye care clinicians are not exempt from safety procedures Ophthalmology Times Europe",
+        "keypoint": "工作場所眼睛意識月：眼部保健臨床醫生不能免除安全程序"
+      },
+      {
+        "title": "Multiple Eye Diseases Go Undetected Among Many African American Adults",
+        "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQTUZuS0t6MjhnTmRSdkJGVTRUby01Y2N5T0dERHFCMXJ3WFNVb3lLQmNSWkhSMzZ6QUtKQ0paRnhZSW1NQkVIaDN5U1lnSHk4NkJfLVhWYno2R084ZUVLXzNJRnQtRlVzZURPRkZzWEdhNVp0ak12QkRReTdNbEJmYWtyMTBOQ2Z2V2J4VWxUQXFFSTQ?oc=5",
+        "source": "Ophthalmology Advisor",
+        "date": "2025-08-21",
+        "summary": "Multiple Eye Diseases Go Undetected Among Many African American Adults Ophthalmology Advisor",
+        "keypoint": "許多非裔美國成年人並未發現多種眼部疾病"
+      },
+      {
+        "title": "Glaucoma awareness month: protecting Veterans’ vision",
+        "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTE1ZUUpXWWlTWTFOaWtrTDNzRkRhWDBVSm5CWndVSi1Cck9Gc0hLSVR3eFdNWlowRi1EbGJUOEpadFhpMGJoSE9ROTM3dkNoNExoWmVxQllQTm1ESXBFUDFpY3NNeUFBcWhxSUNhZ3RnajBibkZYWXJWeFFB?oc=5",
+        "source": "VA News and Information (.gov)",
+        "date": "2026-01-27",
+        "summary": "Glaucoma awareness month: protecting Veterans’ vision VA News and Information (.gov)",
+        "keypoint": "青光眼宣傳月：保護退伍軍人的視力"
+      },
+      {
+        "title": "Women's Eye Health and Safety Month – Apr. 1, 2027",
+        "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9LLWtaZzhBOXZHNmtsY1YwRGFTU2NINFpCa2d6TmUwZUNkcEJNbUYwYmlkbThjRDk2bmhhcXdheUl4N0R6U21PdE5NSEpCRnR2RmZkbXdQVENxb2ZZUDhvNDJsM2xRQ3c3MGNZcG5n?oc=5",
+        "source": "National Today",
+        "date": "2026-06-11",
+        "summary": "Women's Eye Health and Safety Month – Apr. 1, 2027 National Today",
+        "keypoint": "女性眼睛健康與安全月 – 2027 年 4 月 1 日"
+      },
+      {
+        "title": "Utilization of eye care services and associated factors among adults with diabetes mellitus attending a tertiary teaching hospital in Northern Uganda",
+        "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE9Iem1XUFE2blBsY2ltWWlTcDRhMGp0OEFMa1c4ekhScGlGeVRkLXA1WC1Ra3R6MTJlcmpEbC1tTGI5ZTdMM2g0VUI5OUZQWm4wSHFpaEFKX2N4dUVMMVR3?oc=5",
+        "source": "Nature",
+        "date": "2026-03-19",
+        "summary": "Utilization of eye care services and associated factors among adults with diabetes mellitus attending a tertiary teaching hospital in Northern Uganda Nature",
+        "keypoint": "烏幹達北部三級教學醫院的成人糖尿病患者對眼部保健服務的使用及相關因素"
+      },
+      {
+        "title": "WVU Medicine highlights age-related macular degeneration awareness, detection, and emerging treatments",
+        "link": "https://news.google.com/rss/articles/CBMihAJBVV95cUxPdnRHUkdJaUZCYURIMmlXSDZLSGxBN1MxM0x3WWJTRFY4LVJGeTJEYnVlTnBicW9wa1hxckh1TUhacG5TOU5SWU8tcEZkbE91RmhPNE9EUEZKeEpiUVktd3NwNTNueEJVU25oQ1VHYTdEZHVVcU9NTmx6eFhRLWhhOE9uRHBOUktOVXlCM1BZZEJrSXJDNFJHVm5VZjdxcFc3OU5pSFUtR2Y2MGlEREVZNjRwWEtaXzlBd0ZtR2V0QkppeEdWZEU5QWRGd2lidjBxYUpIeDlFdG54c2ltSlFHNWkyRXVJZm44ZVg1VndvRGJJVHlFaWtMTkVkRmxoR0NITmEyYw?oc=5",
+        "source": "WVU Medicine",
+        "date": "2026-02-11",
+        "summary": "WVU Medicine highlights age-related macular degeneration awareness, detection, and emerging treatments WVU Medicine",
+        "keypoint": "西維吉尼亞大學醫學重點關注年齡相關性黃斑部病變的認識、檢測和新興治療方法"
+      },
+      {
+        "title": "Screen time and myopia: Options for children’s vision in a digital world",
+        "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQdFQ2SVdiQ0VyeG40RkgyYUFKOC1oS1o1ZjBEX05UemFmWEdjT1pBVGllT0xxcG1jR2ZkSWllaVM2ZUtDV3NvaTg4NlVFUjFObE5WZE9EaEp5ZEgtMW9nTE9DemN0MHRzcFp2dWd3MmFCMmlqVEFDa3U5czZpRnhTVmxfVkZfSy10bWwtRW1LM2l1MDEtMVFlU3dNUm9HeC03MnFqNXZlSHBjMHF4dllrbkNObzBOd3dBMlR6dUdzYTk?oc=5",
+        "source": "Open Access Government",
+        "date": "2025-10-06",
+        "summary": "Screen time and myopia: Options for children’s vision in a digital world Open Access Government",
+        "keypoint": "螢幕時間與近視：數位世界中兒童視力的選擇"
+      },
+      {
+        "title": "Blindness and vision impairment",
+        "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQeDlhNDdxMHc1T0Z0RmpieWh6YUQ1emd5SVYtcDlyNWYyaWR2NzZ5djdxd0dsbVpCdVpfMm5JZU14YVdGS3lBYzgwUmJZTlJXbnZPaG9VTmtsTTZ4cThNdUFOYjNLTzFYSk9hWmctVGVfaXZwYTl1Mm5LamtJbXpiN3E3WTFqazg?oc=5",
+        "source": "World Health Organization (WHO)",
+        "date": "2026-02-10",
+        "summary": "Blindness and vision impairment World Health Organization (WHO)",
+        "keypoint": "失明和視力障礙"
+      },
+      {
+        "title": "Orbis brings school-based eye health intervention to children in India",
+        "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNdkhNcUo3QkRpU1NZMVJIU1dGUzVMYlltSzdYbWp6ZEdheVVtY3pDeVVGQklYLWlObTVUY3ZXUXIwbXlIQ0hnc3pQbVBuZ25JcFpibDJEaFF5MWhWYUlXSi1mNjZ4bUpYUk94UHRTYkxETjJ5YzhESzFvSVhXQkZXRmtfUGl2VDJ0azZYYzBRUXBfZUJldUdxZEdPUEdmR0hnd21UZm5TbGNxMnc3SGNJ?oc=5",
+        "source": "Ophthalmology Times Europe",
+        "date": "2026-07-04",
+        "summary": "Orbis brings school-based eye health intervention to children in India Ophthalmology Times Europe",
+        "keypoint": "奧比斯為印度兒童提供以學校為基礎的眼部健康幹預措施"
+      },
+      {
+        "title": "Prevent Blindness Declares March as Workplace Eye Wellness Month, Offering Free Educational Resources to Employers and Employees to Help Prevent Eye Injuries, Avoid Digital Eye Strain",
+        "link": "https://news.google.com/rss/articles/CBMi2AJBVV95cUxOaVZSUHJVMm5YNmNhUkwtZ2RKWWg5SEM4aS1uTVVCeVQ0RUs4WTQ0S2pEWVdXRDhXSF9vN3hfbzRUYVFYLW1MckFTc1hGSE50TWpuVEduc3VMRWtpdEVYY1l3Y1g1Vzk5eFI0VWt6UDAtUlhOUzlkcm8zNk1NMHV1Sll1dWZzQy16OEkzSnpSSnNfWGpDbnN1YmZaM09PLUgwTHo0OWFQOGJ2MlpONUsxY0hxTWpSUjlESFl0aUszdkZEcWlqaWh4ODJfQ2lCWDhNUnJkbjdBVW43Y0lRdl9QeERQOHl3UFpEQ21nNzdXaXRfaG1HTWxtdmFYdHFHMVVyS3A5dkJ2WE1XSVZPTWF5Rk1VanZqYS1jb3lZRjV3dTIyLWkxLUU0bnQ5d0h1aFVYSGhPVlRhWml5ZUNqSFFOdThWZWhxbEN5YTNaanV2R3R1S2l1Uklodg?oc=5",
+        "source": "PR Newswire",
+        "date": "2026-02-26",
+        "summary": "Prevent Blindness Declares March as Workplace Eye Wellness Month, Offering Free Educational Resources to Employers and Employees to Help Prevent Eye Injuries, Avoid Digital Eye Str…",
+        "keypoint": "預防失明組織宣布三月為工作場所眼睛健康月，為雇主和員工提供免費教育資源，以幫助預防眼睛受傷，避免數位眼睛疲勞"
+      },
+      {
+        "title": "Children’s Eye Health and Safety Month – Aug. 1, 2026",
+        "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE81U3pBcDRKdmZmcndvNlByWmQ1V0pzQkhmQ2RtRmhnRGllakJybWFLbHNkU1pEc0l5SllqLUMtRUl3VUlaMlNEYzltakpKVUprMWpOa25kbjVFM1hTTDBhUDVDc0F2TU1yZGVCYjZkcW04UQ?oc=5",
+        "source": "National Today",
+        "date": "2026-06-11",
+        "summary": "Children’s Eye Health and Safety Month – Aug. 1, 2026 National Today",
+        "keypoint": "兒童眼睛健康與安全月 – 2026 年 8 月 1 日"
+      },
+      {
+        "title": "Eye metrics often reflect visual conscious awareness, conscious content, and neural processing in cerebral blindness",
+        "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE51bnc0RzBqWmtuMzdKSFBvbFJ1VlpSWkQzV3o4M2RmdVI5MTlQdy10eldvbVFxQ1h1X2Fjajk5dnhUM0RiNjBTdmlab2pEVzBtZTl1N1hDYUdCTjQzWE1Z?oc=5",
+        "source": "Nature",
+        "date": "2025-12-01",
+        "summary": "Eye metrics often reflect visual conscious awareness, conscious content, and neural processing in cerebral blindness Nature",
+        "keypoint": "眼睛指標通常反映腦盲患者的視覺意識、意識內容和神經處理"
+      },
+      {
+        "title": "Maldives sets new goals to improve eye health by 2030",
+        "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQYmdyRkkzNTl5WHV0UjVpU2txcm94enJHRHJqSHhqR0JoUmJfTmlKTjNSOWd2WXlyeVB6NjBxZTRsaVp0NWdmY1FheUdsWXhnR0FqSGxzNkpTcTdXYWN6b3dTYnNDUjlzbF8xY1JFU25OeEt6aWxPSi1pN2FMVDNuQ3owMHcxZ2xUQmxaX2o1bEZMOFlQTmtCRTdUOFI0YnVmbzNTclNIRENwZw?oc=5",
+        "source": "World Health Organization (WHO)",
+        "date": "2025-08-19",
+        "summary": "Maldives sets new goals to improve eye health by 2030 World Health Organization (WHO)",
+        "keypoint": "馬爾地夫制定了 2030 年改善眼睛健康的新目標"
+      },
+      {
+        "title": "National Eye Care Month – Jan. 1, 2027",
+        "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE5yR09ZZ0tMODlQV21TLWdyTDVhVUIzWVhDSG1ZaEp3TVUzZ01XeTF5X2F5alhLZUhrdUdYcHJXclN0ZGJVeldfQmI0SEpCc3lJVjMxOElMTHpqX1JlMFZJ?oc=5",
+        "source": "National Today",
+        "date": "2026-06-11",
+        "summary": "National Eye Care Month – Jan. 1, 2027 National Today",
+        "keypoint": "全國護眼月 – 2027 年 1 月 1 日"
+      },
+      {
+        "title": "Spotlight on women's health: Understanding thyroid eye disease",
+        "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOa19LdVgzMjBPMTc0b1diUGdNTUlzc2prM2JoSVQ0N3BfNEtkNUc2TTdsemNGR1dlaHM3cVFUdTNNbzZjUENMR0t2eXJfM29kYTk2MFl2QXBUWkliSUp1RXE0eERpSVI4QWVYNjNCWFhySmttYU9Md1JqVGtPajRzSjBlTkV2dU9Jakd3Wk1FUTlkMkxCa0NtMENHYVhER2NleTl3?oc=5",
+        "source": "Ophthalmology Times Europe",
+        "date": "2025-12-17",
+        "summary": "Spotlight on women's health: Understanding thyroid eye disease Ophthalmology Times Europe",
+        "keypoint": "聚焦女性健康：了解甲狀腺眼疾"
       }
     ],
     "industry": [
       {
-        "title": "(sample) Global 產業公司 news",
-        "link": "#",
-        "source": "Google News",
-        "date": "2026-07-11",
-        "summary": "International coverage.",
-        "keypoint": "(範例)全球產業公司相關新聞的繁中重點會顯示於此。"
+        "title": "Entering a New Era of Med-Tech Innovation with LensCrafters in North America",
+        "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOVzJHa2ZUWHZrODI3dEczQldISFphMFJHS0I1aDJ3Sm04bF9oMHZ1S2QzWFZUR0wzZ212U05kTUdzY0lueFJvNFhST0NwR1lhQXZtQkNTc2lvTHhtcWd1YXdNb0N5RVg0OVlYMnIycWkyamlJMUxWSklkekhnMlZZQ1RaRjk2V3ZUY3ZLWGE2ZGEyYTJ4WFE?oc=5",
+        "source": "EssilorLuxottica",
+        "date": "2026-07-03",
+        "summary": "Entering a New Era of Med-Tech Innovation with LensCrafters in North America EssilorLuxottica",
+        "keypoint": "與北美亮視點一起進入醫療科技創新新時代"
+      },
+      {
+        "title": "Stanton Optical Launches Advanced Eye Health Services Across 35 U.S. Locations",
+        "link": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQV3prMzZmcUROOVFGZTc4aGk1eFNmMkRvYV90RkpNemxKd0FxWldQR2I1em1FOFg4elJXY2wyZHNyaW4wWTR2UnRRQWpOSi1yNkE5M3FmSU51dEowRk1CLXh2aENJQ3I5TVFCVGMyUzRMbGxDRjdIN09LSk5uNndEQUZjV0ZKcW1oM2xtTmpYNTdBUU9wbUpEMTlXNk12VWVmVUdoeHcwb2pGNXZYdjhCQlZzVFlGM2FtbEw0WjdNSWRNcmlCVnVCTVdXZnBCemlV?oc=5",
+        "source": "Business Wire",
+        "date": "2025-07-30",
+        "summary": "Stanton Optical Launches Advanced Eye Health Services Across 35 U.S. Locations Business Wire",
+        "keypoint": "Stanton Optical 在美國 35 個地點推出先進的眼科保健服務"
+      },
+      {
+        "title": "U.S. Optical Industry Value Hits $69.5 Billion in 2025, The Vision Council’s Latest Market inSights Report Says",
+        "link": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxOdV81blN4Sko0ZzVTdzNFZTBwYlpxUHZJMFFINmhaQW5aeno2eW9rUUNMZVpQQkp3TGw0c2stZU85U0Q0SVpXeENMZmlmaDdpZVEybkl0cVFVRGY5MDRDWFhxN2xGOFZaUjRvaEc3eGFySm4xTGhGTm5sR3Z1ZG4wNWtLM2k5cVRuRU14UWRBdXlLRlJIX2lFdDBDM1ZyMDNfX1Z5MkFGaWJOOWlpSHoxUXZUQkI2b1lqOXkwa01yalpGcWJZUXZKN08tM05TTmh4ZXpCdXZVa2h5YnFma2Z4ZHQ5MWNTQQ?oc=5",
+        "source": "VisionMonday.com",
+        "date": "2026-01-28",
+        "summary": "U.S. Optical Industry Value Hits $69.5 Billion in 2025, The Vision Council’s Latest Market inSights Report Says VisionMonday.com",
+        "keypoint": "願景委員會最新市場洞察報告稱，2025 年美國光學產業價值將達到 695 億美元"
+      },
+      {
+        "title": "UK Eye Care Market Size & Outlook, 2026-2033",
+        "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTE9Nd1V2VE44Rm4xc2t1UHp2ZVhZZzVfUUJkc0NUb2ZZZk5JT1NDN3RFWmxURlVETUNpbmZIOGZnbnAxWmNCOUliV1hsbFRuTnBjeHBPWl95MWtoVmhLdk9Tbl9IODVHUXE3NTRQb2cyLWdURFd6eGZN?oc=5",
+        "source": "Grand View Research",
+        "date": "2026-05-12",
+        "summary": "UK Eye Care Market Size & Outlook, 2026-2033 Grand View Research",
+        "keypoint": "英國眼部護理市場規模及展望，2026-2033"
+      },
+      {
+        "title": "The Optician Shortage: Facts & Opportunities",
+        "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTE9keHFHLWd1bjI4bUQtNEFEVUJwUDdCVUlsXzRtWVpQQVFiYjlzZkdKRVZvbDhoZ1YyTG5NSWFuaXJXSHhTWlpuMDVOM19QMlNBMnJtdEUwQ01tc0sxWFYtbEdPdWJtS19vUEVnQmVsNUg2VE9UQ3l3?oc=5",
+        "source": "NECO - New England College of Optometry",
+        "date": "2025-10-01",
+        "summary": "The Optician Shortage: Facts & Opportunities NECO - New England College of Optometry",
+        "keypoint": "配鏡師短缺：事實與機會"
+      },
+      {
+        "title": "Pearle Vision Unveils New Retail Design, Reinventing the Eye Care Patient Experience",
+        "link": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxPRExwWXVwMlEzemFGUngwLXZXckNzSmdKV0lFTjlXYUdESllka3o2a2xnN1VXWXAtM2dIbUk3VmlfNlVpRHFFMGZPMC1HUTdlNlZGRzQzUXBRLWc0M080cjJUVXkxNFFoajE1TmdwNlAwY0V1QlhzOWp5SzZ0LXdmSWRJSHdhMnBiRmRmbndfVVFmYzl2Sk5OWWdDN2RSWDRLUU9NMGhrWVZNemI3UDJXQzF1YUJiRTN5RkRpOURSTnRNWkRlcUFrdjJnN29XeWdTQ1dDMzNR?oc=5",
+        "source": "PR Newswire",
+        "date": "2025-10-02",
+        "summary": "Pearle Vision Unveils New Retail Design, Reinventing the Eye Care Patient Experience PR Newswire",
+        "keypoint": "Pearle Vision 推出新零售設計，重塑眼科護理病患體驗"
+      },
+      {
+        "title": "Staples partners to open in-store eyewear shops in four locations",
+        "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPWEkwdlhoVnhQUkZGem9TZ2U3YnRKaUFhOGZWNnFWcEZobTdKeUNMLTIzNVgtUVhsQUxYWlgxc3FGNHRjMWpLelFPaFV5U1UzaUVqZzZWLXFZc2ozNEgtTWxGV1RfdjN6WEpua0toRXF0TVFxeHoyY0cxWVZGU0FldUx3UGRyQl9iWkE?oc=5",
+        "source": "Chain Store Age",
+        "date": "2026-02-11",
+        "summary": "Staples partners to open in-store eyewear shops in four locations Chain Store Age",
+        "keypoint": "Staples 合作夥伴將在四個地點開設店內眼鏡店"
+      },
+      {
+        "title": "Why Stanton Optical Focused on Staples for Eye Care Shop-in-Shops",
+        "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOdDM3U0RvNVZ5U3RVTWF3YnN5X2VBbGMydUNTYnA3SWt5YmlyM2YtSlB5QTN0dXlVX0ZJeEpzdVVqUWhEaEluOFJ2RXF2MXQweWZ1cHRQWlc2NU53czJfSkNxb19Zem5GRHh2TmNiaHlrUTlRYlk3UWtEVWh4MlFlVkIteFNWdHpLYXd0bGhxMWVidGNSNmVWRi11VTVJaEtKd0dZamhUaFlkMW01aDZXbDZwY1QydE0?oc=5",
+        "source": "Retail TouchPoints",
+        "date": "2026-02-19",
+        "summary": "Why Stanton Optical Focused on Staples for Eye Care Shop-in-Shops Retail TouchPoints",
+        "keypoint": "為什麼 Stanton Optical 專注於眼部護理店中店的訂書釘"
+      },
+      {
+        "title": "National Vision (EYE) Becomes the Sole Eye Care Provider on Every US Army and Air Force Base",
+        "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxONU9WZVRRLWxWRUVVa2xDNVdaUGtteTF0c0hGejNoT3U1Vk5VN0l1VGJxZUJTQUM2X3F4U2hvZi0zQ3YxbE9IY1RHdkpsa0JINWNVcUk0dUVSeEhUbnZacE5kSmpXR1hCMzVrc1ItVndzbVpLSDRlQnhIMEJEbHlSQUJJdjN6WThQbHh3WWl6NUtTV3k3YmpmRHgyYndKQQ?oc=5",
+        "source": "Yahoo Finance",
+        "date": "2026-06-04",
+        "summary": "National Vision (EYE) Becomes the Sole Eye Care Provider on Every US Army and Air Force Base Yahoo Finance",
+        "keypoint": "National Vision (EYE) 成為每個美國陸軍和空軍基地的唯一眼科護理提供者"
+      },
+      {
+        "title": "Eyemart Express Opens New Store in Troy on July 27",
+        "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTFAxdGtjaFBhaVV2TUp3bi1yVlRHWnRueGJ4R1h2dGVYV0RsYi16anJZZ0VvZ3RZN3BEZkJCYllYazBHc1B1R0xRZXY1RDFZRzNWeDE1SnZLaWpEcnNnNlVRa0FNMFcxQkptZlk5eGVnOTN4MHRJM0JRbw?oc=5",
+        "source": "This Local Life",
+        "date": "2026-07-07",
+        "summary": "Eyemart Express Opens New Store in Troy on July 27 This Local Life",
+        "keypoint": "Eyemart Express 7 月 27 日在特洛伊開設新店"
+      },
+      {
+        "title": "Pearle Vision Eyes Next Phase of Franchise Growth",
+        "link": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxQNEtTazJVMF80UnRycEFxallkbXVEbjVNZDk2V3RjaFFBRHVHX0Fja0lKOGxpalhBempOcUdXNjRaaEhmM1RZSG1BWktnN1NNc3lrSHdhYjJ3enFKalJBRG5Ca08ydXZDQ2FwTUZOS2RtY01UajFfMFNoeVB0dmRWc3ZHWFlIcGdkU3FkWW5PU1paLVo3NC1OYWNtNUNjX0FuUkNwWU51eHo2dGE4Y0lESlcySENKN29JWHc0emViRGVFZWNkSmVCLUJHSDlwN21felRvQU1QYnJUQ0xfUFE?oc=5",
+        "source": "franchisetimes.com",
+        "date": "2026-03-16",
+        "summary": "Pearle Vision Eyes Next Phase of Franchise Growth franchisetimes.com",
+        "keypoint": "Pearle Vision 著眼於下一階段的特許經營成長"
+      },
+      {
+        "title": "Stanton Optical Launches Advanced Eye Health Services Across 35 U.S. Locations",
+        "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPLUw1bEw0c2V6YlpqS2ZJYzlzNGpEdFhXUTN4S1V4VDdrMTRZSHhEYndSWkJiaEVScW9PcGViTVNUbDMzOFg5VUJLekcwd0FSTTNENFFWbmVoMHZNY1RBQlhEcDZsM2FPLWd5VTIyMkxrQ0JXWUk2eGNyNVdUR2loVEVKV1pTbmZGTmt1MUNsNGxGZGxla3JNNWtqLUdwS2lsN1BKSldGTXpCNWpmRE44a0NTNVhhbU1SdFdYZnZYWQ?oc=5",
+        "source": "VisionMonday.com",
+        "date": "2025-08-01",
+        "summary": "Stanton Optical Launches Advanced Eye Health Services Across 35 U.S. Locations VisionMonday.com",
+        "keypoint": "Stanton Optical 在美國 35 個地點推出先進的眼科保健服務"
+      },
+      {
+        "title": "Saudi Arabia OTC Artificial Tears Market Report 2025-2033 | Vision 2030 Boosts Retail and Online Channels, Non-Prescription Eye Care Boom Fuels Expansion - ResearchAndMarkets.com",
+        "link": "https://news.google.com/rss/articles/CBMi0gJBVV95cUxQc2RSNGxpeWdKbHZud3V6MlJ5Y3FMazlxcXdtQzJKYURpX2JDX3d5ajlEd0RENUFlTXdtMHZqdFRaMy1SY2dxaXJBNEdKWXBtazF4R3FXc2pXRTZMWmdIa2tqSmxJczhYRGpoeGJHMGphb0g0WVhvMzRxVklJeENCUkwwOVhMNW9VUmMxX2dpZC1TM3UwODFPUVdfWDF2ZUFOd0YxZE1QekhGYjUxSmRyc193M3lyazJsMjJ5LWhjZER0UGNfN0dCLUthdkNWTkVHY2hqUHhaMHRGSGJjelU2N09fQWVyNklNTUc2cjk5QVA4aUFZMHdpZmNBSEtsLUdaMTNfRHU4MTZCdXNFZG5GbzBIT3VfempRU1RqNWhEa0RoMm9ZODNUSkpSSjRfWjNUUVcyaHpScnJIRlM1ZjgtX3dZaGZMbndTb2dGdFp6UGFOdw?oc=5",
+        "source": "Business Wire",
+        "date": "2025-08-15",
+        "summary": "Saudi Arabia OTC Artificial Tears Market Report 2025-2033 | Vision 2030 Boosts Retail and Online Channels, Non-Prescription Eye Care Boom Fuels Expansion - ResearchAndMarkets.com B…",
+        "keypoint": "沙烏地阿拉伯非處方人工淚液市場報告2025-2033 | 2030 年願景促進零售和線上通路發展，非處方眼科護理熱潮推動擴張 - ResearchAndMarkets.com"
+      },
+      {
+        "title": "U.S.Vision, Long-Standing Optical Retailer, Abruptly Ceases All Operations Nationwide",
+        "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPeTB1TnQzeHdxaTNLd3NVWHc5VWlOQmNMekhveE90V0Qzc0xiSjdSSFNld0p4QkVSY1paU0NwOG9EZEdvbUhoYS1rcDIxYUpaa1BQVXpIbUFUQlg5NEVpUWt3MEptT2RnbEZLeXl0R3V5WXFvdmxyNzRURGltYUtMeTR4YzJqRFltVEFNWXE4SDBUNmdqa0lkU0xzOVlGaU5iNzVRaVZmb2VwUFNNa1J5RzFUd1lZWW1FX2xuRXBlMGc4U3dRMVE?oc=5",
+        "source": "VisionMonday.com",
+        "date": "2026-06-15",
+        "summary": "U.S.Vision, Long-Standing Optical Retailer, Abruptly Ceases All Operations Nationwide VisionMonday.com",
+        "keypoint": "老牌眼鏡零售商 U.S.Vision 突然停止在全國範圍內的所有業務"
+      },
+      {
+        "title": "Staples and Stanton Optical Partner to Bring Affordable, High-Quality Eye Care to Select Staples® Stores",
+        "link": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxNRS1MUnpBcEVaVnFiV21OOGpXQmxDVzlnNlRxYlNRQmJqTWdyT1A2c2Nwbk5wM2g3RnNGeU5hOERzSDBGbmdnR2VDb3QxUkJpVE82aDJhUVU4TU9VaDJSMmJ3WTJ4OTlSSFBqb1M4M2pRTWpFVFJ3QUhHaUtzRkN1Z19DU1pweVhKYU00ZGx2MWJuZ00yZDdTc1ZfNlVZRDBuSVgzOGtYSjEtQVFFMlpZbGJWaDdQRDBRSnp3ZTJORk5DdUVrQ1d2UFl0cnRxcDduRkh4SnlsejVQTkx6WldvdGRzYUYwS09JMzFITkZMcDk?oc=5",
+        "source": "Business Wire",
+        "date": "2025-08-26",
+        "summary": "Staples and Stanton Optical Partner to Bring Affordable, High-Quality Eye Care to Select Staples® Stores Business Wire",
+        "keypoint": "Staples 和 Stanton Optical 合作，為精選 Staples® 商店提供價格實惠、高品質的眼部護理產品"
+      },
+      {
+        "title": "Stanton Optical Partners With Staples to Bring Eyecare Services to Select Staples Stores in the Philadelphia Market",
+        "link": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxNR2tRVjBuaU5SalJ2dWZ1eGVPa09TMkF5VXB5czJLaC1pWW1nall2VDBxTU5xZjNXR1ExSTBIeFY4cnhrZDR6aE5URXBFV2gzN0FMR0F5M1pIT2Y2czRpYkV4Y1NnZ3laTlBUV3BHTXVwa1NLYTBJVzNZdk9xRF9naGhCajFmS01iRG5WbkFkN2FnaHU1TXNhVkY3U1FWenVsU1JNQWVxdXRPYzBnY0dUMWpWb2JXV1FpMGJFdjVJZVNSeHdqc2JObWpaS2R0T2pPZGk5OXNkVTBUS3pTdVl1S0p4aEt3cUEwT0lIMXlXUGRsMHc?oc=5",
+        "source": "VisionMonday.com",
+        "date": "2025-08-28",
+        "summary": "Stanton Optical Partners With Staples to Bring Eyecare Services to Select Staples Stores in the Philadelphia Market VisionMonday.com",
+        "keypoint": "Stanton Optical 與 Staples 合作，為費城市場的部分 Staples 商店提供眼部護理服務"
+      },
+      {
+        "title": "Pearle Vision Acquires West Point Optical Group, Including 90 Franchised Pearle Vision Eyecare Centers",
+        "link": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxOUGY3RTg3UnJ1anl1Szl3UmxmZWhOTjZadnhfaUZkNm44SWUteXVwUFhtMnhhX0FtTk1rVWJsS2cwMjRvZ19JUU83dXJNYWdkbVRJVnRwakxnT2NYejU5TFNmLTUzOE1iUTNMVVJuSTJoRFdRWGpFQk15NE5hTmdaNGpUOWFuNl9QNzFlNTVuRWIxRWFyS0dYdHROQkNneTA2bUpWMEgtLU9tWm9SSFl1THVqRjl3Qk9oaC1Hcll5Y1VCX05CakJJZ0pCZnZ0ODRqYTlJTUNneEt4YkdOZ1JISw?oc=5",
+        "source": "VisionMonday.com",
+        "date": "2026-06-04",
+        "summary": "Pearle Vision Acquires West Point Optical Group, Including 90 Franchised Pearle Vision Eyecare Centers VisionMonday.com",
+        "keypoint": "Pearle Vision 收購西點光學集團，包括 90 家特許經營的 Pearle Vision 眼科護理中心"
+      },
+      {
+        "title": "VM’s 2025 Roundup of Optical Industry Acquisitions, Mergers and Major Investments",
+        "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxONFk5U0ltRkR4Z2tVVjFocVdBOG5JZzlBbVRyb2NNV3pkNUk0NnYySGFITFRULWs1Vl9GTjFtbzRGRTdwd3l6Qm9VajR4QVNYS0VCOUxlT2x3cGRjckdmSmFzRDg2Skk1N1RjY0V1Q2xhZGViQUhXbVowQXRkcGhYcEhyNDZ4T3E0bXpiaG9TMXY4RWV2dzdDQkhYNTZ1NW5MNS1YRnUyN3B3SFdTRkxRTTQ3Q1VYRldvMFo3NVp3VTU0Q1pK?oc=5",
+        "source": "VisionMonday.com",
+        "date": "2025-12-31",
+        "summary": "VM’s 2025 Roundup of Optical Industry Acquisitions, Mergers and Major Investments VisionMonday.com",
+        "keypoint": "VM 2025 年光學產業收購、合併與重大投資綜述"
       }
     ]
   }
