@@ -29,8 +29,8 @@ QUERIES = {
     "dryeye":     '("dry eye" OR "meibomian gland dysfunction") AND (cyclosporine OR lifitegrast OR "intense pulsed light" OR treatment OR management)',
 }
 
-RELDATE_DAYS = 1095   # 近 3 年
-RETMAX = 8            # 每類最多 8 篇(取最新)
+RELDATE_DAYS = 2190   # 近 6 年
+RETMAX = 30           # 每類最多 30 篇(近6年取最新)
 
 
 def _params(extra):

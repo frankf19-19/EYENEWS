@@ -19,15 +19,15 @@ API_KEY = os.environ.get("ANTHROPIC_API_KEY", "").strip()
 MODEL = os.environ.get("ANTHROPIC_MODEL", "claude-haiku-4-5-20251001")
 
 QUERIES = {
-    "myopia":      'myopia control OR myopia management when:6m',
-    "contactlens": 'contact lens (industry OR launch OR myopia) when:6m',
-    "lens":        'spectacle lens OR ophthalmic lens OR optometry when:6m',
-    "device":      'ophthalmic device OR ophthalmology equipment when:6m',
-    "pharma":      'ophthalmology drug OR dry eye OR cataract treatment when:6m',
-    "health":      'eye health OR vision care awareness when:6m',
-    "industry":    'eyecare industry OR vision care market OR optical retail when:6m',
+    "myopia":      'myopia control OR myopia management when:6y',
+    "contactlens": 'contact lens (industry OR launch OR myopia) when:6y',
+    "lens":        'spectacle lens OR ophthalmic lens OR optometry when:6y',
+    "device":      'ophthalmic device OR ophthalmology equipment when:6y',
+    "pharma":      'ophthalmology drug OR dry eye OR cataract treatment when:6y',
+    "health":      'eye health OR vision care awareness when:6y',
+    "industry":    'eyecare industry OR vision care market OR optical retail when:6y',
 }
-RETMAX = 18  # 每分類則數(全球需逐則翻譯,取適中值以免拖太久)
+RETMAX = 30  # 每分類則數(近6年;全球逐則翻譯,取適中值)
 
 
 def _get(url):

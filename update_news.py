@@ -13,19 +13,19 @@ from email.utils import parsedate_to_datetime
 BASE = "https://news.google.com/rss/search"
 UA = "Mozilla/5.0 (myopia-hub news bot)"
 
-# 每個分類的搜尋關鍵字(Google News 查詢語法;when:6m = 近半年,提升時效)
+# 每個分類的搜尋關鍵字(Google News;when:6y = 近六年,惟 Google News RSS 多僅回溯約1年)
 QUERIES = {
-    "myopia":      '近視控制 OR 近視防控 OR 角膜塑型 when:6m',
-    "contactlens": '隱形眼鏡 when:6m',
-    "lens":        '(鏡片 OR 驗光 OR 眼鏡) 光學 when:6m',
-    "device":      '眼科 (醫材 OR 器材 OR 儀器) when:6m',
-    "pharma":      '(眼藥 OR 乾眼 OR 白內障 OR 青光眼) when:6m',
-    "health":      '視力保健 OR 護眼 OR 眼睛健康 when:6m',
-    "industry":    '(眼科 OR 光學 OR 隱形眼鏡) (產業 OR 營收 OR 上市 OR 公司) when:6m',
-    "events":      '(眼科 OR 視光 OR 近視 OR 隱形眼鏡 OR 角膜塑型) (講座 OR 衛教 OR 活動 OR 體驗會 OR 發表會 OR 記者會 OR 義診) when:6m',
+    "myopia":      '近視控制 OR 近視防控 OR 角膜塑型 when:6y',
+    "contactlens": '隱形眼鏡 when:6y',
+    "lens":        '(鏡片 OR 驗光 OR 眼鏡) 光學 when:6y',
+    "device":      '眼科 (醫材 OR 器材 OR 儀器) when:6y',
+    "pharma":      '(眼藥 OR 乾眼 OR 白內障 OR 青光眼) when:6y',
+    "health":      '視力保健 OR 護眼 OR 眼睛健康 when:6y',
+    "industry":    '(眼科 OR 光學 OR 隱形眼鏡) (產業 OR 營收 OR 上市 OR 公司) when:6y',
+    "events":      '(眼科 OR 視光 OR 近視 OR 隱形眼鏡 OR 角膜塑型) (講座 OR 衛教 OR 活動 OR 體驗會 OR 發表會 OR 記者會 OR 義診) when:6y',
 }
-RETMAX = 40  # 每分類最多幾則(取最新)
-MAXAGE_DAYS = 210  # 硬性時效上限:丟棄 pubDate 早於此天數、或無日期者
+RETMAX = 80  # 每分類最多幾則(近6年取最新)
+MAXAGE_DAYS = 2200  # 近6年上限:丟棄早於此天數者(無日期仍保留)
 
 
 def fetch(query):
@@ -85,10 +85,8 @@ def parse(raw, limit):
                 date = parsedate_to_datetime(pd).astimezone().strftime("%Y-%m-%d")
             except Exception:
                 date = ""
-        # 時效把關:無日期或早於 MAXAGE 一律丟棄
-        if not date:
-            continue
-        if date < _cutoff():
+        # 近6年上限:有日期且早於 6 年則丟棄;無日期仍保留
+        if date and date < _cutoff():
             continue
         summary = strip_html(it.findtext("description"))
         if len(summary) > 180:
