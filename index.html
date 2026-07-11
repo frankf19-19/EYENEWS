@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- 眼視光 Eye-Vision Hub | build r58 | 2026-07-11 | 公司資料全面查證+版本標示 -->
+<!-- 眼視光 Eye-Vision Hub | build r59 | 2026-07-11 | 公司資料全面查證+版本標示 -->
 <html lang="zh-Hant">
 <head>
 <meta charset="UTF-8">
@@ -234,6 +234,10 @@ h2{font-weight:700;font-size:clamp(24px,3vw,32px);margin:0 0 6px}
 .news-tag:hover{background:var(--accent);color:#fff}
 .lit-badges{display:flex;flex-wrap:wrap;gap:6px;margin:6px 0 2px}
 .lit-badge{font-size:12px;border-radius:6px;padding:2px 9px;font-weight:600;line-height:1.5;background:var(--accent-soft);color:var(--accent);border:1px solid var(--accent)}
+.clin-subtabs{display:flex;gap:9px;margin:6px 0 20px;flex-wrap:wrap}
+.clin-sub{background:var(--card);color:var(--ink-soft);border:1px solid var(--line);border-radius:11px;padding:11px 22px;font-size:15px;font-weight:700;cursor:pointer;font-family:var(--sans);transition:.15s}
+.clin-sub:hover{border-color:var(--accent);color:var(--accent-ink)}
+.clin-sub.on{background:var(--accent);color:#fff;border-color:var(--accent)}
 .lit-search-row{display:flex;align-items:center;gap:12px;margin:2px 0 14px;flex-wrap:wrap}
 #litSearch{flex:1;min-width:240px;padding:11px 15px;border:1px solid var(--line);border-radius:10px;font-size:14.5px;background:var(--card);color:var(--ink);font-family:var(--sans)}
 #litSearch:focus{outline:none;border-color:var(--accent);box-shadow:0 0 0 3px var(--accent-soft)}
@@ -457,7 +461,7 @@ footer .build{margin-top:8px;font-size:11px}
       <a data-view="about">關於</a>
     </nav>
     <div class="topbar-right">
-      <span class="ver" title="版本(部署後對照用)">r58</span>
+      <span class="ver" title="版本(部署後對照用)">r59</span>
       <button id="backBtn" type="button" aria-label="返回上一頁">← 返回</button>
     </div>
   </div>
@@ -638,14 +642,20 @@ footer .build{margin-top:8px;font-size:11px}
 <!-- ======= CLINICAL LITERATURE ======= -->
 <section class="sec" id="clinical-body">
   <div class="wrap">
-    <span class="sec-eye">CLINICAL LITERATURE</span>
-    <h2>臨床文獻</h2>
-    <p class="sec-sub">每日自動整合 <b>PubMed(NCBI)</b> 與 <b>Europe PMC</b>(全球更廣、含全文與預印本),以<b>相關性/高被引</b><b>跨年代收錄(不限年份,含經典 landmark 文獻)</b>,每類最多 120 篇。每則標註 🌍<b>國家</b>、🔬<b>研究類型</b>(RCT／統合分析…)與<b>臨床效果/結論</b>,可搜尋標題與摘要內文;可用下方<b>年份篩選</b>切換年代。中文為免費自動翻譯(僅供快速理解,正確內容以原文為準)。</p>
+    <span class="sec-eye">CLINICAL EVIDENCE</span>
+    <h2>臨床文獻與試驗</h2>
+    <p class="sec-sub">整合臨床證據:發表<b>文獻</b>(PubMed + Europe PMC)與全球<b>臨床試驗</b>(ClinicalTrials.gov)。下方切換,皆可依類別/狀態搜尋、附中文重點與一鍵解析。</p>
+    <div class="clin-subtabs">
+      <button class="clin-sub on" data-sub="lit" type="button">📄 臨床文獻</button>
+      <button class="clin-sub" data-sub="trial" type="button">🧪 臨床試驗(全球)</button>
+    </div>
+    <div id="clin-lit">
     <div class="panel lit-panel">
       <div class="lit-head">
         <h3>臨床文獻(依類別)· 附中文重點</h3>
         <span class="upd-badge">● 最後更新 <span id="updTime">載入中…</span></span>
       </div>
+      <p class="lit-sub">每日整合 <b>PubMed</b> 與 <b>Europe PMC</b>,以相關性/高被引<b>跨年代收錄(不限年份,含經典)</b>;每則標 🌍國家、🔬類型、臨床效果/結論。可用<b>年份篩選</b>與搜尋(標題+摘要)。中文為免費自動翻譯。</p>
       <div class="lit-search-row">
         <input id="litSearch" type="search" placeholder="搜尋臨床文獻:關鍵字／期刊／國家／類型／PMID(可空格多字)" aria-label="搜尋臨床文獻">
         <span id="litCount" class="lit-count"></span>
@@ -654,8 +664,10 @@ footer .build{margin-top:8px;font-size:11px}
       <div class="range-row" id="litYears"></div>
       <div class="feed" id="feed"></div>
     </div>
+    </div><!-- /clin-lit -->
 
-    <div class="panel lit-panel" style="margin-top:26px">
+    <div id="clin-trial" hidden>
+    <div class="panel lit-panel">
       <div class="lit-head">
         <h3>臨床試驗(全球)· ClinicalTrials.gov</h3>
         <span class="upd-badge">● 最後更新 <span id="trialUpd">載入中…</span></span>
@@ -669,6 +681,7 @@ footer .build{margin-top:8px;font-size:11px}
       <div class="range-row" id="trialStatus"></div>
       <div class="feed" id="trialFeed"></div>
     </div>
+    </div><!-- /clin-trial -->
   </div>
 </section>
 </section><!-- /view-clinical -->
@@ -690,7 +703,7 @@ footer .build{margin-top:8px;font-size:11px}
   <div class="wrap">
     眼視光資訊中心 · Eye-Vision Industry Hub<br>
     資料來源:Google News · PubMed / NCBI · 每日/每 6 小時自動更新
-    <div class="build">build r58 · <span id="buildStamp"></span></div>
+    <div class="build">build r59 · <span id="buildStamp"></span></div>
   </div>
 </footer>
 
@@ -1865,6 +1878,18 @@ document.addEventListener('click',function(e){
     setTimeout(function(){ask.textContent=old;},4000);
     return;}
 });
+(function(){
+  const st=document.querySelector('.clin-subtabs');
+  if(!st)return;
+  st.addEventListener('click',function(e){
+    const b=e.target.closest('.clin-sub'); if(!b)return;
+    document.querySelectorAll('.clin-sub').forEach(x=>x.classList.toggle('on',x===b));
+    const sub=b.dataset.sub;
+    const lit=document.getElementById('clin-lit'), tr=document.getElementById('clin-trial');
+    if(lit)lit.hidden=(sub!=='lit');
+    if(tr)tr.hidden=(sub!=='trial');
+  });
+})();
 document.getElementById('buildStamp').textContent=new Date().toISOString().slice(0,10);
 </script>
 </body>
