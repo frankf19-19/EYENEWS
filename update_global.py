@@ -28,6 +28,7 @@ QUERIES = {
     "industry":    'eyecare industry OR vision care market OR optical retail when:6y',
     "business":    '(eyecare OR ophthalmic OR "contact lens" OR "vision care") (earnings OR revenue OR sales OR profit OR guidance OR stock OR quarterly) when:6y',
     "deal":        '(eyecare OR ophthalmic OR "vision care" OR optical) (acquisition OR merger OR acquires OR investment OR IPO OR partnership OR "private equity") when:6y',
+    "eyewear":     'site:ewintelligence.com OR "eyewear industry" OR "eyewear market" OR "optical retail" OR "spectacle market" when:6y',
 }
 RETMAX = 30  # 每分類則數(近6年;全球逐則翻譯,取適中值)
 
@@ -62,7 +63,7 @@ def translate_zh(text):
     try:
         q = urllib.parse.urlencode({"client": "gtx", "sl": "auto", "tl": "zh-TW",
                                     "dt": "t", "q": text})
-        raw = _get(f"{TAPI}?{q}", timeout=20, retries=2)
+        raw = _get(f"{TAPI}?{q}", timeout=20, retries=3)
         if not raw:
             return ""
         data = json.loads(raw)
@@ -86,7 +87,7 @@ def translate_batch(texts, budget_until, chunk=20):
             for k, ln in enumerate(lines):
                 if ln.strip():
                     out[start + k] = ln.strip()
-        time.sleep(0.2)
+        time.sleep(0.6)
     return out
 
 
@@ -174,7 +175,7 @@ def main():
 
     # 重點:預設用免費 Google 翻譯把標題翻成繁中
     if not API_KEY and flat:
-        budget = time.time() + 120  # 翻譯階段最多 2 分鐘,避免卡住
+        budget = time.time() + 300  # 翻譯階段最多 5 分鐘(放慢避免被限流,提高中文覆蓋)
         zhmap = translate_batch([a["title"] for a in flat], budget)
         for i, a in enumerate(flat):
             if zhmap.get(i):

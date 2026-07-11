@@ -53,7 +53,7 @@ def _get(url, retries=3):
     return None
 
 
-def esearch(query, sort="date", reldate=RELDATE_DAYS, retmax=RETMAX):
+def esearch(query, sort="date", reldate=None, retmax=RETMAX):
     p = {"db": "pubmed", "term": query, "retmax": retmax,
          "sort": sort, "datetype": "pdat"}
     if reldate:
@@ -178,7 +178,7 @@ def efetch(pmids):
 
 
 # ---- 免費翻譯(translate.googleapis.com,無需金鑰) ----
-def translate(text, retries=2):
+def translate(text, retries=3):
     text = (text or "").strip()
     if not text:
         return ""
@@ -194,7 +194,7 @@ def translate(text, retries=2):
             return "".join(seg[0] for seg in data[0] if seg and seg[0]).strip()
         except Exception as e:
             sys.stderr.write(f"  translate retry {i+1}: {e}\n")
-            time.sleep(1.5)
+            time.sleep(2.5)
     return ""
 
 
@@ -212,7 +212,7 @@ def translate_batch(texts, budget_until, chunk=20):
             for k, ln in enumerate(lines):
                 if ln.strip():
                     out[start + k] = ln.strip()
-        time.sleep(0.2)
+        time.sleep(0.6)
     return out
 
 
@@ -316,15 +316,17 @@ def main():
     flat = []
     for key, query in QUERIES.items():
         sys.stderr.write(f"[{key}] searching…\n")
-        # 全年代重要文獻(相關性,不限年份)+ 最新文獻(依日期);取聯集,跨越所有年代
-        ids_rel = esearch(query, sort="relevance", reldate=None, retmax=80)
+        # 強制跨年代:分三個發表年代區間各抓一批(舊經典不會被最新擠掉)
+        ids_new = esearch(query, sort="date", retmax=45)                                  # 最新
         time.sleep(0.34 if API_KEY else 0.5)
-        ids_new = esearch(query, sort="date", reldate=None, retmax=30)
+        ids_mid = esearch(query + " AND 2012:2020[dp]", sort="relevance", retmax=35)      # 2010年代
         time.sleep(0.34 if API_KEY else 0.5)
-        pmids = list(dict.fromkeys(ids_rel + ids_new))[:120]
+        ids_old = esearch(query + " AND 1995:2012[dp]", sort="relevance", retmax=30)      # 更早經典
+        time.sleep(0.34 if API_KEY else 0.5)
+        pmids = list(dict.fromkeys(ids_new + ids_mid + ids_old))[:130]
         arts = efetch(pmids)
         time.sleep(0.4 if API_KEY else 0.6)
-        epmc = europepmc(query, 60)
+        epmc = europepmc(query, 50)                                                      # 全年代高被引
         time.sleep(0.3)
         merged = merge_dedup(arts, epmc, cap=RETMAX)
         result["items"][key] = merged
@@ -334,10 +336,10 @@ def main():
 
     # 免費中文翻譯:標題一批、重點一批;各設時間預算避免卡住
     if flat:
-        t_titles = translate_batch([a.get("title", "") for a in flat], time.time() + 150)
+        t_titles = translate_batch([a.get("title", "") for a in flat], time.time() + 300)
         for i, a in enumerate(flat):
             a["zh"] = t_titles.get(i, "")
-        t_sums = translate_batch([a.get("summary", "") for a in flat], time.time() + 150)
+        t_sums = translate_batch([a.get("summary", "") for a in flat], time.time() + 300)
         for i, a in enumerate(flat):
             a["zh_sum"] = t_sums.get(i, "")
 
