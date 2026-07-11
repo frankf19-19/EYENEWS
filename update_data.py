@@ -30,7 +30,7 @@ QUERIES = {
 }
 
 RELDATE_DAYS = 3650   # 近 10 年
-RETMAX = 45           # 每類最多 45 篇(近10年取最新、更完整)
+RETMAX = 80           # 每類最多 80 篇(PubMed+EuropePMC 合併、近10年)
 
 
 def _params(extra):
@@ -215,10 +215,103 @@ def translate_batch(texts, budget_until, chunk=20):
     return out
 
 
+EUROPEPMC = "https://www.ebi.ac.uk/europepmc/webservices/rest/search"
+
+
+def _striptxt(s):
+    s = re.sub(r"<[^>]+>", " ", s or "")
+    return re.sub(r"\s+", " ", s).strip()
+
+
+def country_from_text(text):
+    text = (text or "").rstrip(". ")
+    if not text:
+        return ""
+    segs = [s.strip() for s in text.split(",") if s.strip()]
+    tail = ", ".join(segs[-2:]) if len(segs) >= 2 else text
+    tl = " " + tail.lower() + " "
+    for kw, zh in COUNTRY_MAP:
+        if kw.lower() in tl:
+            return zh
+    return ""
+
+
+def ptype_from_list(types):
+    tset = set(x for x in (types or []) if isinstance(x, str))
+    for kw, zh in PTYPE_PRIORITY:
+        if kw in tset:
+            return zh
+    return ""
+
+
+def europepmc(query, retmax):
+    """Europe PMC REST(免金鑰):涵蓋 PubMed 之外的全球文獻/全文/預印本。"""
+    since = (datetime.date.today() - datetime.timedelta(days=RELDATE_DAYS)).isoformat()
+    today = datetime.date.today().isoformat()
+    q = f"({query}) AND (FIRST_PDATE:[{since} TO {today}])"
+    url = EUROPEPMC + "?" + urllib.parse.urlencode({
+        "query": q, "format": "json", "pageSize": str(min(retmax, 100)),
+        "resultType": "core", "sort": "P_PDATE_D desc",
+    })
+    raw = _get(url)
+    if not raw:
+        return []
+    try:
+        data = json.loads(raw.decode("utf-8"))
+    except Exception:
+        return []
+    out = []
+    for r in ((data.get("resultList") or {}).get("result") or []):
+        title = _striptxt(r.get("title", "")).rstrip(".")
+        if not title:
+            continue
+        pmid = str(r.get("pmid", "") or "")
+        journal = (((r.get("journalInfo") or {}).get("journal") or {}).get("title")
+                   or r.get("journalTitle") or "")
+        date = (r.get("firstPublicationDate") or r.get("pubYear") or "")
+        full = _striptxt(r.get("abstractText", ""))
+        summary = full
+        if len(summary) > 340:
+            cut = summary[:340]
+            dot = cut.rfind(". ")
+            summary = (cut[:dot + 1] if dot > 170 else cut) + " …"
+        abstract = full[:900]
+        ptl = (r.get("pubTypeList") or {}).get("pubType")
+        if isinstance(ptl, str):
+            ptl = [ptl]
+        ptype = ptype_from_list(ptl)
+        aff = ""
+        try:
+            a0 = ((r.get("authorList") or {}).get("author") or [])[0]
+            det = (a0.get("authorAffiliationDetailsList") or {}).get("authorAffiliation") or []
+            if det:
+                aff = det[0].get("affiliation", "")
+        except Exception:
+            aff = ""
+        if not aff:
+            aff = r.get("affiliation", "") or ""
+        out.append({"title": title, "journal": journal, "date": (date or "")[:10],
+                    "pmid": pmid, "summary": summary, "abstract": abstract,
+                    "country": country_from_text(aff), "ptype": ptype})
+    return out
+
+
+def merge_dedup(a, b, cap):
+    seen, merged = set(), []
+    for it in list(a) + list(b):
+        k = (it.get("pmid") or "").strip() or re.sub(r"\W+", "", (it.get("title") or "").lower())[:80]
+        if not k or k in seen:
+            continue
+        seen.add(k)
+        merged.append(it)
+    merged.sort(key=lambda x: (x.get("date") or ""), reverse=True)
+    return merged[:cap]
+
+
 def main():
     result = {
         "updated": datetime.datetime.utcnow().strftime("%Y-%m-%d %H:%M UTC"),
-        "source": "PubMed / NCBI E-utilities;中文為免費自動翻譯",
+        "source": "PubMed(NCBI)+ Europe PMC;近10年;中文為免費自動翻譯",
         "items": {},
     }
     flat = []
@@ -228,9 +321,12 @@ def main():
         time.sleep(0.4 if API_KEY else 0.6)
         arts = efetch(pmids)
         time.sleep(0.4 if API_KEY else 0.6)
-        result["items"][key] = arts
-        flat.extend(arts)
-        sys.stderr.write(f"[{key}] {len(arts)} articles\n")
+        epmc = europepmc(query, RETMAX)
+        time.sleep(0.3)
+        merged = merge_dedup(arts, epmc, RETMAX)
+        result["items"][key] = merged
+        flat.extend(merged)
+        sys.stderr.write(f"[{key}] PubMed {len(arts)} + EuropePMC {len(epmc)} -> {len(merged)}\n")
 
     # 免費中文翻譯:標題一批、重點一批;各設時間預算避免卡住
     if flat:
