@@ -1,0 +1,33 @@
+name: Update global news
+
+on:
+  schedule:
+    - cron: '30 22 * * *'      # 每日 22:30 UTC ≈ 台灣隔日 06:30
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  global:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Fetch global myopia news (+key points)
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}   # 選填:設了才會產生繁中重點
+        run: python update_global.py
+      - name: Commit global_news.json
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          if [ -n "$(git status --porcelain global_news.json)" ]; then
+            git add global_news.json
+            git commit -m "chore: auto-update global news ($(date -u +%Y-%m-%d))"
+            git push
+          else
+            echo "No changes to global_news.json"
+          fi

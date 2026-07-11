@@ -1,0 +1,31 @@
+name: Update Taiwan market news
+
+on:
+  schedule:
+    - cron: '0 */6 * * *'      # 每 6 小時(每天 4 次)
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  news:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Fetch Taiwan myopia-control news
+        run: python update_news.py
+      - name: Commit news.json
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          if [ -n "$(git status --porcelain news.json)" ]; then
+            git add news.json
+            git commit -m "chore: auto-update Taiwan market news ($(date -u +%Y-%m-%dT%H:%MZ))"
+            git push
+          else
+            echo "No changes to news.json"
+          fi
