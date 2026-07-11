@@ -30,7 +30,7 @@ QUERIES = {
 }
 
 RELDATE_DAYS = 3650   # 近 10 年
-RETMAX = 80           # 每類最多 80 篇(PubMed+EuropePMC 合併、近10年)
+RETMAX = 120          # 每類上限(檔案大小考量;不限年份,跨年代收錄)
 
 
 def _params(extra):
@@ -53,11 +53,12 @@ def _get(url, retries=3):
     return None
 
 
-def esearch(query):
-    url = f"{EUTILS}/esearch.fcgi?" + _params({
-        "db": "pubmed", "term": query, "retmax": RETMAX,
-        "sort": "date", "datetype": "pdat", "reldate": RELDATE_DAYS,
-    })
+def esearch(query, sort="date", reldate=RELDATE_DAYS, retmax=RETMAX):
+    p = {"db": "pubmed", "term": query, "retmax": retmax,
+         "sort": sort, "datetype": "pdat"}
+    if reldate:
+        p["reldate"] = reldate
+    url = f"{EUTILS}/esearch.fcgi?" + _params(p)
     raw = _get(url)
     if not raw:
         return []
@@ -246,12 +247,9 @@ def ptype_from_list(types):
 
 def europepmc(query, retmax):
     """Europe PMC REST(免金鑰):涵蓋 PubMed 之外的全球文獻/全文/預印本。"""
-    since = (datetime.date.today() - datetime.timedelta(days=RELDATE_DAYS)).isoformat()
-    today = datetime.date.today().isoformat()
-    q = f"({query}) AND (FIRST_PDATE:[{since} TO {today}])"
     url = EUROPEPMC + "?" + urllib.parse.urlencode({
-        "query": q, "format": "json", "pageSize": str(min(retmax, 100)),
-        "resultType": "core", "sort": "P_PDATE_D desc",
+        "query": query, "format": "json", "pageSize": str(min(retmax, 100)),
+        "resultType": "core", "sort": "CITED desc",   # 高被引=全年代最具影響力(不限年份)
     })
     raw = _get(url)
     if not raw:
@@ -296,37 +294,43 @@ def europepmc(query, retmax):
     return out
 
 
-def merge_dedup(a, b, cap):
+def merge_dedup(*lists, cap=None):
+    """依傳入順序(相關性→最新→高被引)去重保留,不依日期截斷,才能保住舊經典。"""
     seen, merged = set(), []
-    for it in list(a) + list(b):
-        k = (it.get("pmid") or "").strip() or re.sub(r"\W+", "", (it.get("title") or "").lower())[:80]
-        if not k or k in seen:
-            continue
-        seen.add(k)
-        merged.append(it)
-    merged.sort(key=lambda x: (x.get("date") or ""), reverse=True)
-    return merged[:cap]
+    for lst in lists:
+        for it in (lst or []):
+            k = (it.get("pmid") or "").strip() or re.sub(r"\W+", "", (it.get("title") or "").lower())[:80]
+            if not k or k in seen:
+                continue
+            seen.add(k)
+            merged.append(it)
+    return merged[:cap] if cap else merged
 
 
 def main():
     result = {
         "updated": datetime.datetime.utcnow().strftime("%Y-%m-%d %H:%M UTC"),
-        "source": "PubMed(NCBI)+ Europe PMC;近10年;中文為免費自動翻譯",
+        "source": "PubMed(NCBI)+ Europe PMC;不限年份(相關性/高被引跨年代);中文為免費自動翻譯",
         "items": {},
     }
     flat = []
     for key, query in QUERIES.items():
         sys.stderr.write(f"[{key}] searching…\n")
-        pmids = esearch(query)
-        time.sleep(0.4 if API_KEY else 0.6)
+        # 全年代重要文獻(相關性,不限年份)+ 最新文獻(依日期);取聯集,跨越所有年代
+        ids_rel = esearch(query, sort="relevance", reldate=None, retmax=80)
+        time.sleep(0.34 if API_KEY else 0.5)
+        ids_new = esearch(query, sort="date", reldate=None, retmax=30)
+        time.sleep(0.34 if API_KEY else 0.5)
+        pmids = list(dict.fromkeys(ids_rel + ids_new))[:120]
         arts = efetch(pmids)
         time.sleep(0.4 if API_KEY else 0.6)
-        epmc = europepmc(query, RETMAX)
+        epmc = europepmc(query, 60)
         time.sleep(0.3)
-        merged = merge_dedup(arts, epmc, RETMAX)
+        merged = merge_dedup(arts, epmc, cap=RETMAX)
         result["items"][key] = merged
         flat.extend(merged)
-        sys.stderr.write(f"[{key}] PubMed {len(arts)} + EuropePMC {len(epmc)} -> {len(merged)}\n")
+        yrs = sorted({(a.get("date") or "")[:4] for a in merged if a.get("date")})
+        sys.stderr.write(f"[{key}] PubMed {len(arts)} + EuropePMC {len(epmc)} -> {len(merged)} 篇,年份 {yrs[:1]}..{yrs[-1:]} \n")
 
     # 免費中文翻譯:標題一批、重點一批;各設時間預算避免卡住
     if flat:

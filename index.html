@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- 眼視光 Eye-Vision Hub | build r52 | 2026-07-11 | 公司資料全面查證+版本標示 -->
+<!-- 眼視光 Eye-Vision Hub | build r54 | 2026-07-11 | 公司資料全面查證+版本標示 -->
 <html lang="zh-Hant">
 <head>
 <meta charset="UTF-8">
@@ -443,7 +443,7 @@ footer .build{margin-top:8px;font-size:11px}
       <a data-view="about">關於</a>
     </nav>
     <div class="topbar-right">
-      <span class="ver" title="版本(部署後對照用)">r52</span>
+      <span class="ver" title="版本(部署後對照用)">r54</span>
       <button id="backBtn" type="button" aria-label="返回上一頁">← 返回</button>
     </div>
   </div>
@@ -626,7 +626,7 @@ footer .build{margin-top:8px;font-size:11px}
   <div class="wrap">
     <span class="sec-eye">CLINICAL LITERATURE</span>
     <h2>臨床文獻</h2>
-    <p class="sec-sub">每日自動整合 <b>PubMed(NCBI)</b> 與 <b>Europe PMC</b>(全球更廣、含全文與預印本),依眼視光/眼科類別彙整近<b>十年</b>、每類最多 80 篇文獻。每則標註 🌍<b>國家</b>、🔬<b>研究類型</b>(RCT／統合分析…)與<b>臨床效果/結論</b>,可搜尋標題與摘要內文;中文為免費自動翻譯(僅供快速理解,正確內容以原文為準)。</p>
+    <p class="sec-sub">每日自動整合 <b>PubMed(NCBI)</b> 與 <b>Europe PMC</b>(全球更廣、含全文與預印本),以<b>相關性/高被引</b><b>跨年代收錄(不限年份,含經典 landmark 文獻)</b>,每類最多 120 篇。每則標註 🌍<b>國家</b>、🔬<b>研究類型</b>(RCT／統合分析…)與<b>臨床效果/結論</b>,可搜尋標題與摘要內文;可用下方<b>年份篩選</b>切換年代。中文為免費自動翻譯(僅供快速理解,正確內容以原文為準)。</p>
     <div class="panel lit-panel">
       <div class="lit-head">
         <h3>臨床文獻(依類別)· 附中文重點</h3>
@@ -637,6 +637,7 @@ footer .build{margin-top:8px;font-size:11px}
         <span id="litCount" class="lit-count"></span>
       </div>
       <div class="lit-tabs" id="litTabs"></div>
+      <div class="range-row" id="litYears"></div>
       <div class="feed" id="feed"></div>
     </div>
   </div>
@@ -660,7 +661,7 @@ footer .build{margin-top:8px;font-size:11px}
   <div class="wrap">
     眼視光資訊中心 · Eye-Vision Industry Hub<br>
     資料來源:Google News · PubMed / NCBI · 每日/每 6 小時自動更新
-    <div class="build">build r52 · <span id="buildStamp"></span></div>
+    <div class="build">build r54 · <span id="buildStamp"></span></div>
   </div>
 </footer>
 
@@ -982,7 +983,7 @@ function renderFeedTabs(active){
     `<button class="lit-tab ${t.k===active?'on':''}" data-k="${t.k}">${t.l}</button>`).join('');
 }
 
-let LIT_DATA=null, ACTIVE_TAB="all", LIT_QUERY="";
+let LIT_DATA=null, ACTIVE_TAB="all", LIT_QUERY="", LIT_YEARS="all";
 
 function litItemHTML(it){
   const link=it.pmid?`https://pubmed.ncbi.nlm.nih.gov/${it.pmid}/`:"#";
@@ -1004,6 +1005,21 @@ function litItemHTML(it){
   </div>`;
 }
 
+function renderLitYears(){
+  const el=document.getElementById('litYears'); if(!el)return;
+  const opts=[["all","全部"],["3","近3年"],["6","近6年"],["old","6年以上(經典)"]];
+  el.innerHTML=opts.map(o=>`<button class="range-btn ${o[0]===LIT_YEARS?'on':''}" data-y="${o[0]}">${o[1]}</button>`).join('');
+}
+function yearOK(it){
+  if(LIT_YEARS==='all')return true;
+  const yr=parseInt((it.date||'').slice(0,4),10)||0;
+  const y=new Date().getFullYear();
+  if(!yr)return false;
+  if(LIT_YEARS==='3')return yr>=y-3;
+  if(LIT_YEARS==='6')return yr>=y-6;
+  if(LIT_YEARS==='old')return yr<y-6;
+  return true;
+}
 function litMatch(it,q){
   if(!q)return true;
   const hay=[it.title,it.zh,it.summary,it.zh_sum,it.abstract,it.journal,it.country,it.ptype,it.pmid,LIT_LABEL[it._key]].filter(Boolean).join(' ').toLowerCase();
@@ -1017,6 +1033,7 @@ function renderFeed(){
     (LIT_DATA.items[k]||[]).forEach(it=>items.push(Object.assign({_key:k},it)));
   });
   if(ACTIVE_TAB!=="all")items=items.filter(i=>i._key===ACTIVE_TAB);
+  items=items.filter(yearOK);
   const q=(LIT_QUERY||'').trim();
   if(q)items=items.filter(i=>litMatch(i,q));
   items.sort((a,b)=>(b.date||'').localeCompare(a.date||''));
@@ -1031,7 +1048,12 @@ function applyLit(data){
   LIT_DATA=data;
   document.getElementById('updTime').textContent=data.updated||"—";
   renderFeedTabs("all");
+  renderLitYears();
   renderFeed();
+  document.getElementById('litYears').addEventListener('click',e=>{
+    const b=e.target.closest('.range-btn'); if(!b)return;
+    LIT_YEARS=b.dataset.y; renderLitYears(); renderFeed();
+  });
   document.getElementById('litTabs').addEventListener('click',e=>{
     const b=e.target.closest('.lit-tab'); if(!b)return;
     ACTIVE_TAB=b.dataset.k;
