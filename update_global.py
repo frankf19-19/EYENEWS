@@ -26,19 +26,21 @@ QUERIES = {
     "pharma":      'ophthalmology drug OR dry eye OR cataract treatment when:6y',
     "health":      'eye health OR vision care awareness when:6y',
     "industry":    'eyecare industry OR vision care market OR optical retail when:6y',
+    "business":    '(eyecare OR ophthalmic OR "contact lens" OR "vision care") (earnings OR revenue OR sales OR profit OR guidance OR stock OR quarterly) when:6y',
+    "deal":        '(eyecare OR ophthalmic OR "vision care" OR optical) (acquisition OR merger OR acquires OR investment OR IPO OR partnership OR "private equity") when:6y',
 }
 RETMAX = 30  # 每分類則數(近6年;全球逐則翻譯,取適中值)
 
 
-def _get(url):
-    for i in range(3):
+def _get(url, timeout=40, retries=3):
+    for i in range(retries):
         try:
             req = urllib.request.Request(url, headers={"User-Agent": UA})
-            with urllib.request.urlopen(req, timeout=40) as r:
+            with urllib.request.urlopen(req, timeout=timeout) as r:
                 return r.read()
         except Exception as e:
             sys.stderr.write(f"  retry {i+1}: {e}\n")
-            time.sleep(2 + 2 * i)
+            time.sleep(1 + i)
     return None
 
 
@@ -60,7 +62,7 @@ def translate_zh(text):
     try:
         q = urllib.parse.urlencode({"client": "gtx", "sl": "auto", "tl": "zh-TW",
                                     "dt": "t", "q": text})
-        raw = _get(f"{TAPI}?{q}")
+        raw = _get(f"{TAPI}?{q}", timeout=20, retries=2)
         if not raw:
             return ""
         data = json.loads(raw)
@@ -69,6 +71,26 @@ def translate_zh(text):
         sys.stderr.write(f"  translate skip: {e}\n")
         return ""
 
+
+def translate_batch(texts, budget_until, chunk=20):
+    """批次翻譯:一次送多則(以換行分隔),大幅減少請求數;超過時間預算即停。"""
+    out = {}
+    for start in range(0, len(texts), chunk):
+        if time.time() > budget_until:
+            sys.stderr.write("translate budget reached — stop translating\n")
+            break
+        part = [(texts[start + k] or "").replace("\n", " ").strip() for k in range(min(chunk, len(texts) - start))]
+        zh = translate_zh("\n".join(part))
+        lines = [x for x in zh.split("\n")] if zh else []
+        if len(lines) == len(part):
+            for k, ln in enumerate(lines):
+                if ln.strip():
+                    out[start + k] = ln.strip()
+        time.sleep(0.2)
+    return out
+
+
+CLUSTER_RE = re.compile(r'(相關報導|相關新聞|最新消息|懶人包|Google News)\s*$', re.I)
 
 def parse(raw, limit):
     out = []
@@ -85,6 +107,9 @@ def parse(raw, limit):
         source = (src_el.text.strip() if src_el is not None and src_el.text else "")
         if source and title.endswith(" - " + source):
             title = title[: -(len(source) + 3)].strip()
+        # 丟棄 Google News 主題叢集/彙整(日期非文章真實日期)
+        if CLUSTER_RE.search(title):
+            continue
         date = ""
         pd = it.findtext("pubDate")
         if pd:
@@ -92,6 +117,9 @@ def parse(raw, limit):
                 date = parsedate_to_datetime(pd).astimezone().strftime("%Y-%m-%d")
             except Exception:
                 date = ""
+        # 無真實日期一律丟棄(避免舊聞被當成新聞)
+        if not date:
+            continue
         summary = strip_html(it.findtext("description"))
         if len(summary) > 180:
             summary = summary[:180] + "…"
@@ -100,6 +128,7 @@ def parse(raw, limit):
                         "date": date, "summary": summary})
         if len(out) >= limit:
             break
+    out.sort(key=lambda x: x.get("date", ""), reverse=True)  # 新到舊
     return out
 
 
@@ -144,12 +173,12 @@ def main():
         time.sleep(1.0)
 
     # 重點:預設用免費 Google 翻譯把標題翻成繁中
-    if not API_KEY:
-        for a in flat:
-            zh = translate_zh(a["title"])
-            if zh:
-                a["keypoint"] = zh
-            time.sleep(0.3)
+    if not API_KEY and flat:
+        budget = time.time() + 120  # 翻譯階段最多 2 分鐘,避免卡住
+        zhmap = translate_batch([a["title"] for a in flat], budget)
+        for i, a in enumerate(flat):
+            if zhmap.get(i):
+                a["keypoint"] = zhmap[i]
     else:
         pts = claude_keypoints(flat)
         for i, a in enumerate(flat):

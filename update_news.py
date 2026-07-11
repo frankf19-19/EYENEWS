@@ -57,6 +57,9 @@ def _cutoff():
     return d.strftime('%Y-%m-%d')
 
 
+# Google News 主題叢集/彙整項目:標題泛稱結尾,日期是彙整時間而非文章日期,一律丟棄
+CLUSTER_RE = re.compile(r'(相關報導|相關新聞|相關消息|最新消息|專題報導|懶人包|一次看|總整理|Google News)\s*$')
+
 def parse(raw, limit):
     out = []
     seen = set()
@@ -75,11 +78,14 @@ def parse(raw, limit):
         # Google News 標題常是 "標題 - 來源",去掉尾巴來源
         if source and title.endswith(" - " + source):
             title = title[: -(len(source) + 3)].strip()
+        # 丟棄 Google News 主題叢集/彙整(標題泛稱、日期非文章真實日期)
+        if CLUSTER_RE.search(title):
+            continue
         key = re.sub(r"\s+", "", title)
         if not title or not link or key in seen:
             continue
         seen.add(key)
-        # date
+        # date(只信任 RSS pubDate)
         date = ""
         pd = it.findtext("pubDate")
         if pd:
@@ -87,8 +93,10 @@ def parse(raw, limit):
                 date = parsedate_to_datetime(pd).astimezone().strftime("%Y-%m-%d")
             except Exception:
                 date = ""
-        # 近6年上限:有日期且早於 6 年則丟棄;無日期仍保留
-        if date and date < _cutoff():
+        # 無真實日期一律丟棄(避免舊聞被當成新聞);有日期且早於 6 年也丟棄
+        if not date:
+            continue
+        if date < _cutoff():
             continue
         summary = strip_html(it.findtext("description"))
         if len(summary) > 180:
