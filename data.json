@@ -1,24 +1,270 @@
 {
-  "updated": "初始資料 · 待 GitHub Actions 首次執行後自動更新",
+  "updated": "2026-07-11 07:13 UTC",
   "source": "PubMed / NCBI E-utilities",
   "items": {
     "ortho": [
-      {"title": "Orthokeratology for slowing myopic progression: long-term axial length outcomes", "journal": "Cont Lens Anterior Eye", "date": "2025", "pmid": "", "summary": "多中心追蹤支持角膜塑型對眼軸延緩之長期穩定性,配戴依從性與驗配品質為關鍵因子。"}
+      {
+        "title": "Combined Orthokeratology and Low-Dose Atropine for Myopia Control in Children: A 12-Month Retrospective Clinical Study.",
+        "journal": "J Vis Exp",
+        "date": "2026",
+        "pmid": "42406634",
+        "summary": "The increasing prevalence of childhood myopia and its association with vision-threatening complications have made myopia control a major public health concern. …"
+      },
+      {
+        "title": "Orthokeratology versus extended depth-of-focus soft contact lenses for myopia control: a 12-month comparative study of axial elongation and corneal changes.",
+        "journal": "Cont Lens Anterior Eye",
+        "date": "2026",
+        "pmid": "42385647",
+        "summary": "Both OK and EDOF soft contact lenses were associated with reduced axial elongation over a 12-month period, with no significant differences in efficacy between treatments. …"
+      },
+      {
+        "title": "Myopia management functional lenses (MMFL): a bibliometric analysis of multidisciplinary perspective and trend insights in the context of vision health.",
+        "journal": "Int Ophthalmol",
+        "date": "2026",
+        "pmid": "42366310",
+        "summary": "The knowledge map of research on MMFL is constructed through bibliometric analysis, systematically summarizing the current status and hotspots of research. …"
+      },
+      {
+        "title": "Effects of orthokeratology on binocular vision and myopia control in adolescents.",
+        "journal": "Medicine (Baltimore)",
+        "date": "2026",
+        "pmid": "42363546",
+        "summary": "This study aimed to compare the efficacy of myopia control in adolescents wearing orthokeratology lenses (OKL) or single-vision spectacles (SVS). …"
+      },
+      {
+        "title": "The effect of orthokeratology lens optical zone size on myopia control in adolescents.",
+        "journal": "Front Med (Lausanne)",
+        "date": "2026",
+        "pmid": "42359081",
+        "summary": "For adolescents with low-to-moderate astigmatism, 5-mm Back Optical Zone Diameter (BOZD) Ortho-K lenses demonstrated slightly superior efficacy in controlling myopia progression compared to 6- mm lenses, characterized by a smaller PPRD and  …"
+      },
+      {
+        "title": "Modern Methods for Preventing the Progression of Myopia in Children.",
+        "journal": "J Clin Med",
+        "date": "2026",
+        "pmid": "42355902",
+        "summary": "The progression of myopia in the pediatric population is currently highly prevalent. Thus, there is a need to look for new, effective methods that might suppress this pathological process. …"
+      }
     ],
     "atropine": [
-      {"title": "Low-concentration atropine (0.05%) for myopia control: extended-phase results", "journal": "Ophthalmology", "date": "2025", "pmid": "", "summary": "0.05% 於延伸期維持較佳之度數與眼軸延緩,停藥反彈幅度相對可控。"}
+      {
+        "title": "Paradox of atropine in myopia control: exploring dose-dependent efficacy, rebound effects, and optimal risk-benefit balance-a perspective.",
+        "journal": "Front Public Health",
+        "date": "2026",
+        "pmid": "42422676",
+        "summary": "The global surge in myopia prevalence, particularly the rising incidence of high myopia and its associated blinding complications-including myopic maculopathy, retinal detachment, and glaucoma-has transformed this condition into a pressing  …"
+      },
+      {
+        "title": "Increasing Evidence for the Utility of Red-Light Therapy and High Concentration Atropine in Myopia Control.",
+        "journal": "Clin Exp Ophthalmol",
+        "date": "2026",
+        "pmid": "42412099",
+        "summary": ""
+      },
+      {
+        "title": "Combined Orthokeratology and Low-Dose Atropine for Myopia Control in Children: A 12-Month Retrospective Clinical Study.",
+        "journal": "J Vis Exp",
+        "date": "2026",
+        "pmid": "42406634",
+        "summary": "The increasing prevalence of childhood myopia and its association with vision-threatening complications have made myopia control a major public health concern. …"
+      },
+      {
+        "title": "Modern Methods for Preventing the Progression of Myopia in Children.",
+        "journal": "J Clin Med",
+        "date": "2026",
+        "pmid": "42355902",
+        "summary": "The progression of myopia in the pediatric population is currently highly prevalent. Thus, there is a need to look for new, effective methods that might suppress this pathological process. …"
+      },
+      {
+        "title": "Ocular Alignment and Strabismus-Related Findings Associated with Low-Dose Atropine for Myopia Control in Children: A Structured Narrative Review.",
+        "journal": "Children (Basel)",
+        "date": "2026",
+        "pmid": "42353988",
+        "summary": "Background/Objectives: Low-dose atropine eye drops are widely used to slow myopia progression in children, but by reducing accommodation they may affect near ocular alignment and binocular visual function. …"
+      },
+      {
+        "title": "Use of Clinical Pharmacology in Slowing the Myopia Epidemic.",
+        "journal": "Clin Pharmacol Ther",
+        "date": "2026",
+        "pmid": "42298884",
+        "summary": "Myopia (nearsightedness) is in epidemic proportions in the world today. The eyecare community has long been desirous of pharmacological treatments to slow myopic progression. …"
+      }
     ],
     "spectacle": [
-      {"title": "Defocus-incorporated and aspherical-lenslet spectacles: real-world effectiveness", "journal": "Br J Ophthalmol", "date": "2025", "pmid": "", "summary": "真實世界資料支持離焦鏡片之延緩效益,足時全天配戴為效果之關鍵決定因子。"}
+      {
+        "title": "Temporal trends in refractive error among children and adolescents in Germany - a large-scale analysis of spectacle sales data from dispensing opticians from 2001 to 2025.",
+        "journal": "Front Public Health",
+        "date": "2026",
+        "pmid": "42422710",
+        "summary": "This 25-year large-scale analysis found no evidence of an accelerating myopia epidemic or a pandemic-associated surge in myopia progression among spectacle-wearing children and adolescents in Germany. …"
+      },
+      {
+        "title": "Two-Year Changes in Astigmatism in Myopic Children Wearing Lenslet-ARray-Integrated Spectacle Lenses.",
+        "journal": "Ophthalmol Sci",
+        "date": "2026",
+        "pmid": "42421756",
+        "summary": "Wearing LARI lenses for 2 years did not seem to lead to any clinically significant additional progression in refractive and corneal astigmatism."
+      },
+      {
+        "title": "Google Trends Analysis of Interest in Pediatric Myopia-Control Spectacle Lenses Following FDA Authorization of Essilor Stellest.",
+        "journal": "Cureus",
+        "date": "2026",
+        "pmid": "42395215",
+        "summary": "Public search interest in pediatric myopia-control spectacle lenses increased markedly following FDA authorization of Essilor Stellest, with normalization suggesting growth beyond seasonal effects. …"
+      },
+      {
+        "title": "Comparison of posterior scleral reinforcement surgery and repeated low-level red-light therapy in controlling high and super high myopia in Chinese children.",
+        "journal": "Int J Ophthalmol",
+        "date": "2026",
+        "pmid": "42382970",
+        "summary": "PSR and RLRL effectively improve BCVA in children with HM and SHM. PSR slows AL and SE progression, whereas RLRL reduces AL and SE, with better BCVA and AL outcomes in SHM at 1 and 2y. …"
+      },
+      {
+        "title": "Myopia management functional lenses (MMFL): a bibliometric analysis of multidisciplinary perspective and trend insights in the context of vision health.",
+        "journal": "Int Ophthalmol",
+        "date": "2026",
+        "pmid": "42366310",
+        "summary": "The knowledge map of research on MMFL is constructed through bibliometric analysis, systematically summarizing the current status and hotspots of research. …"
+      },
+      {
+        "title": "Comparable myopia control efficacy of highly aspherical lenslets and diffusion optics technology spectacle lenses: a one-year real-world cohort study.",
+        "journal": "BMC Ophthalmol",
+        "date": "2026",
+        "pmid": "42365264",
+        "summary": "In this real-world cohort, both HAL and DOT lenses were linked to slower myopia progression, with similar progression rates between HAL and DOT. …"
+      }
     ],
     "softcl": [
-      {"title": "Dual-focus soft contact lenses initiated in younger children", "journal": "Optom Vis Sci", "date": "2025", "pmid": "", "summary": "較早起始配戴者累積延緩效益更佳,日拋設計之安全性表現良好。"}
+      {
+        "title": "Google Trends Analysis of Interest in Pediatric Myopia-Control Spectacle Lenses Following FDA Authorization of Essilor Stellest.",
+        "journal": "Cureus",
+        "date": "2026",
+        "pmid": "42395215",
+        "summary": "Public search interest in pediatric myopia-control spectacle lenses increased markedly following FDA authorization of Essilor Stellest, with normalization suggesting growth beyond seasonal effects. …"
+      },
+      {
+        "title": "Optical myopia control interventions: Evaluation of methods and success in a real-world population.",
+        "journal": "Optom Vis Sci",
+        "date": "2026",
+        "pmid": "42323277",
+        "summary": "Monitoring the rate of AL progression prior to intervention has advantages such as predicting and measuring success in this UK clinical population. …"
+      },
+      {
+        "title": "Next-Generation Myopia Control Spectacles Hint at Defocus Opponency Circuits in the Retina.",
+        "journal": "Ophthalmic Physiol Opt",
+        "date": "2026",
+        "pmid": "42310260",
+        "summary": ""
+      },
+      {
+        "title": "Age-Specific Efficacy of MiSight Dual-Focus Soft Contact Lenses and Orthokeratology Lenses for Myopia Control in Pediatric Patients: A Retrospective Comparative Study.",
+        "journal": "Eye Contact Lens",
+        "date": "2026",
+        "pmid": "42237433",
+        "summary": "This age-stratified retrospective comparison demonstrated modestly lower axial elongation with MiSight after adjustment for baseline differences, particularly in older children (older than 10 years). …"
+      },
+      {
+        "title": "The efficiency of 0.01% topical atropine on the myopia prevention in low refractive error population with different refractive errors: a retrospective cohort study.",
+        "journal": "BMC Ophthalmol",
+        "date": "2026",
+        "pmid": "42135675",
+        "summary": "Application of 0.01% ATR might relates to myopic prevention effect in a population with low refractive error, especially for plus initial SER."
+      },
+      {
+        "title": "Management of myopia: a mini-review.",
+        "journal": "Med Hypothesis Discov Innov Ophthalmol",
+        "date": "2026",
+        "pmid": "42083561",
+        "summary": "Evidence supports a risk‑stratified pathway integrating outdoor time with effective optical and/or pharmacological therapy. …"
+      }
     ],
     "redlight": [
-      {"title": "Repeated low-level red-light therapy: efficacy and retinal safety monitoring", "journal": "JAMA Ophthalmol", "date": "2025", "pmid": "", "summary": "延緩效果顯著,惟建議搭配 OCT 定期監測以確保視網膜安全,長期資料仍在累積。"}
+      {
+        "title": "Increasing Evidence for the Utility of Red-Light Therapy and High Concentration Atropine in Myopia Control.",
+        "journal": "Clin Exp Ophthalmol",
+        "date": "2026",
+        "pmid": "42412099",
+        "summary": ""
+      },
+      {
+        "title": "Comparison of posterior scleral reinforcement surgery and repeated low-level red-light therapy in controlling high and super high myopia in Chinese children.",
+        "journal": "Int J Ophthalmol",
+        "date": "2026",
+        "pmid": "42382970",
+        "summary": "PSR and RLRL effectively improve BCVA in children with HM and SHM. PSR slows AL and SE progression, whereas RLRL reduces AL and SE, with better BCVA and AL outcomes in SHM at 1 and 2y. …"
+      },
+      {
+        "title": "Potential Inhibitory Effect of LED-Sourced Red Light Therapy on Ocular Growth in Normal and Myopic Chicks.",
+        "journal": "Int J Mol Sci",
+        "date": "2026",
+        "pmid": "42353143",
+        "summary": "Repeated low-level red light (RLRL) has been reported to control myopia progression clinically. Given safety concerns with laser sources, light-emitting diodes (LED)-sourced red light represents a promising alternative. …"
+      },
+      {
+        "title": "Evaluating the educational quality and reliability of YouTube videos on red light therapy for eye diseases.",
+        "journal": "Lasers Med Sci",
+        "date": "2026",
+        "pmid": "42350598",
+        "summary": "To investigate the use of YouTube videos as an educational and informational resource regarding the use of red light therapy in eye diseases. …"
+      },
+      {
+        "title": "Repeated low-level red-light therapy for childhood myopia: Efficacy, mechanisms, rebound effects, safety boundaries, and clinical standardization.",
+        "journal": "Photodiagnosis Photodyn Ther",
+        "date": "2026",
+        "pmid": "42349599",
+        "summary": "RLRL may be among the most effective myopia-control strategies currently under investigation in the short term, but the field has not yet reached full clinical maturity. …"
+      },
+      {
+        "title": "Near-Infrared and Red-Light Photobiomodulation for Ocular Aging and Diseases: A Narrative Review.",
+        "journal": "Ophthalmol Ther",
+        "date": "2026",
+        "pmid": "42323782",
+        "summary": "Near-infrared (NIR) and red light photobiomodulation (PBM) has gained increasing interest as a non-invasive therapeutic approach for a variety of medical conditions including ocular diseases. …"
+      }
     ],
     "outdoor": [
-      {"title": "Outdoor light exposure and myopia onset: an updated dose-response analysis", "journal": "Ophthalmology", "date": "2025", "pmid": "", "summary": "戶外光照與近視發生率呈劑量-反應關係,對延緩『發生』之預防效益最為明確。"}
+      {
+        "title": "Analysis of the Association Between Weight Status and Myopia in Children and Adolescents and Development of a Screening Model Based on Body Fat Percentage.",
+        "journal": "Ophthalmic Physiol Opt",
+        "date": "2026",
+        "pmid": "42430046",
+        "summary": "Overweight or obesity is independently associated with myopia. BMI and body fat percentage provide comparable, low-cost tools for initial school-based risk stratification, while physical activity may protect against myopia independently of  …"
+      },
+      {
+        "title": "Impact of exercise on myopia in children and adolescents and its modifying factors: a systematic review and meta-analysis.",
+        "journal": "BMC Pediatr",
+        "date": "2026",
+        "pmid": "42426665",
+        "summary": "Exercise interventions exert a consistently positive effect on the visual function of children and adolescents, significantly improving both dynamic and static visual acuity. …"
+      },
+      {
+        "title": "Paradox of atropine in myopia control: exploring dose-dependent efficacy, rebound effects, and optimal risk-benefit balance-a perspective.",
+        "journal": "Front Public Health",
+        "date": "2026",
+        "pmid": "42422676",
+        "summary": "The global surge in myopia prevalence, particularly the rising incidence of high myopia and its associated blinding complications-including myopic maculopathy, retinal detachment, and glaucoma-has transformed this condition into a pressing  …"
+      },
+      {
+        "title": "Effectiveness and implementation of an intervention strategy-based health promoting schools framework to reduce idiopathic scoliosis and myopia among children and adolescents in Shanghai, China: study protocol.",
+        "journal": "BMC Public Health",
+        "date": "2026",
+        "pmid": "42420921",
+        "summary": "ChiCTR2600117433. Registered January 23, 2026."
+      },
+      {
+        "title": "Mesopic Illumination in Natural Environments: Implications for Myopia Research.",
+        "journal": "Ophthalmic Physiol Opt",
+        "date": "2026",
+        "pmid": "42390705",
+        "summary": "In natural outdoor environments, mesopic light exposure during sunset represents a relatively brief and consistent transition period of approximately 25-30 min. …"
+      },
+      {
+        "title": "Modern Methods for Preventing the Progression of Myopia in Children.",
+        "journal": "J Clin Med",
+        "date": "2026",
+        "pmid": "42355902",
+        "summary": "The progression of myopia in the pediatric population is currently highly prevalent. Thus, there is a need to look for new, effective methods that might suppress this pathological process. …"
+      }
     ]
   }
 }
