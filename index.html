@@ -1,0 +1,1140 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>眼視光資訊中心 · Eye-Vision Hub</title>
+<meta name="description" content="近視控制所有工具的臨床決策中心:角膜塑型、低濃度阿托品、離焦眼鏡、離焦軟式隱形眼鏡、重複低強度紅光、戶外活動。每日自動更新 PubMed 臨床文獻。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Noto+Sans+TC:wght@400;500;700&family=Noto+Serif+TC:wght@600;700;900&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#EAEEF1; --paper-2:#E1E7EB; --card:#FFFFFF;
+  --ink:#151B22; --ink-soft:#57636F; --muted:#8B97A2;
+  --line:#D7DEE3; --line-2:#E8ECEF;
+  --accent:#0E7C86; --accent-ink:#0A5B63; --accent-soft:#DDEEEF;
+  --live:#E0533D;
+  --shadow:0 1px 2px rgba(21,27,34,.05),0 10px 30px -14px rgba(21,27,34,.18);
+  --spectrum:linear-gradient(90deg,#6C4CE0,#2E6BE0,#0E9AA7,#17A34A,#E0A21A,#E0533D);
+  --serif:"Noto Serif TC",Georgia,serif;
+  --sans:"Noto Sans TC",system-ui,sans-serif;
+  --mono:"JetBrains Mono",ui-monospace,monospace;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);font-size:15px;line-height:1.6;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1120px;margin:0 auto;padding:0 24px}
+.mono{font-family:var(--mono)}
+h1,h2,h3{font-family:var(--serif);letter-spacing:-.01em}
+h2{font-weight:700;font-size:clamp(24px,3vw,32px);margin:0 0 6px}
+
+/* signature: top spectrum */
+.topspectrum{position:fixed;top:0;left:0;right:0;height:3px;background:var(--spectrum);background-size:200% 100%;animation:sweep 7s linear infinite;z-index:60}
+@keyframes sweep{to{background-position:-200% 0}}
+
+/* topbar */
+.topbar{position:sticky;top:0;z-index:50;background:rgba(234,238,241,.86);backdrop-filter:blur(10px);border-bottom:1px solid var(--line);margin-top:3px}
+.topbar-in{display:flex;align-items:center;gap:14px;min-height:60px;flex-wrap:wrap}
+.brand{display:flex;align-items:center;gap:9px;font-family:var(--serif);font-weight:900;font-size:19px;white-space:nowrap}
+.brand small{font-family:var(--mono);font-size:9.5px;font-weight:600;letter-spacing:.12em;color:var(--muted);border:1px solid var(--line);border-radius:5px;padding:2px 6px}
+.nav{display:flex;gap:3px;margin-left:6px;flex-wrap:wrap}
+.nav a{font-size:13.5px;font-weight:500;color:var(--ink-soft);padding:7px 13px;border-radius:9px;cursor:pointer;transition:.15s;white-space:nowrap}
+.nav a:hover{background:var(--paper-2);color:var(--ink)}
+.nav a.on{background:var(--accent);color:#fff;font-weight:600}
+.topbar-right{margin-left:auto;display:flex;align-items:center;gap:9px}
+#backBtn{font-family:var(--mono);font-size:12px;font-weight:600;color:var(--accent-ink);background:var(--card);border:1px solid var(--line);border-radius:9px;padding:7px 12px;cursor:pointer;transition:.15s;display:none}
+#backBtn:hover{border-color:var(--accent);background:var(--accent-soft)}
+.mode-toggle{display:inline-flex;background:var(--card);border:1px solid var(--line);border-radius:9px;padding:2px}
+.mode-toggle button{font-family:var(--sans);font-size:12.5px;font-weight:600;color:var(--ink-soft);background:none;border:0;border-radius:7px;padding:6px 11px;cursor:pointer;transition:.15s}
+.mode-toggle button.on{background:var(--accent);color:#fff}
+
+/* views + sections */
+.views{min-height:64vh}
+.view{display:none}
+.view.is-active{display:block;animation:viewIn .3s ease}
+@keyframes viewIn{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+.sec{padding:44px 0}
+.sec-eye{font-family:var(--mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--accent-ink);font-weight:600;display:inline-flex;align-items:center;gap:9px}
+.sec-eye::before{content:"";width:22px;height:3px;border-radius:2px;background:var(--spectrum)}
+.sec-sub{color:var(--ink-soft);max-width:780px;margin:8px 0 22px;font-size:14.5px}
+.sec-sub code{font-family:var(--mono);font-size:12px;background:var(--paper-2);padding:1px 6px;border-radius:5px}
+
+/* buttons */
+.btn{display:inline-flex;align-items:center;gap:6px;font-weight:600;font-size:14px;padding:11px 20px;border-radius:11px;cursor:pointer;transition:.15s;border:1px solid transparent;font-family:var(--sans)}
+.btn-primary{background:var(--accent);color:#fff}
+.btn-primary:hover{background:var(--accent-ink)}
+.btn-ghost{background:var(--card);border-color:var(--line);color:var(--ink)}
+.btn-ghost:hover{border-color:var(--accent);color:var(--accent-ink)}
+
+/* hero */
+.hero{padding:60px 0 22px;position:relative;overflow:hidden}
+.hero::after{content:"";position:absolute;top:-140px;right:-90px;width:440px;height:440px;background:radial-gradient(circle,rgba(14,124,134,.10),transparent 68%);pointer-events:none;z-index:0}
+.hero-grid{position:relative;z-index:1}
+.hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:40px;align-items:center}
+.eyebrow{font-family:var(--mono);font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--accent-ink);font-weight:600;display:inline-flex;align-items:center;gap:9px}
+.eyebrow .dot{width:8px;height:8px;border-radius:50%;background:var(--live);box-shadow:0 0 0 4px rgba(224,83,61,.15);animation:pulse 2.2s infinite}
+@keyframes pulse{50%{box-shadow:0 0 0 8px rgba(224,83,61,0)}}
+.hero h1{font-weight:900;font-size:clamp(36px,5.4vw,60px);line-height:1.06;margin:14px 0 0}
+.hero h1 .accent{background:var(--spectrum);-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero-sub{font-size:16px;color:var(--ink-soft);max-width:560px;margin:18px 0 20px}
+.hero-note{display:flex;flex-direction:column;gap:9px;margin-bottom:24px}
+.hero-note span{font-size:13.5px;color:var(--ink-soft);padding-left:17px;position:relative}
+.hero-note span::before{content:"";position:absolute;left:0;top:8px;width:7px;height:7px;border-radius:2px;background:var(--accent)}
+.hero-note b{color:var(--ink);font-weight:600}
+.hero-cta{display:flex;gap:12px;flex-wrap:wrap}
+.hero-art{display:flex;flex-direction:column;align-items:center;gap:14px}
+.ringwrap{width:100%;max-width:310px}
+.ringwrap svg{width:100%;height:auto}
+.ring-spin{transform-origin:150px 150px;animation:spin 44s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+.art-cap{font-size:12.5px;color:var(--ink-soft);text-align:center;max-width:290px;line-height:1.55}
+.art-cap b{color:var(--accent-ink)}
+
+/* overview map */
+.seg-map{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:14px}
+.seg-card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px;cursor:pointer;transition:.18s;position:relative;overflow:hidden}
+.seg-card::before{content:"";position:absolute;left:0;top:0;bottom:0;width:3px;background:var(--spectrum);opacity:0;transition:.18s}
+.seg-card:hover{border-color:var(--accent);box-shadow:var(--shadow);transform:translateY(-3px)}
+.seg-card:hover::before{opacity:1}
+.seg-card h3{font-size:17px;font-weight:700;margin:0 0 8px;display:flex;align-items:center;gap:10px}
+.seg-ico{width:34px;height:34px;border-radius:9px;display:flex;align-items:center;justify-content:center;background:var(--accent-soft);font-size:17px;flex:none}
+.seg-card p{font-size:13px;color:var(--ink-soft);line-height:1.55;margin:0;font-family:var(--sans)}
+.seg-go{font-family:var(--mono);font-size:11px;color:var(--accent);margin-top:12px;font-weight:600;letter-spacing:.05em;transition:transform .18s}
+.seg-card:hover .seg-go{transform:translateX(4px)}
+.ov-quick{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:12px;margin-top:26px}
+.ov-quick-card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px;cursor:pointer;transition:.15s}
+.ov-quick-card:hover{border-color:var(--accent);box-shadow:var(--shadow)}
+.ov-quick-card b{display:block;font-family:var(--serif);font-size:15px;font-weight:700;margin-bottom:4px}
+.ov-quick-card span{font-size:12px;color:var(--ink-soft)}
+
+/* efficacy bars */
+.efficacy{background:var(--card);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.bars{display:flex;flex-direction:column;gap:13px;padding:6px 0}
+.bar-row{display:grid;grid-template-columns:132px 1fr auto;gap:14px;align-items:center}
+.bar-lab{font-size:13.5px;font-weight:600;color:var(--ink)}
+.bar-track{height:12px;background:var(--paper-2);border-radius:20px;overflow:hidden}
+.bar-fill{height:100%;width:0;background:linear-gradient(90deg,var(--accent),#13A6B0);border-radius:20px;transition:width 1.1s cubic-bezier(.2,.8,.2,1)}
+.bar-val{font-family:var(--mono);font-size:13px;font-weight:600;color:var(--accent-ink);min-width:58px;text-align:right}
+.bar-note{font-size:12px;color:var(--muted);margin-top:4px}
+
+/* tool tabs + card */
+.tooltabs{display:flex;flex-wrap:wrap;gap:8px;margin:6px 0 18px}
+.tooltab{display:flex;align-items:center;gap:8px;background:var(--card);border:1px solid var(--line);border-radius:11px;padding:9px 14px;cursor:pointer;transition:.15s}
+.tooltab:hover{border-color:var(--accent)}
+.tooltab.on{background:var(--ink);border-color:var(--ink);color:#fff}
+.tt-glyph{font-size:16px}
+.tt-name{font-size:13.5px;font-weight:600}
+.tt-cat{font-family:var(--mono);font-size:10px;color:var(--muted)}
+.tooltab.on .tt-cat{color:#AEB9C3}
+.tool{display:none;background:var(--card);border:1px solid var(--line);border-radius:18px;overflow:hidden;box-shadow:var(--shadow)}
+.tool.on{display:block;animation:viewIn .3s ease}
+.tool-top{display:flex;gap:16px;align-items:center;padding:22px 24px;border-bottom:1px solid var(--line-2)}
+.glyph{width:52px;height:52px;border-radius:13px;background:var(--accent-soft);display:flex;align-items:center;justify-content:center;font-size:26px;flex:none}
+.tool-id{font-size:11px;color:var(--muted);letter-spacing:.06em;text-transform:uppercase}
+.tool-top h3{font-size:22px;font-weight:700;margin:2px 0 5px;display:flex;align-items:baseline;gap:10px;flex-wrap:wrap}
+.tool-top h3 .en{font-family:var(--mono);font-size:12px;color:var(--muted);font-weight:400}
+.tag{display:inline-block;font-size:11px;font-weight:600;color:var(--accent-ink);background:var(--accent-soft);border-radius:20px;padding:2px 10px}
+
+.tool-diagram{border-bottom:1px solid var(--line-2);background:linear-gradient(180deg,#FBFCFD,#F2F6F8)}
+.diag-art{padding:18px 20px}
+.diag-spec{padding:12px 22px;border-top:1px solid var(--line-2);display:flex;align-items:baseline;gap:12px;flex-wrap:wrap}
+.spec-lab{font-family:var(--mono);font-size:11px;font-weight:600;color:var(--accent-ink);flex:none}
+.spec-chips{display:flex;flex-wrap:wrap;gap:6px}
+.spec-chip{font-size:11.5px;background:var(--card);border:1px solid var(--line);border-radius:20px;padding:3px 11px;color:var(--ink-soft)}
+.spec-chip b{color:var(--accent-ink);font-weight:700;margin-right:3px}
+.diag-list{display:flex;flex-direction:column;gap:14px}
+.diag-item{display:grid;grid-template-columns:minmax(0,1.02fr) minmax(0,1fr);gap:18px;align-items:center;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 16px}
+.diag-fig{position:relative;margin:0;cursor:zoom-in;border:1px solid var(--line);border-radius:10px;padding:6px;background:var(--card);transition:.15s}
+.diag-fig:hover{border-color:var(--accent);box-shadow:var(--shadow)}
+.diag-fig svg{width:100%;height:auto;display:block}
+.diag-img{width:100%;height:auto;display:block;border-radius:6px}
+.diag-fig figcaption{text-align:center;font-size:11.5px;font-weight:600;color:var(--accent-ink);margin-top:4px}
+.zoom-hint{position:absolute;top:8px;right:10px;z-index:2;font-family:var(--mono);font-size:9.5px;color:var(--accent-ink);background:rgba(255,255,255,.9);border:1px solid var(--line);border-radius:12px;padding:1px 8px;opacity:0;transition:.15s;pointer-events:none}
+.diag-fig:hover .zoom-hint{opacity:1}
+.diag-notes{list-style:none;padding:0;margin:0}
+.diag-notes li{display:flex;gap:11px;padding:8px 0;border-top:1px dotted var(--line)}
+.diag-notes li:first-child{border-top:0}
+.dn-n{flex:none;width:21px;height:21px;border-radius:50%;color:#fff;font-size:11px;font-weight:700;display:flex;align-items:center;justify-content:center;font-family:var(--mono);margin-top:1px}
+.dn-t{font-size:13px;line-height:1.45}
+.dn-t b{display:block;color:var(--ink);font-weight:700;margin-bottom:1px}
+.dn-t span{color:var(--ink-soft);font-size:12px}
+
+.tool-cols{display:grid;grid-template-columns:1.2fr .8fr}
+.col-main{padding:20px 24px;border-right:1px solid var(--line-2)}
+.col-side{padding:20px 24px;background:#FBFCFD}
+.tool-headline{margin-bottom:14px}
+.tool-headline .big{font-family:var(--mono);font-size:19px;font-weight:700;color:var(--accent-ink);display:block}
+.tool-headline .lab{font-size:12.5px;color:var(--muted)}
+.tool-body{display:flex;flex-direction:column}
+.row{display:grid;grid-template-columns:78px 1fr;gap:12px;padding:11px 0;border-top:1px solid var(--line-2)}
+.row:first-child{border-top:0}
+.row .k{font-size:12.5px;font-weight:700;color:var(--muted)}
+.row .v{font-size:13.5px;color:var(--ink);line-height:1.55}
+.chips{display:flex;flex-wrap:wrap;gap:6px}
+.chip{font-size:12px;background:var(--paper-2);border-radius:20px;padding:2px 10px;color:var(--ink-soft)}
+.pros{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.pros b{font-size:12px;display:block;margin-bottom:4px}
+.pros .p b{color:var(--accent-ink)}
+.pros .c b{color:var(--live)}
+.pros ul{margin:0;padding-left:16px}
+.pros li{font-size:12.5px;color:var(--ink-soft);margin:3px 0}
+.trials-lab,.tool-lit-lab{font-family:var(--mono);font-size:11px;font-weight:600;color:var(--accent-ink);letter-spacing:.03em;margin-bottom:10px}
+.trial{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:12px;margin-bottom:10px}
+.t-name{font-weight:700;font-size:13.5px;display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.t-flag{font-family:var(--mono);font-size:10px;color:var(--muted);border:1px solid var(--line);border-radius:20px;padding:0 7px}
+.t-src{font-size:11.5px;color:var(--muted);margin:3px 0 8px}
+.t-row{display:grid;grid-template-columns:64px 1fr;gap:8px;padding:3px 0;font-size:12.5px}
+.t-lab{color:var(--muted);font-weight:600}
+.t-txt{color:var(--ink-soft)}
+.t-num{color:var(--accent-ink);font-weight:600}
+.tool-lit{margin-top:16px}
+.lit-list{display:flex;flex-direction:column;gap:8px}
+.lit-item{background:var(--card);border:1px solid var(--line);border-radius:9px;padding:10px 12px}
+.lit-item a{font-size:13px;font-weight:600;color:var(--ink)}
+.lit-item a:hover{color:var(--accent-ink)}
+.lit-meta{font-size:11px;color:var(--muted);margin-top:3px;font-family:var(--mono)}
+.lit-empty,.feed-empty{font-size:12.5px;color:var(--muted);padding:10px}
+
+/* panels + feeds */
+.panel{background:var(--card);border:1px solid var(--line);border-radius:16px;box-shadow:var(--shadow);overflow:hidden}
+.lit-head,.panel-head{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:16px 20px;border-bottom:1px solid var(--line-2)}
+.lit-head h3,.panel-head h3{font-size:17px;font-weight:700;margin:0}
+.upd-badge{font-family:var(--mono);font-size:11px;color:var(--accent-ink)}
+.lit-tabs{display:flex;flex-wrap:wrap;gap:8px;padding:14px 20px 4px}
+.lit-tab{font-size:12.5px;font-weight:600;color:var(--ink-soft);background:var(--paper);border:1px solid var(--line);border-radius:20px;padding:5px 13px;cursor:pointer;transition:.15s}
+.lit-tab:hover{border-color:var(--accent)}
+.lit-tab.on{background:var(--accent);border-color:var(--accent);color:#fff}
+.feed{display:flex;flex-direction:column;padding:6px 20px 18px}
+.feed-item{padding:16px 0;border-top:1px solid var(--line-2)}
+.feed-item:first-child{border-top:0}
+.fi-top{display:flex;align-items:center;gap:10px;margin-bottom:6px}
+.fi-tag{font-size:11px;font-weight:700;color:var(--accent-ink);background:var(--accent-soft);border-radius:20px;padding:2px 10px}
+.fi-date{font-size:11px;color:var(--muted)}
+.feed-item h4{margin:2px 0 4px;font-size:15px;font-weight:600;line-height:1.4;font-family:var(--sans)}
+.feed-item h4 a:hover{color:var(--accent-ink)}
+.fi-meta{font-size:11.5px;color:var(--muted)}
+.fi-sum{font-size:13px;color:var(--ink-soft);margin-top:8px;line-height:1.55}
+.fi-point{font-size:13.5px;color:var(--ink);background:var(--accent-soft);border-left:3px solid var(--accent);border-radius:6px;padding:8px 12px;margin:6px 0 4px;line-height:1.5;font-weight:500}
+
+/* companies */
+.co-tabs{display:flex;flex-wrap:wrap;gap:8px;margin:6px 0 18px}
+.co-grid{display:flex;flex-direction:column;gap:24px}
+.co-seg-h{font-size:16px;font-weight:700;color:var(--ink);margin-bottom:12px;padding-bottom:8px;border-bottom:1px solid var(--line);display:flex;align-items:center;gap:9px}
+.co-seg-h::before{content:"";width:16px;height:3px;border-radius:2px;background:var(--spectrum)}
+.co-seg-h span{font-family:var(--mono);font-size:12px;color:var(--muted);font-weight:400}
+.co-cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:10px}
+.co-card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:13px 15px;transition:.15s}
+.co-card:hover{border-color:var(--accent);box-shadow:var(--shadow);transform:translateY(-2px)}
+.co-name{font-weight:700;color:var(--ink);font-size:15px;display:flex;align-items:center;gap:7px;flex-wrap:wrap}
+.co-code{font-family:var(--mono);font-size:11px;font-weight:600;color:#fff;background:var(--accent);border-radius:5px;padding:1px 6px}
+.co-meta{font-size:12px;color:var(--ink-soft);margin-top:6px;line-height:1.45}
+.co-region{display:inline-block;font-family:var(--mono);font-size:10px;font-weight:600;color:var(--muted);border:1px solid var(--line);border-radius:20px;padding:0 7px;margin-right:4px}
+
+/* disclaimer + footer */
+.disclaimer{background:var(--card);border:1px solid var(--line);border-left:3px solid var(--accent);border-radius:12px;padding:20px 22px}
+.disclaimer p{margin:0;font-size:13px;color:var(--ink-soft);line-height:1.65}
+.disclaimer b{color:var(--ink)}
+footer{border-top:1px solid var(--line);padding:26px 0;margin-top:10px;color:var(--muted);font-size:12.5px;font-family:var(--mono)}
+footer .build{margin-top:8px;font-size:11px}
+
+/* lightbox */
+.lightbox{position:fixed;inset:0;background:rgba(20,26,33,.62);backdrop-filter:blur(4px);display:none;align-items:center;justify-content:center;z-index:100;padding:24px}
+.lightbox.on{display:flex}
+.lb-inner{background:var(--card);border-radius:16px;max-width:820px;width:100%;max-height:90vh;overflow:auto;padding:24px;position:relative}
+.lb-body svg,.lb-body img{width:100%;height:auto}
+.lb-cap{text-align:center;font-size:13px;color:var(--ink-soft);margin-top:10px}
+.lb-close{position:fixed;top:20px;right:24px;width:40px;height:40px;border-radius:50%;border:0;background:var(--card);color:var(--ink);font-size:18px;cursor:pointer;z-index:101;box-shadow:var(--shadow)}
+
+/* mode */
+.plain-only{display:none}
+body.parent .plain-only{display:block}
+body.parent .pro-only{display:none}
+
+@media(max-width:860px){
+  .hero-grid{grid-template-columns:1fr}
+  .hero-art{display:none}
+  .tool-cols{grid-template-columns:1fr}
+  .col-main{border-right:0;border-bottom:1px solid var(--line-2)}
+  .diag-item{grid-template-columns:1fr}
+  .pros{grid-template-columns:1fr}
+  .bar-row{grid-template-columns:110px 1fr auto;gap:10px}
+}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+
+</style>
+</head>
+<body>
+
+<div class="topspectrum"></div>
+
+<!-- ======= TOP BAR ======= -->
+<div class="topbar">
+  <div class="wrap topbar-in">
+    <div class="brand">
+      <svg width="26" height="26" viewBox="0 0 26 26" fill="none" aria-hidden="true">
+        <circle cx="13" cy="13" r="12" stroke="#151B22" stroke-width="1.4"/>
+        <circle cx="13" cy="13" r="7" stroke="#0E7C86" stroke-width="1.4"/>
+        <circle cx="13" cy="13" r="2.6" fill="#0E7C86"/>
+      </svg>
+      眼視光<small>OPTICS DESK</small>
+    </div>
+    <nav class="nav" id="mainNav">
+      <a data-view="overview" class="on">產業總覽</a>
+      <a data-view="taiwan">台灣訊息</a>
+      <a data-view="global">全球訊息</a>
+      <a data-view="companies">產業公司</a>
+      <a data-view="myopia">近視控制</a>
+      <a data-view="about">關於</a>
+    </nav>
+    <div class="topbar-right">
+      <button id="backBtn" type="button" aria-label="返回上一頁">← 返回</button>
+      <div class="mode-toggle" id="modeToggle">
+        <button data-mode="pro" class="on">專業版</button>
+        <button data-mode="parent">家長版</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<main class="views">
+<section class="view is-active" id="view-overview">
+<!-- ======= HERO ======= -->
+<header class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <span class="eyebrow"><span class="dot"></span>台灣 · 全球 眼視光即時資訊</span>
+      <h1>眼視光產業,<br>台灣與全球,<br><span class="accent">一頁掌握。</span></h1>
+      <p class="hero-sub">涵蓋近視控制、隱形眼鏡、鏡片驗光、眼科醫材、眼藥與產業公司動態。台灣與全球新聞每日自動抓取、重點直接顯示;近視控制設計與實證亦收錄其中。</p>
+      <div class="hero-note">
+        <span>新聞 <b>台灣 · 全球</b> 每日更新</span>
+        <span>涵蓋 <b>近視控制 · 隱形眼鏡 · 鏡片 · 醫材 · 眼藥</b></span>
+        <span>產業公司 <b>分類整理</b></span>
+      </div>
+      <div class="hero-cta">
+        <a data-goto="taiwan" class="btn btn-primary">台灣訊息</a>
+        <a data-goto="global" class="btn btn-ghost">全球訊息 →</a>
+      </div>
+    </div>
+        <div class="hero-art">
+      <div class="ringwrap">
+<svg viewBox="0 0 320 320" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="眼視光光學標線">
+<defs>
+<linearGradient id="specArc" x1="0" y1="0" x2="1" y2="0">
+<stop offset="0" stop-color="#6C4CE0"/><stop offset="0.22" stop-color="#2E6BE0"/><stop offset="0.44" stop-color="#0E9AA7"/><stop offset="0.63" stop-color="#17A34A"/><stop offset="0.82" stop-color="#E0A21A"/><stop offset="1" stop-color="#E0533D"/>
+</linearGradient>
+<radialGradient id="apCore" cx="42%" cy="40%" r="62%"><stop offset="0" stop-color="#12A6B0"/><stop offset="1" stop-color="#0A5B63"/></radialGradient>
+<radialGradient id="apHalo" cx="50%" cy="50%" r="50%"><stop offset="0" stop-color="#0E7C86" stop-opacity="0.16"/><stop offset="70%" stop-color="#0E7C86" stop-opacity="0.05"/><stop offset="100%" stop-color="#0E7C86" stop-opacity="0"/></radialGradient>
+</defs>
+<circle cx="160" cy="160" r="132" fill="url(#apHalo)"/>
+<path d="M30.3 112.8 A138 138 0 0 1 289.7 112.8" fill="none" stroke="url(#specArc)" stroke-width="6" stroke-linecap="round"/>
+<g><line x1="310.0" y1="160.0" x2="301.0" y2="160.0" stroke="#0E7C86" stroke-opacity="0.55" stroke-width="1.4"/><line x1="309.4" y1="173.1" x2="304.4" y2="172.6" stroke="#151B22" stroke-opacity="0.20" stroke-width="1"/><line x1="307.7" y1="186.0" x2="302.8" y2="185.2" stroke="#151B22" stroke-opacity="0.20" stroke-width="1"/><line x1="304.9" y1="198.8" x2="300.1" y2="197.5" stroke="#151B22" stroke-opacity="0.20" stroke-width="1"/><line x1="301.0" y1="211.3" x2="296.3" y2="209.6" stroke="#151B22" stroke-opacity="0.20" stroke-width="1"/><line x1="295.9" y1="223.4" x2="291.4" y2="221.3" stroke="#151B22" stroke-opacity="0.20" stroke-width="1"/><line x1="289.9" y1="235.0" x2="282.1" y2="230.5" stroke="#0E7C86" stroke-opacity="0.55" stroke-width="1.4"/><line x1="282.9" y1="246.0" x2="278.8" y2="243.2" stroke="#151B22" stroke-opacity="0.20" stroke-width="1"/><line x1="274.9" y1="256.4" x2="271.1" y2="253.2" stroke="#151B22" stroke-opacity="0.20" stroke-width="1"/><line x1="266.1" y1="266.1" x2="262.5" y2="262.5" stroke="#151B22" stroke-opacity="0.20" stroke-width="1"/><line x1="256.4" y1="274.9" x2="253.2" y2="271.1" stroke="#151B22" stroke-opacity="0.20" stroke-width="1"/><line x1="246.0" y1="282.9" x2="243.2" y2="278.8" stroke="#151B22" stroke-opacity="0.20" stroke-width="1"/><line x1="235.0" y1="289.9" x2="230.5" y2="282.1" stroke="#0E7C86" stroke-opacity="0.55" stroke-width="1.4"/><line x1="223.4" y1="295.9" x2="221.3" y2="291.4" stroke="#151B22" stroke-opacity="0.20" stroke-width="1"/><line x1="211.3" y1="301.0" x2="209.6" y2="296.3" stroke="#151B22" stroke-opacity="0.20" stroke-width="1"/><line x1="198.8" y1="304.9" x2="197.5" y2="300.1" stroke="#151B22" stroke-opacity="0.20" stroke-width="1"/><line x1="186.0" y1="307.7" x2="185.2" y2="302.8" stroke="#151B22" stroke-opacity="0.20" stroke-width="1"/><line x1="173.1" y1="309.4" x2="172.6" y2="304.4" stroke="#151B22" stroke-opacity="0.20" stroke-width="1"/><line x1="160.0" y1="310.0" x2="160.0" y2="301.0" stroke="#0E7C86" stroke-opacity="0.55" stroke-width="1.4"/><line x1="146.9" y1="309.4" x2="147.4" y2="304.4" stroke="#151B22" stroke-opacity="0.20" stroke-width="1"/><line x1="134.0" y1="307.7" x2="134.8" y2="302.8" stroke="#151B22" stroke-opacity="0.20" stroke-width="1"/><line x1="121.2" y1="304.9" x2="122.5" y2="300.1" stroke="#151B22" stroke-opacity="0.20" stroke-width="1"/><line x1="108.7" y1="301.0" x2="110.4" y2="296.3" stroke="#151B22" stroke-opacity="0.20" stroke-width="1"/><line x1="96.6" y1="295.9" x2="98.7" y2="291.4" stroke="#151B22" stroke-opacity="0.20" stroke-width="1"/><line x1="85.0" y1="289.9" x2="89.5" y2="282.1" stroke="#0E7C86" stroke-opacity="0.55" stroke-width="1.4"/><line x1="74.0" y1="282.9" x2="76.8" y2="278.8" stroke="#151B22" stroke-opacity="0.20" stroke-width="1"/><line x1="63.6" y1="274.9" x2="66.8" y2="271.1" stroke="#151B22" stroke-opacity="0.20" stroke-width="1"/><line x1="53.9" y1="266.1" x2="57.5" y2="262.5" stroke="#151B22" stroke-opacity="0.20" stroke-width="1"/><line x1="45.1" y1="256.4" x2="48.9" y2="253.2" stroke="#151B22" stroke-opacity="0.20" stroke-width="1"/><line x1="37.1" y1="246.0" x2="41.2" y2="243.2" stroke="#151B22" stroke-opacity="0.20" stroke-width="1"/><line x1="30.1" y1="235.0" x2="37.9" y2="230.5" stroke="#0E7C86" stroke-opacity="0.55" stroke-width="1.4"/><line x1="24.1" y1="223.4" x2="28.6" y2="221.3" stroke="#151B22" stroke-opacity="0.20" stroke-width="1"/><line x1="19.0" y1="211.3" x2="23.7" y2="209.6" stroke="#151B22" stroke-opacity="0.20" stroke-width="1"/><line x1="15.1" y1="198.8" x2="19.9" y2="197.5" stroke="#151B22" stroke-opacity="0.20" stroke-width="1"/><line x1="12.3" y1="186.0" x2="17.2" y2="185.2" stroke="#151B22" stroke-opacity="0.20" stroke-width="1"/><line x1="10.6" y1="173.1" x2="15.6" y2="172.6" stroke="#151B22" stroke-opacity="0.20" stroke-width="1"/><line x1="10.0" y1="160.0" x2="19.0" y2="160.0" stroke="#0E7C86" stroke-opacity="0.55" stroke-width="1.4"/><line x1="10.6" y1="146.9" x2="15.6" y2="147.4" stroke="#151B22" stroke-opacity="0.20" stroke-width="1"/><line x1="12.3" y1="134.0" x2="17.2" y2="134.8" stroke="#151B22" stroke-opacity="0.20" stroke-width="1"/><line x1="15.1" y1="121.2" x2="19.9" y2="122.5" stroke="#151B22" stroke-opacity="0.20" stroke-width="1"/><line x1="19.0" y1="108.7" x2="23.7" y2="110.4" stroke="#151B22" stroke-opacity="0.20" stroke-width="1"/><line x1="24.1" y1="96.6" x2="28.6" y2="98.7" stroke="#151B22" stroke-opacity="0.20" stroke-width="1"/><line x1="30.1" y1="85.0" x2="37.9" y2="89.5" stroke="#0E7C86" stroke-opacity="0.55" stroke-width="1.4"/><line x1="37.1" y1="74.0" x2="41.2" y2="76.8" stroke="#151B22" stroke-opacity="0.20" stroke-width="1"/><line x1="45.1" y1="63.6" x2="48.9" y2="66.8" stroke="#151B22" stroke-opacity="0.20" stroke-width="1"/><line x1="53.9" y1="53.9" x2="57.5" y2="57.5" stroke="#151B22" stroke-opacity="0.20" stroke-width="1"/><line x1="63.6" y1="45.1" x2="66.8" y2="48.9" stroke="#151B22" stroke-opacity="0.20" stroke-width="1"/><line x1="74.0" y1="37.1" x2="76.8" y2="41.2" stroke="#151B22" stroke-opacity="0.20" stroke-width="1"/><line x1="85.0" y1="30.1" x2="89.5" y2="37.9" stroke="#0E7C86" stroke-opacity="0.55" stroke-width="1.4"/><line x1="96.6" y1="24.1" x2="98.7" y2="28.6" stroke="#151B22" stroke-opacity="0.20" stroke-width="1"/><line x1="108.7" y1="19.0" x2="110.4" y2="23.7" stroke="#151B22" stroke-opacity="0.20" stroke-width="1"/><line x1="121.2" y1="15.1" x2="122.5" y2="19.9" stroke="#151B22" stroke-opacity="0.20" stroke-width="1"/><line x1="134.0" y1="12.3" x2="134.8" y2="17.2" stroke="#151B22" stroke-opacity="0.20" stroke-width="1"/><line x1="146.9" y1="10.6" x2="147.4" y2="15.6" stroke="#151B22" stroke-opacity="0.20" stroke-width="1"/><line x1="160.0" y1="10.0" x2="160.0" y2="19.0" stroke="#0E7C86" stroke-opacity="0.55" stroke-width="1.4"/><line x1="173.1" y1="10.6" x2="172.6" y2="15.6" stroke="#151B22" stroke-opacity="0.20" stroke-width="1"/><line x1="186.0" y1="12.3" x2="185.2" y2="17.2" stroke="#151B22" stroke-opacity="0.20" stroke-width="1"/><line x1="198.8" y1="15.1" x2="197.5" y2="19.9" stroke="#151B22" stroke-opacity="0.20" stroke-width="1"/><line x1="211.3" y1="19.0" x2="209.6" y2="23.7" stroke="#151B22" stroke-opacity="0.20" stroke-width="1"/><line x1="223.4" y1="24.1" x2="221.3" y2="28.6" stroke="#151B22" stroke-opacity="0.20" stroke-width="1"/><line x1="235.0" y1="30.1" x2="230.5" y2="37.9" stroke="#0E7C86" stroke-opacity="0.55" stroke-width="1.4"/><line x1="246.0" y1="37.1" x2="243.2" y2="41.2" stroke="#151B22" stroke-opacity="0.20" stroke-width="1"/><line x1="256.4" y1="45.1" x2="253.2" y2="48.9" stroke="#151B22" stroke-opacity="0.20" stroke-width="1"/><line x1="266.1" y1="53.9" x2="262.5" y2="57.5" stroke="#151B22" stroke-opacity="0.20" stroke-width="1"/><line x1="274.9" y1="63.6" x2="271.1" y2="66.8" stroke="#151B22" stroke-opacity="0.20" stroke-width="1"/><line x1="282.9" y1="74.0" x2="278.8" y2="76.8" stroke="#151B22" stroke-opacity="0.20" stroke-width="1"/><line x1="289.9" y1="85.0" x2="282.1" y2="89.5" stroke="#0E7C86" stroke-opacity="0.55" stroke-width="1.4"/><line x1="295.9" y1="96.6" x2="291.4" y2="98.7" stroke="#151B22" stroke-opacity="0.20" stroke-width="1"/><line x1="301.0" y1="108.7" x2="296.3" y2="110.4" stroke="#151B22" stroke-opacity="0.20" stroke-width="1"/><line x1="304.9" y1="121.2" x2="300.1" y2="122.5" stroke="#151B22" stroke-opacity="0.20" stroke-width="1"/><line x1="307.7" y1="134.0" x2="302.8" y2="134.8" stroke="#151B22" stroke-opacity="0.20" stroke-width="1"/><line x1="309.4" y1="146.9" x2="304.4" y2="147.4" stroke="#151B22" stroke-opacity="0.20" stroke-width="1"/></g>
+<circle cx="160" cy="160" r="132" fill="none" stroke="#151B22" stroke-opacity="0.10"/>
+<circle cx="160" cy="160" r="100" fill="none" stroke="#151B22" stroke-opacity="0.12"/>
+<circle cx="260.0" cy="160.0" r="3" fill="#0E7C86" fill-opacity="0.35"/><circle cx="210.0" cy="246.6" r="3" fill="#0E7C86" fill-opacity="0.44999999999999996"/><circle cx="110.0" cy="246.6" r="3" fill="#0E7C86" fill-opacity="0.55"/><circle cx="60.0" cy="160.0" r="3" fill="#0E7C86" fill-opacity="0.35"/><circle cx="110.0" cy="73.4" r="3" fill="#0E7C86" fill-opacity="0.44999999999999996"/><circle cx="210.0" cy="73.4" r="3" fill="#0E7C86" fill-opacity="0.55"/>
+<g stroke="#151B22" stroke-opacity="0.12" stroke-width="1">
+<line x1="24" y1="160" x2="112" y2="160"/><line x1="208" y1="160" x2="296" y2="160"/>
+<line x1="160" y1="24" x2="160" y2="112"/><line x1="160" y1="208" x2="160" y2="296"/>
+</g>
+<circle cx="160" cy="160" r="52" fill="#FFFFFF" fill-opacity="0.5" stroke="#0E7C86" stroke-width="1.6"/>
+<polygon points="160.0,108.0 205.0,134.0 205.0,186.0 160.0,212.0 115.0,186.0 115.0,134.0" fill="none" stroke="#0E7C86" stroke-width="1" stroke-opacity="0.35"/>
+<line x1="160.0" y1="108.0" x2="175.0" y2="134.0" stroke="#0E7C86" stroke-width="1.2" stroke-opacity="0.55"/><line x1="205.0" y1="134.0" x2="190.0" y2="160.0" stroke="#0E7C86" stroke-width="1.2" stroke-opacity="0.55"/><line x1="205.0" y1="186.0" x2="175.0" y2="186.0" stroke="#0E7C86" stroke-width="1.2" stroke-opacity="0.55"/><line x1="160.0" y1="212.0" x2="145.0" y2="186.0" stroke="#0E7C86" stroke-width="1.2" stroke-opacity="0.55"/><line x1="115.0" y1="186.0" x2="130.0" y2="160.0" stroke="#0E7C86" stroke-width="1.2" stroke-opacity="0.55"/><line x1="115.0" y1="134.0" x2="145.0" y2="134.0" stroke="#0E7C86" stroke-width="1.2" stroke-opacity="0.55"/>
+<polygon points="160.0,130.0 186.0,145.0 186.0,175.0 160.0,190.0 134.0,175.0 134.0,145.0" fill="url(#apCore)"/>
+<circle cx="154" cy="154" r="4" fill="#fff" fill-opacity="0.4"/>
+<text x="160" y="300" text-anchor="middle" font-family="'JetBrains Mono',monospace" font-size="10" letter-spacing="3" fill="#0A5B63">O P T I C S</text>
+</svg>
+      </div>
+      <div class="art-cap"><b>聚焦</b>台灣與全球眼視光產業:鏡片、隱形眼鏡、眼科醫材、眼藥與近視控制,一個分析視角。</div>
+    </div>
+  </div>
+  </header>
+
+<!-- overview dashboard -->
+<section class="sec" id="overview-body">
+  <div class="wrap">
+    <span class="sec-eye">INDUSTRY MAP</span>
+    <h2>眼視光產業版圖</h2>
+    <p class="sec-sub">眼視光橫跨光學、醫材、製藥與通路。點選任一領域可前往對應的公司與分析。</p>
+    <div class="seg-map" id="segMap"></div>
+    <div class="ov-quick">
+      <a class="ov-quick-card" data-goto="taiwan"><b>台灣訊息</b><span>台灣眼視光新聞,每 6 小時更新</span></a>
+      <a class="ov-quick-card" data-goto="global"><b>全球訊息</b><span>國際新聞 + 繁中重點,每日更新</span></a>
+      <a class="ov-quick-card" data-goto="companies"><b>產業公司</b><span>依領域分類 + 台股代號</span></a>
+      <a class="ov-quick-card" data-goto="myopia"><b>近視控制</b><span>臨床工具、設計與實證(單一類別)</span></a>
+    </div>
+  </div>
+</section>
+</section><!-- /view-overview -->
+
+<section class="view" id="view-myopia">
+<!-- ======= EFFICACY STRIP ======= -->
+<section class="efficacy" id="efficacy">
+  <div class="wrap">
+    <div class="panel">
+      <div class="panel-head">
+        <h2>眼軸延緩效果比較</h2>
+        <p>各工具相對於對照組,延緩眼軸增長(axial length)之代表數值。實際效果依年齡、基準度數與配戴依從性而異。</p>
+      </div>
+      <div class="bars" id="bars">
+        <!-- filled by JS -->
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======= TOOLS ======= -->
+<section class="sec" id="tools">
+  <div class="wrap">
+    <span class="sec-eye">MYOPIA CONTROL · ONE PART OF EYE-VISION</span>
+    <h2>近視控制(眼視光的一環)</h2>
+    <p class="sec-sub">近視控制是眼視光領域的重要一環。以下六大工具含作用機轉、控制效果、適合族群、設計特性、優缺點與代表性臨床試驗。切換「家長版」可改用白話說明。</p>
+    <div class="tooltabs" id="toolTabs"><!-- tabs --></div>
+    <div class="tool-stage" id="toolStage"><!-- active tool --></div>
+  </div>
+</section>
+
+<!-- ======= LATEST LITERATURE ======= -->
+<section class="sec" id="literature">
+  <div class="wrap">
+    <span class="sec-eye">LIVE EVIDENCE FEED</span>
+    <h2>最新臨床文獻</h2>
+    <p class="sec-sub">由 GitHub Actions 每日自動查詢 PubMed,依工具分類彙整近期文獻,標題與重點直接顯示。</p>
+    <div class="panel lit-panel">
+      <div class="lit-head">
+        <h3>PubMed 近期文獻</h3>
+        <span class="upd-badge">● 最後更新 <span id="updTime">載入中…</span></span>
+      </div>
+      <div class="lit-tabs" id="litTabs"></div>
+      <div class="feed" id="feed"></div>
+    </div>
+  </div>
+</section>
+
+</section><!-- /view-myopia -->
+
+<section class="view" id="view-taiwan">
+<!-- ======= MARKET NEWS ======= -->
+<section class="sec" id="market-news">
+  <div class="wrap">
+    <span class="sec-eye">TAIWAN · LIVE</span>
+    <h2>台灣眼視光訊息</h2>
+    <p class="sec-sub">每 6 小時自動查詢 Google News(台灣/繁中),涵蓋近視控制、隱形眼鏡、鏡片驗光、眼科醫材、眼藥、視力保健與產業公司動態。可依分類篩選。</p>
+    <div class="panel lit-panel">
+      <div class="lit-head">
+        <h3>最新消息 · 活動</h3>
+        <span class="upd-badge">● 最後更新 <span id="newsUpd">載入中…</span></span>
+      </div>
+      <div class="lit-tabs" id="newsTabs"></div>
+      <div class="feed" id="newsFeed"></div>
+    </div>
+  </div>
+</section>
+
+</section><!-- /view-taiwan -->
+
+<section class="view" id="view-global">
+<!-- ======= GLOBAL NEWS ======= -->
+<section class="sec" id="global-news">
+  <div class="wrap">
+    <span class="sec-eye">GLOBAL · LIVE</span>
+    <h2>全球眼視光訊息</h2>
+    <p class="sec-sub">每日自動查詢 Google News(全球/英文),涵蓋整個眼視光領域。<b>重點</b>以繁體中文自動翻譯顯示(免費、免金鑰)。可依分類篩選。</p>
+    <div class="panel lit-panel">
+      <div class="lit-head">
+        <h3>國際消息 · 重點摘要</h3>
+        <span class="upd-badge">● 最後更新 <span id="gUpd">載入中…</span></span>
+      </div>
+      <div class="lit-tabs" id="gTabs"></div>
+      <div class="feed" id="gFeed"></div>
+    </div>
+  </div>
+</section>
+
+</section><!-- /view-global -->
+
+<section class="view" id="view-companies">
+<!-- ======= COMPANIES ======= -->
+<section class="sec" id="companies">
+  <div class="wrap">
+    <span class="sec-eye">INDUSTRY DIRECTORY</span>
+    <h2>眼視光產業公司</h2>
+    <p class="sec-sub">依領域分類的眼視光相關公司(含部分台股代號)。此為可自行編輯的起始清單,資料以編輯 index.html 的 <code>COMPANIES</code> 為準;歸類與最新狀態請自行查證更新。</p>
+    <div class="co-tabs" id="coTabs"></div>
+    <div class="co-grid" id="coGrid"></div>
+  </div>
+</section>
+
+</section><!-- /view-companies -->
+
+<section class="view" id="view-about">
+<!-- ======= DISCLAIMER ======= -->
+<section class="sec" id="note">
+  <div class="wrap">
+    <div class="disclaimer">
+      <p><b>使用與法規提醒</b>　本頁為近視控制方法之衛教與臨床參考整理,<b>不構成醫療建議、診斷或處方</b>。任何近視控制療法之選擇與使用,應由合格眼科醫師或驗光人員評估後決定。文中臨床數據為代表性試驗之摘要,實際效果因人而異。</p>
+      <p style="margin-top:10px">依《醫療器材管理法》與醫療廣告相關規範,涉及醫療器材(如角膜塑型片、離焦鏡片)之對外行銷內容,不得誇大療效或使用保證性字句;本頁若作為對外用途,請先經法規/法務審閱。臨床文獻資料來源為 PubMed / NCBI,僅供學術參考。</p>
+    </div>
+  </div>
+</section>
+</section><!-- /view-about -->
+</main>
+
+<footer>
+  <div class="wrap">
+    眼視光資訊中心 · Eye-Vision Industry Hub<br>
+    資料來源:Google News · PubMed / NCBI · 每日/每 6 小時自動更新
+    <div class="build">build r16 · <span id="buildStamp"></span></div>
+  </div>
+</footer>
+
+<div class="lightbox" id="lightbox" aria-hidden="true">
+  <button class="lb-close" id="lbClose" aria-label="關閉">✕</button>
+  <div class="lb-inner">
+    <div class="lb-body" id="lbBody"></div>
+    <div class="lb-cap" id="lbCap"></div>
+  </div>
+</div>
+
+<script>
+/* =========================================================
+   TOOL DATASET — landmark clinical evidence (baseline)
+   ========================================================= */
+const TOOLS = [
+  {
+    id:"OK-01", key:"ortho", cat:"optical", catLabel:"光學 · 隱形眼鏡",
+    name:"角膜塑型片", en:"Orthokeratology (Ortho-K)",
+    headline:"~45%", headlineLab:"眼軸延緩(代表值 32–63%)",
+    glyph:`<svg viewBox="0 0 40 40" fill="none"><ellipse cx="20" cy="20" rx="17" ry="12" stroke="#1F49D6" stroke-width="1.6"/><ellipse cx="20" cy="20" rx="10" ry="7" stroke="#1F49D6" stroke-width="1.6" stroke-opacity=".6"/><circle cx="20" cy="20" r="3.5" fill="#2FD07B"/></svg>`,
+    mech:"夜間配戴,壓平中央角膜、周邊變陡,白天不需矯正;同時形成<b>周邊近視性離焦</b>,抑制眼軸增長。",
+    mechPlain:"晚上睡覺時戴,把角膜輕輕塑形,白天不用戴眼鏡就看得清楚,同時幫忙減緩度數加深。",
+    effect:"2 年可較對照組少約 <b>0.25–0.30 mm</b> 眼軸增長;高度近視反應通常較佳。",
+    effectPlain:"研究顯示可明顯減緩眼睛長度增加的速度。",
+    fit:["約 7–15 歲","近視 -0.75 ~ -5.00D","散光 < 1.50D","願配合夜戴與清潔"],
+    design:"高透氧硬式鏡片(逆幾何設計),需地形圖驗配、定期回診。",
+    pros:["白天免戴鏡,適合運動","可逆、停戴角膜可恢復","對高度近視延緩佳"],
+    cons:["感染風險(微生物性角膜炎)","需專業驗配與衛教","停戴有反彈","費用較高"],
+    trials:[
+      {name:"ROMIO", country:"香港", meta:"Cho & Cheung 2012 · 雙盲 RCT", pt:"6–10 歲 · n=78 · 2 年", num:"眼軸增長 0.36 vs 對照 0.63mm(延緩 ~43%)"},
+      {name:"LORIC", country:"香港", meta:"Cho et al 2005 · 前導縱貫", pt:"兒童 · 2 年", num:"眼軸增長較對照少 ~46%"},
+      {name:"HM 高度近視", country:"香港", meta:"Charm & Cho 2013 · RCT", pt:"-5.75~-10D · 2 年", num:"眼軸延緩 ~63%(0.19 vs 0.51mm)"}
+    ]
+  },
+  {
+    id:"ATR-02", key:"atropine", cat:"pharma", catLabel:"藥物 · 眼藥水",
+    name:"低濃度阿托品", en:"Low-dose Atropine",
+    headline:"~0.05%", headlineLab:"LAMP 研究最佳濃度",
+    glyph:`<svg viewBox="0 0 40 40" fill="none"><path d="M20 6c4 6 8 10 8 15a8 8 0 11-16 0c0-5 4-9 8-15z" stroke="#D9862A" stroke-width="1.6" fill="#FBEEDA"/><circle cx="20" cy="22" r="3" fill="#D9862A"/></svg>`,
+    mech:"蕈毒鹼受體拮抗劑;抑制近視之機轉尚未完全明瞭(非源自調節麻痺,推測與視網膜/鞏膜訊號有關)。",
+    mechPlain:"一種每天點的眼藥水,能減緩近視加深,原理與放鬆眼睛肌肉無關。",
+    effect:"LAMP 顯示 <b>0.05% > 0.025% > 0.01%</b>;5 年追蹤(2024)顯示 0.05% 續用延緩效果最佳,停藥後年紀越小越易反彈、需再治療。",
+    effectPlain:"低濃度中以 0.05% 效果最好,長期追蹤顯示持續使用效果較穩定。",
+    fit:["適用年齡廣、含較小孩童","快速進展者","無法配戴隱形眼鏡者","可與光學方法併用"],
+    design:"每晚點一次;需藥局調劑不同濃度;定期監測瞳孔與近距視力。",
+    pros:["使用最簡單(點眼)","可與 OK/離焦鏡併用","適用族群最廣"],
+    cons:["畏光、近看模糊(濃度高較明顯)","少數過敏","停用可能反彈","取得依調劑而定"],
+    trials:[
+      {name:"LAMP 5 年(Phase 4)", country:"香港", meta:"Yam/Zhang et al · Ophthalmology 2024", pt:"4–12 歲 · n=438起 · 每晚 0.05/0.025/0.01%", num:"第1年 0.05% 眼軸0.20 vs 安慰劑0.41mm;5年續用最佳"},
+      {name:"CHAMP 3 年", country:"美國+歐洲", meta:"Zadnik et al · JAMA Ophthalmol 2023", pt:"3–17 歲 · n=573 · 0.01/0.02% vs 安慰劑 · 3 年", num:"0.02% 顯著延緩;0.01% 未達統計顯著"},
+      {name:"ATOM2", country:"新加坡", meta:"Chia et al 2012 · RCT", pt:"6–12 歲 · n=400 · 0.01/0.1/0.5% · 2 年", num:"0.01% 度數延緩、反彈最小(綜合最佳)"}
+    ]
+  },
+  {
+    id:"SPX-03", key:"spectacle", cat:"optical", catLabel:"光學 · 框架眼鏡",
+    name:"周邊離焦框架眼鏡", en:"DIMS / HAL / DOT Spectacles",
+    headline:"~60%", headlineLab:"眼軸延緩(DIMS 2 年)",
+    glyph:`<svg viewBox="0 0 40 40" fill="none"><circle cx="20" cy="20" r="15" stroke="#1F49D6" stroke-width="1.6"/><g fill="#1F49D6" fill-opacity=".5"><circle cx="20" cy="10" r="1.6"/><circle cx="27" cy="14" r="1.6"/><circle cx="29" cy="22" r="1.6"/><circle cx="24" cy="28" r="1.6"/><circle cx="14" cy="28" r="1.6"/><circle cx="11" cy="20" r="1.6"/><circle cx="13" cy="13" r="1.6"/></g><circle cx="20" cy="20" r="5" stroke="#2FD07B" stroke-width="1.6"/></svg>`,
+    mech:"鏡片中央清晰,周邊佈滿微透鏡(DIMS 蜂巢/HAL 非球面環/DOT 散射點),製造周邊離焦訊號,抑制眼軸增長。",
+    mechPlain:"看起來像一般眼鏡,但鏡片上有特殊設計,幫忙讓度數加深變慢,全天配戴。",
+    effect:"DIMS 2 年:度數延緩約 59%、眼軸約 60%(6 年持續、無反彈);HAL 全天配戴延緩可達約 67%,追蹤至 7 年仍具效果。",
+    effectPlain:"戴得越足時間、效果越好;長期追蹤顯示效果可維持,對不適合戴隱形眼鏡的孩子很方便。",
+    fit:["偏好或需要戴眼鏡的孩童","年齡範圍廣","不適合隱形眼鏡者","能全天穩定配戴者"],
+    design:"MiYOSMART(蜂巢微透鏡)、Stellest(11 環非球面)、SightGlass(散射點);外觀近似一般鏡片。",
+    pros:["非侵入、安全性高","配戴簡單如一般眼鏡","無感染風險"],
+    cons:["需全天足時配戴才有效","周邊需適應","費用高於一般鏡片"],
+    trials:[
+      {name:"DIMS / MiYOSMART 6 年", country:"香港", meta:"Lam et al · BJO 2020 / Sci Rep 2023", pt:"8–13 歲 · n=183 · 蜂巢+3.50D 全天 · 2→6 年", num:"2年 度數延緩59%、眼軸60%;6年持續、無反彈"},
+      {name:"HAL / Stellest 7 年", country:"中國(溫州)", meta:"Bao et al · JAMA Ophth 2022 / ARVO 2026", pt:"8–13 歲 · n≈157 · 11環1021微透鏡 · ≥12hr", num:"2年 -0.66D/0.34mm vs SV -1.46D/0.69mm(~55%);7年續佳"},
+      {name:"DOT / SightGlass", country:"美國", meta:"CYPRESS · 3 年 RCT", pt:"散射光學設計 · 3 年", num:"度數與眼軸顯著延緩"}
+    ]
+  },
+  {
+    id:"SCL-04", key:"softcl", cat:"optical", catLabel:"光學 · 隱形眼鏡",
+    name:"離焦軟式隱形眼鏡", en:"Dual-focus Soft CL (MiSight)",
+    headline:"~52%", headlineLab:"眼軸延緩(MiSight 3 年)",
+    glyph:`<svg viewBox="0 0 40 40" fill="none"><circle cx="20" cy="20" r="15" stroke="#1F49D6" stroke-width="1.6"/><circle cx="20" cy="20" r="11" stroke="#1F49D6" stroke-width="2.4" stroke-opacity=".4"/><circle cx="20" cy="20" r="6.5" stroke="#1F49D6" stroke-width="2.4" stroke-opacity=".4"/><circle cx="20" cy="20" r="3" fill="#2FD07B"/></svg>`,
+    mech:"同心圓雙焦設計:交替的矯正區與離焦治療區,在看清楚同時製造周邊近視離焦。",
+    mechPlain:"白天戴的日拋隱形眼鏡,看得清楚也能減緩近視加深,適合活潑好動的孩子。",
+    effect:"MiSight 3 年:度數延緩約 59%、眼軸約 52%;6 年持續、7 年停戴研究顯示無反彈。",
+    effectPlain:"長期追蹤(到第 7 年)顯示效果可維持、停戴不反彈,愈早開始愈好。",
+    fit:["約 8–12 歲起始","願意日間配戴隱形眼鏡","活潑好動、不愛戴框架","衛生依從性佳"],
+    design:"每日拋棄式軟式鏡片(同心圓雙焦);日拋衛生風險較低。",
+    pros:["白天清晰視力 + 控制","日拋衛生佳","適合運動"],
+    cons:["需學會配戴與清潔","費用較高","仍有感染風險","依從性要求高"],
+    trials:[
+      {name:"MiSight 3 年", country:"加/葡/星/英", meta:"Chamberlain et al · Optom Vis Sci 2019", pt:"8–12 歲 · n=144 · 雙盲RCT · 日拋+2.00D", num:"度數延緩59%、眼軸52%(0.30 vs 0.62mm)"},
+      {name:"MiSight 6 年", country:"加/葡/星/英", meta:"Chamberlain et al · Optom Vis Sci 2022", pt:"延伸 3+3 年 · n=109 完成", num:"效果持續、累積延緩續增"},
+      {name:"MiSight 7 年(停戴)", country:"加/葡/星/英", meta:"Chamberlain et al · Optom Vis Sci 2025", pt:"停戴1年洗脫 · n=83", num:"回到年齡常態、無反彈效應"}
+    ]
+  },
+  {
+    id:"RLR-05", key:"redlight", cat:"light", catLabel:"光照 · 居家儀器",
+    name:"重複低強度紅光", en:"Repeated Low-level Red Light (RLRL)",
+    headline:"~0.26mm", headlineLab:"1 年眼軸差(vs 對照)",
+    glyph:`<svg viewBox="0 0 40 40" fill="none"><circle cx="20" cy="20" r="8" fill="#D14B3C" fill-opacity=".85"/><g stroke="#D14B3C" stroke-width="1.6" stroke-linecap="round"><path d="M20 4v4M20 32v4M4 20h4M32 20h4M8.5 8.5l3 3M28.5 28.5l3 3M31.5 8.5l-3 3M11.5 28.5l-3 3"/></g></svg>`,
+    mech:"每日 2 次、每次約 3 分鐘照射 650nm 紅光;推測增加脈絡膜血流/厚度、影響鞏膜,機轉仍在研究。",
+    mechPlain:"在家用桌上型儀器,每天看兩次紅光、各三分鐘,可減緩近視;較新的方法。",
+    effect:"12 個月 RCT:眼軸較對照少約 <b>0.26 mm</b>;2 年續用延緩約 75%,但<b>停用有明顯反彈</b>,長期安全性資料仍在累積。",
+    effectPlain:"短期研究顯示延緩效果明顯,但一停就容易反彈,長期安全性仍需觀察。",
+    fit:["近視持續進展者","其他方法效果不佳/無法配合者","家中可規律每日 2 次使用者"],
+    design:"居家桌上型紅光儀;需家長監督、規律使用;應定期眼科(含 OCT)追蹤。",
+    pros:["非侵入、居家可執行","短期延緩效果顯著","對部分族群反應佳"],
+    cons:["長期安全性資料仍累積中(曾有視網膜變化個案報告)","停用可能反彈","需嚴格依從與追蹤","儀器成本"],
+    trials:[
+      {name:"RLRL 12 個月", country:"中國", meta:"Jiang et al · Ophthalmology 2022 · 多中心RCT", pt:"8–13 歲 · n=264 · 650nm 每日2×3分", num:"眼軸較對照少0.26mm、度數0.59D(~70–75%)"},
+      {name:"RLRL 2 年追蹤", country:"中國", meta:"Xiong et al · Clin Exp Ophthalmol 2022", pt:"續用2年 vs 停用", num:"續用延緩~75%;停用第2年反彈0.42 vs 0.28mm"},
+      {name:"安全性系統回顧", country:"中國", meta:"Chen et al 2024 · 20篇/2380名", pt:"最長24月 · OCT 監測", num:"曾有可逆OCT異常個案、無永久失明"}
+    ]
+  },
+  {
+    id:"OUT-06", key:"outdoor", cat:"behav", catLabel:"行為 · 生活型態",
+    name:"戶外活動時間", en:"Outdoor Time",
+    headline:"~2 hr/天", headlineLab:"建議戶外時間",
+    glyph:`<svg viewBox="0 0 40 40" fill="none"><circle cx="20" cy="20" r="7" fill="#2FD07B" fill-opacity=".85"/><g stroke="#12924E" stroke-width="1.6" stroke-linecap="round"><path d="M20 5v3M20 32v3M5 20h3M32 20h3M9 9l2 2M29 29l2 2M31 9l-2 2M11 29l-2 2"/></g></svg>`,
+    mech:"充足光照 → 視網膜多巴胺釋放 → 抑制眼軸增長;主要作用於<b>延緩近視發生</b>。",
+    mechPlain:"每天多到戶外活動、曬到自然光,能幫忙延後近視發生,而且完全免費、零風險。",
+    effect:"學校每日增加 40 分鐘戶外活動,可顯著<b>降低近視新發生率</b>(He 2015, JAMA)。",
+    effectPlain:"多到戶外對「還沒近視」的孩子預防效果最明顯。",
+    fit:["所有孩童(尤其學齡前/未近視)","作為所有療法的共同輔助","近視前期族群"],
+    design:"目標每日約 2 小時、每週約 14 小時戶外光照;可搭配課間戶外。",
+    pros:["零成本、零風險","對全身健康有益","最佳的預防手段"],
+    cons:["需長期養成習慣","對已近視者延緩效果較弱","受天氣/課業影響依從性"],
+    trials:[
+      {name:"廣州學校試驗", country:"中國(廣州)", meta:"He et al · JAMA 2015 · 群集RCT", pt:"6–7 歲 · n=1903 · 每日+40分課間戶外 · 3 年", num:"3年近視新發生率 30.4% vs 對照 39.5%"},
+      {name:"課間戶外介入", country:"台灣", meta:"Wu et al · Ophthalmology 2013/2018", pt:"學童 · 下課走出教室 · 校園介入", num:"近視發生與進展顯著下降"}
+    ]
+  }
+];
+
+/* efficacy bars (representative axial-length delay %) */
+const EFFICACY = [
+  {label:"周邊離焦眼鏡", pct:60, color:"#1F49D6", note:"DIMS 2 年 60%,6 年持續無反彈;HAL 追蹤至 7 年"},
+  {label:"角膜塑型片", pct:50, color:"#2456E0", note:"代表範圍 32–63%,高度近視反應較佳"},
+  {label:"離焦軟式CL", pct:52, color:"#3B6FE8", note:"MiSight 3 年 52%,6–7 年持續、停戴無反彈"},
+  {label:"低濃度阿托品", pct:45, color:"#D9862A", note:"LAMP 5 年:0.05% 續用最佳(度數延緩更明顯)"},
+  {label:"重複紅光", pct:55, color:"#D14B3C", note:"2 年續用延緩約 75%,惟停用反彈、安全性續追蹤"},
+  {label:"戶外活動", pct:25, color:"#12924E", note:"主要延緩『發生』,對已近視者延緩較弱"}
+];
+
+/* =========================================================
+   DESIGN DIAGRAMS (設計示意圖) + FEATURES (特性)
+   ========================================================= */
+const F="font-family=\"'Noto Sans TC',sans-serif\"";
+const DIAGRAMS={
+  ortho:[{cap:"正面 · 角膜地形圖",svg:`<svg viewBox="0 0 300 220" xmlns="http://www.w3.org/2000/svg"><text x="10" y="16" text-anchor="start" font-family="'Noto Sans TC',sans-serif" font-size="11" font-weight="700" fill="#0C1E38">角膜地形圖(正面)</text><circle cx="110" cy="112" r="92" fill="#EEF1F5" stroke="#D7DEE7"/><circle cx="110" cy="112" r="88" fill="#F2E0CB"/><circle cx="110" cy="112" r="74" fill="#EBB988"/><circle cx="110" cy="112" r="56" fill="#C9D6EE"/><circle cx="110" cy="112" r="36" fill="#8FB0F0"/><g stroke="#fff" stroke-width="1" opacity=".5"><line x1="18" y1="112" x2="202" y2="112"/><line x1="110" y1="20" x2="110" y2="204"/><line x1="45" y1="47" x2="175" y2="177"/><line x1="45" y1="177" x2="175" y2="47"/></g><circle cx="110" cy="112" r="36" fill="none" stroke="#1F49D6" stroke-width="1.3"/><g><rect x="222" y="150" width="10" height="46" rx="2" fill="url(#tg)"/></g><defs><linearGradient id="tg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#D14B3C"/><stop offset="0.5" stop-color="#EBB988"/><stop offset="1" stop-color="#1F49D6"/></linearGradient></defs><text x="236" y="156" text-anchor="start" font-family="'Noto Sans TC',sans-serif" font-size="7.5" font-weight="400" fill="#6B7C90">陡</text><text x="236" y="196" text-anchor="start" font-family="'Noto Sans TC',sans-serif" font-size="7.5" font-weight="400" fill="#6B7C90">平</text><line x1="224.0" y1="52.0" x2="120.0" y2="112.0" stroke="#1F49D6" stroke-width="1" stroke-opacity=".5"/><circle cx="232" cy="52" r="9" fill="#fff" stroke="#1F49D6" stroke-width="1.7"/><text x="232" y="55.4" text-anchor="middle" font-family="'Noto Sans TC',sans-serif" font-size="10.5" font-weight="700" fill="#1F49D6">1</text><line x1="224.0" y1="96.0" x2="110.0" y2="54.0" stroke="#D9862A" stroke-width="1" stroke-opacity=".5"/><circle cx="232" cy="96" r="9" fill="#fff" stroke="#D9862A" stroke-width="1.7"/><text x="232" y="99.4" text-anchor="middle" font-family="'Noto Sans TC',sans-serif" font-size="10.5" font-weight="700" fill="#D9862A">2</text><line x1="224.0" y1="140.0" x2="170.0" y2="150.0" stroke="#6B7C90" stroke-width="1" stroke-opacity=".5"/><circle cx="232" cy="140" r="9" fill="#fff" stroke="#6B7C90" stroke-width="1.7"/><text x="232" y="143.4" text-anchor="middle" font-family="'Noto Sans TC',sans-serif" font-size="10.5" font-weight="700" fill="#6B7C90">3</text></svg>`,notes:[{n:"1",c:"#1F49D6",k:"中央壓平區",v:"角膜中央變平,白天不戴鏡即中央清晰"},{n:"2",c:"#D9862A",k:"中周邊變陡環",v:"環狀變陡,製造周邊近視離焦(控制訊號)"},{n:"3",c:"#6B7C90",k:"外周過渡區 + 色階",v:"地形圖:藍=平坦、紅=陡峭;回診比對塑形位置"}]},{cap:"側面 · 逆幾何塑形橫切",svg:`<svg viewBox="0 0 300 220" xmlns="http://www.w3.org/2000/svg"><defs><radialGradient id="gEye" cx="42%" cy="38%" r="72%"><stop offset="0" stop-color="#FFFFFF"/><stop offset="0.65" stop-color="#F3F7FC"/><stop offset="1" stop-color="#E2E9F2"/></radialGradient><radialGradient id="gLens" cx="45%" cy="38%" r="68%"><stop offset="0" stop-color="#EDF3FF"/><stop offset="1" stop-color="#BFD2F3"/></radialGradient><radialGradient id="gClear" cx="50%" cy="42%" r="62%"><stop offset="0" stop-color="#EDFCF3"/><stop offset="1" stop-color="#C8EFDA"/></radialGradient><radialGradient id="gLED" cx="42%" cy="38%" r="62%"><stop offset="0" stop-color="#FFB0A4"/><stop offset="0.5" stop-color="#DE5648"/><stop offset="1" stop-color="#AE362C"/></radialGradient><radialGradient id="gSun" cx="42%" cy="38%" r="66%"><stop offset="0" stop-color="#FFE59A"/><stop offset="1" stop-color="#F2A017"/></radialGradient><linearGradient id="gDev" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#3C424C"/><stop offset="1" stop-color="#21252D"/></linearGradient><filter id="soft" x="-25%" y="-25%" width="150%" height="150%"><feDropShadow dx="0" dy="2.5" stdDeviation="3.2" flood-color="#0C1E38" flood-opacity="0.16"/></filter><filter id="glow" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="3.2" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter></defs><g stroke-linecap="round" stroke-linejoin="round"><text x="10" y="16" text-anchor="start" font-family="'Noto Sans TC',sans-serif" font-size="11" font-weight="700" fill="#0C1E38">逆幾何塑形(側面橫切)</text><path d="M28 58 Q150 44 272 58 L268 70 Q150 56 32 70 Z" fill="url(#gLens)" stroke="#1F49D6" stroke-width="1.2"/><path d="M60 66 Q90 78 120 66 M180 66 Q210 78 240 66" fill="none" stroke="#1F49D6" stroke-width="0.8" stroke-opacity=".5"/><path d="M34 72 Q150 62 268 72 L266 80 Q150 76 36 80 Z" fill="#CFF3FF" opacity=".8"/><path d="M78 74 Q90 84 104 74 M196 74 Q210 84 222 74" fill="#BDEBFF" stroke="#7CC6E0" stroke-width="0.7"/><path d="M24 146 Q150 100 276 146" fill="none" stroke="#9AA8B8" stroke-width="1.3" stroke-dasharray="5 4"/><path d="M24 146 Q78 112 116 122 Q150 130 184 122 Q222 112 276 146 L276 152 Q150 138 24 152 Z" fill="#F0E4D4" stroke="#9A6E3A" stroke-width="1.8"/><path d="M60 132 Q150 120 240 132" fill="none" stroke="#C9A87E" stroke-width="0.8" stroke-opacity=".7"/><line x1="230.0" y1="54.0" x2="150.0" y2="62.0" stroke="#1F49D6" stroke-width="1" stroke-opacity=".5"/><circle cx="238" cy="54" r="9" fill="#fff" stroke="#1F49D6" stroke-width="1.7"/><text x="238" y="57.4" text-anchor="middle" font-family="'Noto Sans TC',sans-serif" font-size="10.5" font-weight="700" fill="#1F49D6">1</text><line x1="230.0" y1="92.0" x2="150.0" y2="78.0" stroke="#3EA7C9" stroke-width="1" stroke-opacity=".5"/><circle cx="238" cy="92" r="9" fill="#fff" stroke="#3EA7C9" stroke-width="1.7"/><text x="238" y="95.4" text-anchor="middle" font-family="'Noto Sans TC',sans-serif" font-size="10.5" font-weight="700" fill="#3EA7C9">2</text><line x1="142.0" y1="180.0" x2="150.0" y2="124.0" stroke="#1F49D6" stroke-width="1" stroke-opacity=".5"/><circle cx="150" cy="196" r="9" fill="#fff" stroke="#1F49D6" stroke-width="1.7"/><text x="150" y="199.4" text-anchor="middle" font-family="'Noto Sans TC',sans-serif" font-size="10.5" font-weight="700" fill="#1F49D6">3</text><line x1="62.0" y1="178.0" x2="88.0" y2="116.0" stroke="#D9862A" stroke-width="1" stroke-opacity=".5"/><circle cx="56" cy="196" r="9" fill="#fff" stroke="#D9862A" stroke-width="1.7"/><text x="56" y="199.4" text-anchor="middle" font-family="'Noto Sans TC',sans-serif" font-size="10.5" font-weight="700" fill="#D9862A">4</text><text x="150" y="214" text-anchor="middle" font-family="'Noto Sans TC',sans-serif" font-size="8" font-weight="400" fill="#6B7C90">中央治療區 ~6mm · 逆幾何 4 弧</text></g></svg>`,notes:[{n:"1",c:"#1F49D6",k:"逆幾何硬式鏡片(4 弧)",v:"基弧/逆弧/定位弧/週邊弧,夜間配戴重塑角膜"},{n:"2",c:"#3EA7C9",k:"淚液儲存區",v:"逆弧下方淚液池,塑形力來源"},{n:"3",c:"#1F49D6",k:"中央上皮壓平(治療區~6mm)",v:"上皮重新分布,中央變薄→清晰"},{n:"4",c:"#D9862A",k:"中周邊上皮增厚變陡",v:"形成環狀周邊近視離焦→延緩眼軸"}]}],
+  atropine:[{cap:"側面 · 作用機轉(眼球構造)",svg:`<svg viewBox="0 0 300 220" xmlns="http://www.w3.org/2000/svg"><defs><radialGradient id="gEye" cx="42%" cy="38%" r="72%"><stop offset="0" stop-color="#FFFFFF"/><stop offset="0.65" stop-color="#F3F7FC"/><stop offset="1" stop-color="#E2E9F2"/></radialGradient><radialGradient id="gLens" cx="45%" cy="38%" r="68%"><stop offset="0" stop-color="#EDF3FF"/><stop offset="1" stop-color="#BFD2F3"/></radialGradient><radialGradient id="gClear" cx="50%" cy="42%" r="62%"><stop offset="0" stop-color="#EDFCF3"/><stop offset="1" stop-color="#C8EFDA"/></radialGradient><radialGradient id="gLED" cx="42%" cy="38%" r="62%"><stop offset="0" stop-color="#FFB0A4"/><stop offset="0.5" stop-color="#DE5648"/><stop offset="1" stop-color="#AE362C"/></radialGradient><radialGradient id="gSun" cx="42%" cy="38%" r="66%"><stop offset="0" stop-color="#FFE59A"/><stop offset="1" stop-color="#F2A017"/></radialGradient><linearGradient id="gDev" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#3C424C"/><stop offset="1" stop-color="#21252D"/></linearGradient><filter id="soft" x="-25%" y="-25%" width="150%" height="150%"><feDropShadow dx="0" dy="2.5" stdDeviation="3.2" flood-color="#0C1E38" flood-opacity="0.16"/></filter><filter id="glow" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="3.2" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter></defs><g stroke-linecap="round" stroke-linejoin="round"><text x="10" y="16" text-anchor="start" font-family="'Noto Sans TC',sans-serif" font-size="11" font-weight="700" fill="#0C1E38">作用機轉(側面 · 眼球構造)</text><g transform="translate(24,40)"><rect x="0" y="4" width="15" height="22" rx="3" fill="#FBEEDA" stroke="#D9862A" stroke-width="1.3"/><rect x="3" y="-2" width="9" height="8" rx="2" fill="#D9862A"/><path d="M7.5 26 L7.5 40" stroke="#D9862A" stroke-width="1.3"/><circle cx="7.5" cy="45" r="3.4" fill="#D9862A"/></g><circle cx="198" cy="110" r="74" fill="url(#gEye)" filter="url(#soft)" stroke="#26333F" stroke-width="1.6"/><path d="M205.1 42.4 A68.0 68.0 0 0 1 205.1 177.6" fill="none" stroke="#C77A6E" stroke-width="4" stroke-opacity=".85"/><path d="M202.4 47.2 A63.0 63.0 0 0 1 202.4 172.8" fill="none" stroke="#E2A79D" stroke-width="2" stroke-opacity="1"/><path d="M256.5 117.7 l4 -4 l4 4" fill="none" stroke="#B4756B" stroke-width="1.3"/><ellipse cx="257.4" cy="136.4" rx="4" ry="6" fill="#F3D9A0" stroke="#C9A24A" stroke-width="0.8"/><path d="M264.5 138.4 l20 -6 l0 22 l-20 -6 Z" fill="url(#gEye)" filter="url(#soft)" stroke="#26333F" stroke-width="1.2"/><path d="M128.9 83.5 Q104 110 128.9 136.5" fill="url(#gLens)" stroke="#26333F" stroke-width="1.5"/><path d="M131.9 81.5 Q115 110 131.9 138.5" fill="none" stroke="#8FB4D6" stroke-width="1"/><path d="M131.9 81.5 Q115 110 131.9 138.5 L168 123 L168 97 Z" fill="#EAF4FF" opacity=".55"/><path d="M130.9 85.5 L168 99 L144.0 107.0 Z" fill="#5E79B0" stroke="#26333F" stroke-width="0.6"/><path d="M130.9 134.5 L168 121 L144.0 113.0 Z" fill="#5E79B0" stroke="#26333F" stroke-width="0.6"/><ellipse cx="180" cy="110" rx="12" ry="26" fill="url(#gLens)" stroke="#1F49D6" stroke-width="1.2"/><ellipse cx="180" cy="110" rx="12" ry="26" fill="none" stroke="#9DB6E8" stroke-width="0.6"/><path d="M182 84 l-8 -5 l0 10 Z" fill="#C08A5E"/><path d="M182 136 l-8 5 l0 -10 Z" fill="#C08A5E"/><g stroke="#B9C4D6" stroke-width="0.7"><line x1="174" y1="86" x2="164" y2="80"/><line x1="174" y1="134" x2="164" y2="140"/></g><circle cx="246.1" cy="77.6" r="7.5" fill="#fff" stroke="#D9862A" stroke-width="1.6"/><text x="246" y="81" text-anchor="middle" font-family="'Noto Sans TC',sans-serif" font-size="7.5" font-weight="700" fill="#D9862A">M✕</text><line x1="38.0" y1="54.0" x2="40.0" y2="60.0" stroke="#D9862A" stroke-width="1" stroke-opacity=".5"/><circle cx="46" cy="54" r="9" fill="#fff" stroke="#D9862A" stroke-width="1.7"/><text x="46" y="57.4" text-anchor="middle" font-family="'Noto Sans TC',sans-serif" font-size="10.5" font-weight="700" fill="#D9862A">1</text><line x1="142.0" y1="184.0" x2="168.0" y2="84.0" stroke="#D9862A" stroke-width="1" stroke-opacity=".5"/><circle cx="150" cy="196" r="9" fill="#fff" stroke="#D9862A" stroke-width="1.7"/><text x="150" y="199.4" text-anchor="middle" font-family="'Noto Sans TC',sans-serif" font-size="10.5" font-weight="700" fill="#D9862A">2</text><line x1="260.0" y1="58.0" x2="236.0" y2="54.0" stroke="#17A34A" stroke-width="1" stroke-opacity=".5"/><circle cx="268" cy="58" r="9" fill="#fff" stroke="#17A34A" stroke-width="1.7"/><text x="268" y="61.4" text-anchor="middle" font-family="'Noto Sans TC',sans-serif" font-size="10.5" font-weight="700" fill="#17A34A">3</text><line x1="277.0" y1="120.0" x2="246.0" y2="116.0" stroke="#9A6E3A" stroke-width="1" stroke-opacity=".5"/><circle cx="285" cy="120" r="9" fill="#fff" stroke="#9A6E3A" stroke-width="1.7"/><text x="285" y="123.4" text-anchor="middle" font-family="'Noto Sans TC',sans-serif" font-size="10.5" font-weight="700" fill="#9A6E3A">4</text></g></svg>`,notes:[{n:"1",c:"#D9862A",k:"點眼 0.05%(每晚 1 次)",v:"低濃度、使用簡單,可與光學方法併用"},{n:"2",c:"#D9862A",k:"蕈毒鹼受體拮抗",v:"阻斷受體;確切抗近視機轉尚未完全明瞭(非調節麻痺)"},{n:"3",c:"#17A34A",k:"脈絡膜增厚(推測)",v:"可能延緩眼軸;主要延緩度數"},{n:"4",c:"#9A6E3A",k:"鞏膜訊號(假說)",v:"推測影響鞏膜重塑,減緩眼軸拉長"}]},{cap:"濃度 · 眼軸延緩比較",svg:`<svg viewBox="0 0 300 220" xmlns="http://www.w3.org/2000/svg"><defs><radialGradient id="gEye" cx="42%" cy="38%" r="72%"><stop offset="0" stop-color="#FFFFFF"/><stop offset="0.65" stop-color="#F3F7FC"/><stop offset="1" stop-color="#E2E9F2"/></radialGradient><radialGradient id="gLens" cx="45%" cy="38%" r="68%"><stop offset="0" stop-color="#EDF3FF"/><stop offset="1" stop-color="#BFD2F3"/></radialGradient><radialGradient id="gClear" cx="50%" cy="42%" r="62%"><stop offset="0" stop-color="#EDFCF3"/><stop offset="1" stop-color="#C8EFDA"/></radialGradient><radialGradient id="gLED" cx="42%" cy="38%" r="62%"><stop offset="0" stop-color="#FFB0A4"/><stop offset="0.5" stop-color="#DE5648"/><stop offset="1" stop-color="#AE362C"/></radialGradient><radialGradient id="gSun" cx="42%" cy="38%" r="66%"><stop offset="0" stop-color="#FFE59A"/><stop offset="1" stop-color="#F2A017"/></radialGradient><linearGradient id="gDev" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#3C424C"/><stop offset="1" stop-color="#21252D"/></linearGradient><filter id="soft" x="-25%" y="-25%" width="150%" height="150%"><feDropShadow dx="0" dy="2.5" stdDeviation="3.2" flood-color="#0C1E38" flood-opacity="0.16"/></filter><filter id="glow" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="3.2" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter></defs><g stroke-linecap="round" stroke-linejoin="round"><text x="10" y="16" text-anchor="start" font-family="'Noto Sans TC',sans-serif" font-size="11" font-weight="700" fill="#0C1E38">濃度 → 3 年眼軸延緩(mm)</text><line x1="54" y1="160" x2="264" y2="160" stroke="#D7DEE7"/><rect x="76" y="120" width="42" height="40" rx="3" fill="#F2D3A6"/><rect x="140" y="80" width="42" height="80" rx="3" fill="#E7B37A"/><rect x="204" y="36" width="42" height="124" rx="3" fill="#D9862A"/><text x="97" y="112" text-anchor="middle" font-family="'Noto Sans TC',sans-serif" font-size="9.5" font-weight="700" fill="#0C1E38">0.16</text><text x="161" y="72" text-anchor="middle" font-family="'Noto Sans TC',sans-serif" font-size="9.5" font-weight="700" fill="#0C1E38">0.31</text><text x="225" y="28" text-anchor="middle" font-family="'Noto Sans TC',sans-serif" font-size="9.5" font-weight="700" fill="#0C1E38">0.55</text><text x="97" y="174" text-anchor="middle" font-family="'Noto Sans TC',sans-serif" font-size="9" font-weight="400" fill="#0C1E38">0.01%</text><text x="161" y="174" text-anchor="middle" font-family="'Noto Sans TC',sans-serif" font-size="9" font-weight="400" fill="#0C1E38">0.025%</text><text x="225" y="174" text-anchor="middle" font-family="'Noto Sans TC',sans-serif" font-size="9" font-weight="400" fill="#0C1E38">0.05%</text><text x="150" y="196" text-anchor="middle" font-family="'Noto Sans TC',sans-serif" font-size="8.5" font-weight="400" fill="#6B7C90">LAMP · 0.05% 累積延緩最大、反彈可控</text></g></svg>`,notes:[{n:"·",c:"#F2D3A6",k:"0.01%",v:"3 年眼軸延緩累積約 0.16mm(較弱、反彈最小)"},{n:"·",c:"#E7B37A",k:"0.025%",v:"約 0.31mm(中等)"},{n:"·",c:"#D9862A",k:"0.05%",v:"約 0.55mm,LAMP 認定最佳濃度"}]}],
+  spectacle:[{cap:"DIMS · 正面(蜂巢)",svg:`<svg viewBox="0 0 300 220" xmlns="http://www.w3.org/2000/svg"><defs><radialGradient id="gEye" cx="42%" cy="38%" r="72%"><stop offset="0" stop-color="#FFFFFF"/><stop offset="0.65" stop-color="#F3F7FC"/><stop offset="1" stop-color="#E2E9F2"/></radialGradient><radialGradient id="gLens" cx="45%" cy="38%" r="68%"><stop offset="0" stop-color="#EDF3FF"/><stop offset="1" stop-color="#BFD2F3"/></radialGradient><radialGradient id="gClear" cx="50%" cy="42%" r="62%"><stop offset="0" stop-color="#EDFCF3"/><stop offset="1" stop-color="#C8EFDA"/></radialGradient><radialGradient id="gLED" cx="42%" cy="38%" r="62%"><stop offset="0" stop-color="#FFB0A4"/><stop offset="0.5" stop-color="#DE5648"/><stop offset="1" stop-color="#AE362C"/></radialGradient><radialGradient id="gSun" cx="42%" cy="38%" r="66%"><stop offset="0" stop-color="#FFE59A"/><stop offset="1" stop-color="#F2A017"/></radialGradient><linearGradient id="gDev" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#3C424C"/><stop offset="1" stop-color="#21252D"/></linearGradient><filter id="soft" x="-25%" y="-25%" width="150%" height="150%"><feDropShadow dx="0" dy="2.5" stdDeviation="3.2" flood-color="#0C1E38" flood-opacity="0.16"/></filter><filter id="glow" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="3.2" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter></defs><g stroke-linecap="round" stroke-linejoin="round"><text x="10" y="16" text-anchor="start" font-family="'Noto Sans TC',sans-serif" font-size="11" font-weight="700" fill="#0C1E38">DIMS 蜂巢微透鏡(正面)</text><circle cx="110" cy="112" r="92" fill="url(#gEye)" filter="url(#soft)" stroke="#1F49D6" stroke-width="1.8"/><circle cx="110" cy="112" r="92" fill="none" stroke="#1F49D6" stroke-width="1" stroke-dasharray="3 3" stroke-opacity=".5"/><g fill="#1F49D6" fill-opacity=".5"><circle cx="86.9" cy="26.3" r="2.7"/><circle cx="93.5" cy="26.3" r="2.7"/><circle cx="100.1" cy="26.3" r="2.7"/><circle cx="106.7" cy="26.3" r="2.7"/><circle cx="113.3" cy="26.3" r="2.7"/><circle cx="119.9" cy="26.3" r="2.7"/><circle cx="126.5" cy="26.3" r="2.7"/><circle cx="133.1" cy="26.3" r="2.7"/><circle cx="70.4" cy="32.0" r="2.7"/><circle cx="77.0" cy="32.0" r="2.7"/><circle cx="83.6" cy="32.0" r="2.7"/><circle cx="90.2" cy="32.0" r="2.7"/><circle cx="96.8" cy="32.0" r="2.7"/><circle cx="103.4" cy="32.0" r="2.7"/><circle cx="110.0" cy="32.0" r="2.7"/><circle cx="116.6" cy="32.0" r="2.7"/><circle cx="123.2" cy="32.0" r="2.7"/><circle cx="129.8" cy="32.0" r="2.7"/><circle cx="136.4" cy="32.0" r="2.7"/><circle cx="143.0" cy="32.0" r="2.7"/><circle cx="149.6" cy="32.0" r="2.7"/><circle cx="60.5" cy="37.7" r="2.7"/><circle cx="67.1" cy="37.7" r="2.7"/><circle cx="73.7" cy="37.7" r="2.7"/><circle cx="80.3" cy="37.7" r="2.7"/><circle cx="86.9" cy="37.7" r="2.7"/><circle cx="93.5" cy="37.7" r="2.7"/><circle cx="100.1" cy="37.7" r="2.7"/><circle cx="106.7" cy="37.7" r="2.7"/><circle cx="113.3" cy="37.7" r="2.7"/><circle cx="119.9" cy="37.7" r="2.7"/><circle cx="126.5" cy="37.7" r="2.7"/><circle cx="133.1" cy="37.7" r="2.7"/><circle cx="139.7" cy="37.7" r="2.7"/><circle cx="146.3" cy="37.7" r="2.7"/><circle cx="152.9" cy="37.7" r="2.7"/><circle cx="159.5" cy="37.7" r="2.7"/><circle cx="57.2" cy="43.4" r="2.7"/><circle cx="63.8" cy="43.4" r="2.7"/><circle cx="70.4" cy="43.4" r="2.7"/><circle cx="77.0" cy="43.4" r="2.7"/><circle cx="83.6" cy="43.4" r="2.7"/><circle cx="90.2" cy="43.4" r="2.7"/><circle cx="96.8" cy="43.4" r="2.7"/><circle cx="103.4" cy="43.4" r="2.7"/><circle cx="110.0" cy="43.4" r="2.7"/><circle cx="116.6" cy="43.4" r="2.7"/><circle cx="123.2" cy="43.4" r="2.7"/><circle cx="129.8" cy="43.4" r="2.7"/><circle cx="136.4" cy="43.4" r="2.7"/><circle cx="143.0" cy="43.4" r="2.7"/><circle cx="149.6" cy="43.4" r="2.7"/><circle cx="156.2" cy="43.4" r="2.7"/><circle cx="162.8" cy="43.4" r="2.7"/><circle cx="47.3" cy="49.1" r="2.7"/><circle cx="53.9" cy="49.1" r="2.7"/><circle cx="60.5" cy="49.1" r="2.7"/><circle cx="67.1" cy="49.1" r="2.7"/><circle cx="73.7" cy="49.1" r="2.7"/><circle cx="80.3" cy="49.1" r="2.7"/><circle cx="86.9" cy="49.1" r="2.7"/><circle cx="93.5" cy="49.1" r="2.7"/><circle cx="100.1" cy="49.1" r="2.7"/><circle cx="106.7" cy="49.1" r="2.7"/><circle cx="113.3" cy="49.1" r="2.7"/><circle cx="119.9" cy="49.1" r="2.7"/><circle cx="126.5" cy="49.1" r="2.7"/><circle cx="133.1" cy="49.1" r="2.7"/><circle cx="139.7" cy="49.1" r="2.7"/><circle cx="146.3" cy="49.1" r="2.7"/><circle cx="152.9" cy="49.1" r="2.7"/><circle cx="159.5" cy="49.1" r="2.7"/><circle cx="166.1" cy="49.1" r="2.7"/><circle cx="172.7" cy="49.1" r="2.7"/><circle cx="44.0" cy="54.8" r="2.7"/><circle cx="50.6" cy="54.8" r="2.7"/><circle cx="57.2" cy="54.8" r="2.7"/><circle cx="63.8" cy="54.8" r="2.7"/><circle cx="70.4" cy="54.8" r="2.7"/><circle cx="77.0" cy="54.8" r="2.7"/><circle cx="83.6" cy="54.8" r="2.7"/><circle cx="90.2" cy="54.8" r="2.7"/><circle cx="96.8" cy="54.8" r="2.7"/><circle cx="103.4" cy="54.8" r="2.7"/><circle cx="110.0" cy="54.8" r="2.7"/><circle cx="116.6" cy="54.8" r="2.7"/><circle cx="123.2" cy="54.8" r="2.7"/><circle cx="129.8" cy="54.8" r="2.7"/><circle cx="136.4" cy="54.8" r="2.7"/><circle cx="143.0" cy="54.8" r="2.7"/><circle cx="149.6" cy="54.8" r="2.7"/><circle cx="156.2" cy="54.8" r="2.7"/><circle cx="162.8" cy="54.8" r="2.7"/><circle cx="169.4" cy="54.8" r="2.7"/><circle cx="176.0" cy="54.8" r="2.7"/><circle cx="40.7" cy="60.6" r="2.7"/><circle cx="47.3" cy="60.6" r="2.7"/><circle cx="53.9" cy="60.6" r="2.7"/><circle cx="60.5" cy="60.6" r="2.7"/><circle cx="67.1" cy="60.6" r="2.7"/><circle cx="73.7" cy="60.6" r="2.7"/><circle cx="80.3" cy="60.6" r="2.7"/><circle cx="86.9" cy="60.6" r="2.7"/><circle cx="93.5" cy="60.6" r="2.7"/><circle cx="100.1" cy="60.6" r="2.7"/><circle cx="106.7" cy="60.6" r="2.7"/><circle cx="113.3" cy="60.6" r="2.7"/><circle cx="119.9" cy="60.6" r="2.7"/><circle cx="126.5" cy="60.6" r="2.7"/><circle cx="133.1" cy="60.6" r="2.7"/><circle cx="139.7" cy="60.6" r="2.7"/><circle cx="146.3" cy="60.6" r="2.7"/><circle cx="152.9" cy="60.6" r="2.7"/><circle cx="159.5" cy="60.6" r="2.7"/><circle cx="166.1" cy="60.6" r="2.7"/><circle cx="172.7" cy="60.6" r="2.7"/><circle cx="179.3" cy="60.6" r="2.7"/><circle cx="37.4" cy="66.3" r="2.7"/><circle cx="44.0" cy="66.3" r="2.7"/><circle cx="50.6" cy="66.3" r="2.7"/><circle cx="57.2" cy="66.3" r="2.7"/><circle cx="63.8" cy="66.3" r="2.7"/><circle cx="70.4" cy="66.3" r="2.7"/><circle cx="77.0" cy="66.3" r="2.7"/><circle cx="83.6" cy="66.3" r="2.7"/><circle cx="90.2" cy="66.3" r="2.7"/><circle cx="96.8" cy="66.3" r="2.7"/><circle cx="103.4" cy="66.3" r="2.7"/><circle cx="110.0" cy="66.3" r="2.7"/><circle cx="116.6" cy="66.3" r="2.7"/><circle cx="123.2" cy="66.3" r="2.7"/><circle cx="129.8" cy="66.3" r="2.7"/><circle cx="136.4" cy="66.3" r="2.7"/><circle cx="143.0" cy="66.3" r="2.7"/><circle cx="149.6" cy="66.3" r="2.7"/><circle cx="156.2" cy="66.3" r="2.7"/><circle cx="162.8" cy="66.3" r="2.7"/><circle cx="169.4" cy="66.3" r="2.7"/><circle cx="176.0" cy="66.3" r="2.7"/><circle cx="182.6" cy="66.3" r="2.7"/><circle cx="34.1" cy="72.0" r="2.7"/><circle cx="40.7" cy="72.0" r="2.7"/><circle cx="47.3" cy="72.0" r="2.7"/><circle cx="53.9" cy="72.0" r="2.7"/><circle cx="60.5" cy="72.0" r="2.7"/><circle cx="67.1" cy="72.0" r="2.7"/><circle cx="73.7" cy="72.0" r="2.7"/><circle cx="80.3" cy="72.0" r="2.7"/><circle cx="86.9" cy="72.0" r="2.7"/><circle cx="93.5" cy="72.0" r="2.7"/><circle cx="100.1" cy="72.0" r="2.7"/><circle cx="106.7" cy="72.0" r="2.7"/><circle cx="113.3" cy="72.0" r="2.7"/><circle cx="119.9" cy="72.0" r="2.7"/><circle cx="126.5" cy="72.0" r="2.7"/><circle cx="133.1" cy="72.0" r="2.7"/><circle cx="139.7" cy="72.0" r="2.7"/><circle cx="146.3" cy="72.0" r="2.7"/><circle cx="152.9" cy="72.0" r="2.7"/><circle cx="159.5" cy="72.0" r="2.7"/><circle cx="166.1" cy="72.0" r="2.7"/><circle cx="172.7" cy="72.0" r="2.7"/><circle cx="179.3" cy="72.0" r="2.7"/><circle cx="185.9" cy="72.0" r="2.7"/><circle cx="30.8" cy="77.7" r="2.7"/><circle cx="37.4" cy="77.7" r="2.7"/><circle cx="44.0" cy="77.7" r="2.7"/><circle cx="50.6" cy="77.7" r="2.7"/><circle cx="57.2" cy="77.7" r="2.7"/><circle cx="63.8" cy="77.7" r="2.7"/><circle cx="70.4" cy="77.7" r="2.7"/><circle cx="77.0" cy="77.7" r="2.7"/><circle cx="83.6" cy="77.7" r="2.7"/><circle cx="90.2" cy="77.7" r="2.7"/><circle cx="96.8" cy="77.7" r="2.7"/><circle cx="103.4" cy="77.7" r="2.7"/><circle cx="110.0" cy="77.7" r="2.7"/><circle cx="116.6" cy="77.7" r="2.7"/><circle cx="123.2" cy="77.7" r="2.7"/><circle cx="129.8" cy="77.7" r="2.7"/><circle cx="136.4" cy="77.7" r="2.7"/><circle cx="143.0" cy="77.7" r="2.7"/><circle cx="149.6" cy="77.7" r="2.7"/><circle cx="156.2" cy="77.7" r="2.7"/><circle cx="162.8" cy="77.7" r="2.7"/><circle cx="169.4" cy="77.7" r="2.7"/><circle cx="176.0" cy="77.7" r="2.7"/><circle cx="182.6" cy="77.7" r="2.7"/><circle cx="189.2" cy="77.7" r="2.7"/><circle cx="27.5" cy="83.4" r="2.7"/><circle cx="34.1" cy="83.4" r="2.7"/><circle cx="40.7" cy="83.4" r="2.7"/><circle cx="47.3" cy="83.4" r="2.7"/><circle cx="53.9" cy="83.4" r="2.7"/><circle cx="60.5" cy="83.4" r="2.7"/><circle cx="67.1" cy="83.4" r="2.7"/><circle cx="73.7" cy="83.4" r="2.7"/><circle cx="80.3" cy="83.4" r="2.7"/><circle cx="86.9" cy="83.4" r="2.7"/><circle cx="93.5" cy="83.4" r="2.7"/><circle cx="100.1" cy="83.4" r="2.7"/><circle cx="119.9" cy="83.4" r="2.7"/><circle cx="126.5" cy="83.4" r="2.7"/><circle cx="133.1" cy="83.4" r="2.7"/><circle cx="139.7" cy="83.4" r="2.7"/><circle cx="146.3" cy="83.4" r="2.7"/><circle cx="152.9" cy="83.4" r="2.7"/><circle cx="159.5" cy="83.4" r="2.7"/><circle cx="166.1" cy="83.4" r="2.7"/><circle cx="172.7" cy="83.4" r="2.7"/><circle cx="179.3" cy="83.4" r="2.7"/><circle cx="185.9" cy="83.4" r="2.7"/><circle cx="192.5" cy="83.4" r="2.7"/><circle cx="24.2" cy="89.1" r="2.7"/><circle cx="30.8" cy="89.1" r="2.7"/><circle cx="37.4" cy="89.1" r="2.7"/><circle cx="44.0" cy="89.1" r="2.7"/><circle cx="50.6" cy="89.1" r="2.7"/><circle cx="57.2" cy="89.1" r="2.7"/><circle cx="63.8" cy="89.1" r="2.7"/><circle cx="70.4" cy="89.1" r="2.7"/><circle cx="77.0" cy="89.1" r="2.7"/><circle cx="83.6" cy="89.1" r="2.7"/><circle cx="90.2" cy="89.1" r="2.7"/><circle cx="129.8" cy="89.1" r="2.7"/><circle cx="136.4" cy="89.1" r="2.7"/><circle cx="143.0" cy="89.1" r="2.7"/><circle cx="149.6" cy="89.1" r="2.7"/><circle cx="156.2" cy="89.1" r="2.7"/><circle cx="162.8" cy="89.1" r="2.7"/><circle cx="169.4" cy="89.1" r="2.7"/><circle cx="176.0" cy="89.1" r="2.7"/><circle cx="182.6" cy="89.1" r="2.7"/><circle cx="189.2" cy="89.1" r="2.7"/><circle cx="195.8" cy="89.1" r="2.7"/><circle cx="27.5" cy="94.9" r="2.7"/><circle cx="34.1" cy="94.9" r="2.7"/><circle cx="40.7" cy="94.9" r="2.7"/><circle cx="47.3" cy="94.9" r="2.7"/><circle cx="53.9" cy="94.9" r="2.7"/><circle cx="60.5" cy="94.9" r="2.7"/><circle cx="67.1" cy="94.9" r="2.7"/><circle cx="73.7" cy="94.9" r="2.7"/><circle cx="80.3" cy="94.9" r="2.7"/><circle cx="139.7" cy="94.9" r="2.7"/><circle cx="146.3" cy="94.9" r="2.7"/><circle cx="152.9" cy="94.9" r="2.7"/><circle cx="159.5" cy="94.9" r="2.7"/><circle cx="166.1" cy="94.9" r="2.7"/><circle cx="172.7" cy="94.9" r="2.7"/><circle cx="179.3" cy="94.9" r="2.7"/><circle cx="185.9" cy="94.9" r="2.7"/><circle cx="192.5" cy="94.9" r="2.7"/><circle cx="24.2" cy="100.6" r="2.7"/><circle cx="30.8" cy="100.6" r="2.7"/><circle cx="37.4" cy="100.6" r="2.7"/><circle cx="44.0" cy="100.6" r="2.7"/><circle cx="50.6" cy="100.6" r="2.7"/><circle cx="57.2" cy="100.6" r="2.7"/><circle cx="63.8" cy="100.6" r="2.7"/><circle cx="70.4" cy="100.6" r="2.7"/><circle cx="77.0" cy="100.6" r="2.7"/><circle cx="143.0" cy="100.6" r="2.7"/><circle cx="149.6" cy="100.6" r="2.7"/><circle cx="156.2" cy="100.6" r="2.7"/><circle cx="162.8" cy="100.6" r="2.7"/><circle cx="169.4" cy="100.6" r="2.7"/><circle cx="176.0" cy="100.6" r="2.7"/><circle cx="182.6" cy="100.6" r="2.7"/><circle cx="189.2" cy="100.6" r="2.7"/><circle cx="195.8" cy="100.6" r="2.7"/><circle cx="20.9" cy="106.3" r="2.7"/><circle cx="27.5" cy="106.3" r="2.7"/><circle cx="34.1" cy="106.3" r="2.7"/><circle cx="40.7" cy="106.3" r="2.7"/><circle cx="47.3" cy="106.3" r="2.7"/><circle cx="53.9" cy="106.3" r="2.7"/><circle cx="60.5" cy="106.3" r="2.7"/><circle cx="67.1" cy="106.3" r="2.7"/><circle cx="73.7" cy="106.3" r="2.7"/><circle cx="80.3" cy="106.3" r="2.7"/><circle cx="139.7" cy="106.3" r="2.7"/><circle cx="146.3" cy="106.3" r="2.7"/><circle cx="152.9" cy="106.3" r="2.7"/><circle cx="159.5" cy="106.3" r="2.7"/><circle cx="166.1" cy="106.3" r="2.7"/><circle cx="172.7" cy="106.3" r="2.7"/><circle cx="179.3" cy="106.3" r="2.7"/><circle cx="185.9" cy="106.3" r="2.7"/><circle cx="192.5" cy="106.3" r="2.7"/><circle cx="199.1" cy="106.3" r="2.7"/><circle cx="24.2" cy="112.0" r="2.7"/><circle cx="30.8" cy="112.0" r="2.7"/><circle cx="37.4" cy="112.0" r="2.7"/><circle cx="44.0" cy="112.0" r="2.7"/><circle cx="50.6" cy="112.0" r="2.7"/><circle cx="57.2" cy="112.0" r="2.7"/><circle cx="63.8" cy="112.0" r="2.7"/><circle cx="70.4" cy="112.0" r="2.7"/><circle cx="77.0" cy="112.0" r="2.7"/><circle cx="143.0" cy="112.0" r="2.7"/><circle cx="149.6" cy="112.0" r="2.7"/><circle cx="156.2" cy="112.0" r="2.7"/><circle cx="162.8" cy="112.0" r="2.7"/><circle cx="169.4" cy="112.0" r="2.7"/><circle cx="176.0" cy="112.0" r="2.7"/><circle cx="182.6" cy="112.0" r="2.7"/><circle cx="189.2" cy="112.0" r="2.7"/><circle cx="195.8" cy="112.0" r="2.7"/><circle cx="20.9" cy="117.7" r="2.7"/><circle cx="27.5" cy="117.7" r="2.7"/><circle cx="34.1" cy="117.7" r="2.7"/><circle cx="40.7" cy="117.7" r="2.7"/><circle cx="47.3" cy="117.7" r="2.7"/><circle cx="53.9" cy="117.7" r="2.7"/><circle cx="60.5" cy="117.7" r="2.7"/><circle cx="67.1" cy="117.7" r="2.7"/><circle cx="73.7" cy="117.7" r="2.7"/><circle cx="80.3" cy="117.7" r="2.7"/><circle cx="139.7" cy="117.7" r="2.7"/><circle cx="146.3" cy="117.7" r="2.7"/><circle cx="152.9" cy="117.7" r="2.7"/><circle cx="159.5" cy="117.7" r="2.7"/><circle cx="166.1" cy="117.7" r="2.7"/><circle cx="172.7" cy="117.7" r="2.7"/><circle cx="179.3" cy="117.7" r="2.7"/><circle cx="185.9" cy="117.7" r="2.7"/><circle cx="192.5" cy="117.7" r="2.7"/><circle cx="199.1" cy="117.7" r="2.7"/><circle cx="24.2" cy="123.4" r="2.7"/><circle cx="30.8" cy="123.4" r="2.7"/><circle cx="37.4" cy="123.4" r="2.7"/><circle cx="44.0" cy="123.4" r="2.7"/><circle cx="50.6" cy="123.4" r="2.7"/><circle cx="57.2" cy="123.4" r="2.7"/><circle cx="63.8" cy="123.4" r="2.7"/><circle cx="70.4" cy="123.4" r="2.7"/><circle cx="77.0" cy="123.4" r="2.7"/><circle cx="143.0" cy="123.4" r="2.7"/><circle cx="149.6" cy="123.4" r="2.7"/><circle cx="156.2" cy="123.4" r="2.7"/><circle cx="162.8" cy="123.4" r="2.7"/><circle cx="169.4" cy="123.4" r="2.7"/><circle cx="176.0" cy="123.4" r="2.7"/><circle cx="182.6" cy="123.4" r="2.7"/><circle cx="189.2" cy="123.4" r="2.7"/><circle cx="195.8" cy="123.4" r="2.7"/><circle cx="27.5" cy="129.1" r="2.7"/><circle cx="34.1" cy="129.1" r="2.7"/><circle cx="40.7" cy="129.1" r="2.7"/><circle cx="47.3" cy="129.1" r="2.7"/><circle cx="53.9" cy="129.1" r="2.7"/><circle cx="60.5" cy="129.1" r="2.7"/><circle cx="67.1" cy="129.1" r="2.7"/><circle cx="73.7" cy="129.1" r="2.7"/><circle cx="80.3" cy="129.1" r="2.7"/><circle cx="139.7" cy="129.1" r="2.7"/><circle cx="146.3" cy="129.1" r="2.7"/><circle cx="152.9" cy="129.1" r="2.7"/><circle cx="159.5" cy="129.1" r="2.7"/><circle cx="166.1" cy="129.1" r="2.7"/><circle cx="172.7" cy="129.1" r="2.7"/><circle cx="179.3" cy="129.1" r="2.7"/><circle cx="185.9" cy="129.1" r="2.7"/><circle cx="192.5" cy="129.1" r="2.7"/><circle cx="24.2" cy="134.9" r="2.7"/><circle cx="30.8" cy="134.9" r="2.7"/><circle cx="37.4" cy="134.9" r="2.7"/><circle cx="44.0" cy="134.9" r="2.7"/><circle cx="50.6" cy="134.9" r="2.7"/><circle cx="57.2" cy="134.9" r="2.7"/><circle cx="63.8" cy="134.9" r="2.7"/><circle cx="70.4" cy="134.9" r="2.7"/><circle cx="77.0" cy="134.9" r="2.7"/><circle cx="83.6" cy="134.9" r="2.7"/><circle cx="90.2" cy="134.9" r="2.7"/><circle cx="129.8" cy="134.9" r="2.7"/><circle cx="136.4" cy="134.9" r="2.7"/><circle cx="143.0" cy="134.9" r="2.7"/><circle cx="149.6" cy="134.9" r="2.7"/><circle cx="156.2" cy="134.9" r="2.7"/><circle cx="162.8" cy="134.9" r="2.7"/><circle cx="169.4" cy="134.9" r="2.7"/><circle cx="176.0" cy="134.9" r="2.7"/><circle cx="182.6" cy="134.9" r="2.7"/><circle cx="189.2" cy="134.9" r="2.7"/><circle cx="195.8" cy="134.9" r="2.7"/><circle cx="27.5" cy="140.6" r="2.7"/><circle cx="34.1" cy="140.6" r="2.7"/><circle cx="40.7" cy="140.6" r="2.7"/><circle cx="47.3" cy="140.6" r="2.7"/><circle cx="53.9" cy="140.6" r="2.7"/><circle cx="60.5" cy="140.6" r="2.7"/><circle cx="67.1" cy="140.6" r="2.7"/><circle cx="73.7" cy="140.6" r="2.7"/><circle cx="80.3" cy="140.6" r="2.7"/><circle cx="86.9" cy="140.6" r="2.7"/><circle cx="93.5" cy="140.6" r="2.7"/><circle cx="100.1" cy="140.6" r="2.7"/><circle cx="119.9" cy="140.6" r="2.7"/><circle cx="126.5" cy="140.6" r="2.7"/><circle cx="133.1" cy="140.6" r="2.7"/><circle cx="139.7" cy="140.6" r="2.7"/><circle cx="146.3" cy="140.6" r="2.7"/><circle cx="152.9" cy="140.6" r="2.7"/><circle cx="159.5" cy="140.6" r="2.7"/><circle cx="166.1" cy="140.6" r="2.7"/><circle cx="172.7" cy="140.6" r="2.7"/><circle cx="179.3" cy="140.6" r="2.7"/><circle cx="185.9" cy="140.6" r="2.7"/><circle cx="192.5" cy="140.6" r="2.7"/><circle cx="30.8" cy="146.3" r="2.7"/><circle cx="37.4" cy="146.3" r="2.7"/><circle cx="44.0" cy="146.3" r="2.7"/><circle cx="50.6" cy="146.3" r="2.7"/><circle cx="57.2" cy="146.3" r="2.7"/><circle cx="63.8" cy="146.3" r="2.7"/><circle cx="70.4" cy="146.3" r="2.7"/><circle cx="77.0" cy="146.3" r="2.7"/><circle cx="83.6" cy="146.3" r="2.7"/><circle cx="90.2" cy="146.3" r="2.7"/><circle cx="96.8" cy="146.3" r="2.7"/><circle cx="103.4" cy="146.3" r="2.7"/><circle cx="110.0" cy="146.3" r="2.7"/><circle cx="116.6" cy="146.3" r="2.7"/><circle cx="123.2" cy="146.3" r="2.7"/><circle cx="129.8" cy="146.3" r="2.7"/><circle cx="136.4" cy="146.3" r="2.7"/><circle cx="143.0" cy="146.3" r="2.7"/><circle cx="149.6" cy="146.3" r="2.7"/><circle cx="156.2" cy="146.3" r="2.7"/><circle cx="162.8" cy="146.3" r="2.7"/><circle cx="169.4" cy="146.3" r="2.7"/><circle cx="176.0" cy="146.3" r="2.7"/><circle cx="182.6" cy="146.3" r="2.7"/><circle cx="189.2" cy="146.3" r="2.7"/><circle cx="34.1" cy="152.0" r="2.7"/><circle cx="40.7" cy="152.0" r="2.7"/><circle cx="47.3" cy="152.0" r="2.7"/><circle cx="53.9" cy="152.0" r="2.7"/><circle cx="60.5" cy="152.0" r="2.7"/><circle cx="67.1" cy="152.0" r="2.7"/><circle cx="73.7" cy="152.0" r="2.7"/><circle cx="80.3" cy="152.0" r="2.7"/><circle cx="86.9" cy="152.0" r="2.7"/><circle cx="93.5" cy="152.0" r="2.7"/><circle cx="100.1" cy="152.0" r="2.7"/><circle cx="106.7" cy="152.0" r="2.7"/><circle cx="113.3" cy="152.0" r="2.7"/><circle cx="119.9" cy="152.0" r="2.7"/><circle cx="126.5" cy="152.0" r="2.7"/><circle cx="133.1" cy="152.0" r="2.7"/><circle cx="139.7" cy="152.0" r="2.7"/><circle cx="146.3" cy="152.0" r="2.7"/><circle cx="152.9" cy="152.0" r="2.7"/><circle cx="159.5" cy="152.0" r="2.7"/><circle cx="166.1" cy="152.0" r="2.7"/><circle cx="172.7" cy="152.0" r="2.7"/><circle cx="179.3" cy="152.0" r="2.7"/><circle cx="185.9" cy="152.0" r="2.7"/><circle cx="37.4" cy="157.7" r="2.7"/><circle cx="44.0" cy="157.7" r="2.7"/><circle cx="50.6" cy="157.7" r="2.7"/><circle cx="57.2" cy="157.7" r="2.7"/><circle cx="63.8" cy="157.7" r="2.7"/><circle cx="70.4" cy="157.7" r="2.7"/><circle cx="77.0" cy="157.7" r="2.7"/><circle cx="83.6" cy="157.7" r="2.7"/><circle cx="90.2" cy="157.7" r="2.7"/><circle cx="96.8" cy="157.7" r="2.7"/><circle cx="103.4" cy="157.7" r="2.7"/><circle cx="110.0" cy="157.7" r="2.7"/><circle cx="116.6" cy="157.7" r="2.7"/><circle cx="123.2" cy="157.7" r="2.7"/><circle cx="129.8" cy="157.7" r="2.7"/><circle cx="136.4" cy="157.7" r="2.7"/><circle cx="143.0" cy="157.7" r="2.7"/><circle cx="149.6" cy="157.7" r="2.7"/><circle cx="156.2" cy="157.7" r="2.7"/><circle cx="162.8" cy="157.7" r="2.7"/><circle cx="169.4" cy="157.7" r="2.7"/><circle cx="176.0" cy="157.7" r="2.7"/><circle cx="182.6" cy="157.7" r="2.7"/><circle cx="40.7" cy="163.4" r="2.7"/><circle cx="47.3" cy="163.4" r="2.7"/><circle cx="53.9" cy="163.4" r="2.7"/><circle cx="60.5" cy="163.4" r="2.7"/><circle cx="67.1" cy="163.4" r="2.7"/><circle cx="73.7" cy="163.4" r="2.7"/><circle cx="80.3" cy="163.4" r="2.7"/><circle cx="86.9" cy="163.4" r="2.7"/><circle cx="93.5" cy="163.4" r="2.7"/><circle cx="100.1" cy="163.4" r="2.7"/><circle cx="106.7" cy="163.4" r="2.7"/><circle cx="113.3" cy="163.4" r="2.7"/><circle cx="119.9" cy="163.4" r="2.7"/><circle cx="126.5" cy="163.4" r="2.7"/><circle cx="133.1" cy="163.4" r="2.7"/><circle cx="139.7" cy="163.4" r="2.7"/><circle cx="146.3" cy="163.4" r="2.7"/><circle cx="152.9" cy="163.4" r="2.7"/><circle cx="159.5" cy="163.4" r="2.7"/><circle cx="166.1" cy="163.4" r="2.7"/><circle cx="172.7" cy="163.4" r="2.7"/><circle cx="179.3" cy="163.4" r="2.7"/><circle cx="44.0" cy="169.2" r="2.7"/><circle cx="50.6" cy="169.2" r="2.7"/><circle cx="57.2" cy="169.2" r="2.7"/><circle cx="63.8" cy="169.2" r="2.7"/><circle cx="70.4" cy="169.2" r="2.7"/><circle cx="77.0" cy="169.2" r="2.7"/><circle cx="83.6" cy="169.2" r="2.7"/><circle cx="90.2" cy="169.2" r="2.7"/><circle cx="96.8" cy="169.2" r="2.7"/><circle cx="103.4" cy="169.2" r="2.7"/><circle cx="110.0" cy="169.2" r="2.7"/><circle cx="116.6" cy="169.2" r="2.7"/><circle cx="123.2" cy="169.2" r="2.7"/><circle cx="129.8" cy="169.2" r="2.7"/><circle cx="136.4" cy="169.2" r="2.7"/><circle cx="143.0" cy="169.2" r="2.7"/><circle cx="149.6" cy="169.2" r="2.7"/><circle cx="156.2" cy="169.2" r="2.7"/><circle cx="162.8" cy="169.2" r="2.7"/><circle cx="169.4" cy="169.2" r="2.7"/><circle cx="176.0" cy="169.2" r="2.7"/><circle cx="47.3" cy="174.9" r="2.7"/><circle cx="53.9" cy="174.9" r="2.7"/><circle cx="60.5" cy="174.9" r="2.7"/><circle cx="67.1" cy="174.9" r="2.7"/><circle cx="73.7" cy="174.9" r="2.7"/><circle cx="80.3" cy="174.9" r="2.7"/><circle cx="86.9" cy="174.9" r="2.7"/><circle cx="93.5" cy="174.9" r="2.7"/><circle cx="100.1" cy="174.9" r="2.7"/><circle cx="106.7" cy="174.9" r="2.7"/><circle cx="113.3" cy="174.9" r="2.7"/><circle cx="119.9" cy="174.9" r="2.7"/><circle cx="126.5" cy="174.9" r="2.7"/><circle cx="133.1" cy="174.9" r="2.7"/><circle cx="139.7" cy="174.9" r="2.7"/><circle cx="146.3" cy="174.9" r="2.7"/><circle cx="152.9" cy="174.9" r="2.7"/><circle cx="159.5" cy="174.9" r="2.7"/><circle cx="166.1" cy="174.9" r="2.7"/><circle cx="172.7" cy="174.9" r="2.7"/><circle cx="57.2" cy="180.6" r="2.7"/><circle cx="63.8" cy="180.6" r="2.7"/><circle cx="70.4" cy="180.6" r="2.7"/><circle cx="77.0" cy="180.6" r="2.7"/><circle cx="83.6" cy="180.6" r="2.7"/><circle cx="90.2" cy="180.6" r="2.7"/><circle cx="96.8" cy="180.6" r="2.7"/><circle cx="103.4" cy="180.6" r="2.7"/><circle cx="110.0" cy="180.6" r="2.7"/><circle cx="116.6" cy="180.6" r="2.7"/><circle cx="123.2" cy="180.6" r="2.7"/><circle cx="129.8" cy="180.6" r="2.7"/><circle cx="136.4" cy="180.6" r="2.7"/><circle cx="143.0" cy="180.6" r="2.7"/><circle cx="149.6" cy="180.6" r="2.7"/><circle cx="156.2" cy="180.6" r="2.7"/><circle cx="162.8" cy="180.6" r="2.7"/><circle cx="60.5" cy="186.3" r="2.7"/><circle cx="67.1" cy="186.3" r="2.7"/><circle cx="73.7" cy="186.3" r="2.7"/><circle cx="80.3" cy="186.3" r="2.7"/><circle cx="86.9" cy="186.3" r="2.7"/><circle cx="93.5" cy="186.3" r="2.7"/><circle cx="100.1" cy="186.3" r="2.7"/><circle cx="106.7" cy="186.3" r="2.7"/><circle cx="113.3" cy="186.3" r="2.7"/><circle cx="119.9" cy="186.3" r="2.7"/><circle cx="126.5" cy="186.3" r="2.7"/><circle cx="133.1" cy="186.3" r="2.7"/><circle cx="139.7" cy="186.3" r="2.7"/><circle cx="146.3" cy="186.3" r="2.7"/><circle cx="152.9" cy="186.3" r="2.7"/><circle cx="159.5" cy="186.3" r="2.7"/><circle cx="70.4" cy="192.0" r="2.7"/><circle cx="77.0" cy="192.0" r="2.7"/><circle cx="83.6" cy="192.0" r="2.7"/><circle cx="90.2" cy="192.0" r="2.7"/><circle cx="96.8" cy="192.0" r="2.7"/><circle cx="103.4" cy="192.0" r="2.7"/><circle cx="110.0" cy="192.0" r="2.7"/><circle cx="116.6" cy="192.0" r="2.7"/><circle cx="123.2" cy="192.0" r="2.7"/><circle cx="129.8" cy="192.0" r="2.7"/><circle cx="136.4" cy="192.0" r="2.7"/><circle cx="143.0" cy="192.0" r="2.7"/><circle cx="149.6" cy="192.0" r="2.7"/><circle cx="86.9" cy="197.7" r="2.7"/><circle cx="93.5" cy="197.7" r="2.7"/><circle cx="100.1" cy="197.7" r="2.7"/><circle cx="106.7" cy="197.7" r="2.7"/><circle cx="113.3" cy="197.7" r="2.7"/><circle cx="119.9" cy="197.7" r="2.7"/><circle cx="126.5" cy="197.7" r="2.7"/><circle cx="133.1" cy="197.7" r="2.7"/></g><circle cx="110" cy="112" r="26" fill="url(#gClear)" stroke="#2FD07B" stroke-width="1.8"/><line x1="84" y1="112" x2="136" y2="112" stroke="#12924E" stroke-width="0.8"/><line x1="84" y1="108" x2="84" y2="116" stroke="#12924E" stroke-width="0.8"/><line x1="136" y1="108" x2="136" y2="116" stroke="#12924E" stroke-width="0.8"/><text x="110" y="124" text-anchor="middle" font-family="'Noto Sans TC',sans-serif" font-size="7.5" font-weight="700" fill="#17A34A">Ø9.4mm</text><line x1="230.0" y1="52.0" x2="128.0" y2="96.0" stroke="#17A34A" stroke-width="1" stroke-opacity=".5"/><circle cx="238" cy="52" r="9" fill="#fff" stroke="#17A34A" stroke-width="1.7"/><text x="238" y="55.4" text-anchor="middle" font-family="'Noto Sans TC',sans-serif" font-size="10.5" font-weight="700" fill="#17A34A">1</text><line x1="230.0" y1="96.0" x2="164.0" y2="128.0" stroke="#1F49D6" stroke-width="1" stroke-opacity=".5"/><circle cx="238" cy="96" r="9" fill="#fff" stroke="#1F49D6" stroke-width="1.7"/><text x="238" y="99.4" text-anchor="middle" font-family="'Noto Sans TC',sans-serif" font-size="10.5" font-weight="700" fill="#1F49D6">2</text><line x1="230.0" y1="140.0" x2="178.0" y2="178.0" stroke="#6B7C90" stroke-width="1" stroke-opacity=".5"/><circle cx="238" cy="140" r="9" fill="#fff" stroke="#6B7C90" stroke-width="1.7"/><text x="238" y="143.4" text-anchor="middle" font-family="'Noto Sans TC',sans-serif" font-size="10.5" font-weight="700" fill="#6B7C90">3</text><line x1="230.0" y1="182.0" x2="110.0" y2="204.0" stroke="#D9862A" stroke-width="1" stroke-opacity=".5"/><circle cx="238" cy="182" r="9" fill="#fff" stroke="#D9862A" stroke-width="1.7"/><text x="238" y="185.4" text-anchor="middle" font-family="'Noto Sans TC',sans-serif" font-size="10.5" font-weight="700" fill="#D9862A">4</text></g></svg>`,notes:[{n:"1",c:"#17A34A",k:"中央清晰區 Ø9.4mm",v:"單光矯正,中央清晰視力"},{n:"2",c:"#1F49D6",k:"蜂巢離焦段 ×396(+3.50D)",v:"六方密排圓形段,製造周邊近視離焦"},{n:"3",c:"#6B7C90",k:"離焦:清晰 ≈ 50:50",v:"任一瞳孔位置皆維持半離焦半清晰"},{n:"4",c:"#D9862A",k:"治療區邊界(虛線 Ø33mm)",v:"蜂巢覆蓋的環狀治療範圍"}]},{cap:"DIMS · 側面光路",svg:`<svg viewBox="0 0 300 220" xmlns="http://www.w3.org/2000/svg"><defs><radialGradient id="gEye" cx="42%" cy="38%" r="72%"><stop offset="0" stop-color="#FFFFFF"/><stop offset="0.65" stop-color="#F3F7FC"/><stop offset="1" stop-color="#E2E9F2"/></radialGradient><radialGradient id="gLens" cx="45%" cy="38%" r="68%"><stop offset="0" stop-color="#EDF3FF"/><stop offset="1" stop-color="#BFD2F3"/></radialGradient><radialGradient id="gClear" cx="50%" cy="42%" r="62%"><stop offset="0" stop-color="#EDFCF3"/><stop offset="1" stop-color="#C8EFDA"/></radialGradient><radialGradient id="gLED" cx="42%" cy="38%" r="62%"><stop offset="0" stop-color="#FFB0A4"/><stop offset="0.5" stop-color="#DE5648"/><stop offset="1" stop-color="#AE362C"/></radialGradient><radialGradient id="gSun" cx="42%" cy="38%" r="66%"><stop offset="0" stop-color="#FFE59A"/><stop offset="1" stop-color="#F2A017"/></radialGradient><linearGradient id="gDev" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#3C424C"/><stop offset="1" stop-color="#21252D"/></linearGradient><filter id="soft" x="-25%" y="-25%" width="150%" height="150%"><feDropShadow dx="0" dy="2.5" stdDeviation="3.2" flood-color="#0C1E38" flood-opacity="0.16"/></filter><filter id="glow" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="3.2" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter></defs><g stroke-linecap="round" stroke-linejoin="round"><text x="10" y="16" text-anchor="start" font-family="'Noto Sans TC',sans-serif" font-size="11" font-weight="700" fill="#0C1E38">DIMS 光路(側面)</text><circle cx="224" cy="112" r="60" fill="url(#gEye)" filter="url(#soft)" stroke="#26333F" stroke-width="1.6"/><path d="M229.6 58.3 A54.0 54.0 0 0 1 229.6 165.7" fill="none" stroke="#C77A6E" stroke-width="4" stroke-opacity=".85"/><path d="M227.4 63.1 A49.0 49.0 0 0 1 227.4 160.9" fill="none" stroke="#E2A79D" stroke-width="2" stroke-opacity="1"/><path d="M268.6 118.0 l4 -4 l4 4" fill="none" stroke="#B4756B" stroke-width="1.3"/><ellipse cx="270.6" cy="132.7" rx="4" ry="6" fill="#F3D9A0" stroke="#C9A24A" stroke-width="0.8"/><path d="M277.9 134.3 l20 -6 l0 22 l-20 -6 Z" fill="url(#gEye)" filter="url(#soft)" stroke="#26333F" stroke-width="1.2"/><path d="M168.0 90.5 Q144 112 168.0 133.5" fill="url(#gLens)" stroke="#26333F" stroke-width="1.5"/><path d="M171.0 88.5 Q155 112 171.0 135.5" fill="none" stroke="#8FB4D6" stroke-width="1"/><path d="M171.0 88.5 Q155 112 171.0 135.5 L208 125 L208 99 Z" fill="#EAF4FF" opacity=".55"/><path d="M170.0 92.5 L208 101 L184.0 109.0 Z" fill="#5E79B0" stroke="#26333F" stroke-width="0.6"/><path d="M170.0 131.5 L208 123 L184.0 115.0 Z" fill="#5E79B0" stroke="#26333F" stroke-width="0.6"/><ellipse cx="220" cy="112" rx="12" ry="26" fill="url(#gLens)" stroke="#1F49D6" stroke-width="1.2"/><ellipse cx="220" cy="112" rx="12" ry="26" fill="none" stroke="#9DB6E8" stroke-width="0.6"/><path d="M222 86 l-8 -5 l0 10 Z" fill="#C08A5E"/><path d="M222 138 l-8 5 l0 -10 Z" fill="#C08A5E"/><g stroke="#B9C4D6" stroke-width="0.7"><line x1="214" y1="88" x2="204" y2="82"/><line x1="214" y1="136" x2="204" y2="142"/></g><path d="M40 56 Q56 112 40 168 Q30 112 40 56 Z" fill="url(#gLens)" stroke="#1F49D6" stroke-width="1.3"/><g fill="#2FD07B"><circle cx="40" cy="70" r="2.6"/><circle cx="40" cy="154" r="2.6"/><circle cx="40" cy="86" r="2.4"/><circle cx="40" cy="138" r="2.4"/></g><g stroke="#1F49D6" stroke-width="1" fill="none"><path d="M10 104 L48 108 L272.6 118.0"/><path d="M10 120 L48 116 L272.6 118.0"/></g><g stroke="#2FD07B" stroke-width="1" fill="none"><path d="M10 68 L40 72"/><path d="M40 72 L150 112"/><path d="M40 72 L150 88"/></g><circle cx="150" cy="112" r="3" fill="#2FD07B"/><line x1="172.0" y1="60.0" x2="206.0" y2="102.0" stroke="#1F49D6" stroke-width="1" stroke-opacity=".5"/><circle cx="180" cy="60" r="9" fill="#fff" stroke="#1F49D6" stroke-width="1.7"/><text x="180" y="63.4" text-anchor="middle" font-family="'Noto Sans TC',sans-serif" font-size="10.5" font-weight="700" fill="#1F49D6">1</text><line x1="142.0" y1="180.0" x2="150.0" y2="116.0" stroke="#17A34A" stroke-width="1" stroke-opacity=".5"/><circle cx="150" cy="196" r="9" fill="#fff" stroke="#17A34A" stroke-width="1.7"/><text x="150" y="199.4" text-anchor="middle" font-family="'Noto Sans TC',sans-serif" font-size="10.5" font-weight="700" fill="#17A34A">2</text></g></svg>`,notes:[{n:"1",c:"#1F49D6",k:"清晰光路 → 中央窩",v:"清晰區成像於視網膜中央窩,看得清楚"},{n:"2",c:"#17A34A",k:"+3.50D 段 → 前方離焦",v:"離焦影像落在視網膜『前方』,抑制眼軸"}]},{cap:"HAL · 正面(11 環)",svg:`<svg viewBox="0 0 300 220" xmlns="http://www.w3.org/2000/svg"><defs><radialGradient id="gEye" cx="42%" cy="38%" r="72%"><stop offset="0" stop-color="#FFFFFF"/><stop offset="0.65" stop-color="#F3F7FC"/><stop offset="1" stop-color="#E2E9F2"/></radialGradient><radialGradient id="gLens" cx="45%" cy="38%" r="68%"><stop offset="0" stop-color="#EDF3FF"/><stop offset="1" stop-color="#BFD2F3"/></radialGradient><radialGradient id="gClear" cx="50%" cy="42%" r="62%"><stop offset="0" stop-color="#EDFCF3"/><stop offset="1" stop-color="#C8EFDA"/></radialGradient><radialGradient id="gLED" cx="42%" cy="38%" r="62%"><stop offset="0" stop-color="#FFB0A4"/><stop offset="0.5" stop-color="#DE5648"/><stop offset="1" stop-color="#AE362C"/></radialGradient><radialGradient id="gSun" cx="42%" cy="38%" r="66%"><stop offset="0" stop-color="#FFE59A"/><stop offset="1" stop-color="#F2A017"/></radialGradient><linearGradient id="gDev" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#3C424C"/><stop offset="1" stop-color="#21252D"/></linearGradient><filter id="soft" x="-25%" y="-25%" width="150%" height="150%"><feDropShadow dx="0" dy="2.5" stdDeviation="3.2" flood-color="#0C1E38" flood-opacity="0.16"/></filter><filter id="glow" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="3.2" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter></defs><g stroke-linecap="round" stroke-linejoin="round"><text x="10" y="16" text-anchor="start" font-family="'Noto Sans TC',sans-serif" font-size="11" font-weight="700" fill="#0C1E38">HAL 11 環微透鏡(正面)</text><circle cx="110" cy="112" r="92" fill="url(#gEye)" filter="url(#soft)" stroke="#1F49D6" stroke-width="1.8"/><g fill="#1F49D6" fill-opacity="0.38"><circle cx="134.5" cy="112.0" r="2.1"/><circle cx="134.1" cy="116.1" r="2.1"/><circle cx="133.1" cy="120.2" r="2.1"/><circle cx="131.4" cy="123.9" r="2.1"/><circle cx="129.1" cy="127.4" r="2.1"/><circle cx="126.2" cy="130.4" r="2.1"/><circle cx="122.8" cy="132.9" r="2.1"/><circle cx="119.1" cy="134.7" r="2.1"/><circle cx="115.2" cy="136.0" r="2.1"/><circle cx="111.0" cy="136.5" r="2.1"/><circle cx="106.9" cy="136.3" r="2.1"/><circle cx="102.8" cy="135.4" r="2.1"/><circle cx="99.0" cy="133.9" r="2.1"/><circle cx="95.4" cy="131.7" r="2.1"/><circle cx="92.3" cy="129.0" r="2.1"/><circle cx="89.7" cy="125.7" r="2.1"/><circle cx="87.7" cy="122.1" r="2.1"/><circle cx="86.3" cy="118.2" r="2.1"/><circle cx="85.6" cy="114.1" r="2.1"/><circle cx="85.6" cy="109.9" r="2.1"/><circle cx="86.3" cy="105.8" r="2.1"/><circle cx="87.7" cy="101.9" r="2.1"/><circle cx="89.7" cy="98.3" r="2.1"/><circle cx="92.3" cy="95.0" r="2.1"/><circle cx="95.4" cy="92.3" r="2.1"/><circle cx="99.0" cy="90.1" r="2.1"/><circle cx="102.8" cy="88.6" r="2.1"/><circle cx="106.9" cy="87.7" r="2.1"/><circle cx="111.0" cy="87.5" r="2.1"/><circle cx="115.2" cy="88.0" r="2.1"/><circle cx="119.1" cy="89.3" r="2.1"/><circle cx="122.8" cy="91.1" r="2.1"/><circle cx="126.2" cy="93.6" r="2.1"/><circle cx="129.1" cy="96.6" r="2.1"/><circle cx="131.4" cy="100.1" r="2.1"/><circle cx="133.1" cy="103.8" r="2.1"/><circle cx="134.1" cy="107.9" r="2.1"/></g><g fill="#1F49D6" fill-opacity="0.40"><circle cx="140.6" cy="112.0" r="2.1"/><circle cx="140.3" cy="116.2" r="2.1"/><circle cx="139.5" cy="120.3" r="2.1"/><circle cx="138.1" cy="124.2" r="2.1"/><circle cx="136.1" cy="127.9" r="2.1"/><circle cx="133.7" cy="131.3" r="2.1"/><circle cx="130.9" cy="134.4" r="2.1"/><circle cx="127.6" cy="137.0" r="2.1"/><circle cx="124.1" cy="139.2" r="2.1"/><circle cx="120.2" cy="140.8" r="2.1"/><circle cx="116.2" cy="142.0" r="2.1"/><circle cx="112.1" cy="142.5" r="2.1"/><circle cx="107.9" cy="142.5" r="2.1"/><circle cx="103.8" cy="142.0" r="2.1"/><circle cx="99.8" cy="140.8" r="2.1"/><circle cx="95.9" cy="139.2" r="2.1"/><circle cx="92.4" cy="137.0" r="2.1"/><circle cx="89.1" cy="134.4" r="2.1"/><circle cx="86.3" cy="131.3" r="2.1"/><circle cx="83.9" cy="127.9" r="2.1"/><circle cx="81.9" cy="124.2" r="2.1"/><circle cx="80.5" cy="120.3" r="2.1"/><circle cx="79.7" cy="116.2" r="2.1"/><circle cx="79.4" cy="112.0" r="2.1"/><circle cx="79.7" cy="107.8" r="2.1"/><circle cx="80.5" cy="103.7" r="2.1"/><circle cx="81.9" cy="99.8" r="2.1"/><circle cx="83.9" cy="96.1" r="2.1"/><circle cx="86.3" cy="92.7" r="2.1"/><circle cx="89.1" cy="89.6" r="2.1"/><circle cx="92.4" cy="87.0" r="2.1"/><circle cx="95.9" cy="84.8" r="2.1"/><circle cx="99.8" cy="83.2" r="2.1"/><circle cx="103.8" cy="82.0" r="2.1"/><circle cx="107.9" cy="81.5" r="2.1"/><circle cx="112.1" cy="81.5" r="2.1"/><circle cx="116.2" cy="82.0" r="2.1"/><circle cx="120.2" cy="83.2" r="2.1"/><circle cx="124.1" cy="84.8" r="2.1"/><circle cx="127.6" cy="87.0" r="2.1"/><circle cx="130.9" cy="89.6" r="2.1"/><circle cx="133.7" cy="92.7" r="2.1"/><circle cx="136.1" cy="96.1" r="2.1"/><circle cx="138.1" cy="99.8" r="2.1"/><circle cx="139.5" cy="103.7" r="2.1"/><circle cx="140.3" cy="107.8" r="2.1"/></g><g fill="#1F49D6" fill-opacity="0.42"><circle cx="146.7" cy="112.0" r="2.1"/><circle cx="146.5" cy="116.2" r="2.1"/><circle cx="145.7" cy="120.3" r="2.1"/><circle cx="144.6" cy="124.3" r="2.1"/><circle cx="142.9" cy="128.2" r="2.1"/><circle cx="140.9" cy="131.8" r="2.1"/><circle cx="138.4" cy="135.2" r="2.1"/><circle cx="135.6" cy="138.3" r="2.1"/><circle cx="132.4" cy="141.1" r="2.1"/><circle cx="129.0" cy="143.4" r="2.1"/><circle cx="125.2" cy="145.4" r="2.1"/><circle cx="121.3" cy="146.9" r="2.1"/><circle cx="117.3" cy="148.0" r="2.1"/><circle cx="113.1" cy="148.6" r="2.1"/><circle cx="109.0" cy="148.7" r="2.1"/><circle cx="104.8" cy="148.3" r="2.1"/><circle cx="100.7" cy="147.5" r="2.1"/><circle cx="96.7" cy="146.2" r="2.1"/><circle cx="92.9" cy="144.5" r="2.1"/><circle cx="89.3" cy="142.3" r="2.1"/><circle cx="86.0" cy="139.7" r="2.1"/><circle cx="83.0" cy="136.8" r="2.1"/><circle cx="80.3" cy="133.6" r="2.1"/><circle cx="78.0" cy="130.0" r="2.1"/><circle cx="76.2" cy="126.3" r="2.1"/><circle cx="74.8" cy="122.3" r="2.1"/><circle cx="73.8" cy="118.3" r="2.1"/><circle cx="73.4" cy="114.1" r="2.1"/><circle cx="73.4" cy="109.9" r="2.1"/><circle cx="73.8" cy="105.7" r="2.1"/><circle cx="74.8" cy="101.7" r="2.1"/><circle cx="76.2" cy="97.7" r="2.1"/><circle cx="78.0" cy="94.0" r="2.1"/><circle cx="80.3" cy="90.4" r="2.1"/><circle cx="83.0" cy="87.2" r="2.1"/><circle cx="86.0" cy="84.3" r="2.1"/><circle cx="89.3" cy="81.7" r="2.1"/><circle cx="92.9" cy="79.5" r="2.1"/><circle cx="96.7" cy="77.8" r="2.1"/><circle cx="100.7" cy="76.5" r="2.1"/><circle cx="104.8" cy="75.7" r="2.1"/><circle cx="109.0" cy="75.3" r="2.1"/><circle cx="113.1" cy="75.4" r="2.1"/><circle cx="117.3" cy="76.0" r="2.1"/><circle cx="121.3" cy="77.1" r="2.1"/><circle cx="125.2" cy="78.6" r="2.1"/><circle cx="129.0" cy="80.6" r="2.1"/><circle cx="132.4" cy="82.9" r="2.1"/><circle cx="135.6" cy="85.7" r="2.1"/><circle cx="138.4" cy="88.8" r="2.1"/><circle cx="140.9" cy="92.2" r="2.1"/><circle cx="142.9" cy="95.8" r="2.1"/><circle cx="144.6" cy="99.7" r="2.1"/><circle cx="145.7" cy="103.7" r="2.1"/><circle cx="146.5" cy="107.8" r="2.1"/></g><g fill="#1F49D6" fill-opacity="0.45"><circle cx="152.8" cy="112.0" r="2.1"/><circle cx="152.6" cy="116.2" r="2.1"/><circle cx="152.0" cy="120.3" r="2.1"/><circle cx="151.0" cy="124.4" r="2.1"/><circle cx="149.5" cy="128.4" r="2.1"/><circle cx="147.7" cy="132.2" r="2.1"/><circle cx="145.6" cy="135.8" r="2.1"/><circle cx="143.1" cy="139.2" r="2.1"/><circle cx="140.3" cy="142.3" r="2.1"/><circle cx="137.2" cy="145.1" r="2.1"/><circle cx="133.8" cy="147.6" r="2.1"/><circle cx="130.2" cy="149.7" r="2.1"/><circle cx="126.4" cy="151.5" r="2.1"/><circle cx="122.4" cy="153.0" r="2.1"/><circle cx="118.3" cy="154.0" r="2.1"/><circle cx="114.2" cy="154.6" r="2.1"/><circle cx="110.0" cy="154.8" r="2.1"/><circle cx="105.8" cy="154.6" r="2.1"/><circle cx="101.7" cy="154.0" r="2.1"/><circle cx="97.6" cy="153.0" r="2.1"/><circle cx="93.6" cy="151.5" r="2.1"/><circle cx="89.8" cy="149.7" r="2.1"/><circle cx="86.2" cy="147.6" r="2.1"/><circle cx="82.8" cy="145.1" r="2.1"/><circle cx="79.7" cy="142.3" r="2.1"/><circle cx="76.9" cy="139.2" r="2.1"/><circle cx="74.4" cy="135.8" r="2.1"/><circle cx="72.3" cy="132.2" r="2.1"/><circle cx="70.5" cy="128.4" r="2.1"/><circle cx="69.0" cy="124.4" r="2.1"/><circle cx="68.0" cy="120.3" r="2.1"/><circle cx="67.4" cy="116.2" r="2.1"/><circle cx="67.2" cy="112.0" r="2.1"/><circle cx="67.4" cy="107.8" r="2.1"/><circle cx="68.0" cy="103.7" r="2.1"/><circle cx="69.0" cy="99.6" r="2.1"/><circle cx="70.5" cy="95.6" r="2.1"/><circle cx="72.3" cy="91.8" r="2.1"/><circle cx="74.4" cy="88.2" r="2.1"/><circle cx="76.9" cy="84.8" r="2.1"/><circle cx="79.7" cy="81.7" r="2.1"/><circle cx="82.8" cy="78.9" r="2.1"/><circle cx="86.2" cy="76.4" r="2.1"/><circle cx="89.8" cy="74.3" r="2.1"/><circle cx="93.6" cy="72.5" r="2.1"/><circle cx="97.6" cy="71.0" r="2.1"/><circle cx="101.7" cy="70.0" r="2.1"/><circle cx="105.8" cy="69.4" r="2.1"/><circle cx="110.0" cy="69.2" r="2.1"/><circle cx="114.2" cy="69.4" r="2.1"/><circle cx="118.3" cy="70.0" r="2.1"/><circle cx="122.4" cy="71.0" r="2.1"/><circle cx="126.4" cy="72.5" r="2.1"/><circle cx="130.2" cy="74.3" r="2.1"/><circle cx="133.8" cy="76.4" r="2.1"/><circle cx="137.2" cy="78.9" r="2.1"/><circle cx="140.3" cy="81.7" r="2.1"/><circle cx="143.1" cy="84.8" r="2.1"/><circle cx="145.6" cy="88.2" r="2.1"/><circle cx="147.7" cy="91.8" r="2.1"/><circle cx="149.5" cy="95.6" r="2.1"/><circle cx="151.0" cy="99.6" r="2.1"/><circle cx="152.0" cy="103.7" r="2.1"/><circle cx="152.6" cy="107.8" r="2.1"/></g><g fill="#1F49D6" fill-opacity="0.47"><circle cx="158.9" cy="112.0" r="2.1"/><circle cx="158.7" cy="116.2" r="2.1"/><circle cx="158.2" cy="120.4" r="2.1"/><circle cx="157.3" cy="124.5" r="2.1"/><circle cx="156.0" cy="128.5" r="2.1"/><circle cx="154.4" cy="132.4" r="2.1"/><circle cx="152.5" cy="136.1" r="2.1"/><circle cx="150.3" cy="139.7" r="2.1"/><circle cx="147.8" cy="143.1" r="2.1"/><circle cx="144.9" cy="146.2" r="2.1"/><circle cx="141.9" cy="149.1" r="2.1"/><circle cx="138.6" cy="151.7" r="2.1"/><circle cx="135.1" cy="154.0" r="2.1"/><circle cx="131.4" cy="156.0" r="2.1"/><circle cx="127.5" cy="157.7" r="2.1"/><circle cx="123.5" cy="159.0" r="2.1"/><circle cx="119.4" cy="160.0" r="2.1"/><circle cx="115.3" cy="160.6" r="2.1"/><circle cx="111.1" cy="160.9" r="2.1"/><circle cx="106.8" cy="160.8" r="2.1"/><circle cx="102.7" cy="160.3" r="2.1"/><circle cx="98.5" cy="159.5" r="2.1"/><circle cx="94.5" cy="158.4" r="2.1"/><circle cx="90.6" cy="156.9" r="2.1"/><circle cx="86.8" cy="155.0" r="2.1"/><circle cx="83.2" cy="152.9" r="2.1"/><circle cx="79.7" cy="150.4" r="2.1"/><circle cx="76.6" cy="147.7" r="2.1"/><circle cx="73.6" cy="144.7" r="2.1"/><circle cx="70.9" cy="141.4" r="2.1"/><circle cx="68.6" cy="138.0" r="2.1"/><circle cx="66.5" cy="134.3" r="2.1"/><circle cx="64.7" cy="130.5" r="2.1"/><circle cx="63.3" cy="126.5" r="2.1"/><circle cx="62.2" cy="122.4" r="2.1"/><circle cx="61.5" cy="118.3" r="2.1"/><circle cx="61.1" cy="114.1" r="2.1"/><circle cx="61.1" cy="109.9" r="2.1"/><circle cx="61.5" cy="105.7" r="2.1"/><circle cx="62.2" cy="101.6" r="2.1"/><circle cx="63.3" cy="97.5" r="2.1"/><circle cx="64.7" cy="93.5" r="2.1"/><circle cx="66.5" cy="89.7" r="2.1"/><circle cx="68.6" cy="86.0" r="2.1"/><circle cx="70.9" cy="82.6" r="2.1"/><circle cx="73.6" cy="79.3" r="2.1"/><circle cx="76.6" cy="76.3" r="2.1"/><circle cx="79.7" cy="73.6" r="2.1"/><circle cx="83.2" cy="71.1" r="2.1"/><circle cx="86.8" cy="69.0" r="2.1"/><circle cx="90.6" cy="67.1" r="2.1"/><circle cx="94.5" cy="65.6" r="2.1"/><circle cx="98.5" cy="64.5" r="2.1"/><circle cx="102.7" cy="63.7" r="2.1"/><circle cx="106.8" cy="63.2" r="2.1"/><circle cx="111.1" cy="63.1" r="2.1"/><circle cx="115.3" cy="63.4" r="2.1"/><circle cx="119.4" cy="64.0" r="2.1"/><circle cx="123.5" cy="65.0" r="2.1"/><circle cx="127.5" cy="66.3" r="2.1"/><circle cx="131.4" cy="68.0" r="2.1"/><circle cx="135.1" cy="70.0" r="2.1"/><circle cx="138.6" cy="72.3" r="2.1"/><circle cx="141.9" cy="74.9" r="2.1"/><circle cx="144.9" cy="77.8" r="2.1"/><circle cx="147.8" cy="80.9" r="2.1"/><circle cx="150.3" cy="84.3" r="2.1"/><circle cx="152.5" cy="87.9" r="2.1"/><circle cx="154.4" cy="91.6" r="2.1"/><circle cx="156.0" cy="95.5" r="2.1"/><circle cx="157.3" cy="99.5" r="2.1"/><circle cx="158.2" cy="103.6" r="2.1"/><circle cx="158.7" cy="107.8" r="2.1"/></g><g fill="#1F49D6" fill-opacity="0.49"><circle cx="165.0" cy="112.0" r="2.1"/><circle cx="164.8" cy="116.2" r="2.1"/><circle cx="164.4" cy="120.4" r="2.1"/><circle cx="163.6" cy="124.5" r="2.1"/><circle cx="162.4" cy="128.6" r="2.1"/><circle cx="161.0" cy="132.6" r="2.1"/><circle cx="159.3" cy="136.4" r="2.1"/><circle cx="157.3" cy="140.1" r="2.1"/><circle cx="155.0" cy="143.6" r="2.1"/><circle cx="152.4" cy="147.0" r="2.1"/><circle cx="149.6" cy="150.1" r="2.1"/><circle cx="146.6" cy="153.1" r="2.1"/><circle cx="143.3" cy="155.7" r="2.1"/><circle cx="139.9" cy="158.2" r="2.1"/><circle cx="136.3" cy="160.3" r="2.1"/><circle cx="132.5" cy="162.2" r="2.1"/><circle cx="128.6" cy="163.8" r="2.1"/><circle cx="124.6" cy="165.0" r="2.1"/><circle cx="120.5" cy="166.0" r="2.1"/><circle cx="116.3" cy="166.6" r="2.1"/><circle cx="112.1" cy="167.0" r="2.1"/><circle cx="107.9" cy="167.0" r="2.1"/><circle cx="103.7" cy="166.6" r="2.1"/><circle cx="99.5" cy="166.0" r="2.1"/><circle cx="95.4" cy="165.0" r="2.1"/><circle cx="91.4" cy="163.8" r="2.1"/><circle cx="87.5" cy="162.2" r="2.1"/><circle cx="83.7" cy="160.3" r="2.1"/><circle cx="80.1" cy="158.2" r="2.1"/><circle cx="76.7" cy="155.7" r="2.1"/><circle cx="73.4" cy="153.1" r="2.1"/><circle cx="70.4" cy="150.1" r="2.1"/><circle cx="67.6" cy="147.0" r="2.1"/><circle cx="65.0" cy="143.6" r="2.1"/><circle cx="62.7" cy="140.1" r="2.1"/><circle cx="60.7" cy="136.4" r="2.1"/><circle cx="59.0" cy="132.6" r="2.1"/><circle cx="57.6" cy="128.6" r="2.1"/><circle cx="56.4" cy="124.5" r="2.1"/><circle cx="55.6" cy="120.4" r="2.1"/><circle cx="55.2" cy="116.2" r="2.1"/><circle cx="55.0" cy="112.0" r="2.1"/><circle cx="55.2" cy="107.8" r="2.1"/><circle cx="55.6" cy="103.6" r="2.1"/><circle cx="56.4" cy="99.5" r="2.1"/><circle cx="57.6" cy="95.4" r="2.1"/><circle cx="59.0" cy="91.4" r="2.1"/><circle cx="60.7" cy="87.6" r="2.1"/><circle cx="62.7" cy="83.9" r="2.1"/><circle cx="65.0" cy="80.4" r="2.1"/><circle cx="67.6" cy="77.0" r="2.1"/><circle cx="70.4" cy="73.9" r="2.1"/><circle cx="73.4" cy="70.9" r="2.1"/><circle cx="76.7" cy="68.3" r="2.1"/><circle cx="80.1" cy="65.8" r="2.1"/><circle cx="83.7" cy="63.7" r="2.1"/><circle cx="87.5" cy="61.8" r="2.1"/><circle cx="91.4" cy="60.2" r="2.1"/><circle cx="95.4" cy="59.0" r="2.1"/><circle cx="99.5" cy="58.0" r="2.1"/><circle cx="103.7" cy="57.4" r="2.1"/><circle cx="107.9" cy="57.0" r="2.1"/><circle cx="112.1" cy="57.0" r="2.1"/><circle cx="116.3" cy="57.4" r="2.1"/><circle cx="120.5" cy="58.0" r="2.1"/><circle cx="124.6" cy="59.0" r="2.1"/><circle cx="128.6" cy="60.2" r="2.1"/><circle cx="132.5" cy="61.8" r="2.1"/><circle cx="136.3" cy="63.7" r="2.1"/><circle cx="139.9" cy="65.8" r="2.1"/><circle cx="143.3" cy="68.3" r="2.1"/><circle cx="146.6" cy="70.9" r="2.1"/><circle cx="149.6" cy="73.9" r="2.1"/><circle cx="152.4" cy="77.0" r="2.1"/><circle cx="155.0" cy="80.4" r="2.1"/><circle cx="157.3" cy="83.9" r="2.1"/><circle cx="159.3" cy="87.6" r="2.1"/><circle cx="161.0" cy="91.4" r="2.1"/><circle cx="162.4" cy="95.4" r="2.1"/><circle cx="163.6" cy="99.5" r="2.1"/><circle cx="164.4" cy="103.6" r="2.1"/><circle cx="164.8" cy="107.8" r="2.1"/></g><g fill="#1F49D6" fill-opacity="0.51"><circle cx="171.1" cy="112.0" r="2.1"/><circle cx="171.0" cy="116.2" r="2.1"/><circle cx="170.5" cy="120.4" r="2.1"/><circle cx="169.8" cy="124.6" r="2.1"/><circle cx="168.8" cy="128.7" r="2.1"/><circle cx="167.5" cy="132.7" r="2.1"/><circle cx="165.9" cy="136.6" r="2.1"/><circle cx="164.1" cy="140.4" r="2.1"/><circle cx="162.0" cy="144.1" r="2.1"/><circle cx="159.7" cy="147.6" r="2.1"/><circle cx="157.1" cy="150.9" r="2.1"/><circle cx="154.3" cy="154.1" r="2.1"/><circle cx="151.3" cy="157.0" r="2.1"/><circle cx="148.1" cy="159.8" r="2.1"/><circle cx="144.7" cy="162.3" r="2.1"/><circle cx="141.2" cy="164.6" r="2.1"/><circle cx="137.5" cy="166.6" r="2.1"/><circle cx="133.6" cy="168.3" r="2.1"/><circle cx="129.7" cy="169.8" r="2.1"/><circle cx="125.6" cy="171.1" r="2.1"/><circle cx="121.5" cy="172.0" r="2.1"/><circle cx="117.4" cy="172.7" r="2.1"/><circle cx="113.2" cy="173.0" r="2.1"/><circle cx="108.9" cy="173.1" r="2.1"/><circle cx="104.7" cy="172.9" r="2.1"/><circle cx="100.5" cy="172.4" r="2.1"/><circle cx="96.4" cy="171.6" r="2.1"/><circle cx="92.3" cy="170.5" r="2.1"/><circle cx="88.3" cy="169.1" r="2.1"/><circle cx="84.4" cy="167.5" r="2.1"/><circle cx="80.7" cy="165.6" r="2.1"/><circle cx="77.0" cy="163.5" r="2.1"/><circle cx="73.6" cy="161.1" r="2.1"/><circle cx="70.3" cy="158.4" r="2.1"/><circle cx="67.2" cy="155.6" r="2.1"/><circle cx="64.3" cy="152.5" r="2.1"/><circle cx="61.6" cy="149.3" r="2.1"/><circle cx="59.1" cy="145.8" r="2.1"/><circle cx="56.9" cy="142.2" r="2.1"/><circle cx="55.0" cy="138.5" r="2.1"/><circle cx="53.3" cy="134.6" r="2.1"/><circle cx="51.8" cy="130.7" r="2.1"/><circle cx="50.7" cy="126.6" r="2.1"/><circle cx="49.8" cy="122.5" r="2.1"/><circle cx="49.2" cy="118.3" r="2.1"/><circle cx="48.9" cy="114.1" r="2.1"/><circle cx="48.9" cy="109.9" r="2.1"/><circle cx="49.2" cy="105.7" r="2.1"/><circle cx="49.8" cy="101.5" r="2.1"/><circle cx="50.7" cy="97.4" r="2.1"/><circle cx="51.8" cy="93.3" r="2.1"/><circle cx="53.3" cy="89.4" r="2.1"/><circle cx="55.0" cy="85.5" r="2.1"/><circle cx="56.9" cy="81.8" r="2.1"/><circle cx="59.1" cy="78.2" r="2.1"/><circle cx="61.6" cy="74.7" r="2.1"/><circle cx="64.3" cy="71.5" r="2.1"/><circle cx="67.2" cy="68.4" r="2.1"/><circle cx="70.3" cy="65.6" r="2.1"/><circle cx="73.6" cy="62.9" r="2.1"/><circle cx="77.0" cy="60.5" r="2.1"/><circle cx="80.7" cy="58.4" r="2.1"/><circle cx="84.4" cy="56.5" r="2.1"/><circle cx="88.3" cy="54.9" r="2.1"/><circle cx="92.3" cy="53.5" r="2.1"/><circle cx="96.4" cy="52.4" r="2.1"/><circle cx="100.5" cy="51.6" r="2.1"/><circle cx="104.7" cy="51.1" r="2.1"/><circle cx="108.9" cy="50.9" r="2.1"/><circle cx="113.2" cy="51.0" r="2.1"/><circle cx="117.4" cy="51.3" r="2.1"/><circle cx="121.5" cy="52.0" r="2.1"/><circle cx="125.6" cy="52.9" r="2.1"/><circle cx="129.7" cy="54.2" r="2.1"/><circle cx="133.6" cy="55.7" r="2.1"/><circle cx="137.5" cy="57.4" r="2.1"/><circle cx="141.2" cy="59.4" r="2.1"/><circle cx="144.7" cy="61.7" r="2.1"/><circle cx="148.1" cy="64.2" r="2.1"/><circle cx="151.3" cy="67.0" r="2.1"/><circle cx="154.3" cy="69.9" r="2.1"/><circle cx="157.1" cy="73.1" r="2.1"/><circle cx="159.7" cy="76.4" r="2.1"/><circle cx="162.0" cy="79.9" r="2.1"/><circle cx="164.1" cy="83.6" r="2.1"/><circle cx="165.9" cy="87.4" r="2.1"/><circle cx="167.5" cy="91.3" r="2.1"/><circle cx="168.8" cy="95.3" r="2.1"/><circle cx="169.8" cy="99.4" r="2.1"/><circle cx="170.5" cy="103.6" r="2.1"/><circle cx="171.0" cy="107.8" r="2.1"/></g><g fill="#1F49D6" fill-opacity="0.53"><circle cx="177.2" cy="112.0" r="2.1"/><circle cx="177.1" cy="116.2" r="2.1"/><circle cx="176.7" cy="120.3" r="2.1"/><circle cx="176.0" cy="124.5" r="2.1"/><circle cx="175.1" cy="128.5" r="2.1"/><circle cx="174.0" cy="132.6" r="2.1"/><circle cx="172.6" cy="136.5" r="2.1"/><circle cx="170.9" cy="140.3" r="2.1"/><circle cx="169.0" cy="144.1" r="2.1"/><circle cx="166.9" cy="147.7" r="2.1"/><circle cx="164.6" cy="151.2" r="2.1"/><circle cx="162.1" cy="154.5" r="2.1"/><circle cx="159.3" cy="157.6" r="2.1"/><circle cx="156.4" cy="160.6" r="2.1"/><circle cx="153.3" cy="163.4" r="2.1"/><circle cx="150.0" cy="166.0" r="2.1"/><circle cx="146.6" cy="168.4" r="2.1"/><circle cx="143.0" cy="170.5" r="2.1"/><circle cx="139.3" cy="172.5" r="2.1"/><circle cx="135.5" cy="174.2" r="2.1"/><circle cx="131.6" cy="175.6" r="2.1"/><circle cx="127.6" cy="176.9" r="2.1"/><circle cx="123.5" cy="177.8" r="2.1"/><circle cx="119.4" cy="178.5" r="2.1"/><circle cx="115.2" cy="179.0" r="2.1"/><circle cx="111.0" cy="179.2" r="2.1"/><circle cx="106.9" cy="179.1" r="2.1"/><circle cx="102.7" cy="178.8" r="2.1"/><circle cx="98.6" cy="178.2" r="2.1"/><circle cx="94.5" cy="177.4" r="2.1"/><circle cx="90.4" cy="176.3" r="2.1"/><circle cx="86.5" cy="174.9" r="2.1"/><circle cx="82.6" cy="173.4" r="2.1"/><circle cx="78.8" cy="171.5" r="2.1"/><circle cx="75.2" cy="169.5" r="2.1"/><circle cx="71.7" cy="167.2" r="2.1"/><circle cx="68.3" cy="164.7" r="2.1"/><circle cx="65.1" cy="162.0" r="2.1"/><circle cx="62.1" cy="159.1" r="2.1"/><circle cx="59.3" cy="156.1" r="2.1"/><circle cx="56.6" cy="152.8" r="2.1"/><circle cx="54.2" cy="149.4" r="2.1"/><circle cx="52.0" cy="145.9" r="2.1"/><circle cx="50.0" cy="142.2" r="2.1"/><circle cx="48.2" cy="138.4" r="2.1"/><circle cx="46.7" cy="134.5" r="2.1"/><circle cx="45.4" cy="130.6" r="2.1"/><circle cx="44.4" cy="126.5" r="2.1"/><circle cx="43.6" cy="122.4" r="2.1"/><circle cx="43.1" cy="118.3" r="2.1"/><circle cx="42.8" cy="114.1" r="2.1"/><circle cx="42.8" cy="109.9" r="2.1"/><circle cx="43.1" cy="105.7" r="2.1"/><circle cx="43.6" cy="101.6" r="2.1"/><circle cx="44.4" cy="97.5" r="2.1"/><circle cx="45.4" cy="93.4" r="2.1"/><circle cx="46.7" cy="89.5" r="2.1"/><circle cx="48.2" cy="85.6" r="2.1"/><circle cx="50.0" cy="81.8" r="2.1"/><circle cx="52.0" cy="78.1" r="2.1"/><circle cx="54.2" cy="74.6" r="2.1"/><circle cx="56.6" cy="71.2" r="2.1"/><circle cx="59.3" cy="67.9" r="2.1"/><circle cx="62.1" cy="64.9" r="2.1"/><circle cx="65.1" cy="62.0" r="2.1"/><circle cx="68.3" cy="59.3" r="2.1"/><circle cx="71.7" cy="56.8" r="2.1"/><circle cx="75.2" cy="54.5" r="2.1"/><circle cx="78.8" cy="52.5" r="2.1"/><circle cx="82.6" cy="50.6" r="2.1"/><circle cx="86.5" cy="49.1" r="2.1"/><circle cx="90.4" cy="47.7" r="2.1"/><circle cx="94.5" cy="46.6" r="2.1"/><circle cx="98.6" cy="45.8" r="2.1"/><circle cx="102.7" cy="45.2" r="2.1"/><circle cx="106.9" cy="44.9" r="2.1"/><circle cx="111.0" cy="44.8" r="2.1"/><circle cx="115.2" cy="45.0" r="2.1"/><circle cx="119.4" cy="45.5" r="2.1"/><circle cx="123.5" cy="46.2" r="2.1"/><circle cx="127.6" cy="47.1" r="2.1"/><circle cx="131.6" cy="48.4" r="2.1"/><circle cx="135.5" cy="49.8" r="2.1"/><circle cx="139.3" cy="51.5" r="2.1"/><circle cx="143.0" cy="53.5" r="2.1"/><circle cx="146.6" cy="55.6" r="2.1"/><circle cx="150.0" cy="58.0" r="2.1"/><circle cx="153.3" cy="60.6" r="2.1"/><circle cx="156.4" cy="63.4" r="2.1"/><circle cx="159.3" cy="66.4" r="2.1"/><circle cx="162.1" cy="69.5" r="2.1"/><circle cx="164.6" cy="72.8" r="2.1"/><circle cx="166.9" cy="76.3" r="2.1"/><circle cx="169.0" cy="79.9" r="2.1"/><circle cx="170.9" cy="83.7" r="2.1"/><circle cx="172.6" cy="87.5" r="2.1"/><circle cx="174.0" cy="91.4" r="2.1"/><circle cx="175.1" cy="95.5" r="2.1"/><circle cx="176.0" cy="99.5" r="2.1"/><circle cx="176.7" cy="103.7" r="2.1"/><circle cx="177.1" cy="107.8" r="2.1"/></g><g fill="#1F49D6" fill-opacity="0.56"><circle cx="183.3" cy="112.0" r="2.1"/><circle cx="183.2" cy="116.2" r="2.1"/><circle cx="182.8" cy="120.4" r="2.1"/><circle cx="182.2" cy="124.5" r="2.1"/><circle cx="181.4" cy="128.6" r="2.1"/><circle cx="180.3" cy="132.7" r="2.1"/><circle cx="179.0" cy="136.6" r="2.1"/><circle cx="177.5" cy="140.5" r="2.1"/><circle cx="175.8" cy="144.3" r="2.1"/><circle cx="173.8" cy="148.0" r="2.1"/><circle cx="171.7" cy="151.6" r="2.1"/><circle cx="169.3" cy="155.1" r="2.1"/><circle cx="166.7" cy="158.4" r="2.1"/><circle cx="164.0" cy="161.6" r="2.1"/><circle cx="161.1" cy="164.6" r="2.1"/><circle cx="158.0" cy="167.4" r="2.1"/><circle cx="154.8" cy="170.0" r="2.1"/><circle cx="151.4" cy="172.5" r="2.1"/><circle cx="147.9" cy="174.8" r="2.1"/><circle cx="144.2" cy="176.8" r="2.1"/><circle cx="140.4" cy="178.7" r="2.1"/><circle cx="136.6" cy="180.3" r="2.1"/><circle cx="132.7" cy="181.7" r="2.1"/><circle cx="128.6" cy="182.9" r="2.1"/><circle cx="124.6" cy="183.8" r="2.1"/><circle cx="120.4" cy="184.6" r="2.1"/><circle cx="116.3" cy="185.0" r="2.1"/><circle cx="112.1" cy="185.3" r="2.1"/><circle cx="107.9" cy="185.3" r="2.1"/><circle cx="103.7" cy="185.0" r="2.1"/><circle cx="99.6" cy="184.6" r="2.1"/><circle cx="95.4" cy="183.8" r="2.1"/><circle cx="91.4" cy="182.9" r="2.1"/><circle cx="87.3" cy="181.7" r="2.1"/><circle cx="83.4" cy="180.3" r="2.1"/><circle cx="79.6" cy="178.7" r="2.1"/><circle cx="75.8" cy="176.8" r="2.1"/><circle cx="72.1" cy="174.8" r="2.1"/><circle cx="68.6" cy="172.5" r="2.1"/><circle cx="65.2" cy="170.0" r="2.1"/><circle cx="62.0" cy="167.4" r="2.1"/><circle cx="58.9" cy="164.6" r="2.1"/><circle cx="56.0" cy="161.6" r="2.1"/><circle cx="53.3" cy="158.4" r="2.1"/><circle cx="50.7" cy="155.1" r="2.1"/><circle cx="48.3" cy="151.6" r="2.1"/><circle cx="46.2" cy="148.0" r="2.1"/><circle cx="44.2" cy="144.3" r="2.1"/><circle cx="42.5" cy="140.5" r="2.1"/><circle cx="41.0" cy="136.6" r="2.1"/><circle cx="39.7" cy="132.7" r="2.1"/><circle cx="38.6" cy="128.6" r="2.1"/><circle cx="37.8" cy="124.5" r="2.1"/><circle cx="37.2" cy="120.4" r="2.1"/><circle cx="36.8" cy="116.2" r="2.1"/><circle cx="36.7" cy="112.0" r="2.1"/><circle cx="36.8" cy="107.8" r="2.1"/><circle cx="37.2" cy="103.6" r="2.1"/><circle cx="37.8" cy="99.5" r="2.1"/><circle cx="38.6" cy="95.4" r="2.1"/><circle cx="39.7" cy="91.3" r="2.1"/><circle cx="41.0" cy="87.4" r="2.1"/><circle cx="42.5" cy="83.5" r="2.1"/><circle cx="44.2" cy="79.7" r="2.1"/><circle cx="46.2" cy="76.0" r="2.1"/><circle cx="48.3" cy="72.4" r="2.1"/><circle cx="50.7" cy="68.9" r="2.1"/><circle cx="53.3" cy="65.6" r="2.1"/><circle cx="56.0" cy="62.4" r="2.1"/><circle cx="58.9" cy="59.4" r="2.1"/><circle cx="62.0" cy="56.6" r="2.1"/><circle cx="65.2" cy="54.0" r="2.1"/><circle cx="68.6" cy="51.5" r="2.1"/><circle cx="72.1" cy="49.2" r="2.1"/><circle cx="75.8" cy="47.2" r="2.1"/><circle cx="79.6" cy="45.3" r="2.1"/><circle cx="83.4" cy="43.7" r="2.1"/><circle cx="87.3" cy="42.3" r="2.1"/><circle cx="91.4" cy="41.1" r="2.1"/><circle cx="95.4" cy="40.2" r="2.1"/><circle cx="99.6" cy="39.4" r="2.1"/><circle cx="103.7" cy="39.0" r="2.1"/><circle cx="107.9" cy="38.7" r="2.1"/><circle cx="112.1" cy="38.7" r="2.1"/><circle cx="116.3" cy="39.0" r="2.1"/><circle cx="120.4" cy="39.4" r="2.1"/><circle cx="124.6" cy="40.2" r="2.1"/><circle cx="128.6" cy="41.1" r="2.1"/><circle cx="132.7" cy="42.3" r="2.1"/><circle cx="136.6" cy="43.7" r="2.1"/><circle cx="140.4" cy="45.3" r="2.1"/><circle cx="144.2" cy="47.2" r="2.1"/><circle cx="147.9" cy="49.2" r="2.1"/><circle cx="151.4" cy="51.5" r="2.1"/><circle cx="154.8" cy="54.0" r="2.1"/><circle cx="158.0" cy="56.6" r="2.1"/><circle cx="161.1" cy="59.4" r="2.1"/><circle cx="164.0" cy="62.4" r="2.1"/><circle cx="166.7" cy="65.6" r="2.1"/><circle cx="169.3" cy="68.9" r="2.1"/><circle cx="171.7" cy="72.4" r="2.1"/><circle cx="173.8" cy="76.0" r="2.1"/><circle cx="175.8" cy="79.7" r="2.1"/><circle cx="177.5" cy="83.5" r="2.1"/><circle cx="179.0" cy="87.4" r="2.1"/><circle cx="180.3" cy="91.3" r="2.1"/><circle cx="181.4" cy="95.4" r="2.1"/><circle cx="182.2" cy="99.5" r="2.1"/><circle cx="182.8" cy="103.6" r="2.1"/><circle cx="183.2" cy="107.8" r="2.1"/></g><g fill="#1F49D6" fill-opacity="0.58"><circle cx="189.4" cy="112.0" r="2.1"/><circle cx="189.3" cy="116.2" r="2.1"/><circle cx="189.0" cy="120.4" r="2.1"/><circle cx="188.4" cy="124.5" r="2.1"/><circle cx="187.6" cy="128.6" r="2.1"/><circle cx="186.6" cy="132.7" r="2.1"/><circle cx="185.4" cy="136.7" r="2.1"/><circle cx="184.0" cy="140.7" r="2.1"/><circle cx="182.4" cy="144.6" r="2.1"/><circle cx="180.6" cy="148.3" r="2.1"/><circle cx="178.6" cy="152.0" r="2.1"/><circle cx="176.4" cy="155.6" r="2.1"/><circle cx="174.0" cy="159.0" r="2.1"/><circle cx="171.4" cy="162.3" r="2.1"/><circle cx="168.7" cy="165.5" r="2.1"/><circle cx="165.8" cy="168.5" r="2.1"/><circle cx="162.7" cy="171.4" r="2.1"/><circle cx="159.5" cy="174.1" r="2.1"/><circle cx="156.2" cy="176.6" r="2.1"/><circle cx="152.7" cy="178.9" r="2.1"/><circle cx="149.1" cy="181.1" r="2.1"/><circle cx="145.4" cy="183.1" r="2.1"/><circle cx="141.6" cy="184.8" r="2.1"/><circle cx="137.7" cy="186.4" r="2.1"/><circle cx="133.7" cy="187.8" r="2.1"/><circle cx="129.7" cy="188.9" r="2.1"/><circle cx="125.6" cy="189.8" r="2.1"/><circle cx="121.5" cy="190.6" r="2.1"/><circle cx="117.3" cy="191.1" r="2.1"/><circle cx="113.1" cy="191.3" r="2.1"/><circle cx="109.0" cy="191.4" r="2.1"/><circle cx="104.8" cy="191.2" r="2.1"/><circle cx="100.6" cy="190.8" r="2.1"/><circle cx="96.4" cy="190.2" r="2.1"/><circle cx="92.3" cy="189.4" r="2.1"/><circle cx="88.3" cy="188.4" r="2.1"/><circle cx="84.3" cy="187.1" r="2.1"/><circle cx="80.3" cy="185.7" r="2.1"/><circle cx="76.5" cy="184.0" r="2.1"/><circle cx="72.7" cy="182.1" r="2.1"/><circle cx="69.1" cy="180.1" r="2.1"/><circle cx="65.6" cy="177.8" r="2.1"/><circle cx="62.2" cy="175.4" r="2.1"/><circle cx="58.9" cy="172.7" r="2.1"/><circle cx="55.7" cy="170.0" r="2.1"/><circle cx="52.8" cy="167.0" r="2.1"/><circle cx="49.9" cy="163.9" r="2.1"/><circle cx="47.3" cy="160.7" r="2.1"/><circle cx="44.8" cy="157.3" r="2.1"/><circle cx="42.5" cy="153.8" r="2.1"/><circle cx="40.4" cy="150.2" r="2.1"/><circle cx="38.5" cy="146.5" r="2.1"/><circle cx="36.7" cy="142.6" r="2.1"/><circle cx="35.2" cy="138.7" r="2.1"/><circle cx="33.9" cy="134.7" r="2.1"/><circle cx="32.8" cy="130.7" r="2.1"/><circle cx="32.0" cy="126.6" r="2.1"/><circle cx="31.3" cy="122.5" r="2.1"/><circle cx="30.8" cy="118.3" r="2.1"/><circle cx="30.6" cy="114.1" r="2.1"/><circle cx="30.6" cy="109.9" r="2.1"/><circle cx="30.8" cy="105.7" r="2.1"/><circle cx="31.3" cy="101.5" r="2.1"/><circle cx="32.0" cy="97.4" r="2.1"/><circle cx="32.8" cy="93.3" r="2.1"/><circle cx="33.9" cy="89.3" r="2.1"/><circle cx="35.2" cy="85.3" r="2.1"/><circle cx="36.7" cy="81.4" r="2.1"/><circle cx="38.5" cy="77.5" r="2.1"/><circle cx="40.4" cy="73.8" r="2.1"/><circle cx="42.5" cy="70.2" r="2.1"/><circle cx="44.8" cy="66.7" r="2.1"/><circle cx="47.3" cy="63.3" r="2.1"/><circle cx="49.9" cy="60.1" r="2.1"/><circle cx="52.8" cy="57.0" r="2.1"/><circle cx="55.7" cy="54.0" r="2.1"/><circle cx="58.9" cy="51.3" r="2.1"/><circle cx="62.2" cy="48.6" r="2.1"/><circle cx="65.6" cy="46.2" r="2.1"/><circle cx="69.1" cy="43.9" r="2.1"/><circle cx="72.7" cy="41.9" r="2.1"/><circle cx="76.5" cy="40.0" r="2.1"/><circle cx="80.3" cy="38.3" r="2.1"/><circle cx="84.3" cy="36.9" r="2.1"/><circle cx="88.3" cy="35.6" r="2.1"/><circle cx="92.3" cy="34.6" r="2.1"/><circle cx="96.4" cy="33.8" r="2.1"/><circle cx="100.6" cy="33.2" r="2.1"/><circle cx="104.8" cy="32.8" r="2.1"/><circle cx="109.0" cy="32.6" r="2.1"/><circle cx="113.1" cy="32.7" r="2.1"/><circle cx="117.3" cy="32.9" r="2.1"/><circle cx="121.5" cy="33.4" r="2.1"/><circle cx="125.6" cy="34.2" r="2.1"/><circle cx="129.7" cy="35.1" r="2.1"/><circle cx="133.7" cy="36.2" r="2.1"/><circle cx="137.7" cy="37.6" r="2.1"/><circle cx="141.6" cy="39.2" r="2.1"/><circle cx="145.4" cy="40.9" r="2.1"/><circle cx="149.1" cy="42.9" r="2.1"/><circle cx="152.7" cy="45.1" r="2.1"/><circle cx="156.2" cy="47.4" r="2.1"/><circle cx="159.5" cy="49.9" r="2.1"/><circle cx="162.7" cy="52.6" r="2.1"/><circle cx="165.8" cy="55.5" r="2.1"/><circle cx="168.7" cy="58.5" r="2.1"/><circle cx="171.4" cy="61.7" r="2.1"/><circle cx="174.0" cy="65.0" r="2.1"/><circle cx="176.4" cy="68.4" r="2.1"/><circle cx="178.6" cy="72.0" r="2.1"/><circle cx="180.6" cy="75.7" r="2.1"/><circle cx="182.4" cy="79.4" r="2.1"/><circle cx="184.0" cy="83.3" r="2.1"/><circle cx="185.4" cy="87.3" r="2.1"/><circle cx="186.6" cy="91.3" r="2.1"/><circle cx="187.6" cy="95.4" r="2.1"/><circle cx="188.4" cy="99.5" r="2.1"/><circle cx="189.0" cy="103.6" r="2.1"/><circle cx="189.3" cy="107.8" r="2.1"/></g><g fill="#1F49D6" fill-opacity="0.60"><circle cx="195.5" cy="112.0" r="2.1"/><circle cx="195.4" cy="116.2" r="2.1"/><circle cx="195.1" cy="120.4" r="2.1"/><circle cx="194.6" cy="124.5" r="2.1"/><circle cx="193.9" cy="128.7" r="2.1"/><circle cx="192.9" cy="132.8" r="2.1"/><circle cx="191.8" cy="136.8" r="2.1"/><circle cx="190.5" cy="140.8" r="2.1"/><circle cx="189.0" cy="144.7" r="2.1"/><circle cx="187.3" cy="148.6" r="2.1"/><circle cx="185.4" cy="152.3" r="2.1"/><circle cx="183.3" cy="156.0" r="2.1"/><circle cx="181.1" cy="159.5" r="2.1"/><circle cx="178.7" cy="162.9" r="2.1"/><circle cx="176.1" cy="166.2" r="2.1"/><circle cx="173.4" cy="169.4" r="2.1"/><circle cx="170.5" cy="172.5" r="2.1"/><circle cx="167.4" cy="175.4" r="2.1"/><circle cx="164.2" cy="178.1" r="2.1"/><circle cx="160.9" cy="180.7" r="2.1"/><circle cx="157.5" cy="183.1" r="2.1"/><circle cx="154.0" cy="185.3" r="2.1"/><circle cx="150.3" cy="187.4" r="2.1"/><circle cx="146.6" cy="189.3" r="2.1"/><circle cx="142.7" cy="191.0" r="2.1"/><circle cx="138.8" cy="192.5" r="2.1"/><circle cx="134.8" cy="193.8" r="2.1"/><circle cx="130.8" cy="194.9" r="2.1"/><circle cx="126.7" cy="195.9" r="2.1"/><circle cx="122.5" cy="196.6" r="2.1"/><circle cx="118.4" cy="197.1" r="2.1"/><circle cx="114.2" cy="197.4" r="2.1"/><circle cx="110.0" cy="197.5" r="2.1"/><circle cx="105.8" cy="197.4" r="2.1"/><circle cx="101.6" cy="197.1" r="2.1"/><circle cx="97.5" cy="196.6" r="2.1"/><circle cx="93.3" cy="195.9" r="2.1"/><circle cx="89.2" cy="194.9" r="2.1"/><circle cx="85.2" cy="193.8" r="2.1"/><circle cx="81.2" cy="192.5" r="2.1"/><circle cx="77.3" cy="191.0" r="2.1"/><circle cx="73.4" cy="189.3" r="2.1"/><circle cx="69.7" cy="187.4" r="2.1"/><circle cx="66.0" cy="185.3" r="2.1"/><circle cx="62.5" cy="183.1" r="2.1"/><circle cx="59.1" cy="180.7" r="2.1"/><circle cx="55.8" cy="178.1" r="2.1"/><circle cx="52.6" cy="175.4" r="2.1"/><circle cx="49.5" cy="172.5" r="2.1"/><circle cx="46.6" cy="169.4" r="2.1"/><circle cx="43.9" cy="166.2" r="2.1"/><circle cx="41.3" cy="162.9" r="2.1"/><circle cx="38.9" cy="159.5" r="2.1"/><circle cx="36.7" cy="156.0" r="2.1"/><circle cx="34.6" cy="152.3" r="2.1"/><circle cx="32.7" cy="148.6" r="2.1"/><circle cx="31.0" cy="144.7" r="2.1"/><circle cx="29.5" cy="140.8" r="2.1"/><circle cx="28.2" cy="136.8" r="2.1"/><circle cx="27.1" cy="132.8" r="2.1"/><circle cx="26.1" cy="128.7" r="2.1"/><circle cx="25.4" cy="124.5" r="2.1"/><circle cx="24.9" cy="120.4" r="2.1"/><circle cx="24.6" cy="116.2" r="2.1"/><circle cx="24.5" cy="112.0" r="2.1"/><circle cx="24.6" cy="107.8" r="2.1"/><circle cx="24.9" cy="103.6" r="2.1"/><circle cx="25.4" cy="99.5" r="2.1"/><circle cx="26.1" cy="95.3" r="2.1"/><circle cx="27.1" cy="91.2" r="2.1"/><circle cx="28.2" cy="87.2" r="2.1"/><circle cx="29.5" cy="83.2" r="2.1"/><circle cx="31.0" cy="79.3" r="2.1"/><circle cx="32.7" cy="75.4" r="2.1"/><circle cx="34.6" cy="71.7" r="2.1"/><circle cx="36.7" cy="68.0" r="2.1"/><circle cx="38.9" cy="64.5" r="2.1"/><circle cx="41.3" cy="61.1" r="2.1"/><circle cx="43.9" cy="57.8" r="2.1"/><circle cx="46.6" cy="54.6" r="2.1"/><circle cx="49.5" cy="51.5" r="2.1"/><circle cx="52.6" cy="48.6" r="2.1"/><circle cx="55.8" cy="45.9" r="2.1"/><circle cx="59.1" cy="43.3" r="2.1"/><circle cx="62.5" cy="40.9" r="2.1"/><circle cx="66.0" cy="38.7" r="2.1"/><circle cx="69.7" cy="36.6" r="2.1"/><circle cx="73.4" cy="34.7" r="2.1"/><circle cx="77.3" cy="33.0" r="2.1"/><circle cx="81.2" cy="31.5" r="2.1"/><circle cx="85.2" cy="30.2" r="2.1"/><circle cx="89.2" cy="29.1" r="2.1"/><circle cx="93.3" cy="28.1" r="2.1"/><circle cx="97.5" cy="27.4" r="2.1"/><circle cx="101.6" cy="26.9" r="2.1"/><circle cx="105.8" cy="26.6" r="2.1"/><circle cx="110.0" cy="26.5" r="2.1"/><circle cx="114.2" cy="26.6" r="2.1"/><circle cx="118.4" cy="26.9" r="2.1"/><circle cx="122.5" cy="27.4" r="2.1"/><circle cx="126.7" cy="28.1" r="2.1"/><circle cx="130.8" cy="29.1" r="2.1"/><circle cx="134.8" cy="30.2" r="2.1"/><circle cx="138.8" cy="31.5" r="2.1"/><circle cx="142.7" cy="33.0" r="2.1"/><circle cx="146.6" cy="34.7" r="2.1"/><circle cx="150.3" cy="36.6" r="2.1"/><circle cx="154.0" cy="38.7" r="2.1"/><circle cx="157.5" cy="40.9" r="2.1"/><circle cx="160.9" cy="43.3" r="2.1"/><circle cx="164.2" cy="45.9" r="2.1"/><circle cx="167.4" cy="48.6" r="2.1"/><circle cx="170.5" cy="51.5" r="2.1"/><circle cx="173.4" cy="54.6" r="2.1"/><circle cx="176.1" cy="57.8" r="2.1"/><circle cx="178.7" cy="61.1" r="2.1"/><circle cx="181.1" cy="64.5" r="2.1"/><circle cx="183.3" cy="68.0" r="2.1"/><circle cx="185.4" cy="71.7" r="2.1"/><circle cx="187.3" cy="75.4" r="2.1"/><circle cx="189.0" cy="79.3" r="2.1"/><circle cx="190.5" cy="83.2" r="2.1"/><circle cx="191.8" cy="87.2" r="2.1"/><circle cx="192.9" cy="91.2" r="2.1"/><circle cx="193.9" cy="95.3" r="2.1"/><circle cx="194.6" cy="99.5" r="2.1"/><circle cx="195.1" cy="103.6" r="2.1"/><circle cx="195.4" cy="107.8" r="2.1"/></g><circle cx="110" cy="112" r="21" fill="url(#gClear)" stroke="#2FD07B" stroke-width="1.8"/><text x="110" y="115" text-anchor="middle" font-family="'Noto Sans TC',sans-serif" font-size="7.5" font-weight="700" fill="#17A34A">Ø9mm</text><line x1="230.0" y1="52.0" x2="126.0" y2="98.0" stroke="#17A34A" stroke-width="1" stroke-opacity=".5"/><circle cx="238" cy="52" r="9" fill="#fff" stroke="#17A34A" stroke-width="1.7"/><text x="238" y="55.4" text-anchor="middle" font-family="'Noto Sans TC',sans-serif" font-size="10.5" font-weight="700" fill="#17A34A">1</text><line x1="230.0" y1="96.0" x2="160.0" y2="130.0" stroke="#1F49D6" stroke-width="1" stroke-opacity=".5"/><circle cx="238" cy="96" r="9" fill="#fff" stroke="#1F49D6" stroke-width="1.7"/><text x="238" y="99.4" text-anchor="middle" font-family="'Noto Sans TC',sans-serif" font-size="10.5" font-weight="700" fill="#1F49D6">2</text><line x1="230.0" y1="140.0" x2="150.0" y2="52.0" stroke="#6B7C90" stroke-width="1" stroke-opacity=".5"/><circle cx="238" cy="140" r="9" fill="#fff" stroke="#6B7C90" stroke-width="1.7"/><text x="238" y="143.4" text-anchor="middle" font-family="'Noto Sans TC',sans-serif" font-size="10.5" font-weight="700" fill="#6B7C90">3</text><line x1="230.0" y1="182.0" x2="110.0" y2="200.0" stroke="#D9862A" stroke-width="1" stroke-opacity=".5"/><circle cx="238" cy="182" r="9" fill="#fff" stroke="#D9862A" stroke-width="1.7"/><text x="238" y="185.4" text-anchor="middle" font-family="'Noto Sans TC',sans-serif" font-size="10.5" font-weight="700" fill="#D9862A">4</text></g></svg>`,notes:[{n:"1",c:"#17A34A",k:"中央清晰區 Ø9mm",v:"單光矯正,中央清晰"},{n:"2",c:"#1F49D6",k:"11 環 · 1021 顆微透鏡",v:"每顆 Ø1.12mm、環內相接;顏色深淺示意逐環幾何不同"},{n:"3",c:"#6B7C90",k:"環間單光間隙",v:"保留單光矯正,各注視方向皆清晰"},{n:"4",c:"#D9862A",k:"逐環功率梯度",v:"由內而外 asphericity 漸變,形成前方離焦體積"}]},{cap:"HAL · 側面 VoMD",svg:`<svg viewBox="0 0 300 220" xmlns="http://www.w3.org/2000/svg"><defs><radialGradient id="gEye" cx="42%" cy="38%" r="72%"><stop offset="0" stop-color="#FFFFFF"/><stop offset="0.65" stop-color="#F3F7FC"/><stop offset="1" stop-color="#E2E9F2"/></radialGradient><radialGradient id="gLens" cx="45%" cy="38%" r="68%"><stop offset="0" stop-color="#EDF3FF"/><stop offset="1" stop-color="#BFD2F3"/></radialGradient><radialGradient id="gClear" cx="50%" cy="42%" r="62%"><stop offset="0" stop-color="#EDFCF3"/><stop offset="1" stop-color="#C8EFDA"/></radialGradient><radialGradient id="gLED" cx="42%" cy="38%" r="62%"><stop offset="0" stop-color="#FFB0A4"/><stop offset="0.5" stop-color="#DE5648"/><stop offset="1" stop-color="#AE362C"/></radialGradient><radialGradient id="gSun" cx="42%" cy="38%" r="66%"><stop offset="0" stop-color="#FFE59A"/><stop offset="1" stop-color="#F2A017"/></radialGradient><linearGradient id="gDev" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#3C424C"/><stop offset="1" stop-color="#21252D"/></linearGradient><filter id="soft" x="-25%" y="-25%" width="150%" height="150%"><feDropShadow dx="0" dy="2.5" stdDeviation="3.2" flood-color="#0C1E38" flood-opacity="0.16"/></filter><filter id="glow" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="3.2" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter></defs><g stroke-linecap="round" stroke-linejoin="round"><text x="10" y="16" text-anchor="start" font-family="'Noto Sans TC',sans-serif" font-size="11" font-weight="700" fill="#0C1E38">HAL 前方離焦體積 VoMD(側面)</text><circle cx="224" cy="112" r="60" fill="url(#gEye)" filter="url(#soft)" stroke="#26333F" stroke-width="1.6"/><path d="M229.6 58.3 A54.0 54.0 0 0 1 229.6 165.7" fill="none" stroke="#C77A6E" stroke-width="4" stroke-opacity=".85"/><path d="M227.4 63.1 A49.0 49.0 0 0 1 227.4 160.9" fill="none" stroke="#E2A79D" stroke-width="2" stroke-opacity="1"/><path d="M268.6 118.0 l4 -4 l4 4" fill="none" stroke="#B4756B" stroke-width="1.3"/><ellipse cx="270.6" cy="132.7" rx="4" ry="6" fill="#F3D9A0" stroke="#C9A24A" stroke-width="0.8"/><path d="M277.9 134.3 l20 -6 l0 22 l-20 -6 Z" fill="url(#gEye)" filter="url(#soft)" stroke="#26333F" stroke-width="1.2"/><path d="M168.0 90.5 Q144 112 168.0 133.5" fill="url(#gLens)" stroke="#26333F" stroke-width="1.5"/><path d="M171.0 88.5 Q155 112 171.0 135.5" fill="none" stroke="#8FB4D6" stroke-width="1"/><path d="M171.0 88.5 Q155 112 171.0 135.5 L208 125 L208 99 Z" fill="#EAF4FF" opacity=".55"/><path d="M170.0 92.5 L208 101 L184.0 109.0 Z" fill="#5E79B0" stroke="#26333F" stroke-width="0.6"/><path d="M170.0 131.5 L208 123 L184.0 115.0 Z" fill="#5E79B0" stroke="#26333F" stroke-width="0.6"/><ellipse cx="220" cy="112" rx="12" ry="26" fill="url(#gLens)" stroke="#1F49D6" stroke-width="1.2"/><ellipse cx="220" cy="112" rx="12" ry="26" fill="none" stroke="#9DB6E8" stroke-width="0.6"/><path d="M222 86 l-8 -5 l0 10 Z" fill="#C08A5E"/><path d="M222 138 l-8 5 l0 -10 Z" fill="#C08A5E"/><g stroke="#B9C4D6" stroke-width="0.7"><line x1="214" y1="88" x2="204" y2="82"/><line x1="214" y1="136" x2="204" y2="142"/></g><path d="M40 56 Q56 112 40 168 Q30 112 40 56 Z" fill="url(#gLens)" stroke="#1F49D6" stroke-width="1.3"/><g stroke="#1F49D6" stroke-width="1" fill="none"><path d="M10 104 L48 108 L272.6 118.0"/><path d="M10 120 L48 116 L272.6 118.0"/></g><path d="M150 84 Q188 112 150 140 Q116 112 150 84 Z" fill="#2FD07B" fill-opacity=".26" stroke="#2FD07B" stroke-width="1.2"/><g stroke="#2FD07B" stroke-width="0.9" fill="none"><path d="M10 64 L40 72"/><path d="M40 72 L150 84"/><path d="M40 72 L188 112"/><path d="M40 72 L150 140"/></g><line x1="170.0" y1="58.0" x2="206.0" y2="102.0" stroke="#1F49D6" stroke-width="1" stroke-opacity=".5"/><circle cx="178" cy="58" r="9" fill="#fff" stroke="#1F49D6" stroke-width="1.7"/><text x="178" y="61.4" text-anchor="middle" font-family="'Noto Sans TC',sans-serif" font-size="10.5" font-weight="700" fill="#1F49D6">1</text><circle cx="150" cy="112" r="9" fill="#fff" stroke="#17A34A" stroke-width="1.7"/><text x="150" y="115.4" text-anchor="middle" font-family="'Noto Sans TC',sans-serif" font-size="10.5" font-weight="700" fill="#17A34A">2</text></g></svg>`,notes:[{n:"1",c:"#1F49D6",k:"清晰光路 → 中央窩",v:"單光區成像於視網膜"},{n:"2",c:"#17A34A",k:"前方離焦體積 VoMD",v:"非球面不聚成單點,在視網膜前形成立體離焦(依偏心等距)"}]}],
+  softcl:[{cap:"正面 · 同心圓雙焦",svg:`<svg viewBox="0 0 300 220" xmlns="http://www.w3.org/2000/svg"><defs><radialGradient id="gEye" cx="42%" cy="38%" r="72%"><stop offset="0" stop-color="#FFFFFF"/><stop offset="0.65" stop-color="#F3F7FC"/><stop offset="1" stop-color="#E2E9F2"/></radialGradient><radialGradient id="gLens" cx="45%" cy="38%" r="68%"><stop offset="0" stop-color="#EDF3FF"/><stop offset="1" stop-color="#BFD2F3"/></radialGradient><radialGradient id="gClear" cx="50%" cy="42%" r="62%"><stop offset="0" stop-color="#EDFCF3"/><stop offset="1" stop-color="#C8EFDA"/></radialGradient><radialGradient id="gLED" cx="42%" cy="38%" r="62%"><stop offset="0" stop-color="#FFB0A4"/><stop offset="0.5" stop-color="#DE5648"/><stop offset="1" stop-color="#AE362C"/></radialGradient><radialGradient id="gSun" cx="42%" cy="38%" r="66%"><stop offset="0" stop-color="#FFE59A"/><stop offset="1" stop-color="#F2A017"/></radialGradient><linearGradient id="gDev" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#3C424C"/><stop offset="1" stop-color="#21252D"/></linearGradient><filter id="soft" x="-25%" y="-25%" width="150%" height="150%"><feDropShadow dx="0" dy="2.5" stdDeviation="3.2" flood-color="#0C1E38" flood-opacity="0.16"/></filter><filter id="glow" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="3.2" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter></defs><g stroke-linecap="round" stroke-linejoin="round"><text x="10" y="16" text-anchor="start" font-family="'Noto Sans TC',sans-serif" font-size="11" font-weight="700" fill="#0C1E38">MiSight 同心圓雙焦(正面)</text><circle cx="110" cy="112" r="92" fill="#CBD9F5"/><circle cx="110" cy="112" r="78" fill="url(#gClear)"/><circle cx="110" cy="112" r="62" fill="url(#gLens)"/><circle cx="110" cy="112" r="46" fill="url(#gClear)"/><circle cx="110" cy="112" r="28" fill="#A9C2F5"/><g fill="none" stroke="#2FD07B" stroke-width="0.7" stroke-opacity=".6"><circle cx="110" cy="112" r="78"/><circle cx="110" cy="112" r="46"/></g><circle cx="110" cy="112" r="92" fill="none" stroke="#1F49D6" stroke-width="1.8"/><circle cx="110" cy="112" r="28" fill="none" stroke="#1F49D6" stroke-width="1" stroke-opacity=".7"/><text x="110" y="115" text-anchor="middle" font-family="'Noto Sans TC',sans-serif" font-size="7.5" font-weight="700" fill="#0C1E38">Ø3.36mm</text><line x1="230.0" y1="54.0" x2="110.0" y2="112.0" stroke="#1F49D6" stroke-width="1" stroke-opacity=".5"/><circle cx="238" cy="54" r="9" fill="#fff" stroke="#1F49D6" stroke-width="1.7"/><text x="238" y="57.4" text-anchor="middle" font-family="'Noto Sans TC',sans-serif" font-size="10.5" font-weight="700" fill="#1F49D6">1</text><line x1="230.0" y1="104.0" x2="138.0" y2="72.0" stroke="#17A34A" stroke-width="1" stroke-opacity=".5"/><circle cx="238" cy="104" r="9" fill="#fff" stroke="#17A34A" stroke-width="1.7"/><text x="238" y="107.4" text-anchor="middle" font-family="'Noto Sans TC',sans-serif" font-size="10.5" font-weight="700" fill="#17A34A">2</text><line x1="230.0" y1="150.0" x2="110.0" y2="204.0" stroke="#6B7C90" stroke-width="1" stroke-opacity=".5"/><circle cx="238" cy="150" r="9" fill="#fff" stroke="#6B7C90" stroke-width="1.7"/><text x="238" y="153.4" text-anchor="middle" font-family="'Noto Sans TC',sans-serif" font-size="10.5" font-weight="700" fill="#6B7C90">3</text></g></svg>`,notes:[{n:"1",c:"#1F49D6",k:"中央 distance 區 Ø3.36mm",v:"矯正近視、中央清晰"},{n:"2",c:"#17A34A",k:"治療環 ×2(+2.00D)",v:"與矯正環交替(共 4 環:矯正 1,3 / 治療 2,4)"},{n:"3",c:"#6B7C90",k:"周邊承載區",v:"穩定定位,非光學治療區"}]},{cap:"側面 · 配戴與雙焦",svg:`<svg viewBox="0 0 300 220" xmlns="http://www.w3.org/2000/svg"><defs><radialGradient id="gEye" cx="42%" cy="38%" r="72%"><stop offset="0" stop-color="#FFFFFF"/><stop offset="0.65" stop-color="#F3F7FC"/><stop offset="1" stop-color="#E2E9F2"/></radialGradient><radialGradient id="gLens" cx="45%" cy="38%" r="68%"><stop offset="0" stop-color="#EDF3FF"/><stop offset="1" stop-color="#BFD2F3"/></radialGradient><radialGradient id="gClear" cx="50%" cy="42%" r="62%"><stop offset="0" stop-color="#EDFCF3"/><stop offset="1" stop-color="#C8EFDA"/></radialGradient><radialGradient id="gLED" cx="42%" cy="38%" r="62%"><stop offset="0" stop-color="#FFB0A4"/><stop offset="0.5" stop-color="#DE5648"/><stop offset="1" stop-color="#AE362C"/></radialGradient><radialGradient id="gSun" cx="42%" cy="38%" r="66%"><stop offset="0" stop-color="#FFE59A"/><stop offset="1" stop-color="#F2A017"/></radialGradient><linearGradient id="gDev" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#3C424C"/><stop offset="1" stop-color="#21252D"/></linearGradient><filter id="soft" x="-25%" y="-25%" width="150%" height="150%"><feDropShadow dx="0" dy="2.5" stdDeviation="3.2" flood-color="#0C1E38" flood-opacity="0.16"/></filter><filter id="glow" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="3.2" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter></defs><g stroke-linecap="round" stroke-linejoin="round"><text x="10" y="16" text-anchor="start" font-family="'Noto Sans TC',sans-serif" font-size="11" font-weight="700" fill="#0C1E38">MiSight 配戴 + 雙焦(側面)</text><path d="M24 158 Q70 96 118 158" fill="#F0E4D4" stroke="#9A6E3A" stroke-width="1.5"/><path d="M22 158 Q70 86 122 158" fill="none" stroke="#1F49D6" stroke-width="2"/><line x1="200" y1="60" x2="200" y2="160" stroke="#B58A6A" stroke-width="0.6" stroke-opacity="0"/><circle cx="216" cy="112" r="58" fill="url(#gEye)" filter="url(#soft)" stroke="#26333F" stroke-width="1.6"/><path d="M221.4 60.3 A52.0 52.0 0 0 1 221.4 163.7" fill="none" stroke="#C77A6E" stroke-width="4" stroke-opacity=".85"/><path d="M219.3 65.1 A47.0 47.0 0 0 1 219.3 158.9" fill="none" stroke="#E2A79D" stroke-width="2" stroke-opacity="1"/><path d="M258.6 117.7 l4 -4 l4 4" fill="none" stroke="#B4756B" stroke-width="1.3"/><ellipse cx="260.8" cy="131.9" rx="4" ry="6" fill="#F3D9A0" stroke="#C9A24A" stroke-width="0.8"/><path d="M268.1 133.4 l20 -6 l0 22 l-20 -6 Z" fill="url(#gEye)" filter="url(#soft)" stroke="#26333F" stroke-width="1.2"/><path d="M161.9 91.2 Q138 112 161.9 132.8" fill="url(#gLens)" stroke="#26333F" stroke-width="1.5"/><path d="M164.9 89.2 Q149 112 164.9 134.8" fill="none" stroke="#8FB4D6" stroke-width="1"/><path d="M164.9 89.2 Q149 112 164.9 134.8 L202 125 L202 99 Z" fill="#EAF4FF" opacity=".55"/><path d="M163.9 93.2 L202 101 L178.0 109.0 Z" fill="#5E79B0" stroke="#26333F" stroke-width="0.6"/><path d="M163.9 130.8 L202 123 L178.0 115.0 Z" fill="#5E79B0" stroke="#26333F" stroke-width="0.6"/><ellipse cx="214" cy="112" rx="12" ry="26" fill="url(#gLens)" stroke="#1F49D6" stroke-width="1.2"/><ellipse cx="214" cy="112" rx="12" ry="26" fill="none" stroke="#9DB6E8" stroke-width="0.6"/><path d="M216 86 l-8 -5 l0 10 Z" fill="#C08A5E"/><path d="M216 138 l-8 5 l0 -10 Z" fill="#C08A5E"/><g stroke="#B9C4D6" stroke-width="0.7"><line x1="208" y1="88" x2="198" y2="82"/><line x1="208" y1="136" x2="198" y2="142"/></g><g stroke="#1F49D6" stroke-width="1" fill="none"><path d="M60 98 L262.6 117.7"/><path d="M60 118 L262.6 117.7"/></g><circle cx="262.6" cy="117.7" r="3" fill="#1F49D6"/><g stroke="#2FD07B" stroke-width="1" fill="none"><path d="M60 92 L168 108"/><path d="M60 124 L168 108"/></g><circle cx="168" cy="108" r="3" fill="#2FD07B"/><line x1="40.0" y1="150.0" x2="62.0" y2="140.0" stroke="#9A6E3A" stroke-width="1" stroke-opacity=".5"/><circle cx="40" cy="168" r="9" fill="#fff" stroke="#9A6E3A" stroke-width="1.7"/><text x="40" y="171.4" text-anchor="middle" font-family="'Noto Sans TC',sans-serif" font-size="10.5" font-weight="700" fill="#9A6E3A">1</text><line x1="110.0" y1="74.0" x2="88.0" y2="98.0" stroke="#1F49D6" stroke-width="1" stroke-opacity=".5"/><circle cx="118" cy="74" r="9" fill="#fff" stroke="#1F49D6" stroke-width="1.7"/><text x="118" y="77.4" text-anchor="middle" font-family="'Noto Sans TC',sans-serif" font-size="10.5" font-weight="700" fill="#1F49D6">2</text><circle cx="180" cy="88" r="9" fill="#fff" stroke="#17A34A" stroke-width="1.7"/><text x="180" y="91.4" text-anchor="middle" font-family="'Noto Sans TC',sans-serif" font-size="10.5" font-weight="700" fill="#17A34A">3</text></g></svg>`,notes:[{n:"1",c:"#9A6E3A",k:"角膜",v:"日拋軟鏡直接貼合配戴"},{n:"2",c:"#1F49D6",k:"矯正 → 中央窩",v:"中央矯正區成像於視網膜,看得清楚"},{n:"3",c:"#17A34A",k:"治療 +2.00D → 前方",v:"治療環離焦落在視網膜前,抑制眼軸"}]}],
+  redlight:[{cap:"側面 · 光路與作用",svg:`<svg viewBox="0 0 300 220" xmlns="http://www.w3.org/2000/svg"><defs><radialGradient id="gEye" cx="42%" cy="38%" r="72%"><stop offset="0" stop-color="#FFFFFF"/><stop offset="0.65" stop-color="#F3F7FC"/><stop offset="1" stop-color="#E2E9F2"/></radialGradient><radialGradient id="gLens" cx="45%" cy="38%" r="68%"><stop offset="0" stop-color="#EDF3FF"/><stop offset="1" stop-color="#BFD2F3"/></radialGradient><radialGradient id="gClear" cx="50%" cy="42%" r="62%"><stop offset="0" stop-color="#EDFCF3"/><stop offset="1" stop-color="#C8EFDA"/></radialGradient><radialGradient id="gLED" cx="42%" cy="38%" r="62%"><stop offset="0" stop-color="#FFB0A4"/><stop offset="0.5" stop-color="#DE5648"/><stop offset="1" stop-color="#AE362C"/></radialGradient><radialGradient id="gSun" cx="42%" cy="38%" r="66%"><stop offset="0" stop-color="#FFE59A"/><stop offset="1" stop-color="#F2A017"/></radialGradient><linearGradient id="gDev" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#3C424C"/><stop offset="1" stop-color="#21252D"/></linearGradient><filter id="soft" x="-25%" y="-25%" width="150%" height="150%"><feDropShadow dx="0" dy="2.5" stdDeviation="3.2" flood-color="#0C1E38" flood-opacity="0.16"/></filter><filter id="glow" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="3.2" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter></defs><g stroke-linecap="round" stroke-linejoin="round"><text x="10" y="16" text-anchor="start" font-family="'Noto Sans TC',sans-serif" font-size="11" font-weight="700" fill="#0C1E38">紅光 光路與作用(側面)</text><g transform="translate(14,74)"><rect x="0" y="0" width="48" height="40" rx="7" fill="url(#gDev)" filter="url(#soft)"/><circle cx="24" cy="20" r="10" fill="url(#gLED)" filter="url(#glow)"/><circle cx="24" cy="20" r="5" fill="#F6A99F"/><rect x="17" y="40" width="14" height="8" fill="url(#gDev)" filter="url(#soft)"/><rect x="7" y="48" width="34" height="5" rx="2" fill="url(#gDev)" filter="url(#soft)"/></g><g stroke="#D14B3C" stroke-width="2" opacity=".5" stroke-dasharray="3 4"><line x1="66" y1="92" x2="150" y2="102"/><line x1="66" y1="100" x2="150" y2="110"/></g><circle cx="208" cy="112" r="60" fill="url(#gEye)" filter="url(#soft)" stroke="#26333F" stroke-width="1.6"/><path d="M213.6 58.3 A54.0 54.0 0 0 1 213.6 165.7" fill="none" stroke="#2FD07B" stroke-width="5" stroke-opacity=".85"/><path d="M211.4 63.1 A49.0 49.0 0 0 1 211.4 160.9" fill="none" stroke="#E2A79D" stroke-width="2" stroke-opacity="1"/><path d="M252.6 118.0 l4 -4 l4 4" fill="none" stroke="#B4756B" stroke-width="1.3"/><ellipse cx="254.6" cy="132.7" rx="4" ry="6" fill="#F3D9A0" stroke="#C9A24A" stroke-width="0.8"/><path d="M261.9 134.3 l20 -6 l0 22 l-20 -6 Z" fill="url(#gEye)" filter="url(#soft)" stroke="#26333F" stroke-width="1.2"/><path d="M152.0 90.5 Q128 112 152.0 133.5" fill="url(#gLens)" stroke="#26333F" stroke-width="1.5"/><path d="M155.0 88.5 Q139 112 155.0 135.5" fill="none" stroke="#8FB4D6" stroke-width="1"/><path d="M155.0 88.5 Q139 112 155.0 135.5 L192 125 L192 99 Z" fill="#EAF4FF" opacity=".55"/><path d="M154.0 92.5 L192 101 L168.0 109.0 Z" fill="#5E79B0" stroke="#26333F" stroke-width="0.6"/><path d="M154.0 131.5 L192 123 L168.0 115.0 Z" fill="#5E79B0" stroke="#26333F" stroke-width="0.6"/><ellipse cx="204" cy="112" rx="12" ry="26" fill="url(#gLens)" stroke="#1F49D6" stroke-width="1.2"/><ellipse cx="204" cy="112" rx="12" ry="26" fill="none" stroke="#9DB6E8" stroke-width="0.6"/><path d="M206 86 l-8 -5 l0 10 Z" fill="#C08A5E"/><path d="M206 138 l-8 5 l0 -10 Z" fill="#C08A5E"/><g stroke="#B9C4D6" stroke-width="0.7"><line x1="198" y1="88" x2="188" y2="82"/><line x1="198" y1="136" x2="188" y2="142"/></g><line x1="30.0" y1="120.0" x2="38.0" y2="96.0" stroke="#D14B3C" stroke-width="1" stroke-opacity=".5"/><circle cx="38" cy="140" r="9" fill="#fff" stroke="#D14B3C" stroke-width="1.7"/><text x="38" y="143.4" text-anchor="middle" font-family="'Noto Sans TC',sans-serif" font-size="10.5" font-weight="700" fill="url(#gLED)" filter="url(#glow)">1</text><line x1="142.0" y1="180.0" x2="150.0" y2="104.0" stroke="#D14B3C" stroke-width="1" stroke-opacity=".5"/><circle cx="150" cy="196" r="9" fill="#fff" stroke="#D14B3C" stroke-width="1.7"/><text x="150" y="199.4" text-anchor="middle" font-family="'Noto Sans TC',sans-serif" font-size="10.5" font-weight="700" fill="url(#gLED)" filter="url(#glow)">2</text><line x1="272.0" y1="60.0" x2="250.0" y2="52.0" stroke="#17A34A" stroke-width="1" stroke-opacity=".5"/><circle cx="280" cy="60" r="9" fill="#fff" stroke="#17A34A" stroke-width="1.7"/><text x="280" y="63.4" text-anchor="middle" font-family="'Noto Sans TC',sans-serif" font-size="10.5" font-weight="700" fill="#17A34A">3</text></g></svg>`,notes:[{n:"1",c:"#D14B3C",k:"桌上型儀器",v:"居家使用,每次 3 分、每日 2 次、每週 5 天"},{n:"2",c:"#D14B3C",k:"650nm 低強度紅光",v:"進入眼內、到達視網膜與脈絡膜"},{n:"3",c:"#17A34A",k:"脈絡膜血流↑/增厚(推測)",v:"可能延緩眼軸;停用易反彈,建議 OCT 監測"}]},{cap:"正面 · 儀器與使用",svg:`<svg viewBox="0 0 300 220" xmlns="http://www.w3.org/2000/svg"><defs><radialGradient id="gEye" cx="42%" cy="38%" r="72%"><stop offset="0" stop-color="#FFFFFF"/><stop offset="0.65" stop-color="#F3F7FC"/><stop offset="1" stop-color="#E2E9F2"/></radialGradient><radialGradient id="gLens" cx="45%" cy="38%" r="68%"><stop offset="0" stop-color="#EDF3FF"/><stop offset="1" stop-color="#BFD2F3"/></radialGradient><radialGradient id="gClear" cx="50%" cy="42%" r="62%"><stop offset="0" stop-color="#EDFCF3"/><stop offset="1" stop-color="#C8EFDA"/></radialGradient><radialGradient id="gLED" cx="42%" cy="38%" r="62%"><stop offset="0" stop-color="#FFB0A4"/><stop offset="0.5" stop-color="#DE5648"/><stop offset="1" stop-color="#AE362C"/></radialGradient><radialGradient id="gSun" cx="42%" cy="38%" r="66%"><stop offset="0" stop-color="#FFE59A"/><stop offset="1" stop-color="#F2A017"/></radialGradient><linearGradient id="gDev" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#3C424C"/><stop offset="1" stop-color="#21252D"/></linearGradient><filter id="soft" x="-25%" y="-25%" width="150%" height="150%"><feDropShadow dx="0" dy="2.5" stdDeviation="3.2" flood-color="#0C1E38" flood-opacity="0.16"/></filter><filter id="glow" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="3.2" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter></defs><g stroke-linecap="round" stroke-linejoin="round"><text x="10" y="16" text-anchor="start" font-family="'Noto Sans TC',sans-serif" font-size="11" font-weight="700" fill="#0C1E38">儀器與使用(正面)</text><g transform="translate(96,40)"><rect x="0" y="0" width="108" height="72" rx="12" fill="url(#gDev)" filter="url(#soft)"/><circle cx="34" cy="36" r="15" fill="url(#gLED)" filter="url(#glow)"/><circle cx="34" cy="36" r="7" fill="#F6A99F"/><circle cx="74" cy="36" r="15" fill="url(#gLED)" filter="url(#glow)"/><circle cx="74" cy="36" r="7" fill="#F6A99F"/><rect x="44" y="72" width="18" height="12" fill="url(#gDev)" filter="url(#soft)"/><rect x="28" y="84" width="52" height="7" rx="2" fill="url(#gDev)" filter="url(#soft)"/></g><line x1="142.0" y1="132.0" x2="140.0" y2="76.0" stroke="#D14B3C" stroke-width="1" stroke-opacity=".5"/><circle cx="150" cy="132" r="9" fill="#fff" stroke="#D14B3C" stroke-width="1.7"/><text x="150" y="135.4" text-anchor="middle" font-family="'Noto Sans TC',sans-serif" font-size="10.5" font-weight="700" fill="url(#gLED)" filter="url(#glow)">1</text><text x="150" y="158" text-anchor="middle" font-family="'Noto Sans TC',sans-serif" font-size="9.5" font-weight="400" fill="#0C1E38">每次 3 分 · 每日 2 次 · 每週 5 天</text><text x="150" y="178" text-anchor="middle" font-family="'Noto Sans TC',sans-serif" font-size="9" font-weight="400" fill="#6B7C90">波長 650nm · 低強度紅光</text></g></svg>`,notes:[{n:"1",c:"#D14B3C",k:"雙目觀察窗",v:"兩眼同時注視紅光光源"},{n:"·",c:"#6B7C90",k:"使用重點",v:"波長 650nm、低強度;需家長監督與規律使用"}]}],
+  outdoor:[{cap:"側面 · 作用機轉",svg:`<svg viewBox="0 0 300 220" xmlns="http://www.w3.org/2000/svg"><defs><radialGradient id="gEye" cx="42%" cy="38%" r="72%"><stop offset="0" stop-color="#FFFFFF"/><stop offset="0.65" stop-color="#F3F7FC"/><stop offset="1" stop-color="#E2E9F2"/></radialGradient><radialGradient id="gLens" cx="45%" cy="38%" r="68%"><stop offset="0" stop-color="#EDF3FF"/><stop offset="1" stop-color="#BFD2F3"/></radialGradient><radialGradient id="gClear" cx="50%" cy="42%" r="62%"><stop offset="0" stop-color="#EDFCF3"/><stop offset="1" stop-color="#C8EFDA"/></radialGradient><radialGradient id="gLED" cx="42%" cy="38%" r="62%"><stop offset="0" stop-color="#FFB0A4"/><stop offset="0.5" stop-color="#DE5648"/><stop offset="1" stop-color="#AE362C"/></radialGradient><radialGradient id="gSun" cx="42%" cy="38%" r="66%"><stop offset="0" stop-color="#FFE59A"/><stop offset="1" stop-color="#F2A017"/></radialGradient><linearGradient id="gDev" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#3C424C"/><stop offset="1" stop-color="#21252D"/></linearGradient><filter id="soft" x="-25%" y="-25%" width="150%" height="150%"><feDropShadow dx="0" dy="2.5" stdDeviation="3.2" flood-color="#0C1E38" flood-opacity="0.16"/></filter><filter id="glow" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="3.2" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter></defs><g stroke-linecap="round" stroke-linejoin="round"><text x="10" y="16" text-anchor="start" font-family="'Noto Sans TC',sans-serif" font-size="11" font-weight="700" fill="#0C1E38">戶外光照機轉(側面)</text><g transform="translate(44,52)"><circle r="15" fill="url(#gSun)" filter="url(#glow)"/><g stroke="#F6B93B" stroke-width="2" stroke-linecap="round"><line x1="0" y1="-24" x2="0" y2="-19"/><line x1="0" y1="19" x2="0" y2="24"/><line x1="-24" y1="0" x2="-19" y2="0"/><line x1="19" y1="0" x2="24" y2="0"/><line x1="-17" y1="-17" x2="-13" y2="-13"/><line x1="13" y1="13" x2="17" y2="17"/><line x1="13" y1="-17" x2="17" y2="-13"/><line x1="-17" y1="17" x2="-13" y2="13"/></g></g><g stroke="#F6B93B" stroke-width="2" opacity=".5" stroke-dasharray="3 4"><line x1="66" y1="66" x2="150" y2="98"/><line x1="74" y1="58" x2="154" y2="84"/></g><circle cx="200" cy="112" r="60" fill="url(#gEye)" filter="url(#soft)" stroke="#26333F" stroke-width="1.6"/><path d="M205.6 58.3 A54.0 54.0 0 0 1 205.6 165.7" fill="none" stroke="#C77A6E" stroke-width="4" stroke-opacity=".85"/><path d="M203.4 63.1 A49.0 49.0 0 0 1 203.4 160.9" fill="none" stroke="#E2A79D" stroke-width="2" stroke-opacity="1"/><path d="M244.6 118.0 l4 -4 l4 4" fill="none" stroke="#B4756B" stroke-width="1.3"/><ellipse cx="246.6" cy="132.7" rx="4" ry="6" fill="#F3D9A0" stroke="#C9A24A" stroke-width="0.8"/><path d="M253.9 134.3 l20 -6 l0 22 l-20 -6 Z" fill="url(#gEye)" filter="url(#soft)" stroke="#26333F" stroke-width="1.2"/><path d="M144.0 90.5 Q120 112 144.0 133.5" fill="url(#gLens)" stroke="#26333F" stroke-width="1.5"/><path d="M147.0 88.5 Q131 112 147.0 135.5" fill="none" stroke="#8FB4D6" stroke-width="1"/><path d="M147.0 88.5 Q131 112 147.0 135.5 L184 125 L184 99 Z" fill="#EAF4FF" opacity=".55"/><path d="M146.0 92.5 L184 101 L160.0 109.0 Z" fill="#5E79B0" stroke="#26333F" stroke-width="0.6"/><path d="M146.0 131.5 L184 123 L160.0 115.0 Z" fill="#5E79B0" stroke="#26333F" stroke-width="0.6"/><ellipse cx="196" cy="112" rx="12" ry="26" fill="url(#gLens)" stroke="#1F49D6" stroke-width="1.2"/><ellipse cx="196" cy="112" rx="12" ry="26" fill="none" stroke="#9DB6E8" stroke-width="0.6"/><path d="M198 86 l-8 -5 l0 10 Z" fill="#C08A5E"/><path d="M198 138 l-8 5 l0 -10 Z" fill="#C08A5E"/><g stroke="#B9C4D6" stroke-width="0.7"><line x1="190" y1="88" x2="180" y2="82"/><line x1="190" y1="136" x2="180" y2="142"/></g><circle cx="238.5" cy="101.0" r="2.4" fill="#2FD07B"/><circle cx="240.0" cy="110.6" r="2.4" fill="#2FD07B"/><circle cx="239.4" cy="118.9" r="2.4" fill="#2FD07B"/><circle cx="234.6" cy="92.0" r="2.4" fill="#2FD07B"/><line x1="40.0" y1="92.0" x2="50.0" y2="66.0" stroke="#D9862A" stroke-width="1" stroke-opacity=".5"/><circle cx="42" cy="150" r="9" fill="#fff" stroke="#D9862A" stroke-width="1.7"/><text x="42" y="153.4" text-anchor="middle" font-family="'Noto Sans TC',sans-serif" font-size="10.5" font-weight="700" fill="#D9862A">1</text><line x1="34.0" y1="150.0" x2="62.0" y2="66.0" stroke="#D9862A" stroke-width="1" stroke-opacity=".5"/><line x1="264.0" y1="64.0" x2="232.0" y2="82.0" stroke="#17A34A" stroke-width="1" stroke-opacity=".5"/><circle cx="272" cy="64" r="9" fill="#fff" stroke="#17A34A" stroke-width="1.7"/><text x="272" y="67.4" text-anchor="middle" font-family="'Noto Sans TC',sans-serif" font-size="10.5" font-weight="700" fill="#17A34A">2</text></g></svg>`,notes:[{n:"1",c:"#D9862A",k:"高照度光照(≥1000 lux)",v:"戶外自然光遠強於室內"},{n:"2",c:"#17A34A",k:"視網膜多巴胺釋放↑",v:"抑制眼軸增長;主要延緩近視『發生』(預防)"}]},{cap:"光照強度對比",svg:`<svg viewBox="0 0 300 220" xmlns="http://www.w3.org/2000/svg"><defs><radialGradient id="gEye" cx="42%" cy="38%" r="72%"><stop offset="0" stop-color="#FFFFFF"/><stop offset="0.65" stop-color="#F3F7FC"/><stop offset="1" stop-color="#E2E9F2"/></radialGradient><radialGradient id="gLens" cx="45%" cy="38%" r="68%"><stop offset="0" stop-color="#EDF3FF"/><stop offset="1" stop-color="#BFD2F3"/></radialGradient><radialGradient id="gClear" cx="50%" cy="42%" r="62%"><stop offset="0" stop-color="#EDFCF3"/><stop offset="1" stop-color="#C8EFDA"/></radialGradient><radialGradient id="gLED" cx="42%" cy="38%" r="62%"><stop offset="0" stop-color="#FFB0A4"/><stop offset="0.5" stop-color="#DE5648"/><stop offset="1" stop-color="#AE362C"/></radialGradient><radialGradient id="gSun" cx="42%" cy="38%" r="66%"><stop offset="0" stop-color="#FFE59A"/><stop offset="1" stop-color="#F2A017"/></radialGradient><linearGradient id="gDev" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#3C424C"/><stop offset="1" stop-color="#21252D"/></linearGradient><filter id="soft" x="-25%" y="-25%" width="150%" height="150%"><feDropShadow dx="0" dy="2.5" stdDeviation="3.2" flood-color="#0C1E38" flood-opacity="0.16"/></filter><filter id="glow" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="3.2" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter></defs><g stroke-linecap="round" stroke-linejoin="round"><text x="10" y="16" text-anchor="start" font-family="'Noto Sans TC',sans-serif" font-size="11" font-weight="700" fill="#0C1E38">光照強度:室內 vs 戶外(lux)</text><line x1="56" y1="160" x2="266" y2="160" stroke="#D7DEE7"/><line x1="56" y1="104" x2="266" y2="104" stroke="#2FD07B" stroke-width="1" stroke-dasharray="4 3"/><text x="264" y="100" text-anchor="end" font-family="'Noto Sans TC',sans-serif" font-size="8" font-weight="400" fill="#17A34A">≥1000 lux 門檻</text><rect x="74" y="142" width="40" height="18" rx="3" fill="#A9B4C2"/><rect x="138" y="104" width="40" height="56" rx="3" fill="url(#gSun)" filter="url(#glow)"/><rect x="202" y="44" width="40" height="116" rx="3" fill="#E8912B"/><text x="94" y="136" text-anchor="middle" font-family="'Noto Sans TC',sans-serif" font-size="8.5" font-weight="700" fill="#0C1E38">~300</text><text x="158" y="98" text-anchor="middle" font-family="'Noto Sans TC',sans-serif" font-size="8.5" font-weight="700" fill="#0C1E38">~1萬</text><text x="222" y="38" text-anchor="middle" font-family="'Noto Sans TC',sans-serif" font-size="8.5" font-weight="700" fill="#0C1E38">~10萬</text><text x="94" y="174" text-anchor="middle" font-family="'Noto Sans TC',sans-serif" font-size="8.5" font-weight="400" fill="#0C1E38">室內</text><text x="158" y="174" text-anchor="middle" font-family="'Noto Sans TC',sans-serif" font-size="8.5" font-weight="400" fill="#0C1E38">戶外陰天</text><text x="222" y="174" text-anchor="middle" font-family="'Noto Sans TC',sans-serif" font-size="8.5" font-weight="400" fill="#0C1E38">戶外晴天</text><text x="150" y="196" text-anchor="middle" font-family="'Noto Sans TC',sans-serif" font-size="8.5" font-weight="400" fill="#6B7C90">戶外光照遠高於室內(對數示意)</text></g></svg>`,notes:[{n:"·",c:"#A9B4C2",k:"室內 ~300 lux",v:"一般室內照明,低於保護門檻"},{n:"·",c:"#F6B93B",k:"戶外陰天 ~1 萬 lux",v:"已遠高於室內"},{n:"·",c:"#D9862A",k:"戶外晴天 ~10 萬 lux",v:"≥1000 lux 即具保護,建議約 2 小時/天"}]}]
+};
+
+const FEATURES={
+  ortho:[["配戴方式","夜間睡眠配戴"],["鏡片","高透氧硬式 · 逆幾何 4 弧"],["治療區","中央 ~6mm 壓平"],["適用度數","約 -0.75~-5.00D"],["驗配需求","角膜地形圖 · 定期回診"],["可逆性","停戴角膜可恢復"]],
+  atropine:[["使用方式","每晚點眼 1 次"],["藥理","蕈毒鹼受體拮抗劑"],["最佳濃度","0.05%(LAMP)"],["主要效果","延緩度數為主"],["併用","可搭 OK / 離焦鏡"],["取得","醫師處方 · 藥局調劑"]],
+  spectacle:[["配戴方式","全天框架眼鏡(≥12hr)"],["DIMS","蜂巢 396 段 · +3.50D"],["HAL","11 環 · 1021 顆(Ø1.12mm)"],["中央清晰區","DIMS 9.4mm / HAL 9mm"],["關鍵","需足時配戴"],["外觀","近似一般鏡片"]],
+  softcl:[["配戴方式","白天日拋軟式CL"],["中央區","distance Ø3.36mm"],["治療環","2 環 · +2.00D 離焦"],["起始年齡","約 8–12 歲"],["材質","omafilcon A · 60% 含水"],["認證","FDA 核准近視控制"]],
+  redlight:[["使用方式","居家桌上儀器"],["波長","650nm 紅光(低強度)"],["頻率","3 分×2 次/日 · 5 日/週"],["推測機轉","脈絡膜增厚 / 血流↑"],["反彈","停用易反彈"],["追蹤","建議 OCT 定期監測"]],
+  outdoor:[["方式","戶外自然光照"],["光照強度","≥1000 lux"],["建議量","約 2 小時/天"],["機轉","多巴胺↑ → 抑制眼軸"],["主要效益","延緩發生(預防)"],["適用","所有孩童"]]
+};
+
+/* =========================================================
+   RENDER
+   ========================================================= */
+function catTagClass(cat){return cat;}
+
+function renderBars(){
+  const el=document.getElementById('bars');
+  el.innerHTML=EFFICACY.map(b=>`
+    <div class="bar-row">
+      <div class="bar-lab">${b.label}</div>
+      <div class="bar-track"><div class="bar-fill" data-pct="${b.pct}" style="background:${b.color}"></div></div>
+      <div class="bar-val mono">${b.pct}%</div>
+      <div class="bar-note">${b.note}</div>
+    </div>`).join('');
+}
+
+function toolTab(t,i){
+  return `<button class="tooltab ${i===0?'on':''}" data-key="${t.key}">
+    <span class="tt-glyph">${t.glyph}</span>
+    <span class="tt-name">${t.name}</span>
+    <span class="tt-cat mono">${t.id}</span>
+  </button>`;
+}
+
+function diagramBlock(t){
+  const figs=DIAGRAMS[t.key]||[];
+  return `<div class="diag-list">`+figs.map(f=>{
+    const media=f.img?`<img src="${f.img}" alt="${f.cap}" class="diag-img">`:f.svg;
+    return `
+    <div class="diag-item">
+      <figure class="diag-fig" data-zoom><span class="zoom-hint">⤢ 放大</span>${media}<figcaption>${f.cap}</figcaption></figure>
+      <ul class="diag-notes">
+        ${(f.notes||[]).map(n=>`<li><span class="dn-n" style="background:${n.c}">${n.n}</span><div class="dn-t"><b>${n.k}</b>${n.v?`<span>${n.v}</span>`:''}</div></li>`).join('')}
+      </ul>
+    </div>`;}).join('')+`</div>`;
+}
+
+function toolCard(t,i){
+  return `
+  <article class="tool ${i===0?'on':''}" data-key="${t.key}">
+    <div class="tool-top">
+      <div class="glyph">${t.glyph}</div>
+      <div>
+        <div class="tool-id mono">${t.id} · ${t.catLabel}</div>
+        <h3>${t.name}<span class="en">${t.en}</span></h3>
+        <span class="tag ${catTagClass(t.cat)}">${t.catLabel}</span>
+      </div>
+    </div>
+
+    <div class="tool-diagram">
+      <div class="diag-art">${diagramBlock(t)}</div>
+      <div class="diag-spec">
+        <span class="spec-lab">◇ 設計特性</span>
+        <div class="spec-chips">${(FEATURES[t.key]||[]).map(f=>`<span class="spec-chip"><b>${f[0]}</b> ${f[1]}</span>`).join('')}</div>
+      </div>
+    </div>
+
+    <div class="tool-cols">
+      <div class="col-main">
+        <div class="tool-headline">
+          <span class="big mono">${t.headline}</span>
+          <span class="lab">${t.headlineLab}</span>
+        </div>
+        <div class="tool-body">
+          <div class="row"><div class="k">作用機轉</div><div class="v">
+            <span class="pro-only">${t.mech}</span><span class="plain-only">${t.mechPlain}</span>
+          </div></div>
+          <div class="row"><div class="k">控制效果</div><div class="v">
+            <span class="pro-only">${t.effect}</span><span class="plain-only">${t.effectPlain}</span>
+          </div></div>
+          <div class="row"><div class="k">適合族群</div><div class="v"><div class="chips">
+            ${t.fit.map(f=>`<span class="chip">${f}</span>`).join('')}
+          </div></div></div>
+          <div class="row"><div class="k">優 / 缺</div><div class="v"><div class="pros">
+            <div class="col p"><b>優點</b><ul>${t.pros.map(p=>`<li>${p}</li>`).join('')}</ul></div>
+            <div class="col c"><b>注意</b><ul>${t.cons.map(c=>`<li>${c}</li>`).join('')}</ul></div>
+          </div></div></div>
+        </div>
+      </div>
+
+      <div class="col-side">
+        <div class="trials pro-only">
+          <div class="trials-lab">◆ 代表性臨床試驗(含最新追蹤年限)</div>
+          ${t.trials.map(tr=>`
+            <div class="trial">
+              <div class="t-name">${tr.name}${tr.country?`<span class="t-flag">${tr.country}</span>`:''}</div>
+              <div class="t-src">${tr.meta}</div>
+              <div class="t-row"><span class="t-lab">臨床方式</span><span class="t-txt">${tr.pt}</span></div>
+              <div class="t-row"><span class="t-lab">成果數字</span><span class="t-num mono">${tr.num}</span></div>
+            </div>`).join('')}
+        </div>
+        <div class="tool-lit">
+          <div class="tool-lit-lab">↻ 最新文獻(每日自動更新)</div>
+          <div class="lit-list" data-key="${t.key}"><div class="lit-empty">載入中…</div></div>
+        </div>
+      </div>
+    </div>
+  </article>`;
+}
+
+function renderTools(){
+  document.getElementById('toolTabs').innerHTML=TOOLS.map(toolTab).join('');
+  document.getElementById('toolStage').innerHTML=TOOLS.map(toolCard).join('');
+  const tabs=document.getElementById('toolTabs');
+  const stage=document.getElementById('toolStage');
+  tabs.addEventListener('click',e=>{
+    const b=e.target.closest('.tooltab'); if(!b)return;
+    const key=b.dataset.key;
+    tabs.querySelectorAll('.tooltab').forEach(x=>x.classList.toggle('on',x.dataset.key===key));
+    stage.querySelectorAll('.tool').forEach(x=>x.classList.toggle('on',x.dataset.key===key));
+    renderToolLit();
+  });
+}
+
+/* mode toggle */
+function initMode(){
+  const tog=document.getElementById('modeToggle');
+  tog.addEventListener('click',e=>{
+    const b=e.target.closest('button'); if(!b)return;
+    tog.querySelectorAll('button').forEach(x=>x.classList.remove('on'));
+    b.classList.add('on');
+    document.body.classList.toggle('parent', b.dataset.mode==='parent');
+  });
+}
+
+/* intersection animate bars */
+function animateBars(){
+  const io=new IntersectionObserver((es)=>{
+    es.forEach(en=>{ if(en.isIntersecting){
+      document.querySelectorAll('.bar-fill').forEach(f=>f.style.width=f.dataset.pct+'%');
+      io.disconnect();
+    }});
+  },{threshold:.3});
+  const t=document.getElementById('bars'); if(t)io.observe(t);
+}
+
+/* =========================================================
+   LITERATURE FEED — data.json (auto-updated by GitHub Actions)
+   ========================================================= */
+const KEY_LABEL={ortho:"角膜塑型",atropine:"阿托品",spectacle:"離焦眼鏡",softcl:"離焦CL",redlight:"紅光",outdoor:"戶外"};
+
+// fallback sample so the page renders before the Action first runs
+const FALLBACK={
+  updated:"(尚未執行自動更新,以下為範例)",
+  items:{
+    ortho:[{title:"Long-term axial elongation control with orthokeratology in myopic children",journal:"Cont Lens Anterior Eye",date:"2025",pmid:"",summary:"多中心追蹤顯示長期配戴對眼軸延緩效果穩定,依從性為關鍵因子。"}],
+    atropine:[{title:"Low-concentration atropine 0.05% for myopia progression: extended outcomes",journal:"Ophthalmology",date:"2025",pmid:"",summary:"0.05% 於延伸期維持較佳延緩效果,停藥反彈幅度可控。"}],
+    spectacle:[{title:"Defocus-incorporated spectacle lenses: real-world effectiveness",journal:"Br J Ophthalmol",date:"2025",pmid:"",summary:"真實世界資料支持全天配戴之延緩效益,足時配戴為關鍵。"}],
+    softcl:[{title:"Dual-focus soft contact lenses in younger children",journal:"Optom Vis Sci",date:"2025",pmid:"",summary:"較早起始配戴者累積延緩效益更佳,安全性良好。"}],
+    redlight:[{title:"Repeated low-level red-light therapy: efficacy and retinal safety monitoring",journal:"JAMA Ophthalmol",date:"2025",pmid:"",summary:"延緩效果顯著,建議搭配 OCT 定期監測以確保視網膜安全。"}],
+    outdoor:[{title:"Outdoor light exposure and myopia onset: dose-response update",journal:"Ophthalmology",date:"2025",pmid:"",summary:"戶外光照與近視發生呈劑量-反應關係,預防效益最明確。"}]
+  }
+};
+
+function renderFeedTabs(active){
+  const tabs=[{k:"all",l:"全部"}].concat(Object.keys(KEY_LABEL).map(k=>({k,l:KEY_LABEL[k]})));
+  document.getElementById('litTabs').innerHTML=tabs.map(t=>
+    `<button class="lit-tab ${t.k===active?'on':''}" data-k="${t.k}">${t.l}</button>`).join('');
+}
+
+let LIT_DATA=null, ACTIVE_TAB="all";
+
+function litItemHTML(it){
+  const link=it.pmid?`https://pubmed.ncbi.nlm.nih.gov/${it.pmid}/`:"#";
+  const tagK=it._key||"";
+  return `<div class="feed-item">
+    <div class="fi-top">
+      <span class="fi-tag">${KEY_LABEL[tagK]||"文獻"}</span>
+      <span class="fi-date mono">${it.date||""}</span>
+    </div>
+    <h4><a href="${link}" target="_blank" rel="noopener">${it.title}</a></h4>
+    <div class="fi-meta">${it.journal||""}${it.pmid?" · PMID "+it.pmid:""}</div>
+    ${it.summary?`<div class="fi-sum">${it.summary}</div>`:""}
+  </div>`;
+}
+
+function renderFeed(){
+  if(!LIT_DATA)return;
+  const feed=document.getElementById('feed');
+  let items=[];
+  Object.keys(LIT_DATA.items).forEach(k=>{
+    (LIT_DATA.items[k]||[]).forEach(it=>items.push(Object.assign({_key:k},it)));
+  });
+  if(ACTIVE_TAB!=="all")items=items.filter(i=>i._key===ACTIVE_TAB);
+  if(!items.length){feed.innerHTML='<div class="feed-empty">此分類目前尚無文獻。</div>';return;}
+  feed.innerHTML=items.map(litItemHTML).join('');
+}
+
+function renderToolLit(){
+  if(!LIT_DATA)return;
+  document.querySelectorAll('.lit-list').forEach(box=>{
+    const k=box.dataset.key;
+    const arr=(LIT_DATA.items[k]||[]).slice(0,2);
+    if(!arr.length){box.innerHTML='<div class="lit-empty">暫無近期文獻</div>';return;}
+    box.innerHTML=arr.map(it=>{
+      const link=it.pmid?`https://pubmed.ncbi.nlm.nih.gov/${it.pmid}/`:"#";
+      return `<div class="lit-item"><a href="${link}" target="_blank" rel="noopener">${it.title}</a>
+        <div class="lit-meta">${it.journal||""} · ${it.date||""}</div></div>`;
+    }).join('');
+  });
+}
+
+function applyLit(data){
+  LIT_DATA=data;
+  document.getElementById('updTime').textContent=data.updated||"—";
+  renderFeedTabs("all");
+  renderFeed();
+  renderToolLit();
+  document.getElementById('litTabs').addEventListener('click',e=>{
+    const b=e.target.closest('.lit-tab'); if(!b)return;
+    ACTIVE_TAB=b.dataset.k;
+    renderFeedTabs(ACTIVE_TAB);
+    renderFeed();
+  });
+}
+
+async function loadLit(){
+  try{
+    const r=await fetch('data.json?_='+Date.now());
+    if(!r.ok)throw new Error('no data.json');
+    const d=await r.json();
+    applyLit(d);
+  }catch(err){
+    applyLit(FALLBACK);
+  }
+}
+
+/* lightbox zoom for design diagrams */
+function initLightbox(){
+  const lb=document.getElementById('lightbox');
+  const body=document.getElementById('lbBody');
+  const cap=document.getElementById('lbCap');
+  function open(fig){
+    const media=fig.querySelector('svg,img'); if(!media)return;
+    body.innerHTML=media.outerHTML;
+    const fc=fig.querySelector('figcaption');
+    cap.textContent=fc?fc.textContent:'';
+    cap.style.display=fc?'block':'none';
+    lb.classList.add('on'); lb.setAttribute('aria-hidden','false');
+  }
+  function close(){lb.classList.remove('on'); lb.setAttribute('aria-hidden','true');}
+  document.getElementById('toolStage').addEventListener('click',e=>{
+    const fig=e.target.closest('.diag-fig'); if(fig)open(fig);
+  });
+  lb.addEventListener('click',e=>{ if(e.target===lb) close(); });
+  document.getElementById('lbClose').addEventListener('click',close);
+  document.addEventListener('keydown',e=>{ if(e.key==='Escape') close(); });
+}
+
+/* =========================================================
+   MARKET NEWS FEED — news.json (auto-updated by GitHub Actions)
+   ========================================================= */
+const NEWS_LABEL={myopia:"近視控制",contactlens:"隱形眼鏡",lens:"鏡片/驗光",device:"眼科醫材",pharma:"眼藥/藥物",health:"視力保健",industry:"產業公司"};
+const NEWS_FALLBACK={updated:"(尚未執行自動更新)",items:{}};
+let NEWS_DATA=null, NEWS_TAB="all";
+
+function newsTabsHTML(active){
+  const tabs=[{k:"all",l:"全部"}].concat(Object.keys(NEWS_LABEL).map(k=>({k,l:NEWS_LABEL[k]})));
+  document.getElementById('newsTabs').innerHTML=tabs.map(t=>
+    `<button class="lit-tab ${t.k===active?'on':''}" data-k="${t.k}">${t.l}</button>`).join('');
+}
+function newsItemHTML(it){
+  const link=it.link&&it.link!=='#'?it.link:'#';
+  return `<div class="feed-item">
+    <div class="fi-top">
+      <span class="fi-tag">${NEWS_LABEL[it._key]||"新聞"}</span>
+      <span class="fi-date mono">${it.date||""}</span>
+    </div>
+    <h4><a href="${link}" target="_blank" rel="noopener">${it.title}</a></h4>
+    <div class="fi-meta">${it.source||""}</div>
+    ${it.summary?`<div class="fi-sum">${it.summary}</div>`:""}
+  </div>`;
+}
+function renderNews(){
+  if(!NEWS_DATA)return;
+  const feed=document.getElementById('newsFeed');
+  let items=[];
+  Object.keys(NEWS_DATA.items||{}).forEach(k=>{
+    (NEWS_DATA.items[k]||[]).forEach(it=>items.push(Object.assign({_key:k},it)));
+  });
+  if(NEWS_TAB!=="all")items=items.filter(i=>i._key===NEWS_TAB);
+  items.sort((a,b)=>(b.date||"").localeCompare(a.date||""));
+  if(!items.length){feed.innerHTML='<div class="feed-empty">此分類目前尚無消息。</div>';return;}
+  feed.innerHTML=items.map(newsItemHTML).join('');
+}
+async function loadNews(){
+  let d=NEWS_FALLBACK;
+  try{
+    const r=await fetch('news.json?_='+Date.now());
+    if(r.ok)d=await r.json();
+  }catch(e){}
+  NEWS_DATA=d;
+  document.getElementById('newsUpd').textContent=d.updated||"—";
+  newsTabsHTML("all");
+  renderNews();
+  document.getElementById('newsTabs').addEventListener('click',e=>{
+    const b=e.target.closest('.lit-tab'); if(!b)return;
+    NEWS_TAB=b.dataset.k; newsTabsHTML(NEWS_TAB); renderNews();
+  });
+}
+
+/* =========================================================
+   GLOBAL NEWS FEED — global_news.json (auto-updated daily)
+   ========================================================= */
+const G_LABEL={myopia:"近視控制",contactlens:"隱形眼鏡",lens:"鏡片/驗光",device:"眼科醫材",pharma:"眼藥/藥物",health:"視力保健",industry:"產業公司"};
+let G_DATA=null, G_TAB="all";
+function gTabsHTML(active){
+  const tabs=[{k:"all",l:"全部"}].concat(Object.keys(G_LABEL).map(k=>({k,l:G_LABEL[k]})));
+  document.getElementById('gTabs').innerHTML=tabs.map(t=>
+    `<button class="lit-tab ${t.k===active?'on':''}" data-k="${t.k}">${t.l}</button>`).join('');
+}
+function gItemHTML(it){
+  const link=it.link&&it.link!=='#'?it.link:'#';
+  const point=it.keypoint?`<div class="fi-point">重點:${it.keypoint}</div>`:'';
+  return `<div class="feed-item">
+    <div class="fi-top">
+      <span class="fi-tag">${G_LABEL[it._key]||"新聞"}</span>
+      <span class="fi-date mono">${it.date||""}</span>
+    </div>
+    ${point}
+    <h4><a href="${link}" target="_blank" rel="noopener">${it.title}</a></h4>
+    <div class="fi-meta">${it.source||""}</div>
+    ${it.summary&&!it.keypoint?`<div class="fi-sum">${it.summary}</div>`:""}
+  </div>`;
+}
+function renderG(){
+  if(!G_DATA)return;
+  const feed=document.getElementById('gFeed');
+  let items=[];
+  Object.keys(G_DATA.items||{}).forEach(k=>{(G_DATA.items[k]||[]).forEach(it=>items.push(Object.assign({_key:k},it)));});
+  if(G_TAB!=="all")items=items.filter(i=>i._key===G_TAB);
+  items.sort((a,b)=>(b.date||"").localeCompare(a.date||""));
+  if(!items.length){feed.innerHTML='<div class="feed-empty">此分類目前尚無消息。</div>';return;}
+  feed.innerHTML=items.map(gItemHTML).join('');
+}
+async function loadGlobal(){
+  let d={updated:"(尚未執行自動更新)",items:{}};
+  try{const r=await fetch('global_news.json?_='+Date.now());if(r.ok)d=await r.json();}catch(e){}
+  G_DATA=d;
+  document.getElementById('gUpd').textContent=d.updated||"—";
+  gTabsHTML("all"); renderG();
+  document.getElementById('gTabs').addEventListener('click',e=>{
+    const b=e.target.closest('.lit-tab'); if(!b)return;
+    G_TAB=b.dataset.k; gTabsHTML(G_TAB); renderG();
+  });
+}
+
+/* =========================================================
+   INDUSTRY COMPANIES DIRECTORY (editable starter list)
+   ========================================================= */
+const CO_LABEL={lens:"鏡片",contactlens:"隱形眼鏡",myopia:"近視控制",device:"眼科醫材",pharma:"眼藥製藥",retail:"通路連鎖"};
+const COMPANIES=[
+  // 鏡片
+  {n:"EssilorLuxottica",s:"lens",r:"法/義",note:"全球最大鏡片與鏡框集團"},
+  {n:"Carl Zeiss(蔡司)",s:"lens",r:"德",note:"精密光學、鏡片與眼科"},
+  {n:"Hoya",s:"lens",r:"日",note:"鏡片;MiYOSMART 近視控制鏡片"},
+  {n:"Rodenstock",s:"lens",r:"德",note:"高階客製化鏡片"},
+  {n:"Nikon Lenswear",s:"lens",r:"日",note:"鏡片"},
+  // 隱形眼鏡
+  {n:"J&J Vision(Acuvue)",s:"contactlens",r:"美",note:"隱形眼鏡龍頭 Acuvue"},
+  {n:"Alcon",s:"contactlens",r:"瑞士",note:"隱形眼鏡與眼科手術"},
+  {n:"CooperVision",s:"contactlens",r:"美",note:"MiSight 近視控制軟鏡"},
+  {n:"Bausch + Lomb",s:"contactlens",r:"加/美",note:"隱形眼鏡與眼科"},
+  {n:"晶碩光學",s:"contactlens",r:"台",code:"6491",note:"隱形眼鏡代工與品牌"},
+  {n:"精華光學",s:"contactlens",r:"台",code:"1565",note:"隱形眼鏡代工"},
+  {n:"視陽光學",s:"contactlens",r:"台",code:"6782",note:"隱形眼鏡"},
+  {n:"亨泰光",s:"contactlens",r:"台",code:"6747",note:"角膜塑型/隱形眼鏡"},
+  // 近視控制
+  {n:"Euclid",s:"myopia",r:"美",note:"角膜塑型(EssilorLuxottica 旗下)"},
+  {n:"Menicon",s:"myopia",r:"日",note:"角膜塑型鏡片"},
+  {n:"Eyerising",s:"myopia",r:"澳/中",note:"重複低強度紅光(RLRL)"},
+  {n:"Sydnexis",s:"myopia",r:"美",note:"低濃度阿托品(研發)"},
+  {n:"Vyluma",s:"myopia",r:"美",note:"低濃度阿托品 NVK-002"},
+  // 眼科醫材
+  {n:"Carl Zeiss Meditec",s:"device",r:"德",note:"眼科診斷/手術設備"},
+  {n:"Topcon",s:"device",r:"日",note:"眼科檢查儀器"},
+  {n:"Nidek",s:"device",r:"日",note:"驗光/眼科設備"},
+  {n:"Heidelberg Engineering",s:"device",r:"德",note:"OCT 影像"},
+  {n:"Optos",s:"device",r:"英",note:"廣角眼底影像"},
+  // 眼藥製藥
+  {n:"Santen(參天)",s:"pharma",r:"日",note:"眼科製藥"},
+  {n:"AbbVie / Allergan",s:"pharma",r:"美",note:"乾眼與眼科藥物"},
+  {n:"Novartis",s:"pharma",r:"瑞士",note:"眼科藥物"},
+  // 通路連鎖
+  {n:"大學光學科技",s:"retail",r:"台",code:"3218",note:"大學眼科連鎖"},
+  {n:"寶島眼鏡",s:"retail",r:"台",note:"眼鏡零售連鎖"},
+  {n:"得恩堂",s:"retail",r:"台",note:"眼鏡零售連鎖"},
+];
+let CO_TAB="all";
+function coTabsHTML(active){
+  const tabs=[{k:"all",l:"全部"}].concat(Object.keys(CO_LABEL).map(k=>({k,l:CO_LABEL[k]})));
+  document.getElementById('coTabs').innerHTML=tabs.map(t=>
+    `<button class="lit-tab ${t.k===active?'on':''}" data-k="${t.k}">${t.l}</button>`).join('');
+}
+function renderCompanies(){
+  const grid=document.getElementById('coGrid');
+  const segs=CO_TAB==="all"?Object.keys(CO_LABEL):[CO_TAB];
+  grid.innerHTML=segs.map(sg=>{
+    const list=COMPANIES.filter(c=>c.s===sg);
+    if(!list.length)return"";
+    return `<div class="co-seg"><div class="co-seg-h">${CO_LABEL[sg]} <span>${list.length}</span></div>
+      <div class="co-cards">${list.map(c=>`
+        <div class="co-card">
+          <div class="co-name">${c.n}${c.code?`<span class="co-code">${c.code}</span>`:''}</div>
+          <div class="co-meta"><span class="co-region">${c.r}</span> ${c.note||''}</div>
+        </div>`).join('')}</div></div>`;
+  }).join('');
+}
+function initCompanies(){
+  coTabsHTML("all"); renderCompanies();
+  document.getElementById('coTabs').addEventListener('click',e=>{
+    const b=e.target.closest('.lit-tab'); if(!b)return;
+    CO_TAB=b.dataset.k; coTabsHTML(CO_TAB); renderCompanies();
+  });
+}
+
+/* =========================================================
+   VIEW ROUTER (tabbed industry-analysis navigation)
+   ========================================================= */
+const SEGMENTS=[
+  {k:"lens",ico:"🔎",label:"鏡片 / 驗光",desc:"單光、漸進、離焦鏡片與驗光配鏡;EssilorLuxottica、蔡司、Hoya 等。",goto:"companies"},
+  {k:"contactlens",ico:"👁",label:"隱形眼鏡",desc:"日/月拋、離焦軟鏡與角膜塑型;台廠晶碩、精華、視陽、亨泰光。",goto:"companies"},
+  {k:"myopia",ico:"🎯",label:"近視控制",desc:"角膜塑型、阿托品、離焦鏡片/軟鏡、紅光、戶外——臨床工具與實證。",goto:"myopia"},
+  {k:"device",ico:"🩺",label:"眼科醫材",desc:"OCT、眼底、驗光與手術設備;蔡司、Topcon、Nidek。",goto:"companies"},
+  {k:"pharma",ico:"💧",label:"眼藥 / 製藥",desc:"乾眼、白內障、青光眼與低濃度阿托品;參天、Alcon。",goto:"companies"},
+  {k:"retail",ico:"🏬",label:"通路 / 連鎖",desc:"眼科連鎖與眼鏡零售;大學光(3218)、寶島等。",goto:"companies"},
+];
+function renderSegMap(){
+  const el=document.getElementById('segMap'); if(!el)return;
+  el.innerHTML=SEGMENTS.map(s=>`
+    <div class="seg-card" data-goto="${s.goto}"${s.goto==='companies'?` data-seg="${s.k}"`:''}>
+      <h3><span class="seg-ico">${s.ico}</span>${s.label}</h3>
+      <p>${s.desc}</p>
+      <div class="seg-go">前往 →</div>
+    </div>`).join('');
+}
+const VIEWS=["overview","taiwan","global","companies","myopia","about"];
+function applyView(name){
+  if(!VIEWS.includes(name))name="overview";
+  document.querySelectorAll('.view').forEach(v=>v.classList.toggle('is-active', v.id==='view-'+name));
+  document.querySelectorAll('#mainNav a').forEach(a=>a.classList.toggle('on', a.dataset.view===name));
+  const mt=document.getElementById('modeToggle'); if(mt)mt.style.display=(name==='myopia')?'':'none';
+  const bb=document.getElementById('backBtn'); if(bb)bb.style.display=(name==='overview')?'none':'';
+  if(name==='myopia'){document.querySelectorAll('.bar-fill').forEach(f=>{f.style.width=f.dataset.pct+'%';});}
+  window.scrollTo({top:0,behavior:'smooth'});
+}
+function switchView(name,seg){
+  if(location.hash!=='#'+name)history.pushState({v:name},'','#'+name);
+  applyView(name);
+  if(name==='companies'&&seg){CO_TAB=seg;coTabsHTML(seg);renderCompanies();}
+}
+function initRouter(){
+  document.getElementById('mainNav').addEventListener('click',e=>{
+    const a=e.target.closest('a[data-view]'); if(!a)return;
+    e.preventDefault(); switchView(a.dataset.view);
+  });
+  document.body.addEventListener('click',e=>{
+    const g=e.target.closest('[data-goto]'); if(!g)return;
+    e.preventDefault(); switchView(g.dataset.goto, g.dataset.seg);
+  });
+  const bb=document.getElementById('backBtn');
+  if(bb)bb.addEventListener('click',()=>history.back());
+  window.addEventListener('popstate',e=>{
+    const name=(e.state&&e.state.v)||location.hash.replace('#','')||'overview';
+    applyView(name);
+  });
+  // initial view from URL hash (shareable / refresh-safe)
+  const start=location.hash.replace('#','')||'overview';
+  history.replaceState({v:start},'','#'+start);
+  applyView(start);
+}
+
+/* =========================================================
+   INIT
+   ========================================================= */
+renderBars();
+renderTools();
+initMode();
+initLightbox();
+animateBars();
+loadLit();
+loadNews();
+loadGlobal();
+initCompanies();
+renderSegMap();
+initRouter();
+document.getElementById('buildStamp').textContent=new Date().toISOString().slice(0,10);
+</script>
+</body>
+</html>

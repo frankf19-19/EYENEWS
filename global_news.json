@@ -1,0 +1,76 @@
+{
+  "updated": "初始資料 · 待 GitHub Actions 首次執行後自動更新",
+  "source": "Google News (Global/EN)",
+  "items": {
+    "myopia": [
+      {
+        "title": "(sample) Global 近視控制 news",
+        "link": "#",
+        "source": "Google News",
+        "date": "2026-07-11",
+        "summary": "International coverage.",
+        "keypoint": "(範例)全球近視控制相關新聞的繁中重點會顯示於此。"
+      }
+    ],
+    "contactlens": [
+      {
+        "title": "(sample) Global 隱形眼鏡 news",
+        "link": "#",
+        "source": "Google News",
+        "date": "2026-07-11",
+        "summary": "International coverage.",
+        "keypoint": "(範例)全球隱形眼鏡相關新聞的繁中重點會顯示於此。"
+      }
+    ],
+    "lens": [
+      {
+        "title": "(sample) Global 鏡片/驗光 news",
+        "link": "#",
+        "source": "Google News",
+        "date": "2026-07-11",
+        "summary": "International coverage.",
+        "keypoint": "(範例)全球鏡片/驗光相關新聞的繁中重點會顯示於此。"
+      }
+    ],
+    "device": [
+      {
+        "title": "(sample) Global 眼科醫材 news",
+        "link": "#",
+        "source": "Google News",
+        "date": "2026-07-11",
+        "summary": "International coverage.",
+        "keypoint": "(範例)全球眼科醫材相關新聞的繁中重點會顯示於此。"
+      }
+    ],
+    "pharma": [
+      {
+        "title": "(sample) Global 眼藥/藥物 news",
+        "link": "#",
+        "source": "Google News",
+        "date": "2026-07-11",
+        "summary": "International coverage.",
+        "keypoint": "(範例)全球眼藥/藥物相關新聞的繁中重點會顯示於此。"
+      }
+    ],
+    "health": [
+      {
+        "title": "(sample) Global 視力保健 news",
+        "link": "#",
+        "source": "Google News",
+        "date": "2026-07-11",
+        "summary": "International coverage.",
+        "keypoint": "(範例)全球視力保健相關新聞的繁中重點會顯示於此。"
+      }
+    ],
+    "industry": [
+      {
+        "title": "(sample) Global 產業公司 news",
+        "link": "#",
+        "source": "Google News",
+        "date": "2026-07-11",
+        "summary": "International coverage.",
+        "keypoint": "(範例)全球產業公司相關新聞的繁中重點會顯示於此。"
+      }
+    ]
+  }
+}

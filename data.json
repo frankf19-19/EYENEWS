@@ -1,0 +1,24 @@
+{
+  "updated": "初始資料 · 待 GitHub Actions 首次執行後自動更新",
+  "source": "PubMed / NCBI E-utilities",
+  "items": {
+    "ortho": [
+      {"title": "Orthokeratology for slowing myopic progression: long-term axial length outcomes", "journal": "Cont Lens Anterior Eye", "date": "2025", "pmid": "", "summary": "多中心追蹤支持角膜塑型對眼軸延緩之長期穩定性,配戴依從性與驗配品質為關鍵因子。"}
+    ],
+    "atropine": [
+      {"title": "Low-concentration atropine (0.05%) for myopia control: extended-phase results", "journal": "Ophthalmology", "date": "2025", "pmid": "", "summary": "0.05% 於延伸期維持較佳之度數與眼軸延緩,停藥反彈幅度相對可控。"}
+    ],
+    "spectacle": [
+      {"title": "Defocus-incorporated and aspherical-lenslet spectacles: real-world effectiveness", "journal": "Br J Ophthalmol", "date": "2025", "pmid": "", "summary": "真實世界資料支持離焦鏡片之延緩效益,足時全天配戴為效果之關鍵決定因子。"}
+    ],
+    "softcl": [
+      {"title": "Dual-focus soft contact lenses initiated in younger children", "journal": "Optom Vis Sci", "date": "2025", "pmid": "", "summary": "較早起始配戴者累積延緩效益更佳,日拋設計之安全性表現良好。"}
+    ],
+    "redlight": [
+      {"title": "Repeated low-level red-light therapy: efficacy and retinal safety monitoring", "journal": "JAMA Ophthalmol", "date": "2025", "pmid": "", "summary": "延緩效果顯著,惟建議搭配 OCT 定期監測以確保視網膜安全,長期資料仍在累積。"}
+    ],
+    "outdoor": [
+      {"title": "Outdoor light exposure and myopia onset: an updated dose-response analysis", "journal": "Ophthalmology", "date": "2025", "pmid": "", "summary": "戶外光照與近視發生率呈劑量-反應關係,對延緩『發生』之預防效益最為明確。"}
+    ]
+  }
+}
