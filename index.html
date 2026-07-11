@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- 眼視光 Eye-Vision Hub | build r40 | 2026-07-11 | 公司資料全面查證+版本標示 -->
+<!-- 眼視光 Eye-Vision Hub | build r41 | 2026-07-11 | 公司資料全面查證+版本標示 -->
 <html lang="zh-Hant">
 <head>
 <meta charset="UTF-8">
@@ -229,6 +229,9 @@ h2{font-weight:700;font-size:clamp(24px,3vw,32px);margin:0 0 6px}
 .range-btn:hover{border-color:var(--accent);color:var(--accent-ink)}
 .range-btn.on{background:var(--accent);color:#fff;border-color:var(--accent)}
 .fi-old{color:var(--live);font-weight:600}
+.news-tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px}
+.news-tag{font-size:12px;border:1px solid var(--accent);color:var(--accent);background:transparent;border-radius:999px;padding:3px 10px;cursor:pointer;font-weight:600;line-height:1.4;transition:.15s}
+.news-tag:hover{background:var(--accent);color:#fff}
 .fb-panel{margin-bottom:22px}
 .fb-note{font-size:11px;color:var(--muted)}
 .fb-body{padding:16px 20px 20px}
@@ -433,7 +436,7 @@ footer .build{margin-top:8px;font-size:11px}
       <a data-view="about">關於</a>
     </nav>
     <div class="topbar-right">
-      <span class="ver" title="版本(部署後對照用)">r40</span>
+      <span class="ver" title="版本(部署後對照用)">r41</span>
       <button id="backBtn" type="button" aria-label="返回上一頁">← 返回</button>
     </div>
   </div>
@@ -660,7 +663,7 @@ footer .build{margin-top:8px;font-size:11px}
   <div class="wrap">
     眼視光資訊中心 · Eye-Vision Industry Hub<br>
     資料來源:Google News · PubMed / NCBI · 每日/每 6 小時自動更新
-    <div class="build">build r40 · <span id="buildStamp"></span></div>
+    <div class="build">build r41 · <span id="buildStamp"></span></div>
   </div>
 </footer>
 
@@ -999,6 +1002,7 @@ function litItemHTML(it){
     ${sub}
     <div class="fi-meta">${it.journal||""}${it.pmid?" · PMID "+it.pmid:""}</div>
     ${point?`<div class="fi-point">中文重點:${point}</div>`:""}
+    ${tagsHTML(it.title,it.zh,it.zh_sum,it.summary,it.journal)}
   </div>`;
 }
 
@@ -1106,6 +1110,7 @@ function newsItemHTML(it){
     <h4><a href="${link}" target="_blank" rel="noopener">${it.title}</a></h4>
     <div class="fi-meta">${it.source||""}</div>
     ${it.summary?`<div class="fi-point">重點:${it.summary}</div>`:""}
+    ${tagsHTML(it.title,it.summary,it.source)}
   </div>`;
 }
 let NEWS_SHOWN=25, NEWS_RANGE=90;
@@ -1171,6 +1176,7 @@ function gItemHTML(it){
     <h4><a href="${link}" target="_blank" rel="noopener">${it.title}</a></h4>
     <div class="fi-meta">${it.source||""}</div>
     ${it.summary&&!it.keypoint?`<div class="fi-sum">${it.summary}</div>`:""}
+    ${tagsHTML(it.title,it.summary,it.keypoint)}
   </div>`;
 }
 let G_SHOWN=25, G_RANGE=0;
@@ -1430,6 +1436,91 @@ function renderProductDetail(dom,i){
       '<p class="co-editnote">※ 設計圖與臨床試驗已置於各產品內;臨床文獻為即時 PubMed 彙整,許可證請點各產品「查 TFDA 官方許可證」以官方為準。</p>'+
     '</div>';
 }
+const NEWS_TAG_RULES=[
+ {re:/misight/i,co:"CooperVision",p:"MiSight 離焦日拋",find:"MiSight"},
+ {re:/miyosmart|新樂學/i,co:"Hoya",p:"MiYOSMART 新樂學",find:"MiYOSMART"},
+ {re:/stellest|星趣控/i,co:"依視路 Essilor",p:"Stellest 星趣控",find:"Stellest"},
+ {re:/myocare|成長睿/i,co:"蔡司 ZEISS",p:"MyoCare 成長睿",find:"MyoCare"},
+ {re:/\bemerald\b/i,co:"Euclid",p:"EMERALD OK鏡",find:"EMERALD"},
+ {re:/paragon\s*crt/i,co:"CooperVision",p:"Paragon CRT OK鏡",find:"角膜塑型"},
+ {re:/orthokerat|ortho-?k\b|角膜塑/i,p:"角膜塑型(OK鏡)",find:"角膜塑型"},
+ {re:/atropine|阿托品/i,p:"低濃度阿托品",find:"阿托品"},
+ {re:/repeated low[- ]?level red|red[- ]?light therapy|\brlrl\b|低強度紅光|紅光/i,co:"Eyerising",p:"重複低強度紅光",find:"紅光"},
+ {re:/\bdims\b/i,co:"Hoya",p:"MiYOSMART(DIMS)",find:"MiYOSMART"},
+ {re:/highly aspher|\bh\.?a\.?l\.?s?\b/i,co:"依視路 Essilor",p:"Stellest(HAL)",find:"Stellest"},
+ {re:/acuvue|oasys/i,co:"嬌生 J&J",p:"Acuvue 系列",find:"Acuvue"},
+ {re:/dailies|precision1|total\s?30|air optix/i,co:"Alcon",p:"Alcon 日/月拋",find:"Dailies"},
+ {re:/biofinity|clariti|\bmyday\b/i,co:"CooperVision",p:"Biofinity 等",find:"Biofinity"},
+ {re:/biotrue|\binfuse\b/i,co:"博士倫 B+L",p:"日拋/月拋",find:"日拋"},
+ {re:/\bsmile\b|全飛秒/i,co:"蔡司 ZEISS",p:"SMILE 全飛秒",find:"SMILE"},
+ {re:/\blasik\b/i,p:"LASIK 準分子雷射",find:"LASIK"},
+ {re:/\bicl\b|visian|evo\s*icl/i,co:"STAAR",p:"EVO ICL",find:"ICL"},
+ {re:/panoptix|vivity|synergy|symfony/i,p:"多焦/EDOF 人工水晶體",find:"PanOptix"},
+ {re:/istent|hydrus|\bxen\b|\bmigs\b/i,p:"微創青光眼手術(MIGS)",find:"iStent"},
+ {re:/\bslt\b|selective laser trab/i,p:"青光眼雷射(SLT)",find:"青光眼"},
+ {re:/cross-?link|\bcxl\b|膠原交聯/i,p:"角膜膠原交聯(CXL)",find:"交聯"},
+ {re:/eylea|aflibercept/i,co:"Regeneron/Bayer",p:"抗 VEGF 注射",find:"抗 VEGF"},
+ {re:/vabysmo|faricimab/i,co:"Roche",p:"抗 VEGF 注射",find:"抗 VEGF"},
+ {re:/lucentis|ranibizumab/i,co:"Roche/Novartis",p:"抗 VEGF 注射",find:"抗 VEGF"},
+ {re:/anti-?vegf|抗\s?vegf/i,p:"抗 VEGF 注射",find:"抗 VEGF"},
+ {re:/restasis|cequa|ciclosporin|cyclosporine/i,p:"乾眼免疫調節(環孢素)",find:"免疫調節"},
+ {re:/xiidra|lifitegrast/i,co:"諾華",p:"乾眼免疫調節",find:"免疫調節"},
+ {re:/lipiflow|\bipl\b|瞼板腺/i,p:"瞼板腺熱敷/IPL",find:"IPL"},
+ {re:/latanoprost|bimatoprost|prostaglandin/i,p:"青光眼降眼壓藥",find:"青光眼"},
+ {re:/\boct\b|光學同調|optical coherence/i,p:"OCT 光學同調斷層",find:"OCT"},
+ {re:/pentacam|topograph|地形圖/i,p:"角膜地形圖/斷層",find:"地形"},
+ {re:/zeiss|蔡司/i,co:"蔡司 ZEISS",find:"蔡司"},
+ {re:/\bhoya\b/i,co:"Hoya",find:"Hoya"},
+ {re:/essilor|luxottica|依視路/i,co:"依視路 EssilorLuxottica",find:"Stellest"},
+ {re:/menicon|\bbloom\b|妙鏡/i,co:"Menicon",p:"Bloom 近視控制",find:"Bloom"},
+ {re:/brighten|亨泰/i,co:"亨泰光學",p:"OK鏡",find:"角膜塑型"},
+ {re:/pegavision|晶碩/i,co:"晶碩",find:"晶碩"},
+ {re:/cooper\s*vision/i,co:"CooperVision",find:"Biofinity"},
+ {re:/\balcon\b/i,co:"Alcon",find:"Alcon"},
+ {re:/johnson\s*&?\s*johnson|\bj&j\b/i,co:"嬌生 J&J",find:"Acuvue"},
+ {re:/bausch/i,co:"博士倫 B+L",find:"日拋"},
+];
+const NEWS_TOPIC_RULES=[
+ {re:/myopia|近視/i, extra:/soft contact|contact lens|軟鏡|1[- ]?day|daily disposable/i, p:"近視控制軟鏡", find:"離焦軟鏡"},
+ {re:/myopia|近視/i, extra:/spectacle|eyeglass|\blens(es)?\b|眼鏡|鏡片/i, p:"近視控制鏡片", find:"近視控制離焦"},
+ {re:/myopia|近視|refractive error/i, p:"近視控制", find:"近視控制"},
+ {re:/keratoconus|圓錐角膜/i, p:"圓錐角膜(硬鏡/CXL)", find:"圓錐"},
+ {re:/dry eye|乾眼|meibomian/i, p:"乾眼", find:"乾眼"},
+ {re:/cataract|白內障|intraocular lens|\biol\b/i, p:"白內障 / 人工水晶體", find:"白內障"},
+ {re:/glaucoma|青光眼|intraocular pressure/i, p:"青光眼", find:"青光眼"},
+ {re:/presbyopia|老花/i, p:"老花 / 多焦", find:"多焦"},
+ {re:/macula|\bamd\b|retina|視網膜|黃斑|diabetic/i, p:"視網膜 / 黃斑", find:"抗 VEGF"},
+ {re:/refractive surgery|屈光手術/i, p:"屈光手術", find:"LASIK"},
+ {re:/contact lens|隱形眼鏡/i, p:"隱形眼鏡", find:"日拋"},
+ {re:/spectacle|eyeglass|鏡片|眼鏡/i, p:"鏡片 / 眼鏡", find:"鏡片"},
+];
+function detectTags(text){
+  text=(text||''); const hits=[]; const seenCo=new Set();
+  for(const r of NEWS_TAG_RULES){
+    if(hits.length>=3)break;
+    if(r.re.test(text)){
+      const label=[r.co,r.p].filter(Boolean).join(' · ');
+      if(hits.some(h=>h.label===label))continue;
+      if(r.co&&!r.p&&seenCo.has(r.co))continue;
+      if(r.co&&r.p)seenCo.add(r.co);
+      hits.push({label,find:r.find});
+    }
+  }
+  if(hits.length===0){
+    for(const r of NEWS_TOPIC_RULES){
+      if(r.re.test(text)&&(!r.extra||r.extra.test(text))){
+        hits.push({label:r.p,find:r.find}); break;
+      }
+    }
+  }
+  return hits;
+}
+function tagsHTML(){
+  const text=[].slice.call(arguments).filter(Boolean).join(' ');
+  const t=detectTags(text);
+  if(!t.length)return '';
+  return '<div class="news-tags">'+t.map(h=>'<button class="news-tag" data-find="'+String(h.find).replace(/"/g,'')+'" title="查看產品技術詳情">\uD83D\uDD17 '+h.label+'</button>').join('')+'</div>';
+}
 function findProd(name){
   name=(name||'').replace(/[（(].*?[）)]/g,'').trim();
   if(!name)return null;
@@ -1461,6 +1552,7 @@ function openProduct(dom,i,push){
 function closeProductModal(){const m=document.getElementById('prodModal'); if(m)m.classList.remove('on'); document.body.style.overflow='';}
 function initProducts(){
   prodTabsHTML('all'); renderProducts();
+  document.addEventListener('click',e=>{const nt=e.target.closest('.news-tag'); if(nt){e.preventDefault(); openCompanyProduct(nt.dataset.find);}});
   document.getElementById('prodTabs').addEventListener('click',e=>{const b=e.target.closest('.lit-tab'); if(!b)return; PROD_TAB=b.dataset.k; prodTabsHTML(PROD_TAB); renderProducts();});
   document.getElementById('prodGrid').addEventListener('click',e=>{const c=e.target.closest('[data-dom]'); if(!c)return; if(e.target.closest('[data-goto]'))return; openProduct(c.dataset.dom,+c.dataset.i);});
   document.getElementById('prodGrid').addEventListener('keydown',e=>{if(e.key!=='Enter'&&e.key!==' ')return; const c=e.target.closest('[data-dom]'); if(!c)return; e.preventDefault(); openProduct(c.dataset.dom,+c.dataset.i);});
