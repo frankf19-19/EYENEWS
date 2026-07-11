@@ -22,7 +22,9 @@ QUERIES = {
     "pharma":      '(眼藥 OR 乾眼 OR 白內障 OR 青光眼) when:6y',
     "health":      '視力保健 OR 護眼 OR 眼睛健康 when:6y',
     "industry":    '(眼科 OR 光學 OR 隱形眼鏡) (產業 OR 營收 OR 上市 OR 公司) when:6y',
-    "events":      '(眼科 OR 視光 OR 近視 OR 隱形眼鏡 OR 角膜塑型) (講座 OR 衛教 OR 活動 OR 體驗會 OR 發表會 OR 記者會 OR 義診) when:6y',
+    "events":      '(眼科 OR 視光 OR 驗光 OR 近視 OR 隱形眼鏡 OR 角膜塑型) (講座 OR 研討會 OR 年會 OR 學會 OR 繼續教育 OR 工作坊 OR 論壇 OR 衛教 OR 體驗會 OR 發表會 OR 記者會 OR 義診 OR 展) when:6y',
+    "business":    '(晶碩 OR 視陽 OR 精華光學 OR 大學光 OR 亨泰 OR 明基材 OR 隱形眼鏡 OR 眼科) (營收 OR 財報 OR 法說 OR 股價 OR 獲利 OR 財測 OR 上市 OR 掛牌) when:6y',
+    "deal":        '(眼科 OR 光學 OR 隱形眼鏡 OR 視光 OR 眼鏡 OR 晶碩 OR 視陽 OR 亨泰 OR 蔡司) (併購 OR 收購 OR 入股 OR 投資 OR 募資 OR IPO OR 擴廠 OR 建廠 OR 策略聯盟 OR 代理權) when:6y',
 }
 RETMAX = 80  # 每分類最多幾則(近6年取最新)
 MAXAGE_DAYS = 2200  # 近6年上限:丟棄早於此天數者(無日期仍保留)
