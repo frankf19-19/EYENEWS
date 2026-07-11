@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- 眼視光 Eye-Vision Hub | build r44 | 2026-07-11 | 公司資料全面查證+版本標示 -->
+<!-- 眼視光 Eye-Vision Hub | build r45 | 2026-07-11 | 公司資料全面查證+版本標示 -->
 <html lang="zh-Hant">
 <head>
 <meta charset="UTF-8">
@@ -438,7 +438,7 @@ footer .build{margin-top:8px;font-size:11px}
       <a data-view="about">關於</a>
     </nav>
     <div class="topbar-right">
-      <span class="ver" title="版本(部署後對照用)">r44</span>
+      <span class="ver" title="版本(部署後對照用)">r45</span>
       <button id="backBtn" type="button" aria-label="返回上一頁">← 返回</button>
     </div>
   </div>
@@ -665,7 +665,7 @@ footer .build{margin-top:8px;font-size:11px}
   <div class="wrap">
     眼視光資訊中心 · Eye-Vision Industry Hub<br>
     資料來源:Google News · PubMed / NCBI · 每日/每 6 小時自動更新
-    <div class="build">build r44 · <span id="buildStamp"></span></div>
+    <div class="build">build r45 · <span id="buildStamp"></span></div>
   </div>
 </footer>
 
@@ -1112,6 +1112,7 @@ function newsItemHTML(it){
     </div>
     <h4><a href="${link}" target="_blank" rel="noopener">${it.title}</a></h4>
     <div class="fi-meta">${it.source||""}</div>
+    ${regionHTMLTW(it.title,it.summary,it.source)}
     ${it.summary?`<div class="fi-point">重點:${it.summary}</div>`:""}
     ${tagsHTML(it.title,it.summary,it.source)}
   </div>`;
@@ -1178,6 +1179,7 @@ function gItemHTML(it){
     ${point}
     <h4><a href="${link}" target="_blank" rel="noopener">${it.title}</a></h4>
     <div class="fi-meta">${it.source||""}</div>
+    ${regionHTML(it.title,it.keypoint,it.summary,it.source)}
     ${it.summary&&!it.keypoint?`<div class="fi-sum">${it.summary}</div>`:""}
     ${tagsHTML(it.title,it.summary,it.keypoint)}
   </div>`;
@@ -1438,6 +1440,44 @@ function renderProductDetail(dom,i){
       '<div class="co-block"><div class="co-block-h">代表產品(點各項展開:介紹 · 成分 · 設計圖 · 臨床 · 供應)</div><div class="pp-list">'+rows+'</div></div>'+
       '<p class="co-editnote">※ 設計圖與臨床試驗已置於各產品內;臨床文獻為即時 PubMed 彙整,許可證請點各產品「查 TFDA 官方許可證」以官方為準。</p>'+
     '</div>';
+}
+const REGION_RULES=[
+ [/taiwan|臺灣|台灣/i,"台灣"],
+ [/hong kong|香港/i,"香港"],
+ [/\bchina\b|chinese|中國|大陸/i,"中國"],
+ [/japan|japanese|日本/i,"日本"],
+ [/korea|korean|韓國/i,"韓國"],
+ [/singapore|新加坡/i,"新加坡"],
+ [/malaysia|馬來西亞/i,"馬來西亞"],
+ [/\bindia\b|indian|印度/i,"印度"],
+ [/australia|澳洲|澳大利亞/i,"澳洲"],
+ [/united states|u\.?s\.?a\.?|\bu\.?s\.?\b|america|美國/i,"美國"],
+ [/united kingdom|britain|british|england|\bu\.?k\.?\b|英國/i,"英國"],
+ [/canada|加拿大/i,"加拿大"],
+ [/germany|german|德國/i,"德國"],
+ [/france|french|法國/i,"法國"],
+ [/netherlands|dutch|荷蘭/i,"荷蘭"],
+ [/spain|spanish|西班牙/i,"西班牙"],
+ [/italy|italian|義大利/i,"義大利"],
+ [/switzerland|瑞士/i,"瑞士"],
+ [/europe|european|\beu\b|歐洲/i,"歐洲"],
+ [/\basia|asian|亞洲|亞太/i,"亞洲"],
+ [/global|worldwide|world\b|全球|國際/i,"全球"],
+];
+function detectRegion(text){
+  text=text||'';
+  for(const r of REGION_RULES){ if(r[0].test(text)) return r[1]; }
+  return '';
+}
+function regionHTML(){
+  const t=[].slice.call(arguments).filter(Boolean).join(' ');
+  const r=detectRegion(t);
+  return r?'<div class="lit-badges"><span class="lit-badge">\uD83C\uDF0D '+r+'</span></div>':'';
+}
+function regionHTMLTW(){
+  const t=[].slice.call(arguments).filter(Boolean).join(' ');
+  const r=detectRegion(t)||'台灣';
+  return '<div class="lit-badges"><span class="lit-badge">\uD83C\uDF0D '+r+'</span></div>';
 }
 const NEWS_TAG_RULES=[
  {re:/misight/i,co:"CooperVision",p:"MiSight 離焦日拋",find:"MiSight"},
