@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- 眼視光 Eye-Vision Hub | build r54 | 2026-07-11 | 公司資料全面查證+版本標示 -->
+<!-- 眼視光 Eye-Vision Hub | build r56 | 2026-07-11 | 公司資料全面查證+版本標示 -->
 <html lang="zh-Hant">
 <head>
 <meta charset="UTF-8">
@@ -443,7 +443,7 @@ footer .build{margin-top:8px;font-size:11px}
       <a data-view="about">關於</a>
     </nav>
     <div class="topbar-right">
-      <span class="ver" title="版本(部署後對照用)">r54</span>
+      <span class="ver" title="版本(部署後對照用)">r56</span>
       <button id="backBtn" type="button" aria-label="返回上一頁">← 返回</button>
     </div>
   </div>
@@ -640,6 +640,21 @@ footer .build{margin-top:8px;font-size:11px}
       <div class="range-row" id="litYears"></div>
       <div class="feed" id="feed"></div>
     </div>
+
+    <div class="panel lit-panel" style="margin-top:26px">
+      <div class="lit-head">
+        <h3>臨床試驗(全球)· ClinicalTrials.gov</h3>
+        <span class="upd-badge">● 最後更新 <span id="trialUpd">載入中…</span></span>
+      </div>
+      <p class="lit-sub">全球臨床試驗登錄——含<b>招募中/已完成</b>、期別、介入、主辦與國家;可看到尚未發表論文的進行中試驗。來源 ClinicalTrials.gov 官方 API。</p>
+      <div class="lit-search-row">
+        <input id="trialSearch" type="search" placeholder="搜尋試驗:名稱／條件／介入／主辦／國家／NCT" aria-label="搜尋臨床試驗">
+        <span id="trialCount" class="lit-count"></span>
+      </div>
+      <div class="lit-tabs" id="trialTabs"></div>
+      <div class="range-row" id="trialStatus"></div>
+      <div class="feed" id="trialFeed"></div>
+    </div>
   </div>
 </section>
 </section><!-- /view-clinical -->
@@ -661,7 +676,7 @@ footer .build{margin-top:8px;font-size:11px}
   <div class="wrap">
     眼視光資訊中心 · Eye-Vision Industry Hub<br>
     資料來源:Google News · PubMed / NCBI · 每日/每 6 小時自動更新
-    <div class="build">build r54 · <span id="buildStamp"></span></div>
+    <div class="build">build r56 · <span id="buildStamp"></span></div>
   </div>
 </footer>
 
@@ -1698,6 +1713,78 @@ function initRouter(){
   applyView(start);
 }
 
+/* ===== 臨床試驗 ClinicalTrials.gov ===== */
+let TRIAL_DATA=null, TRIAL_TAB="all", TRIAL_QUERY="", TRIAL_STATUS="all";
+function trialItemHTML(it){
+  const link=it.nct?`https://clinicaltrials.gov/study/${it.nct}`:"#";
+  const cond=(it.conditions||[]).join("、");
+  const intr=(it.interventions||[]).join("；");
+  const meta=[it.sponsor, it.enroll?("收案 "+it.enroll+" 人"):"", (it.start||it.completion)?((it.start||"?")+" ~ "+(it.completion||"?")):""].filter(Boolean).join(" · ");
+  const badges=[
+    it.country?`<span class="lit-badge">\uD83C\uDF0D ${it.country}</span>`:"",
+    it.status_zh?`<span class="lit-badge">\uD83D\uDCCD ${it.status_zh}</span>`:"",
+    (it.type||it.phase)?`<span class="lit-badge">\uD83E\uDDEA ${[it.type,it.phase].filter(Boolean).join(" · ")}</span>`:"",
+  ].filter(Boolean).join("");
+  const point=[cond?("條件:"+cond):"", intr?("介入:"+intr):""].filter(Boolean).join("　|　");
+  return `<div class="feed-item">
+    <div class="fi-top"><span class="fi-tag">${LIT_LABEL[it._key]||"試驗"}</span><span class="fi-date mono">${it.nct||""}</span></div>
+    <h4><a href="${link}" target="_blank" rel="noopener">${it.title}</a></h4>
+    <div class="fi-meta">${meta}</div>
+    ${badges?`<div class="lit-badges">${badges}</div>`:""}
+    ${point?`<div class="fi-point">${point}</div>`:""}
+  </div>`;
+}
+function renderTrialTabs(active){
+  const el=document.getElementById('trialTabs'); if(!el)return;
+  const tabs=[{k:"all",l:"全部"}].concat(Object.keys(LIT_LABEL).map(k=>({k,l:LIT_LABEL[k]})));
+  el.innerHTML=tabs.map(t=>`<button class="lit-tab ${t.k===active?'on':''}" data-k="${t.k}">${t.l}</button>`).join('');
+}
+function renderTrialStatus(){
+  const el=document.getElementById('trialStatus'); if(!el)return;
+  const opts=[["all","全部"],["RECRUITING","招募中"],["ACTIVE_NOT_RECRUITING","進行中"],["COMPLETED","已完成"]];
+  el.innerHTML=opts.map(o=>`<button class="range-btn ${o[0]===TRIAL_STATUS?'on':''}" data-s="${o[0]}">${o[1]}</button>`).join('');
+}
+function trialMatch(it,q){
+  if(!q)return true;
+  const hay=[it.title,it.nct,it.sponsor,it.country,it.status_zh,it.phase,it.type,(it.conditions||[]).join(' '),(it.interventions||[]).join(' '),LIT_LABEL[it._key]].filter(Boolean).join(' ').toLowerCase();
+  return q.toLowerCase().split(/\s+/).filter(Boolean).every(t=>hay.indexOf(t)>=0);
+}
+function renderTrials(){
+  if(!TRIAL_DATA)return;
+  const feed=document.getElementById('trialFeed'); if(!feed)return;
+  let items=[];
+  Object.keys(TRIAL_DATA.items||{}).forEach(k=>{(TRIAL_DATA.items[k]||[]).forEach(it=>items.push(Object.assign({_key:k},it)));});
+  if(TRIAL_TAB!=="all")items=items.filter(i=>i._key===TRIAL_TAB);
+  if(TRIAL_STATUS!=="all")items=items.filter(i=>i.status===TRIAL_STATUS);
+  const q=(TRIAL_QUERY||'').trim();
+  if(q)items=items.filter(i=>trialMatch(i,q));
+  items.sort((a,b)=>(b.updated||'').localeCompare(a.updated||''));
+  const cnt=document.getElementById('trialCount');
+  if(cnt)cnt.textContent=q?('找到 '+items.length+' 筆'):(items.length?('共 '+items.length+' 筆'):'');
+  if(!items.length){feed.innerHTML='<div class="feed-empty">'+(q?'找不到符合的試驗。':'此分類目前尚無試驗(或請至 Actions 執行一次 update_trials)。')+'</div>';return;}
+  feed.innerHTML=items.map(trialItemHTML).join('');
+}
+function applyTrials(data){
+  TRIAL_DATA=data;
+  const u=document.getElementById('trialUpd'); if(u)u.textContent=data.updated||"—";
+  renderTrialTabs("all"); renderTrialStatus(); renderTrials();
+  const tt=document.getElementById('trialTabs');
+  if(tt)tt.addEventListener('click',e=>{const b=e.target.closest('.lit-tab'); if(!b)return; TRIAL_TAB=b.dataset.k; renderTrialTabs(TRIAL_TAB); renderTrials();});
+  const ts=document.getElementById('trialStatus');
+  if(ts)ts.addEventListener('click',e=>{const b=e.target.closest('.range-btn'); if(!b)return; TRIAL_STATUS=b.dataset.s; renderTrialStatus(); renderTrials();});
+  const tse=document.getElementById('trialSearch');
+  if(tse)tse.addEventListener('input',()=>{TRIAL_QUERY=tse.value; renderTrials();});
+}
+async function loadTrials(){
+  try{
+    const r=await fetch('trials.json?_='+Date.now());
+    if(!r.ok)throw new Error('no trials.json');
+    applyTrials(await r.json());
+  }catch(err){
+    applyTrials({updated:"—",items:{}});
+  }
+}
+
 /* =========================================================
    INIT
    ========================================================= */
@@ -1706,6 +1793,7 @@ renderTools();
 initLightbox();
 animateBars();
 loadLit();
+loadTrials();
 loadNews();
 loadGlobal();
 initCompanies();
