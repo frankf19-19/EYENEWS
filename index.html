@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- 眼視光 Eye-Vision Hub | build r25 | 2026-07-11 | 公司資料全面查證+版本標示 -->
+<!-- 眼視光 Eye-Vision Hub | build r26 | 2026-07-11 | 公司資料全面查證+版本標示 -->
 <html lang="zh-Hant">
 <head>
 <meta charset="UTF-8">
@@ -400,7 +400,7 @@ footer .build{margin-top:8px;font-size:11px}
       <a data-view="about">關於</a>
     </nav>
     <div class="topbar-right">
-      <span class="ver" title="版本(部署後對照用)">r25</span>
+      <span class="ver" title="版本(部署後對照用)">r26</span>
       <button id="backBtn" type="button" aria-label="返回上一頁">← 返回</button>
     </div>
   </div>
@@ -511,7 +511,7 @@ footer .build{margin-top:8px;font-size:11px}
   <div class="wrap">
     <span class="sec-eye">TAIWAN · LIVE</span>
     <h2>台灣眼視光訊息</h2>
-    <p class="sec-sub">每 6 小時自動查詢 Google News(台灣/繁中)近<b>一年</b>的眼視光新聞,涵蓋近視控制、隱形眼鏡、鏡片驗光、眼科醫材、眼藥、視力保健、產業公司與<b>活動/衛教</b>。可依<b>分類</b>與<b>時間範圍</b>篩選(預設近 3 月,每則標示幾天/幾月前),往下「顯示更多」。</p>
+    <p class="sec-sub">每 6 小時自動查詢 Google News(台灣/繁中)近<b>半年</b>的眼視光新聞,涵蓋近視控制、隱形眼鏡、鏡片驗光、眼科醫材、眼藥、視力保健、產業公司與<b>活動/衛教</b>。可依<b>分類</b>與<b>時間範圍</b>篩選(預設近 3 月,每則標示幾天/幾月前),往下「顯示更多」。</p>
 
     <div class="panel fb-panel">
       <div class="lit-head">
@@ -627,7 +627,7 @@ footer .build{margin-top:8px;font-size:11px}
   <div class="wrap">
     眼視光資訊中心 · Eye-Vision Industry Hub<br>
     資料來源:Google News · PubMed / NCBI · 每日/每 6 小時自動更新
-    <div class="build">build r25 · <span id="buildStamp"></span></div>
+    <div class="build">build r26 · <span id="buildStamp"></span></div>
   </div>
 </footer>
 
@@ -1071,7 +1071,7 @@ function newsItemHTML(it){
     </div>
     <h4><a href="${link}" target="_blank" rel="noopener">${it.title}</a></h4>
     <div class="fi-meta">${it.source||""}</div>
-    ${it.summary?`<div class="fi-sum">${it.summary}</div>`:""}
+    ${it.summary?`<div class="fi-point">重點:${it.summary}</div>`:""}
   </div>`;
 }
 let NEWS_SHOWN=25, NEWS_RANGE=90;
