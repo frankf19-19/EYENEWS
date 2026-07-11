@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- 眼視光 Eye-Vision Hub | build r21 | 2026-07-11 | 公司資料全面查證+版本標示 -->
+<!-- 眼視光 Eye-Vision Hub | build r22 | 2026-07-11 | 公司資料全面查證+版本標示 -->
 <html lang="zh-Hant">
 <head>
 <meta charset="UTF-8">
@@ -280,6 +280,21 @@ h2{font-weight:700;font-size:clamp(24px,3vw,32px);margin:0 0 6px}
 .co-site{display:inline-block;margin-top:4px;font-family:var(--mono);font-size:12.5px;font-weight:600;color:#fff;background:var(--accent);border-radius:9px;padding:8px 15px}
 .co-site:hover{background:var(--accent-ink)}
 .co-editnote{font-size:11.5px;color:var(--muted);margin-top:16px;line-height:1.5}
+.prod-tabs{display:flex;flex-wrap:wrap;gap:8px;margin:6px 0 20px}
+.prod-grid{display:flex;flex-direction:column;gap:26px}
+.prod-dom-h{font-size:17px;font-weight:700;color:var(--ink);margin-bottom:13px;padding-bottom:8px;border-bottom:1px solid var(--line);display:flex;align-items:center;gap:10px}
+.prod-ico{width:32px;height:32px;border-radius:9px;display:flex;align-items:center;justify-content:center;background:var(--accent-soft);font-size:16px}
+.prod-cnt{font-family:var(--mono);font-size:12px;color:var(--muted);font-weight:400;margin-left:auto}
+.prod-cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:12px}
+.prod-card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:15px 16px;transition:.15s}
+.prod-card:hover{border-color:var(--accent);box-shadow:var(--shadow)}
+.prod-h{display:flex;align-items:baseline;justify-content:space-between;gap:8px;margin-bottom:7px}
+.prod-n{font-weight:700;font-size:14.5px;color:var(--ink);line-height:1.3}
+.prod-tag{flex:none;font-family:var(--mono);font-size:10px;font-weight:600;color:var(--accent-ink);background:var(--accent-soft);border-radius:20px;padding:2px 8px}
+.prod-d{font-size:13px;color:var(--ink-soft);line-height:1.6;margin:0}
+.prod-goto{display:inline-block;margin-top:12px;font-family:var(--mono);font-size:12px;font-weight:600;color:#fff;background:var(--accent);border-radius:9px;padding:8px 14px;cursor:pointer}
+.prod-goto:hover{background:var(--accent-ink)}
+.prod-note{font-size:11.5px;color:var(--muted);margin-top:22px;line-height:1.5}
 
 /* disclaimer + footer */
 .disclaimer{background:var(--card);border:1px solid var(--line);border-left:3px solid var(--accent);border-radius:12px;padding:20px 22px}
@@ -298,8 +313,6 @@ footer .build{margin-top:8px;font-size:11px}
 
 /* mode */
 .plain-only{display:none}
-body.parent .plain-only{display:block}
-body.parent .pro-only{display:none}
 
 @media(max-width:860px){
   .hero-grid{grid-template-columns:1fr}
@@ -336,16 +349,13 @@ body.parent .pro-only{display:none}
       <a data-view="taiwan">台灣訊息</a>
       <a data-view="global">全球訊息</a>
       <a data-view="companies">產業公司</a>
+      <a data-view="products">產品技術</a>
       <a data-view="myopia">近視控制</a>
       <a data-view="about">關於</a>
     </nav>
     <div class="topbar-right">
-      <span class="ver" title="版本(部署後對照用)">r21</span>
+      <span class="ver" title="版本(部署後對照用)">r22</span>
       <button id="backBtn" type="button" aria-label="返回上一頁">← 返回</button>
-      <div class="mode-toggle" id="modeToggle">
-        <button data-mode="pro" class="on">專業版</button>
-        <button data-mode="parent">家長版</button>
-      </div>
     </div>
   </div>
 </div>
@@ -413,6 +423,7 @@ body.parent .pro-only{display:none}
       <a class="ov-quick-card" data-goto="taiwan"><b>台灣訊息</b><span>台灣眼視光新聞,每 6 小時更新</span></a>
       <a class="ov-quick-card" data-goto="global"><b>全球訊息</b><span>國際新聞 + 繁中重點,每日更新</span></a>
       <a class="ov-quick-card" data-goto="companies"><b>產業公司</b><span>依領域分類 + 台股代號</span></a>
+      <a class="ov-quick-card" data-goto="products"><b>產品技術</b><span>配鏡/隱形眼鏡/手術/藥物/儀器 全圖鑑</span></a>
       <a class="ov-quick-card" data-goto="myopia"><b>近視控制</b><span>臨床工具、設計與實證(單一類別)</span></a>
     </div>
   </div>
@@ -440,7 +451,7 @@ body.parent .pro-only{display:none}
   <div class="wrap">
     <span class="sec-eye">MYOPIA CONTROL · ONE PART OF EYE-VISION</span>
     <h2>近視控制(眼視光的一環)</h2>
-    <p class="sec-sub">近視控制是眼視光領域的重要一環。以下六大工具含作用機轉、控制效果、適合族群、設計特性、優缺點與代表性臨床試驗。切換「家長版」可改用白話說明。</p>
+    <p class="sec-sub">近視控制是眼視光領域的重要一環。以下六大工具含作用機轉、控制效果、適合族群、設計特性、優缺點與代表性臨床試驗。更完整的眼視光/眼科產品請見「產品技術」分頁。</p>
     <div class="tooltabs" id="toolTabs"><!-- tabs --></div>
     <div class="tool-stage" id="toolStage"><!-- active tool --></div>
   </div>
@@ -532,6 +543,20 @@ body.parent .pro-only{display:none}
 
 </section><!-- /view-companies -->
 
+<section class="view" id="view-products">
+<!-- ======= PRODUCTS & TECH ======= -->
+<section class="sec" id="products-body">
+  <div class="wrap">
+    <span class="sec-eye">PRODUCTS &amp; TECHNOLOGY</span>
+    <h2>眼視光產品與技術</h2>
+    <p class="sec-sub">眼視光橫跨<b>配鏡驗光、隱形眼鏡、近視管理、眼科手術、眼科藥物、診斷儀器與視力保健</b>。以下為各領域產品/技術的分類整理與說明,可用上方分頁篩選。近視控制的臨床設計圖與實證另見「近視控制」分頁。</p>
+    <div class="prod-tabs" id="prodTabs"></div>
+    <div class="prod-grid" id="prodGrid"></div>
+    <p class="prod-note">※ 以上為衛教與產業分類參考,非醫療建議;實際治療/選配請由眼科醫師或驗光人員評估。</p>
+  </div>
+</section>
+</section><!-- /view-products -->
+
 <section class="view" id="view-about">
 <!-- ======= DISCLAIMER ======= -->
 <section class="sec" id="note">
@@ -549,7 +574,7 @@ body.parent .pro-only{display:none}
   <div class="wrap">
     眼視光資訊中心 · Eye-Vision Industry Hub<br>
     資料來源:Google News · PubMed / NCBI · 每日/每 6 小時自動更新
-    <div class="build">build r21 · <span id="buildStamp"></span></div>
+    <div class="build">build r22 · <span id="buildStamp"></span></div>
   </div>
 </footer>
 
@@ -833,16 +858,6 @@ function renderTools(){
 }
 
 /* mode toggle */
-function initMode(){
-  const tog=document.getElementById('modeToggle');
-  tog.addEventListener('click',e=>{
-    const b=e.target.closest('button'); if(!b)return;
-    tog.querySelectorAll('button').forEach(x=>x.classList.remove('on'));
-    b.classList.add('on');
-    document.body.classList.toggle('parent', b.dataset.mode==='parent');
-  });
-}
-
 /* intersection animate bars */
 function animateBars(){
   const io=new IntersectionObserver((es)=>{
@@ -1192,13 +1207,34 @@ function renderSegMap(){
       <div class="seg-go">前往 →</div>
     </div>`).join('');
 }
-const VIEWS=["overview","taiwan","global","companies","myopia","about"];
+const PROD_DOMAINS=[{"k": "optics", "ico": "👓", "label": "框架鏡片 · 配鏡"}, {"k": "cl", "ico": "👁", "label": "隱形眼鏡"}, {"k": "myopia", "ico": "🎯", "label": "近視管理"}, {"k": "surgery", "ico": "🔧", "label": "眼科手術"}, {"k": "pharma", "ico": "💊", "label": "眼科藥物"}, {"k": "device", "ico": "🔬", "label": "診斷 · 儀器"}, {"k": "wellness", "ico": "🌿", "label": "視力保健"}];
+const PROD={"optics": [{"n": "單光鏡片", "tag": "鏡片", "d": "單一度數矯正近視、遠視或散光,鏡片全區同一屈光力。最基本鏡片,依材質分樹脂/PC/玻璃,折射率(1.50–1.74)決定厚薄。"}, {"n": "漸進多焦點鏡片", "tag": "鏡片", "d": "一片鏡片連續分布遠、中、近多段度數、無分界線,供老花族一副眼鏡看遠中近。設計愈進階,周邊變形愈小、可視範圍愈廣。"}, {"n": "抗藍光鏡片", "tag": "鍍膜", "d": "過濾部分高能藍光(約 415–455nm),訴求減輕 3C 用眼疲勞;對眼疾預防證據仍有限,主要為舒適訴求。"}, {"n": "變色(光致變色)鏡片", "tag": "鏡片", "d": "遇紫外/可見光自動變深、室內回復透明,一副兼作太陽眼鏡;代表如 Transitions。"}, {"n": "偏光鏡片", "tag": "太陽鏡", "d": "濾除水面、路面等反射眩光,提升戶外與駕駛的對比與舒適,多用於太陽眼鏡。"}, {"n": "高折射率 / 非球面鏡片", "tag": "鏡片", "d": "高折射率讓高度數鏡片更薄更輕;非球面設計降低邊緣變形與放大感,外觀與視覺更自然。"}, {"n": "近視控制離焦鏡片", "tag": "近視控制", "d": "中央清晰、周邊微透鏡製造近視性離焦以延緩眼軸;代表 Hoya MiYOSMART(DIMS)、蔡司 MyoCare、依視路 Stellest(HAL)。詳見近視控制分頁。"}, {"n": "鏡片鍍膜(抗反射/抗刮/防污/防霧)", "tag": "鍍膜", "d": "多層鍍膜降低反光、提高透光與夜間視覺,並增加耐刮、抗油污與防霧。"}], "cl": [{"n": "日拋軟鏡", "tag": "軟鏡", "d": "每日更換、免清潔保養,衛生與方便性最佳,適合偶爾配戴或過敏族群,單價較高。"}, {"n": "雙週拋 / 月拋", "tag": "軟鏡", "d": "需搭配護理液清潔保存,長期成本較低;透氧與沉積物管理是重點。"}, {"n": "矽水膠 vs 水膠", "tag": "材質", "d": "矽水膠透氧率是傳統水膠數倍,適合長時間或高度數配戴、降低缺氧;水膠含水舒適、單價較低。"}, {"n": "散光片(Toric)", "tag": "軟鏡", "d": "內含柱面度數並以稜鏡/削薄設計穩定軸度,矯正散光,需正確軸度定位。"}, {"n": "多焦點(老花)軟鏡", "tag": "軟鏡", "d": "同心圓或非球面多區設計,讓老花族以隱形眼鏡兼看遠近。"}, {"n": "彩色 / 美瞳片", "tag": "軟鏡", "d": "以鏡片內包覆色料改變虹膜外觀,可含度數或平光;安全重點在色料封裝與透氧。"}, {"n": "角膜塑型片(OK鏡)", "tag": "硬鏡", "d": "夜戴高透氧硬鏡,睡眠中暫時重塑角膜,白天免戴鏡並延緩兒童近視;須醫師驗配與追蹤。"}, {"n": "高透氧硬式 RGP", "tag": "硬鏡", "d": "車床削製硬鏡,光學品質佳、適合高散光、不規則角膜與圓錐角膜;異物感與適應期較長。"}, {"n": "鞏膜鏡(Scleral)", "tag": "硬鏡", "d": "大直徑硬鏡跨越角膜、落在鞏膜,鏡片下淚液池矯正嚴重不規則角膜、圓錐角膜與重度乾眼。"}, {"n": "混合式隱形眼鏡", "tag": "硬/軟", "d": "中央硬式光學 + 周邊軟式裙邊,兼顧硬鏡光學與軟鏡舒適,用於散光/圓錐角膜早期。"}, {"n": "隱形眼鏡護理液", "tag": "護理", "d": "多功能保養液清潔、消毒、保存,或雙氧系統深層去蛋白;正確搓洗與定期更換是安全關鍵。"}], "myopia": [{"n": "角膜塑型(Ortho-K)", "tag": "近視控制", "d": "夜戴硬鏡重塑角膜,延緩眼軸增長並免日間戴鏡。詳見近視控制分頁。"}, {"n": "低濃度阿托品", "tag": "近視控制", "d": "0.01–0.05% 睡前點用延緩兒童近視進展,常與光學方法併用。"}, {"n": "離焦框架鏡片(DIMS/HAL)", "tag": "近視控制", "d": "周邊微透鏡離焦設計延緩近視;MiYOSMART、Stellest、MyoCare。"}, {"n": "離焦軟鏡(MiSight)", "tag": "近視控制", "d": "同心圓雙焦日拋,兒童近視管理。"}, {"n": "重複低強度紅光(RLRL)", "tag": "近視控制", "d": "650nm 居家紅光儀,延緩眼軸;長期安全性仍在累積。"}, {"n": "增加戶外時間", "tag": "近視控制", "d": "每日約 2 小時戶外光照,主要用於近視『預防』。"}], "surgery": [{"n": "LASIK 準分子雷射", "tag": "屈光手術", "d": "以飛秒或角膜刀製作角膜瓣,再用準分子雷射消融基質改變屈光度,恢復快、應用廣。"}, {"n": "SMILE 全飛秒", "tag": "屈光手術", "d": "僅用飛秒雷射在角膜內製作透鏡並經小切口取出,無角膜瓣、切口小,結構穩定、乾眼較少;蔡司 VisuMax 為代表。"}, {"n": "PRK / LASEK 表層手術", "tag": "屈光手術", "d": "移除上皮後直接雷射消融表層,無角膜瓣,適合角膜較薄或特定職業;恢復期較長。"}, {"n": "ICL 植入式隱形眼鏡", "tag": "屈光手術", "d": "在虹膜與自然水晶體間植入可回復人工晶體,矯正高度近視、不切削角膜,適合不適合雷射者。"}, {"n": "白內障超音波乳化術", "tag": "白內障", "d": "小切口以超音波乳化混濁水晶體並吸除,再植入人工水晶體,為主流成熟術式。"}, {"n": "飛秒雷射白內障", "tag": "白內障", "d": "以飛秒雷射完成切口、前囊切開與水晶體分割,精準度高、可同時處理散光。"}, {"n": "人工水晶體 IOL(單焦)", "tag": "人工水晶體", "d": "置換混濁水晶體的基本選擇,通常設定看遠、看近需老花眼鏡;非球面設計提升對比。"}, {"n": "散光矯正 IOL(Toric)", "tag": "人工水晶體", "d": "內含柱面度數,一併矯正角膜散光,需精準軸位對齊。"}, {"n": "多焦 / 焦段延長(EDOF)IOL", "tag": "人工水晶體", "d": "多焦提供遠中近焦點、EDOF 提供連續景深,降低對眼鏡依賴;可能有光暈/眩光取捨。"}, {"n": "青光眼雷射(SLT)", "tag": "青光眼", "d": "選擇性雷射小樑成形術刺激房水排出、降眼壓,可作藥物替代或輔助。"}, {"n": "微創青光眼手術 MIGS / 引流管", "tag": "青光眼", "d": "以微支架(如 iStent)或引流裝置增加房水排出、降眼壓與用藥,傷害較傳統小。"}, {"n": "抗 VEGF 玻璃體注射", "tag": "視網膜", "d": "眼內注射抗血管內皮生長因子,治療濕性黃斑部病變、糖尿病黃斑水腫等,需定期施打。"}, {"n": "玻璃體切除術", "tag": "視網膜", "d": "移除病變玻璃體並處理視網膜剝離、出血、黃斑裂孔等,屬眼後段手術。"}, {"n": "角膜移植", "tag": "角膜", "d": "以捐贈角膜置換病變角膜(全層或分層 DALK/DSAEK/DMEK),治療角膜混濁、水腫或圓錐角膜末期。"}, {"n": "角膜膠原交聯(CXL)", "tag": "角膜", "d": "核黃素加紫外光強化角膜膠原鍵結,延緩圓錐角膜惡化。"}], "pharma": [{"n": "人工淚液", "tag": "乾眼", "d": "補充淚液、緩解乾澀,依成分分含/不含防腐劑與不同黏稠度;重度乾眼建議無防腐劑劑型。"}, {"n": "乾眼免疫調節劑", "tag": "乾眼", "d": "Cyclosporine、Lifitegrast 等處方藥,減少眼表發炎、改善淚液品質,需持續使用。"}, {"n": "青光眼降眼壓藥", "tag": "青光眼", "d": "前列腺素衍生物、β 阻斷劑、碳酸酐酶抑制劑、α 促效劑與 Rho 激酶抑制劑,單用或複方降眼壓。"}, {"n": "抗過敏眼藥", "tag": "過敏", "d": "抗組織胺/肥大細胞穩定劑緩解過敏性結膜炎的癢、紅與流淚。"}, {"n": "抗感染 / 抗發炎", "tag": "感染/發炎", "d": "抗生素治療細菌性結膜炎/角膜炎;類固醇與 NSAID 控制術後或發炎(類固醇需監測眼壓)。"}, {"n": "低濃度阿托品", "tag": "近視控制", "d": "0.01–0.05% 睡前點用延緩兒童近視進展,常與光學方法併用。"}, {"n": "散瞳 / 睫狀肌麻痺劑", "tag": "診斷/治療", "d": "用於散瞳檢查、驗光前麻痺調節,或特定治療用途。"}], "device": [{"n": "光學同調斷層掃描(OCT)", "tag": "影像", "d": "非侵入取得視網膜、黃斑與視神經的微米級斷層,青光眼與黃斑疾病追蹤核心;OCT-A 可看視網膜血流。"}, {"n": "眼底相機 / 廣角眼底", "tag": "影像", "d": "拍攝視網膜與視神經,廣角/免散瞳機種提升篩檢效率,常結合 AI 判讀。"}, {"n": "角膜地形圖 / 斷層", "tag": "角膜量測", "d": "量測角膜曲率與形狀,用於圓錐角膜篩檢、隱形眼鏡與屈光手術規劃;角膜塑型回診比對必備。"}, {"n": "生物測量(IOLMaster 等)", "tag": "白內障規劃", "d": "以光學量測眼軸、角膜與前房,計算白內障人工水晶體度數。"}, {"n": "自動驗光 / 綜合驗光", "tag": "驗光", "d": "快速取得客觀屈光值與角膜弧度,作為配鏡與驗配起點。"}, {"n": "視野計", "tag": "青光眼", "d": "檢測周邊與中心視野缺損,青光眼與神經眼科診斷與追蹤依據。"}, {"n": "眼壓計(接觸/非接觸)", "tag": "眼壓", "d": "量測眼內壓,青光眼篩檢與追蹤;含氣動式與回彈式。"}, {"n": "角膜內皮細胞計", "tag": "角膜", "d": "計數角膜內皮細胞密度,評估手術風險與角膜健康。"}, {"n": "眼科超音波 A / B 掃描", "tag": "影像", "d": "混濁介質下量測眼軸(A)或顯示眼後段結構(B),如視網膜剝離、腫瘤。"}, {"n": "像差儀 / 波前分析", "tag": "屈光", "d": "量測全眼高階像差,用於客製化屈光手術與視覺品質評估。"}], "wellness": [{"n": "葉黃素 / 玉米黃素", "tag": "保健", "d": "黃斑部色素成分,飲食或補充訴求支持黃斑健康;證據以 AREDS2 配方對特定族群較明確。"}, {"n": "Omega-3 / 乾眼保健", "tag": "保健", "d": "補充與瞼板腺相關脂質,輔助乾眼舒適(證據不一)。"}, {"n": "瞼板腺熱敷 / IPL", "tag": "乾眼", "d": "熱敷與脈衝光改善瞼板腺功能障礙型乾眼。"}, {"n": "3C 護眼行為", "tag": "行為", "d": "20-20-20 用眼原則、增加戶外、控制近距離時間,對兒童近視預防尤其重要。"}, {"n": "低視能輔具", "tag": "輔具", "d": "放大鏡、擴視機、濾光鏡等協助重度視力受損者維持生活功能。"}]};
+let PROD_TAB="all";
+function prodTabsHTML(active){
+  const tabs=[{k:'all',l:'全部'}].concat(PROD_DOMAINS.map(d=>({k:d.k,l:d.label})));
+  document.getElementById('prodTabs').innerHTML=tabs.map(t=>`<button class="lit-tab ${t.k===active?'on':''}" data-k="${t.k}">${t.l}</button>`).join('');
+}
+function renderProducts(){
+  const grid=document.getElementById('prodGrid');
+  const doms=PROD_TAB==='all'?PROD_DOMAINS:PROD_DOMAINS.filter(d=>d.k===PROD_TAB);
+  grid.innerHTML=doms.map(dm=>{
+    const list=PROD[dm.k]||[];
+    const cards=list.map(p=>`<div class="prod-card"><div class="prod-h"><span class="prod-n">${p.n}</span><span class="prod-tag">${p.tag}</span></div><p class="prod-d">${p.d}</p></div>`).join('');
+    const goto=dm.k==='myopia'?`<a class="prod-goto" data-goto="myopia">近視控制分頁:機轉圖與實證 →</a>`:'';
+    return `<div class="prod-dom"><div class="prod-dom-h"><span class="prod-ico">${dm.ico}</span>${dm.label}<span class="prod-cnt">${list.length}</span></div><div class="prod-cards">${cards}</div>${goto}</div>`;
+  }).join('');
+}
+function initProducts(){
+  prodTabsHTML('all'); renderProducts();
+  document.getElementById('prodTabs').addEventListener('click',e=>{const b=e.target.closest('.lit-tab'); if(!b)return; PROD_TAB=b.dataset.k; prodTabsHTML(PROD_TAB); renderProducts();});
+}
+
+const VIEWS=["overview","taiwan","global","companies","products","myopia","about"];
 function applyView(name){
   if(!VIEWS.includes(name))name="overview";
   closeCompanyModal();
   document.querySelectorAll('.view').forEach(v=>v.classList.toggle('is-active', v.id==='view-'+name));
   document.querySelectorAll('#mainNav a').forEach(a=>a.classList.toggle('on', a.dataset.view===name));
-  const mt=document.getElementById('modeToggle'); if(mt)mt.style.display=(name==='myopia')?'':'none';
   const bb=document.getElementById('backBtn'); if(bb)bb.style.display=(name==='overview')?'none':'';
   if(name==='myopia'){document.querySelectorAll('.bar-fill').forEach(f=>{f.style.width=f.dataset.pct+'%';});}
   window.scrollTo({top:0,behavior:'smooth'});
@@ -1236,13 +1272,13 @@ function initRouter(){
    ========================================================= */
 renderBars();
 renderTools();
-initMode();
 initLightbox();
 animateBars();
 loadLit();
 loadNews();
 loadGlobal();
 initCompanies();
+initProducts();
 renderSegMap();
 renderFbLinks();
 initRouter();
