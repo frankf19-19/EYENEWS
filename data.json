@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-11 14:58 UTC",
+  "updated": "2026-07-11 23:38 UTC",
   "source": "PubMed(NCBI)+ Europe PMC;不限年份(相關性/高被引跨年代);中文為免費自動翻譯",
   "items": {
     "myopia": [
@@ -2066,7 +2066,7 @@
         "abstract": "Nowadays, keratitis, corneal infection due to wearing contact lens means an increasingly serious problem. Neglected cases may lead to corneal damage that can cause blindness in cases of otherwise healthy eyes. Early diagnosis based on the clinical picture and the typical patient history is an important way of prevention. Prophylaxis is substantial to avoid bacterial and viral infection that is highly essential in this group of diseases. Teaching contact lens wearers the proper contact lens care, storage, sterility, and hygiene regulations is of great importance. In case of corneal inflammation early accurate diagnosis supported by microbiological culture from contact lenses, storage boxes or cornea is very useful. Thereafter, targeted drug therapy or in therapy-resistant cases surgical treatment may even be necessary in order to sustain suitable visual acuity.",
         "country": "",
         "ptype": "文獻回顧",
-        "zh": "[隱形眼鏡相關性角膜炎].",
+        "zh": "[隱形眼鏡相關性角膜炎]。",
         "zh_sum": ""
       },
       {
@@ -3620,6 +3620,18 @@
         "zh_sum": ""
       },
       {
+        "title": "Presbyopic Excimer Laser Ablation: A Review.",
+        "journal": "J Refract Surg",
+        "date": "2018",
+        "pmid": "30296331",
+        "summary": "There is evidence that excimer laser presbyopic strategies accomplish spectacle independence at reasonable levels. There are reliable and safe options for both myopic and hyperopic eyes with satisfactory outcomes regarding near and distance vision. [J Refract Surg. 2018;34(10):698-710.].",
+        "abstract": "PURPOSE: To provide an overview of the efficacy and safety of available presbyopic excimer laser ablation profiles. METHODS: Literature review. RESULTS: Monovision with excimer laser traditionally applies near correction to the non-dominant eye. Different excimer laser presbyopic approaches include the increase in depth of focus, through the controlled change of spherical aberration or asphericity, or multifocal ablation patterns with central or peripheral near vision zones. The studies investigating different excimer laser ablation patterns applied in previously myopic eyes revealed high levels of efficacy with all ablation profiles (between 68% and 99% achieving binocular uncorrected distance visual acuity [UDVA] of 20/25 or better, and between 70% and 100% achieving uncorrected near visual acuity [UNVA] presenting J3 or better). In hypermetropic eyes, most of the studies revealed high",
+        "country": "",
+        "ptype": "文獻回顧",
+        "zh": "",
+        "zh_sum": ""
+      },
+      {
         "title": "Visual system disorders and musculoskeletal neck complaints: a systematic review and meta-analysis.",
         "journal": "Ann N Y Acad Sci",
         "date": "2019",
@@ -3832,18 +3844,6 @@
         "abstract": "ABSTRACT: The main purpose of this review is to compare and analyze the results of the main PresbyLASIK approaches; central and peripheral. SUMMARY: A comprehensive research was conducted in PUBMED using keywords like \"presbyopia correction\", \"PresbyLASIK\", \"Corneal multifocality\", \"Laser blended vision\". We reviewed the PresbyLASIK technique, uncorrected distance visual acuity (UDVA), corrected distance visual acuity (CDVA), uncorrected near visual acuity (UNVA), and corrected near visual acuity (CNVA), and compared the differences between the techniques.",
         "country": "西班牙",
         "ptype": "文獻回顧",
-        "zh": "",
-        "zh_sum": ""
-      },
-      {
-        "title": "Pre-operative simulation of post-operative multifocal vision.",
-        "journal": "Biomed Opt Express",
-        "date": "2019",
-        "pmid": "31799048",
-        "summary": "While multifocal intraocular lenses (MIOLs) are increasingly implanted to correct for presbyopia, how one sees with a multifocal correction is hard to explain and imagine. The current study evaluates the quality of various visual simulating technologies by comparing vision with simulated MIOLs pre-operatively and the implanted MIOLs post- …",
-        "abstract": "While multifocal intraocular lenses (MIOLs) are increasingly implanted to correct for presbyopia, how one sees with a multifocal correction is hard to explain and imagine. The current study evaluates the quality of various visual simulating technologies by comparing vision with simulated MIOLs pre-operatively and the implanted MIOLs post-operatively in the same patients. Two simulation platforms were used: (1) a custom-developed adaptiveoptics (AO) system, with two visual simulator devices: a spatial light modulator (SLM) and an optotunable lens operating under temporal multiplexing (SimVis); and (2) a wearable, binocular, large field of view SimVis2Eyes clinical simulator (SimVis Gekko, 2Eyes Vision, Madrid, Spain). All devices were programmed to simulate a trifocal diffractive MIOL (POD F, FineVision, PhysIOL). Eight patients were measured pre-operatively simulating the trifocal lens a",
-        "country": "西班牙",
-        "ptype": "",
         "zh": "",
         "zh_sum": ""
       },
@@ -9448,6 +9448,18 @@
         "zh_sum": ""
       },
       {
+        "title": "Anti-vascular endothelial growth factor for macular oedema secondary to central retinal vein occlusion.",
+        "journal": "Cochrane Database Syst Rev",
+        "date": "2014",
+        "pmid": "24788977",
+        "summary": "Compared to no treatment, repeated intravitreal injection of anti-VEGF agents in eyes with CRVO macular oedema improved visual outcomes at six months. All agents were relatively well tolerated with a low incidence of adverse effects in the short term. …",
+        "abstract": "BACKGROUND: Central retinal vein occlusion (CRVO) is a relatively common retinal vascular disorder in which macular oedema may develop, with a consequent reduction in visual acuity. Until recently there has been no treatment of proven benefit, but growing evidence supports the use of anti-vascular endothelial growth factor (anti-VEGF) agents. OBJECTIVES: To investigate the effectiveness and safety of anti-VEGF therapies for the treatment of macular oedema secondary to CRVO. SEARCH METHODS: We searched CENTRAL (which contains the Cochrane Central Register of Controlled Trials (CENTRAL) and the Cochrane Eyes and Vision Group Trials Register) (The Cochrane Library 2013, Issue 10), Ovid MEDLINE (January 1950 to October 2013), EMBASE (January 1980 to October 2013), Latin American and Caribbean Health Sciences Literature Database (LILACS) (January 1982 to October 2013), Cumulative Index to Nur",
+        "country": "英國",
+        "ptype": "統合分析",
+        "zh": "",
+        "zh_sum": ""
+      },
+      {
         "title": "Intravitreal anti-VEGF drug delivery systems for age-related macular degeneration.",
         "journal": "Int J Pharm",
         "date": "2020",
@@ -9468,18 +9480,6 @@
         "abstract": "Branch retinal vein occlusion (BRVO) is the second most common retinal vascular disorder. The management of macular edema has changed considerably over time. The laser is considered the gold standard treatment for over two decades. However, visual recovery with laser is usually slow and incomplete. The advent of intravitreal agents, specifically anti-vascular endothelial growth factors (VEGF) have heralded a new era which promises rapid recovery of vision and quality of vision. Randomized clinical trials have reported optimal results with anti-VEGF agents (ranibizumab, bevacizumab, and aflibercept) compared to laser therapy or steroids. However, nearly 50% of the patients require repeat intravitreal anti-VEGF therapy up to 4 years after initiating therapy to sustain the visual gains. The adverse events (systemic and ocular) of these agents are minimal. Monotherapy with anti-VEGF agents h",
         "country": "印度",
         "ptype": "文獻回顧",
-        "zh": "",
-        "zh_sum": ""
-      },
-      {
-        "title": "Anti-vascular endothelial growth factor for macular oedema secondary to central retinal vein occlusion.",
-        "journal": "Cochrane Database Syst Rev",
-        "date": "2014",
-        "pmid": "24788977",
-        "summary": "Compared to no treatment, repeated intravitreal injection of anti-VEGF agents in eyes with CRVO macular oedema improved visual outcomes at six months. All agents were relatively well tolerated with a low incidence of adverse effects in the short term. …",
-        "abstract": "BACKGROUND: Central retinal vein occlusion (CRVO) is a relatively common retinal vascular disorder in which macular oedema may develop, with a consequent reduction in visual acuity. Until recently there has been no treatment of proven benefit, but growing evidence supports the use of anti-vascular endothelial growth factor (anti-VEGF) agents. OBJECTIVES: To investigate the effectiveness and safety of anti-VEGF therapies for the treatment of macular oedema secondary to CRVO. SEARCH METHODS: We searched CENTRAL (which contains the Cochrane Central Register of Controlled Trials (CENTRAL) and the Cochrane Eyes and Vision Group Trials Register) (The Cochrane Library 2013, Issue 10), Ovid MEDLINE (January 1950 to October 2013), EMBASE (January 1980 to October 2013), Latin American and Caribbean Health Sciences Literature Database (LILACS) (January 1982 to October 2013), Cumulative Index to Nur",
-        "country": "英國",
-        "ptype": "統合分析",
         "zh": "",
         "zh_sum": ""
       },
@@ -10818,18 +10818,6 @@
         "zh_sum": ""
       },
       {
-        "title": "Loteprednol Etabonate for the Treatment of Dry Eye Disease.",
-        "journal": "J Ocul Pharmacol Ther",
-        "date": "2020",
-        "pmid": "32391735",
-        "summary": "Dry eye disease (DED) is a common ocular condition that can impair vision and may adversely impact quality of life. Due to the inflammatory nature of this disorder, topical corticosteroids are an effective treatment option, particularly for moderate-to-severe DED when first-line treatments, such as ocular lubricants, are insufficient. …",
-        "abstract": "Dry eye disease (DED) is a common ocular condition that can impair vision and may adversely impact quality of life. Due to the inflammatory nature of this disorder, topical corticosteroids are an effective treatment option, particularly for moderate-to-severe DED when first-line treatments, such as ocular lubricants, are insufficient. Loteprednol etabonate (LE) is a retrometabolically designed corticosteroid with a low propensity to cause corticosteroid-related adverse effects, such as elevated intraocular pressure (IOP). This review was conducted to provide an assessment of published studies on the use of LE for treatment of inflammation associated with DED. Twelve prospective and 2 retrospective studies evaluating LE ophthalmic suspension 0.5% and 2 prospective studies evaluating LE ophthalmic gel 0.5% were identified. LE given as monotherapy or with artificial tears (AT) improved sign",
-        "country": "美國",
-        "ptype": "文獻回顧",
-        "zh": "依碳氯替潑諾用於治療乾眼症。",
-        "zh_sum": ""
-      },
-      {
         "title": "[Meibomian gland dysfunction].",
         "journal": "Klin Monbl Augenheilkd",
         "date": "2012",
@@ -11046,6 +11034,18 @@
         "zh_sum": ""
       },
       {
+        "title": "Loteprednol Etabonate for the Treatment of Dry Eye Disease.",
+        "journal": "J Ocul Pharmacol Ther",
+        "date": "2020",
+        "pmid": "32391735",
+        "summary": "Dry eye disease (DED) is a common ocular condition that can impair vision and may adversely impact quality of life. Due to the inflammatory nature of this disorder, topical corticosteroids are an effective treatment option, particularly for moderate-to-severe DED when first-line treatments, such as ocular lubricants, are insufficient. …",
+        "abstract": "Dry eye disease (DED) is a common ocular condition that can impair vision and may adversely impact quality of life. Due to the inflammatory nature of this disorder, topical corticosteroids are an effective treatment option, particularly for moderate-to-severe DED when first-line treatments, such as ocular lubricants, are insufficient. Loteprednol etabonate (LE) is a retrometabolically designed corticosteroid with a low propensity to cause corticosteroid-related adverse effects, such as elevated intraocular pressure (IOP). This review was conducted to provide an assessment of published studies on the use of LE for treatment of inflammation associated with DED. Twelve prospective and 2 retrospective studies evaluating LE ophthalmic suspension 0.5% and 2 prospective studies evaluating LE ophthalmic gel 0.5% were identified. LE given as monotherapy or with artificial tears (AT) improved sign",
+        "country": "美國",
+        "ptype": "文獻回顧",
+        "zh": "依碳氯替潑諾用於治療乾眼症。",
+        "zh_sum": ""
+      },
+      {
         "title": "Lifitegrast Ophthalmic Solution 5.0% for Treatment of Dry Eye Disease: Overview of Clinical Trial Program.",
         "journal": "J Pharm Pharm Sci",
         "date": "2019",
@@ -11214,18 +11214,6 @@
         "zh_sum": ""
       },
       {
-        "title": "Menopause and dry eye. A possible relationship.",
-        "journal": "Gynecol Endocrinol",
-        "date": "2005",
-        "pmid": "16019376",
-        "summary": "The hormonal status and in particular sex steroids play a role in the ocular surface homeostasis and function, during the whole life and in both sexes, accomplished by estrogenic and androgenic receptors located on corneal and conjunctival epithelia and Meibomian gland. …",
-        "abstract": "The hormonal status and in particular sex steroids play a role in the ocular surface homeostasis and function, during the whole life and in both sexes, accomplished by estrogenic and androgenic receptors located on corneal and conjunctival epithelia and Meibomian gland. The ocular surface is an integrated unit and any dysfunction results in a scarce or unstable preocular tear film which produces dry eye, a chronic inflammatory condition with increasing incidence as people get older but always more frequent among females. In post-menopausal women endocrine changes join the aging effects in the pathogenesis of dry eye, but still it remains controversial whether estrogen or androgen deficiency or their imbalance impair ocular surface function. Another questionable issue concerns the efficacy of hormonal replacement therapy in the amelioration of dry eye symptoms and recovery of tear functio",
-        "country": "義大利",
-        "ptype": "文獻回顧",
-        "zh": "更年期和乾眼症。一種可能的關係。",
-        "zh_sum": ""
-      },
-      {
         "title": "Interventions for chronic blepharitis.",
         "journal": "Cochrane Database Syst Rev",
         "date": "2012",
@@ -11235,6 +11223,18 @@
         "country": "美國",
         "ptype": "統合分析",
         "zh": "慢性瞼緣炎的干預措施。",
+        "zh_sum": ""
+      },
+      {
+        "title": "Menopause and dry eye. A possible relationship.",
+        "journal": "Gynecol Endocrinol",
+        "date": "2005",
+        "pmid": "16019376",
+        "summary": "The hormonal status and in particular sex steroids play a role in the ocular surface homeostasis and function, during the whole life and in both sexes, accomplished by estrogenic and androgenic receptors located on corneal and conjunctival epithelia and Meibomian gland. …",
+        "abstract": "The hormonal status and in particular sex steroids play a role in the ocular surface homeostasis and function, during the whole life and in both sexes, accomplished by estrogenic and androgenic receptors located on corneal and conjunctival epithelia and Meibomian gland. The ocular surface is an integrated unit and any dysfunction results in a scarce or unstable preocular tear film which produces dry eye, a chronic inflammatory condition with increasing incidence as people get older but always more frequent among females. In post-menopausal women endocrine changes join the aging effects in the pathogenesis of dry eye, but still it remains controversial whether estrogen or androgen deficiency or their imbalance impair ocular surface function. Another questionable issue concerns the efficacy of hormonal replacement therapy in the amelioration of dry eye symptoms and recovery of tear functio",
+        "country": "義大利",
+        "ptype": "文獻回顧",
+        "zh": "更年期和乾眼症。一種可能的關係。",
         "zh_sum": ""
       },
       {
@@ -11282,7 +11282,7 @@
         "abstract": "BACKGROUND: Outcomes-based review of reported treatment options for patients with dry eye secondary to Sjögren's syndrome (SS). CLINICAL RELEVANCE: Dry eye affects many individuals worldwide. Significant proportion of patients with dry eye has underlying SS, a progressive autoimmune condition. The few suggested guidelines for the treatment of dry eye are mostly based on severity of symptoms and/or clinical findings rather than on outcomes analysis, and do not differentiate SS from other causes of dry eye. METHODS AND LITERATURE REVIEW: A search strategy was developed to identify prospective, interventional studies of treatments for SS-associated dry eye from electronic databases. Eligible references were restricted to English-language articles published after 1975. These sources were augmented by hand searches of reference lists from accessed articles. Study selection, data extraction, a",
         "country": "美國",
         "ptype": "文獻回顧",
-        "zh": "乾燥症相關乾眼的治療是基於證據的審查。",
+        "zh": "乾燥症相關乾眼的治療基於證據的綜述。",
         "zh_sum": ""
       },
       {
@@ -11466,18 +11466,6 @@
         "zh_sum": ""
       },
       {
-        "title": "The JAK/STAT signaling pathway: from bench to clinic",
-        "journal": "Signal transduction and targeted therapy",
-        "date": "2021-11-26",
-        "pmid": "34824210",
-        "summary": "The Janus kinase/signal transducer and activator of transcription (JAK/STAT) signaling pathway was discovered more than a quarter-century ago. As a fulcrum of many vital cellular processes, the JAK/STAT pathway constitutes a rapid membrane-to-nucleus signaling module and induces the expression of various critical mediators of cancer and i …",
-        "abstract": "The Janus kinase/signal transducer and activator of transcription (JAK/STAT) signaling pathway was discovered more than a quarter-century ago. As a fulcrum of many vital cellular processes, the JAK/STAT pathway constitutes a rapid membrane-to-nucleus signaling module and induces the expression of various critical mediators of cancer and inflammation. Growing evidence suggests that dysregulation of the JAK/STAT pathway is associated with various cancers and autoimmune diseases. In this review, we discuss the current knowledge about the composition, activation, and regulation of the JAK/STAT pathway. Moreover, we highlight the role of the JAK/STAT pathway and its inhibitors in various diseases.",
-        "country": "中國",
-        "ptype": "文獻回顧",
-        "zh": "",
-        "zh_sum": ""
-      },
-      {
         "title": "A comprehensive map of molecular drug targets",
         "journal": "Nature reviews. Drug discovery",
         "date": "2016-12-02",
@@ -11485,6 +11473,18 @@
         "summary": "The success of mechanism-based drug discovery depends on the definition of the drug target. This definition becomes even more important as we try to link drug response to genetic variation, understand stratified clinical efficacy and safety, rationalize the differences between drugs in the same therapeutic class and predict drug utility i …",
         "abstract": "The success of mechanism-based drug discovery depends on the definition of the drug target. This definition becomes even more important as we try to link drug response to genetic variation, understand stratified clinical efficacy and safety, rationalize the differences between drugs in the same therapeutic class and predict drug utility in patient subgroups. However, drug targets are often poorly defined in the literature, both for launched drugs and for potential therapeutic agents in discovery and development. Here, we present an updated comprehensive map of molecular targets of approved drugs. We curate a total of 893 human and pathogen-derived biomolecules through which 1,578 US FDA-approved drugs act. These biomolecules include 667 human-genome-derived proteins targeted by drugs for human disease. Analysis of these drug targets indicates the continued dominance of privileged target ",
         "country": "英國",
+        "ptype": "文獻回顧",
+        "zh": "",
+        "zh_sum": ""
+      },
+      {
+        "title": "The JAK/STAT signaling pathway: from bench to clinic",
+        "journal": "Signal transduction and targeted therapy",
+        "date": "2021-11-26",
+        "pmid": "34824210",
+        "summary": "The Janus kinase/signal transducer and activator of transcription (JAK/STAT) signaling pathway was discovered more than a quarter-century ago. As a fulcrum of many vital cellular processes, the JAK/STAT pathway constitutes a rapid membrane-to-nucleus signaling module and induces the expression of various critical mediators of cancer and i …",
+        "abstract": "The Janus kinase/signal transducer and activator of transcription (JAK/STAT) signaling pathway was discovered more than a quarter-century ago. As a fulcrum of many vital cellular processes, the JAK/STAT pathway constitutes a rapid membrane-to-nucleus signaling module and induces the expression of various critical mediators of cancer and inflammation. Growing evidence suggests that dysregulation of the JAK/STAT pathway is associated with various cancers and autoimmune diseases. In this review, we discuss the current knowledge about the composition, activation, and regulation of the JAK/STAT pathway. Moreover, we highlight the role of the JAK/STAT pathway and its inhibitors in various diseases.",
+        "country": "中國",
         "ptype": "文獻回顧",
         "zh": "",
         "zh_sum": ""
