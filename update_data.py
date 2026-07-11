@@ -29,8 +29,8 @@ QUERIES = {
     "dryeye":     '("dry eye" OR "meibomian gland dysfunction") AND (cyclosporine OR lifitegrast OR "intense pulsed light" OR treatment OR management)',
 }
 
-RELDATE_DAYS = 2190   # 近 6 年
-RETMAX = 30           # 每類最多 30 篇(近6年取最新)
+RELDATE_DAYS = 3650   # 近 10 年
+RETMAX = 45           # 每類最多 45 篇(近10年取最新、更完整)
 
 
 def _params(extra):
@@ -229,10 +229,10 @@ def main():
 
     # 免費中文翻譯:標題一批、重點一批;各設時間預算避免卡住
     if flat:
-        t_titles = translate_batch([a.get("title", "") for a in flat], time.time() + 120)
+        t_titles = translate_batch([a.get("title", "") for a in flat], time.time() + 150)
         for i, a in enumerate(flat):
             a["zh"] = t_titles.get(i, "")
-        t_sums = translate_batch([a.get("summary", "") for a in flat], time.time() + 120)
+        t_sums = translate_batch([a.get("summary", "") for a in flat], time.time() + 150)
         for i, a in enumerate(flat):
             a["zh_sum"] = t_sums.get(i, "")
 
