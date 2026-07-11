@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- 眼視光 Eye-Vision Hub | build r49 | 2026-07-11 | 公司資料全面查證+版本標示 -->
+<!-- 眼視光 Eye-Vision Hub | build r51 | 2026-07-11 | 公司資料全面查證+版本標示 -->
 <html lang="zh-Hant">
 <head>
 <meta charset="UTF-8">
@@ -443,7 +443,7 @@ footer .build{margin-top:8px;font-size:11px}
       <a data-view="about">關於</a>
     </nav>
     <div class="topbar-right">
-      <span class="ver" title="版本(部署後對照用)">r49</span>
+      <span class="ver" title="版本(部署後對照用)">r51</span>
       <button id="backBtn" type="button" aria-label="返回上一頁">← 返回</button>
     </div>
   </div>
@@ -660,7 +660,7 @@ footer .build{margin-top:8px;font-size:11px}
   <div class="wrap">
     眼視光資訊中心 · Eye-Vision Industry Hub<br>
     資料來源:Google News · PubMed / NCBI · 每日/每 6 小時自動更新
-    <div class="build">build r49 · <span id="buildStamp"></span></div>
+    <div class="build">build r51 · <span id="buildStamp"></span></div>
   </div>
 </footer>
 
@@ -1006,7 +1006,7 @@ function litItemHTML(it){
 
 function litMatch(it,q){
   if(!q)return true;
-  const hay=[it.title,it.zh,it.summary,it.zh_sum,it.journal,it.country,it.ptype,it.pmid,LIT_LABEL[it._key]].filter(Boolean).join(' ').toLowerCase();
+  const hay=[it.title,it.zh,it.summary,it.zh_sum,it.abstract,it.journal,it.country,it.ptype,it.pmid,LIT_LABEL[it._key]].filter(Boolean).join(' ').toLowerCase();
   return q.toLowerCase().split(/\s+/).filter(Boolean).every(term=>hay.includes(term));
 }
 function renderFeed(){
@@ -1167,7 +1167,7 @@ async function loadNews(){
 /* =========================================================
    GLOBAL NEWS FEED — global_news.json (auto-updated daily)
    ========================================================= */
-const G_LABEL={myopia:"近視控制",contactlens:"隱形眼鏡",lens:"鏡片/驗光",device:"眼科醫材",pharma:"眼藥/藥物",health:"視力保健",industry:"產業公司",business:"產業財經",deal:"併購投資"};
+const G_LABEL={myopia:"近視控制",contactlens:"隱形眼鏡",lens:"鏡片/驗光",device:"眼科醫材",pharma:"眼藥/藥物",health:"視力保健",industry:"產業公司",business:"產業財經",deal:"併購投資",eyewear:"眼鏡產業"};
 let G_DATA=null, G_TAB="all";
 function gTabsHTML(active){
   const tabs=[{k:"all",l:"全部"}].concat(Object.keys(G_LABEL).map(k=>({k,l:G_LABEL[k]})));

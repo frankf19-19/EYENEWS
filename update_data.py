@@ -148,25 +148,30 @@ def efetch(pmids):
         if not year:
             md = _text(art, ".//JournalIssue/PubDate/MedlineDate")
             year = md[:4] if md else ""
-        concl, last = "", ""
+        parts, concl = [], ""
         for ab in art.findall(".//Abstract/AbstractText"):
             txt = "".join(ab.itertext()).strip()
             if not txt:
                 continue
-            last = txt
-            label = (ab.get("Label") or "").upper()
-            if "CONCLUSION" in label or "RESULT" in label:
+            label = (ab.get("Label") or "").strip()
+            parts.append((label + ": " if label else "") + txt)
+            up = label.upper()
+            if "CONCLUSION" in up or "RESULT" in up:
                 concl = txt
-        summary = concl or last
-        if len(summary) > 240:
-            cut = summary[:240]
+        full = " ".join(parts).strip()
+        # 顯示用:優先結論,否則整段摘要開頭
+        summary = concl or full
+        if len(summary) > 340:
+            cut = summary[:340]
             dot = cut.rfind(". ")
-            summary = (cut[:dot + 1] if dot > 120 else cut) + " …"
+            summary = (cut[:dot + 1] if dot > 170 else cut) + " …"
+        # 搜尋用:保留較長的完整摘要(英文原文,免翻譯即可搜)
+        abstract = full[:900]
         country = parse_country(art)
         ptype = parse_ptype(art)
         if title:
             out.append({"title": title, "journal": journal, "date": year,
-                        "pmid": pmid, "summary": summary,
+                        "pmid": pmid, "summary": summary, "abstract": abstract,
                         "country": country, "ptype": ptype})
     return out
 
