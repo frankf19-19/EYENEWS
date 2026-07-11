@@ -1,0 +1,36 @@
+name: Update global clinical trials
+
+on:
+  schedule:
+    - cron: '30 */6 * * *'      # 每 6 小時(錯開其他工作流)
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: auto-commit
+  cancel-in-progress: false
+
+jobs:
+  trials:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Fetch global clinical trials
+        run: python update_trials.py
+      - name: Commit trials.json
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          if [ -z "$(git status --porcelain trials.json)" ]; then echo "No changes"; exit 0; fi
+          git add trials.json
+          git commit -m "chore: auto-update clinical trials ($(date -u +%Y-%m-%dT%H:%MZ))"
+          for i in 1 2 3 4 5; do
+            git pull --rebase --autostash origin "${GITHUB_REF_NAME}" && git push && exit 0
+            echo "push retry $i…"; sleep 5
+          done
+          echo "push failed after retries"; exit 1
