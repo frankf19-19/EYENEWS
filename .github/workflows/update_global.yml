@@ -8,6 +8,10 @@ on:
 permissions:
   contents: write
 
+concurrency:
+  group: auto-commit
+  cancel-in-progress: false
+
 jobs:
   global:
     runs-on: ubuntu-latest
@@ -16,18 +20,19 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.11'
-      - name: Fetch global myopia news (+key points)
+      - name: Fetch global eye-vision news (+key points)
         env:
-          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}   # 選填:設了才會產生繁中重點
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}   # 選填;不設則用免費翻譯
         run: python update_global.py
       - name: Commit global_news.json
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          if [ -n "$(git status --porcelain global_news.json)" ]; then
-            git add global_news.json
-            git commit -m "chore: auto-update global news ($(date -u +%Y-%m-%d))"
-            git push
-          else
-            echo "No changes to global_news.json"
-          fi
+          if [ -z "$(git status --porcelain global_news.json)" ]; then echo "No changes"; exit 0; fi
+          git add global_news.json
+          git commit -m "chore: auto-update global news ($(date -u +%Y-%m-%d))"
+          for i in 1 2 3 4 5; do
+            git pull --rebase --autostash origin "${GITHUB_REF_NAME}" && git push && exit 0
+            echo "push retry $i…"; sleep 5
+          done
+          echo "push failed after retries"; exit 1

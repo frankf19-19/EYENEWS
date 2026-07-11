@@ -1,12 +1,16 @@
-name: Update Taiwan market news
+name: Update Taiwan news
 
 on:
   schedule:
-    - cron: '0 */6 * * *'      # 每 6 小時(每天 4 次)
+    - cron: '0 */6 * * *'      # 每 6 小時
   workflow_dispatch:
 
 permissions:
   contents: write
+
+concurrency:
+  group: auto-commit
+  cancel-in-progress: false
 
 jobs:
   news:
@@ -16,16 +20,17 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.11'
-      - name: Fetch Taiwan myopia-control news
+      - name: Fetch Taiwan eye-vision news
         run: python update_news.py
       - name: Commit news.json
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          if [ -n "$(git status --porcelain news.json)" ]; then
-            git add news.json
-            git commit -m "chore: auto-update Taiwan market news ($(date -u +%Y-%m-%dT%H:%MZ))"
-            git push
-          else
-            echo "No changes to news.json"
-          fi
+          if [ -z "$(git status --porcelain news.json)" ]; then echo "No changes"; exit 0; fi
+          git add news.json
+          git commit -m "chore: auto-update Taiwan news ($(date -u +%Y-%m-%dT%H:%MZ))"
+          for i in 1 2 3 4 5; do
+            git pull --rebase --autostash origin "${GITHUB_REF_NAME}" && git push && exit 0
+            echo "push retry $i…"; sleep 5
+          done
+          echo "push failed after retries"; exit 1

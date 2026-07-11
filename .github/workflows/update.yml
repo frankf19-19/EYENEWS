@@ -2,38 +2,38 @@ name: Update PubMed literature
 
 on:
   schedule:
-    - cron: '0 21 * * *'      # 每日 21:00 UTC ≈ 台灣時間隔日 05:00
-  workflow_dispatch:           # 也可在 Actions 頁面手動觸發
+    - cron: '0 21 * * *'      # 每日 21:00 UTC ≈ 台灣隔日 05:00
+  workflow_dispatch:
 
 permissions:
   contents: write
+
+concurrency:                  # 三個工作流共用同一群組 → 排隊、不同時 push
+  group: auto-commit
+  cancel-in-progress: false
 
 jobs:
   update:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-
-      - name: Set up Python
-        uses: actions/setup-python@v5
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
         with:
           python-version: '3.11'
-
       - name: Fetch latest literature
         env:
           NCBI_EMAIL: ${{ secrets.NCBI_EMAIL }}
           NCBI_API_KEY: ${{ secrets.NCBI_API_KEY }}
         run: python update_data.py
-
-      - name: Commit updated data.json
+      - name: Commit data.json
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          if [ -n "$(git status --porcelain data.json)" ]; then
-            git add data.json
-            git commit -m "chore: auto-update PubMed literature ($(date -u +%Y-%m-%d))"
-            git push
-          else
-            echo "No changes to data.json"
-          fi
+          if [ -z "$(git status --porcelain data.json)" ]; then echo "No changes"; exit 0; fi
+          git add data.json
+          git commit -m "chore: auto-update PubMed literature ($(date -u +%Y-%m-%d))"
+          for i in 1 2 3 4 5; do
+            git pull --rebase --autostash origin "${GITHUB_REF_NAME}" && git push && exit 0
+            echo "push retry $i…"; sleep 5
+          done
+          echo "push failed after retries"; exit 1
