@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- 眼視光 Eye-Vision Hub | build r63 | 2026-07-11 | 公司資料全面查證+版本標示 -->
+<!-- 眼視光 Eye-Vision Hub | build r64 | 2026-07-11 | 公司資料全面查證+版本標示 -->
 <html lang="zh-Hant">
 <head>
 <meta charset="UTF-8">
@@ -241,8 +241,8 @@ h2{font-weight:700;font-size:clamp(24px,3vw,32px);margin:0 0 6px}
 .clin-sub:hover{border-color:var(--accent);color:var(--accent-ink)}
 .clin-sub.on{background:var(--accent);color:#fff;border-color:var(--accent)}
 .lit-search-row{display:flex;align-items:center;gap:12px;margin:2px 0 14px;flex-wrap:wrap}
-#litSearch,#trialSearch{flex:1;min-width:240px;padding:11px 15px;border:1px solid var(--line);border-radius:10px;font-size:14.5px;background:var(--card);color:var(--ink);font-family:var(--sans)}
-#litSearch:focus,#trialSearch:focus{outline:none;border-color:var(--accent);box-shadow:0 0 0 3px var(--accent-soft)}
+#litSearch,#trialSearch,#newsSearch,#gSearch{flex:1;min-width:240px;padding:11px 15px;border:1px solid var(--line);border-radius:10px;font-size:14.5px;background:var(--card);color:var(--ink);font-family:var(--sans)}
+#litSearch:focus,#trialSearch:focus,#newsSearch:focus,#gSearch:focus{outline:none;border-color:var(--accent);box-shadow:0 0 0 3px var(--accent-soft)}
 .lit-count{font-family:var(--mono);font-size:12.5px;color:var(--muted);white-space:nowrap}
 .ai-wrap{margin-top:12px}
 .ai-btn{display:inline-flex;align-items:center;gap:7px;background:var(--accent-soft);color:var(--accent-ink);border:1px solid var(--accent);border-radius:999px;padding:7px 16px;font-size:13px;font-weight:700;cursor:pointer;font-family:var(--sans);transition:.15s}
@@ -438,7 +438,7 @@ footer .build{margin-top:8px;font-size:11px}
   .clin-sub{flex:1;text-align:center;padding:11px 8px;font-size:14px}
   .lit-tabs{padding:12px 14px 2px;gap:6px}
   .lit-search-row{gap:8px}
-  #litSearch,#trialSearch{min-width:100%}
+  #litSearch,#trialSearch,#newsSearch,#gSearch{min-width:100%}
   .ai-row{flex-wrap:wrap;gap:3px}
   .ai-k{flex:0 0 100%}
   .co-metarow{grid-template-columns:1fr 1fr}
@@ -476,7 +476,7 @@ footer .build{margin-top:8px;font-size:11px}
       <a data-view="about">關於</a>
     </nav>
     <div class="topbar-right">
-      <span class="ver" title="版本(部署後對照用)">r63</span>
+      <span class="ver" title="版本(部署後對照用)">r64</span>
       <button id="backBtn" type="button" aria-label="返回上一頁">← 返回</button>
     </div>
   </div>
@@ -594,6 +594,10 @@ footer .build{margin-top:8px;font-size:11px}
         <h3>新聞 · 活動(近一年)</h3>
         <span class="upd-badge">● 最後更新 <span id="newsUpd">載入中…</span></span>
       </div>
+      <div class="lit-search-row">
+        <input id="newsSearch" type="search" placeholder="搜尋台灣新聞:關鍵字／來源／地區(可空格多字)" aria-label="搜尋台灣新聞">
+        <span id="newsCount" class="lit-count"></span>
+      </div>
       <div class="lit-tabs" id="newsTabs"></div>
       <div class="range-row" id="newsRange"></div>
       <div class="feed" id="newsFeed"></div>
@@ -614,6 +618,10 @@ footer .build{margin-top:8px;font-size:11px}
       <div class="lit-head">
         <h3>國際消息 · 重點摘要</h3>
         <span class="upd-badge">● 最後更新 <span id="gUpd">載入中…</span></span>
+      </div>
+      <div class="lit-search-row">
+        <input id="gSearch" type="search" placeholder="搜尋全球新聞:關鍵字／來源／地區(可空格多字)" aria-label="搜尋全球新聞">
+        <span id="gCount" class="lit-count"></span>
       </div>
       <div class="lit-tabs" id="gTabs"></div>
       <div class="range-row" id="gRange"></div>
@@ -718,7 +726,7 @@ footer .build{margin-top:8px;font-size:11px}
   <div class="wrap">
     眼視光資訊中心 · Eye-Vision Industry Hub<br>
     資料來源:Google News · PubMed / NCBI · 每日/每 6 小時自動更新
-    <div class="build">build r63 · <span id="buildStamp"></span></div>
+    <div class="build">build r64 · <span id="buildStamp"></span></div>
   </div>
 </footer>
 
@@ -1188,7 +1196,7 @@ function initLightbox(){
    ========================================================= */
 const NEWS_LABEL={myopia:"近視控制",contactlens:"隱形眼鏡",lens:"鏡片/驗光",device:"眼科醫材",pharma:"眼藥/藥物",health:"視力保健",industry:"產業公司",business:"產業財經",deal:"併購投資",events:"活動/衛教"};
 const NEWS_FALLBACK={updated:"(尚未執行自動更新)",items:{}};
-let NEWS_DATA=null, NEWS_TAB="all";
+let NEWS_DATA=null, NEWS_TAB="all", NEWS_QUERY="";
 
 function newsTabsHTML(active){
   const tabs=[{k:"all",l:"全部"}].concat(Object.keys(NEWS_LABEL).map(k=>({k,l:NEWS_LABEL[k]})));
@@ -1233,6 +1241,11 @@ function newsItemHTML(it){
   </div>`;
 }
 let NEWS_SHOWN=25, NEWS_RANGE=90;
+function newsMatch(it,q){
+  const reg=detectRegion([it.title,it.summary,it.source].filter(Boolean).join(' '))||(it._intl?'國外':'台灣');
+  const hay=[it.title,it.summary,it.keypoint,it.source,reg,NEWS_LABEL[it._key]].filter(Boolean).join(' ').toLowerCase();
+  return q.toLowerCase().split(/\s+/).filter(Boolean).every(t=>hay.indexOf(t)>=0);
+}
 function renderNews(){
   if(!NEWS_DATA)return;
   const feed=document.getElementById('newsFeed');
@@ -1248,12 +1261,16 @@ function renderNews(){
     });
   }
   if(NEWS_TAB!=="all")items=items.filter(i=>i._key===NEWS_TAB);
+  const nq=(NEWS_QUERY||'').trim();
+  if(nq)items=items.filter(i=>newsMatch(i,nq));
   var preN=items.length;
   var filteredN=items.filter(i=>inRange(i.date,NEWS_RANGE));
   if(!filteredN.length && preN) filteredN=items;
   items=filteredN;
   items.sort((a,b)=>(b.date||"").localeCompare(a.date||""));
-  if(!items.length){feed.innerHTML='<div class="feed-empty">尚無消息。請至 GitHub Actions 執行一次 update_news,或稍後再試。</div>';return;}
+  const ncnt=document.getElementById('newsCount');
+  if(ncnt)ncnt.textContent=nq?('找到 '+items.length+' 則'):'';
+  if(!items.length){feed.innerHTML='<div class="feed-empty">'+(nq?'找不到符合的新聞。':'尚無消息。請至 GitHub Actions 執行一次 update_news,或稍後再試。')+'</div>';return;}
   const shown=items.slice(0,NEWS_SHOWN);
   feed.innerHTML=shown.map(newsItemHTML).join('')+
     (items.length>NEWS_SHOWN?`<button class="more-btn" id="newsMore">顯示更多(還有 ${items.length-NEWS_SHOWN} 則)</button>`:
@@ -1276,13 +1293,20 @@ async function loadNews(){
     NEWS_TAB=b.dataset.k; NEWS_SHOWN=25; newsTabsHTML(NEWS_TAB); renderNews();
   });
   document.getElementById('newsRange').addEventListener('click',e=>{const b=e.target.closest('.range-btn'); if(!b)return; NEWS_RANGE=+b.dataset.r; NEWS_SHOWN=25; renderNews();});
+  const nse=document.getElementById('newsSearch');
+  if(nse)nse.addEventListener('input',()=>{NEWS_QUERY=nse.value; NEWS_SHOWN=25; renderNews();});
 }
 
 /* =========================================================
    GLOBAL NEWS FEED — global_news.json (auto-updated daily)
    ========================================================= */
 const G_LABEL={myopia:"近視控制",contactlens:"隱形眼鏡",lens:"鏡片/驗光",device:"眼科醫材",pharma:"眼藥/藥物",health:"視力保健",industry:"產業公司",business:"產業財經",deal:"併購投資",eyewear:"眼鏡產業"};
-let G_DATA=null, G_TAB="all";
+let G_DATA=null, G_TAB="all", G_QUERY="";
+function gMatch(it,q){
+  const reg=detectRegion([it.title,it.keypoint,it.summary,it.source].filter(Boolean).join(' '))||'';
+  const hay=[it.title,it.keypoint,it.summary,it.source,reg,G_LABEL[it._key]].filter(Boolean).join(' ').toLowerCase();
+  return q.toLowerCase().split(/\s+/).filter(Boolean).every(t=>hay.indexOf(t)>=0);
+}
 function gTabsHTML(active){
   const tabs=[{k:"all",l:"全部"}].concat(Object.keys(G_LABEL).map(k=>({k,l:G_LABEL[k]})));
   document.getElementById('gTabs').innerHTML=tabs.map(t=>
@@ -1321,12 +1345,16 @@ function renderG(){
   let items=[];
   Object.keys(G_DATA.items||{}).forEach(k=>{(G_DATA.items[k]||[]).forEach(it=>items.push(Object.assign({_key:k},it)));});
   if(G_TAB!=="all")items=items.filter(i=>i._key===G_TAB);
+  const gq=(G_QUERY||'').trim();
+  if(gq)items=items.filter(i=>gMatch(i,gq));
   var pre=items.length;
   var filtered=items.filter(i=>inRange(i.date,G_RANGE));
   if(!filtered.length && pre) filtered=items;  // 過濾後為空則顯示全部,避免無故空白
   items=filtered;
   items.sort((a,b)=>(b.date||"").localeCompare(a.date||""));
-  if(!items.length){feed.innerHTML='<div class="feed-empty">全球新聞尚未載入。請至 GitHub Actions 執行一次 update_global,或稍後再試。</div>';return;}
+  const gcnt=document.getElementById('gCount');
+  if(gcnt)gcnt.textContent=gq?('找到 '+items.length+' 則'):'';
+  if(!items.length){feed.innerHTML='<div class="feed-empty">'+(gq?'找不到符合的新聞。':'全球新聞尚未載入。請至 GitHub Actions 執行一次 update_global,或稍後再試。')+'</div>';return;}
   feed.innerHTML=items.slice(0,G_SHOWN).map(gItemHTML).join('')+
     (items.length>G_SHOWN?`<button class="more-btn" id="gMore">顯示更多(還有 ${items.length-G_SHOWN} 則)</button>`:
      (items.length>25?`<div class="feed-count mono">共 ${items.length} 則</div>`:''));
@@ -1345,6 +1373,8 @@ async function loadGlobal(){
     G_TAB=b.dataset.k; G_SHOWN=25; gTabsHTML(G_TAB); renderG();
   });
   document.getElementById('gRange').addEventListener('click',e=>{const b=e.target.closest('.range-btn'); if(!b)return; G_RANGE=+b.dataset.r; G_SHOWN=25; renderG();});
+  const gse=document.getElementById('gSearch');
+  if(gse)gse.addEventListener('input',()=>{G_QUERY=gse.value; G_SHOWN=25; renderG();});
 }
 
 /* =========================================================
@@ -1377,7 +1407,7 @@ function renderCompanies(){
 function renderCompanyDetail(c){
   const meta=[["成立",c.founded||"—"],["總部",c.hq||"—"],["上市/櫃",c.code?`${c.code}${c.market?" · "+c.market:""}`:(c.market||"未上市/未公開")],["地區",c.r||"—"]];
   const prods=(c.products||[]).map(p=>{
-    const hit=resolveProd(p.n);
+    const hit=resolveProd(p.n, p.d);
     if(hit){
       return `<div class="co-prod co-prod-link" data-prod="${hit.dom}:${hit.i}" role="button" tabindex="0"><b>${p.n}</b><span>${p.d}</span><span class="co-prod-go">看完整介紹 →</span></div>`;
     }
@@ -1722,18 +1752,32 @@ function findProd(name){
   }
   return bestScore>=2?best:null;
 }
-function resolveProd(name){
-  var hit=findProd(name); if(!hit)return null;
-  var cat=PROD[hit.dom][hit.i];
-  var hay=[cat.n].concat((cat.items||[]).map(function(x){return x.p;}),(cat.items||[]).map(function(x){return x.m;}),(cat.items||[]).map(function(x){return x.zh||'';})).join(' ').toLowerCase();
-  var clean=(name||'').replace(/[（(].*?[）)]/g,' ');
-  var toks=clean.split(/[\s\/·、,，]+/).filter(Boolean);
-  var ok=toks.some(function(t){
-    var tl=t.toLowerCase();
-    if(/^[\x00-\x7f]+$/.test(t)) return t.length>=4 && hay.indexOf(tl)>=0; // 英文品牌名需>=4字
-    return t.length>=2 && hay.indexOf(tl)>=0;                               // 中文詞需>=2字
-  });
-  return ok?hit:null;
+function resolveProd(name, desc){
+  const PROD_STOP=new Set(['角膜','過敏','眼藥','藥物','鏡片','隱形眼鏡','隱形','眼鏡','手術','保健','近視','遠視','散光','老花','白內障','青光眼','視網膜','黃斑','乾眼','驗光','塑型','系列','產品','治療','矯正','診斷','儀器','材料','品牌','控制','管理','日拋','月拋','週拋','硬鏡','軟鏡','框架','鏡','片','液','眼','光','劑','藥','器','儀','燈']);
+  const text=((name||'')+' '+(desc||'')).replace(/[（(].*?[）)]/g,' ');
+  const toks=text.split(/[\s\/·、,，;；.。]+/).map(function(s){return s.trim();}).filter(Boolean);
+  const cands=toks.filter(function(t){
+    if(PROD_STOP.has(t))return false;
+    if(/^[\x00-\x7f]+$/.test(t))return t.length>=4;
+    return t.length>=3;
+  }).map(function(t){return t.toLowerCase();});
+  if(!cands.length)return null;
+  const doms=Object.keys(PROD);
+  for(let d=0;d<doms.length;d++){
+    const arr=PROD[doms[d]];
+    for(let i=0;i<arr.length;i++){
+      const cat=arr[i];
+      const brands=[cat.n].concat(
+        (cat.items||[]).map(function(x){return x.p||'';}),
+        (cat.items||[]).map(function(x){return x.m||'';}),
+        (cat.items||[]).map(function(x){return x.zh||'';})
+      ).join(' ').toLowerCase();
+      for(let c=0;c<cands.length;c++){
+        if(cands[c].length>=3 && brands.indexOf(cands[c])>=0) return {dom:doms[d], i:i};
+      }
+    }
+  }
+  return null;
 }
 function openCompanyProductAt(dom,i){
   switchView('products');
