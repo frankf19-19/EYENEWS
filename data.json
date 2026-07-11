@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-11 12:12 UTC",
+  "updated": "2026-07-11 12:28 UTC",
   "source": "PubMed / NCBI E-utilities;中文為免費自動翻譯",
   "items": {
     "myopia": [
@@ -9,7 +9,9 @@
         "date": "2026",
         "pmid": "42434784",
         "summary": "",
-        "zh": "不同阿托品方案的功效和安全性：MOSAIC2。",
+        "country": "新加坡",
+        "ptype": "",
+        "zh": "",
         "zh_sum": ""
       },
       {
@@ -18,7 +20,9 @@
         "date": "2026",
         "pmid": "42434780",
         "summary": "",
-        "zh": "週邊散焦眼鏡片配戴與 0.01% 阿托品結合的效果。",
+        "country": "英國",
+        "ptype": "",
+        "zh": "",
         "zh_sum": ""
       },
       {
@@ -27,8 +31,10 @@
         "date": "2026",
         "pmid": "42429242",
         "summary": "Supervised nonlinear multi-output models achieve lower error and better calibration for Q-factor than linear baselines, supporting a metric-driven pathway toward more reliable control of low-order refractive targets and primary asphericity. …",
-        "zh": "基於機器學習的非球面規劃 LASIK 控制台輸入預測（Q 因子、散焦、散光）：轉換方法研究。",
-        "zh_sum": "與線性基準相比，有監督的非線性多輸出模型可實現更低的誤差和更好的 Q 因子校準，支持度量驅動的途徑，實現對低階折射目標和初級非球面的更可靠控制。 ……"
+        "country": "法國",
+        "ptype": "",
+        "zh": "",
+        "zh_sum": ""
       },
       {
         "title": "Impact of exercise on myopia in children and adolescents and its modifying factors: a systematic review and meta-analysis.",
@@ -36,8 +42,10 @@
         "date": "2026",
         "pmid": "42426665",
         "summary": "Exercise interventions exert a consistently positive effect on the visual function of children and adolescents, significantly improving both dynamic and static visual acuity. …",
-        "zh": "運動對兒童和青少年近視的影響及其改變因素：系統性評價和薈萃分析。",
-        "zh_sum": "運動介入對兒童和青少年的視覺功能產生持續的正面影響，顯著提高動態和靜態視力。 ……"
+        "country": "中國",
+        "ptype": "系統性回顧",
+        "zh": "",
+        "zh_sum": ""
       },
       {
         "title": "Temporal trends in refractive error among children and adolescents in Germany - a large-scale analysis of spectacle sales data from dispensing opticians from 2001 to 2025.",
@@ -45,7 +53,9 @@
         "date": "2026",
         "pmid": "42422710",
         "summary": "This 25-year large-scale analysis found no evidence of an accelerating myopia epidemic or a pandemic-associated surge in myopia progression among spectacle-wearing children and adolescents in Germany. …",
-        "zh": "德國兒童和青少年屈光不正的時間趨勢 - 對 2001 年至 2025 年配鏡師眼鏡銷售數據的大規模分析。這項為期 25 年的大規模分析並沒有發現任何證據表明德國戴眼鏡的兒童和青少年的近視流行加速或與流行病相關的近視進展激增。 ……",
+        "country": "德國",
+        "ptype": "觀察性研究",
+        "zh": "",
         "zh_sum": ""
       },
       {
@@ -54,8 +64,10 @@
         "date": "2026",
         "pmid": "42422676",
         "summary": "The global surge in myopia prevalence, particularly the rising incidence of high myopia and its associated blinding complications-including myopic maculopathy, retinal detachment, and glaucoma-has transformed this condition into a pressing  …",
-        "zh": "阿托品控制近視的弔詭：探索劑量依賴性療效、反彈效應和最佳風險效益平衡－一個視角。",
-        "zh_sum": "全球近視盛行率激增，特別是高度近視及其相關致盲併發症（包括近視性黃斑病變、視網膜剝離和青光眼）發病率的上升，已將這種情況轉變為緊迫的…"
+        "country": "中國",
+        "ptype": "",
+        "zh": "",
+        "zh_sum": ""
       },
       {
         "title": "Two-Year Changes in Astigmatism in Myopic Children Wearing Lenslet-ARray-Integrated Spectacle Lenses.",
@@ -63,8 +75,10 @@
         "date": "2026",
         "pmid": "42421756",
         "summary": "Wearing LARI lenses for 2 years did not seem to lead to any clinically significant additional progression in refractive and corneal astigmatism.",
-        "zh": "配戴 Lenslet-ARray 整合眼鏡片的近視兒童的散光兩年變化。",
-        "zh_sum": "配戴 LARI 鏡片兩年似乎並未導致屈光和角膜散光出現任何臨床上顯著的額外進展。"
+        "country": "中國",
+        "ptype": "",
+        "zh": "",
+        "zh_sum": ""
       },
       {
         "title": "Effectiveness and implementation of an intervention strategy-based health promoting schools framework to reduce idiopathic scoliosis and myopia among children and adolescents in Shanghai, China: study protocol.",
@@ -72,8 +86,10 @@
         "date": "2026",
         "pmid": "42420921",
         "summary": "ChiCTR2600117433. Registered January 23, 2026.",
-        "zh": "基於介入策略的健康促進學校框架減少中國上海兒童和青少年特發性脊椎側彎和近視的有效性和實施：研究方案。",
-        "zh_sum": "ChiCTR2600117433。報名日期：2026 年 1 月 23 日。"
+        "country": "中國",
+        "ptype": "",
+        "zh": "",
+        "zh_sum": ""
       },
       {
         "title": "Increasing Evidence for the Utility of Red-Light Therapy and High Concentration Atropine in Myopia Control.",
@@ -81,7 +97,9 @@
         "date": "2026",
         "pmid": "42412099",
         "summary": "",
-        "zh": "越來越多的證據顯示紅光療法和高濃度阿托品在控制近視方面的效用。",
+        "country": "澳洲",
+        "ptype": "",
+        "zh": "",
         "zh_sum": ""
       },
       {
@@ -90,8 +108,10 @@
         "date": "2026",
         "pmid": "42410397",
         "summary": "Among adolescents with poor myopia control under once-daily 0.01% atropine, increasing medication frequency to twice daily may slow AL progression without obvious safety concerns, which could serve as an alternative management option in cli …",
-        "zh": "增加 0.01% 阿托品給藥頻率對控制青少年近視進展的短期療效。",
-        "zh_sum": "在每日一次 0.01% 阿托品治療下近視控制不佳的青少年中，將用藥頻率增加至每日兩次可能會減緩 AL 進展，且沒有明顯的安全問題，這可以作為此類患者的替代管理選擇。"
+        "country": "中國",
+        "ptype": "",
+        "zh": "",
+        "zh_sum": ""
       },
       {
         "title": "Combined Orthokeratology and Low-Dose Atropine for Myopia Control in Children: A 12-Month Retrospective Clinical Study.",
@@ -99,8 +119,10 @@
         "date": "2026",
         "pmid": "42406634",
         "summary": "The increasing prevalence of childhood myopia and its association with vision-threatening complications have made myopia control a major public health concern. …",
-        "zh": "合併角膜塑形術和低劑量阿托品控制兒童近視：一項為期 12 個月的回顧性臨床研究。",
-        "zh_sum": "兒童近視盛行率的不斷增加及其與威脅視力的併發症的相關性使近視控製成為主要的公共衛生問題。 ……"
+        "country": "",
+        "ptype": "",
+        "zh": "",
+        "zh_sum": ""
       },
       {
         "title": "Google Trends Analysis of Interest in Pediatric Myopia-Control Spectacle Lenses Following FDA Authorization of Essilor Stellest.",
@@ -108,8 +130,10 @@
         "date": "2026",
         "pmid": "42395215",
         "summary": "Public search interest in pediatric myopia-control spectacle lenses increased markedly following FDA authorization of Essilor Stellest, with normalization suggesting growth beyond seasonal effects. …",
-        "zh": "FDA 授權依視路 Stellest 後，Google趨勢分析對兒童近視控制眼鏡鏡片的興趣。",
-        "zh_sum": "FDA 授權依視路 Stellest 後，公眾對兒科近視控制眼鏡片的搜尋興趣顯著增加，正常化表明增長超出了季節性影響。 ……"
+        "country": "美國",
+        "ptype": "",
+        "zh": "",
+        "zh_sum": ""
       },
       {
         "title": "Orthokeratology versus extended depth-of-focus soft contact lenses for myopia control: a 12-month comparative study of axial elongation and corneal changes.",
@@ -117,8 +141,10 @@
         "date": "2026",
         "pmid": "42385647",
         "summary": "Both OK and EDOF soft contact lenses were associated with reduced axial elongation over a 12-month period, with no significant differences in efficacy between treatments. …",
-        "zh": "角膜塑形術與大焦深軟隱形眼鏡控制近視：一項為期 12 個月的眼軸伸長和角膜變化的比較研究。",
-        "zh_sum": "OK 和 EDOF 軟式隱形眼鏡在 12 個月內都與眼軸伸長率降低有關，但治療之間的療效沒有顯著差異。 ……"
+        "country": "西班牙",
+        "ptype": "",
+        "zh": "",
+        "zh_sum": ""
       },
       {
         "title": "Comparison of posterior scleral reinforcement surgery and repeated low-level red-light therapy in controlling high and super high myopia in Chinese children.",
@@ -126,8 +152,10 @@
         "date": "2026",
         "pmid": "42382970",
         "summary": "PSR and RLRL effectively improve BCVA in children with HM and SHM. PSR slows AL and SE progression, whereas RLRL reduces AL and SE, with better BCVA and AL outcomes in SHM at 1 and 2y. …",
-        "zh": "後鞏膜加強手術與重複低強度紅光治療控制中國兒童高度和超高度近視的比較。",
-        "zh_sum": "PSR和RLRL有效提高HM和SHM兒童的BCVA。 PSR 減緩 AL 和 SE 進展，而 RLRL 減少 AL 和 SE，在 SHM 中 1 年和 2 年具有更好的 BCVA 和 AL 結果。 ……"
+        "country": "中國",
+        "ptype": "",
+        "zh": "",
+        "zh_sum": ""
       },
       {
         "title": "Atropine reinstates inflammation-induced dysregulation of dopamine and its receptors in human scleral cells: Implications for myopia therapy.",
@@ -135,8 +163,10 @@
         "date": "2026",
         "pmid": "42378569",
         "summary": "Our findings demonstrate atropine restores inflammation-induced dopaminergic and extracellular matrix dysregulation in human scleral cells, highlighting its dual anti-inflammatory and neuro-modulatory roles. …",
-        "zh": "阿托品恢復發炎引起的人類鞏膜細胞中多巴胺及其受體的失調：對近視治療的影響。",
-        "zh_sum": "我們的研究結果表明，阿托品可以恢復人類鞏膜細胞中發炎誘導的多巴胺能和細胞外基質失調，突顯其雙重抗發炎和神經調節作用。 ……"
+        "country": "",
+        "ptype": "",
+        "zh": "",
+        "zh_sum": ""
       },
       {
         "title": "Evaluating the Effect on Emmetropization of the Timing and Spectrum of Breaks From a Myopiagenic Environment.",
@@ -144,8 +174,10 @@
         "date": "2026",
         "pmid": "42370640",
         "summary": "While white-light breaks were relatively ineffective in inhibiting myopia, data showed that short breaks with ambient red light can be very effective if of an appropriate kind. …",
-        "zh": "評估近視環境中的休息時間和光譜對正視眼的影響。",
-        "zh_sum": "雖然白光休息對於抑制近視相對無效，但數據表明，如果適當的話，使用環境紅光進行短暫休息可能非常有效。 ……"
+        "country": "美國",
+        "ptype": "",
+        "zh": "",
+        "zh_sum": ""
       },
       {
         "title": "Myopia management functional lenses (MMFL): a bibliometric analysis of multidisciplinary perspective and trend insights in the context of vision health.",
@@ -153,8 +185,10 @@
         "date": "2026",
         "pmid": "42366310",
         "summary": "The knowledge map of research on MMFL is constructed through bibliometric analysis, systematically summarizing the current status and hotspots of research. …",
-        "zh": "近視管理功能鏡片（MMFL）：對視力健康背景下多學科視角和趨勢見解的文獻計量分析。",
-        "zh_sum": "透過文獻計量分析建構MMFL研究知識圖譜，系統總結了MMFL的研究現況和熱點。 ……"
+        "country": "中國",
+        "ptype": "文獻回顧",
+        "zh": "",
+        "zh_sum": ""
       },
       {
         "title": "Comparable myopia control efficacy of highly aspherical lenslets and diffusion optics technology spectacle lenses: a one-year real-world cohort study.",
@@ -162,8 +196,10 @@
         "date": "2026",
         "pmid": "42365264",
         "summary": "In this real-world cohort, both HAL and DOT lenses were linked to slower myopia progression, with similar progression rates between HAL and DOT. …",
-        "zh": "高度非球面小透鏡和擴散光學技術眼鏡鏡片的近視控制效果相當：一項為期一年的真實世界隊列研究。",
-        "zh_sum": "在這個現實世界的隊列中，HAL 和 DOT 鏡片都與減緩近視進展有關，HAL 和 DOT 之間的進展率相似。 ……"
+        "country": "中國",
+        "ptype": "",
+        "zh": "",
+        "zh_sum": ""
       },
       {
         "title": "Effects of orthokeratology on binocular vision and myopia control in adolescents.",
@@ -171,8 +207,10 @@
         "date": "2026",
         "pmid": "42363546",
         "summary": "This study aimed to compare the efficacy of myopia control in adolescents wearing orthokeratology lenses (OKL) or single-vision spectacles (SVS). …",
-        "zh": "角膜塑形鏡對青少年雙眼視力及近視控制的影響。",
-        "zh_sum": "本研究旨在比較配戴角膜塑形鏡（OKL）或單光眼鏡（SVS）的青少年近視控制效果。 ……"
+        "country": "中國",
+        "ptype": "",
+        "zh": "",
+        "zh_sum": ""
       },
       {
         "title": "The effect of orthokeratology lens optical zone size on myopia control in adolescents.",
@@ -180,8 +218,10 @@
         "date": "2026",
         "pmid": "42359081",
         "summary": "For adolescents with low-to-moderate astigmatism, 5-mm Back Optical Zone Diameter (BOZD) Ortho-K lenses demonstrated slightly superior efficacy in controlling myopia progression compared to 6- mm lenses, characterized by a smaller PPRD and  …",
-        "zh": "角膜塑形鏡光學區大小對青少年近視控制的影響。",
-        "zh_sum": "對於輕度至中度散光的青少年，與 6 毫米鏡片相比，5 毫米後光學區直徑 (BOZD) Ortho-K 鏡片在控制近視進展方面表現出稍微優越的功效，其特點是 PPRD 較小，並且…"
+        "country": "中國",
+        "ptype": "",
+        "zh": "",
+        "zh_sum": ""
       },
       {
         "title": "Modern Methods for Preventing the Progression of Myopia in Children.",
@@ -189,8 +229,10 @@
         "date": "2026",
         "pmid": "42355902",
         "summary": "The progression of myopia in the pediatric population is currently highly prevalent. Thus, there is a need to look for new, effective methods that might suppress this pathological process. …",
-        "zh": "預防兒童近視加深的現代方法。",
-        "zh_sum": "目前，兒童近視的進展非常普遍。因此，需要尋找新的、有效的方法來抑制這種病理過程。 ……"
+        "country": "波蘭",
+        "ptype": "文獻回顧",
+        "zh": "",
+        "zh_sum": ""
       },
       {
         "title": "Real-Life Orthokeratology for Myopia Control in Hungarian Children: A Five-Year Study of Axial Length Changes.",
@@ -198,8 +240,10 @@
         "date": "2026",
         "pmid": "42355456",
         "summary": "Purpose: Orthokeratology is an established intervention for myopia control, but long-term European real-world data remain limited. …",
-        "zh": "現實生活中匈牙利兒童近視控制的角膜塑形術：眼軸長度變化的五年研究。",
-        "zh_sum": "目的：角膜塑形術是一種既定的近視控制干預措施，但歐洲的長期現實數據仍然有限。 ……"
+        "country": "",
+        "ptype": "",
+        "zh": "",
+        "zh_sum": ""
       },
       {
         "title": "Ocular Alignment and Strabismus-Related Findings Associated with Low-Dose Atropine for Myopia Control in Children: A Structured Narrative Review.",
@@ -207,8 +251,10 @@
         "date": "2026",
         "pmid": "42353988",
         "summary": "Background/Objectives: Low-dose atropine eye drops are widely used to slow myopia progression in children, but by reducing accommodation they may affect near ocular alignment and binocular visual function. …",
-        "zh": "與低劑量阿托品控制兒童近視相關的眼部排列和斜視相關發現：結構化敘述回顧。",
-        "zh_sum": "背景/目標：低劑量阿托品眼藥水廣泛用於減緩兒童近視進展，但透過減少調節，它們可能會影響近眼排列和雙眼視功能。 ……"
+        "country": "日本",
+        "ptype": "文獻回顧",
+        "zh": "",
+        "zh_sum": ""
       },
       {
         "title": "Potential Inhibitory Effect of LED-Sourced Red Light Therapy on Ocular Growth in Normal and Myopic Chicks.",
@@ -216,8 +262,10 @@
         "date": "2026",
         "pmid": "42353143",
         "summary": "Repeated low-level red light (RLRL) has been reported to control myopia progression clinically. Given safety concerns with laser sources, light-emitting diodes (LED)-sourced red light represents a promising alternative. …",
-        "zh": "LED 源紅光療法對正常和近視雛雞眼部生長的潛在抑製作用。",
-        "zh_sum": "據報道，臨床上重複低強度紅光（RLRL）可以控制近視進展。考慮到雷射光源的安全問題，發光二極管 (LED) 來源的紅光代表了一種有前途的替代方案。 ……"
+        "country": "香港",
+        "ptype": "",
+        "zh": "",
+        "zh_sum": ""
       },
       {
         "title": "Repeated low-level red-light therapy for childhood myopia: Efficacy, mechanisms, rebound effects, safety boundaries, and clinical standardization.",
@@ -225,8 +273,10 @@
         "date": "2026",
         "pmid": "42349599",
         "summary": "RLRL may be among the most effective myopia-control strategies currently under investigation in the short term, but the field has not yet reached full clinical maturity. …",
-        "zh": "重複低強度紅光治療兒童近視：療效、機制、反彈效應、安全界限和臨床標準化。",
-        "zh_sum": "RLRL 可能是目前正在研究的短期內最有效的近視控制策略之一，但該領域尚未達到完全的臨床成熟度。 ……"
+        "country": "中國",
+        "ptype": "文獻回顧",
+        "zh": "",
+        "zh_sum": ""
       },
       {
         "title": "Effect of Switching Myopia Control Strategies on Axial Elongation in Children with Poor Response to Highly Aspherical Lenslet Therapy.",
@@ -234,8 +284,10 @@
         "date": "2026",
         "pmid": "42340660",
         "summary": "Among children with a poor response to initial HAL treatment, switching to alternative interventions, especially DOT, was associated with more favourable axial elongation outcomes and less SER progression. …",
-        "zh": "轉換近視控制策略對高度非球面鏡片治療反應不佳的兒童眼軸伸長的影響。",
-        "zh_sum": "在對初始 HAL 治療反應不佳的兒童中，改用其他幹預措施（尤其是 DOT）與更有利的眼軸伸長結果和更少的 SER 進展相關。 ……"
+        "country": "中國",
+        "ptype": "",
+        "zh": "",
+        "zh_sum": ""
       },
       {
         "title": "Effect of Variation in Extended Depth-Of-Focus Design on Myopia Control and Visual Function in Japanese Children.",
@@ -243,8 +295,10 @@
         "date": "2026",
         "pmid": "42339912",
         "summary": "Mid-EDOF lenses significantly suppress myopia progression, with tolerable visual function changes, potentially providing effective myopia control. Low-EDOF lenses showed no significant benefit over single-vision lenses. …",
-        "zh": "擴展焦深設計的變化對日本兒童近視控制和視覺功能的影響。",
-        "zh_sum": "中EDOF鏡片可顯著抑制近視進展，並具有可忍受的視功能變化，可能提供有效的近視控制。低 EDOF 鏡片與單光鏡片相比沒有顯著優勢。 ……"
+        "country": "日本",
+        "ptype": "",
+        "zh": "",
+        "zh_sum": ""
       },
       {
         "title": "Axial changes and long-term myopia progression with orthokeratology: A risk-stratification study.",
@@ -252,8 +306,10 @@
         "date": "2026",
         "pmid": "42335851",
         "summary": "Early and mid-term axial length variations are strongly associated with long-term myopia progression under orthokeratology intervention. …",
-        "zh": "角膜塑形術的眼軸變化和長期近視進展：風險分層研究。",
-        "zh_sum": "早期和中期眼軸長度變化與角膜塑形鏡幹預下的長期近視進展密切相關。 ……"
+        "country": "中國",
+        "ptype": "",
+        "zh": "",
+        "zh_sum": ""
       },
       {
         "title": "Network pharmacology and molecular dynamics simulations reveal shared mechanisms and myopia-specific targets of atropine in myopia and dry eye disease.",
@@ -261,8 +317,10 @@
         "date": "2026",
         "pmid": "42324572",
         "summary": "Shared Class I targets may potentially link the effects of atropine on both myopia control and DED, along with Class II targets specific to myopia, thereby generating testable hypotheses regarding the dual ocular effects of atropine and inf …",
-        "zh": "網路藥理學和分子動力學模擬揭示了阿托品在近視和乾眼症中的共同機制和近視特異性標靶。",
-        "zh_sum": "共享的 I 類目標可能會將阿托品對近視控制和 DED 的影響與針對近視的 II 類目標聯繫起來，從而產生關於阿托品和 Inf 的雙重眼部作用的可檢驗假設…"
+        "country": "中國",
+        "ptype": "",
+        "zh": "",
+        "zh_sum": ""
       },
       {
         "title": "Near-Infrared and Red-Light Photobiomodulation for Ocular Aging and Diseases: A Narrative Review.",
@@ -270,8 +328,10 @@
         "date": "2026",
         "pmid": "42323782",
         "summary": "Near-infrared (NIR) and red light photobiomodulation (PBM) has gained increasing interest as a non-invasive therapeutic approach for a variety of medical conditions including ocular diseases. …",
-        "zh": "近紅外線和紅光生物調節對眼老化和疾病的影響：敘述性評論。",
-        "zh_sum": "近紅外線 (NIR) 和紅光生物調節 (PBM) 作為一種針對包括眼部疾病在內的各種醫療狀況的非侵入性治療方法，越來越受到人們的關注。 ……"
+        "country": "英國",
+        "ptype": "文獻回顧",
+        "zh": "",
+        "zh_sum": ""
       }
     ],
     "contactlens": [
@@ -281,8 +341,10 @@
         "date": "2026",
         "pmid": "42434038",
         "summary": "QASCL fitting was associated with clinically meaningful improvements in eyelid elevation, visual acuity, and ocular-surface integrity, together with reductions in symptom severity as measured by OSDI and CLDEQ-8. …",
-        "zh": "使用象限不對稱鞏膜隱形眼鏡治療圓錐角膜顏面神經麻痺的眼瞼抬高和眼表復健：兩個病例係列。",
-        "zh_sum": "QASCL 驗配與眼瞼抬高、視力和眼表完整性方面具有臨床意義的改善以及 OSDI 和 CLDEQ-8 測量的症狀嚴重程度的降低有關。 ……"
+        "country": "美國",
+        "ptype": "病例報告",
+        "zh": "",
+        "zh_sum": ""
       },
       {
         "title": "Corneal Anterior and Posterior Changes in a Patient With Keratitis Associated With",
@@ -290,8 +352,10 @@
         "date": "2026",
         "pmid": "42433616",
         "summary": "Nontuberculous M. chelonae should be considered in patients with treatment-resistant keratitis, especially in contact lens users. …",
-        "zh": "與",
-        "zh_sum": "相關的角膜炎患者的角膜前後變化對於患有難治性角膜炎的患者，尤其是隱形眼鏡使用者，應考慮非結核性龜分枝桿菌。 ……"
+        "country": "日本",
+        "ptype": "",
+        "zh": "",
+        "zh_sum": ""
       },
       {
         "title": "Sterile peripheral corneal infiltration mimicking infectious keratitis following chemical injury: a case report.",
@@ -299,8 +363,10 @@
         "date": "2026",
         "pmid": "42432536",
         "summary": "Chemical toxicity from contaminated contact lenses may trigger a localized sterile immune-mediated corneal infiltrate that can mimic infectious keratitis. …",
-        "zh": "無菌週邊角膜浸潤模仿化學損傷後感染性角膜炎：病例報告。",
-        "zh_sum": "受污染的隱形眼鏡的化學毒性可能會引發局部無菌免疫介導的角膜浸潤，類似於感染性角膜炎。 ……"
+        "country": "韓國",
+        "ptype": "",
+        "zh": "",
+        "zh_sum": ""
       },
       {
         "title": "Recognizing Ocular Milker's Nodule: Diagnostic Clues and Clinical Course in Two Dairy Workers.",
@@ -308,8 +374,10 @@
         "date": "2026",
         "pmid": "42415308",
         "summary": "Milker's nodule is a zoonotic infection caused by the Parapoxvirus (genus Parapoxvirus, family Poxviridae), typically affecting dairy workers through direct contact with infected cattle. …",
-        "zh": "辨識眼部擠乳工結節：兩位乳品工人的診斷線索和臨床過程。",
-        "zh_sum": "擠乳者結節是由副痘病毒（痘病毒科副痘病毒屬）引起的人畜共通傳染病，通常透過直接接觸受感染的牛隻來影響乳牛工人。 ……"
+        "country": "印度",
+        "ptype": "",
+        "zh": "",
+        "zh_sum": ""
       },
       {
         "title": "Short-term OCT-based evaluation of corneal epithelial remodeling with two silicone hydrogel bandage contact lenses after t-PRK.",
@@ -317,8 +385,10 @@
         "date": "2026",
         "pmid": "42412283",
         "summary": "Both bandage contact lens materials demonstrated broadly comparable short-term postoperative epithelial remodeling patterns and refractive outcomes after t-PRK. …",
-        "zh": "t-PRK 後使用兩種矽水凝膠繃帶隱形眼鏡對角膜上皮重塑進行基於 OCT 的短期評估。",
-        "zh_sum": "兩種繃帶隱形眼鏡材質在 t-PRK 後表現出大致可比較的短期術後上皮重塑模式和屈光結果。 ……"
+        "country": "土耳其",
+        "ptype": "隨機對照試驗(RCT)",
+        "zh": "",
+        "zh_sum": ""
       },
       {
         "title": "Real-World in-Home Use Test Evaluation of a Unique Multi-Purpose Solution for Planned Replacement Soft Contact Lens Users.",
@@ -326,8 +396,10 @@
         "date": "2026",
         "pmid": "42404809",
         "summary": "BHP MPS demonstrated strong performance across all key criteria evaluated in this real-world cohort of soft CL wearers for improved CL wear experience.",
-        "zh": "針對計劃更換軟隱形眼鏡使用者的獨特多用途解決方案的真實家庭使用測試評估。",
-        "zh_sum": "BHP MPS 在現實世界的軟 CL 佩戴者群體中評估的所有關鍵標準中均表現出出色的性能，以改善 CL 佩戴體驗。"
+        "country": "美國",
+        "ptype": "",
+        "zh": "",
+        "zh_sum": ""
       },
       {
         "title": "Risk factors for acquisition and severity of Acanthamoeba and Fusarium keratitis in contact lens users-A case-control and clinical-epidemiological study, 2009-2020.",
@@ -335,8 +407,10 @@
         "date": "2026",
         "pmid": "42393849",
         "summary": "Identified preventable risks warrant enhanced communication between eye care providers and CL wearers promoting healthy CL wear and care practices. …",
-        "zh": "隱形眼鏡使用者感染棘阿米巴和鐮刀菌角膜炎及其嚴重程度的危險因子—病例對照和臨床流行病學研究，2009-2020 年。",
-        "zh_sum": "已確定的可預防風險需要加強眼保健提供者和 CL 佩戴者之間的溝通，以促進健康的 CL 佩戴和護理實踐。 ……"
+        "country": "荷蘭",
+        "ptype": "",
+        "zh": "",
+        "zh_sum": ""
       },
       {
         "title": "Genotypic diversity and molecular epidemiology of Acanthamoeba keratitis in China: Identification of novel T4 variants and source attribution.",
@@ -344,8 +418,10 @@
         "date": "2026",
         "pmid": "42392493",
         "summary": "Acanthamoeba keratitis (AK) is a severe, vision-threatening protozoan infection with a rising global incidence linked to contact lens use, necessitating robust genotyping to clarify its epidemiology and pathogenesis. …",
-        "zh": "中國棘阿米巴角膜炎的基因型多樣性和分子流行病學：新型 T4 變異的鑑定和來源歸因。",
-        "zh_sum": "棘阿米巴角膜炎 (AK) 是一種嚴重的、威脅視力的原蟲感染，其全球發病率不斷上升，與隱形眼鏡的使用有關，因此需要進行強有力的基因分型來闡明其流行病學和發病機制。 ……"
+        "country": "中國",
+        "ptype": "",
+        "zh": "",
+        "zh_sum": ""
       },
       {
         "title": "Fusarium keratitis in an older adult without exogenous or traumatic risk factors: A case report on intrinsic ocular surface predisposition.",
@@ -353,8 +429,10 @@
         "date": "2026",
         "pmid": "42389003",
         "summary": "This study highlights the clinical value of MALDI-TOF MS in the identification of pathogens in complex ocular infections. Despite the absence of typical exogenous or traumatic risk factors, the patient developed rapidly progressive invasive …",
-        "zh": "無外源性或創傷性危險因子的老年人鐮刀菌角膜炎：關於眼表內在傾向的病例報告。",
-        "zh_sum": "這項研究強調了 MALDI-TOF MS 在複雜眼部感染病原體鑑定中的臨床價值。儘管不存在典型的外源性或創傷性危險因素，患者仍出現快速進行性侵襲性…"
+        "country": "中國",
+        "ptype": "病例報告",
+        "zh": "",
+        "zh_sum": ""
       },
       {
         "title": "Ivermectin in the Management of Demodex-associated Blepharitis: A Comprehensive Literature Review.",
@@ -362,8 +440,10 @@
         "date": "2026",
         "pmid": "42381191",
         "summary": "Current evidence suggests that ivermectin may represent an effective and overall safe therapeutic option for Demodex-associated blepharitis. …",
-        "zh": "伊維菌素治療蠕形蟎相關性瞼緣炎：綜合文獻綜述。",
-        "zh_sum": "目前的證據表明，伊維菌素可能是蠕形蟎相關性瞼緣炎的一種有效且整體安全的治療選擇。 ……"
+        "country": "義大利",
+        "ptype": "",
+        "zh": "",
+        "zh_sum": ""
       },
       {
         "title": "A 5-year review of fungal keratitis in Oklahoma.",
@@ -371,8 +451,10 @@
         "date": "2026",
         "pmid": "42376305",
         "summary": "The epidemiologic patterns observed in this geographic region of the United States, a mold-predominant environment with frequent steroid misuse and CL-associated disease, highlight the importance of early diagnosis, risk-factor modification …",
-        "zh": "俄克拉荷馬州真菌性角膜炎的五年回顧。",
-        "zh_sum": "在美國這個地理區域觀察到的流行病學模式，是一個以黴菌為主的環境，經常濫用類固醇和 CL 相關疾病，凸顯了早期診斷、危險因子修正的重要性…"
+        "country": "美國",
+        "ptype": "",
+        "zh": "",
+        "zh_sum": ""
       },
       {
         "title": "Emerging treatments in fungal keratitis.",
@@ -380,8 +462,10 @@
         "date": "2026",
         "pmid": "42376301",
         "summary": "Fungal keratitis is a major cause of corneal blindness, particularly in tropical and low-resource settings, and remains challenging to manage due to delayed diagnosis, limited drug penetration, emerging resistance, and host-mediated tissue  …",
-        "zh": "真菌性角膜炎的新興治療方法。",
-        "zh_sum": "真菌性角膜炎是角膜失明的主要原因，特別是在熱帶和資源匱乏的環境中，由於診斷延遲、藥物滲透有限、新出現的抗藥性和宿主介導的組織，治療仍然具有挑戰性…"
+        "country": "印度",
+        "ptype": "",
+        "zh": "",
+        "zh_sum": ""
       },
       {
         "title": "Outcomes of corneal perforations secondary to microbial keratitis at a tertiary care center: A case series.",
@@ -389,8 +473,10 @@
         "date": "2026",
         "pmid": "42376300",
         "summary": "Corneal perforation due to microbial keratitis remains a severe, vision-threatening complication requiring timely and often surgical intervention. Delayed presentation and central ulceration were associated with poorer outcomes. …",
-        "zh": "三級護理中心繼發於微生物性角膜炎的角膜穿孔的結果：病例係列。",
-        "zh_sum": "微生物角膜炎引起的角膜穿孔仍然是一種嚴重的、危及視力的併發症，需要及時且頻繁的手術幹預。延遲就診和中央潰瘍與較差的預後相關。 ……"
+        "country": "美國",
+        "ptype": "",
+        "zh": "",
+        "zh_sum": ""
       },
       {
         "title": "Bacterial keratitis: a global review of current practices, challenges and innovations.",
@@ -398,8 +484,10 @@
         "date": "2026",
         "pmid": "42373310",
         "summary": "Bacterial keratitis is a major cause of corneal blindness worldwide, with marked differences in clinical presentation and risk factors across regions. …",
-        "zh": "細菌性角膜炎：當前實踐、挑戰和創新的全球回顧。",
-        "zh_sum": "細菌性角膜炎是全世界角膜失明的主要原因，不同地區的臨床表現和危險因子有顯著差異。 ……"
+        "country": "法國",
+        "ptype": "文獻回顧",
+        "zh": "",
+        "zh_sum": ""
       },
       {
         "title": "Medical management of multifocal immune-mediated punctate keratitis in 3 dogs: A case series.",
@@ -407,8 +495,10 @@
         "date": "2026",
         "pmid": "42368697",
         "summary": "Multifocal immune-mediated punctate keratitis (MIPK) is an uncommon corneal disease in dogs characterized by multifocal anterior stromal opacities with fluorescein retention that may not respond to conventional therapy for superficial corne …",
-        "zh": "三隻狗多灶性免疫介導的點狀角膜炎的醫療治療：病例係列。",
-        "zh_sum": "多灶性免疫介導的點狀角膜炎 (MIPK) 是狗中一種罕見的角膜疾病，其特徵是多灶性前基質混濁伴螢光素滯留，可能對淺表角膜的常規療法沒有反應…"
+        "country": "韓國",
+        "ptype": "病例報告",
+        "zh": "",
+        "zh_sum": ""
       },
       {
         "title": "Therapeutic efficacy of cenegermin in the management of neurotrophic keratitis: a systematic review and meta-analysis of randomized controlled trials.",
@@ -416,8 +506,10 @@
         "date": "2026",
         "pmid": "42368179",
         "summary": "Cenegermin is an effective and well-tolerated, disease-modifying therapy for moderate to severe NK. It nearly doubles the likelihood of complete corneal healing and represents an important addition to the therapeutic options available for t …",
-        "zh": "cenegermin 治療神經營養性角膜炎的療效：隨機對照試驗的系統性回顧與統合分析。",
-        "zh_sum": "Cenegermin 是一種有效且耐受性良好的緩解中度至重度 NK 疾病的療法。它幾乎使角膜完全癒合的可能性增加了一倍，並且是對可用於治療的選擇的重要補充..."
+        "country": "沙烏地",
+        "ptype": "",
+        "zh": "",
+        "zh_sum": ""
       },
       {
         "title": "In Vitro Inhibition of Bacterial Interactions With Acanthamoeba castellanii by a Monoclonal Antibody Against Galactose-Binding Protein.",
@@ -425,8 +517,10 @@
         "date": "2026",
         "pmid": "42367503",
         "summary": "Introduction Acanthamoeba castellanii causes amoebic keratitis (AK), primarily in contact lens wearers, and severe lesions may require corneal transplantation. …",
-        "zh": "透過針對半乳糖結合蛋白的單株抗體體外抑制細菌與卡氏棘阿米巴的相互作用。",
-        "zh_sum": "簡介 卡氏棘阿米巴引起阿米巴角膜炎 (AK)，主要發生在隱形眼鏡配戴者中，嚴重病變可能需要角膜移植。 ……"
+        "country": "美國",
+        "ptype": "",
+        "zh": "",
+        "zh_sum": ""
       },
       {
         "title": "[Friction: the effect on the ocular surface].",
@@ -434,8 +528,10 @@
         "date": "2026",
         "pmid": "42366660",
         "summary": "The adverse consequences of friction in biological structures include wear and discomfort. The tribological model of the eye comprises two rubbing surfaces and lubrication provided by the complex composition of the tear film. …",
-        "zh": "[摩擦：對眼表的影響]。",
-        "zh_sum": "生物結構中摩擦的不利後果包括磨損和不適。眼睛的摩擦學模型包括兩個摩擦表面和由淚膜的複雜成分提供的潤滑。 ……"
+        "country": "",
+        "ptype": "文獻回顧",
+        "zh": "",
+        "zh_sum": ""
       },
       {
         "title": "Development of a model for the clinical prediction of contact lens discomfort.",
@@ -443,8 +539,10 @@
         "date": "2026",
         "pmid": "42364421",
         "summary": "Modeling CLD as a latent, multidimensional construct integrating subjective and objective measures allows identification of clinically meaningful phenotypes and supports the development of an easy-to-use classifier with excellent discrimina …",
-        "zh": "開發隱形眼鏡不適臨床預測模型。",
-        "zh_sum": "將 CLD 建模為整合主觀和客觀測量的潛在多維結構，可以識別有臨床意義的表型，並支援開發具有出色辨別力的易於使用的分類器…"
+        "country": "西班牙",
+        "ptype": "",
+        "zh": "",
+        "zh_sum": ""
       },
       {
         "title": "Risk behaviors for infectious Keratitis among contact lens wearers in Switzerland: an analysis by contact lens type.",
@@ -452,8 +550,10 @@
         "date": "2026",
         "pmid": "42364370",
         "summary": "This study revealed variations in hygiene practices, wearing behavior, exposure to water or saliva, and risk perception across different CL types. …",
-        "zh": "瑞士隱形眼鏡配戴者感染性角膜炎的風險行為：依隱形眼鏡類型進行分析。",
-        "zh_sum": "這項研究揭示了不同 CL 類型在衛生習慣、穿戴行為、接觸水或唾液以及風險認知方面的差異。 ……"
+        "country": "瑞士",
+        "ptype": "",
+        "zh": "",
+        "zh_sum": ""
       },
       {
         "title": "Contact Lens-Associated Ocular Surface and Corneal Disorders.",
@@ -461,8 +561,10 @@
         "date": "2026",
         "pmid": "42347048",
         "summary": "Contact lens wear is widely used for vision correction by millions of individuals worldwide; however, it remains associated with a spectrum of ocular complications ranging from mild inflammatory conditions to vision-threatening infections. …",
-        "zh": "隱形眼鏡相關的眼表和角膜疾病。",
-        "zh_sum": "全球數百萬人廣泛使用隱形眼鏡來矯正視力；然而，它仍然與一系列眼部併發症有關，從輕度發炎到威脅視力的感染。 ……"
+        "country": "美國",
+        "ptype": "文獻回顧",
+        "zh": "",
+        "zh_sum": ""
       },
       {
         "title": "The Effect of The Changes in Cylinder Power and Axis of Toric Soft Contact Lenses on Vision of Astigmatic Subjects.",
@@ -470,8 +572,10 @@
         "date": "2026",
         "pmid": "42343195",
         "summary": "Toric SCL with higher cylindrical power by 0.5DC and 1.0DC as well as misalignment of 10° had a significant effect on visual acuity, contrast sensitivity, clarity, satisfaction, and vision acceptability in patients with mild to moderate ast …",
-        "zh": "環面軟式隱形眼鏡柱鏡度數和軸的變化對散光受試者視力的影響。",
-        "zh_sum": "Toric SCL 具有較高的柱光度 0.5DC 和 1.0DC 以及 10° 的錯位，對輕度至中度視力障礙患者的視力、對比敏感度、清晰度、滿意度和視力可接受性有顯著影響。"
+        "country": "",
+        "ptype": "",
+        "zh": "",
+        "zh_sum": ""
       },
       {
         "title": "Severe corneal melting with necrotic sloughing in Acanthamoeba keratitis mimicking corneal endotheliitis.",
@@ -479,8 +583,10 @@
         "date": "2026",
         "pmid": "42340598",
         "summary": "This case illustrates a diagnostically challenging form of AK that initially mimicked corneal endotheliitis, yielded negative scraping-based microbiological tests, and was ultimately confirmed by histopathologic examination of spontaneously …",
-        "zh": "棘阿米巴角膜炎類似角膜內皮炎，嚴重角膜融化並伴隨壞死脫落。",
-        "zh_sum": "該病例說明了一種診斷上具有挑戰性的 AK 形式，它最初模仿角膜內皮炎，產生基於刮擦的微生物測試陰性，並最終通過自發的組織病理學檢查得到證實…"
+        "country": "日本",
+        "ptype": "",
+        "zh": "",
+        "zh_sum": ""
       },
       {
         "title": "Neurotrophic Keratitis Associated With Telisotuzumab Vedotin: A Case Report.",
@@ -488,8 +594,10 @@
         "date": "2026",
         "pmid": "42340245",
         "summary": "This report describes the first documented case of NK associated with Teliso-V therapy. The temporal association between Teliso-V exposure, bilateral corneal hypoesthesia, persistent epithelial defects, and concurrent peripheral neuropathy  …",
-        "zh": "與 Telisotuzumab Vedotin 相關的神經營養性角膜炎：病例報告。",
-        "zh_sum": "本報告描述了第一個有記錄的與 Teliso-V 療法相關的 NK 病例。 Teliso-V 暴露、雙側角膜感覺減退、持續性上皮缺陷和併發周圍神經病變之間的時間關聯…"
+        "country": "",
+        "ptype": "",
+        "zh": "",
+        "zh_sum": ""
       },
       {
         "title": "Effects of Geometrically Centered and Offset Soft Multifocal Optics on Vision Quality in Myopes.",
@@ -497,8 +605,10 @@
         "date": "2026",
         "pmid": "42335852",
         "summary": "OFO CDMFSCLs improved optical alignment and reduced wavefront aberrations, but increased spherical aberration. Optimizing optical alignment may enhance visual quality, offering significant implications for lens customization.",
-        "zh": "幾何中心和偏置軟多焦點光學元件對近視患者視覺品質的影響。",
-        "zh_sum": "OFO CDMFSCL 改善了光學對準並減少了波前像差，但增加了球面像差。優化光學對準可以提高視覺質量，對鏡頭客製化產生重大影響。"
+        "country": "美國",
+        "ptype": "",
+        "zh": "",
+        "zh_sum": ""
       },
       {
         "title": "Exogenous Fusarium Endophthalmitis: Clinical Features, Treatment Modalities, and Visual Outcomes.",
@@ -506,8 +616,10 @@
         "date": "2026",
         "pmid": "42329069",
         "summary": "Exogenous Fusarium endophthalmitis is a serious ocular infection requiring multimodal therapy and multiple surgical interventions, yet long-term visual outcomes remain poor. …",
-        "zh": "外源性鐮刀菌眼內炎：臨床特徵、治療方式與視力結果。",
-        "zh_sum": "外源性鐮刀菌眼內炎是一種嚴重的眼部感染，需要多模式治療和多次手術幹預，但長期視力結果仍然不佳。 ……"
+        "country": "美國",
+        "ptype": "",
+        "zh": "",
+        "zh_sum": ""
       },
       {
         "title": "Optical myopia control interventions: Evaluation of methods and success in a real-world population.",
@@ -515,8 +627,10 @@
         "date": "2026",
         "pmid": "42323277",
         "summary": "Monitoring the rate of AL progression prior to intervention has advantages such as predicting and measuring success in this UK clinical population. …",
-        "zh": "光學近視控制干預措施：對現實世界人群中的方法和成功的評估。",
-        "zh_sum": "在幹預前監測 AL 進展率具有預測和衡量英國臨床人群成功率等優勢。 ……"
+        "country": "英國",
+        "ptype": "比較性研究",
+        "zh": "",
+        "zh_sum": ""
       },
       {
         "title": "Microplastic contamination associated with contact lenses and related ophthalmic materials under real-world conditions.",
@@ -524,8 +638,10 @@
         "date": "2026",
         "pmid": "42320335",
         "summary": "Contact lens associated materials represent relevant sources of microplastic exposure in ophthalmic practice. Repeated exposure during prolonged contact lens wear may facilitate cumulative microplastic accumulation at the ocular surface. …",
-        "zh": "現實條件下與隱形眼鏡和相關眼科材料相關的微塑膠污染。",
-        "zh_sum": "隱形眼鏡相關材料代表了眼科實踐中微塑膠暴露的相關來源。長時間配戴隱形眼鏡期間的重複暴露可能會促進眼表微塑膠的累積。 ……"
+        "country": "德國",
+        "ptype": "",
+        "zh": "",
+        "zh_sum": ""
       },
       {
         "title": "Trends in pathogens causing microbial keratitis in studies conducted in Mexico: a 38-year literature review.",
@@ -533,8 +649,10 @@
         "date": "2026",
         "pmid": "42319559",
         "summary": "In the reviewed studies from Mexico, reported non-viral infectious keratitis cases were most commonly caused by bacteria, particularly gram-positive organisms. …",
-        "zh": "在墨西哥進行的研究中引起微生物性角膜炎的病原體趨勢：38 年文獻綜述。",
-        "zh_sum": "在墨西哥的審查研究中，報告的非病毒感染性角膜炎病例最常見是由細菌，特別是革蘭氏陽性菌引起的。 ……"
+        "country": "墨西哥",
+        "ptype": "文獻回顧",
+        "zh": "",
+        "zh_sum": ""
       }
     ],
     "lens": [
@@ -544,8 +662,10 @@
         "date": "2026",
         "pmid": "42432679",
         "summary": "Acute exacerbations of COPD (AECOPDs) are critical events often associated with prolonged and incomplete recovery. Early recognition and prompt treatment of AECOPDs, which is rarely achieved in routine outpatient care, may influence the acu …",
-        "zh": "及時治療慢性阻塞性肺病惡化與有限的急性惡化和早期恢復有關：一項前瞻性觀察研究。",
-        "zh_sum": "COPD 急性惡化 (AECOPD) 是嚴重事件，通常與恢復時間延長和不完全相關。 AECOPD 的早期識別和及時治療在常規門診護理中很少實現，這可能會影響急性發作…"
+        "country": "德國",
+        "ptype": "",
+        "zh": "",
+        "zh_sum": ""
       },
       {
         "title": "Optical Performance of a Novel Non-diffractive Presbyopia-Correcting Intraocular Lens as a Function of Defocus and Pupil Size.",
@@ -553,8 +673,10 @@
         "date": "2026",
         "pmid": "42429238",
         "summary": "The Galaxy IOL exhibits pupil-dependent optical performance, shifting from optimal distance vision with large pupils to improved intermediate and near vision at smaller apertures. …",
-        "zh": "新型非衍射老花眼矯正人工水晶體的光學性能與散焦和瞳孔大小的函數關係。",
-        "zh_sum": "Galaxy IOL 表現出與瞳孔相關的光學性能，從大瞳孔的最佳遠視力轉變為較小孔徑的中視力和近距離視力的改善。 ……"
+        "country": "義大利",
+        "ptype": "",
+        "zh": "",
+        "zh_sum": ""
       },
       {
         "title": "Neuro-Optometric Rehabilitation to Prevent Post-concussion Visual Complications: A Case Report.",
@@ -562,8 +684,10 @@
         "date": "2026",
         "pmid": "42428174",
         "summary": "A concussion is a mild traumatic brain injury (mTBI) caused by an insult to the brain from an outside force. It is a concerning health issue affecting all ages, sexes, and races. …",
-        "zh": "神經驗光復健預防腦震盪後視覺併發症：病例報告。",
-        "zh_sum": "腦震盪是一種輕度創傷性腦損傷 (mTBI)，由外力對大腦的損傷引起。這是一個影響所有年齡、性別和種族的令人擔憂的健康問題。 ……"
+        "country": "美國",
+        "ptype": "病例報告",
+        "zh": "",
+        "zh_sum": ""
       },
       {
         "title": "Exploring challenges and community support for hard-to-reach persons with visual impairment in the Free State province, South Africa: A qualitative study.",
@@ -571,8 +695,10 @@
         "date": "2026",
         "pmid": "42427825",
         "summary": "The challenges limit the capacity to deliver appropriate interventions to persons with visual impairment, further exacerbating the gap in care for the hard-to-reach. …",
-        "zh": "探索南非自由州省難以接觸到的視力障礙人士所面臨的挑戰和社區支持：一項質性研究。",
-        "zh_sum": "這些挑戰限制了向視力障礙者提供適當幹預措施的能力，進一步加劇了對難以接觸到的人的護理差距。 ……"
+        "country": "",
+        "ptype": "",
+        "zh": "",
+        "zh_sum": ""
       },
       {
         "title": "Community-based interventions for non-communicable diseases in Africa: a scoping review of scope, effectiveness, and implementation factors.",
@@ -580,8 +706,10 @@
         "date": "2026",
         "pmid": "42426672",
         "summary": "Community-based interventions for NCDs in Africa demonstrate huge potential to counter the rising NCD burden but encounter significant challenges; successful implementation requires resource sensitive and cultural tailored strategies.",
-        "zh": "非洲非傳染性疾病社區介入措施：範圍、有效性和實施因素的範圍界定檢討。",
-        "zh_sum": "非洲針對非傳染性疾病的社區介入措施顯示出應對日益增加的非傳染性疾病負擔的巨大潛力，但也遇到了重大挑戰；成功的實施需要資源敏感且針對文化的策略。"
+        "country": "",
+        "ptype": "系統性回顧",
+        "zh": "",
+        "zh_sum": ""
       },
       {
         "title": "Macular pigment optical density correlates inversely with intraretinal light scatter in support of a polarization-dependent glare-reduction mechanism.",
@@ -589,8 +717,10 @@
         "date": "2026",
         "pmid": "42426101",
         "summary": "Macular pigments are thought to protect the retina from photo-oxidative stress and enhance visual performance by filtering short-wavelength light. Their role in mitigating intraretinal light scatter remains uncertain. …",
-        "zh": "黃斑色素光密度與視網膜內光散射成反比，支持偏振依賴性眩光減少機制。",
-        "zh_sum": "黃斑色素被認為可以保護視網膜免受光氧化應激，並通過過濾短波長光來增強視覺性能。它們在減輕視網膜內光散射方面的作用仍不確定。 ……"
+        "country": "英國",
+        "ptype": "",
+        "zh": "",
+        "zh_sum": ""
       },
       {
         "title": "Eccentric fixation.",
@@ -598,8 +728,10 @@
         "date": "2026",
         "pmid": "42425593",
         "summary": "Eccentric fixation (EF) is a visual adaptation that develops in response to foveal damage or developmental disorders such as amblyopia and strabismus, allowing patients to maintain binocular vision function, although it is associated with r …",
-        "zh": "偏心固定。",
-        "zh_sum": "偏心注視 (EF) 是一種視覺適應，針對中心凹損傷或弱視和斜視等發育障礙而發展，允許患者保持雙眼視覺功能，儘管它與 r …"
+        "country": "伊朗",
+        "ptype": "文獻回顧",
+        "zh": "",
+        "zh_sum": ""
       },
       {
         "title": "Gait kinematics during walking in children with impaired binocular vision due to amblyopia or strabismus.",
@@ -607,8 +739,10 @@
         "date": "2026",
         "pmid": "42425056",
         "summary": "Impaired binocular vision early in life from amblyopia or strabismus is related to lower scores than controls for walking on standardized tests of motor ability. …",
-        "zh": "因弱視或斜視而導致雙眼視力受損的兒童行走時的步態運動學。",
-        "zh_sum": "生命早期因弱視或斜視而導致的雙眼視力受損與標準化運動能力測試中步行得分低於對照組有關。 ……"
+        "country": "加拿大",
+        "ptype": "",
+        "zh": "",
+        "zh_sum": ""
       },
       {
         "title": "Topological expansion of Boehm's brushes via structured light.",
@@ -616,8 +750,10 @@
         "date": "2026",
         "pmid": "42424426",
         "summary": "We report an entoptic phenomenon in which the classical two-lobed Boehm's brushes are transformed into a multilobed structure by projecting spin-orbit-coupled light onto the human retina. …",
-        "zh": "透過結構光對伯姆畫筆進行拓樸擴展。",
-        "zh_sum": "我們報告了一種內視現象，其中經典的兩瓣伯姆刷通過將自旋軌道耦合光投射到人類視網膜上而轉變為多瓣結構。 ……"
+        "country": "加拿大",
+        "ptype": "",
+        "zh": "",
+        "zh_sum": ""
       },
       {
         "title": "Characterization of Rcbtb1 Knockout Mice and Evaluation of AAV2-RCBTB1 Gene Replacement Therapy.",
@@ -625,8 +761,10 @@
         "date": "2026",
         "pmid": "42423411",
         "summary": "Rcbtb1-KO mice showed accelerated outer retinal thinning, increased mitochondrial damage in the RPE, and photoreceptor apoptosis. …",
-        "zh": "Rcbtb1 敲除小鼠的表徵和 AAV2-RCBTB1 基因替代療法的評估。",
-        "zh_sum": "Rcbtb1-KO 小鼠表現出外層視網膜加速變薄、RPE 中線粒體損傷增加以及光感受器凋亡。 ……"
+        "country": "澳洲",
+        "ptype": "",
+        "zh": "",
+        "zh_sum": ""
       },
       {
         "title": "Acute retinal necrosis presenting exudative retinal detachment: a case report.",
@@ -634,8 +772,10 @@
         "date": "2026",
         "pmid": "42422832",
         "summary": "Exudative retinal detachment is a rare manifestation of early-stage ARN. In uveitis patients presenting with ERD who show a poor response to initial anti-inflammatory therapy, viral infection (particularly VZV) should be considered in the d …",
-        "zh": "急性視網膜壞死表現為滲出性視網膜剝離：病例報告。",
-        "zh_sum": "滲出性視網膜剝離是早期 ARN 的罕見表現。對於出現 ERD 的葡萄膜炎患者，如果對初始抗發炎治療反應不佳，應在治療期間考慮病毒感染（特別是 VZV）…"
+        "country": "中國",
+        "ptype": "病例報告",
+        "zh": "",
+        "zh_sum": ""
       },
       {
         "title": "Role of tyrosinase in ocular growth and myopia development in a guinea pig model.",
@@ -643,8 +783,10 @@
         "date": "2026",
         "pmid": "42420402",
         "summary": "Tyrosinase participates in melanin synthesis and may also contribute to L-3,4-dihydroxyphenylalanine (L-DOPA)-related dopamine metabolism during development. …",
-        "zh": "酪胺酸酶在豚鼠模型眼生長和近視發展中的作用。",
-        "zh_sum": "酪胺酸酶參與黑色素合成，也可能有助於發育過程中 L-3,4-二羥基苯丙胺酸 (L-DOPA) 相關的多巴胺代謝。 ……"
+        "country": "中國",
+        "ptype": "",
+        "zh": "",
+        "zh_sum": ""
       },
       {
         "title": "Distance judgement in individuals with vision and hearing loss.",
@@ -652,8 +794,10 @@
         "date": "2026",
         "pmid": "42420373",
         "summary": "Distance judgement is essential for safe navigation. People with vision loss (VL) increasingly rely on hearing for distance judgement. …",
-        "zh": "有視力和聽力損失的人的距離判斷。",
-        "zh_sum": "距離判斷對於安全導航至關重要。視力喪失 (VL) 患者越來越依賴聽覺來判斷距離。 ……"
+        "country": "美國",
+        "ptype": "",
+        "zh": "",
+        "zh_sum": ""
       },
       {
         "title": "Assessing referral quality in glaucoma care: a retrospective analysis of clinical data in optometrist and ophthalmologist referrals.",
@@ -661,8 +805,10 @@
         "date": "2026",
         "pmid": "42419692",
         "summary": "Glaucoma referral completeness differs significantly by referral source. Optometry referrals were more complete than ophthalmology referrals; however, both groups demonstrated gaps that may impact clinical assessment. …",
-        "zh": "評估青光眼護理的轉診品質：驗光師和眼科醫師轉診臨床資料的回顧性分析。",
-        "zh_sum": "青光眼轉診完整性因轉診來源而有顯著差異。驗光轉診比眼科轉診更完整；然而，兩組都表現出可能影響臨床評估的差距。 ……"
+        "country": "",
+        "ptype": "",
+        "zh": "",
+        "zh_sum": ""
       },
       {
         "title": "Association Between Corneal Biomechanics and Retinal Microvascular Perfusion in Myopic Eyes With Ocular Hypertension: An OCTA and Corvis ST Study.",
@@ -670,8 +816,10 @@
         "date": "2026",
         "pmid": "42419474",
         "summary": "Myopic eyes with OHT exhibit stiffer corneal biomechanics before detectable glaucomatous damage. This stiffness is associated with a tendency toward reduced retinal microvascular perfusion, suggesting a link between early biomechanical alte …",
-        "zh": "伴隨高眼壓的近視眼角膜生物力學與視網膜微血管灌注之間的關聯：OCTA 和 Corvis ST 研究。",
-        "zh_sum": "患有 OHT 的近視眼在可檢測到的青光眼損傷之前表現出更僵硬的角膜生物力學。這種僵硬與視網膜微血管灌注減少的趨勢有關，這表明​​早期生物力學變化之間存在關聯…"
+        "country": "中國",
+        "ptype": "",
+        "zh": "",
+        "zh_sum": ""
       },
       {
         "title": "Balance Performance in People With Peripheral Visual Field Loss: A Systematic Review and Meta-Analysis.",
@@ -679,8 +827,10 @@
         "date": "2026",
         "pmid": "42417597",
         "summary": "Adults with PVFL demonstrate significant balance impairments compared to healthy peers, relying more on somatosensory input to compensate for visual deficits. …",
-        "zh": "週邊視野喪失患者的平衡表現：系統性回顧與統合分析。",
-        "zh_sum": "與健康同齡人相比，患有 PVFL 的成年人表現出明顯的平衡障礙，更依賴體感輸入來補償視覺缺陷。 ……"
+        "country": "香港",
+        "ptype": "統合分析",
+        "zh": "",
+        "zh_sum": ""
       },
       {
         "title": "Mapping Multiscale Brain Changes in Primary Angle-Closure Glaucoma Using Regional Radiomics Similarity Networks.",
@@ -688,8 +838,10 @@
         "date": "2026",
         "pmid": "42416896",
         "summary": "PACG is associated with widespread structural brain network reorganization beyond the visual system.R2SN-derived network features may provide sensitive imaging markers of central structural reorganization and offer a multiscale framework fo …",
-        "zh": "使用區域放射組學相似網絡繪製原發性閉角型青光眼的多尺度大腦變化。",
-        "zh_sum": "PACG 與視覺系統之外廣泛的結構性腦網絡重組有關。 R2SN 衍生的網絡特徵可以提供中央結構重組的敏感成像標記，並為…提供多尺度框架。"
+        "country": "中國",
+        "ptype": "",
+        "zh": "",
+        "zh_sum": ""
       },
       {
         "title": "Clinical Outcomes After Bilateral Mix-and-match Implantation of Extended Depth of Focus and Trifocal Intraocular Lenses.",
@@ -697,8 +849,10 @@
         "date": "2026",
         "pmid": "42415634",
         "summary": "Bilateral Mix-and-match Implantation of EDOF and Trifocal IOL implantation showed good visual outcomes for distance, intermediate, and near vision until 12 months. …",
-        "zh": "雙側混合搭配植入擴展焦深和三焦點人工水晶體後的臨床結果。",
-        "zh_sum": "雙側混合搭配 EDOF 植入和三焦點 IOL 植入在 12 個月前顯示出良好的遠端視力、中視力和近距離視力視力結果。 ……"
+        "country": "韓國",
+        "ptype": "",
+        "zh": "",
+        "zh_sum": ""
       },
       {
         "title": "Randomized comparison of lipid-containing and non-lipid-containing artificial tears on tear film dynamics over a 3-month period.",
@@ -706,8 +860,10 @@
         "date": "2026",
         "pmid": "42415246",
         "summary": "Patients with lipid deficiency may benefit from lipid-containing AT over the non-lipid-containing AT to stabilize tear lipid thickness and minimize tear thinning while increasing tear breakup time.",
-        "zh": "三個月內含脂和不含脂人工淚液對淚膜動態的隨機比較。",
-        "zh_sum": "與不含脂質的 AT 相比，脂質缺乏的患者可能受益於含脂質 AT，以穩定淚液脂質厚度並最大程度地減少淚液變薄，同時增加淚液破裂時間。"
+        "country": "美國",
+        "ptype": "隨機對照試驗(RCT)",
+        "zh": "",
+        "zh_sum": ""
       },
       {
         "title": "Publisher Correction: Clinical evaluation of a new fully automated biometer integrating optical low-coherence reflectometry and Placido-disk topography.",
@@ -715,7 +871,9 @@
         "date": "2026",
         "pmid": "42415155",
         "summary": "",
-        "zh": "出版商更正：整合光學低相干反射計和 Placido 盤形貌的新型全自動生物計的臨床評估。",
+        "country": "中國",
+        "ptype": "",
+        "zh": "",
         "zh_sum": ""
       },
       {
@@ -724,8 +882,10 @@
         "date": "2026",
         "pmid": "42414468",
         "summary": "This study investigated changes in peripheral defocus before and after keratorefractive lenticule extraction (KLEx) and examined the associations between surgical design parameters and changes in peripheral defocus. …",
-        "zh": "設計參數對角膜屈光微透鏡摘除後週邊散焦的影響。",
-        "zh_sum": "本研究調查了角膜屈光微透鏡摘除術 (KLEx) 前後週邊散焦的變化，並檢驗了手術設計參數與週邊散焦變化之間的關聯。 ……"
+        "country": "中國",
+        "ptype": "",
+        "zh": "",
+        "zh_sum": ""
       },
       {
         "title": "Multifunctional properties of iron oxide nanorod-reinforced hydroxypropyl methylcellulose/chitosan biopolymer electrolytes for energy storage applications.",
@@ -733,8 +893,10 @@
         "date": "2026",
         "pmid": "42414412",
         "summary": "Biodegradable hydroxypropyl methylcellulose/chitosan (HPMC/Cs) polymer electrolytes reinforced with iron oxide (Fe2O3) nanorods were fabricated via a solution casting method, and their structural, optical, dielectric, and ion transport prop …",
-        "zh": "用於儲能應用的氧化鐵奈米棒增強羥丙基甲基纖維素/殼聚醣生物聚合物電解質的多功能特性。",
-        "zh_sum": "透過溶液澆鑄法製備了氧化鐵（Fe2O3）奈米棒增強的可生物降解羥丙基甲基纖維素/殼聚醣（HPMC/Cs）聚合物電解質，及其結構、光學、介電和離子傳輸特性…"
+        "country": "沙烏地",
+        "ptype": "",
+        "zh": "",
+        "zh_sum": ""
       },
       {
         "title": "Chronic intermittent hypoxia impairs glymphatic function in male mice through ENT-dependent adenosine dysregulation.",
@@ -742,8 +904,10 @@
         "date": "2026",
         "pmid": "42412752",
         "summary": "Chronic intermittent hypoxia (CIH), a defining feature of obstructive sleep apnea, is strongly associated with cognitive impairment and increased risk of neurodegenerative disease, yet the underlying mechanisms linking hypoxic stress to dis …",
-        "zh": "慢性間歇性缺氧透過耳鼻喉科依賴性腺苷失調損害雄性小鼠的類淋巴功能。",
-        "zh_sum": "慢性間歇性缺氧（CIH）是阻塞性睡眠呼吸中止症的一個明顯特徵，與認知障礙和神經退化性疾病風險增加密切相關，但將缺氧壓力與疾病聯繫起來的潛在機制..."
+        "country": "中國",
+        "ptype": "",
+        "zh": "",
+        "zh_sum": ""
       },
       {
         "title": "Structural, optical, and morphological characterization of Cd",
@@ -751,8 +915,10 @@
         "date": "2026",
         "pmid": "42412270",
         "summary": "CdxCo1-xFe2O4 (x = 0.25, 0.50, 0.75) spinel ferrite nanoparticles were successfully synthesized using the co-precipitation technique. …",
-        "zh": "Cd 的結構、光學和形態表徵",
-        "zh_sum": "採用共沉澱技術成功合成了 CdxCo1-xFe2O4 (x = 0.25, 0.50, 0.75) 尖晶石鐵氧體奈米顆粒。 ……"
+        "country": "",
+        "ptype": "",
+        "zh": "",
+        "zh_sum": ""
       },
       {
         "title": "Central and peripheral retinal image quality in high myopia: effects of corneal and intraocular refractive correction.",
@@ -760,8 +926,10 @@
         "date": "2026",
         "pmid": "42412257",
         "summary": "FS-LASIK, SMILE, and phakic ICL implantation effectively restore high central retinal image quality in high myopia, although the impact on peripheral retinal optical quality varies. …",
-        "zh": "高度近視的中央和周邊視網膜影像品質：角膜和眼內屈光矯正的影響。",
-        "zh_sum": "FS-LASIK、SMILE和有晶狀體眼ICL植入術可以有效恢復高度近視的中央視網膜影像質量，儘管對週邊視網膜光學品質的影響各不相同。 ……"
+        "country": "中國",
+        "ptype": "",
+        "zh": "",
+        "zh_sum": ""
       },
       {
         "title": "High-Frequency Repetitive Transcranial Magnetic Stimulation Improves Oxidative Stress, Iron Metabolism, and Synaptic Plasticity in the Visual Cortex of Amblyopic Rats: Association With the NRF2/GPX4 Pathway.",
@@ -769,8 +937,10 @@
         "date": "2026",
         "pmid": "42411431",
         "summary": "High-frequency rTMS improves abnormal OD distribution in amblyopic rats, an effect associated with the upregulation of NRF2/GPX4 pathway protein expression, reduced oxidative stress, restored iron metabolism, and enhanced synaptic plasticit …",
-        "zh": "高頻重複經顱磁刺激改善弱視大鼠視覺皮質的氧化壓力、鐵代謝和突觸可塑性：與 NRF2/GPX4 路徑的關聯。",
-        "zh_sum": "高頻 rTMS 改善了弱視大鼠的異常 OD 分佈，這種作用與上調 NRF2/GPX4 通路蛋白表達、減少氧化壓力、恢復鐵代謝和增強突觸可塑性有關…"
+        "country": "中國",
+        "ptype": "",
+        "zh": "",
+        "zh_sum": ""
       },
       {
         "title": "Impact of crowding on visual appearance and performance in amblyopia.",
@@ -778,8 +948,10 @@
         "date": "2026",
         "pmid": "42407234",
         "summary": "Individuals with amblyopia have been reported to perceive stimuli as distorted with the amblyopic eye, and to have stronger foveal crowding than controls without amblyopia. …",
-        "zh": "擁擠對弱視視覺外觀和表現的影響。",
-        "zh_sum": "據報道，患有弱視的人用弱視眼感知到的刺激是扭曲的，並且比沒有弱視的對照者有更強烈的中心凹擁擠。 ……"
+        "country": "美國",
+        "ptype": "",
+        "zh": "",
+        "zh_sum": ""
       },
       {
         "title": "Effects of task explanation on stereoacuity measurements using a random-dot stereotest.",
@@ -787,8 +959,10 @@
         "date": "2026",
         "pmid": "42407153",
         "summary": "Enhanced instructions with visual cues significantly improved stereoacuity outcomes beyond expected test-retest variability, highlighting the importance of instruction quality and task engagement in stereopsis assessment, which should be ca …",
-        "zh": "使用隨機點立體測試任務解釋對立體視度測量的影響。",
-        "zh_sum": "帶有視覺提示的增強指令顯著改善了立體視結果，超出了預期的重測變異性，強調了立體視評估中指令品質和任務參與的重要性，這應該是…"
+        "country": "西班牙",
+        "ptype": "",
+        "zh": "",
+        "zh_sum": ""
       },
       {
         "title": "Sensory Eye Dominance Remains Stable Across Binocular Combination and Rivalry in Normal and Anisometropic Amblyopic Vision.",
@@ -796,8 +970,10 @@
         "date": "2026",
         "pmid": "42405672",
         "summary": "Sensory eye dominance is relatively stable across the continuum from binocular combination to rivalry and does not exhibit orientation selectivity in either healthy or amblyopic observers, with greater imbalance shown in the amblyopic group …",
-        "zh": "感覺眼的優勢在雙眼組合和正常和屈光參差性弱視視覺的競爭中保持穩定。",
-        "zh_sum": "從雙眼組合到競爭的整個過程中，感覺眼優勢相對穩定，並且在健康或弱視觀察者中不表現出方向選擇性，弱視組中表現出更大的不平衡......"
+        "country": "中國",
+        "ptype": "",
+        "zh": "",
+        "zh_sum": ""
       },
       {
         "title": "AAV8-Mediated Retinal PD-L1 Gene Transfer Attenuates Experimental Autoimmune Uveitis by Restoring Local Immune Tolerance.",
@@ -805,8 +981,10 @@
         "date": "2026",
         "pmid": "42405669",
         "summary": "AAV8-mediated PD-L1 overexpression suppresses EAU progression by restoring retinal immune tolerance, attenuating inflammation, and preserving visual function. …",
-        "zh": "AAV8 介導的視網膜 PD-L1 基因轉移可透過恢復局部免疫耐受性來減輕實驗性自體免疫性葡萄膜炎。",
-        "zh_sum": "AAV8 介導的 PD-L1 過度表現可透過恢復視網膜免疫耐受、減輕發炎和保留視覺功能來抑制 EAU 進展。 ……"
+        "country": "中國",
+        "ptype": "",
+        "zh": "",
+        "zh_sum": ""
       }
     ],
     "refractive": [
@@ -816,8 +994,10 @@
         "date": "2026",
         "pmid": "42429242",
         "summary": "Supervised nonlinear multi-output models achieve lower error and better calibration for Q-factor than linear baselines, supporting a metric-driven pathway toward more reliable control of low-order refractive targets and primary asphericity. …",
-        "zh": "基於機器學習的非球面規劃 LASIK 控制台輸入預測（Q 因子、散焦、散光）：轉換方法研究。",
-        "zh_sum": "與線性基準相比，有監督的非線性多輸出模型可實現更低的誤差和更好的 Q 因子校準，支持度量驅動的途徑，實現對低階折射目標和初級非球面的更可靠控制。 ……"
+        "country": "法國",
+        "ptype": "",
+        "zh": "",
+        "zh_sum": ""
       },
       {
         "title": "Real-world experience with personalised belimumab spacing in sustained SLE remission: a multicentre study.",
@@ -825,8 +1005,10 @@
         "date": "2026",
         "pmid": "42425701",
         "summary": "Progressive belimumab dose spacing and withdrawal, coupled with clinical monitoring, could be a practicable approach in selected patients with SLE with long-standing disease remission on minimal glucocorticoid doses, no additional immunosup …",
-        "zh": "在持續 SLE 緩解中個性化貝利尤單抗間隔的真實經驗：一項多中心研究。",
-        "zh_sum": "漸進式貝利尤單抗劑量間隔和停藥，加上臨床監測，對於特定的 SLE 患者來說可能是一種可行的方法，這些患者在使用最小糖皮質激素劑量後疾病長期緩解，無需額外的免疫治療…"
+        "country": "義大利",
+        "ptype": "多中心研究",
+        "zh": "",
+        "zh_sum": ""
       },
       {
         "title": "Pregnancy exposure to organophosphate flame retardants and alterations in maternal and newborn thyroid hormone levels.",
@@ -834,8 +1016,10 @@
         "date": "2026",
         "pmid": "42425291",
         "summary": "The recent tightening of regulations on the polybrominated diphenyl ethers (PBDEs) production has led to an increase in the use of organophosphate flame retardants (OPFR). …",
-        "zh": "懷孕期間接觸有機磷酸酯阻斷劑以及孕產婦和新生兒甲狀腺激素水平的變化。",
-        "zh_sum": "最近對多溴二苯醚（PBDE）生產的監管收緊導致有機磷酸酯阻燃劑（OPFR）的使用增加。 ……"
+        "country": "法國",
+        "ptype": "",
+        "zh": "",
+        "zh_sum": ""
       },
       {
         "title": "Ocular Symptoms After Refractive Surgery.",
@@ -843,8 +1027,10 @@
         "date": "2026",
         "pmid": "42424051",
         "summary": "In this cohort study, postoperative ocular symptom trajectories after refractive surgery followed distinct longitudinal patterns, suggesting these trajectories may have been associated with specific baseline factors. …",
-        "zh": "屈光手術後的眼部症狀。",
-        "zh_sum": "在這項隊列研究中，屈光手術後的術後眼部症狀軌跡遵循不同的縱向模式，表明這些軌跡可能與特定的基線因素相關。 ……"
+        "country": "",
+        "ptype": "",
+        "zh": "",
+        "zh_sum": ""
       },
       {
         "title": "Evaluating Rotational Stability of the Visian V4b TICL in Patients with High Myopic Astigmatism.",
@@ -852,8 +1038,10 @@
         "date": "2026",
         "pmid": "42423868",
         "summary": "Visian V4b TICLs demonstrate excellent visual and refractive outcomes with acceptable rotational stability over 12 months. …",
-        "zh": "評估 Visian V4b TICL 在高度近視散光患者的旋轉穩定性。",
-        "zh_sum": "Visian V4b TICL 在 12 個月內表現出出色的視覺和屈光效果以及可接受的旋轉穩定性。 ……"
+        "country": "美國",
+        "ptype": "",
+        "zh": "",
+        "zh_sum": ""
       },
       {
         "title": "3Br-MGD: few-shot toxicity prediction with a three-branch deep encoder and meta-learning framework.",
@@ -861,8 +1049,10 @@
         "date": "2026",
         "pmid": "42420390",
         "summary": "Predicting the toxicity of pharmaceutical compounds remains a major challenge in drug discovery. Early and accurate toxicity assessment is essential for eliminating harmful candidates before costly preclinical and clinical testing, thereby  …",
-        "zh": "3Br-MGD：使用三分支深度編碼器和元學習框架進行幾次毒性預測。",
-        "zh_sum": "預測藥物化合物的毒性仍然是藥物發現的主要挑戰。早期準確的毒性評估對於在昂貴的臨床前和臨床測試之前消除有害候選人至關重要，從而…"
+        "country": "越南",
+        "ptype": "",
+        "zh": "",
+        "zh_sum": ""
       },
       {
         "title": "Benchmarking with Patient Outcomes - Unmasked Surgeon Comparisons within a Learning Community for Continuous Improvement.",
@@ -870,8 +1060,10 @@
         "date": "2026",
         "pmid": "42418639",
         "summary": "Patient-reported outcome measures (PROMs) are increasingly applied in clinical practice to improve quality of care and patient outcomes. …",
-        "zh": "病患結果的基準測試 - 在學習社群內進行不加掩飾的外科醫生比較，以實現持續改進。",
-        "zh_sum": "患者報告的結果測量 (PROM) 越來越多地應用於臨床實踐，以提高護理品質和患者結果。 ……"
+        "country": "法國",
+        "ptype": "",
+        "zh": "",
+        "zh_sum": ""
       },
       {
         "title": "Decellularised Corneal Stromal Lamina With or Without Autologous Adipose-Derived Adult Stem Cells for Advanced Keratoconus: 1-Year Results of a Phase I/IIa Clinical Trial.",
@@ -879,8 +1071,10 @@
         "date": "2026",
         "pmid": "42414854",
         "summary": "Decellularised stromal lamina implantation, with or without autologous ADASCs, was safe and feasible, maintaining corneal transparency and producing sustained stromal thickening with clinically meaningful visual and refractive improvement a …",
-        "zh": "使用或不使用自體脂肪來源的成體幹細胞治療晚期圓錐角膜的去細胞角膜基質層：I/IIa 期臨床試驗的 1 年結果。",
-        "zh_sum": "去細胞基質層植入，無論有或沒有自體 ADASC，都是安全可行的，可保持角膜透明度並產生持續的基質增厚，並具有臨床意義的視力和屈光改善..."
+        "country": "西班牙",
+        "ptype": "",
+        "zh": "",
+        "zh_sum": ""
       },
       {
         "title": "Zero-Programmed-Sphere Keratorefractive Lenticule Extraction: Visual, Refractive, Anterior-Keratometric, and Wavefront Outcomes in a Single-Center Series of 74 Eyes.",
@@ -888,8 +1082,10 @@
         "date": "2026",
         "pmid": "42412306",
         "summary": "Zero-programmed-sphere KLEx produced favorable refractive outcomes in eyes reaching the ≥ 3-month endpoint. The 37/62 completion rate among eligible eyes and the imputation-based safety index limit generalizability. …",
-        "zh": "零程序球角膜屈光微透鏡萃取：單中心 74 隻眼睛系列的視覺、屈光、前部角膜曲率和波前結果。",
-        "zh_sum": "零程序球 KLEx 在達到 ≥ 3 個月終點時產生了良好的屈光結果。符合條件的眼睛中 37/62 的完成率和基於插補的安全指數限制了普遍性。 ……"
+        "country": "",
+        "ptype": "",
+        "zh": "",
+        "zh_sum": ""
       },
       {
         "title": "Short-term OCT-based evaluation of corneal epithelial remodeling with two silicone hydrogel bandage contact lenses after t-PRK.",
@@ -897,8 +1093,10 @@
         "date": "2026",
         "pmid": "42412283",
         "summary": "Both bandage contact lens materials demonstrated broadly comparable short-term postoperative epithelial remodeling patterns and refractive outcomes after t-PRK. …",
-        "zh": "t-PRK 後使用兩種矽水凝膠繃帶隱形眼鏡對角膜上皮重塑進行基於 OCT 的短期評估。",
-        "zh_sum": "兩種繃帶隱形眼鏡材質在 t-PRK 後表現出大致可比較的短期術後上皮重塑模式和屈光結果。 ……"
+        "country": "土耳其",
+        "ptype": "隨機對照試驗(RCT)",
+        "zh": "",
+        "zh_sum": ""
       },
       {
         "title": "Central and peripheral retinal image quality in high myopia: effects of corneal and intraocular refractive correction.",
@@ -906,8 +1104,10 @@
         "date": "2026",
         "pmid": "42412257",
         "summary": "FS-LASIK, SMILE, and phakic ICL implantation effectively restore high central retinal image quality in high myopia, although the impact on peripheral retinal optical quality varies. …",
-        "zh": "高度近視的中央和周邊視網膜影像品質：角膜和眼內屈光矯正的影響。",
-        "zh_sum": "FS-LASIK、SMILE和有晶狀體眼ICL植入術可以有效恢復高度近視的中央視網膜影像質量，儘管對週邊視網膜光學品質的影響各不相同。 ……"
+        "country": "中國",
+        "ptype": "",
+        "zh": "",
+        "zh_sum": ""
       },
       {
         "title": "Clinical and Cytopathological Significance of Intracytoplasmic Lumina and Immunohistochemical Mucin Expression in Non-Muscle-Invasive Urothelial Carcinoma of the Bladder.",
@@ -915,8 +1115,10 @@
         "date": "2026",
         "pmid": "42411043",
         "summary": "ICL in non-muscle-invasive urothelial carcinoma is more frequently observed in high-grade tumors and shows characteristic mucin expression patterns, particularly MUC1 localization within ICL structures. …",
-        "zh": "膀胱非肌肉層浸潤性尿路上皮癌胞漿內腔和免疫組織化學黏蛋白表現的臨床和細胞病理意義。",
-        "zh_sum": "非肌肉層浸潤性尿路上皮癌中的 ICL 在高級別腫瘤中更常見，並顯示出特徵性的黏蛋白表達模式，特別是 ICL 結構內的 MUC1 定位。 ……"
+        "country": "日本",
+        "ptype": "",
+        "zh": "",
+        "zh_sum": ""
       },
       {
         "title": "Corneal deformation mapping and FE-based strain analysis via digital image correlation: Biomechanical changes after CXL and laser refractive surgery.",
@@ -924,8 +1126,10 @@
         "date": "2026",
         "pmid": "42409209",
         "summary": "Accurate assessment of corneal mechanical properties is critical for understanding ocular biomechanics, predicting refractive surgery outcomes, and optimizing cross-linking (CXL) treatments. …",
-        "zh": "透過數位影像相關進行角膜變形測繪和基於 FE 的應變分析：CXL 和雷射屈光手術後的生物力學變化。",
-        "zh_sum": "準確評估角膜機械特性對於了解眼部生物力學、預測屈光手術結果和優化交聯 (CXL) 治療至關重要。 ……"
+        "country": "西班牙",
+        "ptype": "",
+        "zh": "",
+        "zh_sum": ""
       },
       {
         "title": "Outcomes of standardized drain-free abdominoplasty after massive weight loss: A retrospective analysis of 2533 post-bariatric patients.",
@@ -933,8 +1137,10 @@
         "date": "2026",
         "pmid": "42405306",
         "summary": "This retrospective study evaluates the outcomes of 2533 standardized drain‑free abdominoplasties performed after massive weight loss, representing one of the largest series reported in post‑bariatric body‑contouring surgery. …",
-        "zh": "大規模減重後標準化無引流腹部成形術的結果：對 2533 名減重後患者的回顧性分析。",
-        "zh_sum": "這項回顧性研究評估了 2533 例大規模減重後進行的標準化無引流腹部整形術的結果，這是減重後身體輪廓手術中報道的最大系列之一。 ……"
+        "country": "義大利",
+        "ptype": "",
+        "zh": "",
+        "zh_sum": ""
       },
       {
         "title": "Inter-device Agreement and Normative Corneal Parameters in Adolescents and Young Adults: A Structured Narrative Review.",
@@ -942,8 +1148,10 @@
         "date": "2026",
         "pmid": "42403726",
         "summary": "Accurate characterization of the corneal surface is essential for clinical decision-making in optometry and ophthalmology, particularly in the context of myopia management and early detection of ectatic disorders. …",
-        "zh": "青少年和年輕人的設備間協議和規範角膜參數：結構化敘事回顧。",
-        "zh_sum": "角膜表面的準確表徵對於驗光和眼科的臨床決策至關重要，特別是在近視管理和早期發現擴張性疾病的背景下。 ……"
+        "country": "",
+        "ptype": "文獻回顧",
+        "zh": "",
+        "zh_sum": ""
       },
       {
         "title": "Evaluation of orthodontic treatment need awareness in individuals with different malocclusions.",
@@ -951,8 +1159,10 @@
         "date": "2026",
         "pmid": "42401832",
         "summary": "Aesthetic perception is a key determinant of orthodontic treatment demand and is closely associated with malocclusion type. …",
-        "zh": "正畸治療的評估需要對不同咬合不正的個體進行認識。",
-        "zh_sum": "美學觀是矯正治療需求的關鍵決定因素，並且與錯牙合類型密切相關。 ……"
+        "country": "",
+        "ptype": "",
+        "zh": "",
+        "zh_sum": ""
       },
       {
         "title": "Clear aligner therapy for early orthodontic treatment in children aged 6-13 years: A scoping review of clinical performance and evidence gaps.",
@@ -960,8 +1170,10 @@
         "date": "2026",
         "pmid": "42401484",
         "summary": "Clear aligners in mixed dentition demonstrate indication-dependent predictability influenced by movement type, anatomical region, and growth stage. …",
-        "zh": "6-13 歲兒童早期矯正治療的透明矯正器治療：臨床表現和證據差距的範圍審查。",
-        "zh_sum": "混合齒列中的透明矯正器表現出受運動類型、解剖區域和生長階段影響的適應症依賴性可預測性。 ……"
+        "country": "泰國",
+        "ptype": "文獻回顧",
+        "zh": "",
+        "zh_sum": ""
       },
       {
         "title": "Laser-assisted pontic site soft tissue healing prior to fixed partial dentures: a randomized placebo-controlled clinical trial.",
@@ -969,8 +1181,10 @@
         "date": "2026",
         "pmid": "42399886",
         "summary": "Laser-assisted therapy accelerated the healing of soft tissue at the pontic site prior to fixed partial denture rehabilitation. …",
-        "zh": "固定局部義齒之前雷射輔助橋體部位軟組織癒合：一項隨機安慰劑對照臨床試驗。",
-        "zh_sum": "在固定局部義齒修復之前，雷射輔助治療加速了橋體部位軟組織的癒合。 ……"
+        "country": "土耳其",
+        "ptype": "",
+        "zh": "",
+        "zh_sum": ""
       },
       {
         "title": "Comparison of visual outcomes of phakic intraocular lens implantation in keratoconus and normal eyes.",
@@ -978,8 +1192,10 @@
         "date": "2026",
         "pmid": "42397455",
         "summary": "We did not observe a statistically significant difference in visual and refractive outcomes between keratoconus and normal eyes following PCpIOL implantation.",
-        "zh": "圓錐角膜和正常眼有水晶體眼人工水晶體植入的視覺結果的比較。",
-        "zh_sum": "我們沒有觀察到 PCpIOL 植入後圓錐角膜和正常眼之間的視力和屈光結果有統計學上的顯著差異。"
+        "country": "印度",
+        "ptype": "比較性研究",
+        "zh": "",
+        "zh_sum": ""
       },
       {
         "title": "Extranodal Nasal Type NK/T-Cell Lymphoma of the Transverse Colon With Gastrointestinal Perforation in a 15-Year-Old: Durable Remission With Modified SMILE Chemotherapy and HSCT.",
@@ -987,8 +1203,10 @@
         "date": "2026",
         "pmid": "42396568",
         "summary": "NK/T-cell lymphoma (NKTCL) is an aggressive lymphoma associated with Epstein-Barr virus (EBV), with higher incidence in Asian populations. …",
-        "zh": "15 歲橫結腸結外鼻型 NK/T 細胞淋巴瘤伴隨胃腸穿孔：以改良 SMILE 化療和 HSCT 達到持久緩解。",
-        "zh_sum": "NK/T 細胞淋巴瘤 (NKTCL) 是一種與 Epstein-Barr 病毒 (EBV) 相關的侵襲性淋巴瘤，在亞洲人群中發病率較高。 ……"
+        "country": "美國",
+        "ptype": "",
+        "zh": "",
+        "zh_sum": ""
       },
       {
         "title": "Photobiomodulation Therapy for Symptom Management in Essential Palatal Myoclonus: Two Case Studies with Long-Term Follow-Up Two Cases: 7-Year/2-Month Follow-Up.",
@@ -996,8 +1214,10 @@
         "date": "2026",
         "pmid": "42392993",
         "summary": "Near-infrared PBMT produced a substantial and sustained reduction in PM activity without adverse effects. Comparable outcomes using 940 nm and 980 nm wavelengths suggest a neuromodulatory rather than purely tissue-heating mechanism.",
-        "zh": "用於原發性腭肌陣攣症狀管理的光生物調節療法：兩個長期追蹤的案例研究兩個案例：7 年/2 個月的追蹤。",
-        "zh_sum": "近紅外線 PBMT 顯著且持續地降低了 PM 活性，且沒有產生不利影響。使用 940 nm 和 980 nm 波長的類似結果表明存在神經調節機制，而不是純粹的組織加熱機制。"
+        "country": "",
+        "ptype": "",
+        "zh": "",
+        "zh_sum": ""
       },
       {
         "title": "Multifocal intraocular lenses in refractive lens exchange: Guidelines to optimize their use and indications.",
@@ -1005,8 +1225,10 @@
         "date": "2026",
         "pmid": "42392402",
         "summary": "Multifocal IOLs remain valuable in RLE, but success depends more on indication discipline and rescue sequencing than on lens marketing labels. …",
-        "zh": "屈光水晶體置換中的多焦點人工水晶體：優化其使用和適應症的指南。",
-        "zh_sum": "多焦點人工水晶體在 RLE 中仍然有價值，但成功更多取決於指示規則和搶救順序，而不是鏡片行銷標籤。 ……"
+        "country": "德國",
+        "ptype": "",
+        "zh": "",
+        "zh_sum": ""
       },
       {
         "title": "Assessment of Felt Needs of Caregivers of Children With Orofacial Cleft in a Low-Middle-Income Country: A Longitudinal Study.",
@@ -1014,8 +1236,10 @@
         "date": "2026",
         "pmid": "42390473",
         "summary": "ObjectiveTo determine the changes in felt needs of caregivers of children with cleft lip and/or palate (iCL/P) from first clinic presentation to first surgical intervention.DesignLongitudinal observational study.SettingA tertiary hospital i …",
-        "zh": "中低收入國家口面部裂兒童照顧者的感受需求評估：一項縱向研究。",
-        "zh_sum": "目的確定唇裂和/或顎裂（iCL/P）兒童的照顧者從首次臨床就診到首次手術介入期間感受到的需求變化。設計縱向觀察研究。設置三級醫院…"
+        "country": "",
+        "ptype": "",
+        "zh": "",
+        "zh_sum": ""
       },
       {
         "title": "Bridging Ergonomic Awareness and Practice in Cleft Surgery: Insights From An International Craniofacial Cleft Workshop.",
@@ -1023,8 +1247,10 @@
         "date": "2026",
         "pmid": "42390444",
         "summary": "ObjectiveTo determine the prevalence and anatomical distribution of work-related musculoskeletal disorders (WRMDs) among cleft surgeons and evaluate associations with ergonomic practices, training exposure, and physical activity patterns.De …",
-        "zh": "彌合裂隙手術的人體工學意識和實踐：來自國際顱面裂研討會的見解。",
-        "zh_sum": "目的確定唇裂外科醫生中與工作相關的肌肉骨骼疾病 (WRMD) 的盛行率和解剖學分佈，並評估與人體工學實踐、訓練暴露和身體活動模式的關聯。 De …"
+        "country": "美國",
+        "ptype": "",
+        "zh": "",
+        "zh_sum": ""
       },
       {
         "title": "One-year clinical outcomes of implantable collamer lens implantation for myopic regression after laser vision correction.",
@@ -1032,8 +1258,10 @@
         "date": "2026",
         "pmid": "42387006",
         "summary": "This retrospective, observational case series aimed to evaluate the one-year outcomes of Implantable Collamer Lens (ICL, STAAR Surgical, Nidau, Switzerland) implantation for myopic regression following laser vision correction. …",
-        "zh": "雷射視力矯正後近視回歸植入式人工晶體植入術的一年臨床結果。",
-        "zh_sum": "此回顧性、觀察性病例係列旨在評估植入式 Collamer 鏡片（ICL，STAAR Surgical，Nidau，瑞士）植入雷射視力矯正後近視回歸的一年結果。 ……"
+        "country": "韓國",
+        "ptype": "",
+        "zh": "",
+        "zh_sum": ""
       },
       {
         "title": "Baseline value and longitudinal kinetics of circulating nucleosomes during neo-adjuvant chemotherapy in newly diagnosed ovarian cancer: Results from a GINECO/GINEGEPS study of the randomized phase II CHIVA trial.",
@@ -1041,8 +1269,10 @@
         "date": "2026",
         "pmid": "42385345",
         "summary": "Baseline H3K36Me3 and H3K27Me3 levels may represent non-invasive biomarkers in advanced ovarian cancer and warrant further evaluation for their potential clinical utility.",
-        "zh": "新診斷卵巢癌新輔助化療期間循環核小體的基線值和縱向動力學：隨機 II 期 CHIVA 試驗的 GINECO/GINEGEPS 研究結果。",
-        "zh_sum": "基線 H3K36Me3 和 H3K27Me3 水平可能代表晚期卵巢癌的非侵入性生物標記物，並需要進一步評估其潛在的臨床效用。"
+        "country": "法國",
+        "ptype": "",
+        "zh": "",
+        "zh_sum": ""
       },
       {
         "title": "Refractive and Visual Outcomes of SmartSight NOVA Refractive Lenticule Extraction for Myopia and Myopic Astigmatism at 3 Months: a Retrospective Case Series.",
@@ -1050,8 +1280,10 @@
         "date": "2026",
         "pmid": "42384328",
         "summary": "SmartSight NOVA showed favorable early clinical outcomes at 3 months, with good visual and refractive performance, low residual astigmatism, limited higher-order aberration induction, and small postoperative displacement relative to the pre …",
-        "zh": "SmartSight NOVA 屈光微透鏡萃取治療近視和近視散光 3 個月時的屈光和視覺結果：回顧性病例係列。",
-        "zh_sum": "SmartSight NOVA 在 3 個月時表現出良好的早期臨床結果，具有良好的視覺和屈光性能、低殘餘散光、有限的高階像差誘導以及相對於術前較小的術後位移…"
+        "country": "韓國",
+        "ptype": "",
+        "zh": "",
+        "zh_sum": ""
       },
       {
         "title": "Dopamine receptors in ocular surface biology: Current evidence and future directions.",
@@ -1059,8 +1291,10 @@
         "date": "2026",
         "pmid": "42378568",
         "summary": "Dopamine, a classical catecholamine neurotransmitter, exerts diverse regulatory functions in the central nervous system, retina, and intraocular signaling. …",
-        "zh": "眼表生物學中的多巴胺受體：當前證據和未來方向。",
-        "zh_sum": "多巴胺是一種經典的兒茶酚胺神經傳導物質，在中樞神經系統、視網膜和眼內訊號傳導中發揮多種調節功能。 ……"
+        "country": "印度",
+        "ptype": "文獻回顧",
+        "zh": "",
+        "zh_sum": ""
       },
       {
         "title": "Comment on: Use of intracameral antibiotics prophylaxis in patients with posterior capsule rupture during cataract surgery: systemic review and meta-analysis.",
@@ -1068,8 +1302,10 @@
         "date": "2026",
         "pmid": "42377906",
         "summary": "A valuable meta-analysis was performed by the authors to investigate the prophylactic efficacy of several antibiotics to prevent postoperative endophthalmitis (PE) in case of a posterior capsule rupture (PCR) during cataract surgery. …",
-        "zh": "評論：白內障手術期間後囊膜破裂患者使用前房內抗生素預防：系統性回顧與統合分析。",
-        "zh_sum": "作者進行了一項有價值的薈萃分析，以研究幾種抗生素在白內障手術期間發生後囊膜破裂 (PCR) 時預防術後眼內炎 (PE) 的預防效果。 ……"
+        "country": "荷蘭",
+        "ptype": "",
+        "zh": "",
+        "zh_sum": ""
       },
       {
         "title": "Development and Reliability Assessment of the Presurgical Infant Orthopedics Assessment Tool for Evaluating Clinical Outcomes of Presurgical Infant Orthopedics.",
@@ -1077,8 +1313,10 @@
         "date": "2026",
         "pmid": "42377387",
         "summary": "ObjectivePresurgical infant orthopedics (PSIO) is used to optimize anatomical outcomes in infants with cleft lip and palate to facilitate favorable surgical results. …",
-        "zh": "用於評估術前嬰兒骨科臨床結果的術前嬰兒骨科評估工具的開發和可靠性評估。",
-        "zh_sum": "目的 術前嬰兒骨科 (PSIO) 用於優化唇顎裂嬰兒的解剖結果，以促進良好的手術結果。 ……"
+        "country": "美國",
+        "ptype": "",
+        "zh": "",
+        "zh_sum": ""
       }
     ],
     "cataract": [
@@ -1088,8 +1326,10 @@
         "date": "2026",
         "pmid": "42434709",
         "summary": "In this large retrospective cohort study, combined CE/IOL with MIGS was associated with a significantly increased risk of postoperative hyphema, while rates of CME, RD, and endophthalmitis remained comparable to CE/IOL alone.",
-        "zh": "原發性開角型青光眼患者白內障手術併發和不併發微創青光眼手術的術後併發症：比較風險分析。",
-        "zh_sum": "在這項大型回顧性隊列研究中，CE/IOL 聯合 MIGS 與術後前房出血風險顯著增加相關，而 CME、RD 和眼內炎的發生率與單獨使用 CE/IOL 相當。"
+        "country": "美國",
+        "ptype": "",
+        "zh": "",
+        "zh_sum": ""
       },
       {
         "title": "Visual Outcomes Following Cataract Surgery With Custom-Made Toric IOLs for the Correction of High Corneal Astigmatism.",
@@ -1097,8 +1337,10 @@
         "date": "2026",
         "pmid": "42429247",
         "summary": "Customized high-cylinder toric IOLs significantly improve UDVA and reduce RA in eyes with extreme corneal astigmatism. Although slightly inferior to standard toric IOLs, they provide an effective treatment option for astigmatic correction i …",
-        "zh": "使用客製化環面人工水晶體矯正高位角膜散光的白內障手術後的視力結果。",
-        "zh_sum": "客製化高柱面複曲面人工水晶體可顯著改善角膜極度散光眼睛的 UDVA 並減少 RA。儘管略遜於標準複曲面 IOL，但它們為散光矯正提供了有效的治療選擇…"
+        "country": "以色列",
+        "ptype": "",
+        "zh": "",
+        "zh_sum": ""
       },
       {
         "title": "Comparison of Visual Outcomes Between Bilateral Implantation of Multifocal Intraocular Lens and Mix-and-Match Strategy.",
@@ -1106,8 +1348,10 @@
         "date": "2026",
         "pmid": "42429245",
         "summary": "The mix-and-match strategy provided comparable binocular distance visual acuity, contrast sensitivity, and subjective visual quality to bilateral multifocal IOL implantation. …",
-        "zh": "雙側植入多焦點人工水晶體與混合搭配策略的視覺效果比較。",
-        "zh_sum": "混合搭配策略為雙側多焦點人工水晶體植入提供了可比較的雙眼遠視力、對比敏感度和主觀視覺品質。 ……"
+        "country": "中國",
+        "ptype": "多中心研究",
+        "zh": "",
+        "zh_sum": ""
       },
       {
         "title": "Effects of postoperative inflammation on visual and refractive recovery after cataract surgery: role of subconjunctival dexamethasone.",
@@ -1115,8 +1359,10 @@
         "date": "2026",
         "pmid": "42423742",
         "summary": "Postoperative inflammation was associated with delayed visual and refractive recovery. Dex was associated with less postoperative inflammation and earlier recovery within the first month.",
-        "zh": "術後發炎對白內障術後視力和屈光恢復的影響：結膜下地塞米鬆的作用。",
-        "zh_sum": "術後發炎與視力和屈光恢復延遲有關。 Dex 與術後發炎較少和第一個月內較早恢復有關。"
+        "country": "日本",
+        "ptype": "",
+        "zh": "",
+        "zh_sum": ""
       },
       {
         "title": "Expanding visual horizons: comparative outcomes of bilateral implantation of an extended depth-of-focus versus enhanced and standard monofocal intraocular lenses.",
@@ -1124,8 +1370,10 @@
         "date": "2026",
         "pmid": "42420911",
         "summary": "In this retrospective comparative case series, bilateral implantation of the Asqelio EDOF IOL was associated with better intermediate visual acuity and modestly better near visual acuity than implantation of the enhanced and standard monofo …",
-        "zh": "擴大視野：雙側植入物擴展焦深與增強型和標準單焦點人工水晶體的結果比較。",
-        "zh_sum": "在這個回顧性比較病例係列中，與增強型和標準單焦點植入相比，雙側植入 Asqelio EDOF IOL 與更好的中間視力和稍微更好的近距離視力有關…"
+        "country": "土耳其",
+        "ptype": "比較性研究",
+        "zh": "",
+        "zh_sum": ""
       },
       {
         "title": "Potential risk of capsular tension ring implantation combined with phacoemulsification in high myopia patients by increasing central macular thickness and intraocular lens tilt: a retrospective comparative study with 1-week, 1-month, and 3-month outcomes.",
@@ -1133,8 +1381,10 @@
         "date": "2026",
         "pmid": "42420907",
         "summary": "CTR implantation during phacoemulsification poses a potential risk in high myopia patients, particularly those with axial lengths between 26 mm and 30 mm, by increasing both CMT and IOL tilt.",
-        "zh": "高度近視患者晶狀體囊張力環植入合併超音波乳化術增加黃斑中心厚度和人工水晶體傾斜的潛在風險：1週、1個月和3個月結果的回顧性比較研究。",
-        "zh_sum": "超音波乳化手術期間的 CTR 植入會增加 CMT 和 IOL 傾斜，從而對高度近視患者（尤其是眼軸長度在 26 毫米至 30 毫米之間的患者）構成潛在風險。"
+        "country": "中國",
+        "ptype": "",
+        "zh": "",
+        "zh_sum": ""
       },
       {
         "title": "Early Postoperative Outcomes of Phacoemulsification With Concurrent Silicone Oil Removal in a Tertiary Eye Care Hospital of Bangladesh.",
@@ -1142,8 +1392,10 @@
         "date": "2026",
         "pmid": "42416940",
         "summary": "Phacoemulsification with concurrent SOR is a useful method that is associated with acceptable visual and anatomical outcomes, and it eliminates the burden for another surgery for cataract extraction.",
-        "zh": "孟加拉三級眼科醫院超音波乳化聯合矽油去除術的早期術後結果。",
-        "zh_sum": "並發 SOR 的超音波乳化術是一種有用的方法，與可接受的視覺和解剖結果相關，並且它消除了另一次白內障摘除手術的負擔。"
+        "country": "",
+        "ptype": "",
+        "zh": "",
+        "zh_sum": ""
       },
       {
         "title": "Intraocular Lens Positional Instability and Refractive Prediction Error after Cataract Surgery in Eyes with Retinitis Pigmentosa: A Comparative Study.",
@@ -1151,8 +1403,10 @@
         "date": "2026",
         "pmid": "42415635",
         "summary": "RP eyes showed greater postoperative IOL positional instability and refractive unpredictability. The positional differences could not be attributed specifically to RP because of imbalances in postoperative timing and IOL design, whereas ref …",
-        "zh": "色素性視網膜炎白內障手術後人工水晶體位置不穩定性和屈光預測誤差：一項比較研究。",
-        "zh_sum": "RP 眼術後 IOL 位置不穩定性和屈光不可預測性較大。由於術後時機和 IOL 設計的不平衡，位置差異不能具體歸因於 RP，而參考…"
+        "country": "韓國",
+        "ptype": "",
+        "zh": "",
+        "zh_sum": ""
       },
       {
         "title": "Clinical Outcomes After Bilateral Mix-and-match Implantation of Extended Depth of Focus and Trifocal Intraocular Lenses.",
@@ -1160,8 +1414,10 @@
         "date": "2026",
         "pmid": "42415634",
         "summary": "Bilateral Mix-and-match Implantation of EDOF and Trifocal IOL implantation showed good visual outcomes for distance, intermediate, and near vision until 12 months. …",
-        "zh": "雙側混合搭配植入擴展焦深和三焦點人工水晶體後的臨床結果。",
-        "zh_sum": "雙側混合搭配 EDOF 植入和三焦點 IOL 植入在 12 個月前顯示出良好的遠端視力、中視力和近距離視力視力結果。 ……"
+        "country": "韓國",
+        "ptype": "",
+        "zh": "",
+        "zh_sum": ""
       },
       {
         "title": "Accuracy of Kane, Hill-RBF, and PEARL-DGS versus traditional IOL formulas in highly myopic eyes: a systematic review and meta-analysis.",
@@ -1169,8 +1425,10 @@
         "date": "2026",
         "pmid": "42414936",
         "summary": "Current evidence supports Kane, Hill-RBF, and PEARL-DGS as reasonable front-line options for highly myopic eyes, and the threshold synthesis provides a cautious benchmark for currently extractable overall target-formula threshold performanc …",
-        "zh": "Kane、Hill-RBF 和 PEARL-DGS 與傳統 IOL 公式在高度近視眼中的準確性：系統性回顧與統合分析。",
-        "zh_sum": "目前的證據支持 Kane、Hill-RBF 和 PEARL-DGS 作為高度近視眼的合理一線選擇，閾值合成為當前可提取的總體目標公式閾值性能提供了謹慎的基準…"
+        "country": "中國",
+        "ptype": "系統性回顧",
+        "zh": "",
+        "zh_sum": ""
       },
       {
         "title": "Decellularised Corneal Stromal Lamina With or Without Autologous Adipose-Derived Adult Stem Cells for Advanced Keratoconus: 1-Year Results of a Phase I/IIa Clinical Trial.",
@@ -1178,8 +1436,10 @@
         "date": "2026",
         "pmid": "42414854",
         "summary": "Decellularised stromal lamina implantation, with or without autologous ADASCs, was safe and feasible, maintaining corneal transparency and producing sustained stromal thickening with clinically meaningful visual and refractive improvement a …",
-        "zh": "使用或不使用自體脂肪來源的成體幹細胞治療晚期圓錐角膜的去細胞角膜基質層：I/IIa 期臨床試驗的 1 年結果。",
-        "zh_sum": "去細胞基質層植入，無論有或沒有自體 ADASC，都是安全可行的，可保持角膜透明度並產生持續的基質增厚，並具有臨床意義的視力和屈光改善..."
+        "country": "西班牙",
+        "ptype": "",
+        "zh": "",
+        "zh_sum": ""
       },
       {
         "title": "Combined Ab-Interno Trabeculectomy and Trabecular Aspiration as a Simultaneous versus Sequential Addition to Phacoemulsification in Exfoliative Eyes.",
@@ -1187,8 +1447,10 @@
         "date": "2025",
         "pmid": "42404272",
         "summary": "Cataract extraction, as a part of a triple procedure, seems to contribute to more effective IOP-lowering than trabectome surgery and trabecular aspiration alone in patients who underwent standalone phacoemulsification previously.",
-        "zh": "联合腹内小梁切除术和小梁抽吸术作为剥脱性眼白内障超声乳化术的同时与顺序添加。",
-        "zh_sum": "白內障摘除術作為三重手術的一部分，對於先前接受過獨立超音波乳化吸除術的患者來說，似乎比單純小梁切除術和小梁抽吸術更能有效降低眼壓。"
+        "country": "德國",
+        "ptype": "",
+        "zh": "",
+        "zh_sum": ""
       },
       {
         "title": "Accuracy of new-generation intraocular lens formulas in IOL power calculation for cataract extraction combined with vitrectomy.",
@@ -1196,8 +1458,10 @@
         "date": "2026",
         "pmid": "42401746",
         "summary": "In ERM or MH phacovitrectomy, new-generation formulas, particularly BUII and EVO, provide more accurate refractive prediction than traditional formulas. In RRD and silicone-oil cases, refractive uncertainty remains substantial.",
-        "zh": "新一代人工水晶體公式在白內障摘除聯合玻璃體切割術IOL度數計算中的準確性",
-        "zh_sum": "在 ERM 或 MH 白內障玻璃體切除術中，新一代公式，特別是 BUII 和 EVO，可提供比傳統公式更準確的屈光預測。在 RRD 和矽油情況下，屈光不確定性仍然很大。"
+        "country": "中國",
+        "ptype": "",
+        "zh": "",
+        "zh_sum": ""
       },
       {
         "title": "Comparison of visual outcomes of phakic intraocular lens implantation in keratoconus and normal eyes.",
@@ -1205,8 +1469,10 @@
         "date": "2026",
         "pmid": "42397455",
         "summary": "We did not observe a statistically significant difference in visual and refractive outcomes between keratoconus and normal eyes following PCpIOL implantation.",
-        "zh": "圓錐角膜和正常眼有水晶體眼人工水晶體植入的視覺結果的比較。",
-        "zh_sum": "我們沒有觀察到 PCpIOL 植入後圓錐角膜和正常眼之間的視力和屈光結果有統計學上的顯著差異。"
+        "country": "印度",
+        "ptype": "比較性研究",
+        "zh": "",
+        "zh_sum": ""
       },
       {
         "title": "Light adjustable lens implantation with cataract surgery in eyes with macular pathology.",
@@ -1214,8 +1480,10 @@
         "date": "2026",
         "pmid": "42397104",
         "summary": "In eyes with macular pathology, the LAL provides excellent uncorrected visual acuity and highly accurate refractive outcomes with a favorable safety profile. …",
-        "zh": "光可調晶狀體植入合併白內障手術治療患有黃斑部病變的眼睛。",
-        "zh_sum": "對於患有黃斑病變的眼睛，LAL 可提供出色的裸眼視力和高度準確的屈光結果，並且具有良好的安全性。 ……"
+        "country": "",
+        "ptype": "",
+        "zh": "",
+        "zh_sum": ""
       },
       {
         "title": "Association between systemic immune-inflammation index and postoperative optical quality in the early recovery phase after cataract surgery: a retrospective study.",
@@ -1223,8 +1491,10 @@
         "date": "2026",
         "pmid": "42396144",
         "summary": "Higher preoperative SII was associated with less favorable early postoperative internal MTF average height. Exploratory analyses suggested potential differences in SR, HOAs, DLI, and OSI, but these findings require confirmation in future st …",
-        "zh": "白內障術後早期恢復階段全身性免疫發炎指數與術後光學品質的關聯：一項回顧性研究。",
-        "zh_sum": "術前較高的 SII 與術後早期內部 MTF 平均高度較差有關。探索性分析表明 SR、HOA、DLI 和 OSI 之間存在潛在差異，但這些發現需要在未來的研究中得到確認…"
+        "country": "中國",
+        "ptype": "",
+        "zh": "",
+        "zh_sum": ""
       },
       {
         "title": "Evaluation of surgical outcomes and associated factors in cataracts secondary to blunt trauma.",
@@ -1232,8 +1502,10 @@
         "date": "2026",
         "pmid": "42393286",
         "summary": "Cataract surgery secondary to blunt ocular trauma can result in significant visual improvement when appropriately managed; however, the risk of intraoperative and postoperative complications remains considerable. …",
-        "zh": "鈍性創傷繼發白內障的手術結果和相關因素的評估。",
-        "zh_sum": "如果處理得當，繼發於鈍性眼外傷的白內障手術可以顯著改善視力；然而，術中和術後併發症的風險仍然相當大。 ……"
+        "country": "土耳其",
+        "ptype": "",
+        "zh": "",
+        "zh_sum": ""
       },
       {
         "title": "GATT-First Surgical Sequence Reduces Complications in Combined Phacoemulsification-GATT Surgery for Glaucoma.",
@@ -1241,8 +1513,10 @@
         "date": "2026",
         "pmid": "42384723",
         "summary": "The surgical sequence in combined PHACO-GATT does not affect IOP reduction or medication number but significantly impacts complication rates. …",
-        "zh": "GATT-First 手術順序可減少青光眼超音波乳化合併 GATT 手術的併發症。",
-        "zh_sum": "PHACO-GATT 合併手術的手術順序不會影響眼壓降低或藥物數量，但會顯著影響併發症發生率。 ……"
+        "country": "土耳其",
+        "ptype": "",
+        "zh": "",
+        "zh_sum": ""
       },
       {
         "title": "Corneal Biomechanics and Aberrometry After Phacoemulsification Combined with Gonioscopy-Assisted Transluminal Trabeculotomy.",
@@ -1250,8 +1524,10 @@
         "date": "2026",
         "pmid": "42384718",
         "summary": "Combined phacoemulsification and gonioscopy-assisted transluminal trabeculotomy was associated with measurable changes in corneal biomechanics and aberrometry at 3 months postoperatively. …",
-        "zh": "超音波乳化合併房角鏡輔助腔內小梁切開術後的角膜生物力學和像差測量。",
-        "zh_sum": "超音波乳化合併房角鏡輔助腔內小梁切開術與術後 3 個月角膜生物力學和像差測量的可測量變化相關。 ……"
+        "country": "伊朗",
+        "ptype": "",
+        "zh": "",
+        "zh_sum": ""
       },
       {
         "title": "Comments on: Refractive Outcomes of Toric Intraocular Lenses in Combined Phacoemulsification and Trabeculectomy Surgery.",
@@ -1259,7 +1535,9 @@
         "date": "2026",
         "pmid": "42384711",
         "summary": "",
-        "zh": "評論：超音波乳化合併小梁切除術中環面人工水晶體的屈光結果。",
+        "country": "印度",
+        "ptype": "",
+        "zh": "",
         "zh_sum": ""
       },
       {
@@ -1268,8 +1546,10 @@
         "date": "2026",
         "pmid": "42384181",
         "summary": "Among eyes preoperatively classified as low-astigmatism by SimK, PRA and TK showed better risk-stratification performance than SimK. Astigmatism correction should be considered when PRA or TK values exceed 0.6 D.",
-        "zh": "測量的角膜散光與預測的屈光散光在確定低散光白內障患者的散光矯正中。",
-        "zh_sum": "在術前被 SimK 分類為低散光的眼睛中，PRA 和 TK 的風險分層表現優於 SimK。當PRA或TK值超過0.6D時應考慮散光矯正。"
+        "country": "中國",
+        "ptype": "",
+        "zh": "",
+        "zh_sum": ""
       },
       {
         "title": "Factors Influencing Visual and Refractive Outcomes for Scleral-Sutured Intraocular Lenses.",
@@ -1277,8 +1557,10 @@
         "date": "2026",
         "pmid": "42382846",
         "summary": "Purpose: To identify variables associated with successful surgical outcomes in eyes receiving a scleral-sutured intraocular lens (IOL).Methods: Eyes of patients ages ≥18 years at time of IOL insertion and with ≥1 follow-up visit were includ …",
-        "zh": "影響鞏膜縫合人工水晶體視力和屈光結果的因素。",
-        "zh_sum": "目的：確定與接受鞏膜縫合人工水晶體 (IOL) 的眼睛成功手術結果相關的變數。方法：納入 IOL 插入時年齡≥18歲且追蹤次數≥1次的患者的眼睛…"
+        "country": "美國",
+        "ptype": "",
+        "zh": "",
+        "zh_sum": ""
       },
       {
         "title": "Custom-made anterior chamber intraocular lens for aphakia: a case report.",
@@ -1286,8 +1568,10 @@
         "date": "2026",
         "pmid": "42380915",
         "summary": "This custom-made, foldable, angle-supported AC-IOL demonstrated stable centration, refractive predictability, and acceptable endothelial cell loss over three years. …",
-        "zh": "無晶體眼定制前房人工水晶體：病例報告。",
-        "zh_sum": "這種客製化的、可折疊的、角度支援的 AC-IOL 在三年內表現出穩定的居中性、屈光可預測性和可接受的內皮細胞損失。 ……"
+        "country": "德國",
+        "ptype": "病例報告",
+        "zh": "",
+        "zh_sum": ""
       },
       {
         "title": "Two-Year Follow-Up of the MINI WELL Non-Diffractive Extended Depth-of-Focus Intraocular Lens: A Retrospective Observational Study.",
@@ -1295,8 +1579,10 @@
         "date": "2026",
         "pmid": "42376480",
         "summary": "At two years, implantation of the MINI WELL non-diffractive EDoF intraocular lens was associated with maintained visual outcomes, functional intermediate and near vision, and a favorable safety profile. …",
-        "zh": "MINI WELL 非衍射擴展景深人工水晶體的兩年追蹤：回顧性觀察研究。",
-        "zh_sum": "兩年後，植入 MINI WELL 非衍射 EDoF 人工水晶體與維持視力結果、功能性中視力和近距離視力以及良好的安全性有關。 ……"
+        "country": "義大利",
+        "ptype": "",
+        "zh": "",
+        "zh_sum": ""
       },
       {
         "title": "The effect of pre- and perioperative anxiety on cardiovascular parameters and intraocular pressure of patients awaiting phacoemulsification surgery.",
@@ -1304,8 +1590,10 @@
         "date": "2026",
         "pmid": "42373077",
         "summary": "Higher anxiety levels increase IOP preoperatively. Assessing BP, HR, and IOP, as well as alleviating anxiety may improve surgical outcomes and ensure stress-free procedures.",
-        "zh": "術前和圍術期焦慮對等待超音波乳化手術患者心血管參數和眼壓的影響。",
-        "zh_sum": "術前較高的焦慮程度會增加眼壓。評估血壓、心率和眼壓以及緩解焦慮可以改善手術結果並確保手術過程無壓力。"
+        "country": "",
+        "ptype": "",
+        "zh": "",
+        "zh_sum": ""
       },
       {
         "title": "Comparative Outcomes of Pars Plana Vitrectomy Versus Combined Vitrectomy With Phacoemulsification in Proliferative Diabetic Retinopathy and Cataract.",
@@ -1313,8 +1601,10 @@
         "date": "2026",
         "pmid": "42367389",
         "summary": "Background Proliferative diabetic retinopathy (PDR) often requires pars plana vitrectomy (PPV) for complications such as vitreous hemorrhage and tractional retinal detachment. …",
-        "zh": "玻璃體切除術與玻璃體切除術合併超音波乳化術治療增殖性糖尿病視網膜病變和白內障的結果比較。",
-        "zh_sum": "背景 增殖性糖尿病視網膜病變 (PDR) 通常需要進行玻璃體切除術 (PPV)，以治療玻璃體出血和牽拉性視網膜脫離等併發症。 ……"
+        "country": "",
+        "ptype": "",
+        "zh": "",
+        "zh_sum": ""
       },
       {
         "title": "[Refractive lens extraction with trifocal intraocular lens implantation in high myopia and myopic astigmatism].",
@@ -1322,8 +1612,10 @@
         "date": "2026",
         "pmid": "42366658",
         "summary": "Trifocal IOL implantation in high myopia with myopic astigmatism provides high visual acuity, spectacle independence, and requires careful preoperative assessment.",
-        "zh": "屈光晶體摘除三焦人工水晶體植入術治療高度近視及近視散光[J].",
-        "zh_sum": "三焦點人工水晶體植入術治療高度近視合併近視散光可提供高視力、眼鏡獨立性，並且需要仔細的術前評估。"
+        "country": "",
+        "ptype": "",
+        "zh": "",
+        "zh_sum": ""
       },
       {
         "title": "Ocular Surgery in Small Mammals.",
@@ -1331,8 +1623,10 @@
         "date": "2026",
         "pmid": "42364933",
         "summary": "Small mammal ocular surgery requires knowledge on species-specific anatomic challenges that demand refined microsurgical skills. …",
-        "zh": "小哺乳動物的眼部手術。",
-        "zh_sum": "小型哺乳動物眼部手術需要了解特定物種的解剖學挑戰，這需要精細的顯微外科技能。 ……"
+        "country": "法國",
+        "ptype": "文獻回顧",
+        "zh": "",
+        "zh_sum": ""
       },
       {
         "title": "Visual Outcomes After Mix-and-Match Implantation of Trifocal and Extended Depth-of-Focus Intraocular Lenses: A Systematic Review and Meta-Analysis.",
@@ -1340,8 +1634,10 @@
         "date": "2026",
         "pmid": "42356124",
         "summary": "Background and Objectives: The use of presbyopia-correcting intraocular lenses (IOLs) has become an integral part of modern cataract surgery. …",
-        "zh": "三焦點和擴展景深人工水晶體混合搭配植入後的視覺結果：系統性回顧與統合分析。",
-        "zh_sum": "背景與目的：老花眼矯正人工水晶體（IOL）的使用已成為現代白內障手術的一個組成部分。 ……"
+        "country": "",
+        "ptype": "統合分析",
+        "zh": "",
+        "zh_sum": ""
       },
       {
         "title": "Real-World Two-Year Outcomes of Diffractive Implantable Phakic Contact Lenses in Presbyopic Myopes: Functional Vision, Anatomical Findings, and Environmental Context.",
@@ -1349,8 +1645,10 @@
         "date": "2026",
         "pmid": "42356032",
         "summary": "Background and Objectives: To evaluate two-year functional, anatomical, and patient-reported outcomes after bilateral implantation of a diffractive implantable phakic contact lens (IPCL) for presbyopia correction in myopic patients within a …",
-        "zh": "老花眼近視衍射植入式有水晶體隱形眼鏡的真實兩年結果：功能性視力、解剖學發現和環境背景。",
-        "zh_sum": "背景與目標：評估近視患者雙側植入衍射植入式有晶狀體隱形眼鏡 (IPCL) 矯正老花眼後兩年的功能、解剖和患者報告的結果。"
+        "country": "西班牙",
+        "ptype": "觀察性研究",
+        "zh": "",
+        "zh_sum": ""
       }
     ],
     "glaucoma": [
@@ -1360,8 +1658,10 @@
         "date": "2026",
         "pmid": "42434709",
         "summary": "In this large retrospective cohort study, combined CE/IOL with MIGS was associated with a significantly increased risk of postoperative hyphema, while rates of CME, RD, and endophthalmitis remained comparable to CE/IOL alone.",
-        "zh": "原發性開角型青光眼患者白內障手術併發和不併發微創青光眼手術的術後併發症：比較風險分析。",
-        "zh_sum": "在這項大型回顧性隊列研究中，CE/IOL 聯合 MIGS 與術後前房出血風險顯著增加相關，而 CME、RD 和眼內炎的發生率與單獨使用 CE/IOL 相當。"
+        "country": "美國",
+        "ptype": "",
+        "zh": "",
+        "zh_sum": ""
       },
       {
         "title": "Dynamic changes in axial length and refractive error following intraocular pressure normalization in acute primary angle-closure glaucoma.",
@@ -1369,8 +1669,10 @@
         "date": "2026",
         "pmid": "42432569",
         "summary": "Decreased IOP correlated with reduced AL and increased predicted refractive error (hyperopia). Therefore, lowering IOP before biometric assessment may improve refractive outcomes when feasible. …",
-        "zh": "急性原發性閉角型青光眼眼壓正常後眼軸長度及屈光不正的動態變化。",
-        "zh_sum": "眼壓降低與 AL 降低和預測屈光不正（遠視）增加有關。因此，在可行的情況下，在生物辨識評估之前降低眼壓可能會改善屈光結果。 ……"
+        "country": "中國",
+        "ptype": "",
+        "zh": "",
+        "zh_sum": ""
       },
       {
         "title": "Differential Impact of Intraocular Pressure Lowering on Glaucoma Progression in African and European Descent Individuals.",
@@ -1378,8 +1680,10 @@
         "date": "2026",
         "pmid": "42431434",
         "summary": "Glaucoma progression in response to IOP alteration differs between individuals of African descent and European descent, particularly at older ages and with greater disease severity. …",
-        "zh": "降低眼压对非洲和欧洲人后裔青光眼进展的不同影响。",
-        "zh_sum": "非洲裔和欧洲裔个体对眼压变化的青光眼进展有所不同，特别是在年龄较大且疾病严重程度较高的人群中。 ……"
+        "country": "巴西",
+        "ptype": "",
+        "zh": "",
+        "zh_sum": ""
       },
       {
         "title": "Long-term Outcomes of the Flanged Scleral Fixation Technique.",
@@ -1387,8 +1691,10 @@
         "date": "2026",
         "pmid": "42429244",
         "summary": "Flanged scleral fixation showed acceptable long-term anatomical and visual outcomes in this complex cohort. These findings should be interpreted cautiously given the lack of endothelial cell data and the observed postoperative intraocular p …",
-        "zh": "凸緣鞏膜固定技術的長期結果。",
-        "zh_sum": "在這個複雜的隊列中，凸緣鞏膜固定顯示出可接受的長期解剖和視覺結果。鑑於缺乏內皮細胞數據和觀察到的術後眼內 p …"
+        "country": "以色列",
+        "ptype": "",
+        "zh": "",
+        "zh_sum": ""
       },
       {
         "title": "Medications and Supplements Associated With Drug-Induced Glaucoma.",
@@ -1396,8 +1702,10 @@
         "date": "2026",
         "pmid": "42428212",
         "summary": "Glaucoma is a common condition that damages the optic nerve, usually as a result of an increase in intraocular pressure (IOP). It can be divided into two types: open-angle glaucoma (OAG) and acute angle-closure glaucoma (AACG). …",
-        "zh": "與藥物引起的青光眼相關的藥物和補充劑。",
-        "zh_sum": "青光眼是一種損害視神經的常見疾病，通常是由於眼壓 (IOP) 升高造成的。它可分為兩種類型：開角型青光眼（OAG）和急性閉角型青光眼（AACG）。 ……"
+        "country": "",
+        "ptype": "文獻回顧",
+        "zh": "",
+        "zh_sum": ""
       },
       {
         "title": "Microglia suppress Müller cell FGF1 and contribute to retinal ganglion cell degeneration in glaucoma.",
@@ -1405,8 +1713,10 @@
         "date": "2026",
         "pmid": "42425282",
         "summary": "Glaucoma is a progressive neurodegenerative disease characterized by retinal ganglion cell (RGC) loss, in which glial activation and neuroinflammation contribute importantly to disease progression. …",
-        "zh": "小膠質細胞抑制穆勒細胞 FGF1 並導致青光眼中視網膜神經節細胞變性。",
-        "zh_sum": "青光眼是一種進行性神經退化性疾病，其特徵是視網膜神經節細胞（RGC）損失，其中膠質細胞活化和神經發炎對疾病進展有重要影響。 ……"
+        "country": "中國",
+        "ptype": "",
+        "zh": "",
+        "zh_sum": ""
       },
       {
         "title": "Nicotinamide Supplementation and Primary Open-Angle Glaucoma in Patients With Ocular Hypertension.",
@@ -1414,8 +1724,10 @@
         "date": "2026",
         "pmid": "42424069",
         "summary": "In this cohort study, systemic nicotinamide exposure was associated with a reduced risk of disease development in patients with OHT. …",
-        "zh": "高眼壓患者補充菸鹼醯胺和原發性開角型青光眼。",
-        "zh_sum": "在這項隊列研究中，全身菸鹼醯胺暴露與 OHT 患者疾病發生風險降低有關。 ……"
+        "country": "",
+        "ptype": "",
+        "zh": "",
+        "zh_sum": ""
       },
       {
         "title": "Relationship between albuminuria and primary open angle glaucoma in patients attending a Nigerian tertiary hospital.",
@@ -1423,8 +1735,10 @@
         "date": "2026",
         "pmid": "42423790",
         "summary": "This study demonstrated a significant association between POAG and albuminuria, with increasing severity of POAG correlating with higher odds of albuminuria. …",
-        "zh": "尼日利亞三級醫院患者白蛋白尿與原發性開角型青光眼的關係。",
-        "zh_sum": "這項研究證明了 POAG 和蛋白尿之間存在顯著關聯，POAG 嚴重程度的增加與蛋白尿幾率的增加有關。 ……"
+        "country": "",
+        "ptype": "比較性研究",
+        "zh": "",
+        "zh_sum": ""
       },
       {
         "title": "Pascal selective laser trabeculoplasty (PSLT) in the treatment of ocular hypertension and open-angle glaucoma compared to travoprost eye drops: A non-inferiority clinical trial.",
@@ -1432,8 +1746,10 @@
         "date": "2026",
         "pmid": "42418463",
         "summary": "PSLT was as effective as prostaglandin eye drops in reducing IOP and IOP peak in POAG and OHT patients. These findings are especially important as interest grows in minimally invasive glaucoma treatments and reducing reliance on topical med …",
-        "zh": "與曲伏前列腺素眼藥水相比，帕斯卡選擇性雷射小梁成形術（PSLT）治療高眼壓和開角型青光眼：一項非劣效性臨床試驗。",
-        "zh_sum": "PSLT 在降低 POAG 和 OHT 患者的 IOP 和 IOP 峰值方面與前列腺素眼藥水一樣有效。隨著人們對微創青光眼治療和減少對局部藥物的依賴越來越感興趣，這些發現尤其重要…"
+        "country": "巴西",
+        "ptype": "隨機對照試驗(RCT)",
+        "zh": "",
+        "zh_sum": ""
       },
       {
         "title": "Exchange of Ahmed glaucoma valve for a Paul glaucoma implant and management of postoperative hypotony: a case report.",
@@ -1441,8 +1757,10 @@
         "date": "2026",
         "pmid": "42416449",
         "summary": "Same-quadrant exchange with PGI may be viable after failed GDD surgery. Eyes with uveitis may have a higher risk of hypotony, especially after ripcord removal. …",
-        "zh": "艾哈邁德青光眼瓣膜更換為保羅青光眼植入物和術後低眼壓的治療：病例報告。",
-        "zh_sum": "GDD 手術失敗後，與 PGI 進行同像限交換可能是可行的。患有葡萄膜炎的眼睛可能有更高的眼壓過低風險，尤其是在拆除拉繩後。 ……"
+        "country": "沙烏地",
+        "ptype": "病例報告",
+        "zh": "",
+        "zh_sum": ""
       },
       {
         "title": "Impact of Chemotherapy and Radiotherapy on Iris Metastases: A Case Report.",
@@ -1450,8 +1768,10 @@
         "date": "2026",
         "pmid": "42416290",
         "summary": "Our case offers a unique visual insight into the impact of both systemic chemotherapy and localised radiotherapy on uncommon iris metastases, with sequential images taken at each stage of treatment. …",
-        "zh": "化療和放療對虹膜轉移的影響：病例報告。",
-        "zh_sum": "我們的案例提供了獨特的視覺洞察，了解全身化療和局部放射治療對罕見虹膜轉移的影響，並在治療的每個階段拍攝連續影像。 ……"
+        "country": "澳洲",
+        "ptype": "病例報告",
+        "zh": "",
+        "zh_sum": ""
       },
       {
         "title": "Proteomic Profile Analysis of Plasma and Aqueous Humor from Glaucoma and Nonglaucomatous Patients.",
@@ -1459,8 +1779,10 @@
         "date": "2026",
         "pmid": "42415469",
         "summary": "Together, our data demonstrate that the proteins identified in this study from glaucomatous donors correspond to markers of neurodegeneration and those that may inhibit cell proliferation or disrupt vascular integrity.",
-        "zh": "青光眼和非青光眼患者血漿和房水的蛋白質體學譜分析。",
-        "zh_sum": "總之，我們的數據表明，本研究中從青光眼供體中鑑定出的蛋白質對應於神經變性標記物以及可能抑制細胞增殖或破壞血管完整性的標記物。"
+        "country": "巴西",
+        "ptype": "",
+        "zh": "",
+        "zh_sum": ""
       },
       {
         "title": "Uveal effusion: An anatomy-based and mechanism-based framework for diagnosis and management.",
@@ -1468,8 +1790,10 @@
         "date": "2026",
         "pmid": "42413829",
         "summary": "Uveal effusion represents a heterogeneous clinical manifestation of disrupted uveal fluid homeostasis rather than a discrete disease entity. …",
-        "zh": "葡萄膜積液：基於解剖學和機制的診斷和管理框架。",
-        "zh_sum": "葡萄膜積液代表葡萄膜液體穩態破壞的異質性臨床表現，而不是離散的疾病實體。 ……"
+        "country": "印度",
+        "ptype": "文獻回顧",
+        "zh": "",
+        "zh_sum": ""
       },
       {
         "title": "Efficacy of PAUL Glaucoma Implant® for Refractory Uveitic Glaucoma.",
@@ -1477,8 +1801,10 @@
         "date": "2026",
         "pmid": "42412577",
         "summary": "PGI provided sustained IOP reduction with a favorable safety profile in a RUG population. These findings support the PGI as a valuable surgical option in UG, although larger multicenter comparative studies are needed.",
-        "zh": "PAUL Glaucoma Implant® 對難治性葡萄膜炎性青光眼的療效。",
-        "zh_sum": "PGI 在 RUG 族群中提供了持續的眼壓降低和良好的安全性。這些發現支持 PGI 作為 UG 的一種有價值的手術選擇，儘管還需要更大規模的多中心比較研究。"
+        "country": "法國",
+        "ptype": "",
+        "zh": "",
+        "zh_sum": ""
       },
       {
         "title": "Additive framework of hormonal waves accounts for species and age differences in circadian intraocular pressure rhythm.",
@@ -1486,8 +1812,10 @@
         "date": "2026",
         "pmid": "42410011",
         "summary": "Elevated intraocular pressure (IOP) is the primary risk factor for glaucoma, yet IOP demonstrates significant circadian rhythms whose underlying mechanisms remain incompletely understood, and disruption of this rhythm heightens disease susc …",
-        "zh": "荷爾蒙波的加性框架解釋了晝夜眼壓節律的物種和年齡差異。",
-        "zh_sum": "眼內壓 (IOP) 升高是青光眼的主要危險因素，但 IOP 顯示出顯著的晝夜節律，其潛在機制仍不完全清楚，而這種節律的破壞會加劇疾病的發生。"
+        "country": "日本",
+        "ptype": "",
+        "zh": "",
+        "zh_sum": ""
       },
       {
         "title": "Australian and New Zealand Glaucoma Society (ANZGS) Consensus on Interventional Glaucoma.",
@@ -1495,8 +1823,10 @@
         "date": "2026",
         "pmid": "42409625",
         "summary": "This Australian and New Zealand Glaucoma Society consensus on interventional glaucoma advocates for a shift towards an interventional paradigm. …",
-        "zh": "澳洲和紐西蘭青光眼協會 (ANZGS) 介入性青光眼共識。",
-        "zh_sum": "澳洲和紐西蘭青光眼協會關於介入性青光眼的共識主張轉向介入模式。 ……"
+        "country": "澳洲",
+        "ptype": "",
+        "zh": "",
+        "zh_sum": ""
       },
       {
         "title": "Fast progressors in Asian normal-tension glaucoma: 10 years and beyond in a longitudinal cohort.",
@@ -1504,8 +1834,10 @@
         "date": "2026",
         "pmid": "42409612",
         "summary": "This longitudinal cohort study highlights distinct progression patterns in Asian patients with NTG, with approximately 10.9% exhibiting fast progression. …",
-        "zh": "亞洲正常眼壓性青光眼的快速進展者：縱向隊列中 10 年及以上。",
-        "zh_sum": "這項縱向隊列研究強調了亞洲 NTG 患者的獨特進展模式，其中約 10.9% 表現出快速進展。 ……"
+        "country": "韓國",
+        "ptype": "",
+        "zh": "",
+        "zh_sum": ""
       },
       {
         "title": "Adjunctive ab-interno goniotomy in chronic angle-closure glaucoma: a retrospective proof-of-concept pilot study using doubly robust learning.",
@@ -1513,8 +1845,10 @@
         "date": "2026",
         "pmid": "42404605",
         "summary": "Adjunctive goniotomy was associated with more favorable 24-month surgical control in this retrospective pilot cohort. Imaging-informed doubly robust learning may support future studies of treatment-effect heterogeneity, but the current pred …",
-        "zh": "慢性閉角型青光眼的輔助經內房角切開術：一項使用雙穩健學習的回顧性概念驗證試驗研究。",
-        "zh_sum": "在這個回顧性試驗隊列中，輔助性前房角切開術與更有利的 24 個月手術控制相關。影像知情的雙穩健學習可能支持未來治療效果異質性的研究，但目前的預測…"
+        "country": "中國",
+        "ptype": "",
+        "zh": "",
+        "zh_sum": ""
       },
       {
         "title": "Combined Ab-Interno Trabeculectomy and Trabecular Aspiration as a Simultaneous versus Sequential Addition to Phacoemulsification in Exfoliative Eyes.",
@@ -1522,8 +1856,10 @@
         "date": "2025",
         "pmid": "42404272",
         "summary": "Cataract extraction, as a part of a triple procedure, seems to contribute to more effective IOP-lowering than trabectome surgery and trabecular aspiration alone in patients who underwent standalone phacoemulsification previously.",
-        "zh": "合併腹內小梁切除術和小梁抽吸術作為剝脫性眼白內障超音波乳化術的同時與順序添加。",
-        "zh_sum": "白內障摘除術作為三重手術的一部分，對於先前接受過獨立超音波乳化吸除術的患者來說，似乎比單純小梁切除術和小梁抽吸術更能有效降低眼壓。"
+        "country": "德國",
+        "ptype": "",
+        "zh": "",
+        "zh_sum": ""
       },
       {
         "title": "Systemic Hemodynamics and Ocular Perfusion in Normal-Tension Glaucoma: Evaluation of Beta-Blocker Effect.",
@@ -1531,8 +1867,10 @@
         "date": "2025",
         "pmid": "42404270",
         "summary": "In NTG patients, beta-blocker use reduces diurnal SBP and diurnal OPP but has no significant effect on 24-h IOP or nocturnal OPP. …",
-        "zh": "正常眼壓青光眼的全身血流動力學和眼部灌注：β-受體阻斷劑效果的評估。",
-        "zh_sum": "在 NTG 患者中，使用 β 受體阻斷劑可降低日間 SBP 和日間 OPP，但對 24 小時 IOP 或夜間 OPP 沒有顯著影響。 ……"
+        "country": "",
+        "ptype": "",
+        "zh": "",
+        "zh_sum": ""
       },
       {
         "title": "Microtopography screening to modulate the mitogenic effects of aqueous humor on human tenon fibroblasts.",
@@ -1540,8 +1878,10 @@
         "date": "2026",
         "pmid": "42404042",
         "summary": "Our findings demonstrate that implant surface microtopography modulates aqueous humor-induced human Tenon fibroblast proliferation. …",
-        "zh": "微地形篩選調節房水對人類腱纖維母細胞的有絲分裂作用。",
-        "zh_sum": "我們的研究結果表明，植入物表面微形貌可調節房水誘導的人類 Tenon 成纖維細胞增殖。 ……"
+        "country": "荷蘭",
+        "ptype": "",
+        "zh": "",
+        "zh_sum": ""
       },
       {
         "title": "Longitudinal changes in vessel density and retinal nerve fiber layer thickness after acute primary angle closure.",
@@ -1549,8 +1889,10 @@
         "date": "2026",
         "pmid": "42401889",
         "summary": "In APAC eyes, the circumpapillary VD decreased significantly 1 day after the APAC episode was fully resolved, and remained stable during the follow-up. However, the RNFL thickness ultimately plateaued at a stable level at 6 months. …",
-        "zh": "急性原發性房角閉合後血管密度和視網膜神經纖維層厚度的縱向變化。",
-        "zh_sum": "在 APAC 眼中，APAC 發作完全解決後 1 天，周圍乳頭 VD 顯著下降，並在隨訪期間保持穩定。然而，RNFL 厚度最終在 6 個月時穩定在穩定性水平。 ……"
+        "country": "中國",
+        "ptype": "",
+        "zh": "",
+        "zh_sum": ""
       },
       {
         "title": "Mitochondrial insufficiencies and neuroprotection in glaucoma.",
@@ -1558,8 +1900,10 @@
         "date": "2026",
         "pmid": "42401758",
         "summary": "By targeting mitochondrial insufficiencies as a root cause of glaucoma in addition to managing intraocular pressure, this new approach offers hope for preventing vision loss and potentially curing glaucoma.",
-        "zh": "青光眼的粒線體功能不全和神經保護。",
-        "zh_sum": "除了控制眼壓之外，透過將粒線體功能不全作為青光眼的根本原因，這種新方法為預防視力喪失和潛在治癒青光眼帶來了希望。"
+        "country": "澳洲",
+        "ptype": "文獻回顧",
+        "zh": "",
+        "zh_sum": ""
       },
       {
         "title": "Tubing the trabeculectomy: a novel filtration technique.",
@@ -1567,8 +1911,10 @@
         "date": "2026",
         "pmid": "42401738",
         "summary": "Trabeculectomy with subscleral tube placement provides effective, low-cost IOP reduction in refractory glaucoma, while preserving vision.",
-        "zh": "小梁切除術管材：一種新穎的過濾技術。",
-        "zh_sum": "小梁切除術加鞏膜下管置入術可有效、低成本地降低難治性青光眼的眼壓，同時保留視力。"
+        "country": "印度",
+        "ptype": "",
+        "zh": "",
+        "zh_sum": ""
       },
       {
         "title": "Polypharmacy in glaucoma management: a narrative review.",
@@ -1576,8 +1922,10 @@
         "date": "2026",
         "pmid": "42399572",
         "summary": "Glaucoma is a leading cause of irreversible blindness worldwide. Treatment for glaucoma is typically lifelong and often requires multiple antiglaucoma medications (polypharmacy) to adequately control intraocular pressure, prevent disease pr …",
-        "zh": "青光眼治療中的多重用藥：敘述性回顧。",
-        "zh_sum": "青光眼是全世界不可逆轉失明的主要原因。青光眼的治療通常是終生的，並且通常需要多種抗青光眼藥物（多藥物治療）以充分控制眼內壓，預防疾病發生…"
+        "country": "泰國",
+        "ptype": "文獻回顧",
+        "zh": "",
+        "zh_sum": ""
       },
       {
         "title": "Discovery of novel ROCK inhibitors RX-021 and RX-044 with intraocular pressure-lowering effect for glaucoma treatment.",
@@ -1585,8 +1933,10 @@
         "date": "2026",
         "pmid": "42398402",
         "summary": "Through systematic optimization of lead D25, we identified two novel ROCK inhibitors, RX-021 and RX-044. Maintaining DFG interactions while optimizing linker flexibility was critical for potency. …",
-        "zh": "發現具有降眼壓作用的新型 ROCK 抑制劑 RX-021 和 RX-044，用於治療青光眼。",
-        "zh_sum": "透過先導物 D25 的系統優化，我們確定了兩種新型 ROCK 抑制劑 RX-021 和 RX-044。保持 DFG 相互作用，同時優化連結器靈活性對於效力至關重要。 ……"
+        "country": "中國",
+        "ptype": "",
+        "zh": "",
+        "zh_sum": ""
       },
       {
         "title": "Tonographic outflow facility and intraocular pressure after standalone OMNI surgery.",
@@ -1594,8 +1944,10 @@
         "date": "2026",
         "pmid": "42397848",
         "summary": "This is the first study assessing the standalone effect of the OMNI device on both IOP and TOF change pre and post treatment. …",
-        "zh": "獨立 OMNI 手術後的眼壓流出設施和眼壓。",
-        "zh_sum": "這是第一個評估 OMNI 設備對治療前後 IOP 和 TOF 變化的獨立影響的研究。 ……"
+        "country": "英國",
+        "ptype": "",
+        "zh": "",
+        "zh_sum": ""
       },
       {
         "title": "Preoperative risk factors for uncontrolled intraocular pressure after vitrectomy combined with intrascleral fixation of the intraocular lens.",
@@ -1603,8 +1955,10 @@
         "date": "2026",
         "pmid": "42397663",
         "summary": "XFS and history of glaucoma surgery are associated with poor IOP control after PPV-ISF surgery.",
-        "zh": "玻璃體切割合併人工水晶體鞏膜內固定術後眼壓失控的術前危險因子",
-        "zh_sum": "XFS 和青光眼手術史與 PPV-ISF 手術後眼壓控制不佳有關。"
+        "country": "日本",
+        "ptype": "",
+        "zh": "",
+        "zh_sum": ""
       },
       {
         "title": "Advancing evidence-based glaucoma care: Methodological, therapeutic, and structural changes in the 6th edition of the European Glaucoma Society guidelines in the context of the Polish Ophthalmological Society Recommendations.",
@@ -1612,8 +1966,10 @@
         "date": "2026",
         "pmid": "42397092",
         "summary": "This article presents selected recommendations included in the 6th Edition of European Glaucoma Society (EGS) guidelines and highlights key differences compared to the previous (5th) and the latest revisions of Polish Ophthalmology Society  …",
-        "zh": "推進實證青光眼護理：在波蘭眼科學會建議的背景下，歐洲青光眼協會第六版指南的方法、治療和結構變化。",
-        "zh_sum": "本文介紹了歐洲青光眼協會 (EGS) 指南第六版中包含的精選建議，並強調了與波蘭眼科學會之前（第五版）和最新修訂版相比的主要差異…"
+        "country": "波蘭",
+        "ptype": "",
+        "zh": "",
+        "zh_sum": ""
       },
       {
         "title": "Transcriptomic Atlas of Human Trabecular Meshwork Uncovers the Cellular Landscape and Provides Insights into Glaucoma Pathophysiology.",
@@ -1621,8 +1977,10 @@
         "date": "2026",
         "pmid": "42396508",
         "summary": "The trabecular meshwork (TM) is a specialized multicellular tissue that regulates aqueous humor outflow and intraocular pressure (IOP), and its dysfunction is a central driver of glaucoma. …",
-        "zh": "人類小梁網轉錄組圖譜揭示了細胞景觀並提供了對青光眼病理生理學的見解。",
-        "zh_sum": "小梁網 (TM) 是一種特殊的多細胞組織，可調節房水流出和眼內壓 (IOP)，其功能障礙是青光眼的主要驅動因素。 ……"
+        "country": "",
+        "ptype": "",
+        "zh": "",
+        "zh_sum": ""
       }
     ],
     "retina": [
@@ -1632,8 +1990,10 @@
         "date": "2026",
         "pmid": "42434188",
         "summary": "Switching to faricimab in patients with nAMD on a treat-and-extend regimen with a treatment interval of less than 12 weeks resulted in a significant reduction in total DHC, particularly in the \"optimal responder\" group.",
-        "zh": "實際臨床實務中改用法瑞昔單抗治療新生血管性老年黃斑部病變的藥物經濟學分析。",
-        "zh_sum": "在治療間隔少於 12 週的治療和延長方案中，nAMD 患者轉用法里西單抗導致總 DHC 顯著減少，特別是在「最佳反應者」組中。"
+        "country": "西班牙",
+        "ptype": "",
+        "zh": "",
+        "zh_sum": ""
       },
       {
         "title": "Aflibercept with and without laser therapy in diabetic macular edema: a systematic review and meta-analysis.",
@@ -1641,8 +2001,10 @@
         "date": "2026",
         "pmid": "42427061",
         "summary": "The adjunctive use of laser therapy with aflibercept in DME does not provide statistically significant improvement in visual or anatomical outcomes over aflibercept alone.",
-        "zh": "阿柏西普合併或不合併雷射治療糖尿病黃斑水腫：系統性回顧與統合分析。",
-        "zh_sum": "與單獨使用阿柏西普相比，在 DME 中輔助使用雷射療法與阿柏西普在視覺或解剖學結果方面並未提供統計學上顯著的改善。"
+        "country": "美國",
+        "ptype": "文獻回顧",
+        "zh": "",
+        "zh_sum": ""
       },
       {
         "title": "Effectiveness and safety of intravitreal faricimab for macular oedema secondary to retinal vein occlusion: a systematic review and meta-analysis.",
@@ -1650,8 +2012,10 @@
         "date": "2026",
         "pmid": "42426919",
         "summary": "The synthesis is consistent with intravitreal faricimab use being associated with visual and anatomical improvement in macular oedema secondary to retinal vein occlusion, with the treatment-naïve pooled estimate primarily reflecting registr …",
-        "zh": "玻璃體內注射法里西單抗治療視網膜靜脈阻塞繼發性黃斑水腫的有效性和安全性：系統性回顧和統合分析。",
-        "zh_sum": "此合成結果與玻璃體內使用 Faricimab 與視網膜靜脈阻塞繼發的黃斑水腫的視覺和解剖學改善相關，而未經治療的匯總估計主要反映了登記…"
+        "country": "英國",
+        "ptype": "文獻回顧",
+        "zh": "",
+        "zh_sum": ""
       },
       {
         "title": "Comparison of intravitreal anti-VEGF treatment burden in different retinal diseases.",
@@ -1659,8 +2023,10 @@
         "date": "2026",
         "pmid": "42426273",
         "summary": "Although the overall perceived burden of anti-VEGF treatment was similar across retinal diseases, patients' specific concerns varied. …",
-        "zh": "不同視網膜疾病玻璃體內抗VEGF治療負擔的比較。",
-        "zh_sum": "儘管不同視網膜疾病的抗 VEGF 治療的整體感知負擔相似，但患者的具體關注點有所不同。 ……"
+        "country": "奧地利",
+        "ptype": "",
+        "zh": "",
+        "zh_sum": ""
       },
       {
         "title": "Treatment effects prediction and clinical decision-making system for retinal vein occlusion by artificial intelligence.",
@@ -1668,8 +2034,10 @@
         "date": "2026",
         "pmid": "42426142",
         "summary": "Retinal vein occlusion (RVO) is a chronic retinal vascular disease that often requires repeated anti-VEGF injections and long-term follow-up. …",
-        "zh": "人工智慧視網膜靜脈阻塞治療效果預測及臨床決策系統",
-        "zh_sum": "視網膜靜脈阻塞（RVO）是一種慢性視網膜血管疾病，通常需要反覆注射抗VEGF藥物並長期追蹤。 ……"
+        "country": "中國",
+        "ptype": "",
+        "zh": "",
+        "zh_sum": ""
       },
       {
         "title": "Machine Learning to Predict Outcomes of Anti-VEGF Therapy in Neovascular Age-Related Macular Degeneration.",
@@ -1677,8 +2045,10 @@
         "date": "2026",
         "pmid": "42421758",
         "summary": "Machine learning models based on automated fluid metrics can accurately predict treatment burden and VA outcomes within the clinical environment in which they are developed. …",
-        "zh": "機器學習預測新生血管性老年黃斑部病變的抗 VEGF 治療結果。",
-        "zh_sum": "基於自動化液體指標的機器學習模型可以在其開發的臨床環境中準確預測治療負擔和 VA 結果。 ……"
+        "country": "英國",
+        "ptype": "",
+        "zh": "",
+        "zh_sum": ""
       },
       {
         "title": "Baseline Optical Coherence Tomography Biomarkers Associated with the 2-Year Development of Macular Atrophy or Fibrosis in Neovascular Age-related Macular Degeneration.",
@@ -1686,8 +2056,10 @@
         "date": "2026",
         "pmid": "42421757",
         "summary": "Baseline OCT biomarkers, particularly IRF and type 3 MNV, strongly predict macular atrophy, while type 2 MNV predicts fibrosis in eyes with exudative neovascular AMD treated with a T&E regimen. …",
-        "zh": "與新生血管性老年黃斑部病變中黃斑萎縮或纖維化的 2 年發展相關的基線光學相干斷層掃描生物標記。",
-        "zh_sum": "基線 OCT 生物標記物，特別是 IRF 和 3 型 MNV，強烈預測黃斑萎縮，而 2 型 MNV 則預測接受 T&E 方案治療的滲出性新生血管性 AMD 的眼睛纖維化。 ……"
+        "country": "義大利",
+        "ptype": "",
+        "zh": "",
+        "zh_sum": ""
       },
       {
         "title": "Phenotype-driven management of diabetic macular edema: multimodal imaging biomarkers and individualized therapy.",
@@ -1695,8 +2067,10 @@
         "date": "2026",
         "pmid": "42415787",
         "summary": "Diabetic macular edema (DME) remains a leading cause of vision impairment worldwide. Although intravitreal anti-vascular endothelial growth factor (anti-VEGF) agents are widely regarded as first-line treatment, a substantial proportion of p …",
-        "zh": "表型驅動的糖尿病黃斑水腫管理：多模式影像生物標記和個人化治療。",
-        "zh_sum": "糖尿病黃斑水腫 (DME) 仍然是全世界視力損害的主要原因。儘管玻璃體內注射抗血管內皮生長因子（抗 VEGF）藥物被廣泛認為是一線治療，但相當大比例的患者…"
+        "country": "中國",
+        "ptype": "文獻回顧",
+        "zh": "",
+        "zh_sum": ""
       },
       {
         "title": "Real-Life 1-Year Results and Predictors of Visual Outcome with Intravitreal Faricimab for Treatment of Exudative Neovascular Age-Related Macular Degeneration.",
@@ -1704,8 +2078,10 @@
         "date": "2026",
         "pmid": "42410200",
         "summary": "In our real-world practice, faricimab effectively controls nAMD, offering significant anatomical benefits and visual stability with extended dosing intervals. Approximately 80% of treatment-naïve patients maintained ≥ Q12-week schedules. …",
-        "zh": "玻璃體內注射 Faricimab 治療滲出性新生血管性老年黃斑部病變的真實一年結果和視力結果預測因素。",
-        "zh_sum": "在我們的實際實踐中，faricimab 可有效控制 nAMD，透過延長給藥間隔提供顯著的解剖學益處和視覺穩定性。約 80% 的初治患者維持 ≥Q12 週的治療方案。 ……"
+        "country": "義大利",
+        "ptype": "",
+        "zh": "",
+        "zh_sum": ""
       },
       {
         "title": "Association between angiogenic features and responsiveness to faricimab in treatment-naïve neovascular age-related macular degeneration with OCT angiography.",
@@ -1713,8 +2089,10 @@
         "date": "2026",
         "pmid": "42406042",
         "summary": "A fixed faricimab regimen through Month 14 was associated with improved visual and anatomical outcomes in treatment-naïve nAMD. OCTA-based vascular changes differed according to MNV type and treatment responsiveness. …",
-        "zh": "OCT 血管攝影在初治新生血管性老年黃斑部病變中血管生成特徵與對 Faricimab 反應性之間的關聯。",
-        "zh_sum": "第 14 個月的固定法瑞昔單抗治療方案與未接受治療的 nAMD 患者的視覺和解剖結果改善相關。基於 OCTA 的血管變化會根據 MNV 類型和治療反應而有所不同。 ……"
+        "country": "日本",
+        "ptype": "",
+        "zh": "",
+        "zh_sum": ""
       },
       {
         "title": "Switching to aflibercept 8 mg in neovascular age-related macular degeneration: real-world outcomes according to switch indication.",
@@ -1722,8 +2100,10 @@
         "date": "2026",
         "pmid": "42406041",
         "summary": "In previously treated nAMD eyes, switching to aflibercept 8 mg was associated with reversal of pre-switch anatomical worsening, reduction in retinal fluid, and modest visual gains. …",
-        "zh": "在新生血管性老年黃斑部病變中改用阿柏西普 8 mg：根據改用適應症的實際結果。",
-        "zh_sum": "在既往治療過的 nAMD 眼中，改用阿柏西普 8 mg 與轉用前解剖學惡化的逆轉、視網膜液減少和適度的視力增益相關。 ……"
+        "country": "義大利",
+        "ptype": "",
+        "zh": "",
+        "zh_sum": ""
       },
       {
         "title": "Distinct interactions between macular neovascularization and geographic atrophy: Growth dynamics and fellow-eye risk.",
@@ -1731,8 +2111,10 @@
         "date": "2026",
         "pmid": "42405678",
         "summary": "PurposeTo compare geographic atrophy (GA) growth in eyes with and without macular neovascularization (MNV) and evaluate anti-VEGF therapy effects on GA progression.MethodsOne eye per patient with GA with one-year of follow-up was included. …",
-        "zh": "黃斑新生血管形成和地理萎縮之間的獨特相互作用：生長動態和對眼風險。",
-        "zh_sum": "目的比較患有和不患有黃斑部新生血管（MNV）的眼睛地理萎縮（GA）的生長，並評估抗VEGF治療對GA進展的影響。方法納入每位患有GA的患者一隻眼睛並進行一年的追蹤。 ……"
+        "country": "美國",
+        "ptype": "",
+        "zh": "",
+        "zh_sum": ""
       },
       {
         "title": "Plain language summary of publication of the 96-week results from the PHOTON study: intravitreal aflibercept 8 mg for diabetic macular edema.",
@@ -1740,8 +2122,10 @@
         "date": "2026",
         "pmid": "42404622",
         "summary": "What is this summary about? This is a summary of a publication about the 2-year (96-week) results from the PHOTON study, which was published in Ophthalmology. …",
-        "zh": "PHOTON 研究 96 週結果發布的簡明語言摘要：玻璃體內注射阿柏西普 8 mg 治療糖尿病性黃斑水腫。",
-        "zh_sum": "這個總結是關於什麼的？這是關於 PHOTON 研究 2 年（96 週）結果的出版物的摘要，該研究發表在《眼科》雜誌上。 ……"
+        "country": "美國",
+        "ptype": "",
+        "zh": "",
+        "zh_sum": ""
       },
       {
         "title": "Short-term outcomes of intravitreal faricimab on refractory neovascular age-related macular degeneration patients in China.",
@@ -1749,8 +2133,10 @@
         "date": "2026",
         "pmid": "42404560",
         "summary": "Faricimab given as three monthly loading doses demonstrates significant short-term improvement in vision and anatomical outcomes, including rapid gains in BCVA and reductions in CST and retinal fluid. …",
-        "zh": "玻璃體內注射法瑞昔單抗治療中國難治性新生血管性老年黃斑部病變患者的短期結果。",
-        "zh_sum": "Faricimab 按三個月負荷劑量給予，顯示出視力和解剖結果的短期顯著改善，包括 BCVA 的快速增加以及 CST 和視網膜液的減少。 ……"
+        "country": "中國",
+        "ptype": "",
+        "zh": "",
+        "zh_sum": ""
       },
       {
         "title": "Impact of Early Residual Fluid after Aflibercept Loading on 12-Month Outcomes in Neovascular Age-Related Macular Degeneration.",
@@ -1758,8 +2144,10 @@
         "date": "2026",
         "pmid": "42403183",
         "summary": "ERF after aflibercept loading is a significant independent predictor of long-term fluid persistence. While ERF signifies a more recalcitrant disease course, comparable visual outcomes can be achieved through proactive, individualized treatm …",
-        "zh": "阿柏西普負荷後早期殘留液對新生血管性老年黃斑部病變 12 個月結果的影響。",
-        "zh_sum": "阿柏西普負荷後的 ERF 是長期液體持續性的重要獨立預測因子。雖然 ERF 意味著更頑固的病程，但透過主動、個人化的治療可以實現類似的視力結果…"
+        "country": "韓國",
+        "ptype": "",
+        "zh": "",
+        "zh_sum": ""
       },
       {
         "title": "Aflibercept 24-Month Outcomes in Diabetic Macular Edema With and Without Prior Macular Laser Therapy: Data from the Fight Retinal Blindness! Registry.",
@@ -1767,8 +2155,10 @@
         "date": "2026",
         "pmid": "42401762",
         "summary": "In routine clinical care, intravitreal aflibercept 2 mg for DME was associated with sustained anatomical improvement and modest, largely stable visual gains over 24 months, particularly in treatment-naive eyes. …",
-        "zh": "阿柏西普治療糖尿病性黃斑水腫 24 個月的結果，無論是否接受過黃斑雷射治療：來自對抗視網膜失明的數據！登記處。",
-        "zh_sum": "在常規臨床護理中，玻璃體內注射阿柏西普 2 mg 用於 DME 與持續的解剖學改善和 24 個月內適度、基本穩定的視力增益相關，特別是對於未經治療的眼睛。 ……"
+        "country": "瑞士",
+        "ptype": "",
+        "zh": "",
+        "zh_sum": ""
       },
       {
         "title": "Experiences and Perspectives on Diabetic Retinopathy Screening and Treatment in Mexico: A Subanalysis of the Diabetic Retinopathy Barometer Study.",
@@ -1776,8 +2166,10 @@
         "date": "2026",
         "pmid": "42401761",
         "summary": "This study reveals substantial challenges to adherence in DR/DME management in participating Mexican referral centers, rooted in financial, logistical, and psychosocial factors. …",
-        "zh": "墨西哥糖尿病視網膜病變篩檢和治療的經驗和觀點：糖尿病視網膜病變晴雨表研究的子分析。",
-        "zh_sum": "這項研究揭示了墨西哥參與轉診中心在堅持 DR/DME 管理方面面臨的巨大挑戰，其根源在於財務、後勤和社會心理因素。 ……"
+        "country": "墨西哥",
+        "ptype": "",
+        "zh": "",
+        "zh_sum": ""
       },
       {
         "title": "Notch signaling in anti-VEGF resistant arteriolar choroidal neovascularization.",
@@ -1785,8 +2177,10 @@
         "date": "2026",
         "pmid": "42401373",
         "summary": "Choroidal neovascularization (CNV) is a major pathological hallmark of fundus diseases, such as age-related macular degeneration, and is commonly treated with anti-vascular endothelial growth factor (VEGF) agents. …",
-        "zh": "抗 VEGF 抗性小動脈脈絡膜新生血管形成中的 Notch 訊號傳導。",
-        "zh_sum": "脈絡膜新生血管（CNV）是眼底疾病（例如年齡相關性黃斑部病變）的主要病理標誌，通常使用抗血管內皮生長因子（VEGF）藥物治療。 ……"
+        "country": "中國",
+        "ptype": "文獻回顧",
+        "zh": "",
+        "zh_sum": ""
       },
       {
         "title": "Tanshinone IIA inhibits choroidal neovascularization and restores outer blood-retinal barrier function in Vldlr knockout mice.",
@@ -1794,8 +2188,10 @@
         "date": "2026",
         "pmid": "42401235",
         "summary": "Age-related macular degeneration (AMD) is a leading cause of vision loss, with its neovascular form (nAMD) primarily treated using anti-VEGF agents; however, therapeutic resistance and nonresponse remain major clinical challenges. …",
-        "zh": "Tanshinone IIA 可抑制 Vldlr 敲除小鼠的脈絡膜新生血管形成並恢復外層血液視網膜屏障功能。",
-        "zh_sum": "老年性黃斑部病變 (AMD) 是視力喪失的主要原因，其新生血管性黃斑部病變 (nAMD) 主要使用抗 VEGF 藥物進行治療；然而，治療抗藥性和無反應仍然是主要的臨床挑戰。 ……"
+        "country": "中國",
+        "ptype": "",
+        "zh": "",
+        "zh_sum": ""
       },
       {
         "title": "Effect of key baseline disease characteristics on aflibercept 8 mg dosing interval extension: A post hoc 96-week analysis of PULSAR.",
@@ -1803,8 +2199,10 @@
         "date": "2026",
         "pmid": "42398914",
         "summary": "Overall, findings from this PULSAR post hoc analysis of key baseline characteristics in patients grouped by dosing interval suggest that the aflibercept 8q12 and 8q16 regimens were suitable for most patients across a broad range of baseline …",
-        "zh": "關鍵基線疾病特徵對阿柏西普 8 mg 給藥間隔延長的影響：PULSAR 的事後 96 週分析。",
-        "zh_sum": "總體而言，對按給藥間隔分組的患者關鍵基線特徵進行 PULSAR 事後分析的結果表明，阿柏西普 8q12 和 8q16 方案適合大多數基線範圍廣泛的患者…"
+        "country": "瑞士",
+        "ptype": "",
+        "zh": "",
+        "zh_sum": ""
       },
       {
         "title": "[Real-world experience with aflibercept 8 mg for treatment of neovascular age-related macular degeneration after 12 months].",
@@ -1812,8 +2210,10 @@
         "date": "2026",
         "pmid": "42397425",
         "summary": "These results confirm a good efficacy of aflibercept 8 mg for the treatment of nAMD with reduced injection frequency after 12 months of treatment in a portion of pretreated eyes that were often previously refractory to treatment. …",
-        "zh": "[12 個月後使用阿柏西普 8 毫克治療新生血管性老年黃斑部病變的真實經驗]。",
-        "zh_sum": "這些結果證實了阿柏西普 8 毫克對於 nAMD 的治療具有良好的療效，在治療 12 個月後，對部分預先治療過的眼睛（以前通常難以治療）注射頻率減少。 ……"
+        "country": "",
+        "ptype": "",
+        "zh": "",
+        "zh_sum": ""
       },
       {
         "title": "Validation of Deep Capillary Plexus OCTA Metrics as Predictors of Diabetic Retinopathy Complications: A One-Year Longitudinal Study.",
@@ -1821,8 +2221,10 @@
         "date": "2026",
         "pmid": "42396532",
         "summary": "Diabetic retinopathy (DR) can lead to vision-threatening complications, and tools that capture microvascular damage beyond standard clinical grading of disease severity may improve risk prediction. …",
-        "zh": "深部毛細血管叢 OCTA 指標作為糖尿病視網膜病變併發症預測因子的驗證：一項為期一年的縱向研究。",
-        "zh_sum": "糖尿病視網膜病變 (DR) 可導致危及視力的併發症，捕捉超出疾病嚴重程度標準臨床分級的微血管損傷的工具可能會改善風險預測。 ……"
+        "country": "",
+        "ptype": "",
+        "zh": "",
+        "zh_sum": ""
       },
       {
         "title": "Age-related macular degeneration: Updates for general practitioners.",
@@ -1830,8 +2232,10 @@
         "date": "2026",
         "pmid": "42392211",
         "summary": "Intravitreal anti-VEGF (vascular endothelial growth factor) therapy remains the mainstay for wet AMD, while complement inhibitors show promise for geographic atrophy. …",
-        "zh": "年齡相關性黃斑部病變：全科醫生的更新。",
-        "zh_sum": "玻璃體內抗 VEGF（血管內皮生長因子）治療仍是濕性 AMD 的主要治療方法，而補體抑制劑則有望治療地圖樣萎縮。 ……"
+        "country": "",
+        "ptype": "",
+        "zh": "",
+        "zh_sum": ""
       },
       {
         "title": "Real-world comparison of faricimab and aflibercept as second-line therapies for neovascular age-related macular degeneration.",
@@ -1839,8 +2243,10 @@
         "date": "2026",
         "pmid": "42390573",
         "summary": "In this real-world multicenter cohort, both faricimab and aflibercept were associated with visual and anatomical improvement after switching to second-line therapy for nAMD. …",
-        "zh": "Faricimab 和阿柏西普作為新生血管性老年黃斑部病變二線療法的真實世界比較。",
-        "zh_sum": "在這個真實世界的多中心隊列中，在轉為 nAMD 的二線治療後，faricimab 和 aflibercept 均與視力和解剖學改善相關。 ……"
+        "country": "以色列",
+        "ptype": "",
+        "zh": "",
+        "zh_sum": ""
       },
       {
         "title": "Discontinuing Anti-VEGF Therapy in Patients with Neovascular Age-Related Macular Degeneration That Remains Inactive with Treatment at the Maximum Injection Interval.",
@@ -1848,8 +2254,10 @@
         "date": "2026",
         "pmid": "42389069",
         "summary": "This review aims to provide guidance on the management of patients with neovascular age-related macular degeneration (nAMD) whose disease becomes inactive on anti-vascular endothelial growth factor (VEGF) treatment. …",
-        "zh": "對於患有新生血管性老年黃斑部病變且在最大注射間隔治療後仍不活躍的患者，停止抗 VEGF 治療。",
-        "zh_sum": "本篇回顧旨在為新生血管性老年黃斑部病變 (nAMD) 患者的治療提供指導，這些患者的疾病在抗血管內皮生長因子 (VEGF) 治療後變得不活躍。 ……"
+        "country": "土耳其",
+        "ptype": "文獻回顧",
+        "zh": "",
+        "zh_sum": ""
       },
       {
         "title": "Advances in Polypoidal Choroidal Vasculopathy (PCV) Management: Emerging Evidence for Faricimab and Aflibercept 8 mg.",
@@ -1857,8 +2265,10 @@
         "date": "2026",
         "pmid": "42384329",
         "summary": "Faricimab and aflibercept 8 mg represent important advances in PCV management, offering more durable treatment options and reducing treatment burden. …",
-        "zh": "息肉狀脈絡膜血管病變 (PCV) 治療的進展：Faricimab 和 Aflibercept 8 mg 的新證據。",
-        "zh_sum": "Faricimab 和 aflibercept 8 mg 代表了 PCV 管理的重要進步，提供了更持久的治療選擇並減輕了治療負擔。 ……"
+        "country": "新加坡",
+        "ptype": "文獻回顧",
+        "zh": "",
+        "zh_sum": ""
       },
       {
         "title": "Optical Coherence Tomography Biomarkers as Potential Predictors for Visual Function and Response to Intravitreal Therapy in Diabetic Macular Edema.",
@@ -1866,8 +2276,10 @@
         "date": "2026",
         "pmid": "42382844",
         "summary": "Purpose: To synthesize a broad range of optical coherence tomography (OCT) biomarkers in diabetic macular edema (DME) and their associations with visual acuity (VA) and response to intravitreal antivascular endothelial growth factor (anti-V …",
-        "zh": "光學相干斷層掃描生物標記作為糖尿病黃斑水腫視覺功能和玻璃體內治療反應的潛在預測因子。",
-        "zh_sum": "目的：合成糖尿病性黃斑水腫 (DME) 的廣泛光學相干斷層掃描 (OCT) 生物標記及其與視力 (VA) 和玻璃體內抗血管內皮生長因子（抗 V …"
+        "country": "加拿大",
+        "ptype": "",
+        "zh": "",
+        "zh_sum": ""
       },
       {
         "title": "Proteomic profiling reveals treatment-dependent inflammatory signatures and identifies biomarkers of refractory age-related macular degeneration.",
@@ -1875,8 +2287,10 @@
         "date": "2026",
         "pmid": "42382171",
         "summary": "Our results indicate that anti-VEGFA therapy shapes AMD-associated inflammation; therefore, the choice of anti-VEGFA therapy remains important in reducing secondary inflammatory effects. …",
-        "zh": "蛋白質體學分析揭示了治療依賴性發炎特徵，並鑑定了難治性老年黃斑部病變的生物標記。",
-        "zh_sum": "我們的結果表明，抗 VEGFA 療法可塑造 AMD 相關發炎；因此，抗 VEGFA 治療的選擇對於減少繼發性發炎反應仍然很重要。 ……"
+        "country": "美國",
+        "ptype": "",
+        "zh": "",
+        "zh_sum": ""
       },
       {
         "title": "Integrated Population Pharmacokinetic Analysis of Intravitreal Aflibercept Drug Products.",
@@ -1884,8 +2298,10 @@
         "date": "2026",
         "pmid": "42381356",
         "summary": "Neovascular age-related macular degeneration (nAMD) and diabetic macular edema (DME) can cause substantial vision loss. The 2-mg drug product of aflibercept (AFL-2)-an anti-vascular endothelial growth factor agent-has established efficacy a …",
-        "zh": "玻璃體內阿柏西普藥品的綜合群體藥物動力學分析。",
-        "zh_sum": "新生血管性老年黃斑部病變（nAMD）和糖尿病黃斑水腫（DME）可導致視力嚴重喪失。 2 毫克阿柏西普 (AFL-2) 藥品（一種抗血管內皮生長因子藥物）已確定療效..."
+        "country": "美國",
+        "ptype": "",
+        "zh": "",
+        "zh_sum": ""
       },
       {
         "title": "Assessment of real-life visual outcomes and treatment efficacy of diabetic macular edema in patients with type 2 diabetes.",
@@ -1893,8 +2309,10 @@
         "date": "2026",
         "pmid": "42380906",
         "summary": "Despite recurrent episodes of DME, most patients with T2D experienced improvement in visual acuity. Anti-VEGF agents alone or combined with macular laser appeared to be beneficial in terms of both visual gain and reduction of edema.",
-        "zh": "評估第 2 型糖尿病患者現實生活中的視力結果和糖尿病黃斑水腫的治療效果。",
-        "zh_sum": "儘管 DME 反覆發作，但大多數 T2D 患者的視力都有所改善。單獨使用抗 VEGF 藥物或與黃斑雷射合併使用似乎對視力增益和減少水腫都有好處。"
+        "country": "芬蘭",
+        "ptype": "",
+        "zh": "",
+        "zh_sum": ""
       }
     ],
     "dryeye": [
@@ -1904,8 +2322,10 @@
         "date": "2026",
         "pmid": "42430076",
         "summary": "Keratoconus is the most common corneal ectatic disorder worldwide. Typically manifesting in adolescence, it imposes a substantial burden on quality of life and, if untreated, may progress to advanced stages requiring corneal transplantation …",
-        "zh": "角膜交聯的科學和臨床進展：作用機制、超結構變化、臨床適應症和新興治療策略。",
-        "zh_sum": "圓錐角膜是全世界最常見的角膜擴張性疾病。通常出現在青春期，它會給生活品質帶來沉重負擔，如果不及時治療，可能會進展到需要角膜移植的晚期階段…"
+        "country": "義大利",
+        "ptype": "文獻回顧",
+        "zh": "",
+        "zh_sum": ""
       },
       {
         "title": "Beyond migraine: A narrative review of photophobia's clinical spectrum.",
@@ -1913,8 +2333,10 @@
         "date": "2026",
         "pmid": "42425853",
         "summary": "Photophobia is frequently reported in migraine and traumatic brain injury, as well as in common ocular conditions such as dry eye disease and corneal pathology. …",
-        "zh": "超越偏頭痛：畏光症臨床光譜的敘述性回顧。",
-        "zh_sum": "畏光常見於偏頭痛和創傷性腦損傷，以及乾眼症和角膜病理等常見眼部疾病。 ……"
+        "country": "法國",
+        "ptype": "文獻回顧",
+        "zh": "",
+        "zh_sum": ""
       },
       {
         "title": "Ocular Symptoms After Refractive Surgery.",
@@ -1922,8 +2344,10 @@
         "date": "2026",
         "pmid": "42424051",
         "summary": "In this cohort study, postoperative ocular symptom trajectories after refractive surgery followed distinct longitudinal patterns, suggesting these trajectories may have been associated with specific baseline factors. …",
-        "zh": "屈光手術後的眼部症狀。",
-        "zh_sum": "在這項隊列研究中，屈光手術後的術後眼部症狀軌跡遵循不同的縱向模式，表明這些軌跡可能與特定的基線因素相關。 ……"
+        "country": "",
+        "ptype": "",
+        "zh": "",
+        "zh_sum": ""
       },
       {
         "title": "Evaluation of the skin carcinogenicity of the TRPV1 antagonist motugivatrep (SJP-0132) using an ultra-short-term two-stage skin carcinogenesis assay in Tg-rasH2 mice.",
@@ -1931,8 +2355,10 @@
         "date": "2026",
         "pmid": "42422506",
         "summary": "Motugivatrep (SJP-0132), a transient receptor potential cation channel subfamily V member 1 (TRPV1) antagonist, is being developed as an ophthalmic drug for dry eye disease. …",
-        "zh": "使用 Tg-rasH2 小鼠超短期兩階段皮膚致癌試驗評估 TRPV1 拮抗劑 motugivatrep (SJP-0132) 的皮膚致癌性。",
-        "zh_sum": "Motugivatrep (SJP-0132) 是一種瞬時受體電位陽離子通道亞家族 V 成員 1 (TRPV1) 拮抗劑，正在開發為治療乾眼症的眼科藥物。 ……"
+        "country": "日本",
+        "ptype": "",
+        "zh": "",
+        "zh_sum": ""
       },
       {
         "title": "Clinical and Immunological Effects of Systemic Vitamin D Supplementation in Vitamin D-Deficient Dry Eye Disease: A Prospective Comparative Study.",
@@ -1940,8 +2366,10 @@
         "date": "2026",
         "pmid": "42421615",
         "summary": "In vitamin D-deficient DED, systemic vitamin D supplementation added to topical therapy was associated with greater improvement in tear film parameters and modulation of selected inflammatory cytokines compared with topical therapy alone. …",
-        "zh": "全身性補充維生素 D 對維生素 D 缺乏性乾眼症的臨床和免疫學影響：一項前瞻性比較研究。",
-        "zh_sum": "在維生素 D 缺乏的 DED 中，與單獨局部治療相比，在局部治療的基礎上補充全身維生素 D 與淚膜參數和選定炎症細胞因子的調節有更大的改善相關。 ……"
+        "country": "",
+        "ptype": "",
+        "zh": "",
+        "zh_sum": ""
       },
       {
         "title": "Belantamab mafodotin, a BCMA-directed antibody-drug conjugate for multiple myeloma.",
@@ -1949,8 +2377,10 @@
         "date": "2026",
         "pmid": "42418224",
         "summary": "Belantamab mafodotin-blmf (bela-maf) is a first-in-class antibody-drug conjugate (ADC) that targets B-cell maturation antigen (BCMA) for the treatment of multiple myeloma. …",
-        "zh": "Belantamab mafodotin，一種針對多發性骨髓瘤的 BCMA 導引抗體藥物偶聯物。",
-        "zh_sum": "Belantamab mafodotin-blmf (bela-maf) 是一種一流的抗體藥物偶聯物 (ADC)，可針對 B 細胞成熟抗原 (BCMA)，用於治療多發性骨髓瘤。 ……"
+        "country": "美國",
+        "ptype": "文獻回顧",
+        "zh": "",
+        "zh_sum": ""
       },
       {
         "title": "Which features best differentiate Sjögren's-related from non-Sjögren's-related dry eye disease?",
@@ -1958,8 +2388,10 @@
         "date": "2026",
         "pmid": "42417850",
         "summary": "SjD-related DED is characterized by ocular surface inflammation, symptom-sign discordance with signs outweighing symptoms, and a Schirmer test < 5 mm/5 min.",
-        "zh": "哪些特徵可以最好地區分乾燥相關乾眼症和非乾燥相關乾眼症？",
-        "zh_sum": "SjD 相關 DED 的特徵是眼表發炎、症狀徵像不一致（體徵大於症狀）以及 Schirmer 試驗 < 5 mm/5 分鐘。"
+        "country": "",
+        "ptype": "",
+        "zh": "",
+        "zh_sum": ""
       },
       {
         "title": "Randomized comparison of lipid-containing and non-lipid-containing artificial tears on tear film dynamics over a 3-month period.",
@@ -1967,8 +2399,10 @@
         "date": "2026",
         "pmid": "42415246",
         "summary": "Patients with lipid deficiency may benefit from lipid-containing AT over the non-lipid-containing AT to stabilize tear lipid thickness and minimize tear thinning while increasing tear breakup time.",
-        "zh": "三個月內含脂和不含脂人工淚液對淚膜動態的隨機比較。",
-        "zh_sum": "與不含脂質的 AT 相比，脂質缺乏的患者可能受益於含脂質 AT，以穩定淚液脂質厚度並最大程度地減少淚液變薄，同時增加淚液破裂時間。"
+        "country": "美國",
+        "ptype": "隨機對照試驗(RCT)",
+        "zh": "",
+        "zh_sum": ""
       },
       {
         "title": "Canaliculitis associated with multiple retained silicone punctal plugs and concurrent biodegradable plug placement.",
@@ -1976,8 +2410,10 @@
         "date": "2026",
         "pmid": "42414036",
         "summary": "Punctal occlusion is a common therapy for dry eye syndrome using permanent or biodegradable plugs to reduce tear drainage. …",
-        "zh": "與多個保留的矽膠淚點塞和同時放置可生物降解塞相關的淚小管炎。",
-        "zh_sum": "淚點阻塞是乾眼症的常見療法，使用永久性或可生物降解的塞子來減少淚液排出。 ……"
+        "country": "美國",
+        "ptype": "病例報告",
+        "zh": "",
+        "zh_sum": ""
       },
       {
         "title": "The Link Between Obstructive Sleep Apnea and Dry Eye Disease: Pathophysiology and Current Updates.",
@@ -1985,8 +2421,10 @@
         "date": "2026",
         "pmid": "42412736",
         "summary": "Obstructive Sleep Apnea (OSA) and Dry Eye Disease (DED) are increasingly recognized as interrelated conditions with significant clinical implications. …",
-        "zh": "阻塞性睡眠呼吸中止症與乾眼症之間的關聯：病理生理學和當前更新。",
-        "zh_sum": "阻塞性睡眠呼吸中止症 (OSA) 和乾眼症 (DED) 越來越被認為是具有重大臨床意義的相互關聯的疾病。 ……"
+        "country": "",
+        "ptype": "文獻回顧",
+        "zh": "",
+        "zh_sum": ""
       },
       {
         "title": "Tear Fluid Lymphotoxin-Alpha as a Diagnostic Biomarker for the Stratification of Dry Eye Disease.",
@@ -1994,8 +2432,10 @@
         "date": "2026",
         "pmid": "42411874",
         "summary": "Throughout the cohort, we explored the potential of tear LTA concentration for the diagnosis and graded classification diagnosis of dry eye.",
-        "zh": "淚液淋巴毒素-α 作為乾眼症分層的診斷生物標記。",
-        "zh_sum": "在整個隊列中，我們探索了淚液 LTA 濃度在乾眼症診斷和分級分類診斷中的潛力。"
+        "country": "中國",
+        "ptype": "",
+        "zh": "",
+        "zh_sum": ""
       },
       {
         "title": "The Hidden Burden of Diabetes: Investigating the Link between Dry Eye Disease and Diabetic Retinopathy with its Severity.",
@@ -2003,8 +2443,10 @@
         "date": "2026",
         "pmid": "42411415",
         "summary": "DED is a prevalent ocular complication in diabetic patients, particularly those with longer disease duration and with DR. Regular ocular examinations, including DED assessment, are crucial for early detection and management of this ocular c …",
-        "zh": "糖尿病的隱藏負擔：調查乾眼症和糖尿病視網膜病變及其嚴重程度之間的關聯。",
-        "zh_sum": "DED 是糖尿病患者常見的眼部併發症，尤其是病程較長且患有 DR 的患者。定期眼科檢查，包括 DED 評估，對於早期發現和治療這種眼疾至關重要…"
+        "country": "印度",
+        "ptype": "",
+        "zh": "",
+        "zh_sum": ""
       },
       {
         "title": "Efficacy of Punctal Occlusion Techniques in Tear Drainage Disorders: A Systematic Review and Meta-Analysis.",
@@ -2012,8 +2454,10 @@
         "date": "2026",
         "pmid": "42404369",
         "summary": "Punctal occlusion techniques offer consistent ocular surface benefits with minimal risks. While current evidence highlights positive clinical outcomes, high-quality randomized controlled trials with standardized metrics are necessary to est …",
-        "zh": "淚點閉塞技術在淚液引流疾病的療效：系統性回顧與統合分析。",
-        "zh_sum": "淚點閉塞技術可提供一致的眼表益處且風險最小。雖然目前的證據強調了積極的臨床結果，但有必要進行具有標準化指標的高品質隨機對照試驗來評估…"
+        "country": "沙烏地",
+        "ptype": "文獻回顧",
+        "zh": "",
+        "zh_sum": ""
       },
       {
         "title": "The Effect of Hydroxypropyl Guar-Hyaluronic Acid Dual-Polymer Eye Drops on Inflammatory Cytokine Expression in Tears of Patients with Computer Vision Syndrome.",
@@ -2021,8 +2465,10 @@
         "date": "2025",
         "pmid": "42404271",
         "summary": "Treatment with HPG-HA dual-polymer eye drops for 3 months does alleviate dry eye symptoms and decrease tear evaporation rate in patients with computer vision syndrome. …",
-        "zh": "羥丙基瓜爾膠-透明質酸雙聚合物眼藥水對電腦視覺症候群患者淚液發炎細胞激素表現的影響。",
-        "zh_sum": "使用HPG-HA雙聚合物眼藥水治療3個月確實可以緩解電腦視覺綜合症患者的乾眼症狀並降低淚液蒸發率。 ……"
+        "country": "印度",
+        "ptype": "",
+        "zh": "",
+        "zh_sum": ""
       },
       {
         "title": "The burden of keratoconjunctivitis sicca in Nigeria: a scoping review of prevalence and risk factors.",
@@ -2030,8 +2476,10 @@
         "date": "2026",
         "pmid": "42397558",
         "summary": "Keratoconjunctivitis sicca represents a significant but often under-recognised ocular health burden in Nigeria, particularly affecting older adults, females, and individuals with systemic and environmental risk factors. …",
-        "zh": "尼日利亞乾燥性角結膜炎的負擔：盛行率和危險因素的範圍審查。",
-        "zh_sum": "在奈及利亞，乾燥性角結膜炎是一種嚴重但往往未被充分認識的眼睛健康負擔，尤其影響老年人、女性以及具有全身和環境危險因素的個人。 ……"
+        "country": "",
+        "ptype": "文獻回顧",
+        "zh": "",
+        "zh_sum": ""
       },
       {
         "title": "Effects of Treatment With Cyclosporine Ophthalmic Solution 0.09% on Dry Eye Questionnaire Scores Among Patients With Dry Eye Disease.",
@@ -2039,8 +2487,10 @@
         "date": "2026",
         "pmid": "42395228",
         "summary": "Objective This multicenter, retrospective study was conducted to evaluate patient-reported scores for the 5-part Dry Eye Questionnaire (DEQ-5) over a six-month treatment period using cyclosporine ophthalmic solution 0.09% (CsA 0.09%). …",
-        "zh": "0.09% 環孢素眼藥水治療對乾眼症患者乾眼問卷評分的影響。",
-        "zh_sum": "目的 這項多中心回顧性研究旨在評估使用 0.09% 環孢素滴眼液 (CsA 0.09%) 進行六個月治療期間患者報告的 5 部分乾眼問卷 (DEQ-5) 評分。 ……"
+        "country": "",
+        "ptype": "",
+        "zh": "",
+        "zh_sum": ""
       },
       {
         "title": "A post-HSCT ocular surface \"Window of Opportunity for Pre-emptive ocular treatment (WinOP)\" shows early inflammatory activation and an oGVHD-like molecular subset.",
@@ -2048,8 +2498,10 @@
         "date": "2026",
         "pmid": "42392446",
         "summary": "These observational data substantiate WinOP as a conceptual construct: a plausible pre-definite oGVHD state in which tear inflammatory activity may precede trophic factor loss and PDGF imbalance in definite oGVHD. …",
-        "zh": "HSCT 後眼表「先發製人眼部治療的機會之窗 (WinOP)」顯示早期發炎活化和類似 oGVHD 的分子亞群。",
-        "zh_sum": "這些觀察數據證實了 WinOP 作為一個概念構建：一種合理的預先確定的 oGVHD 狀態，其中淚液炎症活動可能先於確定的 oGVHD 中的營養因子損失和 PDGF 失衡。 ……"
+        "country": "美國",
+        "ptype": "",
+        "zh": "",
+        "zh_sum": ""
       },
       {
         "title": "Current Experimental Methods for Restoration of the Tear Film.",
@@ -2057,8 +2509,10 @@
         "date": "2026",
         "pmid": "42390956",
         "summary": "Purpose: Tear film disorders, particularly dry eye disease (DED), are among the most common ocular surface conditions and arise from dysfunction of the lacrimal functional unit, including the lacrimal gland, meibomian glands, and conjunctiv …",
-        "zh": "目前淚膜修復的實驗方法。",
-        "zh_sum": "目的：淚膜疾病，特別是乾眼症 (DED)，是最常見的眼表疾病之一，由淚腺功能單位（包括淚腺、瞼板腺和結膜）功能障礙引起…"
+        "country": "德國",
+        "ptype": "文獻回顧",
+        "zh": "",
+        "zh_sum": ""
       },
       {
         "title": "Ophthalmic Implications of Ehlers-Danlos Syndrome.",
@@ -2066,8 +2520,10 @@
         "date": "2026",
         "pmid": "42389068",
         "summary": "EDS may be associated with an increased risk and earlier onset of many ophthalmic conditions. Several of these conditions, including glaucoma and retinal tear/detachment, could lead to significant morbidity if not detected and managed early …",
-        "zh": "埃勒斯-當洛斯症候群的眼科影響。",
-        "zh_sum": "EDS 可能與許多眼科疾病的風險增加和早期發病有關。其中一些疾病，包括青光眼和視網膜撕裂/脫離，如果不及早發現和治療，可能會導致嚴重的發病率…"
+        "country": "美國",
+        "ptype": "",
+        "zh": "",
+        "zh_sum": ""
       },
       {
         "title": "Gut microbiota transfer from autoimmune dry eye mice imprints stereotypic B cell receptor repertoires in the lacrimal gland and induces disease.",
@@ -2075,8 +2531,10 @@
         "date": "2026",
         "pmid": "42382782",
         "summary": "Gut microbiota and humoral immunity have been suggested as key players in the pathogenesis of Sjögren disease (SjD), but their mechanisms remain unclear. …",
-        "zh": "來自自體免疫性乾眼小鼠的腸道微生物群轉移會在淚腺中留下刻板的 B 細胞受體庫並誘發疾病。",
-        "zh_sum": "腸道菌群和體液免疫被認為是乾燥症 (SjD) 發病機制的關鍵因素，但其機制仍不清楚。 ……"
+        "country": "韓國",
+        "ptype": "",
+        "zh": "",
+        "zh_sum": ""
       },
       {
         "title": "Dryness Response of the Ocular Surface With Use of Wearable Ventilation for Improving Air Quality and Comfort.",
@@ -2084,8 +2542,10 @@
         "date": "2026",
         "pmid": "42382206",
         "summary": "The results highlight potential health risks under current wearable ventilation environments and subjective assessments method for air movement acceptability. …",
-        "zh": "使用穿戴式通風裝置改善眼表的乾燥反應以改善空氣品質和舒適度。",
-        "zh_sum": "結果強調了當前穿戴式通風環境下的潛在健康風險以及空氣流動可接受性的主觀評估方法。 ……"
+        "country": "中國",
+        "ptype": "",
+        "zh": "",
+        "zh_sum": ""
       },
       {
         "title": "Paired longitudinal tear proteomics reveals persistent ocular surface dysregulation after teprotumumab therapy in thyroid eye disease.",
@@ -2093,8 +2553,10 @@
         "date": "2026",
         "pmid": "42380591",
         "summary": "These observational findings support tear proteomics as a platform for biomarker discovery and therapeutic prioritization and warrant validation in larger, independent cohorts.",
-        "zh": "配對縱向淚液蛋白質體學揭示了甲狀腺眼疾在替普妥尤單抗治療後持續存在的眼表失調。",
-        "zh_sum": "這些觀察結果支持淚液蛋白質組學作為生物標記發現和治療優先順序的平台，並需要在更大的獨立隊列中進行驗證。"
+        "country": "美國",
+        "ptype": "",
+        "zh": "",
+        "zh_sum": ""
       },
       {
         "title": "[Chinese expert consensus on the diagnosis and treatment of primary blepharospasm (2026)].",
@@ -2102,8 +2564,10 @@
         "date": "2026",
         "pmid": "42379862",
         "summary": "Primary blepharospasm (PBS) is a form of focal dystonia characterized by involuntary, intermittent, or sustained contractions of the orbicularis oculi and periorbital muscles, resulting in involuntary eyelid closure. …",
-        "zh": "原發性眼瞼痙攣診治中國專家共識(2026).",
-        "zh_sum": "原發性眼瞼痙攣 (PBS) 是一種局部肌張力障礙，其特徵是眼輪匝肌和眶週肌肉不自主、間歇性或持續性收縮，導致眼瞼不自主閉合。 ……"
+        "country": "",
+        "ptype": "",
+        "zh": "",
+        "zh_sum": ""
       },
       {
         "title": "Synaptosome-associated protein of 25 kD (SNAP25) promotes corneal epithelial repair via maintaining trigeminal nerve autophagy homeostasis and function in diabetes-related dry eye.",
@@ -2111,8 +2575,10 @@
         "date": "2026",
         "pmid": "42379454",
         "summary": "Diabetic keratopathy affects more than 70% of patients, and there are limited effective intervention options for diabetes-related dry eye. …",
-        "zh": "25 kD 突觸體相關蛋白 (SNAP25) 透過維持三叉神經自噬穩態和糖尿病相關乾眼症的功能來促進角膜上皮修復。",
-        "zh_sum": "糖尿病性角膜病變影響超過 70% 的患者，而針對糖尿病相關乾眼症的有效幹預措施有限。 ……"
+        "country": "中國",
+        "ptype": "",
+        "zh": "",
+        "zh_sum": ""
       },
       {
         "title": "Keratitis patterns in patients with human immunodeficiency virus: A 10-year retrospective study.",
@@ -2120,8 +2586,10 @@
         "date": "2026",
         "pmid": "42376309",
         "summary": "HIV-positive patients with keratitis are most likely to be colonized by HSV or VZV in infectious cases. HIV infection and ART usage are associated with chronic inflammation that may be related to dry eye disease. …",
-        "zh": "人類免疫缺乏病毒患者的角膜炎模式：一項 10 年回顧性研究。",
-        "zh_sum": "在感染病例中，患有角膜炎的 HIV 陽性患者最有可能被 HSV 或 VZV 定植。 HIV 感染和 ART 使用與慢性發炎有關，而慢性發炎可能與乾眼症有關。 ……"
+        "country": "美國",
+        "ptype": "",
+        "zh": "",
+        "zh_sum": ""
       },
       {
         "title": "Synergistic nanosenolytic therapy reverses age-related dry eye disease by targeting cellular senescence and oxidative stress.",
@@ -2129,8 +2597,10 @@
         "date": "2026",
         "pmid": "42376011",
         "summary": "Dry eye disease (DED) is a prevalent, age-related ocular disorder that severely impairs vision and quality of life. Age-related cellular senescence drives disease progression through the senescence-associated secretory phenotype (SASP), whi …",
-        "zh": "協同奈米老化療法透過針對細胞老化和氧化壓力來逆轉與年齡相關的乾眼症。",
-        "zh_sum": "乾眼症 (DED) 是一種普遍存在的、與年齡相關的眼部疾病，嚴重損害視力和生活品質。與年齡相關的細胞老化透過老化相關分泌表型（SASP）驅動疾病進展，..."
+        "country": "中國",
+        "ptype": "",
+        "zh": "",
+        "zh_sum": ""
       },
       {
         "title": "Precision treatment of chalazion based on AI-driven risk stratification: a prospective study of triamcinolone acetonide combined with intense pulsed light therapy.",
@@ -2138,8 +2608,10 @@
         "date": "2026",
         "pmid": "42375192",
         "summary": "A hybrid AI-clinical model significantly improved the prediction of chalazion recurrence. Combined TA + IPL therapy demonstrated superior efficacy, particularly for high-risk patients. …",
-        "zh": "基於AI驅動風險分層的霰粒腫精準治療：曲安奈德合併強脈衝光治療的前瞻性研究",
-        "zh_sum": "混合人工智慧臨床模型顯著改善了霰粒腫復發的預測。 TA+IPL 合併治療顯示出優異的療效，特別是對於高風險患者。 ……"
+        "country": "中國",
+        "ptype": "",
+        "zh": "",
+        "zh_sum": ""
       },
       {
         "title": "Okra eyelid patch versus sodium hyaluronate combined with ofloxacin eye drop in the treatment of meibomian gland dysfunction: a randomized controlled trial.",
@@ -2147,8 +2619,10 @@
         "date": "2026",
         "pmid": "42374237",
         "summary": "Okra eyelid patch has a more significant effect on MGD, especially in improving symptoms and signs, increasing lipid layer thickness, improving tear film stability, maintaining corneal epithelial integrity, and improving the quality of meib …",
-        "zh": "黃秋葵眼瞼貼與透明質酸鈉合併氧氟沙星眼藥水治療瞼板腺功能障礙：一項隨機對照試驗。",
-        "zh_sum": "黃秋葵眼瞼貼片對MGD有更顯著的作用，特別是在改善症狀和體徵、增加脂質層厚度、改善淚膜穩定性、維持角膜上皮完整性、提高瞼板腺品質等方面。"
+        "country": "中國",
+        "ptype": "",
+        "zh": "",
+        "zh_sum": ""
       },
       {
         "title": "A Randomized Controlled Trial of Auricular Acupressure Combined with Sodium Hyaluronate for Abnormal Blink Reflex in Children.",
@@ -2156,8 +2630,10 @@
         "date": "2026",
         "pmid": "42372056",
         "summary": "Abnormal blink reflex in children is a common ocular symptom with complex causes, including ocular surface diseases like dry eye and inflammation, as well as neuromuscular dysfunction. …",
-        "zh": "耳穴按摩合併透明質酸鈉治療兒童眨眼反射異常的隨機對照試驗。",
-        "zh_sum": "兒童眨眼反射異常是常見的眼部症狀，原因複雜，包括乾眼、發炎等眼表疾病、神經肌肉功能障礙。 ……"
+        "country": "",
+        "ptype": "隨機對照試驗(RCT)",
+        "zh": "",
+        "zh_sum": ""
       },
       {
         "title": "Using Lotilaner Ophthalmic Solution, 0.25% to Treat",
@@ -2165,8 +2641,10 @@
         "date": "2026",
         "pmid": "42371506",
         "summary": "These cases highlight patients with DB who were initially misdiagnosed and eventually treated with lotilaner ophthalmic solution, 0.25%. …",
-        "zh": "使用 0.25% 洛替蘭眼藥水治療",
-        "zh_sum": "這些病例突出顯示 DB 患者最初被誤診，最終使用 Lotililer 眼藥水（0.25%）進行治療。 ……"
+        "country": "美國",
+        "ptype": "病例報告",
+        "zh": "",
+        "zh_sum": ""
       }
     ]
   }
