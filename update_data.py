@@ -73,6 +73,59 @@ def _text(node, path):
     return el.text.strip() if el is not None and el.text else ""
 
 
+# ---- 國家(作者單位)與研究類型解析 ----
+COUNTRY_MAP = [
+    ("Taiwan", "台灣"), ("China", "中國"), ("Hong Kong", "香港"), ("Japan", "日本"),
+    ("Korea", "韓國"), ("Singapore", "新加坡"), ("Malaysia", "馬來西亞"), ("India", "印度"),
+    ("Thailand", "泰國"), ("Vietnam", "越南"), ("Australia", "澳洲"), ("New Zealand", "紐西蘭"),
+    ("United States", "美國"), ("USA", "美國"), (" U.S.A", "美國"), (" US ", "美國"),
+    ("United Kingdom", "英國"), ("England", "英國"), ("Scotland", "英國"), (" UK", "英國"),
+    ("Canada", "加拿大"), ("Germany", "德國"), ("France", "法國"), ("Netherlands", "荷蘭"),
+    ("Spain", "西班牙"), ("Italy", "義大利"), ("Switzerland", "瑞士"), ("Sweden", "瑞典"),
+    ("Denmark", "丹麥"), ("Norway", "挪威"), ("Belgium", "比利時"), ("Ireland", "愛爾蘭"),
+    ("Austria", "奧地利"), ("Portugal", "葡萄牙"), ("Poland", "波蘭"), ("Turkey", "土耳其"),
+    ("Israel", "以色列"), ("Brazil", "巴西"), ("Mexico", "墨西哥"), ("Saudi", "沙烏地"),
+    ("Egypt", "埃及"), ("Iran", "伊朗"), ("Finland", "芬蘭"), ("Greece", "希臘"),
+]
+def parse_country(art):
+    affs = [ "".join(a.itertext()).strip() for a in art.findall(".//AffiliationInfo/Affiliation") ]
+    affs = [a for a in affs if a]
+    if not affs:
+        return ""
+    # 國家幾乎都在單位字串『末端』;只比對最後兩個逗號片段,避免誤中大學名(如 National Taiwan University)
+    text = affs[0].rstrip(". ")
+    segs = [s.strip() for s in text.split(",") if s.strip()]
+    tail = ", ".join(segs[-2:]) if len(segs) >= 2 else text
+    tail_l = " " + tail.lower() + " "
+    for kw, zh in COUNTRY_MAP:
+        if kw.lower() in tail_l:
+            return zh
+    return ""
+
+PTYPE_PRIORITY = [
+    ("Randomized Controlled Trial", "隨機對照試驗(RCT)"),
+    ("Meta-Analysis", "統合分析"),
+    ("Systematic Review", "系統性回顧"),
+    ("Multicenter Study", "多中心研究"),
+    ("Clinical Trial, Phase III", "臨床試驗(III期)"),
+    ("Clinical Trial, Phase II", "臨床試驗(II期)"),
+    ("Clinical Trial", "臨床試驗"),
+    ("Observational Study", "觀察性研究"),
+    ("Cohort Studies", "世代研究"),
+    ("Comparative Study", "比較性研究"),
+    ("Case Reports", "病例報告"),
+    ("Review", "文獻回顧"),
+    ("Guideline", "臨床指引"),
+    ("Practice Guideline", "臨床指引"),
+]
+def parse_ptype(art):
+    types = { ("".join(p.itertext()).strip()) for p in art.findall(".//PublicationType") }
+    for kw, zh in PTYPE_PRIORITY:
+        if kw in types:
+            return zh
+    return ""
+
+
 def efetch(pmids):
     if not pmids:
         return []
@@ -109,9 +162,12 @@ def efetch(pmids):
             cut = summary[:240]
             dot = cut.rfind(". ")
             summary = (cut[:dot + 1] if dot > 120 else cut) + " …"
+        country = parse_country(art)
+        ptype = parse_ptype(art)
         if title:
             out.append({"title": title, "journal": journal, "date": year,
-                        "pmid": pmid, "summary": summary})
+                        "pmid": pmid, "summary": summary,
+                        "country": country, "ptype": ptype})
     return out
 
 
@@ -127,7 +183,7 @@ def translate(text, retries=2):
     for i in range(retries):
         try:
             req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
-            with urllib.request.urlopen(req, timeout=30) as r:
+            with urllib.request.urlopen(req, timeout=20) as r:
                 data = json.loads(r.read().decode("utf-8"))
             return "".join(seg[0] for seg in data[0] if seg and seg[0]).strip()
         except Exception as e:
@@ -136,32 +192,49 @@ def translate(text, retries=2):
     return ""
 
 
+def translate_batch(texts, budget_until, chunk=20):
+    """批次翻譯:一次多則(換行分隔),超過時間預算即停。回傳 index->中文。"""
+    out = {}
+    for start in range(0, len(texts), chunk):
+        if time.time() > budget_until:
+            sys.stderr.write("translate budget reached — stop translating\n")
+            break
+        part = [(texts[start + k] or "").replace("\n", " ").strip() for k in range(min(chunk, len(texts) - start))]
+        zh = translate("\n".join(part))
+        lines = zh.split("\n") if zh else []
+        if len(lines) == len(part):
+            for k, ln in enumerate(lines):
+                if ln.strip():
+                    out[start + k] = ln.strip()
+        time.sleep(0.2)
+    return out
+
+
 def main():
     result = {
         "updated": datetime.datetime.utcnow().strftime("%Y-%m-%d %H:%M UTC"),
         "source": "PubMed / NCBI E-utilities;中文為免費自動翻譯",
         "items": {},
     }
+    flat = []
     for key, query in QUERIES.items():
         sys.stderr.write(f"[{key}] searching…\n")
         pmids = esearch(query)
         time.sleep(0.4 if API_KEY else 0.6)
         arts = efetch(pmids)
         time.sleep(0.4 if API_KEY else 0.6)
-        # 免費中文翻譯:標題 + 重點(合併一次呼叫,以節省請求)
-        for a in arts:
-            sep = " ||| "
-            combo = translate((a["title"] or "") + sep + (a["summary"] or ""))
-            if combo and sep.strip() in combo:
-                zt, _, zs = combo.partition(sep.strip())
-                a["zh"] = zt.strip(" |")
-                a["zh_sum"] = zs.strip(" |")
-            else:
-                a["zh"] = combo
-                a["zh_sum"] = ""
-            time.sleep(0.4)
         result["items"][key] = arts
+        flat.extend(arts)
         sys.stderr.write(f"[{key}] {len(arts)} articles\n")
+
+    # 免費中文翻譯:標題一批、重點一批;各設時間預算避免卡住
+    if flat:
+        t_titles = translate_batch([a.get("title", "") for a in flat], time.time() + 120)
+        for i, a in enumerate(flat):
+            a["zh"] = t_titles.get(i, "")
+        t_sums = translate_batch([a.get("summary", "") for a in flat], time.time() + 120)
+        for i, a in enumerate(flat):
+            a["zh_sum"] = t_sums.get(i, "")
 
     total = sum(len(v) for v in result["items"].values())
     if total == 0 and os.path.exists("data.json"):
