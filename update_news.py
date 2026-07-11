@@ -13,17 +13,18 @@ from email.utils import parsedate_to_datetime
 BASE = "https://news.google.com/rss/search"
 UA = "Mozilla/5.0 (myopia-hub news bot)"
 
-# 每個分類的搜尋關鍵字(Google News 查詢語法;when:45d 限近 45 天)
+# 每個分類的搜尋關鍵字(Google News 查詢語法;when:1y = 近一年)
 QUERIES = {
-    "myopia":      '近視控制 OR 近視防控 OR 角膜塑型 when:45d',
-    "contactlens": '隱形眼鏡 when:30d',
-    "lens":        '(鏡片 OR 驗光 OR 眼鏡) 光學 when:45d',
-    "device":      '眼科 (醫材 OR 器材 OR 儀器) when:45d',
-    "pharma":      '(眼藥 OR 乾眼 OR 白內障 OR 青光眼) when:45d',
-    "health":      '視力保健 OR 護眼 OR 眼睛健康 when:30d',
-    "industry":    '(眼科 OR 光學 OR 隱形眼鏡) (產業 OR 營收 OR 上市 OR 公司) when:45d',
+    "myopia":      '近視控制 OR 近視防控 OR 角膜塑型 when:1y',
+    "contactlens": '隱形眼鏡 when:1y',
+    "lens":        '(鏡片 OR 驗光 OR 眼鏡) 光學 when:1y',
+    "device":      '眼科 (醫材 OR 器材 OR 儀器) when:1y',
+    "pharma":      '(眼藥 OR 乾眼 OR 白內障 OR 青光眼) when:1y',
+    "health":      '視力保健 OR 護眼 OR 眼睛健康 when:1y',
+    "industry":    '(眼科 OR 光學 OR 隱形眼鏡) (產業 OR 營收 OR 上市 OR 公司) when:1y',
+    "events":      '(眼科 OR 視光 OR 近視 OR 隱形眼鏡 OR 角膜塑型) (講座 OR 衛教 OR 活動 OR 體驗會 OR 發表會 OR 記者會 OR 義診) when:1y',
 }
-RETMAX = 8  # 每分類最多幾則(取最新)
+RETMAX = 40  # 每分類最多幾則(取最新;一年份用較大值)
 
 
 def fetch(query):
@@ -50,13 +51,14 @@ def strip_html(s):
 
 def parse(raw, limit):
     out = []
+    seen = set()
     if not raw:
         return out
     try:
         root = ET.fromstring(raw)
     except ET.ParseError:
         return out
-    for it in root.findall(".//item")[: limit * 2]:
+    for it in root.findall(".//item"):
         title = (it.findtext("title") or "").strip()
         link = (it.findtext("link") or "").strip()
         # source
@@ -65,6 +67,10 @@ def parse(raw, limit):
         # Google News 標題常是 "標題 - 來源",去掉尾巴來源
         if source and title.endswith(" - " + source):
             title = title[: -(len(source) + 3)].strip()
+        key = re.sub(r"\s+", "", title)
+        if not title or not link or key in seen:
+            continue
+        seen.add(key)
         # date
         date = ""
         pd = it.findtext("pubDate")
@@ -76,11 +82,10 @@ def parse(raw, limit):
         summary = strip_html(it.findtext("description"))
         if len(summary) > 160:
             summary = summary[:160] + "…"
-        if title and link:
-            out.append({
-                "title": title, "link": link, "source": source,
-                "date": date, "summary": summary,
-            })
+        out.append({
+            "title": title, "link": link, "source": source,
+            "date": date, "summary": summary,
+        })
         if len(out) >= limit:
             break
     return out

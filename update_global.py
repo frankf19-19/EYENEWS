@@ -19,15 +19,15 @@ API_KEY = os.environ.get("ANTHROPIC_API_KEY", "").strip()
 MODEL = os.environ.get("ANTHROPIC_MODEL", "claude-haiku-4-5-20251001")
 
 QUERIES = {
-    "myopia":      'myopia control OR myopia management when:30d',
-    "contactlens": 'contact lens (industry OR launch OR myopia) when:30d',
-    "lens":        'spectacle lens OR ophthalmic lens OR optometry when:30d',
-    "device":      'ophthalmic device OR ophthalmology equipment when:30d',
-    "pharma":      'ophthalmology drug OR dry eye OR cataract treatment when:30d',
-    "health":      'eye health OR vision care awareness when:30d',
-    "industry":    'eyecare industry OR vision care market OR optical retail when:30d',
+    "myopia":      'myopia control OR myopia management when:1y',
+    "contactlens": 'contact lens (industry OR launch OR myopia) when:1y',
+    "lens":        'spectacle lens OR ophthalmic lens OR optometry when:1y',
+    "device":      'ophthalmic device OR ophthalmology equipment when:1y',
+    "pharma":      'ophthalmology drug OR dry eye OR cataract treatment when:1y',
+    "health":      'eye health OR vision care awareness when:1y',
+    "industry":    'eyecare industry OR vision care market OR optical retail when:1y',
 }
-RETMAX = 7
+RETMAX = 18  # 每分類則數(全球需逐則翻譯,取適中值以免拖太久)
 
 
 def _get(url):
@@ -78,7 +78,7 @@ def parse(raw, limit):
         root = ET.fromstring(raw)
     except ET.ParseError:
         return out
-    for it in root.findall(".//item")[: limit * 2]:
+    for it in root.findall(".//item"):
         title = (it.findtext("title") or "").strip()
         link = (it.findtext("link") or "").strip()
         src_el = it.find("{*}source") or it.find("source")
