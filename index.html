@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- 眼視光 Eye-Vision Hub | build r107 | 2026-07-11 | 公司資料全面查證+版本標示 -->
+<!-- 眼視光 Eye-Vision Hub | build r109 | 2026-07-11 | 公司資料全面查證+版本標示 -->
 <html lang="zh-Hant">
 <head>
 <meta charset="UTF-8">
@@ -588,7 +588,7 @@ footer .build{margin-top:8px;font-size:11px}
       <a data-view="about">關於</a>
     </nav>
     <div class="topbar-right">
-      <span class="ver" title="版本(部署後對照用)">r107</span>
+      <span class="ver" title="版本(部署後對照用)">r109</span>
       <button id="backBtn" type="button" aria-label="返回上一頁">← 返回</button>
     </div>
   </div>
@@ -820,12 +820,12 @@ footer .build{margin-top:8px;font-size:11px}
     <div id="clin-lit">
     <div class="panel lit-panel">
       <div class="lit-head">
-        <h3>臨床文獻 · 即時直連 PubMed 全庫</h3>
+        <h3>臨床文獻 · 多來源整合(PubMed · PMC · 預印本 · 專利 · OpenAlex · Crossref · Semantic Scholar)</h3>
         <span class="upd-badge">● 最後更新 <span id="updTime">載入中…</span></span>
       </div>
       <p class="lit-sub">每日整合 <b>PubMed</b> 與 <b>Europe PMC</b>,以相關性/高被引<b>跨年代收錄(不限年份,含經典)</b>;每則標 🌍國家、🔬類型、臨床效果/結論。可用<b>年份篩選</b>與搜尋(標題+摘要)。中文為免費自動翻譯。</p>
       <div class="lit-search-row">
-        <input id="litSearch" type="search" placeholder="搜尋 PubMed 全庫:可打中文或英文(近視、角膜塑型、cataract、PMID…)" aria-label="搜尋臨床文獻">
+        <input id="litSearch" type="search" placeholder="搜尋文獻全庫(多來源整合):可打中文或英文(近視、角膜塑型、cataract、DOI…)" aria-label="搜尋臨床文獻">
         <span id="litCount" class="lit-count"></span>
       </div>
       <div class="lit-tabs" id="litTabs"></div>
@@ -872,7 +872,7 @@ footer .build{margin-top:8px;font-size:11px}
   <div class="wrap">
     眼視光資訊中心 · Eye-Vision Industry Hub<br>
     資料來源:Google News · PubMed / NCBI · 每日/每 6 小時自動更新
-    <div class="build">build r107 · <span id="buildStamp"></span></div>
+    <div class="build">build r109 · <span id="buildStamp"></span></div>
   </div>
 </footer>
 
@@ -1218,7 +1218,7 @@ function aiPanel(rows, absText, prompt){
   return `<div class="ai-wrap"><button class="ai-btn" type="button"><span class="spk">✦</span> 一鍵解析</button><div class="ai-panel" hidden>${rowHTML}${abs}</div></div>`;
 }
 function litItemHTML(it){
-  const link=it.pmid?`https://pubmed.ncbi.nlm.nih.gov/${it.pmid}/`:"#";
+  const link=it.url||(it.pmid?`https://pubmed.ncbi.nlm.nih.gov/${it.pmid}/`:"#");
   const tagK=it._key||"";
   const head=it.zh||it.title;
   const sub=(it.zh&&it.title&&it.zh!==it.title)?`<div class="fi-en">${it.title}</div>`:"";
@@ -1231,7 +1231,7 @@ function litItemHTML(it){
     <h4><a href="${link}" target="_blank" rel="noopener">${head}</a></h4>
     ${sub}
     <div class="fi-meta">${it.journal||""}${it.pmid?" · PMID "+it.pmid:""}</div>
-    ${(it.country||it.ptype)?`<div class="lit-badges">${it.country?`<span class="lit-badge">🌍 ${it.country}</span>`:""}${it.ptype?`<span class="lit-badge">🔬 ${it.ptype}</span>`:""}</div>`:""}
+    ${(it.src||it.country||it.ptype)?`<div class="lit-badges">${it.src?`<span class="lit-badge">📚 ${it.src}</span>`:""}${it.country?`<span class="lit-badge">🌍 ${it.country}</span>`:""}${it.ptype?`<span class="lit-badge">🔬 ${it.ptype}</span>`:""}</div>`:""}
     ${point?`<div class="fi-point">臨床效果/結論:${point}</div>`:""}
     ${tagsHTML(it.title,it.zh,it.zh_sum,it.summary,it.journal)}
     ${aiPanel(
@@ -1294,12 +1294,72 @@ const LIT_CATS={
 let LIT_ITEMS=[], LIT_TOTAL=0, LIT_START=0, LIT_LOADING=false, LIT_TIMER=null;
 function renderLitFeed(){
   const feed=document.getElementById('feed'), cnt=document.getElementById('litCount'); if(!feed)return;
-  if(cnt)cnt.textContent=LIT_TOTAL?('全庫共 '+Number(LIT_TOTAL).toLocaleString('en-US')+' 篇 · 顯示 '+LIT_ITEMS.length):(LIT_ITEMS.length?('顯示 '+LIT_ITEMS.length+' 篇'):'');
+  if(cnt)cnt.textContent='整合 '+(LIT_SRC_OK||0)+' 個來源 · 顯示 '+LIT_ITEMS.length+' 篇';
   if(!LIT_ITEMS.length){feed.innerHTML='<div class="feed-empty">查無符合的文獻;可換關鍵字(可打中文)、切換分類或年份。</div>';return;}
-  let html='<div class="trial-live-note">🌐 PubMed 官方完整資料庫即時結果 · 依出版日排序</div>'+LIT_ITEMS.map(litItemHTML).join('');
-  if(LIT_ITEMS.length<LIT_TOTAL)html+='<button id="litMore" class="trial-more-btn" type="button">載入更多 ↓</button>';
+  let html='<div class="trial-live-note">🌐 多來源整合:PubMed · PMC 全文 · 預印本 · 專利(Europe PMC)+ OpenAlex + Crossref + Semantic Scholar · 去重後依日期排序</div>'+LIT_ITEMS.map(litItemHTML).join('');
+  html+='<button id="litMore" class="trial-more-btn" type="button">載入更多 ↓</button>';
   feed.innerHTML=html;
   const lm=document.getElementById('litMore'); if(lm)lm.addEventListener('click',()=>fetchLit(true));
+}
+let LIT_PAGE=0, LIT_EPMC_CURSOR='*', LIT_SEEN={}, LIT_SRC_OK=0, LIT_DF_OA='', LIT_DF_CR='';
+async function srcEuropePMC(term){
+  const url='https://www.ebi.ac.uk/europepmc/webservices/rest/search?format=json&resultType=core&pageSize=25&sort='+encodeURIComponent('P_PDATE_D desc')+'&cursorMark='+encodeURIComponent(LIT_EPMC_CURSOR)+'&query='+encodeURIComponent(term);
+  const r=await fetch(url); if(!r.ok)throw new Error('epmc'); const d=await r.json();
+  LIT_EPMC_CURSOR=d.nextCursorMark||LIT_EPMC_CURSOR;
+  const SRC={MED:'PubMed',PMC:'PMC全文',PPR:'預印本',PAT:'專利',AGR:'Agricola',CBA:'書籍',ETH:'論文',HIR:'NICE'};
+  return ((d.resultList&&d.resultList.result)||[]).map(function(x){return {
+    pmid:x.pmid||'', doi:(x.doi||'').toLowerCase(), title:x.title||'',
+    journal:(x.journalTitle||(x.source==='PPR'?'預印本':''))+(x.authorString?(' · '+x.authorString):''),
+    date:((x.firstPublicationDate||x.pubYear||'')+'').slice(0,10), ptype:x.pubType||'', abstract:x.abstractText||'',
+    src:(SRC[x.source]||x.source||'Europe PMC'),
+    url:x.pmid?('https://pubmed.ncbi.nlm.nih.gov/'+x.pmid+'/'):('https://europepmc.org/article/'+(x.source||'MED')+'/'+(x.id||''))};});
+}
+async function srcOpenAlex(term,page){
+  let url='https://api.openalex.org/works?search='+encodeURIComponent(term)+'&per-page=25&page='+(page+1)+'&sort=publication_date:desc';
+  if(LIT_DF_OA)url+='&filter='+encodeURIComponent(LIT_DF_OA);
+  const r=await fetch(url); if(!r.ok)throw new Error('oa'); const d=await r.json();
+  return (d.results||[]).map(function(w){
+    const doi=(w.doi||'').replace('https://doi.org/','').toLowerCase();
+    const pmid=(w.ids&&w.ids.pmid)?((''+w.ids.pmid).replace(/\D/g,'')):'';
+    const ven=(w.primary_location&&w.primary_location.source&&w.primary_location.source.display_name)||'';
+    const auth=(w.authorships||[]).slice(0,3).map(function(a){return a.author&&a.author.display_name;}).filter(Boolean).join(', ');
+    return {pmid:pmid, doi:doi, title:w.title||w.display_name||'', journal:ven+(auth?(' · '+auth):''),
+      date:(w.publication_date||'').slice(0,10), ptype:w.type||'', abstract:'', src:'OpenAlex',
+      url:w.doi||('https://openalex.org/'+((w.id||'').split('/').pop()))};});
+}
+async function srcCrossref(term,page){
+  let url='https://api.crossref.org/works?query='+encodeURIComponent(term)+'&rows=25&offset='+(page*25)+'&sort=published&order=desc&select='+encodeURIComponent('DOI,title,author,container-title,published,type,abstract,URL');
+  if(LIT_DF_CR)url+='&filter='+encodeURIComponent(LIT_DF_CR);
+  const r=await fetch(url); if(!r.ok)throw new Error('cr'); const d=await r.json();
+  return ((d.message&&d.message.items)||[]).map(function(it){
+    const doi=(it.DOI||'').toLowerCase();
+    const title=(it.title&&it.title[0])||'';
+    const ven=(it['container-title']&&it['container-title'][0])||'';
+    const auth=(it.author||[]).slice(0,3).map(function(a){return ((a.given||'')+' '+(a.family||'')).trim();}).filter(Boolean).join(', ');
+    const dp=(it.published&&it.published['date-parts']&&it.published['date-parts'][0])||[];
+    const pad=function(n){return String(n||1).length<2?('0'+n):(''+n);};
+    const date=dp.length?(dp[0]+'-'+pad(dp[1])+'-'+pad(dp[2])):'';
+    return {pmid:'', doi:doi, title:title, journal:ven+(auth?(' · '+auth):''), date:date, ptype:it.type||'',
+      abstract:(it.abstract||'').replace(/<[^>]+>/g,''), src:'Crossref', url:it.URL||('https://doi.org/'+(it.DOI||''))};});
+}
+async function srcS2(term,page){
+  const url='https://api.semanticscholar.org/graph/v1/paper/search?query='+encodeURIComponent(term)+'&limit=20&offset='+(page*20)+'&fields=title,authors,venue,year,publicationDate,externalIds,abstract,publicationTypes';
+  const r=await fetch(url); if(!r.ok)throw new Error('s2'); const d=await r.json();
+  return (d.data||[]).map(function(p){
+    const ext=p.externalIds||{}; const doi=(ext.DOI||'').toLowerCase(); const pmid=ext.PubMed?(''+ext.PubMed):'';
+    const auth=(p.authors||[]).slice(0,3).map(function(a){return a.name;}).filter(Boolean).join(', ');
+    return {pmid:pmid, doi:doi, title:p.title||'', journal:(p.venue||'')+(auth?(' · '+auth):''),
+      date:(p.publicationDate||(p.year?(''+p.year):'')), ptype:(p.publicationTypes&&p.publicationTypes[0])||'', abstract:p.abstract||'',
+      src:'Semantic Scholar', url:doi?('https://doi.org/'+doi):(pmid?('https://pubmed.ncbi.nlm.nih.gov/'+pmid+'/'):('https://www.semanticscholar.org/paper/'+(p.paperId||'')))};});
+}
+function litMergeInto(items){
+  (items||[]).forEach(function(it){
+    if(!it.title)return;
+    const key=it.doi?('doi:'+it.doi):(it.pmid?('pmid:'+it.pmid):('ti:'+it.title.toLowerCase().replace(/[^a-z0-9\u4e00-\u9fff]+/g,'').slice(0,64)));
+    if(LIT_SEEN[key]!=null){ const ex=LIT_ITEMS[LIT_SEEN[key]];
+      if(ex){ if(ex.src.indexOf(it.src)<0)ex.src=ex.src+' · '+it.src; if(!ex.abstract&&it.abstract)ex.abstract=it.abstract; if(!ex.pmid&&it.pmid)ex.pmid=it.pmid; if(!ex.date&&it.date)ex.date=it.date; } }
+    else { LIT_SEEN[key]=LIT_ITEMS.length; LIT_ITEMS.push(it); }
+  });
 }
 async function fetchLit(append){
   if(LIT_LOADING)return; LIT_LOADING=true;
@@ -1309,35 +1369,25 @@ async function fetchLit(append){
   if(q){ term=(typeof trialQueryExpand==='function')?trialQueryExpand(q):q; }
   else if(ACTIVE_TAB==='all'){ term='myopia OR "contact lens" OR "intraocular lens" OR cataract OR glaucoma OR "dry eye" OR orthokeratology OR "macular degeneration"'; }
   else { term=LIT_CATS[ACTIVE_TAB]||'ophthalmology'; }
-  const y=new Date().getFullYear(); let dateP='';
-  if(LIT_YEARS==='3')dateP='&datetype=pdat&mindate='+(y-3)+'&maxdate='+y;
-  else if(LIT_YEARS==='6')dateP='&datetype=pdat&mindate='+(y-6)+'&maxdate='+y;
-  else if(LIT_YEARS==='old')dateP='&datetype=pdat&mindate=1900&maxdate='+(y-6);
-  if(!append){ LIT_ITEMS=[]; LIT_START=0; if(feed)feed.innerHTML='<div class="feed-empty">正在查詢 PubMed 全庫…</div>'; if(cnt)cnt.textContent=''; }
-  else { const lm=document.getElementById('litMore'); if(lm){lm.textContent='載入中…'; lm.disabled=true;} }
+  const y=new Date().getFullYear(); let epmcYear=''; LIT_DF_OA=''; LIT_DF_CR='';
+  if(LIT_YEARS==='3'){epmcYear=' AND (PUB_YEAR:['+(y-3)+' TO '+y+'])'; LIT_DF_OA='from_publication_date:'+(y-3)+'-01-01'; LIT_DF_CR='from-pub-date:'+(y-3)+'-01-01';}
+  else if(LIT_YEARS==='6'){epmcYear=' AND (PUB_YEAR:['+(y-6)+' TO '+y+'])'; LIT_DF_OA='from_publication_date:'+(y-6)+'-01-01'; LIT_DF_CR='from-pub-date:'+(y-6)+'-01-01';}
+  else if(LIT_YEARS==='old'){epmcYear=' AND (PUB_YEAR:[1900 TO '+(y-6)+'])'; LIT_DF_OA='to_publication_date:'+(y-6)+'-12-31'; LIT_DF_CR='until-pub-date:'+(y-6)+'-12-31';}
+  const termE=term+epmcYear;
+  if(!append){ LIT_ITEMS=[]; LIT_SEEN={}; LIT_PAGE=0; LIT_EPMC_CURSOR='*'; if(feed)feed.innerHTML='<div class="feed-empty">正在整合查詢多個學術資料庫(Europe PMC · OpenAlex · Crossref · Semantic Scholar)…</div>'; if(cnt)cnt.textContent=''; }
+  else { LIT_PAGE++; const lm=document.getElementById('litMore'); if(lm){lm.textContent='載入中…'; lm.disabled=true;} }
   try{
-    const esU='https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&retmode=json&sort=date&retmax=25&retstart='+LIT_START+'&term='+encodeURIComponent(term)+dateP;
-    const r=await fetch(esU); if(!r.ok)throw new Error('esearch '+r.status);
-    const d=await r.json(); const es=d.esearchresult||{}; const ids=es.idlist||[]; LIT_TOTAL=parseInt(es.count||'0',10)||0;
-    if(!ids.length){ if(!append)LIT_ITEMS=[]; const uu=document.getElementById('updTime'); if(uu)uu.textContent='即時直連'; renderLitFeed(); LIT_LOADING=false; return; }
-    const suU='https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=pubmed&retmode=json&id='+ids.join(',');
-    const r2=await fetch(suU); if(!r2.ok)throw new Error('esummary '+r2.status);
-    const d2=await r2.json(); const res=d2.result||{}; const uids=res.uids||ids;
-    const items=uids.map(function(id){ const s=res[id]||{};
-      const aus=(s.authors||[]).slice(0,3).map(function(a){return a.name;}).filter(Boolean);
-      const auth=aus.join(', ')+((s.authors&&s.authors.length>3)?' et al.':'');
-      const pt=(s.pubtype&&s.pubtype[0])||'';
-      return {pmid:id, title:s.title||'', journal:(s.fulljournalname||s.source||'')+(auth?(' · '+auth):''),
-        date:((s.sortpubdate||s.pubdate||'')+'').slice(0,10).replace(/\//g,'-'), ptype:pt, _key:(ACTIVE_TAB==='all'?'':ACTIVE_TAB)};
-    });
-    LIT_ITEMS=append?LIT_ITEMS.concat(items):items; LIT_START+=ids.length;
+    const settled=await Promise.allSettled([srcEuropePMC(termE), srcOpenAlex(term,LIT_PAGE), srcCrossref(term,LIT_PAGE), srcS2(term,LIT_PAGE)]);
+    LIT_SRC_OK=0; settled.forEach(function(s){ if(s.status==='fulfilled'){LIT_SRC_OK++; litMergeInto(s.value);} });
+    LIT_ITEMS.sort(function(a,b){return (b.date||'').localeCompare(a.date||'');});
     const u=document.getElementById('updTime'); if(u)u.textContent='即時直連';
-    renderLitFeed();
+    if(!LIT_ITEMS.length){
+      if(!append && LIT_DATA && LIT_DATA.items && Object.keys(LIT_DATA.items).length){ renderFeedCached(); }
+      else renderLitFeed();
+    } else renderLitFeed();
   }catch(err){
-    if(!append && !LIT_ITEMS.length){
-      if(LIT_DATA && LIT_DATA.items && Object.keys(LIT_DATA.items).length){ renderFeedCached(); }
-      else if(feed) feed.innerHTML='<div class="feed-empty">連線 PubMed 失敗('+((err&&err.message)||err)+')。可稍後再試,或到 <a href="https://pubmed.ncbi.nlm.nih.gov/?term='+encodeURIComponent(term)+'" target="_blank" rel="noopener">PubMed↗</a> 查此關鍵字。</div>';
-    } else { const lm=document.getElementById('litMore'); if(lm){lm.textContent='載入更多 ↓'; lm.disabled=false;} }
+    if(!append && !LIT_ITEMS.length && feed) feed.innerHTML='<div class="feed-empty">連線失敗。可稍後再試,或到 <a href="https://europepmc.org/search?query='+encodeURIComponent(term)+'" target="_blank" rel="noopener">Europe PMC↗</a>。</div>';
+    else { const lm=document.getElementById('litMore'); if(lm){lm.textContent='載入更多 ↓'; lm.disabled=false;} }
   } finally { LIT_LOADING=false; }
 }
 function renderFeedCached(){
