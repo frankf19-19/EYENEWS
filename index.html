@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- 眼視光 Eye-Vision Hub | build r82 | 2026-07-11 | 公司資料全面查證+版本標示 -->
+<!-- 眼視光 Eye-Vision Hub | build r83 | 2026-07-11 | 公司資料全面查證+版本標示 -->
 <html lang="zh-Hant">
 <head>
 <meta charset="UTF-8">
@@ -115,6 +115,11 @@ h2{font-weight:700;font-size:clamp(24px,3vw,32px);margin:0 0 6px}
 .hero-stats .hs-item+.hs-item{padding-left:26px;border-left:1px solid var(--line)}
 .seg-count{margin-left:auto;font-family:var(--mono);font-size:12.5px;font-weight:700;color:var(--accent-ink);background:var(--accent-soft);border-radius:20px;padding:2px 11px}
 .home-block{margin-top:40px}
+.home-block-first{margin-top:0}
+.hl-legend{display:flex;gap:16px;flex-wrap:wrap;align-items:center;margin-top:14px;font-size:12px;color:var(--ink-soft)}
+.hl-legend i{display:inline-block;width:10px;height:10px;border-radius:3px;margin-right:5px;vertical-align:-1px}
+.hl-legend-note{color:var(--muted);margin-left:auto}
+@media(max-width:600px){.hl-legend-note{margin-left:0;width:100%}}
 .home-block-h{display:flex;align-items:baseline;gap:14px;flex-wrap:wrap;margin-bottom:16px}
 .home-block-h h3{font-family:var(--serif);font-size:22px;font-weight:700;margin:0}
 .hl-note{font-family:var(--sans);font-size:12px;font-weight:400;color:var(--muted);margin-left:8px}
@@ -125,8 +130,8 @@ h2{font-weight:700;font-size:clamp(24px,3vw,32px);margin:0 0 6px}
 .hl-no{font-family:var(--mono);font-weight:800;color:var(--muted);font-size:14px}
 .hl-nm{font-weight:700;font-size:15px}
 .hl-nm small{display:block;font-family:var(--mono);font-size:11px;color:var(--muted);font-weight:400;margin-top:1px}
-.hl-bar-wrap{height:8px;background:var(--line-2);border-radius:6px;overflow:hidden}
-.hl-bar{height:100%;background:var(--spectrum);border-radius:6px}
+.hl-bar-wrap{height:9px;background:var(--line-2);border-radius:6px;overflow:hidden}
+.hl-bar{height:100%;border-radius:6px;transition:width .3s}
 .hl-val{font-family:var(--mono);font-weight:800;font-size:15px;text-align:right;white-space:nowrap}
 .hl-more{display:inline-block;margin-top:14px;font-family:var(--mono);font-size:13px;font-weight:600;color:var(--accent-ink);cursor:pointer}
 .hl-more:hover{text-decoration:underline}
@@ -547,7 +552,7 @@ footer .build{margin-top:8px;font-size:11px}
       <a data-view="about">關於</a>
     </nav>
     <div class="topbar-right">
-      <span class="ver" title="版本(部署後對照用)">r82</span>
+      <span class="ver" title="版本(部署後對照用)">r83</span>
       <button id="backBtn" type="button" aria-label="返回上一頁">← 返回</button>
     </div>
   </div>
@@ -604,18 +609,8 @@ footer .build{margin-top:8px;font-size:11px}
 <!-- overview dashboard -->
 <section class="sec" id="overview-body">
   <div class="wrap">
-    <span class="sec-eye">INDUSTRY MAP</span>
-    <h2>眼視光產業版圖</h2>
-    <p class="sec-sub">眼視光橫跨光學、醫材、製藥與通路。點任一領域前往對應公司與分析;數字為<b>收錄家數</b>。</p>
-    <div class="seg-map" id="segMap"></div>
 
-    <div class="home-block">
-      <div class="home-block-h"><span class="sec-eye">MARKET LEADERS</span><h3>眼視光市值龍頭<span class="hl-note">US$億 · 約值 · 專營眼科(不含綜合大廠)</span></h3></div>
-      <div class="hl-list" id="homeLeaders"></div>
-      <a class="hl-more" data-goto="companies">看完整四大品項市值排行 →</a>
-    </div>
-
-    <div class="home-block">
+    <div class="home-block home-block-first">
       <div class="home-block-h"><span class="sec-eye">QUICK ACCESS</span><h3>快速前往</h3></div>
       <div class="ov-quick">
         <a class="ov-quick-card" data-goto="taiwan"><b>台灣訊息</b><span>台灣眼視光新聞,每 6 小時自動更新</span></a>
@@ -626,8 +621,28 @@ footer .build{margin-top:8px;font-size:11px}
         <a class="ov-quick-card" data-goto="myopia"><b>近視控制</b><span>臨床工具、設計與實證</span></a>
       </div>
     </div>
+
+    <div class="home-block">
+      <div class="home-block-h"><span class="sec-eye">INDUSTRY MAP</span><h3>眼視光產業版圖</h3></div>
+      <p class="sec-sub">眼視光橫跨光學、醫材、製藥與通路。點任一領域前往對應公司與分析;數字為<b>收錄家數</b>。</p>
+      <div class="seg-map" id="segMap"></div>
+    </div>
+
+    <div class="home-block">
+      <div class="home-block-h"><span class="sec-eye">MARKET LEADERS</span><h3>眼視光市值龍頭<span class="hl-note">專營眼科 · 顏色=品項 · 長度=相對市值</span></h3></div>
+      <div class="hl-list" id="homeLeaders"></div>
+      <div class="hl-legend">
+        <span><i style="background:#6C4CE0"></i>鏡片</span>
+        <span><i style="background:#0E7C86"></i>隱形眼鏡</span>
+        <span><i style="background:#17A34A"></i>水晶體</span>
+        <span><i style="background:#E0A21A"></i>藥水</span>
+        <span class="hl-legend-note">數值為約略市值(US$億),不含綜合大廠</span>
+      </div>
+      <a class="hl-more" data-goto="companies">看完整四大品項市值排行 →</a>
+    </div>
+
   </div>
-</section>
+</section></section>
 </section><!-- /view-overview -->
 
 <section class="view" id="view-myopia">
@@ -810,7 +825,7 @@ footer .build{margin-top:8px;font-size:11px}
   <div class="wrap">
     眼視光資訊中心 · Eye-Vision Industry Hub<br>
     資料來源:Google News · PubMed / NCBI · 每日/每 6 小時自動更新
-    <div class="build">build r82 · <span id="buildStamp"></span></div>
+    <div class="build">build r83 · <span id="buildStamp"></span></div>
   </div>
 </footer>
 
@@ -1733,16 +1748,18 @@ function renderHeroStats(){
 function renderLeaders(){
   const el=document.getElementById('homeLeaders'); if(!el)return;
   const LN={optics:'鏡片',cl:'隱形眼鏡',iol:'水晶體',drops:'藥水'};
+  const LC={optics:'#6C4CE0',cl:'#0E7C86',iol:'#17A34A',drops:'#E0A21A'};
   const list=COMPANIES.filter(c=>c.mcapUsd&&!c.diversified&&!c.parent).sort((a,b)=>b.mcapUsd-a.mcapUsd).slice(0,8);
   if(!list.length){el.innerHTML='';return;}
-  const logMax=Math.log(Math.max(...list.map(c=>c.mcapUsd)));
+  const max=Math.max(...list.map(c=>c.mcapUsd));
   el.innerHTML=list.map((c,i)=>{
-    const w=Math.max(6,Math.round(Math.log(c.mcapUsd)/logMax*100));
+    const w=Math.max(3,Math.round(c.mcapUsd/max*100));
+    const prim=(c.lines||[])[0]; const color=LC[prim]||'#0E7C86';
     const ln=(c.lines||[]).map(k=>LN[k]).filter(Boolean).join(' · ');
     return `<div class="hl-row" data-co="${c.id}" role="button" tabindex="0">
       <span class="hl-no">${i+1}</span>
       <span class="hl-nm">${c.n.split('(')[0]}<small>${ln}</small></span>
-      <span class="hl-bar-wrap"><span class="hl-bar" style="width:${w}%"></span></span>
+      <span class="hl-bar-wrap"><span class="hl-bar" style="width:${w}%;background:${color}"></span></span>
       <span class="hl-val">US$${Number(c.mcapUsd).toLocaleString('en-US')}億</span>
     </div>`;
   }).join('');
