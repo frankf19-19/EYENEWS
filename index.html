@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- 眼視光 Eye-Vision Hub | build r106 | 2026-07-11 | 公司資料全面查證+版本標示 -->
+<!-- 眼視光 Eye-Vision Hub | build r107 | 2026-07-11 | 公司資料全面查證+版本標示 -->
 <html lang="zh-Hant">
 <head>
 <meta charset="UTF-8">
@@ -588,7 +588,7 @@ footer .build{margin-top:8px;font-size:11px}
       <a data-view="about">關於</a>
     </nav>
     <div class="topbar-right">
-      <span class="ver" title="版本(部署後對照用)">r106</span>
+      <span class="ver" title="版本(部署後對照用)">r107</span>
       <button id="backBtn" type="button" aria-label="返回上一頁">← 返回</button>
     </div>
   </div>
@@ -820,12 +820,12 @@ footer .build{margin-top:8px;font-size:11px}
     <div id="clin-lit">
     <div class="panel lit-panel">
       <div class="lit-head">
-        <h3>臨床文獻(依類別)· 附中文重點</h3>
+        <h3>臨床文獻 · 即時直連 PubMed 全庫</h3>
         <span class="upd-badge">● 最後更新 <span id="updTime">載入中…</span></span>
       </div>
       <p class="lit-sub">每日整合 <b>PubMed</b> 與 <b>Europe PMC</b>,以相關性/高被引<b>跨年代收錄(不限年份,含經典)</b>;每則標 🌍國家、🔬類型、臨床效果/結論。可用<b>年份篩選</b>與搜尋(標題+摘要)。中文為免費自動翻譯。</p>
       <div class="lit-search-row">
-        <input id="litSearch" type="search" placeholder="搜尋臨床文獻:關鍵字／期刊／國家／類型／PMID(可空格多字)" aria-label="搜尋臨床文獻">
+        <input id="litSearch" type="search" placeholder="搜尋 PubMed 全庫:可打中文或英文(近視、角膜塑型、cataract、PMID…)" aria-label="搜尋臨床文獻">
         <span id="litCount" class="lit-count"></span>
       </div>
       <div class="lit-tabs" id="litTabs"></div>
@@ -872,7 +872,7 @@ footer .build{margin-top:8px;font-size:11px}
   <div class="wrap">
     眼視光資訊中心 · Eye-Vision Industry Hub<br>
     資料來源:Google News · PubMed / NCBI · 每日/每 6 小時自動更新
-    <div class="build">build r106 · <span id="buildStamp"></span></div>
+    <div class="build">build r107 · <span id="buildStamp"></span></div>
   </div>
 </footer>
 
@@ -1260,59 +1260,120 @@ function yearOK(it){
   if(LIT_YEARS==='old')return yr<y-6;
   return true;
 }
+function biHay(hay){
+  var H=(hay||''); var HL=H.toLowerCase(); var add=[];
+  var DICT=(typeof TRIAL_ZH_EN!=='undefined')?TRIAL_ZH_EN:[];
+  for(var i=0;i<DICT.length;i++){
+    var zh=DICT[i][0], en=DICT[i][1];
+    if(H.indexOf(zh)>=0) add.push(en);
+    if(HL.indexOf(en.toLowerCase())>=0) add.push(zh);
+  }
+  return (HL+' '+add.join(' ').toLowerCase());
+}
+function biMatch(hay,q){
+  var H=biHay(hay);
+  var toks=(q||'').toLowerCase().split(/\s+/).filter(Boolean);
+  if(!toks.length)return true;
+  return toks.every(function(t){return H.indexOf(t)>=0;});
+}
 function litMatch(it,q){
   if(!q)return true;
-  const hay=[it.title,it.zh,it.summary,it.zh_sum,it.abstract,it.journal,it.country,it.ptype,it.pmid,LIT_LABEL[it._key]].filter(Boolean).join(' ').toLowerCase();
-  return q.toLowerCase().split(/\s+/).filter(Boolean).every(term=>hay.includes(term));
+  const hay=[it.title,it.zh,it.summary,it.zh_sum,it.abstract,it.journal,it.country,it.ptype,it.pmid,LIT_LABEL[it._key]].filter(Boolean).join(' ');
+  return biMatch(hay,q);
 }
-function renderFeed(){
+const LIT_CATS={
+  myopia:'(myopia) AND (control OR orthokeratology OR atropine OR defocus OR progression OR "axial length")',
+  contactlens:'"contact lens" OR "contact lenses"',
+  lens:'"spectacle lens" OR "progressive addition lens" OR presbyopia OR optometry',
+  refractive:'LASIK OR SMILE OR "refractive surgery" OR ICL OR PRK',
+  cataract:'cataract OR "intraocular lens" OR phacoemulsification',
+  glaucoma:'glaucoma',
+  retina:'"macular degeneration" OR "diabetic macular edema" OR "retinal vein occlusion" OR "anti-VEGF"',
+  dryeye:'"dry eye" OR "meibomian gland dysfunction"'
+};
+let LIT_ITEMS=[], LIT_TOTAL=0, LIT_START=0, LIT_LOADING=false, LIT_TIMER=null;
+function renderLitFeed(){
+  const feed=document.getElementById('feed'), cnt=document.getElementById('litCount'); if(!feed)return;
+  if(cnt)cnt.textContent=LIT_TOTAL?('全庫共 '+Number(LIT_TOTAL).toLocaleString('en-US')+' 篇 · 顯示 '+LIT_ITEMS.length):(LIT_ITEMS.length?('顯示 '+LIT_ITEMS.length+' 篇'):'');
+  if(!LIT_ITEMS.length){feed.innerHTML='<div class="feed-empty">查無符合的文獻;可換關鍵字(可打中文)、切換分類或年份。</div>';return;}
+  let html='<div class="trial-live-note">🌐 PubMed 官方完整資料庫即時結果 · 依出版日排序</div>'+LIT_ITEMS.map(litItemHTML).join('');
+  if(LIT_ITEMS.length<LIT_TOTAL)html+='<button id="litMore" class="trial-more-btn" type="button">載入更多 ↓</button>';
+  feed.innerHTML=html;
+  const lm=document.getElementById('litMore'); if(lm)lm.addEventListener('click',()=>fetchLit(true));
+}
+async function fetchLit(append){
+  if(LIT_LOADING)return; LIT_LOADING=true;
+  const feed=document.getElementById('feed'), cnt=document.getElementById('litCount');
+  const q=(LIT_QUERY||'').trim();
+  let term;
+  if(q){ term=(typeof trialQueryExpand==='function')?trialQueryExpand(q):q; }
+  else if(ACTIVE_TAB==='all'){ term='myopia OR "contact lens" OR "intraocular lens" OR cataract OR glaucoma OR "dry eye" OR orthokeratology OR "macular degeneration"'; }
+  else { term=LIT_CATS[ACTIVE_TAB]||'ophthalmology'; }
+  const y=new Date().getFullYear(); let dateP='';
+  if(LIT_YEARS==='3')dateP='&datetype=pdat&mindate='+(y-3)+'&maxdate='+y;
+  else if(LIT_YEARS==='6')dateP='&datetype=pdat&mindate='+(y-6)+'&maxdate='+y;
+  else if(LIT_YEARS==='old')dateP='&datetype=pdat&mindate=1900&maxdate='+(y-6);
+  if(!append){ LIT_ITEMS=[]; LIT_START=0; if(feed)feed.innerHTML='<div class="feed-empty">正在查詢 PubMed 全庫…</div>'; if(cnt)cnt.textContent=''; }
+  else { const lm=document.getElementById('litMore'); if(lm){lm.textContent='載入中…'; lm.disabled=true;} }
+  try{
+    const esU='https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&retmode=json&sort=date&retmax=25&retstart='+LIT_START+'&term='+encodeURIComponent(term)+dateP;
+    const r=await fetch(esU); if(!r.ok)throw new Error('esearch '+r.status);
+    const d=await r.json(); const es=d.esearchresult||{}; const ids=es.idlist||[]; LIT_TOTAL=parseInt(es.count||'0',10)||0;
+    if(!ids.length){ if(!append)LIT_ITEMS=[]; const uu=document.getElementById('updTime'); if(uu)uu.textContent='即時直連'; renderLitFeed(); LIT_LOADING=false; return; }
+    const suU='https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=pubmed&retmode=json&id='+ids.join(',');
+    const r2=await fetch(suU); if(!r2.ok)throw new Error('esummary '+r2.status);
+    const d2=await r2.json(); const res=d2.result||{}; const uids=res.uids||ids;
+    const items=uids.map(function(id){ const s=res[id]||{};
+      const aus=(s.authors||[]).slice(0,3).map(function(a){return a.name;}).filter(Boolean);
+      const auth=aus.join(', ')+((s.authors&&s.authors.length>3)?' et al.':'');
+      const pt=(s.pubtype&&s.pubtype[0])||'';
+      return {pmid:id, title:s.title||'', journal:(s.fulljournalname||s.source||'')+(auth?(' · '+auth):''),
+        date:((s.sortpubdate||s.pubdate||'')+'').slice(0,10).replace(/\//g,'-'), ptype:pt, _key:(ACTIVE_TAB==='all'?'':ACTIVE_TAB)};
+    });
+    LIT_ITEMS=append?LIT_ITEMS.concat(items):items; LIT_START+=ids.length;
+    const u=document.getElementById('updTime'); if(u)u.textContent='即時直連';
+    renderLitFeed();
+  }catch(err){
+    if(!append && !LIT_ITEMS.length){
+      if(LIT_DATA && LIT_DATA.items && Object.keys(LIT_DATA.items).length){ renderFeedCached(); }
+      else if(feed) feed.innerHTML='<div class="feed-empty">連線 PubMed 失敗('+((err&&err.message)||err)+')。可稍後再試,或到 <a href="https://pubmed.ncbi.nlm.nih.gov/?term='+encodeURIComponent(term)+'" target="_blank" rel="noopener">PubMed↗</a> 查此關鍵字。</div>';
+    } else { const lm=document.getElementById('litMore'); if(lm){lm.textContent='載入更多 ↓'; lm.disabled=false;} }
+  } finally { LIT_LOADING=false; }
+}
+function renderFeedCached(){
   if(!LIT_DATA)return;
   const feed=document.getElementById('feed');
   let items=[];
-  Object.keys(LIT_DATA.items).forEach(k=>{
-    (LIT_DATA.items[k]||[]).forEach(it=>items.push(Object.assign({_key:k},it)));
-  });
+  Object.keys(LIT_DATA.items).forEach(k=>{ (LIT_DATA.items[k]||[]).forEach(it=>items.push(Object.assign({_key:k},it))); });
   if(ACTIVE_TAB!=="all")items=items.filter(i=>i._key===ACTIVE_TAB);
   items=items.filter(yearOK);
-  const q=(LIT_QUERY||'').trim();
-  if(q)items=items.filter(i=>litMatch(i,q));
+  const q=(LIT_QUERY||'').trim(); if(q)items=items.filter(i=>litMatch(i,q));
   items.sort((a,b)=>(b.date||'').localeCompare(a.date||''));
-  const cnt=document.getElementById('litCount');
-  if(cnt)cnt.textContent=q?('找到 '+items.length+' 篇'):(items.length?('共 '+items.length+' 篇'):'');
-  if(!items.length){feed.innerHTML='<div class="feed-empty">'+(q?('找不到符合「'+q+'」的文獻。'):'此分類目前尚無文獻。')+'</div>';return;}
-  feed.innerHTML=items.map(litItemHTML).join('');
+  feed.innerHTML='<div class="trial-live-note" style="background:#FBEEDA;color:#9A6E3A;border-color:#E0A21A">⚠ 目前顯示本站快取(無法連線 PubMed);稍後重試可取得完整全庫。</div>'+(items.length?items.map(litItemHTML).join(''):'<div class="feed-empty">快取中查無此項。</div>');
 }
 
 
-function applyLit(data){
-  LIT_DATA=data;
-  document.getElementById('updTime').textContent=data.updated||"—";
-  renderFeedTabs("all");
+function initLit(){
+  renderFeedTabs(ACTIVE_TAB);
   renderLitYears();
-  renderFeed();
   document.getElementById('litYears').addEventListener('click',e=>{
     const b=e.target.closest('.range-btn'); if(!b)return;
-    LIT_YEARS=b.dataset.y; renderLitYears(); renderFeed();
+    LIT_YEARS=b.dataset.y; renderLitYears(); fetchLit(false);
   });
   document.getElementById('litTabs').addEventListener('click',e=>{
     const b=e.target.closest('.lit-tab'); if(!b)return;
-    ACTIVE_TAB=b.dataset.k;
-    renderFeedTabs(ACTIVE_TAB);
-    renderFeed();
+    ACTIVE_TAB=b.dataset.k; renderFeedTabs(ACTIVE_TAB); fetchLit(false);
   });
   const ls=document.getElementById('litSearch');
-  if(ls)ls.addEventListener('input',()=>{LIT_QUERY=ls.value; renderFeed();});
-}
-
-async function loadLit(){
-  try{
-    const r=await fetch('data.json?_='+Date.now());
-    if(!r.ok)throw new Error('no data.json');
-    const d=await r.json();
-    applyLit(d);
-  }catch(err){
-    applyLit(FALLBACK);
+  if(ls){
+    ls.addEventListener('input',()=>{LIT_QUERY=ls.value; clearTimeout(LIT_TIMER); LIT_TIMER=setTimeout(()=>fetchLit(false),450);});
+    ls.addEventListener('keydown',e=>{if(e.key==='Enter'){e.preventDefault(); clearTimeout(LIT_TIMER); fetchLit(false);}});
   }
+  fetchLit(false);
+}
+async function loadLit(){
+  try{ const r=await fetch('data.json?_='+Date.now()); if(r.ok)LIT_DATA=await r.json(); }catch(e){ LIT_DATA=(typeof FALLBACK!=='undefined')?FALLBACK:null; }
+  initLit();
 }
 
 /* lightbox zoom for design diagrams */
@@ -1389,8 +1450,8 @@ function newsItemHTML(it){
 let NEWS_SHOWN=25, NEWS_RANGE=90;
 function newsMatch(it,q){
   const reg=detectRegion([it.title,it.summary,it.source].filter(Boolean).join(' '))||(it._intl?'國外':'台灣');
-  const hay=[it.title,it.summary,it.keypoint,it.source,reg,NEWS_LABEL[it._key]].filter(Boolean).join(' ').toLowerCase();
-  return q.toLowerCase().split(/\s+/).filter(Boolean).every(t=>hay.indexOf(t)>=0);
+  const hay=[it.title,it.summary,it.keypoint,it.source,reg,NEWS_LABEL[it._key]].filter(Boolean).join(' ');
+  return biMatch(hay,q);
 }
 function renderNews(){
   if(!NEWS_DATA)return;
@@ -1450,8 +1511,8 @@ const G_LABEL={myopia:"近視控制",contactlens:"隱形眼鏡",lens:"鏡片/驗
 let G_DATA=null, G_TAB="all", G_QUERY="";
 function gMatch(it,q){
   const reg=detectRegion([it.title,it.keypoint,it.summary,it.source].filter(Boolean).join(' '))||'';
-  const hay=[it.title,it.keypoint,it.summary,it.source,reg,G_LABEL[it._key]].filter(Boolean).join(' ').toLowerCase();
-  return q.toLowerCase().split(/\s+/).filter(Boolean).every(t=>hay.indexOf(t)>=0);
+  const hay=[it.title,it.keypoint,it.summary,it.source,reg,G_LABEL[it._key]].filter(Boolean).join(' ');
+  return biMatch(hay,q);
 }
 function gTabsHTML(active){
   const tabs=[{k:"all",l:"全部"}].concat(Object.keys(G_LABEL).map(k=>({k,l:G_LABEL[k]})));
@@ -1565,8 +1626,8 @@ function renderCompanies(){
   if(q){
     const toks=q.split(/\s+/).filter(Boolean);
     const list=COMPANIES.filter(c=>{
-      const hay=[c.n,c.en,c.code,c.star,(c.tags||[]).join(' '),c.scope,c.note,c.market,c.r,(c.products||[]).map(p=>(p.n||'')+' '+(p.d||'')).join(' ')].filter(Boolean).join(' ').toLowerCase();
-      return toks.every(t=>hay.indexOf(t)>=0);
+      const hay=[c.n,c.en,c.code,c.star,(c.tags||[]).join(' '),c.scope,c.note,c.market,c.r,(c.products||[]).map(p=>(p.n||'')+' '+(p.d||'')).join(' ')].filter(Boolean).join(' ');
+      return biMatch(hay,CO_QUERY);
     });
     if(cnt)cnt.textContent='找到 '+list.length+' 家';
     grid.innerHTML=list.length?`<div class="co-seg"><div class="co-seg-h">搜尋「${CO_QUERY}」 <span>${list.length}</span></div><div class="co-cards">${list.map(coCardHTML).join('')}</div></div>`:'<div class="feed-empty">找不到符合的公司,可換關鍵字(名稱/代號/產品/招牌商品)。</div>';
@@ -1875,8 +1936,8 @@ function renderProducts(){
   if(q){
     const toks=q.split(/\s+/).filter(Boolean); let cards=[];
     PROD_DOMAINS.forEach(dm=>{(PROD[dm.k]||[]).forEach((p,i)=>{
-      const hay=[p.n,p.tag,p.d,p.design,p.usage,p.who,p.pros,p.cons,(p.items||[]).map(x=>(x.m||'')+' '+(x.p||'')+' '+(x.fn||'')+' '+(x.intro||'')+' '+(x.spec||'')).join(' ')].filter(Boolean).join(' ').toLowerCase();
-      if(toks.every(t=>hay.indexOf(t)>=0))cards.push(prodCardHTML(dm.k,i,p));
+      const hay=[p.n,p.tag,p.d,p.design,p.usage,p.who,p.pros,p.cons,(p.items||[]).map(x=>(x.m||'')+' '+(x.p||'')+' '+(x.fn||'')+' '+(x.intro||'')+' '+(x.spec||'')).join(' ')].filter(Boolean).join(' ');
+      if(biMatch(hay,PROD_QUERY))cards.push(prodCardHTML(dm.k,i,p));
     });});
     if(cnt)cnt.textContent='找到 '+cards.length+' 項';
     grid.innerHTML=cards.length?`<div class="prod-dom"><div class="prod-dom-h">🔍 搜尋「${PROD_QUERY}」<span class="prod-cnt">${cards.length}</span></div><div class="prod-cards">${cards.join('')}</div></div>`:'<div class="feed-empty">找不到符合的產品,可換關鍵字(品牌、成分、術式,如 Acuvue、Diquas、SMILE)。</div>';
@@ -2224,7 +2285,7 @@ function initProducts(){
   document.getElementById('prodGrid').addEventListener('click',e=>{const c=e.target.closest('[data-dom]'); if(!c)return; if(e.target.closest('[data-goto]'))return; PROD_RETURN_CO=null; openProduct(c.dataset.dom,+c.dataset.i);});
   document.getElementById('prodGrid').addEventListener('keydown',e=>{if(e.key!=='Enter'&&e.key!==' ')return; const c=e.target.closest('[data-dom]'); if(!c)return; e.preventDefault(); PROD_RETURN_CO=null; openProduct(c.dataset.dom,+c.dataset.i);});
   const m=document.getElementById('prodModal');
-  document.getElementById('prodModalBody').addEventListener('click',e=>{const df=e.target.closest('.diag-fig'); if(df){const media=df.querySelector('svg,img'); if(media){const lb=document.getElementById('lightbox'); document.getElementById('lbBody').innerHTML=media.outerHTML; const fc=df.querySelector('figcaption'); const cap=document.getElementById('lbCap'); cap.textContent=fc?fc.textContent:''; cap.style.display=fc?'block':'none'; lb.classList.add('on'); lb.setAttribute('aria-hidden','false');} return;} const lj=e.target.closest('.lit-jump'); if(lj){const cat=lj.dataset.lit; history.back(); setTimeout(()=>{switchView('clinical'); ACTIVE_TAB=cat; renderFeedTabs(cat); renderFeed();},70); return;} const hd=e.target.closest('.pp-head'); if(!hd)return; const bd=hd.nextElementSibling; const open=bd.hasAttribute('hidden'); if(open){bd.removeAttribute('hidden');hd.classList.add('open');}else{bd.setAttribute('hidden','');hd.classList.remove('open');}});
+  document.getElementById('prodModalBody').addEventListener('click',e=>{const df=e.target.closest('.diag-fig'); if(df){const media=df.querySelector('svg,img'); if(media){const lb=document.getElementById('lightbox'); document.getElementById('lbBody').innerHTML=media.outerHTML; const fc=df.querySelector('figcaption'); const cap=document.getElementById('lbCap'); cap.textContent=fc?fc.textContent:''; cap.style.display=fc?'block':'none'; lb.classList.add('on'); lb.setAttribute('aria-hidden','false');} return;} const lj=e.target.closest('.lit-jump'); if(lj){const cat=lj.dataset.lit; history.back(); setTimeout(()=>{switchView('clinical'); ACTIVE_TAB=cat; renderFeedTabs(cat); fetchLit(false);},70); return;} const hd=e.target.closest('.pp-head'); if(!hd)return; const bd=hd.nextElementSibling; const open=bd.hasAttribute('hidden'); if(open){bd.removeAttribute('hidden');hd.classList.add('open');}else{bd.setAttribute('hidden','');hd.classList.remove('open');}});
   document.getElementById('prodClose').addEventListener('click',()=>dismissProduct());
   m.addEventListener('click',e=>{if(e.target===m)dismissProduct();});
   document.addEventListener('keydown',e=>{if(e.key==='Escape'&&m.classList.contains('on'))dismissProduct();});
