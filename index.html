@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- 眼視光 Eye-Vision Hub | build r110 | 2026-07-11 | 公司資料全面查證+版本標示 -->
+<!-- 眼視光 Eye-Vision Hub | build r111 | 2026-07-11 | 公司資料全面查證+版本標示 -->
 <html lang="zh-Hant">
 <head>
 <meta charset="UTF-8">
@@ -588,7 +588,7 @@ footer .build{margin-top:8px;font-size:11px}
       <a data-view="about">關於</a>
     </nav>
     <div class="topbar-right">
-      <span class="ver" title="版本(部署後對照用)">r110</span>
+      <span class="ver" title="版本(部署後對照用)">r111</span>
       <button id="backBtn" type="button" aria-label="返回上一頁">← 返回</button>
     </div>
   </div>
@@ -820,7 +820,7 @@ footer .build{margin-top:8px;font-size:11px}
     <div id="clin-lit">
     <div class="panel lit-panel">
       <div class="lit-head">
-        <h3>臨床文獻 · 多來源整合(PubMed · PMC · 預印本 · 專利 · OpenAlex · Crossref · Semantic Scholar)</h3>
+        <h3>臨床文獻 · 即時直連 PubMed + PMC 全文(Europe PMC)</h3>
         <span class="upd-badge">● 最後更新 <span id="updTime">載入中…</span></span>
       </div>
       <p class="lit-sub">每日整合 <b>PubMed</b> 與 <b>Europe PMC</b>,以相關性/高被引<b>跨年代收錄(不限年份,含經典)</b>;每則標 🌍國家、🔬類型、臨床效果/結論。可用<b>年份篩選</b>與搜尋(標題+摘要)。中文為免費自動翻譯。</p>
@@ -872,7 +872,7 @@ footer .build{margin-top:8px;font-size:11px}
   <div class="wrap">
     眼視光資訊中心 · Eye-Vision Industry Hub<br>
     資料來源:Google News · PubMed / NCBI · 每日/每 6 小時自動更新
-    <div class="build">build r110 · <span id="buildStamp"></span></div>
+    <div class="build">build r111 · <span id="buildStamp"></span></div>
   </div>
 </footer>
 
@@ -1294,10 +1294,10 @@ const LIT_CATS={
 let LIT_ITEMS=[], LIT_TOTAL=0, LIT_START=0, LIT_LOADING=false, LIT_TIMER=null;
 function renderLitFeed(){
   const feed=document.getElementById('feed'), cnt=document.getElementById('litCount'); if(!feed)return;
-  if(cnt)cnt.textContent='整合 '+(LIT_SRC_OK||0)+' 個來源 · 顯示 '+LIT_ITEMS.length+' 篇';
+  if(cnt)cnt.textContent=LIT_TOTAL?('全庫共 '+Number(LIT_TOTAL).toLocaleString('en-US')+' 篇 · 顯示 '+LIT_ITEMS.length):(LIT_ITEMS.length?('顯示 '+LIT_ITEMS.length+' 篇'):'');
   if(!LIT_ITEMS.length){feed.innerHTML='<div class="feed-empty">查無符合的文獻;可換關鍵字(可打中文)、切換分類或年份。</div>';return;}
-  let html='<div class="trial-live-note">🌐 多來源整合:PubMed · PMC 全文 · 預印本 · 專利(Europe PMC)+ OpenAlex + Crossref + Semantic Scholar · 去重後依日期排序</div>'+LIT_ITEMS.map(litItemHTML).join('');
-  html+='<button id="litMore" class="trial-more-btn" type="button">載入更多 ↓</button>';
+  let html='<div class="trial-live-note">🌐 PubMed + PMC 全文(Europe PMC)· 僅收錄期刊論文 · 依出版日排序</div>'+LIT_ITEMS.map(litItemHTML).join('');
+  if(LIT_ITEMS.length<LIT_TOTAL)html+='<button id="litMore" class="trial-more-btn" type="button">載入更多 ↓</button>';
   feed.innerHTML=html;
   const lm=document.getElementById('litMore'); if(lm)lm.addEventListener('click',()=>fetchLit(true));
 }
@@ -1305,7 +1305,7 @@ let LIT_PAGE=0, LIT_EPMC_CURSOR='*', LIT_SEEN={}, LIT_SRC_OK=0, LIT_DF_OA='', LI
 async function srcEuropePMC(term){
   const url='https://www.ebi.ac.uk/europepmc/webservices/rest/search?format=json&resultType=core&pageSize=25&sort='+encodeURIComponent('P_PDATE_D desc')+'&cursorMark='+encodeURIComponent(LIT_EPMC_CURSOR)+'&query='+encodeURIComponent(term);
   const r=await fetch(url); if(!r.ok)throw new Error('epmc'); const d=await r.json();
-  LIT_EPMC_CURSOR=d.nextCursorMark||LIT_EPMC_CURSOR;
+  LIT_EPMC_CURSOR=d.nextCursorMark||LIT_EPMC_CURSOR; LIT_TOTAL=d.hitCount||0;
   const SRC={MED:'PubMed',PMC:'PMC全文',PPR:'預印本',PAT:'專利',AGR:'Agricola',CBA:'書籍',ETH:'論文',HIR:'NICE'};
   return ((d.resultList&&d.resultList.result)||[]).map(function(x){return {
     pmid:x.pmid||'', doi:(x.doi||'').toLowerCase(), title:x.title||'',
@@ -1377,12 +1377,11 @@ async function fetchLit(append){
   else if(LIT_YEARS==='6'){epmcYear=' AND (PUB_YEAR:['+(y-6)+' TO '+y+'])'; LIT_DF_OA='from_publication_date:'+(y-6)+'-01-01'; LIT_DF_CR='from-pub-date:'+(y-6)+'-01-01';}
   else if(LIT_YEARS==='old'){epmcYear=' AND (PUB_YEAR:[1900 TO '+(y-6)+'])'; LIT_DF_OA='to_publication_date:'+(y-6)+'-12-31'; LIT_DF_CR='until-pub-date:'+(y-6)+'-12-31';}
   const EYEQ='(eye OR ophthalmology OR ophthalmic OR ocular OR vision OR retina OR cornea OR glaucoma OR cataract OR myopia OR refractive OR optometry OR "contact lens" OR "intraocular lens")';
-  const termE=(q?('('+term+') AND '+EYEQ):term)+epmcYear;
-  const bias=(q?(term+' ophthalmology eye'):term);
-  if(!append){ LIT_ITEMS=[]; LIT_SEEN={}; LIT_PAGE=0; LIT_EPMC_CURSOR='*'; if(feed)feed.innerHTML='<div class="feed-empty">正在整合查詢多個學術資料庫(Europe PMC · OpenAlex · Crossref · Semantic Scholar)…</div>'; if(cnt)cnt.textContent=''; }
+  const termE=(q?('('+term+') AND '+EYEQ):term)+' AND (SRC:MED OR SRC:PMC)'+epmcYear;
+  if(!append){ LIT_ITEMS=[]; LIT_SEEN={}; LIT_PAGE=0; LIT_EPMC_CURSOR='*'; if(feed)feed.innerHTML='<div class="feed-empty">正在查詢 PubMed + PMC 全庫…</div>'; if(cnt)cnt.textContent=''; }
   else { LIT_PAGE++; const lm=document.getElementById('litMore'); if(lm){lm.textContent='載入中…'; lm.disabled=true;} }
   try{
-    const settled=await Promise.allSettled([srcEuropePMC(termE), srcOpenAlex(bias,LIT_PAGE), srcCrossref(bias,LIT_PAGE), srcS2(bias,LIT_PAGE)]);
+    const settled=await Promise.allSettled([srcEuropePMC(termE)]);
     LIT_SRC_OK=0; settled.forEach(function(s){ if(s.status==='fulfilled'){LIT_SRC_OK++; litMergeInto(s.value);} });
     LIT_ITEMS.sort(function(a,b){return (b.date||'').localeCompare(a.date||'');});
     const u=document.getElementById('updTime'); if(u)u.textContent='即時直連';
