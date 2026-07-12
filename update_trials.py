@@ -10,7 +10,7 @@ import urllib.request, urllib.parse
 
 API = "https://clinicaltrials.gov/api/v2/studies"
 UA = "eye-vision-hub"
-PAGESIZE = 60   # 每類最多筆數
+PAGESIZE = 100  # 每類最多筆數(調高以涵蓋更多試驗)
 
 # 對應前端臨床類別(與臨床文獻相同的 8 類)
 QUERIES = {
