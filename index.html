@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- 眼視光 Eye-Vision Hub | build r104 | 2026-07-11 | 公司資料全面查證+版本標示 -->
+<!-- 眼視光 Eye-Vision Hub | build r106 | 2026-07-11 | 公司資料全面查證+版本標示 -->
 <html lang="zh-Hant">
 <head>
 <meta charset="UTF-8">
@@ -588,7 +588,7 @@ footer .build{margin-top:8px;font-size:11px}
       <a data-view="about">關於</a>
     </nav>
     <div class="topbar-right">
-      <span class="ver" title="版本(部署後對照用)">r104</span>
+      <span class="ver" title="版本(部署後對照用)">r106</span>
       <button id="backBtn" type="button" aria-label="返回上一頁">← 返回</button>
     </div>
   </div>
@@ -777,7 +777,7 @@ footer .build{margin-top:8px;font-size:11px}
     <h2>眼視光產業公司</h2>
     <p class="sec-sub">依領域分類的眼視光公司(含台股代號)。<b>點任一公司卡片可展開完整資料與產品說明</b>。此為可自行編輯的整理清單,最新營運狀態/歸屬請以公司公告為準。</p>
     <div class="rank-panel">
-      <div class="rank-head"><h3>\uD83D\uDCB0 四大品項市值排行(美金)</h3></div>
+      <div class="rank-head"><h3>💰 四大品項市值排行(美金)</h3></div>
       <p class="rank-sub">依<b>約略市值(美金)</b>由大到小排序。綜合大廠標「綜合大廠*」為<b>全公司市值</b>(非眼科單一事業);台廠為<b>粗估</b>、私有公司無公開市值,分公司市值計於母公司。市值每日變動,請以即時股價為準。</p>
       <div class="rank-tabs" id="rankTabs"></div>
       <div class="rank-body" id="rankBody"></div>
@@ -842,10 +842,10 @@ footer .build{margin-top:8px;font-size:11px}
       </div>
       <p class="lit-sub"><b>直連 ClinicalTrials.gov 官方完整資料庫</b>(即時、非快取)——分類、狀態、搜尋皆查全世界所有試驗,可「載入更多」。輸入關鍵字或 NCT 編號即時搜尋全庫。</p>
       <div class="lit-search-row">
-        <input id="trialSearch" type="search" placeholder="搜尋試驗:名稱／條件／介入／主辦／國家／NCT" aria-label="搜尋臨床試驗">
+        <input id="trialSearch" type="search" placeholder="搜尋試驗:可打中文或英文(近視、角膜塑型、白內障、NCT 編號…)" aria-label="搜尋臨床試驗">
         <span id="trialCount" class="lit-count"></span>
       </div>
-      <div class="trial-live-row"><span class="trial-live-hint">🌐 即時直連官方資料庫;打字自動搜尋、Enter 立即查;查無會自動放寬比對。</span></div>
+      <div class="trial-live-row"><span class="trial-live-hint">🌐 即時直連官方資料庫;<b>可直接打中文</b>(近視/角膜塑型/白內障/乾眼…會自動轉英文查全庫)、Enter 立即查。</span></div>
       <div class="lit-tabs" id="trialTabs"></div>
       <div class="range-row" id="trialStatus"></div>
       <div class="feed" id="trialFeed"></div>
@@ -872,7 +872,7 @@ footer .build{margin-top:8px;font-size:11px}
   <div class="wrap">
     眼視光資訊中心 · Eye-Vision Industry Hub<br>
     資料來源:Google News · PubMed / NCBI · 每日/每 6 小時自動更新
-    <div class="build">build r104 · <span id="buildStamp"></span></div>
+    <div class="build">build r106 · <span id="buildStamp"></span></div>
   </div>
 </footer>
 
@@ -1215,7 +1215,7 @@ function aiPromptNews(title,body){
 function aiPanel(rows, absText, prompt){
   const rowHTML=rows.filter(r=>r[1]).map(r=>`<div class="ai-row"><span class="ai-k">${r[0]}</span><span>${escHTML(r[1])}</span></div>`).join('');
   const abs=absText?`<details class="ai-abs"><summary>完整摘要/內容</summary><p>${escHTML(absText)}</p></details>`:'';
-  return `<div class="ai-wrap"><button class="ai-btn" type="button"><span class="spk">\u2726</span> 一鍵解析</button><div class="ai-panel" hidden>${rowHTML}${abs}</div></div>`;
+  return `<div class="ai-wrap"><button class="ai-btn" type="button"><span class="spk">✦</span> 一鍵解析</button><div class="ai-panel" hidden>${rowHTML}${abs}</div></div>`;
 }
 function litItemHTML(it){
   const link=it.pmid?`https://pubmed.ncbi.nlm.nih.gov/${it.pmid}/`:"#";
@@ -1231,7 +1231,7 @@ function litItemHTML(it){
     <h4><a href="${link}" target="_blank" rel="noopener">${head}</a></h4>
     ${sub}
     <div class="fi-meta">${it.journal||""}${it.pmid?" · PMID "+it.pmid:""}</div>
-    ${(it.country||it.ptype)?`<div class="lit-badges">${it.country?`<span class="lit-badge">\uD83C\uDF0D ${it.country}</span>`:""}${it.ptype?`<span class="lit-badge">\uD83D\uDD2C ${it.ptype}</span>`:""}</div>`:""}
+    ${(it.country||it.ptype)?`<div class="lit-badges">${it.country?`<span class="lit-badge">🌍 ${it.country}</span>`:""}${it.ptype?`<span class="lit-badge">🔬 ${it.ptype}</span>`:""}</div>`:""}
     ${point?`<div class="fi-point">臨床效果/結論:${point}</div>`:""}
     ${tagsHTML(it.title,it.zh,it.zh_sum,it.summary,it.journal)}
     ${aiPanel(
@@ -1544,17 +1544,17 @@ function orderWithBranches(list){
   return ordered;
 }
 function coFlags(c){
-  return (c.intl?'<span class="co-flag intl">\uD83C\uDF10 國際大廠</span>':'')
-       + (isBranchCo(c)?'<span class="co-flag tw">\uD83C\uDDF9\uD83C\uDDFC 台灣分公司</span>':'')
-       + (c.twOnly?'<span class="co-flag twonly">\uD83C\uDDF9\uD83C\uDDFC 僅台灣</span>':'');
+  return (c.intl?'<span class="co-flag intl">🌐 國際大廠</span>':'')
+       + (isBranchCo(c)?'<span class="co-flag tw">🇹🇼 台灣分公司</span>':'')
+       + (c.twOnly?'<span class="co-flag twonly">🇹🇼 僅台灣</span>':'');
 }
 function coCardHTML(c){
   const fl=coFlags(c);
   return `<div class="co-card${isBranchCo(c)?' co-card-branch':''}" data-co="${c.id}" role="button" tabindex="0">
     <div class="co-name">${c.n}${c.code?`<span class="co-code">${c.code}</span>`:''}</div>
     ${fl?`<div class="co-flags">${fl}</div>`:''}
-    ${c.mcap?`<div class="co-mcap">\uD83D\uDCB0 市值 ${c.mcap}</div>`:''}
-    ${c.star?`<div class="co-star">\u2B50 ${c.star}</div>`:''}
+    ${c.mcap?`<div class="co-mcap">💰 市值 ${c.mcap}</div>`:''}
+    ${c.star?`<div class="co-star">⭐ ${c.star}</div>`:''}
     <div class="co-meta"><span class="co-region">${c.r}</span> ${c.scope||c.note||''}</div>
     <div class="co-more">查看完整資料 · 產品 →</div>
   </div>`;
@@ -1684,8 +1684,8 @@ function renderCompanyDetail(c){
   let relHTML='';
   if(relParent||relBranches.length){
     const rows=[];
-    if(relParent)rows.push(`<div class="co-rel-row"><span class="co-rel-lbl">總公司</span><button class="co-rel" data-co="${relParent.id}" type="button">${relParent.n} \u2197</button></div>`);
-    if(relBranches.length)rows.push(`<div class="co-rel-row"><span class="co-rel-lbl">台灣分公司</span>${relBranches.map(b=>`<button class="co-rel" data-co="${b.id}" type="button">${b.n} \u2197</button>`).join('')}</div>`);
+    if(relParent)rows.push(`<div class="co-rel-row"><span class="co-rel-lbl">總公司</span><button class="co-rel" data-co="${relParent.id}" type="button">${relParent.n} ↗</button></div>`);
+    if(relBranches.length)rows.push(`<div class="co-rel-row"><span class="co-rel-lbl">台灣分公司</span>${relBranches.map(b=>`<button class="co-rel" data-co="${b.id}" type="button">${b.n} ↗</button>`).join('')}</div>`);
     relHTML=`<div class="co-block"><div class="co-block-h">關係企業</div>${rows.join('')}</div>`;
   }
   return `
@@ -1693,12 +1693,12 @@ function renderCompanyDetail(c){
       <div class="co-seglabel mono">${CO_LABEL[c.s]||''}</div>
       <h3>${c.n}${c.code?`<span class="co-code">${c.code}</span>`:''}</h3>
       ${c.en?`<div class="co-en mono">${c.en}</div>`:''}
-      <div class="co-badges">${c.intl?'<span class="co-badge co-badge-intl">\uD83C\uDF10 國際大廠</span>':''}${isBranchCo(c)?'<span class="co-badge co-badge-tw">\uD83C\uDDF9\uD83C\uDDFC 台灣分公司</span>':''}${c.twOnly?'<span class="co-badge co-badge-twonly">\uD83C\uDDF9\uD83C\uDDFC 僅在台灣市場</span>':''}<span class="co-badge">${c.r}</span>${c.market?`<span class="co-badge">${c.market}</span>`:''}${c.founded?`<span class="co-badge">成立 ${c.founded}</span>`:''}</div>
+      <div class="co-badges">${c.intl?'<span class="co-badge co-badge-intl">🌐 國際大廠</span>':''}${isBranchCo(c)?'<span class="co-badge co-badge-tw">🇹🇼 台灣分公司</span>':''}${c.twOnly?'<span class="co-badge co-badge-twonly">🇹🇼 僅在台灣市場</span>':''}<span class="co-badge">${c.r}</span>${c.market?`<span class="co-badge">${c.market}</span>`:''}${c.founded?`<span class="co-badge">成立 ${c.founded}</span>`:''}</div>
     </div>
     <div class="co-body">
       <div class="co-metarow">${meta.map(m=>`<div class="co-meta-item"><span class="co-ml">${m[0]}</span><span class="co-mv">${m[1]}</span></div>`).join('')}</div>
-      ${c.mcap?'<p class="co-mcap-note">\u203B 市值為約略快照(約 2026 年中),每日變動,實際請以即時股價為準。</p>':''}
-      ${c.star?`<div class="co-star-box"><span class="co-star-lbl">\u2B50 招牌 / 明星商品</span><span class="co-star-v">${c.star}</span></div>`:''}
+      ${c.mcap?'<p class="co-mcap-note">※ 市值為約略快照(約 2026 年中),每日變動,實際請以即時股價為準。</p>':''}
+      ${c.star?`<div class="co-star-box"><span class="co-star-lbl">⭐ 招牌 / 明星商品</span><span class="co-star-v">${c.star}</span></div>`:''}
       <div class="co-block"><div class="co-block-h">業務範圍</div><p class="co-scope">${c.scope||'—'}</p></div>
       ${prodMixHTML}
       ${revHTML}
@@ -1879,7 +1879,7 @@ function renderProducts(){
       if(toks.every(t=>hay.indexOf(t)>=0))cards.push(prodCardHTML(dm.k,i,p));
     });});
     if(cnt)cnt.textContent='找到 '+cards.length+' 項';
-    grid.innerHTML=cards.length?`<div class="prod-dom"><div class="prod-dom-h">\uD83D\uDD0D 搜尋「${PROD_QUERY}」<span class="prod-cnt">${cards.length}</span></div><div class="prod-cards">${cards.join('')}</div></div>`:'<div class="feed-empty">找不到符合的產品,可換關鍵字(品牌、成分、術式,如 Acuvue、Diquas、SMILE)。</div>';
+    grid.innerHTML=cards.length?`<div class="prod-dom"><div class="prod-dom-h">🔍 搜尋「${PROD_QUERY}」<span class="prod-cnt">${cards.length}</span></div><div class="prod-cards">${cards.join('')}</div></div>`:'<div class="feed-empty">找不到符合的產品,可換關鍵字(品牌、成分、術式,如 Acuvue、Diquas、SMILE)。</div>';
     return;
   }
   if(cnt)cnt.textContent='';
@@ -1987,17 +1987,17 @@ function detectRegion(text){
 function regionHTML(){
   const t=[].slice.call(arguments).filter(Boolean).join(' ');
   const r=detectRegion(t);
-  return r?'<div class="lit-badges"><span class="lit-badge">\uD83C\uDF0D '+r+'</span></div>':'';
+  return r?'<div class="lit-badges"><span class="lit-badge">🌍 '+r+'</span></div>':'';
 }
 function regionHTMLTW(){
   const t=[].slice.call(arguments).filter(Boolean).join(' ');
   const r=detectRegion(t)||'台灣';
-  return '<div class="lit-badges"><span class="lit-badge">\uD83C\uDF0D '+r+'</span></div>';
+  return '<div class="lit-badges"><span class="lit-badge">🌍 '+r+'</span></div>';
 }
 function regionHTMLIntl(){
   const t=[].slice.call(arguments).filter(Boolean).join(' ');
   const r=detectRegion(t)||'國外';
-  return '<div class="lit-badges"><span class="lit-badge">\uD83C\uDF0D '+r+'</span></div>';
+  return '<div class="lit-badges"><span class="lit-badge">🌍 '+r+'</span></div>';
 }
 const NEWS_TAG_RULES=[
  {re:/misight/i,co:"CooperVision",p:"MiSight 離焦日拋",find:"MiSight"},
@@ -2082,7 +2082,7 @@ function tagsHTML(){
   const text=[].slice.call(arguments).filter(Boolean).join(' ');
   const t=detectTags(text);
   if(!t.length)return '';
-  return '<div class="news-tags">'+t.map(h=>'<button class="news-tag" data-find="'+String(h.find).replace(/"/g,'')+'" title="查看產品技術詳情">\uD83D\uDD17 '+h.label+'</button>').join('')+'</div>';
+  return '<div class="news-tags">'+t.map(h=>'<button class="news-tag" data-find="'+String(h.find).replace(/"/g,'')+'" title="查看產品技術詳情">🔗 '+h.label+'</button>').join('')+'</div>';
 }
 function findProd(name){
   name=(name||'').replace(/[（(].*?[）)]/g,'').trim();
@@ -2298,9 +2298,9 @@ async function liveTrialSearch(){
     const d=await r.json(); const items=(d.studies||[]).map(mapLiveStudy);
     if(cnt)cnt.textContent='全庫找到 '+items.length+' 筆'+(d.nextPageToken?'+':'');
     if(!items.length){feed.innerHTML='<div class="feed-empty">ClinicalTrials.gov 全庫也查無「'+q+'」。可換關鍵字或改用 NCT 編號。</div>';return;}
-    feed.innerHTML='<div class="trial-live-note">\uD83C\uDF10 以下為 ClinicalTrials.gov <b>全庫即時結果</b>(非本站每 6 小時快取)</div>'+items.map(trialItemHTML).join('');
+    feed.innerHTML='<div class="trial-live-note">🌐 以下為 ClinicalTrials.gov <b>全庫即時結果</b>(非本站每 6 小時快取)</div>'+items.map(trialItemHTML).join('');
   }catch(err){
-    feed.innerHTML='<div class="feed-empty">即時搜尋失敗('+(err&&err.message||err)+')。可直接前往 <a href="https://clinicaltrials.gov/search?term='+encodeURIComponent(q)+'" target="_blank" rel="noopener">ClinicalTrials.gov 搜尋「'+q+'」\u2197</a>。</div>';
+    feed.innerHTML='<div class="feed-empty">即時搜尋失敗('+(err&&err.message||err)+')。可直接前往 <a href="https://clinicaltrials.gov/search?term='+encodeURIComponent(q)+'" target="_blank" rel="noopener">ClinicalTrials.gov 搜尋「'+q+'」↗</a>。</div>';
   }
 }
 function trialItemHTML(it){
@@ -2309,9 +2309,9 @@ function trialItemHTML(it){
   const intr=(it.interventions||[]).join("；");
   const meta=[it.sponsor, it.enroll?("收案 "+it.enroll+" 人"):"", (it.start||it.completion)?((it.start||"?")+" ~ "+(it.completion||"?")):""].filter(Boolean).join(" · ");
   const badges=[
-    it.country?`<span class="lit-badge">\uD83C\uDF0D ${it.country}</span>`:"",
-    it.status_zh?`<span class="lit-badge">\uD83D\uDCCD ${it.status_zh}</span>`:"",
-    (it.type||it.phase)?`<span class="lit-badge">\uD83E\uDDEA ${[it.type,it.phase].filter(Boolean).join(" · ")}</span>`:"",
+    it.country?`<span class="lit-badge">🌍 ${it.country}</span>`:"",
+    it.status_zh?`<span class="lit-badge">📍 ${it.status_zh}</span>`:"",
+    (it.type||it.phase)?`<span class="lit-badge">🧪 ${[it.type,it.phase].filter(Boolean).join(" · ")}</span>`:"",
   ].filter(Boolean).join("");
   const point=[cond?("條件:"+cond):"", intr?("介入:"+intr):""].filter(Boolean).join("　|　");
   return `<div class="feed-item">
@@ -2359,32 +2359,57 @@ const TRIAL_CATS={
   dryeye:{cond:"dry eye OR meibomian gland dysfunction", term:""}
 };
 let TRIAL_ITEMS=[], TRIAL_TOKEN=null, TRIAL_TOTAL=0, TRIAL_LOADING=false, TRIAL_TIMER=null;
-function renderTrialFeed(broad, q){
+function renderTrialFeed(broad, q, qEff){
   const feed=document.getElementById('trialFeed'), cnt=document.getElementById('trialCount'); if(!feed)return;
   if(cnt)cnt.textContent=TRIAL_TOTAL?('全庫共 '+Number(TRIAL_TOTAL).toLocaleString('en-US')+' 筆 · 顯示 '+TRIAL_ITEMS.length):(TRIAL_ITEMS.length?('顯示 '+TRIAL_ITEMS.length+' 筆'):'');
   if(!TRIAL_ITEMS.length){
-    const qq=encodeURIComponent(q||(TRIAL_QUERY||''));
-    feed.innerHTML='<div class="feed-empty">查無符合的試驗。可改用 <b>NCT 編號</b>、精簡關鍵字,或直接到 <a href="https://clinicaltrials.gov/search?term='+qq+'" target="_blank" rel="noopener">ClinicalTrials.gov\u2197</a> / <a href="https://www.google.com/search?q='+qq+'+clinicaltrials" target="_blank" rel="noopener">Google\u2197</a> 查此關鍵字。</div>';return;
+    const qq=encodeURIComponent(qEff||q||(TRIAL_QUERY||''));
+    feed.innerHTML='<div class="feed-empty">查無符合的試驗。可改用 <b>NCT 編號</b>、精簡關鍵字,或直接到 <a href="https://clinicaltrials.gov/search?term='+qq+'" target="_blank" rel="noopener">ClinicalTrials.gov↗</a> / <a href="https://www.google.com/search?q='+qq+'+clinicaltrials" target="_blank" rel="noopener">Google↗</a> 查此關鍵字。</div>';return;
   }
-  let note=broad?'\uD83C\uDF10 官方資料庫 · <b>已自動放寬比對(任一關鍵字)</b> · 依最後更新排序':'\uD83C\uDF10 ClinicalTrials.gov 官方完整資料庫即時結果 · 依最後更新排序';
+  const zh=q&&/[\u3400-\u9fff]/.test(q); const trans=(zh&&qEff&&qEff!==q)?(' · 中文「'+q+'」以英文「'+qEff+'」查詢'):'';
+  let note=(broad?'🌐 官方資料庫 · <b>已自動放寬比對(任一關鍵字)</b>':'🌐 ClinicalTrials.gov 官方完整資料庫即時結果')+trans+' · 依最後更新排序';
   let html='<div class="trial-live-note">'+note+'</div>'+TRIAL_ITEMS.map(trialItemHTML).join('');
   if(TRIAL_TOKEN)html+='<button id="trialMore" class="trial-more-btn" type="button">載入更多 ↓</button>';
   feed.innerHTML=html;
   const lm=document.getElementById('trialMore'); if(lm)lm.addEventListener('click',()=>fetchTrials(true, broad));
 }
+const TRIAL_ZH_EN=[
+  ["糖尿病視網膜病變","diabetic retinopathy"],["糖尿病黃斑","diabetic macular edema"],
+  ["老年性黃斑","age-related macular degeneration"],["黃斑部病變","macular degeneration"],["黃斑","macular"],
+  ["視網膜剝離","retinal detachment"],["視網膜靜脈阻塞","retinal vein occlusion"],["視網膜","retinal"],
+  ["近視控制","myopia control"],["高度近視","high myopia"],["病理性近視","pathologic myopia"],["近視","myopia"],
+  ["角膜塑型片","orthokeratology"],["角膜塑型","orthokeratology"],["圓錐角膜","keratoconus"],
+  ["角膜膠原交聯","corneal cross-linking"],["角膜交聯","corneal cross-linking"],["交聯","cross-linking"],
+  ["角膜移植","corneal transplant"],["角膜地形圖","corneal topography"],["角膜內皮","corneal endothelial"],["角膜","cornea"],
+  ["周邊離焦","peripheral defocus"],["離焦","defocus"],["眼軸","axial length"],["脈絡膜","choroid"],
+  ["低濃度阿托品","low-dose atropine"],["阿托品","atropine"],["紅光","repeated low-level red light"],
+  ["硬式隱形眼鏡","rigid gas permeable contact lens"],["隱形眼鏡","contact lens"],["日拋","daily disposable"],
+  ["鞏膜鏡","scleral lens"],["軟式","soft"],["多焦","multifocal"],["散光","astigmatism"],["遠視","hyperopia"],
+  ["老花","presbyopia"],["弱視","amblyopia"],["斜視","strabismus"],
+  ["白內障","cataract"],["人工水晶體","intraocular lens"],["水晶體","intraocular lens"],["植入","implant"],
+  ["飛秒雷射","femtosecond laser"],["飛秒","femtosecond"],["準分子","excimer"],["屈光手術","refractive surgery"],
+  ["屈光","refractive"],["雷射","laser"],["視力","vision"],
+  ["青光眼","glaucoma"],["眼壓","intraocular pressure"],["視神經","optic nerve"],["小樑","trabecular"],
+  ["乾眼","dry eye"],["瞼板腺","meibomian gland"],["淚膜","tear film"],["淚液","tear"],["人工淚液","artificial tears"],
+  ["玻璃體","vitreous"],["新生血管","neovascularization"],["黃斑水腫","macular edema"],
+  ["過敏性結膜炎","allergic conjunctivitis"],["結膜炎","conjunctivitis"],["葡萄膜炎","uveitis"],["發炎","inflammation"],
+  ["葉黃素","lutein"],["兒童","children"],["青少年","adolescents"],["成人","adults"],["戶外","outdoor"],
+  ["眼藥水","eye drops"],["注射","injection"]
+];
 function trialQueryExpand(q){
   let s=q;
   s=s.replace(/ok\s*鏡|ok\s*lens(es)?/gi,'orthokeratology');
-  s=s.replace(/角膜塑型/g,'orthokeratology');
+  for(const pair of TRIAL_ZH_EN){ if(s.indexOf(pair[0])>=0) s=s.split(pair[0]).join(' '+pair[1]+' '); }
   s=s.replace(/(^|\s)ok(\s|$)/gi,' (orthokeratology OR ortho-k OR OK) ');
-  return s.trim();
+  s=s.replace(/[\u3400-\u9fff\u3000-\u303f\uff00-\uffef]+/g,' ').replace(/\s+/g,' ').trim();
+  return s||q;
 }
 async function fetchTrials(append,broad){
   if(TRIAL_LOADING)return; TRIAL_LOADING=true;
   const feed=document.getElementById('trialFeed'), cnt=document.getElementById('trialCount');
   const q=(TRIAL_QUERY||'').trim();
   const params=new URLSearchParams({format:'json', pageSize:'50', countTotal:'true', sort:'LastUpdatePostDate:desc'});
-  if(q){ let qq=trialQueryExpand(q); if(broad){ qq=qq.split(/\s+/).filter(w=>w.length>1&&!/^(the|and|or|for|study|of|in|on|a|OR)$/i.test(w)).join(' OR '); } params.set('query.term', qq); }
+  let qEff=q?trialQueryExpand(q):''; if(q){ let qq=qEff; if(broad){ qq=qq.split(/\s+/).filter(w=>w.length>1&&!/^(the|and|or|for|study|of|in|on|a|OR)$/i.test(w)).join(' OR '); } params.set('query.term', qq); }
   else if(TRIAL_TAB==='all'){ params.set('query.term','myopia OR "contact lens" OR "intraocular lens" OR glaucoma OR "dry eye" OR "refractive surgery" OR orthokeratology OR "macular degeneration"'); }
   else { const c=TRIAL_CATS[TRIAL_TAB]||{}; if(c.cond)params.set('query.cond',c.cond); if(c.term)params.set('query.term',c.term); }
   if(TRIAL_STATUS && TRIAL_STATUS!=='all') params.set('filter.overallStatus', TRIAL_STATUS);
@@ -2401,12 +2426,12 @@ async function fetchTrials(append,broad){
     TRIAL_ITEMS=append?TRIAL_ITEMS.concat(items):items;
     TRIAL_TOKEN=d.nextPageToken||d.pageToken||null; TRIAL_TOTAL=(d.totalCount!=null?d.totalCount:TRIAL_ITEMS.length);
     const u=document.getElementById('trialUpd'); if(u)u.textContent='即時直連';
-    renderTrialFeed(broad, q);
+    renderTrialFeed(broad, q, qEff);
   }catch(err){
     if(!append && !TRIAL_ITEMS.length){
       if(TRIAL_DATA && TRIAL_DATA.items && Object.keys(TRIAL_DATA.items).length){ renderTrialsCached(); }
-      else if(feed) feed.innerHTML='<div class="feed-empty">連線 ClinicalTrials.gov 失敗('+((err&&err.message)||err)+')。可稍後再試,或直接前往 <a href="https://clinicaltrials.gov/search?term='+encodeURIComponent(q||'myopia')+'" target="_blank" rel="noopener">ClinicalTrials.gov\u2197</a>。</div>';
-    } else { const lm=document.getElementById('trialMore'); if(lm){lm.textContent='載入更多 \u2193'; lm.disabled=false;} }
+      else if(feed) feed.innerHTML='<div class="feed-empty">連線 ClinicalTrials.gov 失敗('+((err&&err.message)||err)+')。可稍後再試,或直接前往 <a href="https://clinicaltrials.gov/search?term='+encodeURIComponent(q||'myopia')+'" target="_blank" rel="noopener">ClinicalTrials.gov↗</a>。</div>';
+    } else { const lm=document.getElementById('trialMore'); if(lm){lm.textContent='載入更多 ↓'; lm.disabled=false;} }
   } finally { TRIAL_LOADING=false; }
 }
 function renderTrialsCached(){
@@ -2416,7 +2441,7 @@ function renderTrialsCached(){
   if(TRIAL_STATUS!=='all')items=items.filter(i=>i.status===TRIAL_STATUS);
   const q=(TRIAL_QUERY||'').trim(); if(q)items=items.filter(i=>trialMatch(i,q));
   items.sort((a,b)=>(b.updated||'').localeCompare(a.updated||''));
-  feed.innerHTML='<div class="trial-live-note" style="background:#FBEEDA;color:#9A6E3A;border-color:#E0A21A">\u26A0 目前顯示本站快取(無法連線官方 API);稍後重試可取得完整全庫。</div>'+(items.length?items.map(trialItemHTML).join(''):'<div class="feed-empty">快取中查無此項。</div>');
+  feed.innerHTML='<div class="trial-live-note" style="background:#FBEEDA;color:#9A6E3A;border-color:#E0A21A">⚠ 目前顯示本站快取(無法連線官方 API);稍後重試可取得完整全庫。</div>'+(items.length?items.map(trialItemHTML).join(''):'<div class="feed-empty">快取中查無此項。</div>');
 }
 function initTrials(){
   renderTrialTabs(TRIAL_TAB); renderTrialStatus();
