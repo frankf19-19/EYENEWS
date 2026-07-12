@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- 眼視光 Eye-Vision Hub | build r98 | 2026-07-11 | 公司資料全面查證+版本標示 -->
+<!-- 眼視光 Eye-Vision Hub | build r99 | 2026-07-11 | 公司資料全面查證+版本標示 -->
 <html lang="zh-Hant">
 <head>
 <meta charset="UTF-8">
@@ -586,7 +586,7 @@ footer .build{margin-top:8px;font-size:11px}
       <a data-view="about">關於</a>
     </nav>
     <div class="topbar-right">
-      <span class="ver" title="版本(部署後對照用)">r98</span>
+      <span class="ver" title="版本(部署後對照用)">r99</span>
       <button id="backBtn" type="button" aria-label="返回上一頁">← 返回</button>
     </div>
   </div>
@@ -871,7 +871,7 @@ footer .build{margin-top:8px;font-size:11px}
   <div class="wrap">
     眼視光資訊中心 · Eye-Vision Industry Hub<br>
     資料來源:Google News · PubMed / NCBI · 每日/每 6 小時自動更新
-    <div class="build">build r98 · <span id="buildStamp"></span></div>
+    <div class="build">build r99 · <span id="buildStamp"></span></div>
   </div>
 </footer>
 
@@ -2070,28 +2070,87 @@ function findProd(name){
   return bestScore>=2?best:null;
 }
 function resolveProd(name, desc){
+  const text=((name||'')+' '+(desc||''));
+  // 主題關鍵字 → [領域, 分類名稱關鍵字];先特定後通用
+  const PMAP=[
+    [/免疫調節|環孢|cyclospor|lifitegrast|Verkazia|Ikervis|Restasis|Cequa|Xiidra/i,"pharma","免疫調節"],
+    [/乾眼|淚液|Diquas|Hyalein|Systane|Refresh|玻尿酸.*淚|人工淚/i,"pharma","人工淚液"],
+    [/青光眼.*藥|降眼壓|Tapros|Cosopt|Eybelis|Xalatan|Lumigan|Travatan|Timolol|Azopt|Alphagan|latanoprost|前列腺素|Rhopressa/i,"pharma","降眼壓"],
+    [/過敏|Alesion|抗組織胺|Pataday|olopatadine|epinastine/i,"pharma","抗過敏"],
+    [/抗感染|抗生素|抗發炎|類固醇|NSAID|Vigamox|Tobradex|moxifloxacin/i,"pharma","抗感染"],
+    [/散瞳|睫狀肌|Tropicamide|Cyclogyl|cyclopentolate/i,"pharma","散瞳"],
+    [/阿托品|atropine|近視延緩/i,"pharma","低濃度阿托品"],
+    [/黏彈劑|超音波乳化|phaco|Centurion|Veritas|Stellaris/i,"surgery","白內障超音波"],
+    [/飛秒.*白內障|LenSx|Catalys/i,"surgery","飛秒雷射白內障"],
+    [/散光.*IOL|Toric.*IOL|散光矯正/i,"surgery","散光矯正 IOL"],
+    [/多焦.*IOL|三焦|EDOF|PanOptix|Vivity|Synergy|Symfony|焦段延長/i,"surgery","焦段延長"],
+    [/單焦|人工水晶體|AcrySof|Clareon|Tecnis|水晶體|\bIOL\b/i,"surgery","IOL(單焦)"],
+    [/LASIK|準分子|WaveLight|\bMEL\b|VISX/i,"surgery","LASIK"],
+    [/SMILE|全飛秒|VisuMax/i,"surgery","SMILE"],
+    [/PRK|LASEK|表層/i,"surgery","PRK"],
+    [/\bICL\b|植入式|EVO|Collamer/i,"surgery","ICL"],
+    [/SLT|青光眼雷射/i,"surgery","青光眼雷射"],
+    [/MIGS|微創青光眼|iStent|Hydrus|Xen|引流/i,"surgery","MIGS"],
+    [/抗.?VEGF|玻璃體注射|Eylea|Vabysmo|Lucentis|Beovu|aflibercept|faricimab|ranibizumab|Avastin/i,"surgery","抗 VEGF"],
+    [/玻璃體切除|玻切|Constellation/i,"surgery","玻璃體切除"],
+    [/角膜移植|DMEK|DSAEK|DALK/i,"surgery","角膜移植"],
+    [/交聯|\bCXL\b|核黃素|iLink/i,"surgery","交聯"],
+    [/角膜塑型|OK.?鏡|塑型|Ortho.?K|EMERALD|夜戴/i,"cl","角膜塑型片"],
+    [/日拋|1-?day|Acuvue|Precision1|Dailies|Total1|透明日拋/i,"cl","日拋軟鏡"],
+    [/月拋|雙週|Biofinity|Air Optix|ULTRA|Total30/i,"cl","月拋"],
+    [/散光片|Toric/i,"cl","散光片"],
+    [/多焦.*軟|老花.*軟|Multifocal/i,"cl","老花"],
+    [/彩色|美瞳|Define|彩拋/i,"cl","美瞳"],
+    [/RGP|硬式|Menicon Z|高透氧硬/i,"cl","硬式 RGP"],
+    [/鞏膜|Scleral/i,"cl","鞏膜鏡"],
+    [/護理液|保養液|renu|Opti-?Free|AOSEPT|雙氧/i,"cl","護理液"],
+    [/矽水膠|水膠/i,"cl","矽水膠"],
+    [/漸進|Varilux|Hoyalux|progressive/i,"optics","漸進多焦"],
+    [/抗藍光|BlueGuard|BlueControl|Eyezen/i,"optics","抗藍光"],
+    [/變色|Transitions|PhotoFusion|Sensity|photochromic/i,"optics","變色"],
+    [/偏光|Xperio|polar/i,"optics","偏光"],
+    [/鍍膜|Crizal|DuraVision|Hi-?Vision/i,"optics","鍍膜"],
+    [/近視控制.*鏡片|離焦.*鏡片|MiYOSMART|Stellest|MyoCare|新樂學|星趣控|成長睿/i,"optics","近視控制離焦"],
+    [/高折射|非球面/i,"optics","高折射率"],
+    [/離焦.*框架|離焦框架|DIMS|HAL/i,"myopia","離焦框架"],
+    [/MiSight|離焦.*軟|近視控制.*軟/i,"myopia","近視控制軟鏡"],
+    [/紅光|RLRL|Eyerising/i,"myopia","紅光"],
+    [/戶外/i,"myopia","戶外"],
+    [/OCT|斷層掃描|Cirrus|Spectralis|Triton|Maestro/i,"device","OCT"],
+    [/眼底相機|眼底|optomap|Optos|廣角眼底/i,"device","眼底相機"],
+    [/地形圖|Pentacam|Atlas|Medmont|地形/i,"device","地形圖"],
+    [/生物測量|IOLMaster|Lenstar/i,"device","生物測量"],
+    [/自動驗光|綜合驗光|驗光/i,"device","驗光"],
+    [/視野|Humphrey|Octopus/i,"device","視野計"],
+    [/眼壓|Goldmann|Icare/i,"device","眼壓計"],
+    [/內皮細胞|specular/i,"device","內皮細胞"],
+    [/超音波.*掃描|A ?\/ ?B/i,"device","超音波 A"],
+    [/波前|像差|iDesign|Hartmann/i,"device","像差"],
+    [/葉黃素|玉米黃|AREDS/i,"wellness","葉黃素"],
+    [/Omega|魚油/i,"wellness","Omega-3"],
+    [/瞼板腺|LipiFlow|\bIPL\b|熱敷/i,"wellness","瞼板腺"],
+    [/低視能|擴視機|放大鏡/i,"wellness","低視能"],
+    [/單光|鏡片|lens/i,"optics","單光鏡片"],
+    [/隱形眼鏡|軟鏡|contact/i,"cl","日拋軟鏡"],
+  ];
+  for(let k=0;k<PMAP.length;k++){
+    if(PMAP[k][0].test(text)){
+      const dom=PMAP[k][1], sub=PMAP[k][2], arr=PROD[dom]||[];
+      const idx=arr.findIndex(cc=>cc.n.indexOf(sub)>=0);
+      if(idx>=0)return {dom:dom,i:idx};
+    }
+  }
+  // 退回:品牌字比對
   const PROD_STOP=new Set(['角膜','過敏','眼藥','藥物','鏡片','隱形眼鏡','隱形','眼鏡','手術','保健','近視','遠視','散光','老花','白內障','青光眼','視網膜','黃斑','乾眼','驗光','塑型','系列','產品','治療','矯正','診斷','儀器','材料','品牌','控制','管理','日拋','月拋','週拋','硬鏡','軟鏡','框架','鏡','片','液','眼','光','劑','藥','器','儀','燈']);
-  const text=((name||'')+' '+(desc||'')).replace(/[（(].*?[）)]/g,' ');
-  const toks=text.split(/[\s\/·、,，;；.。]+/).map(function(s){return s.trim();}).filter(Boolean);
-  const cands=toks.filter(function(t){
-    if(PROD_STOP.has(t))return false;
-    if(/^[\x00-\x7f]+$/.test(t))return t.length>=4;
-    return t.length>=3;
-  }).map(function(t){return t.toLowerCase();});
+  const t2=text.replace(/[（(].*?[）)]/g,' ');
+  const toks=t2.split(/[\s\/·、,，;；.。]+/).map(function(s){return s.trim();}).filter(Boolean);
+  const cands=toks.filter(function(t){ if(PROD_STOP.has(t))return false; if(/^[\x00-\x7f]+$/.test(t))return t.length>=4; return t.length>=3; }).map(function(t){return t.toLowerCase();});
   if(!cands.length)return null;
   const doms=Object.keys(PROD);
-  for(let d=0;d<doms.length;d++){
-    const arr=PROD[doms[d]];
-    for(let i=0;i<arr.length;i++){
-      const cat=arr[i];
-      const brands=[cat.n].concat(
-        (cat.items||[]).map(function(x){return x.p||'';}),
-        (cat.items||[]).map(function(x){return x.m||'';}),
-        (cat.items||[]).map(function(x){return x.zh||'';})
-      ).join(' ').toLowerCase();
-      for(let c=0;c<cands.length;c++){
-        if(cands[c].length>=3 && brands.indexOf(cands[c])>=0) return {dom:doms[d], i:i};
-      }
+  for(let d=0;d<doms.length;d++){ const arr=PROD[doms[d]];
+    for(let i=0;i<arr.length;i++){ const cat=arr[i];
+      const brands=[cat.n].concat((cat.items||[]).map(function(x){return x.p||'';}),(cat.items||[]).map(function(x){return x.m||'';}),(cat.items||[]).map(function(x){return x.zh||'';})).join(' ').toLowerCase();
+      for(let c=0;c<cands.length;c++){ if(cands[c].length>=3 && brands.indexOf(cands[c])>=0) return {dom:doms[d], i:i}; }
     }
   }
   return null;
