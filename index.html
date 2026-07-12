@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- 眼視光 Eye-Vision Hub | build r103 | 2026-07-11 | 公司資料全面查證+版本標示 -->
+<!-- 眼視光 Eye-Vision Hub | build r104 | 2026-07-11 | 公司資料全面查證+版本標示 -->
 <html lang="zh-Hant">
 <head>
 <meta charset="UTF-8">
@@ -588,7 +588,7 @@ footer .build{margin-top:8px;font-size:11px}
       <a data-view="about">關於</a>
     </nav>
     <div class="topbar-right">
-      <span class="ver" title="版本(部署後對照用)">r103</span>
+      <span class="ver" title="版本(部署後對照用)">r104</span>
       <button id="backBtn" type="button" aria-label="返回上一頁">← 返回</button>
     </div>
   </div>
@@ -845,7 +845,7 @@ footer .build{margin-top:8px;font-size:11px}
         <input id="trialSearch" type="search" placeholder="搜尋試驗:名稱／條件／介入／主辦／國家／NCT" aria-label="搜尋臨床試驗">
         <span id="trialCount" class="lit-count"></span>
       </div>
-      <div class="trial-live-row"><span class="trial-live-hint">\uD83C\uDF10 即時直連官方資料庫;打字自動搜尋、Enter 立即查。分類/狀態切換也是查全庫。</span></div>
+      <div class="trial-live-row"><span class="trial-live-hint">🌐 即時直連官方資料庫;打字自動搜尋、Enter 立即查;查無會自動放寬比對。</span></div>
       <div class="lit-tabs" id="trialTabs"></div>
       <div class="range-row" id="trialStatus"></div>
       <div class="feed" id="trialFeed"></div>
@@ -872,7 +872,7 @@ footer .build{margin-top:8px;font-size:11px}
   <div class="wrap">
     眼視光資訊中心 · Eye-Vision Industry Hub<br>
     資料來源:Google News · PubMed / NCBI · 每日/每 6 小時自動更新
-    <div class="build">build r103 · <span id="buildStamp"></span></div>
+    <div class="build">build r104 · <span id="buildStamp"></span></div>
   </div>
 </footer>
 
@@ -2359,21 +2359,32 @@ const TRIAL_CATS={
   dryeye:{cond:"dry eye OR meibomian gland dysfunction", term:""}
 };
 let TRIAL_ITEMS=[], TRIAL_TOKEN=null, TRIAL_TOTAL=0, TRIAL_LOADING=false, TRIAL_TIMER=null;
-function renderTrialFeed(){
+function renderTrialFeed(broad, q){
   const feed=document.getElementById('trialFeed'), cnt=document.getElementById('trialCount'); if(!feed)return;
   if(cnt)cnt.textContent=TRIAL_TOTAL?('全庫共 '+Number(TRIAL_TOTAL).toLocaleString('en-US')+' 筆 · 顯示 '+TRIAL_ITEMS.length):(TRIAL_ITEMS.length?('顯示 '+TRIAL_ITEMS.length+' 筆'):'');
-  if(!TRIAL_ITEMS.length){feed.innerHTML='<div class="feed-empty">查無符合的試驗;可換關鍵字、改用 NCT 編號或切換分類/狀態。</div>';return;}
-  let html='<div class="trial-live-note">\uD83C\uDF10 ClinicalTrials.gov 官方完整資料庫即時結果 · 依最後更新排序</div>'+TRIAL_ITEMS.map(trialItemHTML).join('');
+  if(!TRIAL_ITEMS.length){
+    const qq=encodeURIComponent(q||(TRIAL_QUERY||''));
+    feed.innerHTML='<div class="feed-empty">查無符合的試驗。可改用 <b>NCT 編號</b>、精簡關鍵字,或直接到 <a href="https://clinicaltrials.gov/search?term='+qq+'" target="_blank" rel="noopener">ClinicalTrials.gov\u2197</a> / <a href="https://www.google.com/search?q='+qq+'+clinicaltrials" target="_blank" rel="noopener">Google\u2197</a> 查此關鍵字。</div>';return;
+  }
+  let note=broad?'\uD83C\uDF10 官方資料庫 · <b>已自動放寬比對(任一關鍵字)</b> · 依最後更新排序':'\uD83C\uDF10 ClinicalTrials.gov 官方完整資料庫即時結果 · 依最後更新排序';
+  let html='<div class="trial-live-note">'+note+'</div>'+TRIAL_ITEMS.map(trialItemHTML).join('');
   if(TRIAL_TOKEN)html+='<button id="trialMore" class="trial-more-btn" type="button">載入更多 ↓</button>';
   feed.innerHTML=html;
-  const lm=document.getElementById('trialMore'); if(lm)lm.addEventListener('click',()=>fetchTrials(true));
+  const lm=document.getElementById('trialMore'); if(lm)lm.addEventListener('click',()=>fetchTrials(true, broad));
 }
-async function fetchTrials(append){
+function trialQueryExpand(q){
+  let s=q;
+  s=s.replace(/ok\s*鏡|ok\s*lens(es)?/gi,'orthokeratology');
+  s=s.replace(/角膜塑型/g,'orthokeratology');
+  s=s.replace(/(^|\s)ok(\s|$)/gi,' (orthokeratology OR ortho-k OR OK) ');
+  return s.trim();
+}
+async function fetchTrials(append,broad){
   if(TRIAL_LOADING)return; TRIAL_LOADING=true;
   const feed=document.getElementById('trialFeed'), cnt=document.getElementById('trialCount');
   const q=(TRIAL_QUERY||'').trim();
   const params=new URLSearchParams({format:'json', pageSize:'50', countTotal:'true', sort:'LastUpdatePostDate:desc'});
-  if(q){ params.set('query.term', q); }
+  if(q){ let qq=trialQueryExpand(q); if(broad){ qq=qq.split(/\s+/).filter(w=>w.length>1&&!/^(the|and|or|for|study|of|in|on|a|OR)$/i.test(w)).join(' OR '); } params.set('query.term', qq); }
   else if(TRIAL_TAB==='all'){ params.set('query.term','myopia OR "contact lens" OR "intraocular lens" OR glaucoma OR "dry eye" OR "refractive surgery" OR orthokeratology OR "macular degeneration"'); }
   else { const c=TRIAL_CATS[TRIAL_TAB]||{}; if(c.cond)params.set('query.cond',c.cond); if(c.term)params.set('query.term',c.term); }
   if(TRIAL_STATUS && TRIAL_STATUS!=='all') params.set('filter.overallStatus', TRIAL_STATUS);
@@ -2385,10 +2396,12 @@ async function fetchTrials(append){
     if(!r.ok)throw new Error('HTTP '+r.status);
     const d=await r.json();
     const items=(d.studies||[]).map(mapLiveStudy); items.forEach(it=>it._key=(TRIAL_TAB==='all'?'':TRIAL_TAB));
+    // 查無且多字查詢 → 自動放寬(OR)重試一次
+    if(!append && !items.length && q && !broad && q.split(/\s+/).filter(Boolean).length>1){ TRIAL_LOADING=false; return fetchTrials(false,true); }
     TRIAL_ITEMS=append?TRIAL_ITEMS.concat(items):items;
     TRIAL_TOKEN=d.nextPageToken||d.pageToken||null; TRIAL_TOTAL=(d.totalCount!=null?d.totalCount:TRIAL_ITEMS.length);
     const u=document.getElementById('trialUpd'); if(u)u.textContent='即時直連';
-    renderTrialFeed();
+    renderTrialFeed(broad, q);
   }catch(err){
     if(!append && !TRIAL_ITEMS.length){
       if(TRIAL_DATA && TRIAL_DATA.items && Object.keys(TRIAL_DATA.items).length){ renderTrialsCached(); }
