@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- 眼視光 Eye-Vision Hub | build r114 | 2026-07-11 | 公司資料全面查證+版本標示 -->
+<!-- 眼視光 Eye-Vision Hub | build r115 | 2026-07-11 | 公司資料全面查證+版本標示 -->
 <html lang="zh-Hant">
 <head>
 <meta charset="UTF-8">
@@ -47,6 +47,12 @@ h2{font-weight:700;font-size:clamp(24px,3vw,32px);margin:0 0 6px}
 .nav a:hover{background:var(--paper-2);color:var(--ink)}
 .nav a.on{background:var(--accent);color:#fff;font-weight:600}
 .topbar-right{margin-left:auto;display:flex;align-items:center;gap:9px}
+.quickbar-in{display:flex;gap:7px;padding-top:2px;padding-bottom:9px;overflow-x:auto;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+.quickbar-in::-webkit-scrollbar{display:none}
+.qbtn{flex:0 0 auto;white-space:nowrap;font-size:12.5px;font-weight:600;color:var(--ink-soft);background:var(--card);border:1px solid var(--line);border-radius:20px;padding:6px 13px;cursor:pointer;text-decoration:none;transition:.12s;line-height:1.4}
+.qbtn:hover{border-color:var(--accent);color:var(--accent-ink)}
+.qbtn.on{background:var(--accent);color:#fff;border-color:var(--accent)}
+@media(max-width:600px){.quickbar-in{gap:6px;padding-bottom:8px}.qbtn{font-size:12px;padding:5px 11px}}
 .ver{font-family:var(--mono);font-size:11px;font-weight:700;color:#fff;background:var(--accent-ink);border-radius:6px;padding:3px 8px;letter-spacing:.03em}
 #backBtn{font-family:var(--mono);font-size:12px;font-weight:600;color:var(--accent-ink);background:var(--card);border:1px solid var(--line);border-radius:9px;padding:7px 12px;cursor:pointer;transition:.15s;display:none}
 #backBtn:hover{border-color:var(--accent);background:var(--accent-soft)}
@@ -627,9 +633,18 @@ footer .build{margin-top:8px;font-size:11px}
       <a data-view="about">關於</a>
     </nav>
     <div class="topbar-right">
-      <span class="ver" title="版本(部署後對照用)">r114</span>
+      <span class="ver" title="版本(部署後對照用)">r115</span>
       <button id="backBtn" type="button" aria-label="返回上一頁">← 返回</button>
     </div>
+  </div>
+  <div class="wrap quickbar-in" id="quickbar">
+    <a class="qbtn" data-goto="overview">🔥 龍頭榜</a>
+    <a class="qbtn" data-goto="taiwan">📰 台灣訊息</a>
+    <a class="qbtn" data-quick="calendar">📅 學協會行事曆</a>
+    <a class="qbtn" data-goto="global">🌐 全球訊息</a>
+    <a class="qbtn" data-goto="companies">🏢 產業公司</a>
+    <a class="qbtn" data-goto="products">💊 產品技術</a>
+    <a class="qbtn" data-goto="clinical">📚 臨床文獻</a>
   </div>
 </div>
 
@@ -921,7 +936,7 @@ footer .build{margin-top:8px;font-size:11px}
   <div class="wrap">
     眼視光資訊中心 · Eye-Vision Industry Hub<br>
     資料來源:Google News · PubMed / NCBI · 每日/每 6 小時自動更新
-    <div class="build">build r114 · <span id="buildStamp"></span></div>
+    <div class="build">build r115 · <span id="buildStamp"></span></div>
   </div>
 </footer>
 
@@ -2475,6 +2490,7 @@ function applyView(name){
   document.querySelectorAll('.view').forEach(v=>v.classList.toggle('is-active', v.id==='view-'+name));
   document.querySelectorAll('#mainNav a').forEach(a=>a.classList.toggle('on', a.dataset.view===name));
   document.querySelectorAll('.botnav-item').forEach(a=>a.classList.toggle('on', a.dataset.goto===name));
+  document.querySelectorAll('.qbtn[data-goto]').forEach(a=>a.classList.toggle('on', a.dataset.goto===name));
   const bb=document.getElementById('backBtn'); if(bb)bb.style.display=(name==='overview')?'none':'';
   if(name==='myopia'){document.querySelectorAll('.bar-fill').forEach(f=>{f.style.width=f.dataset.pct+'%';});}
   window.scrollTo({top:0,behavior:'smooth'});
@@ -2493,6 +2509,10 @@ function initRouter(){
   document.body.addEventListener('click',e=>{
     const g=e.target.closest('[data-goto]'); if(!g)return;
     e.preventDefault(); switchView(g.dataset.goto, g.dataset.seg);
+  });
+  document.body.addEventListener('click',e=>{
+    const q=e.target.closest('[data-quick]'); if(!q)return; e.preventDefault();
+    if(q.dataset.quick==='calendar'){ switchView('taiwan'); setTimeout(function(){var el=document.getElementById('calFeed'); if(el)el.scrollIntoView({behavior:'smooth',block:'center'});},160); }
   });
   const bb=document.getElementById('backBtn');
   if(bb)bb.addEventListener('click',()=>history.back());
