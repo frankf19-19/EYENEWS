@@ -1,8 +1,20 @@
 {
-  "updated": "2026-07-17 00:15 UTC",
+  "updated": "2026-07-17 23:38 UTC",
   "source": "PubMed(NCBI)+ Europe PMC;不限年份(相關性/高被引跨年代);中文為免費自動翻譯",
   "items": {
     "myopia": [
+      {
+        "title": "Diffractive optical element (D.O.E) spectacle lenses for myopia prevention and control: a small-scale pilot study among younger Chinese children.",
+        "journal": "BMJ Open Ophthalmol",
+        "date": "2026",
+        "pmid": "42463267",
+        "summary": "D.O.E spectacle lenses used in this pilot study demonstrated a statistically significant, though not clinically meaningful, effect in slowing myopia progression among younger Chinese children. …",
+        "abstract": "AIM: To assess the efficacy and safety of diffractive optical element (D.O.E) spectacle lenses in reducing the incidence and progression of myopia compared with currently available myopia control spectacle lenses in younger Chinese children. METHODS: This randomised, investigator-masked, parallel-controlled, small-scale pilot study included participants aged 6-8 years with a spherical equivalent refraction (SER) between 0.00 D and -1.75 D in either eye. Additionally, astigmatism and anisometropia did not exceed 1.50 D. Participants were randomly assigned to wear either the D.O.E (n=19) or highly aspherical lenslets ((H.A.L.T), n=17) spectacle lenses. Axial length (AL), choroidal thickness (ChT) and cycloplegic SER were measured at baseline and at 1, 2 and 3 months after wearing the spectacle lenses. Changes in AL, ChT and cycloplegic SER between the two groups were analysed using linear ",
+        "country": "中國",
+        "ptype": "隨機對照試驗(RCT)",
+        "zh": "",
+        "zh_sum": ""
+      },
       {
         "title": "Efficacy of 0.01% atropine for myopia control in children: an artificial intelligence-assisted multivariate Bayesian meta-analysis.",
         "journal": "Front Med (Lausanne)",
@@ -239,7 +251,7 @@
         "summary": "Both OK and EDOF soft contact lenses were associated with reduced axial elongation over a 12-month period, with no significant differences in efficacy between treatments. OK demonstrated a distinct profile characterized by corneal remodelling and a response influenced by baseline ocular parameters, whereas EDOF lenses showed a structurall …",
         "abstract": "PURPOSE: To compare the efficacy of orthokeratology (OK) and extended depth-of-focus (EDOF) soft contact lenses in controlling myopia progression over a 12-month period. METHODS: Ambispective comparative study including 56 eyes from 28 myopic patients aged 6 to 16 years. Thirty eyes were fitted with EDOF soft contact lenses (prospective cohort), and 26 eyes with OK lenses (retrospective cohort). Axial length (AXL), spherical equivalent (SE), and binocular visual acuity (VA) were assessed at baseline, 6 months, and 12 months. Corneal parameters, including keratometry (K1,K2) and anterior chamber volume (ACV), were also evaluated. RESULTS: AXL increased significantly over time in both groups (p < 0.001), with no significant differences between groups at any follow-up visit (all p > 0.05). Mean axial elongation at 12 months was 0.05 ± 0.09 mm in the EDOF group and 0.11 ± 0.10 mm in the OK g",
         "country": "西班牙",
-        "ptype": "",
+        "ptype": "比較性研究",
         "zh": "",
         "zh_sum": ""
       },
@@ -527,18 +539,6 @@
         "summary": "",
         "abstract": "",
         "country": "英國",
-        "ptype": "",
-        "zh": "",
-        "zh_sum": ""
-      },
-      {
-        "title": "Can switching between different types of myopia control spectacles enhance effectiveness? Findings from a real-world study.",
-        "journal": "Br J Ophthalmol",
-        "date": "2026",
-        "pmid": "42303290",
-        "summary": "Switching to a different type of myopia control spectacle may help slow myopia progression for children exhibiting suboptimal response to their initial spectacles. However, this beneficial effect tends to wane over time with prolonged wear.",
-        "abstract": "AIMS: To investigate the effect of switching to a different type of myopia control spectacles on myopia progression. METHODS: This retrospective matched-cohort study involved 1012 children or adolescents who were prescribed myopia control spectacles. Participants were divided into two groups: the change-of-type group (n=253), who switched to a different spectacle type, and the type-maintenance group (n=759), who retained the same type, using 1:3 propensity score matching. The primary outcome was the annual rate of spherical equivalent refraction progression (D/year) compared between and within groups before and after the switch. RESULTS: The initial prescription of myopia control spectacles occurred at a mean age of 9.46±2.11 years. Subsequent prescription (renewing the same type or switching to a new type) was provided at a mean age of 10.63±2.16 years. Before switching spectacles, the ",
-        "country": "中國",
         "ptype": "",
         "zh": "",
         "zh_sum": ""
@@ -904,6 +904,18 @@
         "zh_sum": ""
       },
       {
+        "title": "Spectacle-related eye injuries, spectacle-impact performance and eye protection.",
+        "journal": "Clin Exp Optom",
+        "date": "2015",
+        "pmid": "25963111",
+        "summary": "The aim was to review the prevalence of spectacle-related ocular trauma and the performance of currently available spectacle materials and to identify the risk factors associated with spectacle-related ocular trauma. …",
+        "abstract": "The aim was to review the prevalence of spectacle-related ocular trauma and the performance of currently available spectacle materials and to identify the risk factors associated with spectacle-related ocular trauma. A literature review was conducted using Medline, Embase and Google with the keywords 'eyeglasses' OR 'spectacles' AND 'ocular injury' / 'eye injury'/ 'eye trauma' / 'ocular trauma'. Articles published prior to 1975 were excluded from this review because of advances in spectacle lens technology and Food and Drug Administration legislative changes requiring impact resistance of all prescription spectacle lenses in the United States. Six hundred and ninety-five individual ocular traumas, for which spectacles contributed to or were the main cause of injury, were identified in the literature. Eye injuries occurred when spectacles were worn in sports, in which medium- to high-impa",
+        "country": "澳洲",
+        "ptype": "文獻回顧",
+        "zh": "",
+        "zh_sum": ""
+      },
+      {
         "title": "Topical Atropine in the Control of Myopia.",
         "journal": "Asia Pac J Ophthalmol (Phila)",
         "date": "2016",
@@ -946,18 +958,6 @@
         "pmid": "28752898",
         "summary": "The prevalence of myopia has been steadily rising, with 28 per cent of the global population said to be affected in 2010 and to rise to affect nearly 50 per cent by 2050. Increasing levels of myopia increase the risk of vision impairment and in particular, high myopia is associated with the risk of serious and permanent visual disability  …",
         "abstract": "The prevalence of myopia has been steadily rising, with 28 per cent of the global population said to be affected in 2010 and to rise to affect nearly 50 per cent by 2050. Increasing levels of myopia increase the risk of vision impairment and in particular, high myopia is associated with the risk of serious and permanent visual disability due to associated sight-threatening complications. To stem the burden associated with higher levels of myopia, there are efforts to slow the progression of myopia, and several optical and pharmaceutical strategies have been found useful in slowing myopia to varying degrees. More recently, numerous multifocal soft contact lenses and extended depth of focus soft contact lenses (collectively referred to as myopia control contact lenses) were found effective in slowing myopia. As opposed to overnight orthokeratology, myopia control contact lenses are worn du",
-        "country": "澳洲",
-        "ptype": "文獻回顧",
-        "zh": "",
-        "zh_sum": ""
-      },
-      {
-        "title": "Optical and pharmacological strategies of myopia control.",
-        "journal": "Clin Exp Optom",
-        "date": "2018",
-        "pmid": "29488240",
-        "summary": "Recent increases in global myopia prevalence rates have raised significant concerns as myopia increases the lifelong risk of various sight-threatening ocular conditions. This growing public health burden has generated significant research interests into understanding both its aetiology and developing effective methods to slow down or stop …",
-        "abstract": "Recent increases in global myopia prevalence rates have raised significant concerns as myopia increases the lifelong risk of various sight-threatening ocular conditions. This growing public health burden has generated significant research interests into understanding both its aetiology and developing effective methods to slow down or stop its development, methods collectively termed 'myopia control'. The growing body of research has demonstrated benefits of various optical and pharmacological treatments resulting in myopia control management increasingly becoming a part of main stream clinical practice. This review will discuss the peer-reviewed literature on the efficacy of various myopia control interventions including multifocal spectacles and contact lenses, orthokeratology and pharmaceutical eye drops, as well as potential future research directions.",
         "country": "澳洲",
         "ptype": "文獻回顧",
         "zh": "",
@@ -1446,6 +1446,18 @@
     ],
     "contactlens": [
       {
+        "title": "Contact Lenses and Vision-Related Quality of Life: Evidence and Clinical Insights.",
+        "journal": "Clin Optom (Auckl)",
+        "date": "2026",
+        "pmid": "42465553",
+        "summary": "Contact lenses provide significant and clinically meaningful gains in VR-QoL among adult and pediatric patients with refractive error, keratoconus, ocular surface disease or dry eye, and other indications. The VR-QoL benefits of contact lenses may exceed those achieved with spectacles.",
+        "abstract": "BACKGROUND: Contact lenses are a cornerstone of vision correction for ametropia and can be of particular value for management of irregular astigmatism and corneal ectasia. Beyond objective measures of visual acuity and corneal health, patient-reported outcomes and vision-related quality of life (VR-QoL) have emerged as critical endpoints. This review aimed to synthesize evidence on VR-QoL outcomes with contact lenses. METHODS: We conducted a narrative review of studies published between 2000 and 2025 on the influence of various contact lens modalities including soft conventional lenses, rigid gas-permeable (RGP) lenses, scleral and mini-scleral lenses, orthokeratology, and specialty designs on VR-QoL across myopia, keratoconus, dry-eye disease, and other conditions. Descriptive tables were developed for all identified studies, and a synthesis of the impact of contact lenses on VR-QoL fin",
+        "country": "美國",
+        "ptype": "文獻回顧",
+        "zh": "",
+        "zh_sum": ""
+      },
+      {
         "title": "Advances and Challenges in Wearable Sensors for Health Monitoring.",
         "journal": "ACS Appl Mater Interfaces",
         "date": "2026",
@@ -1789,7 +1801,7 @@
         "summary": "OFO CDMFSCLs improved optical alignment and reduced wavefront aberrations, but increased spherical aberration. Optimizing optical alignment may enhance visual quality, offering significant implications for lens customization.",
         "abstract": "PURPOSE: Center-distance multifocal soft contact lenses (CDMFSCLs) correct refractive error. However, their optical center is misaligned due to the temporal decentration of the soft contact lens on eye. This places the optics relatively inferonasal from the visual axis, potentially degrading vision. This study primarily investigated the effects of geometrically-centered optics (GCO) and offset optics (OFO, lens optics positioned over the visual axis) CDMFSCLs on wavefront aberrations in myopic adults. Secondary outcomes included visual performance and subjective ratings. METHODS: Thirty-four myopic adults with disease-free eyes participated in a randomized, crossover, double-masked, order-balanced study. All participants were fitted bilaterally with custom GCO and OFO CDMFSCL that shared identical designs, differing only in optic location. The amount and direction of lens decentration fr",
         "country": "美國",
-        "ptype": "",
+        "ptype": "隨機對照試驗(RCT)",
         "zh": "",
         "zh_sum": ""
       },
@@ -1922,7 +1934,7 @@
         "abstract": "PURPOSE: To review the multifactorial predisposing factors to infectious keratitis (IK) in patients with chronic cicatrizing conjunctivitis (CCC), and to highlight diagnostic challenges and preventive strategies in this high-risk population. METHODS: Literature review. RESULTS: IK in CCC arises from an interplay of mechanical-anatomical, immunological, and microbiological factors. Key contributors include lid malposition, persistent epithelial defects, tear film instability, use of contact lenses or keratoprostheses, altered microbiome, and long-term immunosuppressive therapy. Staphylococcus aureus, coagulase-negative staphylococci, Corynebacterium spp., Herpesviridae, and Candida spp. are the most common causal organisms. Infections are often polymicrobial and drug-resistant, and may present atypically due to corneal hypoesthesia, tear-film instability, aqueous tear deficiency, and scar",
         "country": "墨西哥",
         "ptype": "",
-        "zh": "",
+        "zh": "慢性結膜炎感染性角膜炎的誘發因素。",
         "zh_sum": ""
       },
       {
@@ -1950,18 +1962,6 @@
         "zh_sum": ""
       },
       {
-        "title": "Incidence of Ulcerative Keratitis in the United States With and Without Predisposing Diabetes Mellitus.",
-        "journal": "Eye Contact Lens",
-        "date": "2026",
-        "pmid": "42299808",
-        "summary": "UK incidence was found to increase to a high of 30.06 cases per 100,000 person-years in 2024. Increased risk of UK was also found with DM, particularly at hemoglobin A1c levels above 8%, underscoring how pathophysiological mechanisms underlying DM can negatively affect corneal health.",
-        "abstract": "OBJECTIVES: To assess the incidence of ulcerative keratitis (UK) in the United States between 2017 and 2024 and determine the risk of ulcerative keratitis development in patients with and without diabetes mellitus (DM). METHODS: The TriNetX analysis platform was used to retrospectively analyze data from US health care organizations and run analyses to calculate incidence rates of UK. Subsequently, patients with and without DM were identified to determine risk of UK development after propensity score matching for baseline demographic characteristics. RESULTS: The incidence rate of ulcerative keratitis fluctuated between 2017 to 2024, increasing to 30.06 cases per 100,000 person-years in 2024. Patients with DM exhibited increased risk of UK compared with those with no DM within one year of follow-up (RR, 1.601; 95% CI, 1.239-2.069). Among patients diagnosed with DM, those who had recorded ",
-        "country": "",
-        "ptype": "",
-        "zh": "美國患有和不患有糖尿病的潰瘍性角膜炎的發生率。",
-        "zh_sum": ""
-      },
-      {
         "title": "Fungal keratitis.",
         "journal": "J Fr Ophtalmol",
         "date": "2017",
@@ -1983,6 +1983,18 @@
         "country": "法國",
         "ptype": "文獻回顧",
         "zh": "[真菌性角膜炎]。",
+        "zh_sum": ""
+      },
+      {
+        "title": "[Contact lens-related keratitis].",
+        "journal": "Orv Hetil",
+        "date": "2013",
+        "pmid": "24184930",
+        "summary": "Nowadays, keratitis, corneal infection due to wearing contact lens means an increasingly serious problem. Neglected cases may lead to corneal damage that can cause blindness in cases of otherwise healthy eyes. Early diagnosis based on the clinical picture and the typical patient history is an important way of prevention. …",
+        "abstract": "Nowadays, keratitis, corneal infection due to wearing contact lens means an increasingly serious problem. Neglected cases may lead to corneal damage that can cause blindness in cases of otherwise healthy eyes. Early diagnosis based on the clinical picture and the typical patient history is an important way of prevention. Prophylaxis is substantial to avoid bacterial and viral infection that is highly essential in this group of diseases. Teaching contact lens wearers the proper contact lens care, storage, sterility, and hygiene regulations is of great importance. In case of corneal inflammation early accurate diagnosis supported by microbiological culture from contact lenses, storage boxes or cornea is very useful. Thereafter, targeted drug therapy or in therapy-resistant cases surgical treatment may even be necessary in order to sustain suitable visual acuity.",
+        "country": "",
+        "ptype": "文獻回顧",
+        "zh": "[隱形眼鏡相關性角膜炎]。",
         "zh_sum": ""
       },
       {
@@ -2043,18 +2055,6 @@
         "country": "美國",
         "ptype": "文獻回顧",
         "zh": "沉積在矽水凝膠鏡片上。",
-        "zh_sum": ""
-      },
-      {
-        "title": "[Contact lens-related keratitis].",
-        "journal": "Orv Hetil",
-        "date": "2013",
-        "pmid": "24184930",
-        "summary": "Nowadays, keratitis, corneal infection due to wearing contact lens means an increasingly serious problem. Neglected cases may lead to corneal damage that can cause blindness in cases of otherwise healthy eyes. Early diagnosis based on the clinical picture and the typical patient history is an important way of prevention. …",
-        "abstract": "Nowadays, keratitis, corneal infection due to wearing contact lens means an increasingly serious problem. Neglected cases may lead to corneal damage that can cause blindness in cases of otherwise healthy eyes. Early diagnosis based on the clinical picture and the typical patient history is an important way of prevention. Prophylaxis is substantial to avoid bacterial and viral infection that is highly essential in this group of diseases. Teaching contact lens wearers the proper contact lens care, storage, sterility, and hygiene regulations is of great importance. In case of corneal inflammation early accurate diagnosis supported by microbiological culture from contact lenses, storage boxes or cornea is very useful. Thereafter, targeted drug therapy or in therapy-resistant cases surgical treatment may even be necessary in order to sustain suitable visual acuity.",
-        "country": "",
-        "ptype": "文獻回顧",
-        "zh": "[隱形眼鏡相關性角膜炎].",
         "zh_sum": ""
       },
       {
@@ -2406,18 +2406,6 @@
         "zh_sum": ""
       },
       {
-        "title": "Contact lens-related microbial keratitis.",
-        "journal": "J Med Assoc Thai",
-        "date": "2007",
-        "pmid": "17487129",
-        "summary": "CLRMK remains an essential problem in Thailand. Soft contact lens wear and overnight wearing seem to be the most important risk factors. Although the treatment outcome with medical therapy is good, keratitits may result in loss of vision. …",
-        "abstract": "OBJECTIVE: To review the clinical and microbiological profile in patients with contact lens-related microbial keratitis (CLRMK). MATERIAL AND METHOD: Hospital records of 435 patients with a diagnosis of microbial keratitis seen at Ramathibodi Hospital from January 1998 to December 2002 were retrospectively reviewed. All patients with CLRMK were included in the present study. RESULTS: Of the 435 cases, 81 (18.6%) were related to contact lens use. The disposable or frequent replacement of lenses were the most common lens-wearing type. Thirty-four percent of patients did not practice proper contact lens care and 67% wore contact lenses overnight. Corneal cultures were performed in 58 of 81 cases (72%) and were positive in 42 of 58 cases (72%). Pseudomonas aeruginosa was the most common organism (59%), followed by Klebsiella pneumoniae (11%). Polymicrobial infection was found in 19 cases. Mo",
-        "country": "泰國",
-        "ptype": "",
-        "zh": "隱形眼鏡相關的微生物性角膜炎。",
-        "zh_sum": ""
-      },
-      {
         "title": "Corneal oxygen deficiency.",
         "journal": "Eye Contact Lens",
         "date": "2005",
@@ -2654,7 +2642,7 @@
         "abstract": "The Toll-like receptor (TLR) family of pathogen recognition molecules has an important role in recognizing microbial pathogens and microbial breakdown products. Activation of TLRs in the corneal epithelium induces CXC chemokine production and recruitment of neutrophils to the corneal stroma. Although essential for pathogen killing, neutrophils can cause extensive tissue damage, leading to visual impairment and blindness. In this review, we examine the role of TLRs in microbial keratitis and in noninfectious corneal inflammation, most commonly associated with contact lens wear. we present recent findings on TLR signaling pathways in the cornea, including MyD88- and TRIF-dependent responses and discuss the role of resident macrophages and dendritic cells. Finally, we examine the potential for targeting the TLR pathway as a potential therapeutic intervention for microbial keratitis and cont",
         "country": "美國",
         "ptype": "文獻回顧",
-        "zh": "",
+        "zh": "眼表的 Toll 樣受體。",
         "zh_sum": ""
       },
       {
@@ -2724,6 +2712,18 @@
         "pmid": "16416462",
         "summary": "A material placed in or in contact with a biological system, that causes the minimum perturbation that can be tolerated by the host biological system, can be considered to be biocompatible. …",
         "abstract": "A material placed in or in contact with a biological system, that causes the minimum perturbation that can be tolerated by the host biological system, can be considered to be biocompatible. The major effects caused by a contact lens can be considered to be 1) the blocking of the natural supply of oxygen to the epithelium cells of the cornea, 2) interference with the normal evaporation of water from the tear fluid layer, and 3) hindrance of the normal functions of blinking for replenishing oxygen-saturated tear fluid and removing dead epithelium cells, which result from apoptosis. The encapsulation of a highly oxygen-permeable contact lens by a nanofilm with an imperturbable surface state minimizes all these terms. The encapsulated contact lens can be worn safely in extended wear.",
+        "country": "美國",
+        "ptype": "文獻回顧",
+        "zh": "",
+        "zh_sum": ""
+      },
+      {
+        "title": "Microbial contamination of contact lenses, lens care solutions, and their accessories: a literature review.",
+        "journal": "Eye Contact Lens",
+        "date": "2010",
+        "pmid": "20168237",
+        "summary": "The process of CL-related microbial keratitis and inflammation is thought to be preceded by the presence or transfer or both of microorganisms from the lens to the ocular surface. …",
+        "abstract": "PURPOSE: A contact lens (CL) can act as a vector for microorganisms to adhere to and transfer to the ocular surface. Commensal microorganisms that uneventfully cohabitate on lid margins and conjunctivae and potential pathogens that are found transiently on the ocular surface can inoculate CLs in vivo. In the presence of reduced tissue resistance, these resident microorganisms or transient pathogens can invade and colonize the cornea or conjunctiva to produce inflammation or infection. METHODS: The literature was reviewed and used to summarize the findings over the last 30 years on the identification, enumeration, and classification of microorganisms adherent to CLs and their accessories during the course of normal wear and to hypothesize the role that these microorganisms play in CL infection and inflammation. RESULTS: Lens handling greatly increases the incidence of lens contamination, ",
         "country": "美國",
         "ptype": "文獻回顧",
         "zh": "",
@@ -2887,6 +2887,42 @@
       }
     ],
     "lens": [
+      {
+        "title": "Sun Exposure and Myopia in Adult Australian Participants of the 45 and Up Study.",
+        "journal": "Ophthalmic Epidemiol",
+        "date": "2026",
+        "pmid": "42466580",
+        "summary": "In adulthood, higher time spent outdoors was associated with lower prevalence of self-reported myopia. This may indicate that outdoor behaviours in adulthood reflect those in childhood, when myopia develops. …",
+        "abstract": "PURPOSE: Sun exposure has important effects on human health, including risk of myopia (short-sightedness). We examined the association between outdoor time in the sun and myopia in 16,543 Australian-born adult participants of the 45 and Up study (aged 58-99 years). METHODS: At the baseline survey (2005-2009), participants of the 45 and Up study self-reported history of skin cancer and outdoor, sun exposure and sedentary behaviours. At the Health Compass Survey follow-up (2022), participants additionally self-reported their history of myopia. Associations were analysed using multivariable logistic regression. RESULTS: The prevalence of self-reported myopia was 53.1%, likely representing an over-estimate. Higher prevalence of self-reported myopia was associated with self-identifying as female (odds ratio [OR]=1.26, 95% confidence interval [CI]: 1.17, 1.35, p < 0.001), being younger (OR = 1",
+        "country": "澳洲",
+        "ptype": "",
+        "zh": "",
+        "zh_sum": ""
+      },
+      {
+        "title": "Contact Lenses and Vision-Related Quality of Life: Evidence and Clinical Insights.",
+        "journal": "Clin Optom (Auckl)",
+        "date": "2026",
+        "pmid": "42465553",
+        "summary": "Contact lenses provide significant and clinically meaningful gains in VR-QoL among adult and pediatric patients with refractive error, keratoconus, ocular surface disease or dry eye, and other indications. The VR-QoL benefits of contact lenses may exceed those achieved with spectacles.",
+        "abstract": "BACKGROUND: Contact lenses are a cornerstone of vision correction for ametropia and can be of particular value for management of irregular astigmatism and corneal ectasia. Beyond objective measures of visual acuity and corneal health, patient-reported outcomes and vision-related quality of life (VR-QoL) have emerged as critical endpoints. This review aimed to synthesize evidence on VR-QoL outcomes with contact lenses. METHODS: We conducted a narrative review of studies published between 2000 and 2025 on the influence of various contact lens modalities including soft conventional lenses, rigid gas-permeable (RGP) lenses, scleral and mini-scleral lenses, orthokeratology, and specialty designs on VR-QoL across myopia, keratoconus, dry-eye disease, and other conditions. Descriptive tables were developed for all identified studies, and a synthesis of the impact of contact lenses on VR-QoL fin",
+        "country": "美國",
+        "ptype": "文獻回顧",
+        "zh": "",
+        "zh_sum": ""
+      },
+      {
+        "title": "Patient experiences of laser and surgical lid procedures performed by optometrists.",
+        "journal": "Clin Exp Optom",
+        "date": "2026",
+        "pmid": "42464717",
+        "summary": "Participants reported that optometrists performing advanced procedures enabled access to quality, person-centred care. These outcomes, alongside robust clinical and safety data in the literature, support the provision of advanced procedures by optometrists. …",
+        "abstract": "CLINICAL RELEVANCE: Optometrists are authorised to perform YAG capsulotomy, selective laser trabeculoplasty, and laser peripheral iridotomy in various jurisdictions within the United States. Modernised scope of practice evolved in response to the ageing population, ophthalmology workforce shortage and maldistribution, and the need for increased access to eye care. However, there is a paucity of literature on the experiences of patients who have had laser and surgical procedures performed by optometrists. BACKGROUND: This study explores the experiences of patients who underwent laser and surgical lid procedures performed by optometrists. It also investigates perceptions of care, barriers, and enablers to access. METHODS: Semi-structured interviews were conducted with patients who underwent in-office procedures performed by optometrists affiliated with the Northeastern State University Col",
+        "country": "美國",
+        "ptype": "",
+        "zh": "",
+        "zh_sum": ""
+      },
       {
         "title": "Addressing barriers to dental care: a Tūranga Health and Trinity Koha Dental initiative.",
         "journal": "N Z Med J",
@@ -3340,7 +3376,7 @@
         "abstract": "Impaired binocular vision early in life from amblyopia or strabismus is related to lower scores than controls for walking on standardized tests of motor ability. However, standardized tests do not assess gait kinematics, which may provide a better understanding of motor deficits. This study investigated gait kinematics while walking in children with amblyopia or strabismus. Children ages 7-13 years with amblyogenic factors (13 anisometropia, 8 strabismus) were enrolled in the amblyopia or strabismus (AS) group (15/21 had current amblyopia). An age-similar group of 33 controls with normal vision were also enrolled. While viewing binocularly, children walked on a GAITRite® pressure-sensitive walkway and completed 3 conditions: 1) Straight Walk (SW): walk on mat, 2) Isolated Target Walk (IT): walk and step on two-dimensional targets, and 3) Distractor Target Walk (DT): walk and step on two-",
         "country": "加拿大",
         "ptype": "",
-        "zh": "",
+        "zh": "因弱視或斜視而導致雙眼視力受損的兒童行走時的步態運動學。",
         "zh_sum": ""
       },
       {
@@ -3352,7 +3388,7 @@
         "abstract": "We report an entoptic phenomenon in which the classical two-lobed Boehm's brushes are transformed into a multilobed structure by projecting spin-orbit-coupled light onto the human retina. These structured beams, composed of nonseparable superpositions of circular polarization and orbital angular momentum, produce azimuthally modulated entoptic patterns through polarization-dependent scattering in the retina. Unlike Haidinger's brushes, which arise from dichroic absorption in the macula, the observed effect is driven by angular variations in scattering strength relative to the local polarization direction. In regions where scattering centers exhibit polarization orientations that converge toward a common point, their combined contributions reinforce one another, producing brighter and more sharply defined entoptic lobes whose number and orientation vary systematically with the topology of",
         "country": "加拿大",
         "ptype": "",
-        "zh": "",
+        "zh": "透過結構光對伯姆畫筆進行拓樸擴展。",
         "zh_sum": ""
       },
       {
@@ -3364,7 +3400,7 @@
         "abstract": "PURPOSE: Biallelic pathogenic variants in the RCC1 and BTB domain-containing protein 1 (RCBTB1) gene cause an adult-onset retinal dystrophy. Here, we generated a knockout mouse model of RCBTB1 deficiency for the evaluation of RCBTB1 gene therapy. METHODS: Rcbtb1-knockout (KO) mice were generated with a homozygous deletion removing exons 2 and 3 of Rcbtb1. Wild-type (WT) and Rcbtb1-KO mice were assessed by optical coherence tomography and electroretinography at 3, 8, and 14 months of age. Retinal ultrastructure was assessed by transmission electron microscopy. Subretinal injections of adeno-associated virus 2 (AAV2)-RCBTB1 or AAV2-enhanced green fluorescent protein (EGFP) vector were performed at 2 months, and mice were analyzed at 8 months. Retinal gene expression was assessed by quantitative PCR and immunohistochemistry. RESULTS: Retinal Rcbtb1 expression was absent in Rcbtb1-KO mice. E",
         "country": "澳洲",
         "ptype": "",
-        "zh": "",
+        "zh": "Rcbtb1 敲除小鼠的表徵和 AAV2-RCBTB1 基因替代療法的評估。",
         "zh_sum": ""
       },
       {
@@ -3376,7 +3412,7 @@
         "abstract": "BACKGROUND: Acute retinal necrosis (ARN) is a severe, rapidly progressive viral retinitis that is commonly complicated by rhegmatogenous retinal detachment in its late stage. However, the presentation of ARN with exudative retinal detachment (ERD) in the early phase is exceptionally rare, particularly when caused by varicella zoster virus (VZV) in an adult patient. This report highlights this atypical presentation, which initially occurred without definite evidence of retinal necrosis, posing a diagnostic challenge. CASE PRESENTATION: A 43-year-old woman presented with acute blurred vision, eye redness, and ocular pain in the left eye of 3 days' duration. Initial clinical examination revealed ciliary congestion, vitritis, optic disc swelling, and a non-rhegmatogenous retinal detachment. Optical coherence tomography demonstrated optic disc and macular edema with intraretinal cystic spaces",
         "country": "中國",
         "ptype": "病例報告",
-        "zh": "",
+        "zh": "急性視網膜壞死表現為滲出性視網膜剝離：病例報告。",
         "zh_sum": ""
       },
       {
@@ -3388,43 +3424,7 @@
         "abstract": "Tyrosinase participates in melanin synthesis and may also contribute to L-3,4-dihydroxyphenylalanine (L-DOPA)-related dopamine metabolism during development. Because dopamine (DA)-related signaling has been implicated in visually guided ocular growth, this study investigated whether tyrosinase-related pathways are associated with refractive development and susceptibility to lens-induced myopia (LIM) in guinea pigs. A total of 48 pigmented and 32 albino guinea pigs at 3 weeks of age were included. Animals were divided into five groups: pigmented guinea pigs with LIM and kojic acid treatment (PLK), pigmented guinea pigs with LIM only (PL), albino guinea pigs with LIM (AL), pigmented baseline controls (PH), and albino baseline controls (AM). LIM was induced using a - 10 D lens in the right eye, with the fellow eye serving as the contralateral control. In the PLK group, kojic acid, a tyrosin",
         "country": "中國",
         "ptype": "",
-        "zh": "",
-        "zh_sum": ""
-      },
-      {
-        "title": "Distance judgement in individuals with vision and hearing loss.",
-        "journal": "Sci Rep",
-        "date": "2026",
-        "pmid": "42420373",
-        "summary": "Distance judgement is essential for safe navigation. People with vision loss (VL) increasingly rely on hearing for distance judgement. However, it is unclear how well auditory cues compensate for visual deficits, especially in those with additional hearing loss (dual sensory loss, DSL). …",
-        "abstract": "Distance judgement is essential for safe navigation. People with vision loss (VL) increasingly rely on hearing for distance judgement. However, it is unclear how well auditory cues compensate for visual deficits, especially in those with additional hearing loss (dual sensory loss, DSL). This study evaluated the visual, auditory and audiovisual distance judgement in VL and DSL, by both verbally estimating and walking to remembered target locations. Fifty adults (16 controls, 19 VL, 15 DSL) estimated the distances of visual, auditory, and audiovisual targets across six distances (0.9-5.4 m) in a normal acoustic room, by verbally report the distances or walk to the perceived locations. The visual stimuli were flashing red lights. The auditory stimuli were pulsing tones. Accuracy was measured with root mean squared error, and bias was assessed by regression slopes between actual and estimate",
-        "country": "美國",
-        "ptype": "",
-        "zh": "",
-        "zh_sum": ""
-      },
-      {
-        "title": "Assessing referral quality in glaucoma care: a retrospective analysis of clinical data in optometrist and ophthalmologist referrals.",
-        "journal": "Can J Ophthalmol",
-        "date": "2026",
-        "pmid": "42419692",
-        "summary": "Glaucoma referral completeness differs significantly by referral source. Optometry referrals were more complete than ophthalmology referrals; however, both groups demonstrated gaps that may impact clinical assessment. These findings support the need for standardized guidelines to improve referral quality and optimize patient care.",
-        "abstract": "OBJECTIVE: To assess the completeness of glaucoma referral documentation and identify omitted clinical information in referrals to glaucoma specialists. DESIGN: A retrospective chart review. PARTICIPANTS: Referrals submitted by optometrists and ophthalmologists to 2 glaucoma specialists between January and December 2024. METHODS: Optometry and ophthalmology glaucoma referrals were retrospectively reviewed and evaluated for documentation completeness. The total completeness score and proportion of missing elements were compared between referral sources. Multivariable analyses were performed to assess the association between referral completeness and intervention at first visit, as well as wait time. RESULTS: A total of 522 referrals were analyzed, including 336 from optometrists and 186 from ophthalmologists. Optometry referrals were more complete than ophthalmology referrals (median 9 [I",
-        "country": "",
-        "ptype": "",
-        "zh": "",
-        "zh_sum": ""
-      },
-      {
-        "title": "Association Between Corneal Biomechanics and Retinal Microvascular Perfusion in Myopic Eyes With Ocular Hypertension: An OCTA and Corvis ST Study.",
-        "journal": "Photodiagnosis Photodyn Ther",
-        "date": "2026",
-        "pmid": "42419474",
-        "summary": "Myopic eyes with OHT exhibit stiffer corneal biomechanics before detectable glaucomatous damage. This stiffness is associated with a tendency toward reduced retinal microvascular perfusion, suggesting a link between early biomechanical alterations and microcirculatory changes.",
-        "abstract": "PURPOSE: To investigate the associations between corneal biomechanics and retinal microvascular perfusion in the optic disc and macular regions in myopic eyes with ocular hypertension (OHT) without glaucomatous structural or functional damage. PATIENTS AND METHODS: This prospective cross-sectional study included 23 myopic eyes with OHT and 57 myopic eyes. Optical coherence tomography angiography (OCTA) quantified superficial and deep whole-image vessel density (wiVD) in the optic disc and macula. Corneal visualization scheimpflug technology (Corvis ST) was used to assess corneal biomechanics. Multivariable linear regression was performed to evaluate independent associations between corneal biomechanical parameters and wiVD in the myopic OHT group, after adjusting for age, axial length, biomechanically corrected intraocular pressure (bIOP), and central corneal thickness. RESULTS: Compared",
-        "country": "中國",
-        "ptype": "",
-        "zh": "",
+        "zh": "酪胺酸酶在豚鼠模型眼生長和近視發展中的作用。",
         "zh_sum": ""
       },
       {
@@ -3436,7 +3436,7 @@
         "abstract": "PURPOSE: The Bonferroni correction adjusts probability (p) values because of the increased risk of a type I error when making multiple statistical tests. The routine use of this test has been criticised as deleterious to sound statistical judgment, testing the wrong hypothesis, and reducing the chance of a type I error but at the expense of a type II error; yet it remains popular in ophthalmic research. The purpose of this article was to survey the use of the Bonferroni correction in research articles published in three optometric journals, viz. Ophthalmic & Physiological Optics, Optometry & Vision Science, and Clinical & Experimental Optometry, and to provide advice to authors contemplating multiple testing. RECENT FINDINGS: Some authors ignored the problem of multiple testing while others used the method uncritically with no rationale or discussion. A variety of methods of correcting p",
         "country": "英國",
         "ptype": "文獻回顧",
-        "zh": "",
+        "zh": "何時使用 Bonferroni 校正。",
         "zh_sum": ""
       },
       {
@@ -3448,7 +3448,7 @@
         "abstract": "Presbyopia is a global problem affecting over a billion people worldwide. The prevalence of unmanaged presbyopia is as high as 50% of those over 50 years of age in developing world populations, due to a lack of awareness and accessibility to affordable treatment, and is even as high as 34% in developed countries. Definitions of presbyopia are inconsistent and varied, so we propose a redefinition that states \"presbyopia occurs when the physiologically normal age-related reduction in the eye's focusing range reaches a point, when optimally corrected for distance vision, that the clarity of vision at near is insufficient to satisfy an individual's requirements\". Strategies for correcting presbyopia include separate optical devices located in front of the visual system (reading glasses) or a change in the direction of gaze to view through optical zones of different optical powers (bifocal, t",
         "country": "英國",
         "ptype": "文獻回顧",
-        "zh": "",
+        "zh": "老花眼：矯正策略的效用。",
         "zh_sum": ""
       },
       {
@@ -3460,7 +3460,7 @@
         "abstract": "TOPIC: Presbyopia prevalence and spectacle-correction coverage were estimated by systematic review and meta-analysis of epidemiologic evidence, then modeled to expand to country, region, and global estimates. CLINICAL RELEVANCE: Understanding presbyopia epidemiologic factors and correction coverage is critical to overcoming the burden of vision impairment (VI) from uncorrected presbyopia. METHODS: We performed systematic reviews of presbyopia prevalence and spectacle-correction coverage. Accepted presbyopia prevalence data were gathered into 5-year age groups from 0 to 90 years or older and meta-analyzed within World Health Organization global burden of disease regions. We developed a model based on amplitude of accommodation adjusted for myopia rates to match the regionally meta-analyzed presbyopia prevalence. Presbyopia spectacle-correction coverage was analyzed against country-level v",
         "country": "澳洲",
         "ptype": "統合分析",
-        "zh": "",
+        "zh": "全球老花眼盛行率和未矯正老花眼造成的視力損傷：系統性回顧、統合分析和建模。",
         "zh_sum": ""
       },
       {
@@ -3472,7 +3472,7 @@
         "abstract": "Ophthalmic lens design concerns the control of spectacle lens aberrations which occur when the eye rotates away from the optical centre of the lens. The most significant aberrations are oblique astigmatism and mean oblique error (power error). A brief review of these aberrations is given, explaining how the lens designer can control them using just the bending of the lens, and what results can be achieved using simple spherical and toroidal surfaces. Before 1985, aspherical surfaces were used only for post-cataract spectacle lenses and high-power magnifiers. Today, aspherical surfaces are used by all major lens manufacturers to produce thinner, lighter and more attractive best-form lenses in the normal power range. Aspherical surfaces are employed because the surface itself is astigmatic and the surface astigmatism is used to combat aberrational astigmatism due to oblique incidence. The ",
         "country": "英國",
         "ptype": "文獻回顧",
-        "zh": "",
+        "zh": "現代眼鏡鏡片設計。",
         "zh_sum": ""
       },
       {
@@ -3484,7 +3484,7 @@
         "abstract": "PURPOSE OF REVIEW: This review outlines concepts in intraocular lens (IOL) optics and aberrations important both for current IOLs and for new IOLs in development. RECENT FINDINGS: Optical aberrations make a significant impact on the laboratory and clinical performance of IOLs, especially under mesopic and low-contrast conditions. Minimizing or correcting these aberrations can potentially improve visual function. Strategic management of aberrations can have clinical utility for extended depth of focus and presbyopia correction. SUMMARY: All IOLs affect ocular aberrations in some manner. It is important for clinicians and researchers to understand the implications how any residual aberrations could affect visual quality, visual side-effects, and depth of focus.",
         "country": "美國",
         "ptype": "文獻回顧",
-        "zh": "",
+        "zh": "人工水晶體光學和像差。",
         "zh_sum": ""
       },
       {
@@ -3496,7 +3496,7 @@
         "abstract": "",
         "country": "",
         "ptype": "",
-        "zh": "",
+        "zh": "波前折射和校正。",
         "zh_sum": ""
       },
       {
@@ -3508,7 +3508,7 @@
         "abstract": "PURPOSE OF REVIEW: This study provides an overview of the three types of corneal inlays now in use for the correction of presbyopia and reviews recently published evidence of the inlays' safety and efficacy. RECENT FINDINGS: Results for corneal reshaping and refractive inlays are promising, but very limited. Small-aperture inlays are already in widespread use and have been shown to improve uncorrected near and intermediate vision without a significant loss in distance acuity or an unacceptable increase in visual symptoms. Complications have been minimal, but the inlays may be removed if necessary. They do not prevent visualization or imaging of the retina and may be retained during subsequent cataract surgery. SUMMARY: The presbyopic demographic is large and growing, with a high level of interest in spectacle independence. There is currently no other effective solutions for presbyopes wh",
         "country": "美國",
         "ptype": "文獻回顧",
-        "zh": "",
+        "zh": "用於矯正老花眼的角膜嵌體。",
         "zh_sum": ""
       },
       {
@@ -3520,19 +3520,7 @@
         "abstract": "INTRODUCTION: Presbyopia is the progressive and irreversible loss of accommodation due to aging. It is one of the main causes of loss of quality of life in people from 45 years of age, due to the, often novel, dependence on spectacles. The eagerness to correct it by ophthalmologists impulsed by the desire of millions of people who suffer from it, has become one of the main drivers for the development of intraocular lens (IOL) technology over the last twenty years. MATERIAL AND METHODS: This review briefly presents the different alternatives that have allowed us to improve the crystalline lens surgical approach of presbyopia; from monofocal lenses and monovision technique, accommodative, refractive, and diffractive multifocal lenses, and finally the most recent extended depth of focus/field lenses known as EDOFs. RESULTS: Each IOL has its advantages, limitations and disadvantages. Further",
         "country": "",
         "ptype": "文獻回顧",
-        "zh": "",
-        "zh_sum": ""
-      },
-      {
-        "title": "Hyperbolic tangential function-based progressive addition lens design.",
-        "journal": "Appl Opt",
-        "date": "2015",
-        "pmid": "26836863",
-        "summary": "The diopter distribution is key to the successful design of a progressive addition lens. A hyperbolic tangential function is then introduced to describe well the desired diopter distribution on the lens. …",
-        "abstract": "The diopter distribution is key to the successful design of a progressive addition lens. A hyperbolic tangential function is then introduced to describe well the desired diopter distribution on the lens. Simulation and fabrication show that the astigmia on the whole surface is very close to the addition, exhibiting superior performance than that of currently used high-order polynomials and cosine functions. Our investigations found that once the diopter distribution design is reasonable, both the direct and indirect methods of constructing a progressive addition lens can give consistent results. With this function we are able to effectively control the design of critical areas, the position, sizes of far-view and near-view zones, as well as the channel of the lens. This study would provide an efficient way to customize different progressive lenses not only for presbyopia, but also for an",
-        "country": "",
-        "ptype": "",
-        "zh": "",
+        "zh": "基於鏡片的老花眼手術矯正。 2020年我們在哪裡？",
         "zh_sum": ""
       },
       {
@@ -3544,7 +3532,7 @@
         "abstract": "",
         "country": "",
         "ptype": "",
-        "zh": "",
+        "zh": "如何修復漏水的管道。",
         "zh_sum": ""
       },
       {
@@ -3556,7 +3544,7 @@
         "abstract": "",
         "country": "澳洲",
         "ptype": "",
-        "zh": "",
+        "zh": "展望 2020 年以後。",
         "zh_sum": ""
       },
       {
@@ -3568,7 +3556,7 @@
         "abstract": "Presbyopia reduces an individual's ability to perform visual tasks at near distances. It is a global problem, affecting over a billion people worldwide. Contact lenses, glasses, refractive surgery, and intraocular lens surgery are the main modalities in presbyopia treatment, although they all have some disadvantages. Thus, there is an increasing need for effective, easy-to-use, and noninvasive approaches for treating presbyopia while not limiting patients' daily activities. Pharmacological presbyopia treatment as an alternative method has been under investigation in recent years. We reviewed all relevant articles using the keywords \"presbyopia,\" \"presbyopia treatment,\" \"pharmacological presbyopia treatment,\" and \"presbyopic corrections\" from 2010 to February 9, 2020, and summarized the main results of clinical trials, investigating the drops used for presbyopia treatment.",
         "country": "波蘭",
         "ptype": "文獻回顧",
-        "zh": "",
+        "zh": "老花眼藥理學治療綜述。",
         "zh_sum": ""
       },
       {
@@ -3580,7 +3568,7 @@
         "abstract": "We live in a three-dimensional world and the human eye can focus images from a wide range of distances by adjusting the power of the eye's lens (accommodation). Progressive senescent changes in the lens ultimately lead to a complete loss of this ability by about age 50, which then requires alternative strategies to generate high-quality retinal images for far and close viewing distances. This review paper highlights the biomimetic properties and underlying optical mechanisms of induced anisometropia, small apertures, dynamic lenses, and multi-optic lenses in ameliorating the visual consequences of presbyopia. Specifically, the advantages and consequences of non-liner neural summation leveraged in monovision treatments are reviewed. Additionally, the value of a small pupil is quantified, and the impact of pinhole pupil location and their effects on neural sensitivity are examined. Differe",
         "country": "印度",
         "ptype": "文獻回顧",
-        "zh": "",
+        "zh": "矯正老花眼：舊問題與舊（和新）解決方案。",
         "zh_sum": ""
       },
       {
@@ -3592,7 +3580,7 @@
         "abstract": "",
         "country": "英國",
         "ptype": "",
-        "zh": "",
+        "zh": "老花眼：生理、預防與矯正途徑。",
         "zh_sum": ""
       },
       {
@@ -3604,7 +3592,7 @@
         "abstract": "PURPOSE OF REVIEW: Astigmatism correction in cataract surgery is a common surgical challenge. Although there are numerous approaches to its treatment during cataract surgery, there remains a lack of consensus on what level of postoperative astigmatism to target. We examine the literature to determine the effect of astigmatism on visual function and provide a recommendation on how much to treat in cataract surgery. RECENT FINDINGS: Distance visual acuity decreases as myopic, hyperopic, or mixed astigmatism increases. Near visual acuity decreases with hyperopic astigmatism but improves with myopic astigmatism. The effect of astigmatism is generally independent of axis; however, against-the-rule (ATR) astigmatism with mild myopia may benefit reading. A progressive ATR shift occurs with age whether or not an individual undergoes cataract surgery. In the presence of higher order aberrations, ",
         "country": "美國",
         "ptype": "文獻回顧",
-        "zh": "",
+        "zh": "白內障手術要治療多少散光。",
         "zh_sum": ""
       },
       {
@@ -3616,7 +3604,19 @@
         "abstract": "Bifocal and multifocal optical devices are intended to get images into focus from objects placed at different distances from the observer. Spectacles, contact lenses, and intraocular lenses can meet the requirements to provide such a solution. Contact lenses provide unique characteristics as a platform for implementing bifocality and multifocality. Compared to spectacles, they are closer to the eye, providing a wider field of view, less distortion, and their use is more consistent as they are not so easily removed along the day. In addition, contact lenses are also minimally invasive, can be easily exchangeable, and, therefore, suitable for conditions in which surgical procedures are not indicated. Contact lenses can remain centered with the eye despite eye movements, providing the possibility for simultaneous imaging from different object distances. The main current indications for bifo",
         "country": "西班牙",
         "ptype": "文獻回顧",
-        "zh": "",
+        "zh": "雙焦點和多焦點隱形眼鏡",
+        "zh_sum": ""
+      },
+      {
+        "title": "Presbyopic Excimer Laser Ablation: A Review.",
+        "journal": "J Refract Surg",
+        "date": "2018",
+        "pmid": "30296331",
+        "summary": "There is evidence that excimer laser presbyopic strategies accomplish spectacle independence at reasonable levels. There are reliable and safe options for both myopic and hyperopic eyes with satisfactory outcomes regarding near and distance vision. [J Refract Surg. 2018;34(10):698-710.].",
+        "abstract": "PURPOSE: To provide an overview of the efficacy and safety of available presbyopic excimer laser ablation profiles. METHODS: Literature review. RESULTS: Monovision with excimer laser traditionally applies near correction to the non-dominant eye. Different excimer laser presbyopic approaches include the increase in depth of focus, through the controlled change of spherical aberration or asphericity, or multifocal ablation patterns with central or peripheral near vision zones. The studies investigating different excimer laser ablation patterns applied in previously myopic eyes revealed high levels of efficacy with all ablation profiles (between 68% and 99% achieving binocular uncorrected distance visual acuity [UDVA] of 20/25 or better, and between 70% and 100% achieving uncorrected near visual acuity [UNVA] presenting J3 or better). In hypermetropic eyes, most of the studies revealed high",
+        "country": "",
+        "ptype": "文獻回顧",
+        "zh": "老花準分子雷射消融：回顧。",
         "zh_sum": ""
       },
       {
@@ -3628,7 +3628,7 @@
         "abstract": "Accommodation disorders and nonstrabismic binocular dysfunctions affect patients' binocular system and visual performance. These visual disorders could be associated with musculoskeletal discomfort in the neck and shoulder area. The purpose of this systematic review and meta-analysis was to ascertain the relationship between visual system disorders and the musculoskeletal system of the neck. The review protocol is available in PROSPERO (CRD42018112771). All articles selected examined the relationship between neck conditions (chronic neck pain and whiplash) and the visual system in adult populations. Studies with optometric or physiotherapeutic measurements were included. Bias risk was evaluated with the modified Cochrane Collaboration Tool and Study Quality Assessment Tool. To provide complete quality assessment evidence, the authors applied the GRADEpro Guideline Development Tool. The l",
         "country": "西班牙",
         "ptype": "統合分析",
-        "zh": "",
+        "zh": "視覺系統疾病和肌肉骨骼頸部不適：系統性回顧和統合分析。",
         "zh_sum": ""
       },
       {
@@ -3640,7 +3640,7 @@
         "abstract": "PURPOSE: To outline the refractive problems associated with presbyopia and to review the basis and relative merits of currently-available methods for their correction, with detailed consideration of spectacle and contact lens approaches. CONTENTS: In the developed world, most of the present population will spend roughly half their lives as presbyopes. The well-known presbyopic changes with age in amplitude of accommodation and required near addition are briefly reviewed, together with the less widely acknowledged slow drifts that occur in distance refraction. The desirability of restoring to presbyopes clear vision for objects at any distance, ideally corresponding to vergences within the range of at least 0 to -5 D, in any viewing direction, is stressed. A general outline is given of possible corrective methods. Methods which satisfy the needs of a 50 year-old may not be suitable for th",
         "country": "英國",
         "ptype": "文獻回顧",
-        "zh": "",
+        "zh": "老花眼矯正的進展一：框架眼鏡和隱形眼鏡。",
         "zh_sum": ""
       },
       {
@@ -3652,7 +3652,7 @@
         "abstract": "Monovision is a common prescription lens correction for presbyopia [1]. Each eye is corrected for a different distance, causing one image to be blurrier than the other. Millions of people have monovision corrections, but little is known about how interocular blur differences affect motion perception. Here, we report that blur differences cause a previously unknown motion illusion that makes people dramatically misperceive the distance and three-dimensional direction of moving objects. The effect occurs because the blurry and sharp images are processed at different speeds. For moving objects, the mismatch in processing speed causes a neural disparity, which results in the misperceptions. A variant of a 100-year-old stereo-motion phenomenon called the Pulfrich effect [2], the illusion poses an apparent paradox: blur reduces contrast, and contrast reductions are known to cause neural proces",
         "country": "美國",
         "ptype": "",
-        "zh": "",
+        "zh": "單視和運動的誤解。",
         "zh_sum": ""
       },
       {
@@ -3664,7 +3664,7 @@
         "abstract": "BACKGROUND: With a higher life expectancy, there is an increased demand for hospital glaucoma services in the United Kingdom. DESIGN: The Cambridge community Optometry Glaucoma Scheme (COGS) was initiated in 2010, where new referrals for suspected glaucoma are evaluated by community optometrists with a special interest in glaucoma, with virtual electronic review and validation by a consultant ophthalmologist with special interest in glaucoma. PARTICIPANTS: 1733 patients were evaluated by this scheme between 2010 and 2013. METHODS: Clinical assessment is performed by the optometrist at a remote site. Goldmann applanation tonometry, pachymetry, monoscopic colour optic disc photographs and automated Humphrey visual field testing are performed. A clinical decision is made as to whether a patient has glaucoma or is a suspect, and referred on or discharged as a false positive referral. The cli",
         "country": "英國",
         "ptype": "",
-        "zh": "",
+        "zh": "劍橋社區驗光青光眼計劃。",
         "zh_sum": ""
       },
       {
@@ -3676,7 +3676,7 @@
         "abstract": "As humans age, they gradually lose the ability to accommodate, or refocus, to near distances because of the stiffening of the crystalline lens. This condition, known as presbyopia, affects nearly 20% of people worldwide. We design and build a new presbyopia correction, autofocals, to externally mimic the natural accommodation response, combining eye tracker and depth sensor data to automatically drive focus-tunable lenses. We evaluated 19 users on visual acuity, contrast sensitivity, and a refocusing task. Autofocals exhibit better visual acuity when compared to monovision and progressive lenses while maintaining similar contrast sensitivity. On the refocusing task, autofocals are faster and, compared to progressives, also significantly more accurate. In a separate study, a majority of 23 of 37 users ranked autofocals as the best correction in terms of ease of refocusing. Our work demons",
         "country": "美國",
         "ptype": "",
-        "zh": "",
+        "zh": "自動對焦：評估老花眼的凝視相關眼鏡。",
         "zh_sum": ""
       },
       {
@@ -3688,7 +3688,7 @@
         "abstract": "PURPOSE: Uncorrected presbyopia is a significant cause of visual disability globally. Greater comprehension of the etiology of presbyopia and its contributing factors among medical and vision care providers could lead to changes in correction methods and account for sex differences in near-vision requirements. METHODS: A meta-analysis was performed using nine cross-sectional studies that provided sufficient data to compare the prevalence and magnitude of presbyopia among men and women. This analysis was further subdivided into measurement methods to determine what differences in presbyopia might exist between men and women. RESULTS: Studies of presbyopia including sex as a contributing factor were highly heterogenic (P = 0.01) but overall found female sex to be statistically significant in predicting earlier onset for presbyopia with an adjusted confidence interval (CI) using the Shore m",
         "country": "美國",
         "ptype": "統合分析",
-        "zh": "",
+        "zh": "老花眼性別差異的統合分析。",
         "zh_sum": ""
       },
       {
@@ -3700,7 +3700,7 @@
         "abstract": "Presbyopia corrections traditionally have been approached with attempts to exchange power, either at the cornea or the lens planes, inducing multifocality, or altering asphericity to impact the optical system. Treatments that affect the visual axis, such as spectacle and contact lens correction, refractive surgeries, corneal onlays and inlays, and intraocular lenses are typically unable to restore true accommodation to the presbyopic eye. Their aim is instead to enhance 'pseudoaccommodation' by facilitating an extended depth-of-focus for which vision is sufficient. There is a true lack of technology that approaches presbyopia from a treatment based or therapy based solution, rather than a 'vision correction' solution that compromises other components of the optical system. Scleral surgical procedures seek to restore true accommodation combined with pseudoaccommodation and have several ad",
         "country": "美國",
         "ptype": "文獻回顧",
-        "zh": "",
+        "zh": "鞏膜手術治療老花眼：我們今天在哪裡？",
         "zh_sum": ""
       },
       {
@@ -3712,7 +3712,7 @@
         "abstract": "Soft multifocal simultaneous image contact lenses have boomed in recent years due to the growing number of presbyopic patients demanding visual solutions, allowing them to maintain their current standard of living. The concept of 'simultaneous image' is based on blur interpretation and/or blur tolerance of superimposed multiple images on the retina formed by various powers of a contact lens. This is the basis for a specific type of multifocal contact lens developed for the compensation of presbyopia. Manufacturers have released a great variety of soft simultaneous image lens designs to meet different patient needs but their fitting is still unsatisfactory in some cases. Some presbyopes discontinue wearing contact lenses due to some limitations in visual quality and comfort that can be overcome with an appropriate contact lens selection based on a comprehensive pre-fitting evaluation. Thi",
         "country": "西班牙",
         "ptype": "文獻回顧",
-        "zh": "",
+        "zh": "軟多焦點同時影像隱形眼鏡：評論。",
         "zh_sum": ""
       },
       {
@@ -3724,7 +3724,7 @@
         "abstract": "PURPOSE OF REVIEW: The aim of this review is to offer a comprehensive overview of the different PresbyLASIK approaches, which have been published in peer-reviewed journals. RECENT FINDINGS: Comprehensive search was conducted in scopus using keywords presbyLASIK, presbyopia, LASIK, corneal multifocality. We reviewed binocular uncorrected and corrected distance and near visual acuity, and loss of lines of best corrected visual acuity, for presbyopic patients among three different basic treatment modalities. SUMMARY: Additional trials and standards for reporting results for presbyopic approaches are necessary. Careful patient selection and counseling is imperative in all PresbyLASIK treatments.",
         "country": "希臘",
         "ptype": "文獻回顧",
-        "zh": "",
+        "zh": "PresbyLASIK 方法用於矯正老花眼。",
         "zh_sum": ""
       },
       {
@@ -3736,7 +3736,7 @@
         "abstract": "The COVID-19 pandemic has caused disruption in everyone's lives globally. Optometrists, being primary health care professionals are at a higher risk of infection in their practices during these testing times. Optometrists and optical store owners need practically implementable guidelines as lockdown gets lifted in various parts of our country. As these practices gear up to provide eye examination and vision correction to people, they need to take necessary precautions to avoid any cross contaminations. Optometry Council of India guidelines were circulated among optometry and optical associations and among experts in various optometry specialty. A consensus among various bodies were arrived. These guidelines provide recommendation for optical and optometry practices.",
         "country": "印度",
         "ptype": "臨床指引",
-        "zh": "",
+        "zh": "封鎖後的驗光和光學服務 COVID-19 指南。",
         "zh_sum": ""
       },
       {
@@ -3748,7 +3748,7 @@
         "abstract": "PURPOSE: To investigate refractive and visual outcomes and complications of the Supracor procedure to treat presbyopia. METHODS: A total of 123 eyes from 68 presbyopic patients with hyperopia were enrolled in this prospective, nonrandomized, clinical trial. The Supracor procedure was performed using the Technolas excimer laser 217P (Technolas Perfect Vision GmbH). Follow-up eye examinations were performed at postoperative day 1, month 1, and month 6. RESULTS: All 123 surgeries were uneventful. At 6 months postoperatively, uncorrected distance visual acuity was 20/20 or better in 27 (22.0%) eyes and 20/25 or better in 45 (36.6%) eyes. At 6 months postoperatively, 35 (28.5%) eyes lost 1 line and 13 (10.6%) eyes lost 2 lines of corrected distance visual acuity (CDVA). At 6 months postoperatively, uncorrected near visual acuity was 20/20 or better in 95 (77.2%) eyes and 20/25 or better in 11",
         "country": "土耳其",
         "ptype": "臨床試驗",
-        "zh": "",
+        "zh": "Supracor 遠視與老花矯正：6 個月結果。",
         "zh_sum": ""
       },
       {
@@ -3760,7 +3760,19 @@
         "abstract": "AIMS: To survey eye care practitioners from around the world regarding their current practice for anterior eye health recording to inform guidelines on best practice. METHODS: The on-line survey examined the reported use of: word descriptions, sketching, grading scales or photographs; paper or computerised record cards and whether these were guided by proforma headings; grading scale choice, signs graded, level of precision, regional grading; and how much time eye care practitioners spent on average on anterior eye health recording. RESULTS: Eight hundred and nine eye care practitioners from across the world completed the survey. Word description (p<0.001), sketches (p=0.002) and grading scales (p<0.001) were used more for recording the anterior eye health of contact lens patients than other patients, but photography was used similarly (p=0.132). Of the respondents, 84.5% used a grading ",
         "country": "英國",
         "ptype": "",
-        "zh": "",
+        "zh": "前眼健康記錄。",
+        "zh_sum": ""
+      },
+      {
+        "title": "Hyperbolic tangential function-based progressive addition lens design.",
+        "journal": "Appl Opt",
+        "date": "2015",
+        "pmid": "26836863",
+        "summary": "The diopter distribution is key to the successful design of a progressive addition lens. A hyperbolic tangential function is then introduced to describe well the desired diopter distribution on the lens. …",
+        "abstract": "The diopter distribution is key to the successful design of a progressive addition lens. A hyperbolic tangential function is then introduced to describe well the desired diopter distribution on the lens. Simulation and fabrication show that the astigmia on the whole surface is very close to the addition, exhibiting superior performance than that of currently used high-order polynomials and cosine functions. Our investigations found that once the diopter distribution design is reasonable, both the direct and indirect methods of constructing a progressive addition lens can give consistent results. With this function we are able to effectively control the design of critical areas, the position, sizes of far-view and near-view zones, as well as the channel of the lens. This study would provide an efficient way to customize different progressive lenses not only for presbyopia, but also for an",
+        "country": "",
+        "ptype": "",
+        "zh": "基於雙曲正切函數的漸進多焦點鏡片設計。",
         "zh_sum": ""
       },
       {
@@ -3772,7 +3784,7 @@
         "abstract": "",
         "country": "西班牙",
         "ptype": "",
-        "zh": "",
+        "zh": "屈光在視覺研究中的作用。",
         "zh_sum": ""
       },
       {
@@ -3784,7 +3796,7 @@
         "abstract": "PURPOSE: The objective of this systematic literature review (SLR) was to collate, report, and critique published evidence related to epidemiology and patient and economic burden of presbyopia. PATIENTS AND METHODS: A systematic literature search was conducted in MEDLINE®, Embase®, and Cochrane Library databases from the time of inception through October 2018 using Cochrane methodology. Studies published in English language reporting on epidemiology and patient and economic burden of presbyopia were included. RESULTS: Initial systematic literature search yielded 2,228 citations, of which 55 met the inclusion criteria (epidemiology, 44; patient burden, 14; economic burden, 1) and were included in this review. Globally, 1.09 billion people are estimated to be affected by presbyopia. The reported presbyopia prevalence varied across regions and by age groups, with the highest prevalence of 90",
         "country": "美國",
         "ptype": "文獻回顧",
-        "zh": "",
+        "zh": "老花眼的病人和經濟負擔：系統性文獻綜述。",
         "zh_sum": ""
       },
       {
@@ -3796,7 +3808,7 @@
         "abstract": "Over the past decade, a number of large clinical trials have provided important information relating to the reliability and repeatability of commonly used paediatric tests of vision and their role in the diagnosis and management of paediatric ocular diseases. The aim of this review is to summarise recent findings on the use of paediatric visual acuity tests in clinical practice and to discuss the validity and accuracy of visual acuity measurements in infants and young children. We provide a broad overview of the benefits and challenges of measuring visual acuity in children and then discuss age-appropriate tests for measuring visual acuity in infants through to school-age children. We also discuss normative values for visual acuity in each age group and, where possible, provide comparisons of results between tests with a particular focus on the importance of optotype design.",
         "country": "紐西蘭",
         "ptype": "文獻回顧",
-        "zh": "",
+        "zh": "兒童視力的測量：基於證據的更新。",
         "zh_sum": ""
       },
       {
@@ -3808,7 +3820,7 @@
         "abstract": "ABSTRACT: The main purpose of this review is to compare and analyze the results of the main PresbyLASIK approaches; central and peripheral. SUMMARY: A comprehensive research was conducted in PUBMED using keywords like \"presbyopia correction\", \"PresbyLASIK\", \"Corneal multifocality\", \"Laser blended vision\". We reviewed the PresbyLASIK technique, uncorrected distance visual acuity (UDVA), corrected distance visual acuity (CDVA), uncorrected near visual acuity (UNVA), and corrected near visual acuity (CNVA), and compared the differences between the techniques.",
         "country": "西班牙",
         "ptype": "文獻回顧",
-        "zh": "",
+        "zh": "老花眼的角膜補償：PresbyLASIK：最新綜述。",
         "zh_sum": ""
       },
       {
@@ -3820,7 +3832,7 @@
         "abstract": "While multifocal intraocular lenses (MIOLs) are increasingly implanted to correct for presbyopia, how one sees with a multifocal correction is hard to explain and imagine. The current study evaluates the quality of various visual simulating technologies by comparing vision with simulated MIOLs pre-operatively and the implanted MIOLs post-operatively in the same patients. Two simulation platforms were used: (1) a custom-developed adaptiveoptics (AO) system, with two visual simulator devices: a spatial light modulator (SLM) and an optotunable lens operating under temporal multiplexing (SimVis); and (2) a wearable, binocular, large field of view SimVis2Eyes clinical simulator (SimVis Gekko, 2Eyes Vision, Madrid, Spain). All devices were programmed to simulate a trifocal diffractive MIOL (POD F, FineVision, PhysIOL). Eight patients were measured pre-operatively simulating the trifocal lens a",
         "country": "西班牙",
         "ptype": "",
-        "zh": "",
+        "zh": "術後多焦點視力的術前模擬。",
         "zh_sum": ""
       },
       {
@@ -3832,19 +3844,7 @@
         "abstract": "",
         "country": "比利時",
         "ptype": "",
-        "zh": "",
-        "zh_sum": ""
-      },
-      {
-        "title": "To Correct or Not Correct? Actual Evidence, Controversy and the Questions That Remain Open.",
-        "journal": "J Clin Med",
-        "date": "2020",
-        "pmid": "32599775",
-        "summary": "Clinical studies and basic research have attempted to establish a relationship between myopia progression and single vision spectacle wear, albeit with unclear results. Single vision spectacle lenses are continuously used as the control group in myopia control trials. …",
-        "abstract": "Clinical studies and basic research have attempted to establish a relationship between myopia progression and single vision spectacle wear, albeit with unclear results. Single vision spectacle lenses are continuously used as the control group in myopia control trials. Hence, it is a matter of high relevance to investigate further whether they yield any shift on the refractive state, which could have been masked by being used as a control. In this review, eye development in relation to eyes fully corrected versus those under-corrected is discussed, and new guidelines are provided for the analysis of structural eye changes due to optical treatments. These guidelines are tested and optimised, while ethical implications are revisited. This newly described methodology can be translated to larger clinical trials, finally exerting the real effect of full correction via single vision spectacle l",
-        "country": "德國",
-        "ptype": "文獻回顧",
-        "zh": "",
+        "zh": "視覺與生理光學：",
         "zh_sum": ""
       },
       {
@@ -3928,7 +3928,7 @@
         "abstract": "PURPOSE OF REVIEW: Heightened patient expectations for precise postoperative refractive results have spurred the continued improvements in biometry and intraocular lens calculations. In order to meet these expectations, attention to proper patient selection, accurate keratometry and biometry, and appropriate intraocular lens power formula selection with optimized lens constants are required. The article reviews recent studies and advances in the field of biometry and intraocular lens power calculations. RECENT FINDINGS: Several noncontact optical-based devices compare favorably, if not superiorly, to older ultrasonic biometric and keratometric techniques. With additional improvements in the internal acquisition algorithm, the new IOL Master software version 5 upgrade should lessen operator variability and further enhance signal acquisition. The modern Haigis-L and Holladay 2 formulas mor",
         "country": "美國",
         "ptype": "文獻回顧",
-        "zh": "生物測定和人工水晶體屈光度計算。",
+        "zh": "生物測量和人工水晶體屈光度計算。",
         "zh_sum": ""
       },
       {
@@ -4329,6 +4329,54 @@
       }
     ],
     "refractive": [
+      {
+        "title": "Higher order aberrations and visual quality after refractive surgeries for myopia: a systematic review and network meta-analysis.",
+        "journal": "Graefes Arch Clin Exp Ophthalmol",
+        "date": "2026",
+        "pmid": "42467198",
+        "summary": "ICL demonstrated superior clinical effects in reducing total HOAs, spherical aberration, and coma. ICL implantation may be considered in selected patients seeking refractive correction, particularly those with high myopia or large pupils, where optimal optical quality and minimization of higher-order aberrations are desired.",
+        "abstract": "PURPOSE: This network meta-analysis compared the impact of eight refractive surgery techniques on higher-order aberrations (HOAs) and visual quality in adults with myopia. DESIGN: Bayesian network meta-analysis. METHODS: The review protocol was prospectively registered in PROSPERO (CRD420251069362). We systematically searched PubMed Embase Web of Science CochraneLibrary, and ClinicalTrials.gov from inception to August 22 2025, for studies comparing refractive surgeries. The primary outcomes were total HOAs, spherical aberration, coma, and trefoil. The secondary outcomes were vertical coma, horizontal coma, and vertical and horizontal trefoil. The risk of bias was assessed using the Cochrane and Newcastle-Ottawa tools. A Bayesian network meta-analysis was performed using random-effects models in the R software. RESULTS: Fifty studies (encompassing 5,141 eyes) were included. The implantabl",
+        "country": "中國",
+        "ptype": "文獻回顧",
+        "zh": "",
+        "zh_sum": ""
+      },
+      {
+        "title": "Human perception of AI-generated post-treatment orthodontic facial images: factors associated with misclassification.",
+        "journal": "Clin Oral Investig",
+        "date": "2026",
+        "pmid": "42467108",
+        "summary": "In this sample, AI-generated orthodontic images were frequently misclassified as real and were perceived as more attractive than real post-treatment photographs. As generative AI tools become more accessible, understanding how demographic and behavioral factors affect human trust and perception is critical for developing responsible AI po …",
+        "abstract": "OBJECTIVES: This study evaluated participants' ability to differentiate AI-enhanced orthodontic outcome images from real post-treatment images, and examined the demographic and behavioral factors associated with detection accuracy and with perceived attractiveness. MATERIALS AND METHODS: In a cross-sectional online survey (N = 252), participants viewed three sets of smile images-pre-treatment, real post-treatment, and AI-enhanced outcomes generated via ChatGPT with DALL·E 3-and rated each image's authenticity and attractiveness using a Visual Analogue Scale (VAS). A custom seven-item questionnaire assessed AI use and trust across daily and professional contexts. Generalized estimating equations were used to account for repeated image evaluations within participants, with logistic GEE models for misclassification outcomes and Gaussian GEE models for attractiveness ratings. RESULTS: A tota",
+        "country": "巴西",
+        "ptype": "",
+        "zh": "",
+        "zh_sum": ""
+      },
+      {
+        "title": "VISULYZE-assisted nomogram optimization enhances astigmatism correction accuracy in keratorefractive lenticule extraction: a stratified retrospective analysis.",
+        "journal": "Front Med (Lausanne)",
+        "date": "2026",
+        "pmid": "42465100",
+        "summary": "VISULYZE-assisted nomogram optimization improved the accuracy of both spherical and astigmatic correction in KLEx, with consistent benefits across astigmatism severities. This data-driven, iterative refinement paradigm may standardize nomogram development and may be particularly valuable for less experienced surgeons transitioning from em …",
+        "abstract": "BACKGROUND: Keratorefractive lenticule extraction (KLEx) commonly relies on empirical nomogram adjustments to improve refractive accuracy; however, astigmatism correction remains suboptimal. VISULYZE (Carl Zeiss Meditec AG) enables data-driven nomogram optimization, but its differential effectiveness across astigmatism severities has not been fully characterized. This study compared VISULYZE-assisted nomogram optimization with empirical nomogram adjustment for spherical and astigmatic correction, using stratified vector analysis to quantify gains in precision. METHODS: This retrospective case-control study included 206 eyes that underwent KLEx between December 2023 and July 2024 and completed a minimum 3-month follow-up. Eyes were assigned to either VISULYZE-assisted nomogram optimization (VISULYZE group, n = 99) or conventional empirical adjustment with a 10% spherical power increment (",
+        "country": "中國",
+        "ptype": "",
+        "zh": "",
+        "zh_sum": ""
+      },
+      {
+        "title": "Structured interactive play for autism spectrum disorder screening in toddlers: a primary care-based cohort study.",
+        "journal": "BMC Psychiatry",
+        "date": "2026",
+        "pmid": "42464217",
+        "summary": "Behavioral observation through examiner-child structured interactive play, particularly metrics related to eye contact, effectively differentiates toddlers with iASD. This objective, low-cost method shows potential as a primary screening tool for enhancing early ASD detection in primary care settings.",
+        "abstract": "BACKGROUND: Early identification of autism spectrum disorder (ASD) is crucial for improving outcomes, yet diagnosis is often delayed. Primary care faces challenges, including the limited accuracy of existing tools and scarce access to specialist assessments. This prospective cohort study evaluated the feasibility of a novel, structured examiner-child interactive play protocol as an early behavioral screening tool for ASD. METHODS: We recruited 260 toddlers aged 18-36 months. At baseline, all children participated in a structured interactive play session. Their behaviors (e.g., eye contact, turn-taking, social smiling, symbolic play) were coded from video recordings to quantify nine core indicators. After a 6-month follow-up, 217 children completed comprehensive clinical assessments. Core symptoms were evaluated using the Childhood Autism Rating Scale (CARS), and developmental level was a",
+        "country": "中國",
+        "ptype": "",
+        "zh": "",
+        "zh_sum": ""
+      },
       {
         "title": "Effect of digital smile simulation on patients' decision to accept combined orthodontic restorative treatment planning for smile makeover.",
         "journal": "Sci Rep",
@@ -4770,7 +4818,7 @@
         "abstract": "ObjectivePresurgical infant orthopedics (PSIO) is used to optimize anatomical outcomes in infants with cleft lip and palate to facilitate favorable surgical results. However, standardized, reliable tools to assess PSIO effectiveness are lacking due to phenotypic variability and diverse treatment protocols. This study aimed to develop and perform a preliminary reliability assessment of a novel phenotype-based clinical outcome assessment tool, the PSIO Assessment Tool (PAT), to assess PSIO-related morphological changes in unilateral and bilateral cleft lip with or without palate.vdDesignTool Development and Reliability Assessment Study.SettingMulticentre expert consensus involving craniofacial orthodontists from diverse global regions.ParticipantsStandardized pretreatment and post-treatment clinical cases of unilateral and bilateral cleft lip and alveolus with or without palate were used f",
         "country": "美國",
         "ptype": "",
-        "zh": "",
+        "zh": "用於評估術前嬰兒骨科臨床結果的術前嬰兒骨科評估工具的開發和可靠性評估。",
         "zh_sum": ""
       },
       {
@@ -4782,7 +4830,7 @@
         "abstract": "PurposeTo compare the efficacy of 15-s versus 30-s intraoperative applications of 0.02% mitomycin C (MMC) in preventing corneal haze after photorefractive keratectomy (PRK) for moderate myopia.MethodsThis prospective, paired-eye study enrolled 50 patients (100 eyes) with bilateral moderate myopia (-3.00 to -6.00 D). Each patient underwent bilateral wavefront-optimized PRK. One eye was randomized to receive 0.02% MMC for 15 s, and the fellow eye received it for 30 s. The primary outcome was the incidence and severity of corneal haze, graded on a 0-4 scale at 1 week and 1, 3, and 6 months postoperatively. The secondary outcome was uncorrected distance visual acuity (UDVA).ResultsThe median age was 25.5 years (range, 18-53). Preoperative refractive errors were symmetrical between paired eyes (P > 0.05). Postoperative corneal haze was minimal and transient. Median haze scores were 0 at all t",
         "country": "埃及",
         "ptype": "",
-        "zh": "",
+        "zh": "優化光折射角膜切除術中的絲裂黴素 C：15 秒與 30 秒應用的配對眼比較。",
         "zh_sum": ""
       },
       {
@@ -4794,7 +4842,7 @@
         "abstract": "This retrospective multicentre study assessed early refractive outcomes and safety of small incision lenticule extraction (SMILE) in Chinese myopic eyes and characterised astigmatic accuracy and higher-order aberration (HOA) changes. Adults who underwent SMILE using new generation VISUMAX 800 with CentraLign centration and OcuLign iris registration participated. The participants comprised 319 patients (605 eyes) (mean age 20.6 ± 4.1 years; mean preoperative spherical equivalent [SE], - 3.88 ± 1.50 dioptres [D]). At 6 months, the mean uncorrected distance visual acuity was - 0.10 ± 0.05 logarithm of the minimum angle of resolution and mean manifest refractive SE was + 0.25 ± 0.33 D; 83.0% and 100.0% of eyes were within ± 0.50 D and ± 1.00 D of target SE, respectively. Residual cylinder was ≤ 0.50 D in 97.5% and ≤ 1.00 D in 100.0%. The Alpins analysis suggested mild undercorrection (correc",
         "country": "中國",
         "ptype": "",
-        "zh": "",
+        "zh": "新一代 VISUMAX 800 平台在中國近視患者小切口水晶體摘除術的臨床結果。",
         "zh_sum": ""
       },
       {
@@ -4806,55 +4854,7 @@
         "abstract": "PURPOSE: To evaluate the safety and efficacy of a second-generation individualized corneal cross-linking (CXL) protocol (ELZA-sub400) using high-fluence UV-A irradiation in ultrathin ectatic corneas. DESIGN: Retrospective, single-centre, consecutive interventional case series. METHODS: Twenty-nine eyes of 24 patients with progressive keratoconus or post-LASIK ectasia and a post-soak intraoperative thinnest stromal thickness <400 µm were included. After epithelial removal and riboflavin soaking, continuous UV-A irradiation (365 nm) at 3 or 9 mW/cm² was delivered with total fluence titrated up to 10 J/cm² based on intraoperative ultrasound pachymetry and a previously published nomogram targeting an uncross-linked stromal margin of approximately 70 µm above the endothelium. Outcomes were assessed at baseline and up to 12 months using corrected distance visual acuity (CDVA) and corneal param",
         "country": "中國",
         "ptype": "",
-        "zh": "",
-        "zh_sum": ""
-      },
-      {
-        "title": "Smile frameworks defined by the patient's facial pattern: A cross-sectional study.",
-        "journal": "Am J Orthod Dentofacial Orthop",
-        "date": "2026",
-        "pmid": "42363920",
-        "summary": "Patients' facial patterns are associated with specific smile frameworks regardless of sex, with elliptical or football-shaped patterns in dolichofacial group, shallow crescent-shaped patterns in mesofacial group, and flat patterns in brachyfacial group, reflecting anatomic constraints and the working zone for orthodontic treatment plannin …",
-        "abstract": "INTRODUCTION: The aim of this study was to evaluate the association between patients' facial pattern (brachyfacial, mesofacial, and dolichofacial) and the smile framework, defined as the exposure frame of intraoral tissues delineated by the lip contours during smile. METHODS: Overall, 120 participants were divided into 3 groups (n = 40) based on their facial pattern: brachyfacial, mesofacial, and dolichofacial, as determined by cephalometric analysis. Smile and rest displays were assessed using the smile framework (primary outcome), interlabial distance, intercommissural distance, maxillary incisor exposure, and gingival exposure, among other outcome measures. A two-way analysis of variance was conducted to analyze how facial pattern and sex influenced each outcome. RESULTS: A single smile framework was identified for each facial pattern: elliptical or football-shaped in dolichofacial pa",
-        "country": "西班牙",
-        "ptype": "",
-        "zh": "由患者臉部圖案定義的微笑框架：一項橫斷面研究。",
-        "zh_sum": ""
-      },
-      {
-        "title": "Rotational Composite Flap Technique for Primary Incomplete Cleft Lip Nose Repair.",
-        "journal": "Ann Plast Surg",
-        "date": "2026",
-        "pmid": "42359748",
-        "summary": "The rotational composite flap method for unilateral primary cleft rhinoplasty is described. Low number of these patients required additional surgical correction at the mixed dentition period time. Longer follow-up and comparative studies are required to confirm these findings.",
-        "abstract": "BACKGROUND: Primary cheilorhinoplasty has become widely accepted owing to evidence of improved outcomes and need for fewer secondary revisions. The rotational advancement concept was described initially as a secondary treatment for cleft nasal deformity in combination with buccal mucosal graft for the donor site. The presented technique is based on medial rotation of a vestibular flap composed by the alar cartilage and skin without donor site grafting and has been used by the author since 2016. The aim of this study is to evaluate the long-term outcomes of this unilateral primary cleft rhinoplasty technique. METHODS: This is a retrospective cross-sectional study. Patients with unilateral incomplete cleft lip were operated between 2016 and 2018 using the rotational composite flap rhinoplasty and followed during at least 5 years to evaluate nasal symmetry. Nose surgical outcomes were analy",
-        "country": "",
-        "ptype": "",
-        "zh": "旋轉複合皮瓣技術用於初次不完全唇裂鼻修復。",
-        "zh_sum": ""
-      },
-      {
-        "title": "Main Outcomes of the HEBE Trial: Improving Cardiorespiratory Fitness and Body Composition Through a Tailored Feasible Lifestyle Program.",
-        "journal": "Nutrients",
-        "date": "2026",
-        "pmid": "42356306",
-        "summary": "Background/Objectives: Lifestyle Modification Programs (LMPs) based on exercise and nutrition aim to prevent/manage chronic diseases and foster well-being. However, moving LMPs from research to medical practice can be challenging, as programs must be both effective and feasible. …",
-        "abstract": "Background/Objectives: Lifestyle Modification Programs (LMPs) based on exercise and nutrition aim to prevent/manage chronic diseases and foster well-being. However, moving LMPs from research to medical practice can be challenging, as programs must be both effective and feasible. The primary goal of this study was to assess cardiorespiratory fitness (CRF) changes according to an LMP, measured through VO2max, as a key indicator of health outcomes and intervention efficacy. Methods: In this single-arm intervention study, 100 subjects were enrolled; per-protocol analysis of main parameters was performed on 85 participants (15 were excluded due to medical/technical reasons). A feasible intervention program (of low resource intensity with only two physician/patient encounters) provided personalized exercise prescription, optimized nutritional habits based on the Mediterranean diet and Healthy ",
-        "country": "義大利",
-        "ptype": "臨床試驗",
-        "zh": "HEBE 試驗的主要成果：透過量身定制的可行生活方式計畫來改善心肺健康和身體組成。",
-        "zh_sum": ""
-      },
-      {
-        "title": "Real-World Two-Year Outcomes of Diffractive Implantable Phakic Contact Lenses in Presbyopic Myopes: Functional Vision, Anatomical Findings, and Environmental Context.",
-        "journal": "Medicina (Kaunas)",
-        "date": "2026",
-        "pmid": "42356032",
-        "summary": "Background and Objectives: To evaluate two-year functional, anatomical, and patient-reported outcomes after bilateral implantation of a diffractive implantable phakic contact lens (IPCL) for presbyopia correction in myopic patients within a high-solar-radiation Atlantic island environment. …",
-        "abstract": "Background and Objectives: To evaluate two-year functional, anatomical, and patient-reported outcomes after bilateral implantation of a diffractive implantable phakic contact lens (IPCL) for presbyopia correction in myopic patients within a high-solar-radiation Atlantic island environment. Methods: This retrospective observational study included 11 presbyopic myopic patients aged 40-50 years (22 eyes) who underwent bilateral diffractive IPCL implantation and completed a 2-year follow-up. Monocular defocus curves were recorded from +3.0 to -5.0 D and converted to logMAR. Functional visual range and area under the defocus curve (AUC) were calculated. Anatomical stability was assessed by central vault, pupil diameter, and crystalline lens rise measurements. Safety evaluation included slit-lamp examination for crystalline lens transparency and corneal integrity. Patient-reported outcomes wer",
-        "country": "西班牙",
-        "ptype": "觀察性研究",
-        "zh": "老花眼近視衍射植入式有水晶體隱形眼鏡的真實兩年結果：功能性視力、解剖學發現和環境背景。",
+        "zh": "第二代 ELZA-sub400 協定：針對超薄圓錐角膜的個人化高通量交聯。",
         "zh_sum": ""
       },
       {
@@ -4990,6 +4990,18 @@
         "zh_sum": ""
       },
       {
+        "title": "Biology of keratorefractive surgery- PRK, PTK, LASIK, SMILE, inlays and other refractive procedures.",
+        "journal": "Exp Eye Res",
+        "date": "2020",
+        "pmid": "32653492",
+        "summary": "The outcomes of refractive surgical procedures to improve uncorrected vision in patients-including photorefractive keratectomy (PRK), laser in-situ keratomileusis (LASIK), Small Incision Lenticule Extraction (SMILE) and corneal inlay procedures-is in large part determined by the corneal wound healing response after surgery. …",
+        "abstract": "The outcomes of refractive surgical procedures to improve uncorrected vision in patients-including photorefractive keratectomy (PRK), laser in-situ keratomileusis (LASIK), Small Incision Lenticule Extraction (SMILE) and corneal inlay procedures-is in large part determined by the corneal wound healing response after surgery. The wound healing response varies depending on the type of surgery, the level of intended correction of refractive error, the post-operative inflammatory response, generation of opacity producing myofibroblasts and likely poorly understood genetic factors. This article details what is known about these specific wound healing responses that include apoptosis of keratocytes and myofibroblasts, mitosis of corneal fibroblasts and myofibroblast precursors, the development of myofibroblasts from keratocyte-derived corneal fibroblasts and bone marrow-derived fibrocytes, depo",
+        "country": "美國",
+        "ptype": "文獻回顧",
+        "zh": "角膜屈光手術生物學 - PRK、PTK、LASIK、SMILE、嵌體和其他屈光手術。",
+        "zh_sum": ""
+      },
+      {
         "title": "Small incision lenticule extraction (SMILE) in 2015.",
         "journal": "Clin Exp Optom",
         "date": "2016",
@@ -5034,7 +5046,7 @@
         "abstract": "Laser-assisted in-situ keratomileusis (LASIK) is one of the most commonly performed refractive procedures with excellent visual outcomes. Dry eye syndrome is one of the most frequently seen complications after LASIK, with most patients developing at least some mild dry eye symptoms postoperatively. To achieve improved visual outcomes and greater patient satisfaction, it is essential to identify patients prone to dry eyes preoperatively, and initiate treatment early in the course. Enhanced understanding of the pathophysiology of post-LASIK dry eye will help advance our approach to its management.",
         "country": "美國",
         "ptype": "文獻回顧",
-        "zh": "雷射原位角膜磨鑲術後乾眼。",
+        "zh": "乾眼症",
         "zh_sum": ""
       },
       {
@@ -5046,7 +5058,7 @@
         "abstract": "A variety of refractive surgery techniques, which reshape the corneal stroma using laser energy, have been marketed as simple and safe alternatives to glasses or contact lenses. Laser-assisted in-situ keratomileusis (LASIK) is the most common of these procedures. Although there are few high-quality prospective studies of long-term outcomes, complications, or stability for refractive surgery procedures, there is at least general agreement that more than 90% of appropriately selected patients achieve excellent uncorrected distance vision. In addition to well-recognized contraindications (e.g., unstable refraction, pregnancy and lactation, chronic eye disease, systemic illness, corneal abnormalities), there are other conditions that warrant caution (e.g., excessively dry eyes, contact lens intolerance, chronic pain syndromes). Postoperative dry eye, which may in part represent a corneal neu",
         "country": "美國",
         "ptype": "文獻回顧",
-        "zh": "屈光眼科手術：幫助患者就 LASIK 做出明智的決定。",
+        "zh": "",
         "zh_sum": ""
       },
       {
@@ -5194,30 +5206,6 @@
         "zh_sum": ""
       },
       {
-        "title": "[Iatrogenic Keratectasia: A Review].",
-        "journal": "Klin Monbl Augenheilkd",
-        "date": "2015",
-        "pmid": "25853948",
-        "summary": "Iatrogenic corneal ectasia is a rare complication but also one of the most feared situations that can occur after uneventful corneal laser surgery. Ectatic changes can occur as early as 1 week or can be delayed up to several years after LASIK. …",
-        "abstract": "Iatrogenic corneal ectasia is a rare complication but also one of the most feared situations that can occur after uneventful corneal laser surgery. Ectatic changes can occur as early as 1 week or can be delayed up to several years after LASIK. The actual incidence of ectasia is undetermined, an incidence rate of 0.04 to almost 2.8 % has been reported. Ectasia is most common following LASIK; however, cases have been reported following PRK and other corneal refractive procedures. Keratectasia shows progressive myopia, irregular astigmatism, ghosting, fluctuating vision and problems with scotopic vision. The progression leads to severe loss of corrected visual acuity. Risk factors are thin corneas < 500 µm, a pathological corneal topography, a residual stromal bed < 300 µm, high myopia > 8 D, young (female) age < 25 years, atopic dermatitis, allergies, family history for keratokonus and col",
-        "country": "",
-        "ptype": "文獻回顧",
-        "zh": "",
-        "zh_sum": ""
-      },
-      {
-        "title": "Biology of keratorefractive surgery- PRK, PTK, LASIK, SMILE, inlays and other refractive procedures.",
-        "journal": "Exp Eye Res",
-        "date": "2020",
-        "pmid": "32653492",
-        "summary": "The outcomes of refractive surgical procedures to improve uncorrected vision in patients-including photorefractive keratectomy (PRK), laser in-situ keratomileusis (LASIK), Small Incision Lenticule Extraction (SMILE) and corneal inlay procedures-is in large part determined by the corneal wound healing response after surgery. …",
-        "abstract": "The outcomes of refractive surgical procedures to improve uncorrected vision in patients-including photorefractive keratectomy (PRK), laser in-situ keratomileusis (LASIK), Small Incision Lenticule Extraction (SMILE) and corneal inlay procedures-is in large part determined by the corneal wound healing response after surgery. The wound healing response varies depending on the type of surgery, the level of intended correction of refractive error, the post-operative inflammatory response, generation of opacity producing myofibroblasts and likely poorly understood genetic factors. This article details what is known about these specific wound healing responses that include apoptosis of keratocytes and myofibroblasts, mitosis of corneal fibroblasts and myofibroblast precursors, the development of myofibroblasts from keratocyte-derived corneal fibroblasts and bone marrow-derived fibrocytes, depo",
-        "country": "美國",
-        "ptype": "文獻回顧",
-        "zh": "",
-        "zh_sum": ""
-      },
-      {
         "title": "Corneal Neuralgia after LASIK.",
         "journal": "Optom Vis Sci",
         "date": "2015",
@@ -5274,6 +5262,18 @@
         "abstract": "The introduction of the femtosecond (fs) laser has revolutionized ophthalmic surgery. With the worldwide application of fs-lasers, clinical outcomes and safety in corneal procedures have improved significantly and they have become an ideal tool for ultra-precise corneal refractive surgery. Flap creation in laser in situ keratomileusis (LASIK) is the most common use of this laser. It can also be used for other corneal refractive procedures including channel creation for the insertion of intrastromal corneal ring segments (ICRS), performing astigmatic keratotomies (AK), femtosecond lenticule extraction including small incision lenticule extraction (SMILE), and the insertion of corneal inlays. This article summarizes recent advanced applications of fs laser technology in corneal refractive surgery.",
         "country": "奧地利",
         "ptype": "",
+        "zh": "",
+        "zh_sum": ""
+      },
+      {
+        "title": "Impact of corneal refractive surgery on the precorneal tear film.",
+        "journal": "Indian J Ophthalmol",
+        "date": "2020",
+        "pmid": "33229655",
+        "summary": "Corneal refractive surgeries are one of the commonly performed procedures for correction of refractive errors. Tear film abnormality is the most common postoperative complication of corneal refractive surgeries. Consequently, these procedures represent a clinically significant cause of dry eye disease. …",
+        "abstract": "Corneal refractive surgeries are one of the commonly performed procedures for correction of refractive errors. Tear film abnormality is the most common postoperative complication of corneal refractive surgeries. Consequently, these procedures represent a clinically significant cause of dry eye disease. The mechanisms which lead to dry eye disease include corneal sensory nerve dysfunction, ocular surface desiccation, glandular apoptosis and ocular surface inflammation. Although transient tear film abnormalities occur in almost all patients following surgery, patients with pre-existing dry eye symptoms or dry eye disease are at significant risk of developing more severe or long-term ocular surface disease. As such, careful patient selection and preoperative evaluation is essential to ensuring successful surgical outcomes. This is particularly important with LASIK which has the strongest as",
+        "country": "印度",
+        "ptype": "文獻回顧",
         "zh": "",
         "zh_sum": ""
       },
@@ -5530,6 +5530,18 @@
         "zh_sum": ""
       },
       {
+        "title": "Visual and optical performance with hybrid multifocal intraocular lenses.",
+        "journal": "Clin Exp Optom",
+        "date": "2010",
+        "pmid": "20880314",
+        "summary": "During the past years, the wish to become independent of spectacles has been growing among cataract and presbyopic patients due to many factors, such as the increase in near visual demands, the aesthetic need for a spectacle-free image and ageing of refractive surgery patients, among others. …",
+        "abstract": "During the past years, the wish to become independent of spectacles has been growing among cataract and presbyopic patients due to many factors, such as the increase in near visual demands, the aesthetic need for a spectacle-free image and ageing of refractive surgery patients, among others. This review assesses recently published studies that analyse visual and optical performance through different metrics of eyes implanted with multifocal intraocular lenses (IOLs), particularly hybrid IOL designs. The published evidence suggests that hybrid multifocal IOLs provide very good outcomes in a number of visual and optical performance parameters. Patients implanted with this type of IOL obtain a satisfactory full range of visual functions, including patients of particular characteristics such as highly ametropic or post-LASIK.",
+        "country": "西班牙",
+        "ptype": "文獻回顧",
+        "zh": "",
+        "zh_sum": ""
+      },
+      {
         "title": "[Contact lens fitting after refractive surgery].",
         "journal": "Arq Bras Oftalmol",
         "date": "2005",
@@ -5561,6 +5573,18 @@
         "summary": "Monovision after LASIK was a valuable and viable option for the management of presbyopia.",
         "abstract": "PURPOSE: To evaluate the outcome of monovision after laser in situ keratomileusis (LASIK). SETTING: Private practice, Little Silver, New Jersey, USA. METHODS: In this retrospective study, 432 consecutive patients (864 eyes) who had LASIK between January 1998 and October 1999 with a follow-up of 6 to 28 months were examined. All patients older than 40 years were asked to complete a questionnaire, and study results were based on analysis of data from the patient charts correlated with the questionnaire responses. RESULTS: Women chose monovision over full distance correction more than twice as often as men (P =.00). Although the patients who had full distance correction reported somewhat higher levels of postoperative satisfaction than the monovision patients, the differences were not statistically significant (P =.41). Overall, 96% of patients were satisfied with monovision after LASIK, an",
         "country": "",
+        "ptype": "",
+        "zh": "",
+        "zh_sum": ""
+      },
+      {
+        "title": "Outcomes of LASIK and PRK in previous penetrating corneal transplant recipients.",
+        "journal": "Eye Contact Lens",
+        "date": "2009",
+        "pmid": "19672198",
+        "summary": "PRK and LASIK are effective tools in reducing surgically induced astigmatism after penetrating corneal transplantation in most patients in this case series. The reduction of astigmatism may allow improved contact lens or spectacle fitting to achieve best-corrected binocular visual acuity.",
+        "abstract": "OBJECTIVE: To evaluate the safety and efficacy of excimer laser refractive surgery in correcting refractive error in eyes that have undergone previous penetrating keratoplasty (PK). METHODS: Twenty-three keratorefractive procedures on 16 eyes from 16 consecutive subjects were evaluated between 2002 and 2008. Each patient presented a previous history of a PK with subsequent postoperative myopia and astigmatism. Keratometric value, manifest refraction, best-corrected visual acuity, uncorrected visual acuity, and complications were determined. RESULTS: There were a total of 14 photorefractive keratectomy (PRK) procedures performed on 11 eyes and 9 laser in situ keratomileusis (LASIK) procedures performed on 5 eyes. In the PRK group, the preoperative post-PK manifest refractive spherical equivalent and cylindrical error were -6.22 +/- 6.23 diopter and 5.23 +/- 2.26 D, respectively. The PRK p",
+        "country": "美國",
         "ptype": "",
         "zh": "",
         "zh_sum": ""
@@ -5610,30 +5634,6 @@
         "abstract": "",
         "country": "美國",
         "ptype": "文獻回顧",
-        "zh": "",
-        "zh_sum": ""
-      },
-      {
-        "title": "Posterior segment complications of laser in situ keratomileusis (LASIK).",
-        "journal": "Surv Ophthalmol",
-        "date": "2009",
-        "pmid": "19539831",
-        "summary": "Laser in situ keratomileusis (LASIK) is the most common surgical procedure for treatment of refractive errors worldwide. Most of its complications are related to the refractive outcome or to corneal and anterior segment injury and wound healing. …",
-        "abstract": "Laser in situ keratomileusis (LASIK) is the most common surgical procedure for treatment of refractive errors worldwide. Most of its complications are related to the refractive outcome or to corneal and anterior segment injury and wound healing. We review published posterior segment complications of LASIK, current clinical and experimental hypotheses explaining the occurrence of these events, and their management and outcome. Vitreoretinal complications after LASIK are very rare, and a cause-effect relationship between LASIK and reported posterior segment complications has not been proven.",
-        "country": "德國",
-        "ptype": "文獻回顧",
-        "zh": "",
-        "zh_sum": ""
-      },
-      {
-        "title": "Punctal plugs for treatment of post-LASIK dry eye.",
-        "journal": "Jpn J Ophthalmol",
-        "date": "2012",
-        "pmid": "22358586",
-        "summary": "Our results suggest that punctal occlusion for both puncta is effective for patients with post-LASIK dry eye that cannot be controlled by artificial tears alone. Punctal plugs can improve not only the symptoms and tear function, but also the quality of vision, for example FVA.",
-        "abstract": "PURPOSE: To evaluate the efficacy of punctal plugs for patients with post-LASIK dry eye. MATERIALS AND METHODS: A prospective study was conducted on 25 eyes of 18 patients who underwent LASIK. All eyes fulfilled the Japanese dry-eye criteria and had not responded to conventional treatment with artificial tears by 1 month postsurgery. They were randomly divided into a plug and a non-plug group. Punctal plugs were inserted into the superior and inferior puncta in the plug group after the 1-month examination. Uncorrected and best corrected visual acuity (UCVA, BCVA), refraction, functional visual acuity (FVA) after 10 s eye opening (FVA 10), surface regularity index (SRI) after 10 s eye opening (SRI 10), corneal sensitivity, Schirmer test, fluorescein staining (FS), tear break-up time (TBUT), and symptoms were compared between the groups 1 and 3 months postsurgery. Changes in these data fro",
-        "country": "日本",
-        "ptype": "隨機對照試驗(RCT)",
         "zh": "",
         "zh_sum": ""
       },
@@ -5771,6 +5771,30 @@
       }
     ],
     "cataract": [
+      {
+        "title": "Biomechanical control of continuous curvilinear capsulorhexis: a structured video-based analysis of error patterns and recovery maneuvers.",
+        "journal": "Int Ophthalmol",
+        "date": "2026",
+        "pmid": "42467111",
+        "summary": "This video-based framework proposes a structured educational approach to early biomechanical control during capsulorhexis and may provide a practical adjunct for surgical training and structured video review.",
+        "abstract": "PURPOSE: Continuous curvilinear capsulorhexis (CCC) remains a critical step in cataract surgery and a frequent source of difficulty during surgical training. This study analyzes recurrent biomechanical error patterns and standardized recovery maneuvers during capsulorhexis using a structured video-based approach. METHODS: This retrospective, observational study evaluates a consecutive series of 50 cataract surgeries performed by a single surgeon during an intensive training program. Intraoperative videos were reviewed with attention to flap handling, traction-vector alignment, pivoting, and anterior chamber stability. RESULTS: Capsulorhexis deviation or loss of controlled tear propagation was identified in 23 of the 50 procedures (46%). Ten of these cases were purposively selected for detailed analysis on the basis of educational relevance. In these 10 videos, the most salient error patt",
+        "country": "西班牙",
+        "ptype": "觀察性研究",
+        "zh": "",
+        "zh_sum": ""
+      },
+      {
+        "title": "180-Degree Nuclear Flip: A Safety and Efficacy Assessment of a Phacoemulsification Technique for Cataract Nuclei of Grade III and Below.",
+        "journal": "Ophthalmol Ther",
+        "date": "2026",
+        "pmid": "42463970",
+        "summary": "The 180° nuclear flip technique is a safe, efficient, and effective method for managing cataracts of grade III hardness and below. It may help reduce the risk of complications, improves intraoperative stability by creating a more spacious operating field, and significantly reduces phacoemulsification time. …",
+        "abstract": "INTRODUCTION: This prospective randomized controlled trial aims to evaluate the effectiveness and safety of a 180° nuclear flip technique in phacoemulsification cataract surgery, comparing it with the traditional endocapsular approach for cataracts of Emery-Little grade III and below. METHODS: A total of 142 patients were randomly assigned to either the 180° nuclear flip group (n = 71) or the conventional endocapsular phacoemulsification group (n = 71). The primary outcomes measured were total phacoemulsification time (TPT) and effective phacoemulsification time (EPT). Secondary outcomes were the incidence of postoperative corneal endothelial cell loss (ECL) at 7 and 28 days, as well as intraoperative complications including posterior capsule rupture (PCR). RESULTS: The mean TPT was substantially shorter in the flip group (43.75 ± 17.16 s) compared to the conventional group (58.45 ± 22.2",
+        "country": "中國",
+        "ptype": "",
+        "zh": "",
+        "zh_sum": ""
+      },
       {
         "title": "Rotational Stability of Three Toric Intraocular Lens Platforms After Cataract Surgery: A Prospective Multicenter Randomized Trial.",
         "journal": "J Cataract Refract Surg",
@@ -6288,30 +6312,6 @@
         "zh_sum": ""
       },
       {
-        "title": "Impact of Preoperative Ocular Hypotony on Refractive Predictability After Phacovitrectomy for Rhegmatogenous Retinal Detachment.",
-        "journal": "Life (Basel)",
-        "date": "2026",
-        "pmid": "42355535",
-        "summary": "Background/Objectives: Rhegmatogenous retinal detachment is a vision-threatening condition often treated with combined cataract surgery and vitrectomy, but accurate postoperative refractive prediction may be difficult when ocular anatomy is altered by preoperative hypotony. …",
-        "abstract": "Background/Objectives: Rhegmatogenous retinal detachment is a vision-threatening condition often treated with combined cataract surgery and vitrectomy, but accurate postoperative refractive prediction may be difficult when ocular anatomy is altered by preoperative hypotony. This retrospective comparative study evaluated the effect of preoperative ocular hypotony on refractive predictability and visual outcomes after combined phacovitrectomy for rhegmatogenous retinal detachment. Materials and Methods: Electronic medical records from Nagasaki University Hospital from 2010 to 2022 were reviewed. Among 731 eyes that underwent combined phacovitrectomy with sulfur hexafluoride gas tamponade for rhegmatogenous retinal detachment, 17 eyes with preoperative ocular hypotony (intraocular pressure ≤ 7 mmHg) that met the inclusion criteria were identified. Thirty-four eyes with normal intraocular pr",
-        "country": "日本",
-        "ptype": "",
-        "zh": "",
-        "zh_sum": ""
-      },
-      {
-        "title": "Outcomes on pseudophakic mini-monovision with monofocal intraocular lens on intermediate vision with immediate sequential bilateral cataract surgery.",
-        "journal": "Eye (Lond)",
-        "date": "2026",
-        "pmid": "42350803",
-        "summary": "Mini-monovision with Clareon® monofocal IOLs and ISBCS provides good binocular uncorrected intermediate vision with high patient satisfaction.",
-        "abstract": "PURPOSE: To evaluate visual, refractive and patient-reported outcomes of a mini-monovision strategy using the Clareon® (Alcon Laboratories, Fort Worth, Texas, USA) monofocal intraocular lens (IOL) for intermediate vision following immediate sequential bilateral cataract surgery (ISBCS). METHODS: In this prospective study, twenty-seven patients (54 eyes) underwent ISBCS with Clareon® monofocal IOL implantation, targeting emmetropia in the dominant eye and -0.75 D myopic offset in the non-dominant eye. The primary outcome was binocular uncorrected intermediate visual acuity (UCIVA) at 66 cm at 1 and 3 months. Secondary outcomes included monocular UCIVA, binocular uncorrected distance visual acuity (UCDVA) and best-corrected distance visual acuity (BCDVA). Tertiary outcomes were binocular defocus curve, reading speed (Salzburg Reading Desk) and Catquest-9SF questionnaire. RESULTS: Mean part",
-        "country": "英國",
-        "ptype": "",
-        "zh": "",
-        "zh_sum": ""
-      },
-      {
         "title": "Cataract.",
         "journal": "Nat Rev Dis Primers",
         "date": "2015",
@@ -6468,6 +6468,18 @@
         "zh_sum": ""
       },
       {
+        "title": "Association between intraocular lens diopter and posterior capsular opacification.",
+        "journal": "Clin Exp Ophthalmol",
+        "date": "2020",
+        "pmid": "32639048",
+        "summary": "Among a cohort of patients undergoing cataract surgery, use of lower diopter IOLs was associated with increased incidence of clinically significant PCO. Research into IOL biomechanics to decrease PCO may be warranted especially in lower diopter IOLs.",
+        "abstract": "IMPORTANCE: Posterior capsular opacification (PCO) is the most common complication after cataract surgery. BACKGROUND: We aimed to assess the relationship between intraocular lens (IOL) diopter and formation of PCO among a consecutive real-world registry. DESIGN: Cohort study. PARTICIPANTS: Included were 14 264 consecutive cases of uncomplicated cataract surgery performed during 2014 to 2018 in Helsinki University Hospital in Finland. METHODS: Nd:YAG capsulotomies were used as an estimate of clinically significant PCO. A single eye of each patient and a single type of IOL were included. MAIN OUTCOME MEASURE: Nd:YAG posterior capsulotomy free survival. RESULTS: Mean age was 73.2 ± 9.9 years and 61.8% were female. Mean follow-up time was 25.4 ± 16.8 months. Overall PCO rates were 1.1% at 1-year, 3.0% at 2-year, 7.1% at 3-year and 10.2% at 4-year. Patients with IOL diopters (D) in the lower",
+        "country": "芬蘭",
+        "ptype": "",
+        "zh": "",
+        "zh_sum": ""
+      },
+      {
         "title": "Outcomes of presbyopia-correcting intraocular lenses after laser in situ keratomileusis.",
         "journal": "Int Ophthalmol",
         "date": "2019",
@@ -6487,18 +6499,6 @@
         "summary": "Pseudophakic monofocal IOL implantation offers good visual acuity recovery and acceptable refractive correction in RK patients after 1-year follow-up.",
         "abstract": "PURPOSE: To report visual and refractive results in radial keratotomy (RK) patients that underwent a cataract surgery with a monofocal intraocular lens (IOL) implantation with 1 year of follow-up. METHODS: Twenty-eight eyes of 15 patients with cataract and the previous RK were included. All eyes underwent phacoemulsification and monofocal IOL implantation. IOL power calculation was done using the Double-K formula of Aramberri. The preoperative versus postoperative corrected distance visual acuity (CDVA) and the uncorrected distance visual acuity (UDVA) values were used to assess the efficacy and safety of the surgery; meanwhile, the achieved versus the expected refractive outcomes postoperatively were used to assess the predictability. RESULTS: Phacoemulsification and IOL implantation was performed successfully in all eyes, and no intra- and postoperative problems occurred. The mean logM",
         "country": "西班牙",
-        "ptype": "",
-        "zh": "",
-        "zh_sum": ""
-      },
-      {
-        "title": "Association between intraocular lens diopter and posterior capsular opacification.",
-        "journal": "Clin Exp Ophthalmol",
-        "date": "2020",
-        "pmid": "32639048",
-        "summary": "Among a cohort of patients undergoing cataract surgery, use of lower diopter IOLs was associated with increased incidence of clinically significant PCO. Research into IOL biomechanics to decrease PCO may be warranted especially in lower diopter IOLs.",
-        "abstract": "IMPORTANCE: Posterior capsular opacification (PCO) is the most common complication after cataract surgery. BACKGROUND: We aimed to assess the relationship between intraocular lens (IOL) diopter and formation of PCO among a consecutive real-world registry. DESIGN: Cohort study. PARTICIPANTS: Included were 14 264 consecutive cases of uncomplicated cataract surgery performed during 2014 to 2018 in Helsinki University Hospital in Finland. METHODS: Nd:YAG capsulotomies were used as an estimate of clinically significant PCO. A single eye of each patient and a single type of IOL were included. MAIN OUTCOME MEASURE: Nd:YAG posterior capsulotomy free survival. RESULTS: Mean age was 73.2 ± 9.9 years and 61.8% were female. Mean follow-up time was 25.4 ± 16.8 months. Overall PCO rates were 1.1% at 1-year, 3.0% at 2-year, 7.1% at 3-year and 10.2% at 4-year. Patients with IOL diopters (D) in the lower",
-        "country": "芬蘭",
         "ptype": "",
         "zh": "",
         "zh_sum": ""
@@ -7214,6 +7214,66 @@
     ],
     "glaucoma": [
       {
+        "title": "Long-term medical and surgical treatment patterns in Korean patients newly diagnosed with primary open-angle glaucoma: A 10-year retrospective cohort study.",
+        "journal": "PLoS One",
+        "date": "2026",
+        "pmid": "42467649",
+        "summary": "This study quantitatively confirmed an increase in glaucoma medication use in patients newly diagnosed with POAG over a 10-year treatment period. Additionally, it reveals the incidence of glaucoma surgery based on sex and age. These findings provide valuable evidence for consulting patients with glaucoma.",
+        "abstract": "PURPOSE: To investigate the long-term medical and surgical treatment of patients with primary open-angle glaucoma (POAG). METHODS: This retrospective cohort study analyzed data from the Health Insurance Review and Assessment Service (HIRA) database in Korea, focusing on patients newly diagnosed with POAG in 2010. The study examined glaucoma eye drop prescriptions and the occurrence of glaucoma surgery over a 10-year period, from 2010 to 2020. The main outcome measures included changes in glaucoma eye drop prescriptions and the cumulative incidence of glaucoma surgery following the initial diagnosis of POAG. RESULTS: A total of 1,599 patients with POAG were enrolled. Prostaglandin analogue eye drops monotherapy was the most frequently prescribed glaucoma eye drop prescriptions in the first year (39.9%). The average number of prescribed glaucoma eye drops per patient was 1.19 in the first ",
+        "country": "韓國",
+        "ptype": "",
+        "zh": "",
+        "zh_sum": ""
+      },
+      {
+        "title": "Short-Term Intraocular Pressure Changes After Intravitreal Aflibercept 8 mg via Prefilled Syringe.",
+        "journal": "Ophthalmol Ther",
+        "date": "2026",
+        "pmid": "42467134",
+        "summary": "Intravitreal aflibercept 8 mg administered via PFS was associated with a transient rise in IOP immediately after injection, which resolved within 15 min and was similar to that observed with aflibercept 2 mg via PFS and aflibercept 8 mg via standard syringe. …",
+        "abstract": "INTRODUCTION: Intravitreal anti-vascular endothelial growth factor (anti-VEGF) therapy is a standard treatment for neovascular age-related macular degeneration (nAMD) and diabetic macular oedema (DMO). A transient rise in intraocular pressure (IOP) following injection is a well-established short-term effect. Aflibercept 8 mg has recently been introduced in a prefilled syringe (PFS), although data on its short-term effect on IOP are still lacking. The aim of this study was to assess short-term IOP changes after intravitreal aflibercept 8 mg administered via PFS and to compare these results with historical cohorts receiving aflibercept 8 mg via standard syringe and aflibercept 2 mg via PFS. METHODS: This single-centre comparative observational cohort study included a prospectively enrolled cohort of patients with nAMD or DMO receiving aflibercept 8 mg via PFS (0.07 mL), while two retrospec",
+        "country": "瑞士",
+        "ptype": "",
+        "zh": "",
+        "zh_sum": ""
+      },
+      {
+        "title": "Involvement of Mitophagy in Endothelin-1 Mediated Neurodegeneration in Rodent Models of Glaucoma.",
+        "journal": "bioRxiv",
+        "date": "2026",
+        "pmid": "42465463",
+        "summary": "The ultimate cause of blindness in glaucoma is the death of retinal ganglion cells, and understanding the mechanism behind retinal ganglion cell loss during glaucoma could lead to the development of novel treatments for glaucoma. …",
+        "abstract": "The ultimate cause of blindness in glaucoma is the death of retinal ganglion cells, and understanding the mechanism behind retinal ganglion cell loss during glaucoma could lead to the development of novel treatments for glaucoma. Endothelin-1 has been shown to mediate retinal ganglion cell death during glaucoma through impairment of mitochondrial function. Retinal ganglion cells are highly metabolically active, and susceptible to oxidative damage and decreased respiratory capacity. Mitophagy is the process whereby damaged mitochondria are degraded to prevent further propagation of oxidative damage. The current study evaluates the effect of endothelin-1 on mitophagy in retinal ganglion cells. Electron microscopy revealed endothelin-1 administration lead to a decrease in healthy mitochondria in the optic nerve. The MitoQC mouse was used to evalute mitophagy in response to endothelin-1, alo",
+        "country": "",
+        "ptype": "",
+        "zh": "",
+        "zh_sum": ""
+      },
+      {
+        "title": "Ultrastructural characteristics of the trabecular meshwork in primary open-angle glaucoma versus chronic angle-closure glaucoma: a comparative study.",
+        "journal": "BMC Ophthalmol",
+        "date": "2026",
+        "pmid": "42464205",
+        "summary": "Surgical-stage POAG and CACG share a \"final common pathway\" of severe TM cellular reduction and structural disruption. However, their distinct collagen fibril architectures suggest divergent ECM remodeling pathways that may contribute to subtype-specific outflow resistance and disease mechanisms.",
+        "abstract": "BACKGROUND: The trabecular meshwork (TM), the principal site of aqueous humor outflow resistance, plays a pivotal role in the regulation of intraocular pressure (IOP), the key modifiable risk factor for glaucoma. This study aimed to compare the ultrastructural characteristics of the TM in primary open-angle glaucoma (POAG) and chronic angle-closure glaucoma (CACG) using transmission electron microscopy (TEM). METHODS: TM specimens were obtained via Kahook Dual Blade goniotomy from 11 POAG and 9 CACG patients and processed for TEM analysis. We evaluated cellular morphology, extracellular matrix (ECM) organization, and collagen fibril architecture (using Feret's diameter). A novel Organelle Severity Index (OSI) was introduced to semi-quantitatively evaluate the cumulative burden of subcellular stress, and clinico-pathological correlations were analyzed. RESULTS: Both POAG and CACG samples ",
+        "country": "中國",
+        "ptype": "",
+        "zh": "",
+        "zh_sum": ""
+      },
+      {
+        "title": "Norepinephrine-induced small GTPase RHOB mediates nocturnal intraocular pressure rise in mice.",
+        "journal": "Commun Biol",
+        "date": "2026",
+        "pmid": "42463868",
+        "summary": "Intraocular pressure (IOP), a major risk factor for glaucoma, follows a circadian rhythm with nocturnal increases driven by norepinephrine (NE) from the superior cervical ganglion. This rhythm depends on aqueous humor (AH) dynamics, particularly the outflow through the trabecular meshwork (TM). …",
+        "abstract": "Intraocular pressure (IOP), a major risk factor for glaucoma, follows a circadian rhythm with nocturnal increases driven by norepinephrine (NE) from the superior cervical ganglion. This rhythm depends on aqueous humor (AH) dynamics, particularly the outflow through the trabecular meshwork (TM). Herein, we investigated its underlying regulatory mechanisms in the TM because disruption of IOP rhythm increases the risk of glaucoma. Comprehensive gene expression analysis of human TM cells and mouse eyes uncovered NE-upregulated 18 genes, including the small GTPase RHOB. Promoter assays revealed that RHOB is regulated via a cAMP-responsive element. RHOB deficiency enhanced TM phagocytosis and reversed NE-induced suppression of permeability, whereas RHOB overexpression had the opposite effect. In mice, RHO and ROCK inhibitors reduced both nocturnal and NE-induced IOP elevations. These findings ",
+        "country": "日本",
+        "ptype": "",
+        "zh": "",
+        "zh_sum": ""
+      },
+      {
         "title": "Factors Associated With Progression to Primary Angle Closure: A Post Hoc Analysis of the ANA-LIS Trial.",
         "journal": "JAMA Ophthalmol",
         "date": "2026",
@@ -7694,66 +7754,6 @@
         "zh_sum": ""
       },
       {
-        "title": "Proteomic Profile Analysis of Plasma and Aqueous Humor from Glaucoma and Nonglaucomatous Patients.",
-        "journal": "J Ocul Pharmacol Ther",
-        "date": "2026",
-        "pmid": "42415469",
-        "summary": "Together, our data demonstrate that the proteins identified in this study from glaucomatous donors correspond to markers of neurodegeneration and those that may inhibit cell proliferation or disrupt vascular integrity.",
-        "abstract": "PURPOSE: Glaucoma, a multifactorial ocular neuropathy, can lead to irreversible vision loss. Diagnosis involves assessing optic cupping (increased cup-to-disc ratios) and structural changes (like retinal nerve fiber layer thinning) through clinical imaging. Elevated intraocular pressure (IOP) is commonly associated with glaucoma but is not universally present. However, understanding disease progression is hindered by limited access to donor ocular tissue and consistent clinical data. We hypothesized that the proteomes of aqueous humor (AH) and plasma may be altered in disease and correlate with clinical parameters such as IOP and cup-to-disc ratios. METHODS: AH and plasma samples were collected from 36 glaucoma patients (17 male, 19 female) and 35 nonglaucomatous control patients (16 male, 19 female) undergoing cataract surgery. Protein profiles was compared using the SOMAscan® assay sys",
-        "country": "巴西",
-        "ptype": "",
-        "zh": "",
-        "zh_sum": ""
-      },
-      {
-        "title": "Uveal effusion: An anatomy-based and mechanism-based framework for diagnosis and management.",
-        "journal": "Surv Ophthalmol",
-        "date": "2026",
-        "pmid": "42413829",
-        "summary": "Uveal effusion represents a heterogeneous clinical manifestation of disrupted uveal fluid homeostasis rather than a discrete disease entity. Despite long-standing recognition, its diagnosis and management remain challenging because the effusion reflects the interplay among vascular permeability, venous outflow resistance, scleral permeabi …",
-        "abstract": "Uveal effusion represents a heterogeneous clinical manifestation of disrupted uveal fluid homeostasis rather than a discrete disease entity. Despite long-standing recognition, its diagnosis and management remain challenging because the effusion reflects the interplay among vascular permeability, venous outflow resistance, scleral permeability, and intraocular pressure, rather than inflammation or retinal pathology alone. We integrate anatomical and physiological principles, clarifies terminology and classification, and proposes a mechanism-based framework for understanding uveal effusion. Advances in multimodal imaging- including ultrasound biomicroscopy, anterior segment optical coherence tomography (OCT), enhanced-depth imaging OCT, and ultrawide-field angiography-have transformed evaluation by enabling early detection, compartmental localization, and identification of dominant mechani",
-        "country": "印度",
-        "ptype": "文獻回顧",
-        "zh": "",
-        "zh_sum": ""
-      },
-      {
-        "title": "Efficacy of PAUL Glaucoma Implant® for Refractory Uveitic Glaucoma.",
-        "journal": "Ocul Immunol Inflamm",
-        "date": "2026",
-        "pmid": "42412577",
-        "summary": "PGI provided sustained IOP reduction with a favorable safety profile in a RUG population. These findings support the PGI as a valuable surgical option in UG, although larger multicenter comparative studies are needed.",
-        "abstract": "PURPOSE: Evaluate the mid-term efficacy and safety of Paul Glaucoma Implant (PGI) in patients with refractory uveitic glaucoma (RUG). METHODS: Retrospective, single-center observational study. Patients aged 18 years or older with RUG and uncontrolled intraocular pressure (IOP) who underwent PGI implantation between November 2021 and January 2025 at a tertiary uveitis center were included. Surgical outcomes were evaluated at 6, 12, and 24 months postoperatively.Complete success was defined as IOP ≤ 18 mmHg without medications, qualified success as IOP ≤ 18 mmHg with medications, and failure as IOP > 18 mmHg, loss of light perception, or need for new glaucoma surgery. Secondary outcomes included postoperative complications, reinterventions, and functional outcomes. RESULTS: 25 eyes were included. Mean preoperative IOP was 25.5 ± 7.7 mmHg with 3.5 ± 1.1 medications. At 24 months, mean IOP d",
-        "country": "法國",
-        "ptype": "",
-        "zh": "",
-        "zh_sum": ""
-      },
-      {
-        "title": "Additive framework of hormonal waves accounts for species and age differences in circadian intraocular pressure rhythm.",
-        "journal": "NPJ Biol Timing Sleep",
-        "date": "2026",
-        "pmid": "42410011",
-        "summary": "Elevated intraocular pressure (IOP) is the primary risk factor for glaucoma, yet IOP demonstrates significant circadian rhythms whose underlying mechanisms remain incompletely understood, and disruption of this rhythm heightens disease susceptibility. …",
-        "abstract": "Elevated intraocular pressure (IOP) is the primary risk factor for glaucoma, yet IOP demonstrates significant circadian rhythms whose underlying mechanisms remain incompletely understood, and disruption of this rhythm heightens disease susceptibility. A paradox exists in that both diurnal and nocturnal animals experience nocturnal IOP elevation despite their contrasting behavioral chronotypes. Here, we developed a minimal mathematical framework in which IOP rhythms arise from the linear superposition of two sinusoidal signals: adrenal glucocorticoids (GC) and norepinephrine (NE) from the superior cervical ganglion. In both diurnal and nocturnal species, NE levels increase at night, while GC levels peak oppositely in the morning and evening. A meta-analysis of published datasets showed that IOP peaks in the early night for nocturnal animals and in the late night for diurnal animals, align",
-        "country": "日本",
-        "ptype": "",
-        "zh": "",
-        "zh_sum": ""
-      },
-      {
-        "title": "Australian and New Zealand Glaucoma Society (ANZGS) Consensus on Interventional Glaucoma.",
-        "journal": "Clin Exp Ophthalmol",
-        "date": "2026",
-        "pmid": "42409625",
-        "summary": "This Australian and New Zealand Glaucoma Society consensus on interventional glaucoma advocates for a shift towards an interventional paradigm. By utilising advanced diagnostics and timely procedural interventions, clinicians can better preserve visual function and optimise long-term patient quality of life.",
-        "abstract": "BACKGROUND: Traditional reactive 'wait and see' approaches in glaucoma management often result in unacceptable rates of permanent vision loss. This consensus defines a proactive 'interventional glaucoma' framework tailored for the Australian and New Zealand healthcare context. METHODS: A modified Delphi consensus process was utilised, consisting of a lead panel of 12 experts (10 Australian, 1 New Zealand, and 1 Singaporean) and a validation cohort of 55 glaucoma specialists and ophthalmologists. Consensus was established via live panel presentations and real-time electronic polling. Participants evaluated statements using a three-tier scale: agree, stand aside, or object, with a pre-defined consensus threshold of an objection rate < 20%. RESULTS: Twelve consensus statements were ratified. Key points include the formalised classification of glaucoma as a progressive optic neuropathy and t",
-        "country": "澳洲",
-        "ptype": "",
-        "zh": "",
-        "zh_sum": ""
-      },
-      {
         "title": "Glaucoma.",
         "journal": "BMJ",
         "date": "2013",
@@ -7898,6 +7898,18 @@
         "zh_sum": ""
       },
       {
+        "title": "Evaluating glaucoma surgeries in the MIGS context.",
+        "journal": "Rom J Ophthalmol",
+        "date": "2020",
+        "pmid": "32685772",
+        "summary": "The challenges of glaucoma management are many: the disease is chronic, progressive, often asymptomatic, and very often, the quality of life and costs of treatment is unacceptable to the patient. This is true for both medical therapy and conventional glaucoma surgery. …",
+        "abstract": "The challenges of glaucoma management are many: the disease is chronic, progressive, often asymptomatic, and very often, the quality of life and costs of treatment is unacceptable to the patient. This is true for both medical therapy and conventional glaucoma surgery. The choice of therapy, especially the transition from the former to the latter, is now being bridged by Minimally Invasive Glaucoma Surgeries (MIGS). Choosing from the several options now available in the surgical armamentarium requires a deeper understanding of the available modalities. This review aims to provide an overview of the decision-making process, keeping in mind age, type of glaucoma, life expectancy, socioeconomic status, patient expectations, and coexisting cataract.",
+        "country": "印度",
+        "ptype": "文獻回顧",
+        "zh": "",
+        "zh_sum": ""
+      },
+      {
         "title": "Minimally Invasive Glaucoma Surgery: A Critical Appraisal of the Literature.",
         "journal": "Annu Rev Vis Sci",
         "date": "2020",
@@ -7930,7 +7942,7 @@
         "abstract": "BACKGROUND: Glaucoma is a leading cause of irreversible blindness. Subconjunctival draining minimally-invasive glaucoma devices such as the Xen gelatin implant and InnFocus stent have been introduced as a treatment to prevent glaucoma progressing.These implants provide a channel to allow aqueous humour from the anterior chamber of the eye to drain into the subconjunctival space on the surface of the eye thus reducing intraocular pressure (IOP) and mimicking the mechanism of the most commonly undertaken glaucoma surgery, trabeculectomy. OBJECTIVES: To evaluate the efficacy and safety of subconjunctival draining minimally-invasive glaucoma devices in treating people with open angle glaucoma and ocular hypertension whose condition is inadequately controlled with drops. SEARCH METHODS: We searched the Cochrane Central Register of Controlled Trials (CENTRAL; which contains the Cochrane Eyes a",
         "country": "英國",
         "ptype": "系統性回顧",
-        "zh": "",
+        "zh": "用於醫學上無法控制的青光眼的結膜下引流微創青光眼設備。",
         "zh_sum": ""
       },
       {
@@ -7967,18 +7979,6 @@
         "country": "美國",
         "ptype": "文獻回顧",
         "zh": "治療青光眼的新藥物療法。",
-        "zh_sum": ""
-      },
-      {
-        "title": "August consultation #5.",
-        "journal": "J Cataract Refract Surg",
-        "date": "2018",
-        "pmid": "30115285",
-        "summary": "",
-        "abstract": "",
-        "country": "美國",
-        "ptype": "",
-        "zh": "八月諮商＃5。",
         "zh_sum": ""
       },
       {
@@ -8066,18 +8066,6 @@
         "zh_sum": ""
       },
       {
-        "title": "Evaluating glaucoma surgeries in the MIGS context.",
-        "journal": "Rom J Ophthalmol",
-        "date": "2020",
-        "pmid": "32685772",
-        "summary": "The challenges of glaucoma management are many: the disease is chronic, progressive, often asymptomatic, and very often, the quality of life and costs of treatment is unacceptable to the patient. This is true for both medical therapy and conventional glaucoma surgery. …",
-        "abstract": "The challenges of glaucoma management are many: the disease is chronic, progressive, often asymptomatic, and very often, the quality of life and costs of treatment is unacceptable to the patient. This is true for both medical therapy and conventional glaucoma surgery. The choice of therapy, especially the transition from the former to the latter, is now being bridged by Minimally Invasive Glaucoma Surgeries (MIGS). Choosing from the several options now available in the surgical armamentarium requires a deeper understanding of the available modalities. This review aims to provide an overview of the decision-making process, keeping in mind age, type of glaucoma, life expectancy, socioeconomic status, patient expectations, and coexisting cataract.",
-        "country": "印度",
-        "ptype": "文獻回顧",
-        "zh": "在 MIGS 背景下評估青光眼手術。",
-        "zh_sum": ""
-      },
-      {
         "title": "[Modern methods of minimally invasive glaucoma surgery].",
         "journal": "Vestn Oftalmol",
         "date": "2016",
@@ -8098,7 +8086,7 @@
         "abstract": "Cataract and glaucoma are the leading causes of blindness worldwide and commonly coexist in elderly patients. Endocyclophotocoagulation is a minimally invasive approach for glaucoma management that is amenable to combination with cataract surgery. We review the literature on endocyclophotocoagulation and evaluate intraocular pressure reduction efficacy when combined with phacoemulsification. Several studies demonstrate that phacoemulsification and endocyclophotocoagulation successfully reduces intraocular pressure and decreases medication burden. Phacoemulsification and endocyclophotocoagulation has a minimal side effect profile, and risks are limited to those usual postphacoemulsification. Most importantly, phacoemulsification and endocyclophotocoagulation allow for all future procedures, including trabeculectomy or tube implantation if necessary.",
         "country": "美國",
         "ptype": "文獻回顧",
-        "zh": "联合睫状体光凝术和超声乳化术治疗中度青光眼。",
+        "zh": "合併睫狀體光凝固術和超音波乳化術治療中度青光眼。",
         "zh_sum": ""
       },
       {
@@ -8170,7 +8158,19 @@
         "abstract": "Although eye drops are frequently used as an initial treatment option for open angle glaucoma (OAG), side effects, and poor adherence, among others, may compromise treatment efficacy. In this scenario, laser trabeculoplasty is an interesting therapeutic option for open angle glaucoma cases. Commonly used for many years as a last alternative prior to glaucoma incisional surgery, laser trabeculoplasty has been changing its indication after the advent of selective laser trabeculoplasty (SLT). In the current review, we critically evaluated the published data regarding the use of laser trabeculoplasty as a first treatment option for open angle glaucoma patients. Studies using SLT as a first-line treatment have encouraging findings. One-year efficacy results are comparable to those obtained with prostaglandin analogues, with a good safety profile. Although the laser´s effect is known to be tra",
         "country": "巴西",
         "ptype": "文獻回顧",
-        "zh": "选择性激光小梁成形术作为开角型青光眼的初始治疗选择。",
+        "zh": "選擇性雷射小梁成形術作為開角型青光眼的初始治療選擇。",
+        "zh_sum": ""
+      },
+      {
+        "title": "Contemporary management of refractory pediatric glaucoma.",
+        "journal": "Curr Opin Ophthalmol",
+        "date": "2020",
+        "pmid": "31895153",
+        "summary": "PURPOSE OF REVIEW: The management of pediatric glaucoma poses a unique challenge in terms of maintaining lifelong vision and combating an aggressive scarring response from surgery. …",
+        "abstract": "PURPOSE OF REVIEW: The management of pediatric glaucoma poses a unique challenge in terms of maintaining lifelong vision and combating an aggressive scarring response from surgery. Contemporary literature regarding the surgical management of children with pediatric glaucoma who fail, or are at a high risk of failure, from conventional surgery is limited. The aim of this review is to highlight recent developments in relation to the current opinion regarding the management of children with refractory pediatric glaucoma. RECENT FINDINGS: Some studies have reported impressive success rates with circumferential trabeculotomy, even in eyes with previous failed surgery. Early results of deep sclerectomy in populations which may not respond well to conventional angle surgery are encouraging but data is limited for the pediatric age group. In compliant patients in whom multiple postoperative exam",
+        "country": "",
+        "ptype": "文獻回顧",
+        "zh": "難治性小兒青光眼的當代治療。",
         "zh_sum": ""
       },
       {
@@ -8655,6 +8655,30 @@
       }
     ],
     "retina": [
+      {
+        "title": "One-Year Results of Geographic Atrophy Patients with Pre-Existing nAMD treated with both anti-VEGF therapy and pegcetacoplan.",
+        "journal": "Retina",
+        "date": "2026",
+        "pmid": "42467820",
+        "summary": "Concurrent anti-VEGF and pegcetacoplan therapy was associated with an overall reduction in GA lesion growth rate and stabilized nAMD.",
+        "abstract": "PURPOSE: To examine geographic atrophy (GA) progression in patients receiving pegcetacoplan injections with pre-existing neovascular age-related macular degeneration (nAMD) treated previously and concurrently with anti-VEGF (vascular endothelial growth factor) injections. METHODS: Retrospective cohort study of 31 nAMD and co-existing GA patients from March 2023 to July 2025. Inclusion criteria were previous anti-VEGF treatment for ≥1 year and concurrent anti-VEGF and pegcetacoplan treatments in the following year. Subfoveal GA patients were excluded. Spectral-domain optical coherence tomography (OCT), infrared reflectance (IR) data, fundus autofluorescence, and fundus photography were used to measure GA area at five time points: 1 year before pegcetacoplan initiation, then every 6 months until 1 year after pegcetacoplan initiation. Longitudinal change in GA area was analyzed using a line",
+        "country": "美國",
+        "ptype": "",
+        "zh": "",
+        "zh_sum": ""
+      },
+      {
+        "title": "Short-Term Intraocular Pressure Changes After Intravitreal Aflibercept 8 mg via Prefilled Syringe.",
+        "journal": "Ophthalmol Ther",
+        "date": "2026",
+        "pmid": "42467134",
+        "summary": "Intravitreal aflibercept 8 mg administered via PFS was associated with a transient rise in IOP immediately after injection, which resolved within 15 min and was similar to that observed with aflibercept 2 mg via PFS and aflibercept 8 mg via standard syringe. …",
+        "abstract": "INTRODUCTION: Intravitreal anti-vascular endothelial growth factor (anti-VEGF) therapy is a standard treatment for neovascular age-related macular degeneration (nAMD) and diabetic macular oedema (DMO). A transient rise in intraocular pressure (IOP) following injection is a well-established short-term effect. Aflibercept 8 mg has recently been introduced in a prefilled syringe (PFS), although data on its short-term effect on IOP are still lacking. The aim of this study was to assess short-term IOP changes after intravitreal aflibercept 8 mg administered via PFS and to compare these results with historical cohorts receiving aflibercept 8 mg via standard syringe and aflibercept 2 mg via PFS. METHODS: This single-centre comparative observational cohort study included a prospectively enrolled cohort of patients with nAMD or DMO receiving aflibercept 8 mg via PFS (0.07 mL), while two retrospec",
+        "country": "瑞士",
+        "ptype": "",
+        "zh": "",
+        "zh_sum": ""
+      },
       {
         "title": "Serum NLR, PLR and MNV characteristics as predictors of anti-VEGF plus glucocorticoid efficacy in nAMD.",
         "journal": "Biomark Med",
@@ -9168,30 +9192,6 @@
         "abstract": "Despite the paradigm shift brought about by anti-VEGF therapy against neovascular age-related macular degeneration, significant challenges persist, including the risk of intraocular infection and retinal structural damage caused by frequent intravitreal injections, suboptimal long-term outcomes in some patients, as well as economic and psychological burdens. Attempts to identify novel therapeutic targets with more compliant drug delivery strategies are warranted. In this study, we identify that nucleolin (NCL) is upregulated in choroidal neovascularization lesions and mobilized to the endothelial cell surface upon VEGF stimulation. Inspired by this localization change and the critical role of NCL in angiogenesis, we developed an integrated delivery and degradation platform, named dNCL@tFNAs, which leverages tetrahedral framework nucleic acids (tFNAs) to decorate an aptamer-based proteoly",
         "country": "中國",
         "ptype": "",
-        "zh": "",
-        "zh_sum": ""
-      },
-      {
-        "title": "Suppressing angiogenic phenotypes in retinal cell models through light-triggered anti-VEGF release from upconversion nanoparticle-loaded chitosan microgels.",
-        "journal": "Colloids Surf B Biointerfaces",
-        "date": "2026",
-        "pmid": "42372461",
-        "summary": "Anti-VEGF injections are effective for neovascular age-related macular degeneration (nAMD) but require frequent intravitreal dosing and provide limited spatiotemporal control. …",
-        "abstract": "Anti-VEGF injections are effective for neovascular age-related macular degeneration (nAMD) but require frequent intravitreal dosing and provide limited spatiotemporal control. We engineered injectable chitosan-methacrylate (ChiMA) microgels that co-localize upconversion nanoparticles (UCNPs) with a photocaged anti-VEGF peptide to enable on-demand, near-infrared (980 nm)-triggered release. Colloidal UCNPs (β-NaYF₄: Yb,Tm core/shell) were synthesized via a thermal decomposition method and subsequently embedded into visible-light-crosslinked ChiMA microgels together with a nitrobenzyl-linked anti-VEGF peptide. We quantified microgel morphology, swelling and injectability, peptide loading/release under near infra-red (NIR) irradiation (20 mW/cm2) and durations (30 min), and cytocompatibility in MIO-M1, RPE-1, and HUVEC cells. Anti-angiogenic activity was assessed by VEGF-driven scratch migra",
-        "country": "",
-        "ptype": "",
-        "zh": "",
-        "zh_sum": ""
-      },
-      {
-        "title": "Presumed Sterile Cluster Endophthalmitis following Intravitreal Triamcinolone Acetonide: A Rare Case Series.",
-        "journal": "Case Rep Ophthalmol",
-        "date": "2026",
-        "pmid": "42369810",
-        "summary": "PSE may occur after combined IVTA. Early diagnosis, prompt vitrectomy, and intravitreal antibiotics with steroids are critical for favorable outcomes. The visual prognosis is generally good and depends largely on timely intervention and the status of the underlying retinal disease.",
-        "abstract": "INTRODUCTION: Presumed sterile endophthalmitis (PSE) is a noninfectious inflammatory reaction that mimics infectious endophthalmitis following intravitreal injections. It is a rare but clinically significant complication of intravitreal triamcinolone acetonide (IVTA). This case report describes the clinical presentation, diagnosis, and management of PSE following combined IVTA and anti-vascular endothelial growth factor (VEGF) therapy in patients with chronic diabetic macular edema. CASE PRESENTATION: In a single operative theater setting, 8 patients received intravitreal anti-VEGF injections and 3 patients received a combination of anti-VEGF (ranibizumab) with triamcinolone acetonide (Aurocort). All injections were performed under sterile precautions. All 3 patients who received combined therapy developed sudden-onset of symptoms within 24 h post-injection, presenting with severe pain, ",
-        "country": "印度",
-        "ptype": "病例報告",
         "zh": "",
         "zh_sum": ""
       },
@@ -10098,6 +10098,42 @@
     ],
     "dryeye": [
       {
+        "title": "Contact Lenses and Vision-Related Quality of Life: Evidence and Clinical Insights.",
+        "journal": "Clin Optom (Auckl)",
+        "date": "2026",
+        "pmid": "42465553",
+        "summary": "Contact lenses provide significant and clinically meaningful gains in VR-QoL among adult and pediatric patients with refractive error, keratoconus, ocular surface disease or dry eye, and other indications. The VR-QoL benefits of contact lenses may exceed those achieved with spectacles.",
+        "abstract": "BACKGROUND: Contact lenses are a cornerstone of vision correction for ametropia and can be of particular value for management of irregular astigmatism and corneal ectasia. Beyond objective measures of visual acuity and corneal health, patient-reported outcomes and vision-related quality of life (VR-QoL) have emerged as critical endpoints. This review aimed to synthesize evidence on VR-QoL outcomes with contact lenses. METHODS: We conducted a narrative review of studies published between 2000 and 2025 on the influence of various contact lens modalities including soft conventional lenses, rigid gas-permeable (RGP) lenses, scleral and mini-scleral lenses, orthokeratology, and specialty designs on VR-QoL across myopia, keratoconus, dry-eye disease, and other conditions. Descriptive tables were developed for all identified studies, and a synthesis of the impact of contact lenses on VR-QoL fin",
+        "country": "美國",
+        "ptype": "文獻回顧",
+        "zh": "",
+        "zh_sum": ""
+      },
+      {
+        "title": "Topical cyclosporine A therapy for dry eye disease.",
+        "journal": "Cochrane Database Syst Rev",
+        "date": "2026",
+        "pmid": "42464966",
+        "summary": "Low-certainty evidence suggests that topical CsA may improve DED symptoms and certain clinical signs compared with vehicle or artificial tears. However, results for DED symptoms and tear parameters were inconsistent and highly heterogeneous. Higher CsA concentrations were associated with increased treatment discontinuation. …",
+        "abstract": "RATIONALE: Ocular surface inflammation is a key component of dry eye disease (DED). Topical cyclosporine A (CsA) is commonly used to treat DED. However, uncertainty remains regarding its benefits and harms, despite extensive clinical evaluation. This updates a Cochrane review published in 2019. OBJECTIVES: To assess the benefits and harms of topical CsA in the treatment of dry eye disease. SEARCH METHODS: We used CENTRAL, MEDLINE, Embase, two other databases, and two trial registers, together with reference checking, to identify studies included in the review. The latest search date was 17 March 2026. ELIGIBILITY CRITERIA: We included randomized controlled trials (RCTs) in participants with DED, regardless of age, sex, disease severity, or etiology, that compared topical CsA with its vehicle (the formulation without the active ingredient), artificial tears, or alternative CsA formulation",
+        "country": "印度",
+        "ptype": "統合分析",
+        "zh": "",
+        "zh_sum": ""
+      },
+      {
+        "title": "Efficacy and safety of topical macrolides versus systemic tetracyclines for meibomian gland dysfunction-a systematic review and meta-analysis.",
+        "journal": "Acta Ophthalmol",
+        "date": "2026",
+        "pmid": "42464955",
+        "summary": "Both topical azithromycin and oral doxycycline are effective for MGD management. Topical azithromycin demonstrated a more favourable safety profile and may represent a useful therapeutic option, particularly for patients with low tolerance to systemic medications. …",
+        "abstract": "PURPOSE: To review the efficacy and safety of oral doxycycline antibiotics versus topical macrolides in the treatment of meibomian gland dysfunction (MGD). DESIGN: Systematic review and meta-analysis. METHODS: A comprehensive search of PubMed, Scopus, Embase, and ClinicalTrials.gov through December 2024 identified randomised controlled trials (RCTs) comparing oral tetracyclines with topical macrolides for MGD. Eligible studies reported outcomes related to tear film stability, meibomian gland function, ocular surface health, or symptom severity. Data extraction followed PRISMA guidelines and risk of bias was assessed using Cochrane methods. RESULTS: Among 3699 publications (1964-2024), six RCTs from distinct locations (374 patients) met inclusion criteria, describing only topical azithromycin and oral doxycycline. Treatment regimens were comparable: one month of topical azithromycin (1-1.",
+        "country": "以色列",
+        "ptype": "文獻回顧",
+        "zh": "",
+        "zh_sum": ""
+      },
+      {
         "title": "The Correlation between Erythrocyte Sedimentation Rate and C-reactive Protein Ratio, and Lipid Profile in Dyslipidemia Patients with Dry Eye Disease.",
         "journal": "Recent Adv Inflamm Allergy Drug Discov",
         "date": "2026",
@@ -10602,42 +10638,6 @@
         "zh_sum": ""
       },
       {
-        "title": "Okra eyelid patch versus sodium hyaluronate combined with ofloxacin eye drop in the treatment of meibomian gland dysfunction: a randomized controlled trial.",
-        "journal": "BMC Ophthalmol",
-        "date": "2026",
-        "pmid": "42374237",
-        "summary": "Okra eyelid patch has a more significant effect on MGD, especially in improving symptoms and signs, increasing lipid layer thickness, improving tear film stability, maintaining corneal epithelial integrity, and improving the quality of meibomian gland acini compared with artificial tears combining ofloxacin eye drops. …",
-        "abstract": "BACKGROUND: To evaluate the clinical efficacy of okra eyelid patch versus sodium hyaluronate combined with ofloxacin eye drop in the treatment of patients suffering from meibomian gland dysfunction (MGD). METHODS: 40 patients included were randomly divided into 2 groups: okra eyelid patch group (n = 20) and control group (n = 20). Before treatment, on the 14th and 28th day of treatment, the following ophthalmic examinations were performed: symptoms and signs score, Schirmer I test (SIT), tear film break-up time (TBUT), corneal fluorescein staining (CFS), optical quality analysis system (OQAS II) and ocular surface interferometer examination. Ocular surface disease index (OSDI) questionnaire score and in vivo confocal microscopy (IVCM) were performed before treatment and on the 28th day of treatment. Adverse effects were reported during the treatment period. Results were analyzed by SPSS ",
-        "country": "中國",
-        "ptype": "",
-        "zh": "",
-        "zh_sum": ""
-      },
-      {
-        "title": "A Randomized Controlled Trial of Auricular Acupressure Combined with Sodium Hyaluronate for Abnormal Blink Reflex in Children.",
-        "journal": "J Vis Exp",
-        "date": "2026",
-        "pmid": "42372056",
-        "summary": "Abnormal blink reflex in children is a common ocular symptom with complex causes, including ocular surface diseases like dry eye and inflammation, as well as neuromuscular dysfunction. Current treatments show limited efficacy, highlighting the need for improved therapeutic options. …",
-        "abstract": "Abnormal blink reflex in children is a common ocular symptom with complex causes, including ocular surface diseases like dry eye and inflammation, as well as neuromuscular dysfunction. Current treatments show limited efficacy, highlighting the need for improved therapeutic options. This study evaluates the clinical efficacy and safety of auricular acupressure combined with sodium hyaluronate eye drops. A randomized controlled design included 97 children aged 3-10 years with abnormal blink reflex. Participants were randomly assigned to three groups: the control group (Group A, n = 32), treated with sodium hyaluronate eye drops; the experimental group (Group B, n = 33), receiving eye drops combined with auricular acupressure using Vaccaria seed patches; and the sham stimulation group (Group C, n = 32), receiving ear patches without Vaccaria seed. The treatment lasted for three cycles. The ",
-        "country": "",
-        "ptype": "隨機對照試驗(RCT)",
-        "zh": "",
-        "zh_sum": ""
-      },
-      {
-        "title": "Using Lotilaner Ophthalmic Solution, 0.25% to Treat",
-        "journal": "Clin Optom (Auckl)",
-        "date": "2026",
-        "pmid": "42371506",
-        "summary": "These cases highlight patients with DB who were initially misdiagnosed and eventually treated with lotilaner ophthalmic solution, 0.25%. Each case exemplifies the utility of the DEPTH consensus findings in improving the diagnostic path for patients and eye care providers. …",
-        "abstract": "INTRODUCTION: Demodex blepharitis (DB) is a chronic ocular inflammation caused by Demodex mite infestation of the eyelid. DB is often misdiagnosed, as some of its clinical findings and patient-reported outcomes overlap with those of other ocular surface diseases. The Demodex Expert Panel on Treatment and Eyelid Health (DEPTH) has reached consensus on the symptomatology, diagnosis, and treatment of DB. Consensus findings from the DEPTH group include that collarettes are pathognomonic for DB and that lotilaner ophthalmic solution, 0.25%, the first and only FDA-approved treatment for DB, should be the first-line treatment for the disease. This case series highlights two instances of misdiagnosis that were subsequently re-evaluated using consensus findings from the DEPTH group, leading to a correct diagnosis and effective treatment with XDEMVY® (lotilaner ophthalmic solution) 0.25%. CASE REP",
-        "country": "美國",
-        "ptype": "病例報告",
-        "zh": "",
-        "zh_sum": ""
-      },
-      {
         "title": "TFOS DEWS II Management and Therapy Report.",
         "journal": "Ocul Surf",
         "date": "2017",
@@ -10878,6 +10878,18 @@
         "zh_sum": ""
       },
       {
+        "title": "Lifitegrast Ophthalmic Solution 5%: A Review in Dry Eye Disease.",
+        "journal": "Drugs",
+        "date": "2017",
+        "pmid": "28058622",
+        "summary": "Lifitegrast is a novel small molecule integrin antagonist that blocks the binding of intercellular adhesion molecule 1 (ICAM-1) to lymphocyte function-associated antigen 1 (LFA-1). Lifitegrast ophthalmic solution 5% (Xiidra™) was recently approved in the USA for the treatment of dry eye disease. …",
+        "abstract": "Lifitegrast is a novel small molecule integrin antagonist that blocks the binding of intercellular adhesion molecule 1 (ICAM-1) to lymphocyte function-associated antigen 1 (LFA-1). Lifitegrast ophthalmic solution 5% (Xiidra™) was recently approved in the USA for the treatment of dry eye disease. The efficacy of lifitegrast ophthalmic solution 5% was compared with vehicle in a 12-week phase 2 study and three 12-week phase 3 studies (OPUS-1, OPUS-2 and OPUS-3) in patients with dry eye disease. Taken as a whole, results of these trials support the treatment effect of lifitegrast ophthalmic solution 5% in improving a symptom of dry eye disease (i.e. the change from baseline to day 84 in the eye dryness visual analogue scale score) and a sign of dry eye disease (i.e. the change from baseline to day 84 in the inferior corneal fluorescein staining score). Lifitegrast ophthalmic solution 5% was ",
+        "country": "紐西蘭",
+        "ptype": "文獻回顧",
+        "zh": "Lifitegrast 眼用溶液 5%：乾眼症綜述。",
+        "zh_sum": ""
+      },
+      {
         "title": "Intense pulsed light treatment in meibomian gland dysfunction: A concise review.",
         "journal": "Ocul Surf",
         "date": "2020",
@@ -10899,6 +10911,18 @@
         "country": "",
         "ptype": "文獻回顧",
         "zh": "Lifitegrast、Bezlotoxumab 和 Sugammadex 鈉。",
+        "zh_sum": ""
+      },
+      {
+        "title": "Lifitegrast, a Novel Integrin Antagonist for Treatment of Dry Eye Disease.",
+        "journal": "Ocul Surf",
+        "date": "2016",
+        "pmid": "26807723",
+        "summary": "The etiology of dry eye disease (DED) is complex and not yet fully understood, but the disease is now recognized as being associated with ocular surface inflammation. The latest advances in the understanding of the pathophysiology of DED have directed the focus of recent drug development to target the inflammatory pathways involved in the …",
+        "abstract": "The etiology of dry eye disease (DED) is complex and not yet fully understood, but the disease is now recognized as being associated with ocular surface inflammation. The latest advances in the understanding of the pathophysiology of DED have directed the focus of recent drug development to target the inflammatory pathways involved in the disease. Lifitegrast is a novel small molecule integrin antagonist that inhibits T cell-mediated inflammation by blocking the binding of two important cell surface proteins (lymphocyte function-associated antigen 1 and intercellular adhesion molecule 1), thus lessening overall inflammatory responses. This review highlights the role of T cells and integrins in the inflammatory process involved in the pathophysiology of DED and outlines the scientific rationale for the role of lifitegrast. In addition, the preclinical development, pharmacological properti",
+        "country": "美國",
+        "ptype": "文獻回顧",
+        "zh": "Lifitegrast，一種用於治療乾眼症的新型整合素拮抗劑。",
         "zh_sum": ""
       },
       {
@@ -10935,6 +10959,18 @@
         "country": "",
         "ptype": "",
         "zh": "關注乾眼症。",
+        "zh_sum": ""
+      },
+      {
+        "title": "Lifitegrast Ophthalmic Solution 5.0% for Treatment of Dry Eye Disease: Overview of Clinical Trial Program.",
+        "journal": "J Pharm Pharm Sci",
+        "date": "2019",
+        "pmid": "30636670",
+        "summary": "Dry eye disease (DED) is a common inflammatory disorder of the ocular surface. Millions of people are affected by DED worldwide. Lifitegrast is a novel drug designed to inhibit DED-associated ocular inflammation. …",
+        "abstract": "Dry eye disease (DED) is a common inflammatory disorder of the ocular surface. Millions of people are affected by DED worldwide. Lifitegrast is a novel drug designed to inhibit DED-associated ocular inflammation. Four clinical trials have shown that lifitegrast is well tolerated and effective in improving symptoms and signs of DED over 12 weeks. A fifth trial showed long-term safety over 1 year. Lifitegrast has been in clinical use for more than one year in the United States and was recently approved in Canada (in December 2017). In this review, we discuss lifitegrast's novel mechanism of action and provide an overview of its clinical trial program.",
+        "country": "加拿大",
+        "ptype": "文獻回顧",
+        "zh": "Lifitegrast 眼用溶液 5.0% 用於治療乾眼症：臨床試驗計劃概述。",
         "zh_sum": ""
       },
       {
@@ -10998,30 +11034,6 @@
         "zh_sum": ""
       },
       {
-        "title": "Lifitegrast Ophthalmic Solution 5%: A Review in Dry Eye Disease.",
-        "journal": "Drugs",
-        "date": "2017",
-        "pmid": "28058622",
-        "summary": "Lifitegrast is a novel small molecule integrin antagonist that blocks the binding of intercellular adhesion molecule 1 (ICAM-1) to lymphocyte function-associated antigen 1 (LFA-1). Lifitegrast ophthalmic solution 5% (Xiidra™) was recently approved in the USA for the treatment of dry eye disease. …",
-        "abstract": "Lifitegrast is a novel small molecule integrin antagonist that blocks the binding of intercellular adhesion molecule 1 (ICAM-1) to lymphocyte function-associated antigen 1 (LFA-1). Lifitegrast ophthalmic solution 5% (Xiidra™) was recently approved in the USA for the treatment of dry eye disease. The efficacy of lifitegrast ophthalmic solution 5% was compared with vehicle in a 12-week phase 2 study and three 12-week phase 3 studies (OPUS-1, OPUS-2 and OPUS-3) in patients with dry eye disease. Taken as a whole, results of these trials support the treatment effect of lifitegrast ophthalmic solution 5% in improving a symptom of dry eye disease (i.e. the change from baseline to day 84 in the eye dryness visual analogue scale score) and a sign of dry eye disease (i.e. the change from baseline to day 84 in the inferior corneal fluorescein staining score). Lifitegrast ophthalmic solution 5% was ",
-        "country": "紐西蘭",
-        "ptype": "文獻回顧",
-        "zh": "Lifitegrast 眼用溶液 5%：乾眼症綜述。",
-        "zh_sum": ""
-      },
-      {
-        "title": "Lifitegrast, a Novel Integrin Antagonist for Treatment of Dry Eye Disease.",
-        "journal": "Ocul Surf",
-        "date": "2016",
-        "pmid": "26807723",
-        "summary": "The etiology of dry eye disease (DED) is complex and not yet fully understood, but the disease is now recognized as being associated with ocular surface inflammation. The latest advances in the understanding of the pathophysiology of DED have directed the focus of recent drug development to target the inflammatory pathways involved in the …",
-        "abstract": "The etiology of dry eye disease (DED) is complex and not yet fully understood, but the disease is now recognized as being associated with ocular surface inflammation. The latest advances in the understanding of the pathophysiology of DED have directed the focus of recent drug development to target the inflammatory pathways involved in the disease. Lifitegrast is a novel small molecule integrin antagonist that inhibits T cell-mediated inflammation by blocking the binding of two important cell surface proteins (lymphocyte function-associated antigen 1 and intercellular adhesion molecule 1), thus lessening overall inflammatory responses. This review highlights the role of T cells and integrins in the inflammatory process involved in the pathophysiology of DED and outlines the scientific rationale for the role of lifitegrast. In addition, the preclinical development, pharmacological properti",
-        "country": "美國",
-        "ptype": "文獻回顧",
-        "zh": "Lifitegrast，一種用於治療乾眼症的新型整合素拮抗劑。",
-        "zh_sum": ""
-      },
-      {
         "title": "Intense pulsed light therapy with meibomian gland expression for dry eye disease.",
         "journal": "Can J Ophthalmol",
         "date": "2020",
@@ -11031,18 +11043,6 @@
         "country": "",
         "ptype": "統合分析",
         "zh": "強烈脈衝光療法與瞼板腺表達治療乾眼症。",
-        "zh_sum": ""
-      },
-      {
-        "title": "Lifitegrast Ophthalmic Solution 5.0% for Treatment of Dry Eye Disease: Overview of Clinical Trial Program.",
-        "journal": "J Pharm Pharm Sci",
-        "date": "2019",
-        "pmid": "30636670",
-        "summary": "Dry eye disease (DED) is a common inflammatory disorder of the ocular surface. Millions of people are affected by DED worldwide. Lifitegrast is a novel drug designed to inhibit DED-associated ocular inflammation. …",
-        "abstract": "Dry eye disease (DED) is a common inflammatory disorder of the ocular surface. Millions of people are affected by DED worldwide. Lifitegrast is a novel drug designed to inhibit DED-associated ocular inflammation. Four clinical trials have shown that lifitegrast is well tolerated and effective in improving symptoms and signs of DED over 12 weeks. A fifth trial showed long-term safety over 1 year. Lifitegrast has been in clinical use for more than one year in the United States and was recently approved in Canada (in December 2017). In this review, we discuss lifitegrast's novel mechanism of action and provide an overview of its clinical trial program.",
-        "country": "加拿大",
-        "ptype": "文獻回顧",
-        "zh": "Lifitegrast 眼用溶液 5.0% 用於治療乾眼症：臨床試驗計劃概述。",
         "zh_sum": ""
       },
       {
