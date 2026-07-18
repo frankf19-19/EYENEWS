@@ -65,9 +65,13 @@ def read_csv(url):
     return rows
 
 def col(row, *keys):
-    for k in row.keys():
-        kk = (k or "").replace(" ", "")
-        for want in keys:
+    # 先找完全相符的欄位,再退子字串;keys 由精確到寬鬆
+    ks = {(k or "").replace(" ", "").replace("\u3000", ""): k for k in row.keys()}
+    for want in keys:
+        if want in ks:
+            return (row[ks[want]] or "").strip()
+    for want in keys:
+        for kk, k in ks.items():
             if want in kk:
                 return (row[k] or "").strip()
     return ""
@@ -85,18 +89,24 @@ def main():
         log("[%s] dataset %s" % (label, ds_id))
         url = resolve_csv_url(ds_id, rid)
         rows = read_csv(url)
+        # 診斷:整列含「眼科」的列數 + 前 2 列樣本
+        neye = sum(1 for r in rows if "眼科" in " ".join((v or "") for v in r.values()))
+        log("    rows containing 眼科:", neye)
+        for r in rows[:2]:
+            log("    sample name:", col(r, "醫事機構名稱", "機構名稱"), "| 科別:", col(r, "診療科別"))
         cnt = 0
         for row in rows:
-            name = col(row, "機構名稱", "名稱")
-            spec = col(row, "診療科別", "科別", "服務項目", "服務科別")
+            # 最穩篩選:整列任一欄位含「眼科」(名稱或診療科別)
+            rowvals = " ".join((v or "") for v in row.values())
+            if "眼科" not in rowvals:
+                continue
+            name = col(row, "醫事機構名稱", "機構名稱", "名稱")
             if not name:
                 continue
-            if ("眼科" not in spec) and ("眼科" not in name):
-                continue
-            if col(row, "終止合約", "歇業", "終止"):
+            if col(row, "終止合約或歇業日期", "終止合約", "歇業"):
                 continue
             addr = col(row, "地址")
-            code = col(row, "機構代碼", "代碼")
+            code = col(row, "醫事機構代碼", "機構代碼", "代碼")
             key = code or (name + addr)
             if key in seen:
                 continue
@@ -104,7 +114,7 @@ def main():
             out.append({
                 "name": name, "type": label, "region": region_of(addr), "addr": addr,
                 "phone": col(row, "電話"),
-                "hours": col(row, "固定看診時段", "看診時段", "服務時段", "看診時間"),
+                "hours": col(row, "固定看診時段", "看診時段", "服務時段"),
                 "code": code,
             })
             cnt += 1
