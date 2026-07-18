@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- 眼視光 Eye-Vision Hub | build r124 | 2026-07-11 | 公司資料全面查證+版本標示 -->
+<!-- 眼視光 Eye-Vision Hub | build r125 | 2026-07-11 | 公司資料全面查證+版本標示 -->
 <html lang="zh-Hant">
 <head>
 <meta charset="UTF-8">
@@ -672,7 +672,7 @@ footer .build{margin-top:8px;font-size:11px}
       <a data-view="about">關於</a>
     </nav>
     <div class="topbar-right">
-      <span class="ver" title="版本(部署後對照用)">r124</span>
+      <span class="ver" title="版本(部署後對照用)">r125</span>
       <button id="backBtn" type="button" aria-label="返回上一頁">← 返回</button>
     </div>
   </div>
@@ -989,7 +989,7 @@ footer .build{margin-top:8px;font-size:11px}
   <div class="wrap">
     眼視光資訊中心 · Eye-Vision Industry Hub<br>
     資料來源:Google News · PubMed / NCBI · 每日/每 6 小時自動更新
-    <div class="build">build r124 · <span id="buildStamp"></span></div>
+    <div class="build">build r125 · <span id="buildStamp"></span></div>
   </div>
 </footer>
 
@@ -1715,7 +1715,8 @@ function docList(c){
 }
 function clinicCardHTML(c,idx){
   const isC=(c.type||'').indexOf('診所')>=0;
-  const ndoc=(c.doctors&&c.doctors.length)?('<span class="cl-doccount">👨‍⚕️ '+c.doctors.length+' 位醫師</span>'):'';
+  const _dl=docLinkOf(c);
+  const ndoc=(c.doctors&&c.doctors.length)?('<span class="cl-doccount">👨‍⚕️ '+c.doctors.length+' 位醫師</span>'):(_dl?'<span class="cl-doccount">👨‍⚕️ 官網醫師陣容</span>':(c.ndoc?('<span class="cl-doccount">👨‍⚕️ 醫師 '+c.ndoc+' 位</span>'):''));
   return '<div class="clinic-card" data-cl="'+idx+'" role="button" tabindex="0"><div class="cl-top"><span class="cl-type '+(isC?'cl-clinic':'cl-hosp')+'">'+(c.type||'院所')+'</span><span class="cl-region">'+(c.region||'')+'</span></div>'+
     '<h4 class="cl-name">'+c.name+'</h4>'+
     '<div class="cl-row">📍 '+(c.addr||'—')+'</div>'+
@@ -1729,12 +1730,17 @@ function clinicDetailHTML(c){
   const isC=(c.type||'').indexOf('診所')>=0;
   const mapEmbed='https://www.google.com/maps?q='+encodeURIComponent((c.name||'')+' '+(c.addr||''))+'&output=embed';
   const gmap='https://www.google.com/maps/search/'+encodeURIComponent((c.name||'')+' '+(c.addr||''));
+  const dl=docLinkOf(c);
+  const dlBtn=dl?('<a class="cl-navlink" style="display:inline-block;margin:6px 0" href="'+dl.url+'" target="_blank" rel="noopener">👨‍⚕️ '+dl.label+' →</a>'):'';
   let docs;
-  if(c.doctors&&c.doctors.length){ docs=docList(c); }
+  if(c.doctors&&c.doctors.length){ docs=dlBtn+docList(c); }
   else if(c.owner){
-    docs='<div class="cl-docs"><span class="cl-docs-h">👨‍⚕️ 看診醫師</span>'+
+    docs=dlBtn+'<div class="cl-docs"><span class="cl-docs-h">👨‍⚕️ 看診醫師</span>'+
       '<div class="cl-doc" style="padding:4px 0"><b>'+c.owner+'</b> <span class="cl-doc-t">負責醫師</span></div>'+
       '<p class="cl-nodoc">負責醫師資料來自健保署官方名冊。其他醫師與詳細介紹目前無公開資料可自動取得;重點院所可建檔補充。</p></div>';
+  } else if(dl){
+    docs='<div class="cl-docs"><span class="cl-docs-h">👨‍⚕️ 看診醫師 / 醫師介紹</span>'+dlBtn+
+      '<p class="cl-nodoc">點上方按鈕直達該院所官網的醫師陣容頁(官方允許之超連結方式)。</p></div>';
   } else {
     docs='<div class="cl-docs"><span class="cl-docs-h">👨‍⚕️ 看診醫師 / 醫師介紹</span>'+
       '<p class="cl-nodoc">此院所的醫師名單與詳細介紹目前<b>無公開資料可自動取得</b>(全台醫事人員名單尚未開放為 open data)。若為重點/合作院所,可建檔後在此顯示完整醫師與專長介紹。</p></div>';
@@ -1788,7 +1794,18 @@ function initClinics(){
   const se=document.getElementById('clinicSearch');
   if(se)se.addEventListener('input',function(){CLINIC_QUERY=se.value; CLINIC_SHOWN=40; clearTimeout(CLINIC_TIMER); CLINIC_TIMER=setTimeout(renderClinics,200);});
 }
+let DOCLINKS=null;
+function docLinkOf(c){
+  if(!DOCLINKS)return null;
+  var n=(c.name||'');
+  var ex=DOCLINKS.exact||{};
+  for(var k in ex){ if(n.indexOf(k)>=0) return {url:ex[k], label:'官網醫師陣容'}; }
+  var cs=DOCLINKS.contains||[];
+  for(var i=0;i<cs.length;i++){ if(n.indexOf(cs[i].pat)>=0) return {url:cs[i].url, label:cs[i].label||'官網醫師陣容'}; }
+  return null;
+}
 async function loadClinics(){
+  try{const r0=await fetch('doclinks.json?_='+Date.now()); if(r0.ok)DOCLINKS=await r0.json();}catch(e){}
   try{const r=await fetch('clinics.json?_='+Date.now()); if(r.ok){const d=await r.json(); if(d&&d.clinics&&d.clinics.length)CLINICS_DATA=d;}}catch(e){}
   if(!CLINICS_DATA)CLINICS_DATA=CLINICS_SEED;
   const u=document.getElementById('clUpd'); if(u)u.textContent=(CLINICS_DATA&&CLINICS_DATA.updated)||"—";

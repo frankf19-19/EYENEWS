@@ -1,0 +1,11 @@
+{
+ "updated": "2026-07-18",
+ "note": "院所官網「醫師陣容/團隊」深度連結對照(僅超連結,符合醫療機構網際網路資訊管理辦法)。contains=名稱含關鍵字即套用(連鎖適用);exact=名稱完全相符。",
+ "contains": [
+  {"pat": "大學眼科", "url": "https://www.eyedoctor.com.tw/Clinic/Index", "label": "大學眼科官網:選分院看醫師團隊/門診表"},
+  {"pat": "諾貝爾", "url": "https://www.nobeleye.com.tw/doctor.php", "label": "諾貝爾眼科官網醫師陣容"}
+ ],
+ "exact": {
+  "國立臺灣大學醫學院附設醫院": "https://www.ntuh.gov.tw/OPH/Vcard.action?q_type=-1"
+ }
+}
