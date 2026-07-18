@@ -83,8 +83,28 @@ def region_of(addr):
             return c.replace("台", "臺")
     return ""
 
+def fetch_roster_owners():
+    """健保特約醫療院所名冊(dataset 168341)→ {醫事機構代碼: 負責醫師}"""
+    url = resolve_csv_url("168341", "A21030000I-D2100G-001")
+    rows = read_csv(url)
+    owners = {}
+    for r in rows:
+        code = col(r, "醫事機構代碼", "機構代碼")
+        owner = col(r, "負責醫師", "負責人")
+        if code and owner:
+            owners[code] = owner
+    log("roster owners:", len(owners))
+    if rows:
+        log("roster headers:", list(rows[0].keys()))
+    return owners
+
 def main():
     out, seen = [], set()
+    owners = {}
+    try:
+        owners = fetch_roster_owners()
+    except Exception as e:
+        log("roster fail:", e)
     for label, ds_id, rid in DATASETS:
         log("[%s] dataset %s" % (label, ds_id))
         url = resolve_csv_url(ds_id, rid)
@@ -117,12 +137,15 @@ def main():
             if key in seen:
                 continue
             seen.add(key)
-            out.append({
+            rec = {
                 "name": name, "type": label, "region": region_of(addr), "addr": addr,
                 "phone": col(row, "電話"),
                 "hours": col(row, "固定看診時段", "看診時段", "服務時段"),
                 "code": code,
-            })
+            }
+            if code and owners.get(code):
+                rec["owner"] = owners[code]
+            out.append(rec)
             cnt += 1
         log("[%s] matched %d eye institutions" % (label, cnt))
     order = {c.replace("台", "臺"): i for i, c in enumerate(
