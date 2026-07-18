@@ -95,15 +95,21 @@ def main():
         for r in rows[:2]:
             log("    sample name:", col(r, "醫事機構名稱", "機構名稱"), "| 科別:", col(r, "診療科別"))
         cnt = 0
+        dbg = 0
         for row in rows:
             # 最穩篩選:整列任一欄位含「眼科」(名稱或診療科別)
             rowvals = " ".join((v or "") for v in row.values())
             if "眼科" not in rowvals:
                 continue
             name = col(row, "醫事機構名稱", "機構名稱", "名稱")
+            if dbg < 3:
+                log("    eye-sample:", name, "| 終止欄=", repr(col(row, "終止合約或歇業日期", "終止合約", "歇業")))
+                dbg += 1
             if not name:
                 continue
-            if col(row, "終止合約或歇業日期", "終止合約", "歇業"):
+            # 終止/歇業:只有「看起來是真日期」才排除(空白、0、00000000 視為營業中)
+            term = re.sub(r"[^0-9]", "", col(row, "終止合約或歇業日期", "終止合約", "歇業"))
+            if term and term.strip("0"):
                 continue
             addr = col(row, "地址")
             code = col(row, "醫事機構代碼", "機構代碼", "代碼")
