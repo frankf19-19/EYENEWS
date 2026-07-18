@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- 眼視光 Eye-Vision Hub | build r123 | 2026-07-11 | 公司資料全面查證+版本標示 -->
+<!-- 眼視光 Eye-Vision Hub | build r124 | 2026-07-11 | 公司資料全面查證+版本標示 -->
 <html lang="zh-Hant">
 <head>
 <meta charset="UTF-8">
@@ -672,7 +672,7 @@ footer .build{margin-top:8px;font-size:11px}
       <a data-view="about">關於</a>
     </nav>
     <div class="topbar-right">
-      <span class="ver" title="版本(部署後對照用)">r123</span>
+      <span class="ver" title="版本(部署後對照用)">r124</span>
       <button id="backBtn" type="button" aria-label="返回上一頁">← 返回</button>
     </div>
   </div>
@@ -978,6 +978,7 @@ footer .build{margin-top:8px;font-size:11px}
       <div class="lit-search-row"><input id="clinicSearch" type="search" placeholder="搜尋院所:名稱／地址／區域(可中英)…" aria-label="搜尋眼科院所"><span id="clinicCount" class="lit-count"></span></div>
       <div class="range-row" id="clinicTypes"></div>
       <div class="range-row" id="clinicRegions"></div>
+      <div class="range-row" id="clinicDists"></div>
       <div class="clinic-grid" id="clinicGrid"></div>
     </div>
   </div>
@@ -988,7 +989,7 @@ footer .build{margin-top:8px;font-size:11px}
   <div class="wrap">
     眼視光資訊中心 · Eye-Vision Industry Hub<br>
     資料來源:Google News · PubMed / NCBI · 每日/每 6 小時自動更新
-    <div class="build">build r123 · <span id="buildStamp"></span></div>
+    <div class="build">build r124 · <span id="buildStamp"></span></div>
   </div>
 </footer>
 
@@ -1637,7 +1638,14 @@ function renderCalendar(){
   feed.innerHTML=(up.length?'<div class="cal-hd">近期即將舉行('+up.length+')</div>'+up.map(eventItemHTML).join(''):'')+
     (past.length?'<div class="cal-hd">近期已辦</div>'+past.map(eventItemHTML).join(''):'');
 }
-let CLINICS_DATA=null, CLINIC_REGION="all", CLINIC_TYPE="all", CLINIC_QUERY="", CLINIC_SHOWN=40, CLINIC_TIMER=null;
+let CLINICS_DATA=null, CLINIC_REGION="all", CLINIC_TYPE="all", CLINIC_DIST="all", CLINIC_QUERY="", CLINIC_SHOWN=40, CLINIC_TIMER=null;
+function distOf(c){
+  if(c._d!==undefined)return c._d;
+  var a=(c.addr||''); var r=(c.region||'');
+  if(r){ var i=a.indexOf(r.slice(-1)); a=a.replace(/^臺/,'臺'); if(a.indexOf(r)===0)a=a.slice(r.length); else if(a.replace(/^台/,'臺').indexOf(r)===0)a=a.replace(/^台/,'臺').slice(r.length); }
+  var m=a.match(/^([\u4e00-\u9fff]{1,3}?(?:區|鄉|鎮|市))/);
+  c._d=m?m[1]:''; return c._d;
+}
 const CLINIC_TYPES=["診所","地區醫院","區域醫院","醫學中心"];
 const TW_REGIONS=["臺北市","新北市","基隆市","桃園市","新竹市","新竹縣","苗栗縣","臺中市","彰化縣","南投縣","雲林縣","嘉義市","嘉義縣","臺南市","高雄市","屏東縣","宜蘭縣","花蓮縣","臺東縣","澎湖縣","金門縣","連江縣"];
 const CLINICS_SEED={updated:"種子資料(待 Actions 更新)",clinics:[
@@ -1665,6 +1673,17 @@ function renderClinicTypes(){
   let html='<button class="range-btn'+(CLINIC_TYPE==='all'?' on':'')+'" data-clt="all">全部類型 '+base.length+'</button>';
   CLINIC_TYPES.forEach(function(t){ const n=base.filter(function(c){return c.type===t;}).length; if(!n)return;
     html+='<button class="range-btn'+(CLINIC_TYPE===t?' on':'')+'" data-clt="'+t+'">'+t+' '+n+'</button>'; });
+  box.innerHTML=html;
+}
+function renderClinicDists(){
+  const box=document.getElementById('clinicDists'); if(!box)return;
+  if(CLINIC_REGION==='all'){box.innerHTML=''; return;}
+  const base=((CLINICS_DATA&&CLINICS_DATA.clinics)||[]).filter(function(c){return c.region===CLINIC_REGION && (CLINIC_TYPE==='all'||c.type===CLINIC_TYPE);});
+  const cnt={}; base.forEach(function(c){var d=distOf(c); if(d)cnt[d]=(cnt[d]||0)+1;});
+  const dists=Object.keys(cnt).sort(function(a,b){return cnt[b]-cnt[a];});
+  if(!dists.length){box.innerHTML=''; return;}
+  let html='<button class="range-btn'+(CLINIC_DIST==='all'?' on':'')+'" data-cld="all">全'+CLINIC_REGION+' '+base.length+'</button>';
+  dists.forEach(function(d){ html+='<button class="range-btn'+(CLINIC_DIST===d?' on':'')+'" data-cld="'+d+'">'+d+' '+cnt[d]+'</button>'; });
   box.innerHTML=html;
 }
 function renderClinicRegions(){
@@ -1702,6 +1721,7 @@ function clinicCardHTML(c,idx){
     '<div class="cl-row">📍 '+(c.addr||'—')+'</div>'+
     (c.phone?('<div class="cl-row">📞 '+c.phone+'</div>'):'')+
     (c.owner?('<div class="cl-row">👨‍⚕️ 負責醫師:'+c.owner+'</div>'):'')+
+    (c.ndoc?('<div class="cl-row">👨‍⚕️ 醫師 '+c.ndoc+' 位</div>'):'')+
     (c.hours?('<div class="cl-row cl-hours">🕒 '+(c.hours.length>60?(c.hours.slice(0,60)+'…'):c.hours)+'</div>'):'')+
     '<div class="cl-more">'+ndoc+'<span class="cl-more-go">查看詳細 →</span></div></div>';
 }
@@ -1726,6 +1746,7 @@ function clinicDetailHTML(c){
     (c.phone?('<div class="cl-drow">📞 <a href="tel:'+c.phone.replace(/[^0-9]/g,'')+'">'+c.phone+'</a></div>'):'')+
     (c.hours?('<div class="cl-drow">🕒 看診時間:'+c.hours+'</div>'):'')+
     (c.owner?('<div class="cl-drow">👨‍⚕️ 負責醫師:<b>'+c.owner+'</b></div>'):'')+
+    (c.ndoc?('<div class="cl-drow">👨‍⚕️ 執業醫師:<b>'+c.ndoc+' 位</b>(衛福部登記)</div>'):'')+
     '<iframe class="cl-map" src="'+mapEmbed+'" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>'+
     '<div class="cl-drow"><a class="cl-navlink" href="'+gmap+'" target="_blank" rel="noopener">🗺️ 開啟 Google 地圖 / 導航 →</a></div>'+
     docs+'</div>';
@@ -1742,6 +1763,7 @@ function renderClinics(){
   let list=((CLINICS_DATA&&CLINICS_DATA.clinics)||[]).slice();
   if(CLINIC_REGION!=='all')list=list.filter(function(c){return c.region===CLINIC_REGION;});
   if(CLINIC_TYPE!=='all')list=list.filter(function(c){return c.type===CLINIC_TYPE;});
+  if(CLINIC_REGION!=='all'&&CLINIC_DIST!=='all')list=list.filter(function(c){return distOf(c)===CLINIC_DIST;});
   const q=(CLINIC_QUERY||'').trim();
   if(q)list=list.filter(function(c){return biMatch([c.name,c.addr,c.region,c.type,c.phone].filter(Boolean).join(' '),q);});
   if(cnt)cnt.textContent='共 '+list.length.toLocaleString('en-US')+' 家';
@@ -1758,9 +1780,11 @@ function initClinics(){
     grid.addEventListener('keydown',function(e){ if(e.key!=='Enter'&&e.key!==' ')return; var card=e.target.closest('[data-cl]'); if(!card)return; e.preventDefault(); openClinicDetail((window.CLINIC_VIEW||[])[+card.dataset.cl]);});
   }
   const tb=document.getElementById('clinicTypes');
-  if(tb)tb.addEventListener('click',function(e){var b=e.target.closest('.range-btn'); if(!b)return; CLINIC_TYPE=b.dataset.clt; CLINIC_SHOWN=40; renderClinicTypes(); renderClinics();});
+  if(tb)tb.addEventListener('click',function(e){var b=e.target.closest('.range-btn'); if(!b)return; CLINIC_TYPE=b.dataset.clt; CLINIC_DIST='all'; CLINIC_SHOWN=40; renderClinicTypes(); renderClinicDists(); renderClinics();});
   const rb=document.getElementById('clinicRegions');
-  if(rb)rb.addEventListener('click',function(e){var b=e.target.closest('.range-btn'); if(!b)return; CLINIC_REGION=b.dataset.clr; CLINIC_SHOWN=40; renderClinicRegions(); renderClinicTypes(); renderClinics();});
+  if(rb)rb.addEventListener('click',function(e){var b=e.target.closest('.range-btn'); if(!b)return; CLINIC_REGION=b.dataset.clr; CLINIC_DIST='all'; CLINIC_SHOWN=40; renderClinicRegions(); renderClinicTypes(); renderClinicDists(); renderClinics();});
+  const db=document.getElementById('clinicDists');
+  if(db)db.addEventListener('click',function(e){var b=e.target.closest('.range-btn'); if(!b)return; CLINIC_DIST=b.dataset.cld; CLINIC_SHOWN=40; renderClinicDists(); renderClinics();});
   const se=document.getElementById('clinicSearch');
   if(se)se.addEventListener('input',function(){CLINIC_QUERY=se.value; CLINIC_SHOWN=40; clearTimeout(CLINIC_TIMER); CLINIC_TIMER=setTimeout(renderClinics,200);});
 }
@@ -1768,7 +1792,7 @@ async function loadClinics(){
   try{const r=await fetch('clinics.json?_='+Date.now()); if(r.ok){const d=await r.json(); if(d&&d.clinics&&d.clinics.length)CLINICS_DATA=d;}}catch(e){}
   if(!CLINICS_DATA)CLINICS_DATA=CLINICS_SEED;
   const u=document.getElementById('clUpd'); if(u)u.textContent=(CLINICS_DATA&&CLINICS_DATA.updated)||"—";
-  renderClinicRegions(); renderClinicTypes(); renderClinics();
+  renderClinicRegions(); renderClinicTypes(); renderClinicDists(); renderClinics();
 }
 async function loadEvents(){
   try{const r=await fetch('events.json?_='+Date.now()); if(r.ok){const d=await r.json(); if(d&&d.events&&d.events.length)EVENTS_DATA=d;}}catch(e){}

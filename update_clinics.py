@@ -83,6 +83,46 @@ def region_of(addr):
             return c.replace("台", "臺")
     return ""
 
+def norm_name(n):
+    return re.sub(r"[\s()()【】\-––]", "", (n or ""))
+
+def fetch_mohw_doctor_counts():
+    """衛福部 醫療機構與人員基本資料(dataset 15393, ODS)→ {正規化機構名稱: A醫師人數}"""
+    try:
+        r = requests.get("https://data.gov.tw/dataset/15393", headers=HEAD, timeout=30)
+        m = re.search(r"https://www\.mohw\.gov\.tw/dl-[0-9a-zA-Z\-]+\.html", r.text)
+        if not m:
+            log("mohw: no ODS url found"); return {}
+        url = m.group(0)
+        log("mohw ODS url:", url)
+        rr = requests.get(url, headers=HEAD, timeout=180)
+        log("mohw GET ->", rr.status_code, len(rr.content), "bytes")
+        import io as _io
+        try:
+            import pandas as pd
+        except ImportError:
+            log("mohw: pandas not available"); return {}
+        df = pd.read_excel(_io.BytesIO(rr.content), engine="odf")
+        log("mohw columns:", list(df.columns)[:12], "rows:", len(df))
+        namecol = next((c for c in df.columns if "機構名稱" in str(c)), None)
+        doccol = next((c for c in df.columns if "醫師" in str(c) and "中醫" not in str(c) and "牙醫" not in str(c)), None)
+        if not namecol or not doccol:
+            log("mohw: columns not matched"); return {}
+        out = {}
+        for _, row in df.iterrows():
+            n = norm_name(str(row.get(namecol, "")))
+            try:
+                v = int(float(row.get(doccol, 0) or 0))
+            except Exception:
+                v = 0
+            if n and v > 0:
+                out[n] = v
+        log("mohw doctor-count entries:", len(out))
+        return out
+    except Exception as e:
+        log("mohw fail:", e)
+        return {}
+
 def fetch_roster_owners():
     """健保特約醫療院所名冊(dataset 168341)→ {醫事機構代碼: 負責醫師}"""
     url = resolve_csv_url("168341", "A21030000I-D2100G-001")
@@ -106,6 +146,7 @@ def main():
         owners = fetch_roster_owners()
     except Exception as e:
         log("roster fail:", e)
+    doc_counts = fetch_mohw_doctor_counts()
     for label, ds_id, rid in DATASETS:
         log("[%s] dataset %s" % (label, ds_id))
         url = resolve_csv_url(ds_id, rid)
@@ -147,6 +188,9 @@ def main():
             }
             if code and owners.get(code):
                 rec["owner"] = owners[code]
+            nd = doc_counts.get(norm_name(name))
+            if nd:
+                rec["ndoc"] = nd
             out.append(rec)
             cnt += 1
         log("[%s] matched %d eye institutions" % (label, cnt))
