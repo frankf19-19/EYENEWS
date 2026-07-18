@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- 眼視光 Eye-Vision Hub | build r122 | 2026-07-11 | 公司資料全面查證+版本標示 -->
+<!-- 眼視光 Eye-Vision Hub | build r123 | 2026-07-11 | 公司資料全面查證+版本標示 -->
 <html lang="zh-Hant">
 <head>
 <meta charset="UTF-8">
@@ -265,7 +265,7 @@ h2{font-weight:700;font-size:clamp(24px,3vw,32px);margin:0 0 6px}
 .cl-name{font-size:15.5px;font-weight:700;margin:2px 0 8px;line-height:1.4}
 .cl-row{font-size:13px;color:var(--ink-soft);line-height:1.6;margin:2px 0}
 .cl-row a{color:var(--accent-ink);text-decoration:none}
-.cl-hours{color:var(--ink)}
+.cl-hours{color:var(--ink);display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
 .cl-links{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}
 .cl-links a{font-size:12px;color:var(--accent-ink);background:var(--accent-soft);border-radius:7px;padding:5px 10px;text-decoration:none}
 .cl-links a:hover{background:var(--accent);color:#fff}
@@ -672,7 +672,7 @@ footer .build{margin-top:8px;font-size:11px}
       <a data-view="about">關於</a>
     </nav>
     <div class="topbar-right">
-      <span class="ver" title="版本(部署後對照用)">r122</span>
+      <span class="ver" title="版本(部署後對照用)">r123</span>
       <button id="backBtn" type="button" aria-label="返回上一頁">← 返回</button>
     </div>
   </div>
@@ -976,6 +976,7 @@ footer .build{margin-top:8px;font-size:11px}
       <div class="lit-head"><span class="sec-eye">EYE CLINICS</span><h3>台灣眼科院所(診所 + 醫院)</h3><span class="upd-badge">● 最後更新 <span id="clUpd">載入中…</span></span></div>
       <p class="lit-sub">資料來源:衛福部中央健康保險署「健保特約醫事機構」開放資料(每日自動更新),篩選有眼科者。含名稱、區域、地址、電話、看診時間。<b>負責醫師與各科門診醫師名單</b>健保開放資料未提供,請點各院所「健保院所查詢」連結查看。</p>
       <div class="lit-search-row"><input id="clinicSearch" type="search" placeholder="搜尋院所:名稱／地址／區域(可中英)…" aria-label="搜尋眼科院所"><span id="clinicCount" class="lit-count"></span></div>
+      <div class="range-row" id="clinicTypes"></div>
       <div class="range-row" id="clinicRegions"></div>
       <div class="clinic-grid" id="clinicGrid"></div>
     </div>
@@ -987,7 +988,7 @@ footer .build{margin-top:8px;font-size:11px}
   <div class="wrap">
     眼視光資訊中心 · Eye-Vision Industry Hub<br>
     資料來源:Google News · PubMed / NCBI · 每日/每 6 小時自動更新
-    <div class="build">build r122 · <span id="buildStamp"></span></div>
+    <div class="build">build r123 · <span id="buildStamp"></span></div>
   </div>
 </footer>
 
@@ -1636,7 +1637,8 @@ function renderCalendar(){
   feed.innerHTML=(up.length?'<div class="cal-hd">近期即將舉行('+up.length+')</div>'+up.map(eventItemHTML).join(''):'')+
     (past.length?'<div class="cal-hd">近期已辦</div>'+past.map(eventItemHTML).join(''):'');
 }
-let CLINICS_DATA=null, CLINIC_REGION="all", CLINIC_QUERY="", CLINIC_SHOWN=40, CLINIC_TIMER=null;
+let CLINICS_DATA=null, CLINIC_REGION="all", CLINIC_TYPE="all", CLINIC_QUERY="", CLINIC_SHOWN=40, CLINIC_TIMER=null;
+const CLINIC_TYPES=["診所","地區醫院","區域醫院","醫學中心"];
 const TW_REGIONS=["臺北市","新北市","基隆市","桃園市","新竹市","新竹縣","苗栗縣","臺中市","彰化縣","南投縣","雲林縣","嘉義市","嘉義縣","臺南市","高雄市","屏東縣","宜蘭縣","花蓮縣","臺東縣","澎湖縣","金門縣","連江縣"];
 const CLINICS_SEED={updated:"種子資料(待 Actions 更新)",clinics:[
  {name:"國立臺灣大學醫學院附設醫院 眼科部",type:"醫學中心",region:"臺北市",addr:"臺北市中正區中山南路7號",phone:"02-2312-3456",hours:"",code:""},
@@ -1655,6 +1657,15 @@ function clinicRegionsOf(){
   const set={}; ((CLINICS_DATA&&CLINICS_DATA.clinics)||[]).forEach(function(c){ if(c.region)set[c.region]=(set[c.region]||0)+1; });
   return TW_REGIONS.filter(function(r){return set[r];}).map(function(r){return {r:r,n:set[r]};})
     .concat(Object.keys(set).filter(function(r){return TW_REGIONS.indexOf(r)<0;}).map(function(r){return {r:r,n:set[r]};}));
+}
+function renderClinicTypes(){
+  const box=document.getElementById('clinicTypes'); if(!box)return;
+  const all=((CLINICS_DATA&&CLINICS_DATA.clinics)||[]);
+  const base=(CLINIC_REGION==='all')?all:all.filter(function(c){return c.region===CLINIC_REGION;});
+  let html='<button class="range-btn'+(CLINIC_TYPE==='all'?' on':'')+'" data-clt="all">全部類型 '+base.length+'</button>';
+  CLINIC_TYPES.forEach(function(t){ const n=base.filter(function(c){return c.type===t;}).length; if(!n)return;
+    html+='<button class="range-btn'+(CLINIC_TYPE===t?' on':'')+'" data-clt="'+t+'">'+t+' '+n+'</button>'; });
+  box.innerHTML=html;
 }
 function renderClinicRegions(){
   const box=document.getElementById('clinicRegions'); if(!box)return;
@@ -1691,7 +1702,7 @@ function clinicCardHTML(c,idx){
     '<div class="cl-row">📍 '+(c.addr||'—')+'</div>'+
     (c.phone?('<div class="cl-row">📞 '+c.phone+'</div>'):'')+
     (c.owner?('<div class="cl-row">👨‍⚕️ 負責醫師:'+c.owner+'</div>'):'')+
-    (c.hours?('<div class="cl-row cl-hours">🕒 '+c.hours+'</div>'):'')+
+    (c.hours?('<div class="cl-row cl-hours">🕒 '+(c.hours.length>60?(c.hours.slice(0,60)+'…'):c.hours)+'</div>'):'')+
     '<div class="cl-more">'+ndoc+'<span class="cl-more-go">查看詳細 →</span></div></div>';
 }
 function clinicDetailHTML(c){
@@ -1730,6 +1741,7 @@ function renderClinics(){
   const grid=document.getElementById('clinicGrid'), cnt=document.getElementById('clinicCount'); if(!grid)return;
   let list=((CLINICS_DATA&&CLINICS_DATA.clinics)||[]).slice();
   if(CLINIC_REGION!=='all')list=list.filter(function(c){return c.region===CLINIC_REGION;});
+  if(CLINIC_TYPE!=='all')list=list.filter(function(c){return c.type===CLINIC_TYPE;});
   const q=(CLINIC_QUERY||'').trim();
   if(q)list=list.filter(function(c){return biMatch([c.name,c.addr,c.region,c.type,c.phone].filter(Boolean).join(' '),q);});
   if(cnt)cnt.textContent='共 '+list.length.toLocaleString('en-US')+' 家';
@@ -1745,8 +1757,10 @@ function initClinics(){
     grid.addEventListener('click',function(e){var card=e.target.closest('[data-cl]'); if(!card)return; openClinicDetail((window.CLINIC_VIEW||[])[+card.dataset.cl]);});
     grid.addEventListener('keydown',function(e){ if(e.key!=='Enter'&&e.key!==' ')return; var card=e.target.closest('[data-cl]'); if(!card)return; e.preventDefault(); openClinicDetail((window.CLINIC_VIEW||[])[+card.dataset.cl]);});
   }
+  const tb=document.getElementById('clinicTypes');
+  if(tb)tb.addEventListener('click',function(e){var b=e.target.closest('.range-btn'); if(!b)return; CLINIC_TYPE=b.dataset.clt; CLINIC_SHOWN=40; renderClinicTypes(); renderClinics();});
   const rb=document.getElementById('clinicRegions');
-  if(rb)rb.addEventListener('click',function(e){var b=e.target.closest('.range-btn'); if(!b)return; CLINIC_REGION=b.dataset.clr; CLINIC_SHOWN=40; renderClinicRegions(); renderClinics();});
+  if(rb)rb.addEventListener('click',function(e){var b=e.target.closest('.range-btn'); if(!b)return; CLINIC_REGION=b.dataset.clr; CLINIC_SHOWN=40; renderClinicRegions(); renderClinicTypes(); renderClinics();});
   const se=document.getElementById('clinicSearch');
   if(se)se.addEventListener('input',function(){CLINIC_QUERY=se.value; CLINIC_SHOWN=40; clearTimeout(CLINIC_TIMER); CLINIC_TIMER=setTimeout(renderClinics,200);});
 }
@@ -1754,7 +1768,7 @@ async function loadClinics(){
   try{const r=await fetch('clinics.json?_='+Date.now()); if(r.ok){const d=await r.json(); if(d&&d.clinics&&d.clinics.length)CLINICS_DATA=d;}}catch(e){}
   if(!CLINICS_DATA)CLINICS_DATA=CLINICS_SEED;
   const u=document.getElementById('clUpd'); if(u)u.textContent=(CLINICS_DATA&&CLINICS_DATA.updated)||"—";
-  renderClinicRegions(); renderClinics();
+  renderClinicRegions(); renderClinicTypes(); renderClinics();
 }
 async function loadEvents(){
   try{const r=await fetch('events.json?_='+Date.now()); if(r.ok){const d=await r.json(); if(d&&d.events&&d.events.length)EVENTS_DATA=d;}}catch(e){}
