@@ -123,6 +123,45 @@ def fetch_mohw_doctor_counts():
         log("mohw fail:", e)
         return {}
 
+def fetch_owner_from_nhi(code, sess):
+    """健保署特約院所查詢頁(政府網站)抓負責醫師;失敗回 None"""
+    try:
+        url = "https://info.nhi.gov.tw/INAE1000/INAE1000S02?hOrderno=" + code
+        r = sess.get(url, headers=HEAD, timeout=20)
+        if r.status_code != 200:
+            return None
+        t = r.text
+        m = re.search(r"負責(?:醫師|人)[^\u4e00-\u9fff]{0,30}([\u4e00-\u9fff]{2,4})", t)
+        return m.group(1) if m else None
+    except Exception:
+        return None
+
+def enrich_owners(out):
+    """對已篩出的眼科院所逐家查負責醫師(節流 0.25s;任何失敗不影響主資料)"""
+    import time
+    try:
+        sess = requests.Session()
+        ok = fail = 0
+        probe = fetch_owner_from_nhi(next((c["code"] for c in out if c.get("code")), ""), sess)
+        log("owner probe:", repr(probe))
+        if probe is None:
+            log("owner enrich: probe failed (page likely JS-rendered) — skip")
+            return
+        for i, c in enumerate(out):
+            if not c.get("code") or c.get("owner"):
+                continue
+            o = fetch_owner_from_nhi(c["code"], sess)
+            if o:
+                c["owner"] = o; ok += 1
+            else:
+                fail += 1
+            if i % 100 == 0:
+                log("owner enrich progress:", i, "/", len(out), "ok=", ok)
+            time.sleep(0.25)
+        log("owner enrich done: ok=", ok, "fail=", fail)
+    except Exception as e:
+        log("owner enrich error:", e)
+
 def fetch_roster_owners():
     """健保特約醫療院所名冊(dataset 168341)→ {醫事機構代碼: 負責醫師}"""
     url = resolve_csv_url("168341", "A21030000I-D2100G-001")
@@ -139,7 +178,7 @@ def fetch_roster_owners():
     return owners
 
 def main():
-    log("=== update_clinics SCRAPER v3 ===")
+    log("=== update_clinics SCRAPER v4 ===")
     out, seen = [], set()
     owners = {}
     try:
@@ -203,6 +242,7 @@ def main():
         "source": "衛福部中央健康保險署 健保特約醫事機構開放資料",
         "clinics": out,
     }
+    enrich_owners(out)
     # 抓到 0 筆時保留原有 clinics.json(不要覆蓋成空的)
     if not out:
         log("!! 0 institutions parsed — keeping existing clinics.json, NOT overwriting")
