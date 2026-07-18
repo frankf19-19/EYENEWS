@@ -17,26 +17,30 @@ HEAD = {"User-Agent": "Mozilla/5.0 (EyeVisionHub-Clinics/1.0)"}
 DATASETS = [
     ("診所",     "39283", "A21030000I-D21004-009"),
     ("地區醫院", "39282", "A21030000I-D21003-003"),
-    ("區域醫院", "39281", "A21030000I-D21002-003"),
-    ("醫學中心", "39280", "A21030000I-D21001-003"),
+    ("區域醫院", "39281", "A21030000I-D21002-005"),
+    ("醫學中心", "39280", "A21030000I-D21001-004"),
 ]
 CITIES = ["臺北市","台北市","新北市","基隆市","桃園市","新竹市","新竹縣","苗栗縣","臺中市","台中市",
           "彰化縣","南投縣","雲林縣","嘉義市","嘉義縣","臺南市","台南市","高雄市","屏東縣","宜蘭縣",
           "花蓮縣","臺東縣","台東縣","澎湖縣","金門縣","連江縣"]
 
 def resolve_csv_url(ds_id, fallback_rid):
-    # 先試 data.gov.tw API 取得目前 CSV 下載網址,失敗則用備援 rId
+    # 從 data.gov.tw 資料集頁面抓取「目前」的 CSV 下載網址(rId 會隨每次更新變動)
+    try:
+        r = requests.get("https://data.gov.tw/dataset/" + ds_id, headers=HEAD, timeout=25)
+        m = re.search(r"info\.nhi\.gov\.tw/api/iode0000s01/Dataset\?rId=[A-Za-z0-9\-]+", r.text)
+        if m:
+            return "https://" + m.group(0)
+    except Exception as e:
+        sys.stderr.write("[%s] resolve fail: %s\n" % (ds_id, e))
+    # 再試 data.gov.tw API v2
     try:
         r = requests.get("https://data.gov.tw/api/v2/rest/dataset/" + ds_id, headers=HEAD, timeout=25)
-        j = r.json()
-        dists = (j.get("result") or {}).get("distribution") or []
-        for d in dists:
-            fmt = (d.get("resourceFormat") or d.get("format") or "").upper()
-            url = d.get("resourceDownloadUrl") or d.get("downloadUrl") or ""
-            if url and ("CSV" in fmt or url.lower().endswith("csv") or "Dataset?rId=" in url):
-                return url
-    except Exception as e:
-        sys.stderr.write("[%s] api resolve fail: %s\n" % (ds_id, e))
+        m = re.search(r"info\.nhi\.gov\.tw/api/iode0000s01/Dataset\?rId=[A-Za-z0-9\-]+", r.text)
+        if m:
+            return "https://" + m.group(0)
+    except Exception:
+        pass
     return "https://info.nhi.gov.tw/api/iode0000s01/Dataset?rId=" + fallback_rid
 
 def read_csv(url):
