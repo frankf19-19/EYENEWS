@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-20 21:51 UTC",
+  "updated": "2026-07-21 09:33 UTC",
   "source": "Google News (台灣/繁中)",
   "items": {
     "myopia": [
@@ -9,6 +9,13 @@
         "source": "世界新聞網",
         "date": "2026-07-17",
         "summary": "美國首款兒童近視控制離焦框架眼鏡獲FDA批准上市 開啟近視防控新選擇 世界新聞網"
+      },
+      {
+        "title": "近視控制需個人化策略 研究強調雙眼及調節效應",
+        "link": "https://news.google.com/rss/articles/CBMi1gJBVV95cUxQc1pGZUlEVGVNN0tRYXFaUjdkN3hHMzFBaldzMXRCYW1wOU56cFRXeTM2emNBeHZfWndEc2E5WS0zazA3OUtOM19vaGltRXRwUzBRRjlwdWV5d3RLV3F4dUFQVHZTdndRaXo2YV9ITlBBMkQ1OEJMalhXV1V3TmxmQXFCRTc2RWRxU1h3bjkxb3FCRjN2dEFqeU5yaVNQZTI4UlpSdzZWWDBIUUZ2QXZ5d1J1X3Rqb2hBWVgtRVJORmI2T2FsRGZOR0dLVHRBVTlNcElObF91b3lCa0lheF9qbGFKaWptVnJ4UkdYZ0FtZFU0YmpMOWEyTkE2b2J6Q3d4VVp2Um5wVUJyMjJDMWM4aldub3RHUHhUc2FWUEVRci1GYTg1MlNMZFBiaTFNT0QxWFRfZUdWWlFtS1dqaFc1QWpvUFZYZGpzMnR5ZV9Fb2JZaTFXNVE?oc=5",
+        "source": "商傳媒",
+        "date": "2026-04-20",
+        "summary": "近視控制需個人化策略 研究強調雙眼及調節效應 商傳媒"
       },
       {
         "title": "近視控制技術成熟、吸引蔡司收購 亨泰從隱形冠軍躍上全球視光舞台",
@@ -51,13 +58,6 @@
         "source": "Research Nester",
         "date": "2025-08-26",
         "summary": "近視控制鏡片市場規模、趨勢及 2026-2035 年複合年增長率預測 Research Nester"
-      },
-      {
-        "title": "蔡司宣布收購「亨泰光學股份有限公司」強化全球近視控制戰略布局",
-        "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFAxdDB6dXZERklIS3J2MnFGSmdKajNRMnZicDVjbTVwMFFKNDFsUWxHUW1LOU5OenFSdmlXVTZacDZiM213Mk5hWVNVSkxyRFVzbmhneThR?oc=5",
-        "source": "中央社 CNA",
-        "date": "2025-06-05",
-        "summary": "蔡司宣布收購「亨泰光學股份有限公司」強化全球近視控制戰略布局 中央社 CNA"
       },
       {
         "title": "眼科醫療產學專家聯合聲明，6歲以上孩童球面度數達 -0.25D就要開始近視控制",
@@ -237,9 +237,9 @@
       {
         "title": "NOW健康／「角膜塑型片」抑制近視加深醫師教你如何挑| 專欄",
         "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE5fSFhROXF4dzVvWmx6c3MyT0tCQnVGOUJjb3NZb0xXN1lKaXM5c3lRLWNIaFJ1eTl0aUpESDhZNExrZ3lhTFhzOWRudkRRRGp2S2Nfdk5rLV8?oc=5",
-        "source": "三立新聞",
+        "source": "三立新聞網SETN.com",
         "date": "2023-08-28",
-        "summary": "NOW健康／「角膜塑型片」抑制近視加深醫師教你如何挑| 專欄 三立新聞"
+        "summary": "NOW健康／「角膜塑型片」抑制近視加深醫師教你如何挑| 專欄 三立新聞網SETN.com"
       },
       {
         "title": "兒童近視控制添新選擇 周邊離焦光學原理幫助矯正視力",
@@ -303,13 +303,6 @@
         "source": "CTWANT",
         "date": "2023-04-15",
         "summary": "近視失控潮1／角膜塑型片夯！廠商營收創新高 醫提醒有Bug「高中生險失明」 | 生活 | CTWANT CTWANT"
-      },
-      {
-        "title": "近視失控潮1／角膜塑型片夯！廠商營收創新高 醫提醒有Bug「高中生險失明」",
-        "link": "https://news.google.com/rss/articles/CBMirgNBVV95cUxQRHNCSEZwcDhPZjh5V0tfNXREOEpGUnpFZU1sSXhKbU5KT1BQX1oxTFV2Y1lpRGNEOWt5Ukk4RFAwd3ZtVkMtSDgzcjdpbHByZlZTLU5Na0JNcHhrZzR5X3pYWXhaLWloMU42Z0N1ZmNta3JCNHV1eGFlRFppUXlQbFlaWXk4eHl5NUl2cjNPSHdraEtFOEVJQi1SNndnTlBiRi10b2tHUnNIMlBtNUlibkR4SXRnMU5ZcmlDQnZ5U0pHSmR6ck9WME56cTFaNE5Yd3dCVnBYaXVNSTFLQzZjWW1rU0c5NjBGeEhSODF0eGVqYlM4emNoSzFaeFZlUTAyR1ZYaEtBN010OGRXMWZFX2FabnlrN1l5VWZQc0ZtekVQdzlRZmJ6ZklEQWVRenB1d0hPQVoxQjRTaU9Nd3gwVVdvT0ZvUDNneFJwQlplek1Obk11UGIxLTVRRVAzc21rRXl4M04tZG54VDExaXlpaE1KV0lZNGdnWmdOVlpPSUtsSmFESGhqZ3VETjdBVVY1T3RfY1lwd0tvdmNNUENnWnljLUdNU3pUWU9teVZR?oc=5",
-        "source": "Yahoo新聞",
-        "date": "2023-04-14",
-        "summary": "近視失控潮1／角膜塑型片夯！廠商營收創新高 醫提醒有Bug「高中生險失明」 Yahoo新聞"
       },
       {
         "title": "健康網》成人也能戴角膜塑型片！ 醫：白天可不戴眼鏡",
@@ -377,9 +370,9 @@
       {
         "title": "大陸國中生「戴角膜塑型片」險瞎 高雄長庚跨海救了他雙眼",
         "link": "https://news.google.com/rss/articles/CBMiTEFVX3lxTFBDUzJaTXF3TXFOcHlDODZhNDZrOVNzdzBnSDJoSEp6VWY0UVZ4bzlieHNVXzJCbjJsQ2F0bWZpNW5HZVZ3MzN3aElZUzE?oc=5",
-        "source": "三立新聞",
+        "source": "三立新聞網SETN.com",
         "date": "2022-07-13",
-        "summary": "大陸國中生「戴角膜塑型片」險瞎 高雄長庚跨海救了他雙眼 三立新聞"
+        "summary": "大陸國中生「戴角膜塑型片」險瞎 高雄長庚跨海救了他雙眼 三立新聞網SETN.com"
       },
       {
         "title": "《中國兒童青少年近視防控大數據白皮書暨屈光發育檔案普及計劃》正式發布",
@@ -432,10 +425,10 @@
       },
       {
         "title": "兒童近視只能點藥水？醫師詳解角膜塑型片、日拋隱形眼鏡、周邊離焦較片之差異、注意事項",
-        "link": "https://news.google.com/rss/articles/CBMilARBVV95cUxNS3QwRlNGdm02N0RjLWgwX2hiNmJUalV2dGhvMlBSa3liMjdPRTNLdW1rRkNTNzJKUVlQWkhMN1B6amdUTjBZRXN5dnVoaHFrS2pJNE11X3NUX2J1djFoRlJQQUU2RlRkN1hFdF95Q2U3eWNoWTVNOGlzcm9QeElDaTg4LTFlUUFUend2eTRqSkFhVFRzYXdGSWhkaVlodTJ6RzE2NHhNNE1nTkthRlBqUlV2bl9OM2k4dXNyUmdDc1ljMy1YUFBhdnc1dnI3TVhSRlNJR3FfRllsa21ZY3l1LUFqNWdHbkhaLWQwNlQzOVUtcHJIOE50T2k3X2dya1hWMkpqM1JkUG5YOWlwN01jYk9BOXBlbGNkdXNRT04xWDR5WEVna3llVDhjNEwyVHgxeDZON3M4ejVGcjNDRWZsdHA2ZDFyS3RHYnE2ajBXaUFYX1hiZHdRUVVPUGYtRTNsQm1xV2VkZTZpSEZybzJMZFB0M2hjOENyTkdkRExpbXpMTUJEY2g5dzZJZ1BDSnpuTmhEalpweWxUb0hpek4yNTN3RVVnOVFsb2c3TnVhcmtKN05GOF8zZWt4UVJDNHZDbVR5S0pCWDRuSnFzU3ZtU3hNY0diSnVJNjhJRmgyMW1NTmRLbmRMb2VBS2M2cU83cmlSMS1SR0d0ejlFeEdwVFBsTGptX3VDMWZ1eUZDWHBORWVF?oc=5",
-        "source": "Yahoo新聞",
-        "date": "2022-03-15",
-        "summary": "兒童近視只能點藥水？醫師詳解角膜塑型片、日拋隱形眼鏡、周邊離焦較片之差異、注意事項 Yahoo新聞"
+        "link": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE1wbzBSRmY2NDFWN2RhWjNESnVXVm5xX1hzQmNHbFlMeE1SWWEtOWsteERMM1hnTk5NLW44ME9CdnczU19Fd2JWcFV0OA?oc=5",
+        "source": "Heho健康",
+        "date": "2022-03-16",
+        "summary": "兒童近視只能點藥水？醫師詳解角膜塑型片、日拋隱形眼鏡、周邊離焦較片之差異、注意事項 Heho健康"
       },
       {
         "title": "打擊兒童惡視力 保持良好6習慣！",
@@ -527,6 +520,13 @@
         "source": "蕃新聞",
         "date": "2020-12-25",
         "summary": "角膜塑型片可以控制孩童近視？專業醫師為你揭秘常見疑問 蕃新聞"
+      },
+      {
+        "title": "亨泰光學主攻視覺效能「近視控制」　力拚農曆年前掛牌上櫃",
+        "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFBkM1F4MmN5TW91MVZDdXFwVFlTb0ZyVDdxeEtxdGFGTl8zQ2tLY0hXOTZCaXIwQlgwQ0FzQVBfcEtiSEVQMERaLWcwNHJkRVJXcXfSAW5BVV95cUxNZjl4YU1OdnJXQTJsUWVZZjkweHlCSWpMWFRveG1YZXdMQkZmNG5MWFk5ZXlfX3FTVGthWkFSMDJjT2x4anRuUXNYZ3htNGxJWm9wS3Y4cVdIVGZuLWQtVllGSkFob0tFWFd6dlpsdw?oc=5",
+        "source": "ETtoday財經雲",
+        "date": "2020-12-21",
+        "summary": "亨泰光學主攻視覺效能「近視控制」 力拚農曆年前掛牌上櫃 ETtoday財經雲"
       },
       {
         "title": "台灣兒童近視已成國安問題 近視控制鏡片新選擇",
@@ -715,9 +715,9 @@
       {
         "title": "EVO ICL是什麼？植入式隱形眼鏡五大優勢 角膜薄、高度近視族群新選擇｜每日調查",
         "link": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE82eFpIVUVjeEl5ZUZaaFExS1FqTzljZm41ajc4MDlxZnNIUXBoakZ3T3RQWXRqbWd3OU8tZkZpNzZqSVB1WEE?oc=5",
-        "source": "網路溫度計 DailyView",
+        "source": "網路溫度計DailyView",
         "date": "2026-03-24",
-        "summary": "EVO ICL是什麼？植入式隱形眼鏡五大優勢 角膜薄、高度近視族群新選擇｜每日調查 網路溫度計 DailyView"
+        "summary": "EVO ICL是什麼？植入式隱形眼鏡五大優勢 角膜薄、高度近視族群新選擇｜每日調查 網路溫度計DailyView"
       },
       {
         "title": "新塑膠循環經濟扭蛋殼變家飾日拋隱形眼鏡盒重生｜華視新聞雜誌- 綜合",
@@ -797,11 +797,11 @@
         "summary": "隱形眼鏡空殼先別丟！環保局公開舊鏡片、包裝處理法，３大管道可換購物金 食尚玩家"
       },
       {
-        "title": "Threads熱議隱眼殼別丟！竟是高價回收物 4大通路換千元優惠｜熱門話題",
-        "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFBHNEstOE5LYjE5bjdYSXpMOXFHOFhjVmo4Y29NanZUMlFGMkpqVjl1MVhLZzc1RmdTWENZMTNLaS1YR0piVWpfMWxCdEtCUWo4Tkpj?oc=5",
-        "source": "網路溫度計 DailyView",
-        "date": "2026-01-12",
-        "summary": "Threads熱議隱眼殼別丟！竟是高價回收物 4大通路換千元優惠｜熱門話題 網路溫度計 DailyView"
+        "title": "隱形眼鏡佩戴者慎防「棘變形蟲角膜炎 」 每年達2.3萬宗 原蟲鑽入角膜嚴重可致失明︱Yahoo",
+        "link": "https://news.google.com/rss/articles/CBMikARBVV95cUxOcnRoZG42MDhHNllzS2hiWGJGcWFCYnZ3VWJBbW5DM1lWcnRxVHVpYnlyRWJSUVBHeHlsVVZNRmNNajdWWjNaVm5tS2VCZnNvTTZBd3RyNHIxSUx5Z0w1UGs4UzlFbk9wMENhZDhwSEpMRmZsRG9jSlF5Tnl5di1iQzMxUzlMNk5PUnVmbGswY09RYnBpaGpGemtzanZpYUpMR3AwUnJEWmZXcW1ZRmZoSEhhc2J3ODlyVklQQlM2RDZfbzl6dEd5dk02VTFXVjl1My1Sbjc0RVg0SlFtNTZ0MVBpSFFjbk9zQkQyem9nQmRZNXJsTk1RU0NaWU5MSENfamJlWVREVUhkTElNOVA5ei1idjNiQkRPRnNPb1g1ZVhnazk0Nno4WGlwd3Jib3VwVlVPR2dhVUlpY29VTGp5bjMtSnpveHVGWnRlcWVJaW9HT1JVb21FWk9XYWVjWlZYMnVGVUIydUJONEpmYzlKY1VJRnBlOV9XT0lITFk0Y2p3UktXbE9iV2tBRzZHOVNnZ1B0NF9SV09iR19wa2ZhMjg0VUlrYWc4SUZ5ZHdLd3lEdjJsR1UtdDlsOU80R0xLcUtUaXJFN1BqaEc1d2dWeS1KeGNjSDRESTlkdUJpYnM5ODk1eDF5TTJ5VktxLTVCT0dsanY0M05OMjFESjgxYTA1TnpvQUhnTExxTjR1Qmk?oc=5",
+        "source": "Yahoo",
+        "date": "2026-01-13",
+        "summary": "隱形眼鏡佩戴者慎防「棘變形蟲角膜炎 」 每年達2.3萬宗 原蟲鑽入角膜嚴重可致失明︱Yahoo Yahoo"
       },
       {
         "title": "一片隱形眼鏡，燒錢 10 年才燒出全球第 5！視陽光學的後進者逆襲之路",
@@ -832,13 +832,6 @@
         "summary": "蒼藍鴿告別近視！ 大學眼科：新型植入式隱形眼鏡詢問度飆升20倍 Yahoo新聞"
       },
       {
-        "title": "戴隱形眼鏡有異物感？醫曝「可能原因」 急勸：馬上停戴檢查",
-        "link": "https://news.google.com/rss/articles/CBMi7AJBVV95cUxQOG82aW41RXlCa3dOOW1ONVp1YkRCYkhWcEJUYi1hbksxRHpyMjlncHR2Ml9XRGdQcmtXOEgxaU4yQk5aRlVmOGNfT3hhcmFyejlydmE5eE03NTR2em9ueDhrVUxfamhEcDlvUEgwYkcyZlJvZ2VqNFNsdHF5dFEyQW5nUjVOUzg1aV9sbXJ0SnhLbFRTbC1BYWNvLV9DNFk3UmdjNzliS2VtUml1bUtWNGZBRklYYTJ5eEdMN01mV1BkVHVZUVplVjRRRk5XTmpKZDVwWXMzLW9WdGZsanNXWHE0X0JwOVUwNU52cVVUZm9hNWFEdUFtclRFWUprd21SWlJXX1AxU245TVZaX0xCOTJYSDA2VFlXcjFkNl95SUc0THgzZ1Q3VkVjRWUyRTVlcWo4Yl9LQmtPMDFGdGNNZUZfRmhac3ZyMkE5cXd3Z3d6X0xlR1NPWlZrcDhfRGFTc2tJOENCQU9abmZy?oc=5",
-        "source": "Yahoo新聞",
-        "date": "2025-10-05",
-        "summary": "戴隱形眼鏡有異物感？醫曝「可能原因」 急勸：馬上停戴檢查 Yahoo新聞"
-      },
-      {
         "title": "飼主砸3000元讓狗戴隱形眼鏡 只為了好看？醫生揭驚人醫療真相",
         "link": "https://news.google.com/rss/articles/CBMihwNBVV95cUxPTHY3YWZrcGlIaVFIMWdEazlmczBjVFlyaUhaQTRRNHJfNVhfaVo3OHBXUUYyS3d6WGZjUXVaZ1RGRDVERnJlQVRndkxEak5PWV9oc1YtMzhVcXB6b2tjNlk0R3R4empOMHFGckFGUGc3X0FtUi1vR3dPYy1kSzlYcl9nT0J2WmYxdzJLa2pkSnNNN1M5ZXdKTTNTSFktRnBkM1dWMkNGbTlURk1FUFFUWE9DUlJZTlpQYk5HalI3NXBDSnNrbTRRVDd1Y014a0IwbWp2ai14VFdZVHNOWnJuOGZlMjl4RE5WcG5vZmR3TW1MdWRhZmtVSFRQZG5KemRqYjVWRlpVLW4zT25JOG5zYWhLTC1JWlJwX1A4SWM2Q0E3UEdrWGRyM2tZLU5CcG5BYnE0QkFNVDhjb191NzhvYWRHdWdaTVQxV1pNd280VzFrcEd2dV8xeU4tOGprRkllUTZWbXBuOG05Z2ozZk9EM2VuZXktaHpQUDhxc1RWWEdEQW1kal9F?oc=5",
         "source": "Yahoo新聞",
@@ -865,6 +858,13 @@
         "source": "Heho健康",
         "date": "2025-07-17",
         "summary": "第四次視力革命！醫解析可逆式「新型植入式隱形眼鏡」的優缺、費用、術後、適合族群 Heho健康"
+      },
+      {
+        "title": "全球30年300萬例新型植入隱形眼鏡 高度近視福音",
+        "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE9Gbl9mcklKNG1XM2pBS21uakwtTnZfdHhiclFiNDkwbTJXU2hQczRQaEZvWTIydTFiVnZCaS1yX1IzQlc4RjFQN2VXbjhvYkp0WTNDOQ?oc=5",
+        "source": "東森新聞",
+        "date": "2025-07-17",
+        "summary": "全球30年300萬例新型植入隱形眼鏡 高度近視福音 東森新聞"
       },
       {
         "title": "第4次視力革命！大學眼科引進EVO ICL「新型」植入式隱形眼鏡 為中高度近視患者帶來福音",
@@ -895,11 +895,11 @@
         "summary": "健康網》隱形眼鏡「清潔不當」會傷眼 醫授4步驟防感染 自由健康網"
       },
       {
-        "title": "《Cell》稀土隱形眼鏡 讓人類肉眼看見近紅外線光",
-        "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9KV2VEYUVDVXRVWjNBdUtMLU1kenNpZHJSVV9XQUw2UXJleVNFc2ktUE5hOEJ4Z3FMdlgzVkFrczFTclhwWFYxRlZpZ2N0YWZISjJVQVpHNGVwN3lVdGcxbFVPVjF2SGtO?oc=5",
-        "source": "環球生技月刊",
-        "date": "2025-05-29",
-        "summary": "《Cell》稀土隱形眼鏡 讓人類肉眼看見近紅外線光 環球生技月刊"
+        "title": "台灣隱形眼鏡龍頭「亨泰光」爆下市！德國蔡司砸54億吃下全數股權",
+        "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE4xWTk2b2ppZk5lc3hWRDN0bDllMGNuekxyZFdCSjlRMUVKZ3JvV0ZWbDR1MS1PZ0lXZk5NbEhlVjN5NDZpNGNFN25xRk5hZ1E2cVHSAW5BVV95cUxOd01hbGdaYWhka2NGZFhKdnVzRl9pVC12SDRMLU05eHRCdEI4S3dFYUR1cG1WdTlvUF9yOG1ETnppWk5TZXplMklBNXVNdGlLRjF5OTZaUnNzYlBtcEYySmtaUWNsOTNQTXlUQmJ2UQ?oc=5",
+        "source": "ETtoday財經雲",
+        "date": "2025-06-09",
+        "summary": "台灣隱形眼鏡龍頭「亨泰光」爆下市！德國蔡司砸54億吃下全數股權 ETtoday財經雲"
       },
       {
         "title": "科幻派紅外光轉換隱形眼鏡，閉上眼瞼也能感應紅外光",
@@ -916,25 +916,11 @@
         "summary": "隱形眼鏡突破人類視覺極限！中國科學家讓紅外線「看得見」 明日科學"
       },
       {
-        "title": "隱形眼鏡大廠加美驚傳倒閉、欠薪！發生什麼事？官方怎麼說？",
-        "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE1UYlRpSU0xVGRyRVBydi1jRlZZVWdFS0pzV1FmdHZMRmVvN0pYZjNXY05GbmFuZFNpSW9CYnpNUW52UFZ4TjBRRGh5NFY2UkxaSFJnd2hOREhTdXZrUkRVeUtmNVBWYXJXM01KaHRhS2NXNjBD?oc=5",
-        "source": "數位時代",
-        "date": "2025-05-13",
-        "summary": "隱形眼鏡大廠加美驚傳倒閉、欠薪！發生什麼事？官方怎麼說？ 數位時代"
-      },
-      {
         "title": "加美光學 倒閉：台灣隱形眼鏡產業的警鐘",
         "link": "https://news.google.com/rss/articles/CBMilwJBVV95cUxNbGowUHJzU1BjbkhfY21fOXpCLXhEdV9iLXBiWjl4bzFJaHJGenNDU1U2bzA0ekRnTnpQY05tOE15aVg5VU9RZzlXNjc1cldQbmF4SG10YTJsT1R4aFpyVTRKcXFmQVMzTURJTHdZcFhJSDRkUV9FU0tsS09yNExDekZyaVE1cGtfLTVaWkJPUy1lT0RBTTJtcC1iaE5qNmg2cUVNMDFFNk5Oa1g3ekJRdEdKRFRkYWZ4N203V3hLNTJxZVl0OVRUZVVReDRqMHBoamlNTTN0dVByMThlM2dselJyZ3hSelFNUzFNUXZWcmhrRmdZbDJkMmgyOGU2cWdJdEZQb0VOX2QwTnMzNGxyanZFVTlnRjg?oc=5",
         "source": "GeneOnline News",
         "date": "2025-05-13",
         "summary": "加美光學 倒閉：台灣隱形眼鏡產業的警鐘 GeneOnline News"
-      },
-      {
-        "title": "隱形眼鏡大廠無預警倒閉 上百名員工全失業",
-        "link": "https://news.google.com/rss/articles/CBMiuAJBVV95cUxPY0xJMkowSGJHOFFTd19uOUJvYnQyNE41YjR4RnNfR3h3MzNFMVQwM3NvUU56OG9ZUDhkaWdRTUl2U1ZrVzF4S2Rid0lWMWMzTlhFbEUxcHNPanNEeU9zQ3dyTFhuOUo4aVBuQXBxTm5aZDY3LWlJWjlWcm5Fc0JMcktmZWJjZFZGWUZLelZZY19xaWxQb29lMUNCeWpFTnVWeTdDYVkxZXdaOEo1cUZVcFcxdmVtSS1UU1cwNTMyNXhrVnNMWE1YQUVaVllpV042NGVXN3FjMXpoNmVfMi1wdW9CZXd5Tk8zQnBZOXFHSUJiTXpMeHZjakRmRE5ZZVlITTdaMUR0RUtOYW1yOUFKOHQzV3BqZ21hclRrTTJLSmFhcHFnWlVETWlvVG1TRE1iYy1vY0ZVSFA?oc=5",
-        "source": "Yahoo新聞",
-        "date": "2025-05-10",
-        "summary": "隱形眼鏡大廠無預警倒閉 上百名員工全失業 Yahoo新聞"
       },
       {
         "title": "台灣隱形眼鏡大廠驚傳倒閉！官方聲明「虧到無法營業」，4月就有人搶囤貨 | 林瑩真 | 風生活",
@@ -998,13 +984,6 @@
         "source": "Yahoo股市",
         "date": "2025-01-08",
         "summary": "隱形眼鏡龍頭旗下海昌生技今登興櫃 大漲逾5成喜迎蜜月行情 Yahoo股市"
-      },
-      {
-        "title": "醫起看／用口水洗「隱形眼鏡」？「革蘭氏菌」恐引發結膜炎",
-        "link": "https://news.google.com/rss/articles/CBMi1AJBVV95cUxQWTVLMzhZS2w0eVlpaEs1QWNmT2hGdDF5eEJQQ1YxNHBnX3lWSWF6RVl6UndkbTVhZGl0RlBjV3c3M2w2UlJqQ0o5bVU0eXpTNnk3blFNT0w5NmVMbUhpYzQ4X2VULWxRYWtOT0dxT0dfclVXS3RhOTdxRi1BXzB6NGZSa3g3VGI5QVgtbXFYMXVUUkx5ZHAxX3RvSzVERnJGMFRXbno5UGY1aDhEMml2T0VVNW16V0Z2OUZLQzY2bFY3M0psNkdCaXFKUkp2akhsWHhZZ0k5V2lPUHRNWm54dDUyT1B4T0RvekdoTkJpYUM1eFZzVU5sUHduX3VmMVdPZFJSZTZGV3pjTDZXZkZyNHgxZHdxU04tV3c0WjQwZnBiRUZLMnlodFN1Z2cyRTF5TDVJUmdlb2FwY1FpUG5obVpUOUMyNW5oZ0k3RzVqSzFmX1ZF?oc=5",
-        "source": "Yahoo新聞",
-        "date": "2025-01-06",
-        "summary": "醫起看／用口水洗「隱形眼鏡」？「革蘭氏菌」恐引發結膜炎 Yahoo新聞"
       },
       {
         "title": "太極轉型拓新業務 跨入隱形眼鏡成立品牌Lens++",
@@ -1082,6 +1061,27 @@
         "source": "genetinfo.com",
         "date": "2024-09-16",
         "summary": "《Genet法說筆記》矽水膠隱形眼鏡廠視陽(6782)上半年EPS 4.99元創新高，成長來自彩拋需求拉動(9/16日股價233.5元) genetinfo.com"
+      },
+      {
+        "title": "滑世代隱形眼鏡商機大- 日報",
+        "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE1ZVXVzcnVDSGEzOFhQQTNkWTYtSkU4TkNlcGFDNE9tVG5mM2llSllsNl9PV0xWdE5NRG1kM05KRE1uUG5kaGIxaG05V3NYNXdpUmtldm9aMl8xVG92Tkxr?oc=5",
+        "source": "工商時報",
+        "date": "2024-09-11",
+        "summary": "滑世代隱形眼鏡商機大- 日報 工商時報"
+      },
+      {
+        "title": "檢查你的隱形眼鏡！愛爾康2款日拋出問題，恐引發刺痛、視力模糊，急回收306盒",
+        "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE5DZktaWWdqOVpqQjVWQkM1SmZOUmVwbVhUaXBMXzFKUjVkZ094RDhISEJhQzJETnZzWWtKSWd0N1VfRmpHUDMyZW1EZ0NqMnBPeFQyaDRkVmE?oc=5",
+        "source": "康健雜誌",
+        "date": "2024-08-29",
+        "summary": "檢查你的隱形眼鏡！愛爾康2款日拋出問題，恐引發刺痛、視力模糊，急回收306盒 康健雜誌"
+      },
+      {
+        "title": "就怕買到「問題隱眼」！如何挑隱形眼鏡才對？醫揭「2招」選擇關鍵",
+        "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9CTmZBVzBaVzdLU3ZYMThiN2xldHFZLVNUc1ZiMXQxOHFrbC0yVXFnakN3U2h5akR6TlNONUlzUVNhYkFZZDBlYlFtX3pWb3NGLTZ3?oc=5",
+        "source": "優活健康網",
+        "date": "2024-08-28",
+        "summary": "就怕買到「問題隱眼」！如何挑隱形眼鏡才對？醫揭「2招」選擇關鍵 優活健康網"
       },
       {
         "title": "我國眼鏡業產值迭創新高",
@@ -1248,10 +1248,10 @@
       },
       {
         "title": "瑞聲科技AI眼鏡光波導鏡片量產，料H2放量出貨",
-        "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOYUJPN2N4ODQ3djVBWnNwcWg0cGI3VVBnM0xmT3Q0RWFXelBhd0xoV0lNN1lmbWZQVWJ5UTZieEcwY0lJNzBXUWhicExqQml6UmpKZG5NWDhkUTNnWmRzQjg2NVRpWTRFZk1mQXVWNk1ITTlLNXhUMk5JaVQ0Q1ZveGExRWhHMnAwOWpmSlB0dW01Zw?oc=5",
-        "source": "台視全球資訊網",
+        "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNajhNYWtqZVJJSjZTY0FmNlA5OXhEbVlVOXZDbVVDNzFtaUhQU1B0NWhrUXF3cUZPS3VmQUNnVXVaRFdGaTFtXzlsUG5saHhlN09aODJSblhTNEVxLWsxNmlFOG1BTWxKZUEyWTB3b0hYcXh6Wms1Z29nY0w1YmJPNXZuWUZUUTRmOEtQeDBZSTNXdw?oc=5",
+        "source": "ttv.com.tw",
         "date": "2026-06-16",
-        "summary": "瑞聲科技AI眼鏡光波導鏡片量產，料H2放量出貨 台視全球資訊網"
+        "summary": "瑞聲科技AI眼鏡光波導鏡片量產，料H2放量出貨 ttv.com.tw"
       },
       {
         "title": "【06/15 產業即時新聞】光學鏡片族群盤中買氣強勁，AI手機與車用雙題材助攻齊揚",
@@ -1270,9 +1270,9 @@
       {
         "title": "玉晶光攻CPO/AI眼鏡，手機鏡頭拚7月放量出貨",
         "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNU3VXTm1pS2VDWm1xM2VUbjJyQ25SbEliS0MtaURWNEZHa0g0TnNWOXlRcWRlUEs5WUJ2Q3pNbnZzNmhZS29pc20yZHp2SWVaS3U1aEZLRXRVWEdyZWZtemZZc1c5NzloTkhPOUNkZ2tNRmlfcjJKYTRWQ2EtYVN1Y2prZFMxaWR2bkdxbG1JTS1RZw?oc=5",
-        "source": "台視全球資訊網",
+        "source": "ttv.com.tw",
         "date": "2026-06-11",
-        "summary": "玉晶光攻CPO/AI眼鏡，手機鏡頭拚7月放量出貨 台視全球資訊網"
+        "summary": "玉晶光攻CPO/AI眼鏡，手機鏡頭拚7月放量出貨 ttv.com.tw"
       },
       {
         "title": "《價值型投資 最新產業研究報告》玉晶光（3406-TW）iPhone鏡頭升級，AI眼鏡與新穿戴打開光學新商機",
@@ -1345,11 +1345,18 @@
         "summary": "【最新消息】台積電點名智慧眼鏡，「8檔概念股」搶先關注！-CMoney官方 CMoney投資網誌"
       },
       {
+        "title": "智慧眼鏡大戰開打！光學族群強勢表態 今國光、海華噴漲停",
+        "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1JeFZwOXMwcmJrcl9mb3VLMHdMTWhzeWxOUmhHQzQtbElfaU5zbEVQQkd2RF9ETGN0d3l1ejctejZpT2JpaTFHRzJ4ekhzbHlNbjRQQnNLamFNUQ?oc=5",
+        "source": "東森電視",
+        "date": "2026-05-20",
+        "summary": "智慧眼鏡大戰開打！光學族群強勢表態 今國光、海華噴漲停 東森電視"
+      },
+      {
         "title": "今國光攻高階光學，車用/工業AI視覺應用比重升",
         "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNTkpwMmJWNjg1TEkxcDI0OVZoZlRKamRHUGFjRWM3V3lWRXF6ZGVCMVFkRHFEek5uTkdfLUtGeDVILVNhYnNJdmEycUVNeXo0UENBNjRGanpwOGdBYWZzeUgyeEREV0E2ekVjalVqLW1FdHlfZlQzZVZMRFczYW5QY2dOU21JTnNXcTJsckV0OUYxZw?oc=5",
-        "source": "台視全球資訊網",
+        "source": "ttv.com.tw",
         "date": "2026-05-20",
-        "summary": "今國光攻高階光學，車用/工業AI視覺應用比重升 台視全球資訊網"
+        "summary": "今國光攻高階光學，車用/工業AI視覺應用比重升 ttv.com.tw"
       },
       {
         "title": "南韓 Letinar 募資 1850 萬美元 領航 AI 眼鏡光學技術",
@@ -1357,13 +1364,6 @@
         "source": "Yahoo股市",
         "date": "2026-05-19",
         "summary": "南韓 Letinar 募資 1850 萬美元 領航 AI 眼鏡光學技術 Yahoo股市"
-      },
-      {
-        "title": "智慧眼鏡大戰開打！光學族群強勢表態 今國光、海華噴漲停",
-        "link": "https://news.google.com/rss/articles/CBMi9wJBVV95cUxQdW9qSEs2X1hKVFYzTnJaYURBbVk5SWxxeURaVzdKNVQ2d1hFMk1JZW1mRDRWWDFEM1hoM0ctTEI2aVFUZGp0cUQzM3Vac1gxVnhzZjZzc1o2U0loX1YyemxzNUh2SGg3dVRpcm9fWjh6TGhlcERCZ1h6MjRxSXU1NkpqX29wZFQ0d0paSm5BVEQyTllCMk1oN3pUc240QmgtQ3NhZU9aWkIwbVZlQmMyelpvUk1rOEdaeFVFVGFUYkI5NGJWYi1FYTBsSGZfa0hINUh3R01rRTJQRG5JSUowSk5iWFVzZ0hrY1NGdzRuOFAtMzN3WC1aUE1DRXcyU00zNWZSaVl1WnBhNl95djY5QUdBOW5EVzktSk1ZMGFYYnpiekY1NTNudkY4UFdoRXdqbkN0QUJkdkZWb0d0NEFRLWJFM3ZHRUt4Z1dlcmkzdE8xdTFQdk9RQVRKelU5TXVKbFVTMlZTcml0VjMySnNvb0xaR2Y1UDg?oc=5",
-        "source": "Yahoo新聞",
-        "date": "2026-05-19",
-        "summary": "智慧眼鏡大戰開打！光學族群強勢表態 今國光、海華噴漲停 Yahoo新聞"
       },
       {
         "title": "【05/19 產業即時新聞】光學鏡片族群盤中強勢表態，AI與車用商機點燃多頭反攻號角",
@@ -1385,6 +1385,13 @@
         "source": "CMoney投資網誌",
         "date": "2026-05-18",
         "summary": "【05/18 產業即時新聞】光學鏡片族群盤中修正，大立光重挫拖累整體類股表現，多檔二線廠逆勢走揚 CMoney投資網誌"
+      },
+      {
+        "title": "台積電喊旺智慧眼鏡！11檔機器人概念股逆勢漲停「這光學大廠」最吸金 4天噴出35.36%漲幅",
+        "link": "https://news.google.com/rss/articles/CBMi2wNBVV95cUxQc2tYQXl6eHVPUVNtSFd2cmM1NzdlODdCV2hVUUdTR0JON3VlMWg3QW53VW5rQU5rVEU3ZDFzcy00NnNJaE1YT3lOX1ZITkotYlBaekZVeUhla3ZwNV9SLXRpXy1JMW5VOTUwOE1qdU5JcDE0RFZXd0MtOWJlQlcxcTlXbTZ2TTZMLUJHaUJYcks1RU9OeFptQkp2amtVLXZwWEE1VGc5OTF2UkhCcnFBWnFuZ2d3YUpON2pqTzhjb3BtREVrUW1TUEdFTXloeGU2R3ZGcTlMZE0yaTdwcEcyQ2syQ2V1UlpKNnpiMExrd25oQ2xFMjlWajc4YzVVUkV4cGUyNW8wUTlOZ1FxWlVGWEVBVTB5b3gwRk4yUktDLUFUb2ktR2pOZTRPeGdyZWszM0oxVDhPemtWNWIxSWRvTlh3SmlHYlRmdlhaRnI3V1Z5dzlJNlNabU1CSUlDdlBjM3MzdnRWVm1BRVVVWFctZ3A5X0FySXMyQzJURFBDOUZSaHFwNURxYmxZamY4d3YzTWZ1WDZSWkxoNE1kYi0wYXY5amlKbGlsYmQwVFA1TzZrQmdBazBncGhlNTlZSWxRd3hDVnJXZVFnLWJwVUtRR3IxUk1ESmFmcVRN?oc=5",
+        "source": "Yahoo股市",
+        "date": "2026-05-15",
+        "summary": "台積電喊旺智慧眼鏡！11檔機器人概念股逆勢漲停「這光學大廠」最吸金 4天噴出35.36%漲幅 Yahoo股市"
       },
       {
         "title": "「懂的人才懂」的低調奢華學！德國眼鏡品牌 ic! berlin 如何靠無螺絲設計紅了30年 | 風格時尚 | 品味",
@@ -1420,13 +1427,6 @@
         "source": "觀傳媒",
         "date": "2026-05-04",
         "summary": "【獨家】百億老總偷吃海鮮千金（上）寶島眼鏡集團總座蔡國源驚爆婚外情小三認「脫衣視訊互動」但沒發生性行為 觀傳媒"
-      },
-      {
-        "title": "首季營收61.4億！「光學鏡頭大廠」獲AI眼鏡題材加持 卻遭投信連5砍14億",
-        "link": "https://news.google.com/rss/articles/CBMilwNBVV95cUxNSEJZX1BPQ2txdGlmYnI0U0xWQTlUQlF5dGtqam8taWFhSWFIbUdDNUxsQVZtdUpJQlBYcmtqZEVkQkNoNmtWa3A3MkxCeVY1a1k4bWV5c25BaU4yMEhqZjVqLTY3N0Z2VVN5WDBEdVRqWnJHUHlGVVhrMlJwZTMtbERmcUlSXzJ3d2JrZmE3UjVBX3Aza3pqcVVEN2JEaGdOU3FDZnBqT0RqODFNUlZ3QTgxTGJXNVhPd0lMalNQejQwNkpkRGpfQm5Fdl9OOEcxTEw5RDY1dllzRF9WM0hpZ25ZWmttcVkyMmJ3SXJQRjJXc21yR2thUWV3QkJUM1Z6azJPUVdHLVVFVFBqckozZHNvc3gwOXN0d0pKV1BFSDlraW5JcnJLT0U0bGFwdkJkNEE3X2w2ZDFGZjZUNmZCVV8wRDhoN3REQktHSmdidVZOQnVlQzlBVkoxalI5NXNOa2FwWDhaN3dlU1A3cDdEQmRIU1hPYkhVbk5TX0RpamZpdEoxXy01alZFZTdPM1FSWlBPQmZySQ?oc=5",
-        "source": "Yahoo股市",
-        "date": "2026-04-27",
-        "summary": "首季營收61.4億！「光學鏡頭大廠」獲AI眼鏡題材加持 卻遭投信連5砍14億 Yahoo股市"
       },
       {
         "title": "ic! berlin 30週年來台開展：從眼鏡到 eyewear，台灣為何成全球第一市場？",
@@ -1499,11 +1499,11 @@
         "summary": "周處長參訪奧蘭多「國際光學眼鏡展」（Vision Expo 2026) ROC-Taiwan.org"
       },
       {
-        "title": "徠卡光學鏡片進軍台灣　德國專屬客製、配眼鏡就像訂製超跑",
-        "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE9KbkZGVEV0S0t4TDB2a0ZWQWptbmFaaXNhSUFJcDFJNjBra1NDeE50YVJZMGxQd3YwVUdnZkVnSXhVRkNwby1TZWRITUxrZHI4ZC1NdjBWWVLSAV9BVV95cUxORk4yYmZ5QXBRRnY5QXpRcmdFaGNFTGRtS05DMktmR0VFXy14d0x4T3Q3S2hSdkIxZmpWdlNUNHdoZjlnTklsSFBOblkxb2JwS1U1ZXJoeDJlejg3d2Rsaw?oc=5",
-        "source": "三立新聞",
+        "title": "徠卡Leica Eyecare光學鏡片登台，強調德國設計、德國製造鎖定高階配鏡需求 #客製化 (247093)",
+        "link": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE9KZ1R0VW5HaWlTMDhIakFIbUFGZVhVeG12WFB0VkVwRTcyeVhKS2ZJcDZjdzBzeDRlNDUyTzlpR2pxbS1EVzhZUDh3a2RXUQ?oc=5",
+        "source": "Cool3c",
         "date": "2026-03-17",
-        "summary": "徠卡光學鏡片進軍台灣 德國專屬客製、配眼鏡就像訂製超跑 三立新聞"
+        "summary": "徠卡Leica Eyecare光學鏡片登台，強調德國設計、德國製造鎖定高階配鏡需求 #客製化 (247093) Cool3c"
       },
       {
         "title": "奧蘭多2026美國國際光學眼鏡展 臺商布局695億美元市場|北美洲",
@@ -1690,11 +1690,11 @@
     ],
     "device": [
       {
-        "title": "《壹起下午茶》AI 算命測疾病！眼科智慧醫療新時代 百萬儀器變手持 開箱AI眼底儀揪病灶 | 壹新聞",
-        "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE8zcHJGOXVFWmg1bHE4MzhzSE41UHNvdTRPSHRtckdfQVVoaGoxZDMzekFKTnBSM1d4V2xBOEltdExhbXN5X1ZKelVkb29TLUE1Ny1NRHg2eU10dlRRUmx6bzhxNXdVUjZTM1lISVdqZjNiNEFkOWpxa2xrVmVtUXM?oc=5",
-        "source": "壹電視",
-        "date": "2026-06-12",
-        "summary": "《壹起下午茶》AI 算命測疾病！眼科智慧醫療新時代 百萬儀器變手持 開箱AI眼底儀揪病灶 | 壹新聞 壹電視"
+        "title": "科明儀器每股配發現金股利5元 新品項到位拚今年上櫃",
+        "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFAteWVyUTc0dFViQ0VlblRuLUZySzl6c2lKUnRrMWxlY1dZRm52dGlhRVJlMUZXQlBGWGJRVTV5UmtLSGRhYW1rNk5JSExvZDVybHc?oc=5",
+        "source": "放言Fount Media",
+        "date": "2026-06-25",
+        "summary": "科明儀器每股配發現金股利5元 新品項到位拚今年上櫃 放言Fount Media"
       },
       {
         "title": "眼科醫療走入偏鄉 守護中寮長者視力",
@@ -1709,6 +1709,13 @@
         "source": "TechNews 科技新報",
         "date": "2026-05-19",
         "summary": "科明儀器決議配發現金股利 5 元！預計 6 月送件申請 11 月轉上櫃 TechNews 科技新報"
+      },
+      {
+        "title": "飛秒白內障設備龍頭科明6月申請、11月興櫃轉上櫃 全年營收拚增兩成",
+        "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1ibFpJbjdqak9HY1EwbzhnanZIN1RFTXkyVVhwVnM0RnJVSXE0TUpMS052dUNDbmUyMmFhNUNFYy10cHFRSms2N3l6aGJCQ3otMnZQb2NyY0FiWmPSAWBBVV95cUxQLW83YUh4ZlFiMzBGcTBlVUV3aXF1R1BOdER0dlc3MDYwdWtMZHRYaVhpdlJGVlppLWdfS3BxbVlCNW5VVmJkdDZUY2wxYzNVM0h4dU1KQlFYSFU5azYtRm8?oc=5",
+        "source": "經濟日報",
+        "date": "2026-05-19",
+        "summary": "飛秒白內障設備龍頭科明6月申請、11月興櫃轉上櫃 全年營收拚增兩成 經濟日報"
       },
       {
         "title": "基隆步入超高齡社會 市立醫院眼科看診人次增加…慶安宮捐贈新儀器",
@@ -1774,6 +1781,13 @@
         "summary": "越國界 慈大人醫菲揚團訪慈濟菲律賓眼科中心 TCnews慈善新聞網"
       },
       {
+        "title": "百萬裂隙燈進駐北護眼科 餐飲集團暖心捐贈挺醫療永續",
+        "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE9FV3U1V0I3aW14MC1iRW5qQVJaMDEwNkxaTXBEUE9MRjFXUVpwZlN1dWx6blRaU0RydnV4Mm1rTFZLSHZ0aVZxQTl4V3BuS0h0dmNSbA?oc=5",
+        "source": "東森新聞",
+        "date": "2025-06-18",
+        "summary": "百萬裂隙燈進駐北護眼科 餐飲集團暖心捐贈挺醫療永續 東森新聞"
+      },
+      {
         "title": "眼科必備「裂隙燈」老舊苦撐　台大北護分院獲企業捐贈設備升級",
         "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE1MYnZlWnA1SVdtRnZLX3Y3ZElxMXdUbW4yQjZhY29PY0xUVU5DYm13SlpwdXdnNnJPWTVuS1QxNXpoVnNXMjBkVXlNb1loOVFs0gFsQVVfeXFMTkJWbHhmdmZxZ2R5VTc0Vnh2VWJmV0J0RGoyRl9WOEwwQVlQa1gySEFNMUdCVnN5Qm9kQy16MGlQMmxVODB6MUU2QTJxRERfYVJTTVdYNjBRc2NTZU45ZEd6eEUzdlYxUk5sRktB?oc=5",
         "source": "ETtoday健康雲",
@@ -1814,13 +1828,6 @@
         "source": "TechNews 科技新報",
         "date": "2024-12-02",
         "summary": "宏碁智醫插旗海外再下一城，攜眼科 AI 軟體布局馬來西亞 TechNews 科技新報"
-      },
-      {
-        "title": "《Genet法說筆記》明達醫(6527)前三季營收6.44億元EPS 3.84元，品牌代工同成長推升今年獲利 (11/18日股價89元)",
-        "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5sRTVLb0h2bFl4WDdTYzVPVjdycHhuMl9STEpwVFMyak9wQmJtQ0dRZ3MtYnp5TnVMeVI2TDVVNlZMNmlwOHRxUWlCcEtUSDZOcHFhazFLVFFUSEhNLWE1U0MwME9Bbm9tWFBPdHlR?oc=5",
-        "source": "genetinfo.com",
-        "date": "2024-11-18",
-        "summary": "《Genet法說筆記》明達醫(6527)前三季營收6.44億元EPS 3.84元，品牌代工同成長推升今年獲利 (11/18日股價89元) genetinfo.com"
       },
       {
         "title": "小小視光師 | 職業體驗活動 學習護眼知識+ 換上視光師白袍+操作眼科儀器",
@@ -1907,6 +1914,13 @@
         "summary": "使用3C時間長、老年化社會...這檔「眼科醫療概念股」值得注意！-Smart月刊-台股 商周財富網"
       },
       {
+        "title": "Cally - Hoya向理大眼科視光學院提供380萬元眼鏡鏡片及儀器支持近視研究引進光學生物測量儀更精準控制近視｜商界講呢啲",
+        "link": "https://news.google.com/rss/articles/CBMingVBVV95cUxNcVp1QVNjNi1qaG5lZ3dtTFhjaEZlYllBYWJ5cWJtdElVMVp3YW5vMTNyU1FKbmNRQVFmUXp2WWdXUzBFVm01S0wtQnFIb05YU0JiRVdvTGl0TlllTjRMNmk1bHpBeEdfVjI5YzFMUGJ0dkUtVUg2SjFCaWJRVm53MlEtYjdwUWlNWnVpQUc4SGc3LTlwZ2VNSGFRYzB0MTRzVDFXTG4tSkpybFdoMzl3ci11N3RPY3NWWkg1My0yUHZsaVRsNml2dVgtZ0lSSTh5b21xN0hEeFhNaE8xN1dvU3d0ZDROZmxzdExRb1ExOGFqSHIzNFFPT3dGQXBZMWZ3Q3phclduSXE2Ym9XR3B2ZWZ1NW5lU3lJMXRQZVpmclB4eTZNLVNkdFd5dlp3VFlTWHBVNGc0eWNmenZSbzNTb1E4b1FaajJyY3d5LWxJRk5VUFZYbklqRC13SlMwQ1U2MW1VYlJ5VHI4VGRuZHpiaEw1dlJVYXdiQVR4UzN6bm1xOFBfNEdod1pNdjU0dGhxRWkyaEtGd0lGRjdOZ3JPaS1qTnFCaENsT2NwUlltaW1SVUJweHY2ZXJxZXUtZlBYRVl5RDBXWURnaC1jcmhsS28yTkJQS210eEpxYjhROWdJTzlhMkROWjhLNGFQeUFVWTh6TC1ISG5RWjdXWjNLamQ1U0ZvQXlWLWFLNExGbnh0aXBQLTBjTHc3M0NqNV9KYVNENG50RUtTOV9WZzVlR3QzZmw0YkV3RjBLb3R0NkV2LXFNRlpvSVppRVU1ZVZ0N2VvbV94SEJ3SGhUTXQ4OG1ZV3hvRlpMR1REcW5jQ2tjQm9wNzE2NkdrZGx2ejctblNWSlVheFFXdHhORjJkbEpwU0wzdzdZR3RRV2VR?oc=5",
+        "source": "星島頭條",
+        "date": "2023-12-14",
+        "summary": "Cally - Hoya向理大眼科視光學院提供380萬元眼鏡鏡片及儀器支持近視研究引進光學生物測量儀更精準控制近視｜商界講呢啲 星島頭條"
+      },
+      {
         "title": "彰化睛睬亮眼 扶輪社捐贈眼科外展服務巡迴車及儀器設備守護長者視力",
         "link": "https://news.google.com/rss/articles/CBMixgNBVV95cUxOSzNNLW5aMGwyYWttamduMkZYdGdsOGxfNmVldWZlUHcwaTVKSTl6STFTU2JBMjdlNEs1RUhocmxpT2dSQTRHcjBvVTFaNE9nNE5zZGs0U21YdlljQUpaOGFiNVlPd0pIOUJzOEV6Rml2MzZwQnNibHd1cUtMQjVtOG1BeXVvcXpCTnR2LTdzOEVFNWpRMWNtWERYbTJGZERtckVmWGZuSnlnb2o3c3ppdE9RYjZncFZENklncFplT3RfYlVmMGR0MlVtTWliSWZFMk80eDVWdFh1MzdZb1dDaGRZNFc0S21VdlNzWE9mSnlMTE1PZzRocmw2U1NGSXhXbGxrcnBPZEFaVmE5UWJ2U2g5ODFtN2MzYmp2YWpaajhYMnNCazB2X25zUVZwajJuZEFJYnlxLTdqWmhjNFpYdmkyUUhlQU5DOHBMWC0xbF9ibmN0Tm04MEhHZ1dYSVZmNnFrOVNYV3dGdzhHa08yYW1NcXMxRDZncHhYTUhySmFsSDlxMktuWkUxYm5LRmsweUpvYkFQdllmd1JHNFk0X2RnbkxBWFVyRTV3VXllUjRtc241VDBIRFJXZGdET281OXVLWmV3?oc=5",
         "source": "台灣好新聞",
@@ -1919,6 +1933,13 @@
         "source": "蕃新聞",
         "date": "2023-11-09",
         "summary": "台灣眼科新藥2024全面起飛 蕃新聞"
+      },
+      {
+        "title": "乾眼症常見ＱＡ，眼科醫師解析",
+        "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9nQW0wMm00RmlPbGRzR3RNY2pmb1p5V2dacEVScFVqMThzQ01hellzamdqem52VllTRzdwSTZBcXM5dEdWaFZkT2loRFRMNUF0emc1UnZEb2thN2txR3ZkOGN6RWFxSnd1NlpoVERR?oc=5",
+        "source": "careonline.com.tw",
+        "date": "2023-10-30",
+        "summary": "乾眼症常見ＱＡ，眼科醫師解析 careonline.com.tw"
       },
       {
         "title": "全台唯一 全眼高端自費醫健檢治中心首度面向醫療市場",
@@ -2012,18 +2033,18 @@
         "summary": "大學與蔡司聯手 亞洲首發3D智能高科技眼科視光中心 台灣好新聞"
       },
       {
+        "title": "《新創動態》晉弘科技視網膜AI輔助診斷軟體取得TFDA醫材許可證",
+        "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPcmlxaUxrWTBDb0Z2cjZvaVBMNG5LSlU0R3g3R3A4TklBa2k1MGkxdVRJQlo1ZFN0MG0yNXJFaGxJdGkteVc5UENpeVFqWVhCd2RNUHZ5am5Sd2h1NnlQdHNFa1pUejV3U2lLNXExZFBmV0tlRGxFck0tOXo5ZzZaSUJlRDZfZw?oc=5",
+        "source": "國家新創獎",
+        "date": "2021-07-08",
+        "summary": "《新創動態》晉弘科技視網膜AI輔助診斷軟體取得TFDA醫材許可證 國家新創獎"
+      },
+      {
         "title": "台灣是全世界的眼！全球五成白內障手術，都靠這間公司",
         "link": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE9jZXJGZ1RULVRrU2pvM1NYeEY4alBkYU9SZ2wxRlg4cWVNRFhoVFZOUkZjOHJCeWtXX0cwUnByNUVZMkxPR2V1a2E2VTlRQQ?oc=5",
         "source": "天下雜誌",
         "date": "2021-03-22",
         "summary": "台灣是全世界的眼！全球五成白內障手術，都靠這間公司 天下雜誌"
-      },
-      {
-        "title": "國際扶輪捐贈眼科儀器 提升偏鄉醫療服務",
-        "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE90VGRxM1dFM015TE50UGVqVllXcGtwOEM4LWNpYUxsOUhIc2NoNUVoMVJVZXVEdV9TdUgxQk9GSFdvNlRGdkxYa1Y4MkdPdDA0WGpWbzRHUFhvODZ6aGhrcdIBZkFVX3lxTE5fSHUyV0JwOUlDZFVKM2d0d3BDbGN3aV9oQl9Sc2p1MHhfamxJRXluM0ZvWkU0cS1HeWZkX0VQLUNxUy14T181X3NQVmxGTVZhNG9LeFZoVW1PdWwxNzlGYUlOOHROQQ?oc=5",
-        "source": "大纪元",
-        "date": "2021-02-26",
-        "summary": "國際扶輪捐贈眼科儀器 提升偏鄉醫療服務 大纪元"
       },
       {
         "title": "南投獲贈321萬元眼科診療儀器 嘉惠逾12萬縣民",
@@ -2040,11 +2061,11 @@
         "summary": "企業捐贈眼科醫療車 嘉惠投縣偏鄉民眾 台灣好新聞"
       },
       {
-        "title": "宏碁、台大聯手拿首張眼科智慧醫材藥證，施振榮：醫生睡覺也對人類有貢獻",
-        "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE82ZnJubGVJekwzaHZLS0dwZUc0dkc2WVlmTmhNbUpvY1hqUmtwRGN6NzhfamtuR1NMNzBuRm1aVzhELV9XeElwUFRVQ0NtVjFJeTlFQXZFeHJ5YW5EY19Qc0JhZlFqTW9ha1hYUHNUbUFkVVBC?oc=5",
-        "source": "數位時代",
-        "date": "2020-09-24",
-        "summary": "宏碁、台大聯手拿首張眼科智慧醫材藥證，施振榮：醫生睡覺也對人類有貢獻 數位時代"
+        "title": "糖尿病行動眼科「麗睛專案」，加入PLG樂團演奏，散播歡樂氣氛",
+        "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE1FS1JWcXNRd3JzdFZ4eDdCek1GcDFMeWZHWC1sQlJXbmVXMFEyZVZRY3lSanRGRHp0T1htVGFFcGxtWXpsMWc1MjRXVWtSdTFM?oc=5",
+        "source": "chshb.gov.tw",
+        "date": "2020-08-07",
+        "summary": "糖尿病行動眼科「麗睛專案」，加入PLG樂團演奏，散播歡樂氣氛 chshb.gov.tw"
       }
     ],
     "pharma": [
@@ -2096,13 +2117,6 @@
         "source": "自由健康網",
         "date": "2026-06-13",
         "summary": "健康網》「白內障」別只當老化 醫：與大腦退化有關聯 自由健康網"
-      },
-      {
-        "title": "看得清竟險失明！他驚罹青光眼痛心自白：輕忽醫師一提醒像在賭命",
-        "link": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE1tZUJFdkQ2X1UwdUdGZzNlWjBEc0poVVFfUW5BVTFSNTFNSmUzdlNxY2ZhUGtzcE5iX1dPVmxoOVN6THFKbGc?oc=5",
-        "source": "早安健康",
-        "date": "2026-06-09",
-        "summary": "看得清竟險失明！他驚罹青光眼痛心自白：輕忽醫師一提醒像在賭命 早安健康"
       },
       {
         "title": "正常眼壓也陷失明危機！青光眼3大自救行動：這些運動姿勢快避開",
@@ -2413,18 +2427,18 @@
         "summary": "白內障一定要手術？中醫3療法有效改善視力模糊、延緩惡化，4食物泡茶入菜護眼睛 良醫健康網"
       },
       {
-        "title": "這種眼藥水超涼！竟引起青光眼、白內障 全台183萬人有乾眼症！慎選眼藥",
-        "link": "https://news.google.com/rss/articles/CBMirANBVV95cUxQZVJtYVlPN3BwTmpSMzFGcllrOTB6TXBsZVYyRkF4amoyYXFYNXI4QkpvUG9BMkdveGh5TFRJQmFYVk4wUHRsaUJzSlU2UVNDZmREQVBqS0RCVFRRZDVhX2g3c0tWcmR1UFhMQ015dlNwS2JvYm4xQ3lwTDJlUVRKd00zZmMzQnotZTdLVUoxQlVEa0VSME8zMHJUa2doR1RGTHdrbDV6UW9OeWpqS3VudkJFR3QtejI1eHdnZmZfbWdDT2h0cGUyM29YdEpTOENobUdOZnczbXF4SDdOang5ME11UzlkZ2NrVDJGWmpXVmpFQXdhQlJnRlFhRGFnZUxVQzV0dDI5WmVkQ0VZTEMyQXUzRk03Q2RCTjJ5b21QcHd0RVJqMzhPbTNhZ2I3endSdEt0N3I1VGNmM3gtUVNIUUxNT1JFdGFaR2NEWXM1c2VRdE1WTTlvaDgyZHNBeThXS1JUZDJkRFhaZXV1ZEJPdUtVS1V6VHpHc2d0aUVJRU9xdVBJam9QcVZGUVNKNEE1Zkt4SkpuUUctZk1uVkUyYWs4d3ptLTZIdFphNQ?oc=5",
-        "source": "Yahoo新聞",
-        "date": "2025-11-06",
-        "summary": "這種眼藥水超涼！竟引起青光眼、白內障 全台183萬人有乾眼症！慎選眼藥 Yahoo新聞"
-      },
-      {
         "title": "乾眼症如何改善？眼睛乾澀、有異物感⋯醫揭問題全出在「1關鍵原因」",
         "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE84NFY0b2E5NWJ2M1hfaERVaWJpcjJiVVp5SlExYzZyempMYktpNERHUmFkZ2N1TWFNOXJuNWNmTkRyTlNHcTVKZVJaeVdBajl3WXZV?oc=5",
         "source": "優活健康網",
         "date": "2025-10-30",
         "summary": "乾眼症如何改善？眼睛乾澀、有異物感⋯醫揭問題全出在「1關鍵原因」 優活健康網"
+      },
+      {
+        "title": "白內障年輕化3大元凶！醫示警：高度近視恐讓白內障提早10年找上門",
+        "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE4ySnVDTTNiaG0yNmZiSmh2RHBXYlpDWTRUaDJpZk1jU3NNaEpDZTRCc29rUWdLMklIanphdDBSSVNWNDBwbUFBN2w4RWRfaGtDeFE?oc=5",
+        "source": "華人健康網",
+        "date": "2025-10-29",
+        "summary": "白內障年輕化3大元凶！醫示警：高度近視恐讓白內障提早10年找上門 華人健康網"
       },
       {
         "title": "亞東醫院乾眼週邀請你一起用專業守護雙眼- 遠東集團",
@@ -2546,6 +2560,13 @@
         "summary": "劉至翰沒躲過家傳三代青光眼，右眼視力剩一成！搶救失明危機哪些事最關鍵 早安健康"
       },
       {
+        "title": "白內障「熟了」再手術？醫揭白內障手術新趨勢！教你搞懂健保給付與自費人工水晶體的差異",
+        "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1JN0lOcnVIMWFNWkZ6d096Nl9Fd1dFZEJuSnE0OEZDNDlBb05FUncwb2tpUXlhYmFTVkJILVNWcDZrNzMxSmg0UVBwSmhJT2JTOTQ4T2hlLTVncDM1b2JnMXE1dlFsUjZjQXc?oc=5",
+        "source": "良醫健康網",
+        "date": "2025-08-01",
+        "summary": "白內障「熟了」再手術？醫揭白內障手術新趨勢！教你搞懂健保給付與自費人工水晶體的差異 良醫健康網"
+      },
+      {
         "title": "青光眼點藥無效？ 醫師揭「治療新解方」助穩壓保視力",
         "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9zYmhVbUNEeUdIRWxEa3hrN3UxenZneE5mUk1Mc3N2TXlaRmhjRGM4SHA5WV9BN1NNay1sWEZya2JVQm9icTB6ZzlYekJUeVlvZmtxZGxB?oc=5",
         "source": "健康醫療網",
@@ -2567,18 +2588,32 @@
         "summary": "眼前飄黑影！夏宇童36歲確診白內障！護眼3要訣別讓眼睛老太快 早安健康"
       },
       {
+        "title": "才37歲！夏宇童罹早發性白內障 視力突見「變形蟲」醫曝5大警訊",
+        "link": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE1CQmJIc2h4XzhfcXduTkFVcTRlVnNpdnVwa2EwS1BFbjk4NDJfdm1NOTZvTU1qbXhiRnFHYURxR2FXZXdXZXNzR3YxNA?oc=5",
+        "source": "Heho健康",
+        "date": "2025-07-01",
+        "summary": "才37歲！夏宇童罹早發性白內障 視力突見「變形蟲」醫曝5大警訊 Heho健康"
+      },
+      {
+        "title": "白內障不再是老年專利，40歲族群也需警覺！做過近視雷射還能手術嗎？眼科專家一次解答術前術後關鍵",
+        "link": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE9ScUxjLWtrOGlnOGNMRjhaUF9zNUlQbXVveUxvQ1RHN21sd3RUNDRaZE1TZENySVBjMkJ2dHZNbTVFR1BvVUZFY1VRVQ?oc=5",
+        "source": "Heho健康",
+        "date": "2025-06-30",
+        "summary": "白內障不再是老年專利，40歲族群也需警覺！做過近視雷射還能手術嗎？眼科專家一次解答術前術後關鍵 Heho健康"
+      },
+      {
+        "title": "健康網》白內障術後還要戴眼鏡？ 醫曝3類對象有需要",
+        "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE1vTThpQkY3MVlmVjdua3pVQTRXODJQZUliSTJYU1E5ZDBfR2tZMnptWnVEMlJQdDR2WHcwQ1hKYkFIS1AtYTlCNlktV2FCal9rXzhDZnU1RElKQWxTZlYycU1GSFjSAWpBVV95cUxPMUpDYTcxTDUwRmViRVZMTk0zUDNCNjZ2QzdLSTZfN0dYdlVYVk0xZjFzaHlrYUNKM09wNWVFSTFxZV93bzRjZFdFYUpNYlVlMHJWREdhbzlWSmtPMmF3SXNtWURzaGhoM0Fn?oc=5",
+        "source": "自由健康網",
+        "date": "2025-06-29",
+        "summary": "健康網》白內障術後還要戴眼鏡？ 醫曝3類對象有需要 自由健康網"
+      },
+      {
         "title": "網傳「中醫護眼操 逆轉白內障」影片？眼科醫：無科學依據 恐傷眼",
         "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOOElzcVVMQ1NoSUZoMGtyeVYwMnpyOHBvNUFtaWkxTDRsT3ZVYy1saXJaZVpWWHRBdkd6U3B2ZmNBdTZOYmpCeHg1eEtQWTc1LUZBaUpqUm0yaGdVSXFzSThzOEJrY2JFRjB5d1R1YkpfNkhVNVRWbl8wQkp1MWp3NWtNekptaHlfRWpUSUJMOWw4U1dVMnEwazJJZk5vbkF0MnhqU2R6NUt1Zw?oc=5",
         "source": "新住民全球新聞網",
         "date": "2025-04-21",
         "summary": "網傳「中醫護眼操 逆轉白內障」影片？眼科醫：無科學依據 恐傷眼 新住民全球新聞網"
-      },
-      {
-        "title": "每天喝一杯茶防青光眼！研究發現降74％患病率、但2款茶沒用",
-        "link": "https://news.google.com/rss/articles/CBMiRkFVX3lxTFBEM0dQelIxbTRPXzNYY3Rramo4NTFPdjNiSlU2MUlKWFNaRXEzelNFZjRLeExKemdfZjdtZzdZOE54VkFDU1E?oc=5",
-        "source": "早安健康",
-        "date": "2024-01-14",
-        "summary": "每天喝一杯茶防青光眼！研究發現降74％患病率、但2款茶沒用 早安健康"
       },
       {
         "title": "乾澀過敏、急性青光眼都是原因！眼睛紅靠眼藥水消退？醫：可能更傷眼",
@@ -2593,20 +2628,6 @@
         "source": "早安健康",
         "date": "2023-07-21",
         "summary": "打呼小心青光眼風險高10倍！醫師傳授自主改善2方法 早安健康"
-      },
-      {
-        "title": "經濟部宣布開發出青光眼及黃斑部病變新藥 工研院攜手信力生技集團 搶攻全球15億美元眼藥市場",
-        "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxONU9ydjBSaEdLNkx1ZFlzRThwSjZVdmN5eklWWWpvYlRJS0JJS1AtNzI2VC1kX21HZmE4LS1TZVFDTWpCOWFoN0MteTVFdnQ2aUxZNmdVeFVHbVowM1E0ZVhaMlJoQTdDYzZIQmtEVmIwUkc4cTE3dkpwbmhCMC1Xb0kyZ1NYdFQ3YU5sdQ?oc=5",
-        "source": "moea.gov.tw",
-        "date": "2022-11-08",
-        "summary": "經濟部宣布開發出青光眼及黃斑部病變新藥 工研院攜手信力生技集團 搶攻全球15億美元眼藥市場 moea.gov.tw"
-      },
-      {
-        "title": "青光眼讓她2年後淚領殘障診斷書！點眼藥水降眼壓能逆轉視力退化嗎？",
-        "link": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE9TZ2pTX20zUTVHVE5vVHhOaVhXT3ZyNWRUaGs5a3hxWnRlSk1nQkpsamNhQWlSRGxDU0JuOGtPUTFCc2lGSFE?oc=5",
-        "source": "早安健康",
-        "date": "2021-06-18",
-        "summary": "青光眼讓她2年後淚領殘障診斷書！點眼藥水降眼壓能逆轉視力退化嗎？ 早安健康"
       }
     ],
     "health": [
@@ -2627,9 +2648,9 @@
       {
         "title": "黑色星期五！散熱族群集體做護眼操 唯獨「這2檔」上漲殺出重圍",
         "link": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE5uc2ZTRDlsVnRzY1JTZG1YQ215Qm1ZaHM0UHBwRE9aNWZ5RUpBNlctTFR0eUgwbTNMMU51RFRDUng5aVZHeHQ0Y1hRYw?oc=5",
-        "source": "三立新聞網SETN.com",
+        "source": "三立新聞",
         "date": "2026-07-17",
-        "summary": "黑色星期五！散熱族群集體做護眼操 唯獨「這2檔」上漲殺出重圍 三立新聞網SETN.com"
+        "summary": "黑色星期五！散熱族群集體做護眼操 唯獨「這2檔」上漲殺出重圍 三立新聞"
       },
       {
         "title": "熬夜看世足傷身？營養師曝：護眼顧肝食物清單、恢復關鍵",
@@ -2716,13 +2737,6 @@
         "summary": "抗藍光眼鏡真有效？醫曝4大護眼迷思，掌握這原則不再白花錢 早安健康"
       },
       {
-        "title": "【防制學生藥物濫用】新興毒品的校園攻防戰",
-        "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE0tR3NhNjZyX3p0N29GNUtYaVEzNGFDckFsWHBXVmhTX2dENE5YdnpjWmJVUXpXTHRLX0d0Z2EtcjYzSFA2TTgxOUVPY0FndU1pOE03T1pNVlJSZ19FV1EtS1B6R0dkeWFY?oc=5",
-        "source": "ner.gov.tw",
-        "date": "2026-06-16",
-        "summary": "【防制學生藥物濫用】新興毒品的校園攻防戰 ner.gov.tw"
-      },
-      {
         "title": "南興國小榮獲全國視力保健特優第1名與前後測成效評價成果報告優等",
         "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFAzdUR0THlJejhVRHNXNmVDWld5UC10cFdHbksySWF6bi02bXd1b0hzQ25mZlJxRFlBVHRfaEJNdHhSTFlPVmRjd21heXByLVdLd3N3ZlRR?oc=5",
         "source": "中央社 CNA",
@@ -2756,13 +2770,6 @@
         "source": "自由健康網",
         "date": "2026-05-17",
         "summary": "健康網》護眼不只葉黃素 專家推這「色」食物 助夜間視力 自由健康網"
-      },
-      {
-        "title": "【得獎公布】孩子視力健康好煩惱！填問卷，抽護眼檯燈和千元禮券！",
-        "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE9fYWotcy05b3dZcDRucmp5U0VtWmRDNTRBcVJ1Z0xoZERGalhvSmpfZEhuZTMxb3VnVDdTMDkta1lfdDhXMWdqVUY4Rl9JaDRwSjh3X0VCX3Ruckdv?oc=5",
-        "source": "親子天下Premium",
-        "date": "2026-05-11",
-        "summary": "【得獎公布】孩子視力健康好煩惱！填問卷，抽護眼檯燈和千元禮券！ 親子天下Premium"
       },
       {
         "title": "5月紫外線強！沒護眼，為何白內障、黃斑部恐提早報到？挑選太陽眼鏡原來「這顏色」最好",
@@ -2849,18 +2856,18 @@
         "summary": "健康網》眼科醫「全年齡護眼」孩子到老人都需要檢查眼部 自由健康網"
       },
       {
-        "title": "宏碁推 Acer R272 P1 護眼螢幕 144Hz 高刷新率入門價新台幣3,999元",
-        "link": "https://news.google.com/rss/articles/CBMiS0FVX3lxTFBLbDdBdS0zcnBNNmFnaDUtRHp6d3lOeWo2TS03Q3lOTW9vXzRURUtFT2laVHA0elpXVkJRV1FjbFNodGtJNTNxVktWNA?oc=5",
-        "source": "樂聯網",
-        "date": "2026-04-04",
-        "summary": "宏碁推 Acer R272 P1 護眼螢幕 144Hz 高刷新率入門價新台幣3,999元 樂聯網"
-      },
-      {
         "title": "視力保健也能很好玩！教你怎麼帶幼兒學會「視力檢查」，變成親子有趣互動",
         "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5nS05KejNrZi1HWU40RjJWaG1hR0JXVktwZm1XWWU1c0F1QjFTZUs1Ym5aZno4eVBVVk5FOXk1cm0tTjVmOUhFS2tDNG9qZE5faXRUSVFR?oc=5",
         "source": "Mombaby 媽媽寶寶懷孕生活網",
         "date": "2026-03-23",
         "summary": "視力保健也能很好玩！教你怎麼帶幼兒學會「視力檢查」，變成親子有趣互動 Mombaby 媽媽寶寶懷孕生活網"
+      },
+      {
+        "title": "莫允雯、傅孟柏同框談護眼：35+視線模糊「該配鏡就別拖」",
+        "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1TX0wxSjU2Z3JqUVp3TW1XcjR6eURmbHNaelJlNVA0bzEzbjdCSlNiY3NXVUpkai1vUFZmT191UmhFdkRMQUJDclJhLXhna2JoSWc?oc=5",
+        "source": "ETtoday新聞雲",
+        "date": "2026-03-23",
+        "summary": "莫允雯、傅孟柏同框談護眼：35+視線模糊「該配鏡就別拖」 ETtoday新聞雲"
       },
       {
         "title": "這糖尿病老藥有助護眼？ 研究：可能降低黃斑部病變風險",
@@ -2905,11 +2912,25 @@
         "summary": "長期乾眼恐害角膜受損！醫授「護眼3招」遠離乾澀 Yahoo新聞"
       },
       {
+        "title": "這些蔬果能延緩老花眼？35、45、65歲「護眼3對策」一輩子有好視力-第2頁",
+        "link": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE5PSnQwUHF0VkV4X3NPTGxCSGpHRFFydjc1WHZ2Y3ZLdU9FSHBUVk53a3VrMzY0dGFnU181azU1bkR0VzIwMUJuZQ?oc=5",
+        "source": "早安健康",
+        "date": "2026-02-05",
+        "summary": "這些蔬果能延緩老花眼？35、45、65歲「護眼3對策」一輩子有好視力-第2頁 早安健康"
+      },
+      {
         "title": "健康網》過年年菜這樣吃護眼又健康 眼科醫推彩虹飲食6食材",
         "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE1UcUxndUJNTWhSOTJWTHoyTUJIYlQ3bXhEXzYyanloakxGUEZsMnZWRGFOLWQxRmVCd3lmYzllTWl0MjhIc1ZLa3REajVIcWtvcVdWR2RxTzlqaEdCZV9MU0lFTGXSAWpBVV95cUxQNVI1b3NySVo0eDIwaFNzdVRFd09SSkVtQWw1TFpQNC1ibU9jdUQ0TzlYWDRmLXpuUDljSGRRSnU1Nl9oeUJ1VmgyeWpMSFdnVVNnQ3B5emZJbW9GN1hES2hqZnd5NXRCZXN3?oc=5",
         "source": "自由健康網",
         "date": "2026-02-03",
         "summary": "健康網》過年年菜這樣吃護眼又健康 眼科醫推彩虹飲食6食材 自由健康網"
+      },
+      {
+        "title": "春節年菜這樣挑幫眼睛進補！眼科醫推「護眼年菜」6食材還防白內障",
+        "link": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE9nVEtUOHhkSElRLTNyaFVEZndJWEhCVjFFZmpnRlFkdU5Ja0dGQUhoRzM2Mk9KWHQxbkUxRWVxQmEwZldHY1E?oc=5",
+        "source": "早安健康",
+        "date": "2026-02-03",
+        "summary": "春節年菜這樣挑幫眼睛進補！眼科醫推「護眼年菜」6食材還防白內障 早安健康"
       },
       {
         "title": "短影音看不停！當心「短片視覺症候群」上身 醫籲謹守「20-20-20」護眼法則",
@@ -2961,18 +2982,18 @@
         "summary": "拒絕3C惡視力！醫揭護眼新關鍵「選對螢幕更實際」 優活健康網"
       },
       {
-        "title": "最強護眼蔬果清單公開，從餐桌到生活的全面修復策略",
-        "link": "https://news.google.com/rss/articles/CBMiREFVX3lxTE1lNWlPM2MzNGtQaldQZmQ1VG1sa2M0QVhtODVuSzR0ODBvOURNRWxWbkZwMWNQRURNWExXektKUnZETmJG?oc=5",
-        "source": "美南新聞",
-        "date": "2025-12-13",
-        "summary": "最強護眼蔬果清單公開，從餐桌到生活的全面修復策略 美南新聞"
-      },
-      {
         "title": "健康網》冬季眼睛鬧旱災 打造4環境輕鬆護眼",
         "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFB0R0J1RjBpRWJhcnZSSzh1MnpTNUJYSkp3TDdEUE9qM2VzNDVDb2pad0NkRUQyel9PRkxtRHRMd0l3VXM1em1iQzBTblpncXZwMXQwNVhhMkFXLTgySnkyZE9YXzfSAWpBVV95cUxNLWNuRkpWcnNXVGU4WnJMQ3ZKR2JqNnFJeXNRdHVDTlVadTdkNjR4M2J5emgyNXh3MXdEM0lHdVg5NnZQTFg2ek01QXk3TW0xV3dGXy02QlJtSHBCeXhhV2M0Wk9jdktQTGtB?oc=5",
         "source": "自由健康網",
         "date": "2025-11-29",
         "summary": "健康網》冬季眼睛鬧旱災 打造4環境輕鬆護眼 自由健康網"
+      },
+      {
+        "title": "不吃保健品也能護眼！營養師揭護眼必吃清單",
+        "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE1tclkwYnFpNW8tSi1LQnFYMVNMMEdBaFYxMjVDZ0xYWGhaY2t6SGVjcnpJbmJjdTh0M0dLVlZnRXRscWk4RWU4ZUtzTGY4V0F00gFsQVVfeXFMT2FmQmhjMWgwZVNZQi1MMjV2R3I3aFpNZHYwZnQ5eVl6N1Y0dzlqaEY4VWRWbXVYM0RxZVA1eXNLR2xlZzNXdlJnTi1XWWdJa3I0UzZEVU5xeEs1RTJSWmlSM1dOanhDOGQtYlFr?oc=5",
+        "source": "ETtoday健康雲",
+        "date": "2025-11-25",
+        "summary": "不吃保健品也能護眼！營養師揭護眼必吃清單 ETtoday健康雲"
       },
       {
         "title": "亞東醫院推免費篩檢助糖友護眼守護甜蜜視界- 遠東集團",
@@ -3031,18 +3052,11 @@
         "summary": "蔡司視力保健部與嘉晏光學攜手眼科夥伴 關懷弱勢以捐鏡行動回饋社會 健康醫療網"
       },
       {
-        "title": "健康網》不只護眼、抗癌、增免疫 這蔬菜抵禦重金屬又護腦",
-        "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE5wWGs5ZWNJeHp4N0hGbjNTZHhEWVNna29BSlRsZEg2NFVISzdON1ItaGNpVUt2T2JuZkpQVGFrZkpaUHZHc1p6V1NVM0JsbFVnYjRZYVdpbmpqMTcwbDJRTlllcl_SAWpBVV95cUxPSGVhWVJGVTdJQmZXMWlqQS1LR1lsbzFlTzNtNUVVNG9DUERNR19sZmNLRi1KalZaeDlRTUNTekdOa3BXRjhIMHVFTXFKR2RyVjVZT2ZTZ3RQNXRwUl9nTWJYajBiSEs0TzN3?oc=5",
-        "source": "自由健康網",
-        "date": "2025-10-27",
-        "summary": "健康網》不只護眼、抗癌、增免疫 這蔬菜抵禦重金屬又護腦 自由健康網"
-      },
-      {
         "title": "「動眼操」可護眼？醫解密：反害「2類人」失明！親曝正確作法",
-        "link": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE51WE9COXFyVE9JajkzRWtKcDY5R1FkSVNROF9ka2NfMDVnLUdDQzJSMGI3a0Z2Q2J2djJmam93ODJlVWliMThTV2JCc3M?oc=5",
-        "source": "三立新聞",
-        "date": "2025-10-21",
-        "summary": "「動眼操」可護眼？醫解密：反害「2類人」失明！親曝正確作法 三立新聞"
+        "link": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxNRlhmcVAzZFBoaXNOaEVqQ2NyUnJTeHRGM01wenZCdTlWdC12V3lmMFJtYm1yUkhiV0ZwaU1sVmM0Rm5nTFJFbWpQc1VGdzZpaXA1RnpGOHB4M1lGblF6YUNYVUNZbzRES05mSU9VMVI0R050dU5zendBY2ZJQUpiSlR4Ni1VUlVhMndZa0pmUGdZMWtVS2E4dG85cWlENldmd2VsSzEtb1ltb2RvUkV1WmV5d09sckd3R2tlM0dtSDhRcFZxSUp4bDFkVXBJYzBvc2QwbExBS2Mxdm1lX05FSTg3eGNjTEpDSk9uQUpuT2xFQU9XcVE?oc=5",
+        "source": "Yahoo新聞",
+        "date": "2025-10-20",
+        "summary": "「動眼操」可護眼？醫解密：反害「2類人」失明！親曝正確作法 Yahoo新聞"
       },
       {
         "title": "諾貝爾眼科攜手AI護眼大使李珠珢，引領全民「三振惡視力」新風潮 | 產學研訓 | 商情",
@@ -3122,11 +3136,25 @@
         "summary": "奇異果輸了！防老花白內障，護眼蔬果第一名是它 早安健康"
       },
       {
+        "title": "暑假過一半學童近視加深率飆高？「3010120」護眼原則超有效",
+        "link": "https://news.google.com/rss/articles/CBMiS0FVX3lxTFBqVEg5QVpvRExKUUhKeWpaemcwNTk2UFUtTWo1UUxuRzMtQndtNGQzSkRoRXluU2p2b3FQN1EtWEZZVEZnTC1sRXJmcw?oc=5",
+        "source": "Heho健康",
+        "date": "2025-08-01",
+        "summary": "暑假過一半學童近視加深率飆高？「3010120」護眼原則超有效 Heho健康"
+      },
+      {
         "title": "健康網》芒果養顏、護眼、助好眠 挑選牢記3撇步",
         "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE8tUnZiNDFaWjMyekFIMFBuaHVnanlhMVBZXzdoYTdQa0I0VXRkOTFFekhCYWc1bENWZDJ2RDZXVjduUms5dldtcU1pUEtzRWplSVdQa0IzYnFUcGt2UERjZUNqVTTSAWpBVV95cUxNQ1dfa2dKSUtKN2lxRHNTekFFcGhnWUtnaGE3R2ZYdTRPVmJVc2VkZzhHdDlNZnRkWUJrN2ZpS3VWRzJvUTlaQjY1UEpkSkNWZ3d2M1VOU21zT3dUVE9lMWtzYlpqdkN0dmpn?oc=5",
         "source": "自由健康網",
         "date": "2025-08-01",
         "summary": "健康網》芒果養顏、護眼、助好眠 挑選牢記3撇步 自由健康網"
+      },
+      {
+        "title": "幫孩子配「藍光眼鏡」竟是白忙一場？真正的「護眼關鍵」其實很簡單！",
+        "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTFBVMkVpSXkzaENzMFAzbmJaOC16eDRLU2dkZFA4RGdUbkRGNXpNSkpESS01cWhMRkJZYnE3b2xUYmJfaFZORmlZVlVUTUo5VnBv0gFsQVVfeXFMUHFTdm4wZ3JpclpZYUE4RzBTd0owaG9wMjZxM0tnYklWN3pidFBZZGpaUXFfSjI2OUc5SUluVDhoSTRPSEFxa0kwT05PVGhjOS1haXJQeXhkOEd0cTlyanRPY3hUYy1uNi1JaVJq?oc=5",
+        "source": "ETtoday健康雲",
+        "date": "2025-07-30",
+        "summary": "幫孩子配「藍光眼鏡」竟是白忙一場？真正的「護眼關鍵」其實很簡單！ ETtoday健康雲"
       },
       {
         "title": "眼前飄黑影！夏宇童36歲確診白內障！護眼3要訣別讓眼睛老太快",
@@ -3150,13 +3178,6 @@
         "summary": "落實護眼策略！ 中市衛生局推eye眼健康密碼行動 taichung.gov.tw"
       },
       {
-        "title": "過年晚睡害眼睛乾爆！5招護眼自救法、中醫教6穴道還你水潤雙眸！",
-        "link": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE10SjRqZWwzTllnTllWV1NJQ0J2U2hSdU5oMDMxWGdSTDFSTnVuX2pLbVVwQVoyQUE1ZHhpSDJCSFI3MjZfZlE?oc=5",
-        "source": "早安健康",
-        "date": "2024-02-13",
-        "summary": "過年晚睡害眼睛乾爆！5招護眼自救法、中醫教6穴道還你水潤雙眸！ 早安健康"
-      },
-      {
         "title": "改善眼睛乾澀疲勞，不再頭痛！「2020護眼法」別讓藍光傷眼一輩子",
         "link": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE9hdVZYSG1DYjkwZV9jcTJVVU5mQW5fZ3BCSGRnWTc1S1ZRbkdoUkN2aldlSTdFNW1Da09COHc5bjVLQ1hubHc?oc=5",
         "source": "早安健康",
@@ -3173,18 +3194,18 @@
     ],
     "industry": [
       {
+        "title": "Q2、6月營收雙創同期新高！「光學大廠」全年業績拚勝去年 數位相機翻倍成長、車載鏡頭回神",
+        "link": "https://news.google.com/rss/articles/CBMiwANBVV95cUxQX1kwYzJDMms4RGU5Zi1Uei14SG9GSkdOV3l6M0V6MndBR0ttMktPdHVseEFyY1pxd2FlOXNDRE5FTkVIWW5GazJUcnFRZVh4RS1UbDlKMmpVQlR0TGtnelhPb1czTndaZkVmNHZqdHdXQmp6RmNUQ05SUDRfbmN4a3N5UGFoUy15UGNfZEs4NTNXOFdUX1RhUHR1WHRRdUFkR2VrZmdzTTQyQWI3MDRJbjFsTTFObEcwRGQ1N2QwYzZVMTNveWJOcVdfME12NU5GTlNhcnJUa0dSZWlmRHhpOEdUWUs4WUJ3c0NHS0JsVk9GMzlFVGFoZlNCN3N3bnc4TXVyNkJQTjNJSWpJb1FEdk1oMmJLODloLXRXWUhQdHVaNjI0WFJmeEd5TnltWFVxUWRXNXY1QzBDY3V5ZjMzcjJHUjJmWHFyX1Bqc2h3aUMxenZDYlRsYkdTZ0V3d01ETE5ITm84UnBwSDE4Y2dFXzdSY1NBN2ZKUVcyZ2RRUm1uOFRJZ1VCRXdncFh6MWRhY3dkVnU3aGZqQkthRjVnTHpibFB0U0ZfU25NaVRyeFpObTdNVXZTRGhBZUZ0STRD?oc=5",
+        "source": "Yahoo股市",
+        "date": "2026-07-21",
+        "summary": "Q2、6月營收雙創同期新高！「光學大廠」全年業績拚勝去年 數位相機翻倍成長、車載鏡頭回神 Yahoo股市"
+      },
+      {
         "title": "〈焦點股〉雷笛克光學6月業績報喜創18個新高 早盤逆勢亮燈漲停",
         "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE12RWJxZ0MtTEZrQjdzQWJXVEZjZTZLdDJkQllsTUQ1TFRCRVBGSzl6TnprdzRGQnROV01aRWstVGJVTm5rTjVsWlIwOXFmTEU?oc=5",
         "source": "news.cnyes.com",
         "date": "2026-07-08",
         "summary": "〈焦點股〉雷笛克光學6月業績報喜創18個新高 早盤逆勢亮燈漲停 news.cnyes.com"
-      },
-      {
-        "title": "「光學大廠」6月營收29.14億元衝史上最佳 手握CPO、機器人雙熱門題材",
-        "link": "https://news.google.com/rss/articles/CBMiiwNBVV95cUxQT1lERk8tR25NLUxGbmtnODc3NVlhQ2luQkplVnlnSUlLUXc3c2NTZzZXU0ZaRjR4VElxRkNueW5CNDI2QjY0WnNtWEdZbDlVUkk2X19xeVdIajk5VkJQM3JrVWVwVmFYNWI0QnVWZGdXWFMzZzkzWmloZ0QyMFV2cHduOTN5Sk4ydzFJcl9TTU9pTFFhMTFRS3dUbGlTM2czeHdzQldXRW1pUEhQMG0yMlV6WWFueGw5QUYwOE4yRHFVSkJtWVZJMjNjRENPUjNaM1d5WmdSSFZfYXhFVHhHVTI4eGRRQUJNbjVSaEtqTWt6WEVVQlR5SzN5eFRJeFg2eXF1Z1hKR0NodmdhWm1BS2tOQkgtRXBoZFFTU1U3bDlLTGYyZEtSSlJvSUVJUHF4cDBtaFNHNkV5S2J6V1NIdnE2ckZFTHQ1WHhzVHZpVF9xQzVpeVMtUTFxbUtaSVZ2TDZDRWZ5dkx0MlBhVGZxZmJCNUlPeTgtZGdfXzdaRFFPLVB5endNNEpnYw?oc=5",
-        "source": "Yahoo股市",
-        "date": "2026-07-05",
-        "summary": "「光學大廠」6月營收29.14億元衝史上最佳 手握CPO、機器人雙熱門題材 Yahoo股市"
       },
       {
         "title": "大型客戶持續追加訂單！「隱形眼鏡大廠」6月營收創31月新高 目標價上看391元",
@@ -3194,25 +3215,18 @@
         "summary": "大型客戶持續追加訂單！「隱形眼鏡大廠」6月營收創31月新高 目標價上看391元 Yahoo股市"
       },
       {
-        "title": "京鼎光學檢測設備銷售估倍增全年營收獲利挑戰新高| 產經",
-        "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE01MFJJQ2RiTmQyNkROV1BENTMzaDBLek1nR2pIYVQ5a1lwOWswUkg1MDJoVE5hc2drLUg5MGI5UnJydWRTb1ltOHlfSTN0M2d3WGZubEc2bmpPS1lRRGc?oc=5",
-        "source": "中央社 CNA",
-        "date": "2026-07-03",
-        "summary": "京鼎光學檢測設備銷售估倍增全年營收獲利挑戰新高| 產經 中央社 CNA"
+        "title": "光學龍頭提示交易風險：AI光學業務短期難兌現業績 | 盤後公",
+        "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPc2ppWk91dnFkb1VUd3NKWHdQRUNMWXQ1bGltMlZxVUk5dWN4VmUyMmFKekNIZ0lyMHlidTRqNUdGYTlMWG52czBxQlg2aUkyZmJUOGQ3UkRhY3ZpSGM3dzZ4cDA1cmtrMEFJcWFNZlVzUmt1Z2RUVFVQV2xLNlhEb3JRdmw2STR1ajFWdXQ5VQ?oc=5",
+        "source": "capitalfutures.com.tw",
+        "date": "2026-07-02",
+        "summary": "光學龍頭提示交易風險：AI光學業務短期難兌現業績 | 盤後公 capitalfutures.com.tw"
       },
       {
-        "title": "【06/29 產業即時新聞】光學鏡片族群盤面承壓，大立光、玉晶光領跌，邑錡逆勢吸金",
-        "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5lQmxsZC14Yk50UF9XX1FocnZWVXRUVGd5UzZvWkZheE1LQ3ZoS1hNYVFua2lDQW0xNnVacVNnZ0ZjbEhiY1h0cEdTOFkydEFaeW9EZDI4d3dzZFZFX29RemI0c29pa3c?oc=5",
-        "source": "CMoney",
-        "date": "2026-06-29",
-        "summary": "【06/29 產業即時新聞】光學鏡片族群盤面承壓，大立光、玉晶光領跌，邑錡逆勢吸金 CMoney"
-      },
-      {
-        "title": "【06/26 產業即時新聞】電子中游-光學鏡片普遍承壓走跌，市場觀望資金轉向與終端需求展望",
-        "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPZGZwcm81YmFteGh5UjlqUXdwdjVXUDVkaUlyRW9ZeS04OG02TjFiQjdtdFIwWDFYQXRvY01KNkhZa0JkMXc4VWxxR1NLZG82aE4zQlpmUTMtVFB1MDJiX1paNERIZ0FqdkVtWWNFR3lJaW96S1BoTjJ6RDV2NzFBRUk3enVmNmRKN0l4QndB?oc=5",
-        "source": "CMoney投資網誌",
-        "date": "2026-06-26",
-        "summary": "【06/26 產業即時新聞】電子中游-光學鏡片普遍承壓走跌，市場觀望資金轉向與終端需求展望 CMoney投資網誌"
+        "title": "《DJ在線》從鏡頭到系統方案，光學廠競爭模式升級- 新聞",
+        "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOaHJLMThzUzlkc1pUb21JYkg4bnJabGRmUEYySUtQUWVqWGNidWV2OEpZeXljUHF2QTNxajVFa29GR2ZXdGtWdlNkRk80TEtrZHNjVnFtRndvcDdzTmR4ZDZTZ0lJYXR3TVh1NWFsQmFHVW9tQk5TNURCUVVaRGlySFZyUUQ5TS1YTUlIRWRHcGxDZw?oc=5",
+        "source": "MoneyDJ",
+        "date": "2026-06-30",
+        "summary": "《DJ在線》從鏡頭到系統方案，光學廠競爭模式升級- 新聞 MoneyDJ"
       },
       {
         "title": "眼鏡業AI浪潮來襲！亞大視光系受邀出席深圳首屆人工智能眼鏡展",
@@ -3362,25 +3376,11 @@
         "summary": "精湛光學股東會／受惠被動元件拉貨熱 下半年營運持續暢旺 經濟日報"
       },
       {
-        "title": "全福：眼科新藥授權有進展　拚年底前完成談判",
-        "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFB3a01oQUlYUEs3bTZzYnpjak92bTRWRDNSdkpMSGRRYi1WLUZlR3llSFZyR0FEemk0dG9ORU1EcjlCb1JRaUt0d1piWlplMEUzcmUxeUZ3bTAwQdIBX0FVX3lxTE5lclJTTTBaXzFvbWc4M0RJVWlQM3JiUDRuX0pzMU8wcUNNUXp0OWViY2VpV0NiRWdYSW5kcFRUS3k4bHZZR0ZkcVNJSjlEOHFCRHFnQ1QwaFMtZzB2dFVN?oc=5",
-        "source": "經濟日報",
-        "date": "2026-06-08",
-        "summary": "全福：眼科新藥授權有進展 拚年底前完成談判 經濟日報"
-      },
-      {
         "title": "5月營收年增43%！「這光學鏡頭大廠」6月拉貨動能恐下降 但法人看好7月重回成長軌道",
-        "link": "https://news.google.com/rss/articles/CBMi5gNBVV95cUxNcG10VWRsSVhzVEhfdHoyNC1SaWdGSGoyVzgyVTh1T2t1LWtKdkkxVFMzb0dXeVlXZEJFdjloYjNFaUhKV2FRNjZFTjR2WkdWdkxwVGxLLXBuVHAzT0pDeTE4LU9KRnhLaWg0aHk3RE4xRjJReFNNTEd0RUJIMFA3eWh0cHJJRENielpPeDNTM2xCeFM0UkZtZXQxVkotaUdHOUhrcDBzdmVobTNvdGo5QzBlTXBkbVZiQmpaODI4NnYxWERyaDhkTF9xdTZXenhtQ1BoMmJub3N4ZHlkTU9QeTI2X1AtV1FBWUgtNFFiazEwd2pPTU8zTW5RaUNMU0ItRy1iZ3kzbzhHN2tjbmtYNTdYRi1FOVRGY1BENkN5c1FCQjBMdzFITWFuTWpYYkhrLVh3dkJpUDdxZmlnTVRrSERQbkpuTjU4cnFwLUhmZ1dEZ1dDLU42VzdVWTFueDBGSkxJY3ZnLWpBVFpVaGdyS1pIdlh3Rnl2TTA5WnBJenBTd1hweVJiSEhRdVdjVGhIUjlIcDA0YVBvYlhfd09jbTJSaTdDUUZQWWlEYkFRWFlocDB5VC1mdXFNUFNYb1RlZVRwWUxIS21iWFpuWXU2WGltYkxnNUVLb2t1SHBoc0Z2b1ZLbGc?oc=5",
-        "source": "Yahoo股市",
+        "link": "https://news.google.com/rss/articles/CBMiS0FVX3lxTFA0dkVGZnRKU0lZemFxdzRQZW85Mk84alBNUzlHcHBFSjNyOTh1eFZMdVJZU1hFUHhQMTAtNllpM0ZZcVBOTUVtcU5yYw?oc=5",
+        "source": "FTNN 新聞網",
         "date": "2026-06-06",
-        "summary": "5月營收年增43%！「這光學鏡頭大廠」6月拉貨動能恐下降 但法人看好7月重回成長軌道 Yahoo股市"
-      },
-      {
-        "title": "晶碩5月營收 同期最佳",
-        "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5MZzU3WmtIWV9NRDh2UkJrUnRCYXpxdm83OE1PZ1gybWNya1gxbnBHS1FCdFB0bEJ0U2dsTmdQdG04TklDRUd2VEcxQ3lPczZBQV9kRFZlRVk0d9IBX0FVX3lxTE5ZOWxsaTdhLXBKTG5lSFVqZ1hCM0RYaVBlWUt5U3M5YWdacE1UWVpRMTlpdGpRNjRxR2wyamlXMWZZN3FtRXlzTjNJMFZYaFcwZVVUYm40Rlh5eXRUWndJ?oc=5",
-        "source": "經濟日報",
-        "date": "2026-06-03",
-        "summary": "晶碩5月營收 同期最佳 經濟日報"
+        "summary": "5月營收年增43%！「這光學鏡頭大廠」6月拉貨動能恐下降 但法人看好7月重回成長軌道 FTNN 新聞網"
       },
       {
         "title": "美股法說CRDO｜Credo 營收暴衝卻遇大賣壓，光學業務成下一個成長引擎(CRDO US)｜豐雲學堂2026 年 07 月",
@@ -3441,9 +3441,9 @@
       {
         "title": "今國光攻高階光學，車用/工業AI視覺應用比重升",
         "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNTkpwMmJWNjg1TEkxcDI0OVZoZlRKamRHUGFjRWM3V3lWRXF6ZGVCMVFkRHFEek5uTkdfLUtGeDVILVNhYnNJdmEycUVNeXo0UENBNjRGanpwOGdBYWZzeUgyeEREV0E2ekVjalVqLW1FdHlfZlQzZVZMRFczYW5QY2dOU21JTnNXcTJsckV0OUYxZw?oc=5",
-        "source": "台視全球資訊網",
+        "source": "ttv.com.tw",
         "date": "2026-05-20",
-        "summary": "今國光攻高階光學，車用/工業AI視覺應用比重升 台視全球資訊網"
+        "summary": "今國光攻高階光學，車用/工業AI視覺應用比重升 ttv.com.tw"
       },
       {
         "title": "《DJ在線》光學廠加大投資力道，卡位新應用商機- 新聞",
@@ -3551,6 +3551,20 @@
         "summary": "看不見的「光學革命」：新創科穎達如何用半導體製程突破傳統光學的物理極限 Meet創業小聚"
       },
       {
+        "title": "瑞儀Q2營收拚季增；新光學元件明年逐步放量",
+        "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPSTc1UjBvRzY1dnFHb2FFNk1zc3MxUUZXMzZMMlVSMUlWNS1BNUtVMXdXcHo5LUcyM0VCc3BWTXFNaFJ1Z2hWeVp3dUdmTU4yZERUSk1ucDZoYm40VWdMNHZYZ2pXaGNVQ0RBTEpaR1hiWHBXZWlyLTRKSmk4aE43NGs5R25KOEFGNHkwSUZRdW41dw?oc=5",
+        "source": "ttv.com.tw",
+        "date": "2026-04-24",
+        "summary": "瑞儀Q2營收拚季增；新光學元件明年逐步放量 ttv.com.tw"
+      },
+      {
+        "title": "Marvell收購瑞士光學公司，爲3.2T光模塊提前卡位：這不是擴張，是在搶下一個基礎設施入口$MRVL 這...",
+        "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOSndSSm9semhYXy0ybXFPUUdlZFBHN1V4Q0RCaHdkcHM2aHl6LW5XUThVX1lRcGFUOV9tMW5SRmxjd25GT2RsNDFkQ01kOUtnQXpPRTY4UGFvOVdzbGZhd0JTeXV0LWtnTUJBRGVDaXRzV0NGZWNNV292LUtwbHYyR0dGdnlhelM4bnZwNjcxd2g5bnAweV9pSkYtQnNVLVdEdllKRG9rZDlFalhIMkpJdW9pdVphaWNO?oc=5",
+        "source": "Moomoo",
+        "date": "2026-04-23",
+        "summary": "Marvell收購瑞士光學公司，爲3.2T光模塊提前卡位：這不是擴張，是在搶下一個基礎設施入口$MRVL 這... Moomoo"
+      },
+      {
         "title": "《創新服務專訪1》光學設備轉入半導體搭探針卡趨勢浪潮- 新聞",
         "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOWkNxeHE2ZXhwN3hzNkFxUVpZaUl3Y21qZ0VFS2p5aVJDdnFkMVhRRWhienhrbkp5a3NFOHYwbXIzaGlvVFpBYmFtZ250SWlVaENRVWFZZjE1LWZuLV9PSUlkQVVEaWQ4ZVVmcWc1aUxmX1RnNy1jWEhPMzVKVzFKVUdPaFlfclc2TmdyeGJESFJxdw?oc=5",
         "source": "MoneyDJ",
@@ -3654,6 +3668,13 @@
         "source": "MoneyDJ",
         "date": "2026-03-03",
         "summary": "安可佈局光學膠／高毛利產品，今再攻漲停- 新聞 MoneyDJ"
+      },
+      {
+        "title": "〈觀察〉隱形眼鏡廠深耕高階產品 晶碩、視陽布局效益顯現",
+        "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE9nbTFsdXNGbDI3QXVrYjJOOWNBSS1uS1h0V1djYXNraElaMXdhazlGcTQzTFBnRnF6UnJ4eDBWUTdpZS11WkNIQjZhZ3NTU00?oc=5",
+        "source": "news.cnyes.com",
+        "date": "2026-03-01",
+        "summary": "〈觀察〉隱形眼鏡廠深耕高階產品 晶碩、視陽布局效益顯現 news.cnyes.com"
       },
       {
         "title": "聯發科斥9千萬美元入股Ayar Labs 搶光學互連商機｜新聞快訊｜豐雲學堂",
@@ -3812,6 +3833,13 @@
         "summary": "從近視到高齡視力 TIOS聚焦視光產業「全齡照護」轉變 健康醫療網"
       },
       {
+        "title": "看得到≠看得舒服　專家曝「隱形視力殺手」還會引發頭痛",
+        "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE51aGdiUUFzVENQRVpqYzJ0X3FjLXpURF9mX3RnSFhXRUxOcGwwMWdOckxlakJNeUdKSUpMYUpSbk85bkZNb2xFNEE5N3BoUHg00gFsQVVfeXFMTV9yYjItY1dHUzJXOHZCTmxCS19jZnpMN0M1Y0piaFVoTWJDbkNqUkZsZjlJb0tJWHVVMXdodlhJWXc0ZHBfOWc3TlhxLU5RUkl3ZDl4ZDJ4UE4ybG50dmVxVlJDOU4wNC0wdzYx?oc=5",
+        "source": "ETtoday健康雲",
+        "date": "2026-03-23",
+        "summary": "看得到≠看得舒服 專家曝「隱形視力殺手」還會引發頭痛 ETtoday健康雲"
+      },
+      {
         "title": "近視低齡化、高齡視覺退化加劇 TIOS研討會談視力照護新方向",
         "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1jWTVOMk9rY1lLVmhRRERPVXVCVkJlTUktQzRnZHVCZHR2cnpwdVpDYlRXdGdZQnphX3NvSDllTUhzdm5fMWtRbTJUQ29jdVFDaUVWcW1B?oc=5",
         "source": "健康醫療網",
@@ -3880,13 +3908,6 @@
         "source": "自由健康網",
         "date": "2026-01-28",
         "summary": "健康網》控制近視從小開始 醫談幼年近視風險 自由健康網"
-      },
-      {
-        "title": "診所全員出國進修 信賴眼科大手筆培訓員工",
-        "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE8tbUxVeXZReXEzd1pydE0zT0l1N0hBM29xbk43TWNMYkJmaTE0YTVpRWtiNDhGdGhpNmQ4SkNfVjE1ZDk5OFNPZE5nQndKZUNld05RdVhwUXVmWG8zZ3VkYXk3ckcxZFF4cUJ3?oc=5",
-        "source": "台灣華報",
-        "date": "2026-01-23",
-        "summary": "診所全員出國進修 信賴眼科大手筆培訓員工 台灣華報"
       },
       {
         "title": "2026諾貝爾大健康論壇 聚焦眼視光與美容抗衰老智慧醫療",
@@ -4052,9 +4073,9 @@
       {
         "title": "獨家／爸媽都近視子女一定會近視？基因決定風險 醫：關鍵卻是它們",
         "link": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE9reG1PY2tCR0dzcjN1dGg1VDdHSUhjaDU5bVJGYVJsb3lkSHYzYWVydlp5Sy02RmhoZFctUjF6bGpEcGctTHNBUktvOEc?oc=5",
-        "source": "三立新聞",
+        "source": "三立新聞網SETN.com",
         "date": "2025-04-02",
-        "summary": "獨家／爸媽都近視子女一定會近視？基因決定風險 醫：關鍵卻是它們 三立新聞"
+        "summary": "獨家／爸媽都近視子女一定會近視？基因決定風險 醫：關鍵卻是它們 三立新聞網SETN.com"
       },
       {
         "title": "宏碁智醫攜手英特爾前進馬來西亞，推動 AI 輔助眼科篩檢應用",
@@ -4227,9 +4248,9 @@
       {
         "title": "獨家／雷射近視後「4K畫素→720P碎裂世界」苦主超後悔 眼科醫師這樣看",
         "link": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE9YNHVXWjhkQWVWcS1NTy1pblB5ODRSd3lRRWg1UzVxa1E3ZzVQSnRNQkVCcWN2UDZ5WmJ3dXMwbk9DR29aeno2NERGb1g?oc=5",
-        "source": "三立新聞",
+        "source": "三立新聞網SETN.com",
         "date": "2024-01-06",
-        "summary": "獨家／雷射近視後「4K畫素→720P碎裂世界」苦主超後悔 眼科醫師這樣看 三立新聞"
+        "summary": "獨家／雷射近視後「4K畫素→720P碎裂世界」苦主超後悔 眼科醫師這樣看 三立新聞網SETN.com"
       },
       {
         "title": "〈晶碩新品發表會〉攜子公司晶澈搶進高階品牌 三年後效益顯現",
@@ -4367,11 +4388,11 @@
         "summary": "明基材「1-3-5-7」策略衝刺醫材布局 目標3年內營收比重達5成 news.cnyes.com"
       },
       {
-        "title": "目標價383元！「隱形眼鏡大廠」Q2力拼雙位數增長 法人這原因喊買",
-        "link": "https://news.google.com/rss/articles/CBMihgNBVV95cUxNYkgwanhLeGI5akstOFo3LVNWVG1FWV9LTmNWT3hRcWF2alNvbVNDMTJ6dFQ0VE5JMktHcW1xMGgtc2dORmpJNVo2OGRrYlB4cnlQR1B6d0xaY2ZHc1dGV2JHNU95SGJIaFYtTm1CYk1RWnZrYkJHME1QUmdwdkJJYTh5WmtrQ2I2VjlQdVJxNEpUejRuQ0NGSWQ5VkZiZldHd2RBMkE0Wk1oNGo4UVBKMWFkOVR0enoxXzJxNmJkbHdtZ0V2NnRfUGNGVDVPbHBPMjR2a3F6TzJ1VHB4YVFPSXRYX011bGktUkpHd0N3VE9scEdNaG50OTFqekxRZ0lLeDBTYnVRamhwTmlvWnZES3NSNF8xOG1iUktqT0tad1J4RWJ0QS0tQndUSWJRUUx2NTE4WUFVSTVVbG1BRmlCYUFRTVdZdkdWaUZncXpycXB4eVU4UTVIX21IQnRMSG1sWHZHX04tUXFYUkxyaG4xNVVrSXVhZlNMUmlBYU9HV0lCNUxkZEE?oc=5",
+        "title": "佳世達小金雞明基材「痘痘貼賣遍15國」 拚3年內醫療營收占比衝5成",
+        "link": "https://news.google.com/rss/articles/CBMisgNBVV95cUxOWnFfNGxmQnJEMXR0SFpreGFabUEteXRabVRCVTVLNUpyUHJLWDVndUdEcHczbHV2eGNIUkI1N0FMZkFzaFh6RXdsQ3NDSWl1Q3BZVFowSFU2QjV5aldHYnVPZ2xZMTFPajE4LV9TdDRJblNnbjFUVXBlUUV5THl0UVRWZ3BEZjN6elcyNHJQZUtHWTEyZGhXczZCeFJ1NVVxdjdqVEpzWnZiSktXRWs3X3RSbGctWlpZbG1OZ3h1WGQ2SDVYUE4zbGZQWXYteERQSG1xNnYxd09vbmFvRjB5d20tck5nX1ZwVUktTTlNcjE3RThkcVExV1k2MzFoaHFfYWFaMlQ3QXh5dEhkMG1UbXV3aFpKUjlaWG1kX0FrSGlfMW1mekx6aEJ6aGNPa3BuN2Y5WWlqSEpjTFNZdk9wZ1dFMzBZRF9wb2NwRzNTdEt1cTUtVUFiODBYVDY1LXNwLVFXVUpKbDlzMTBDNGJXaTExUktxa2VyM0pQVnZXR2hocUJCbUtfVzZtRFUya1dNakVQdE40bHl2UWdTUGNwVU9ES1dxbUhwZ19VTnA1eDJPQQ?oc=5",
         "source": "Yahoo股市",
-        "date": "2026-06-20",
-        "summary": "目標價383元！「隱形眼鏡大廠」Q2力拼雙位數增長 法人這原因喊買 Yahoo股市"
+        "date": "2026-06-22",
+        "summary": "佳世達小金雞明基材「痘痘貼賣遍15國」 拚3年內醫療營收占比衝5成 Yahoo股市"
       },
       {
         "title": "放棄低階價格戰！隱眼大廠晶碩靠「兩大祕密武器」迎瘋狂返單 老牌法人上看376元",
@@ -4484,13 +4505,6 @@
         "source": "經濟日報",
         "date": "2026-05-06",
         "summary": "明基材衝刺醫療事業 經濟日報"
-      },
-      {
-        "title": "6782 視陽 - 視陽股價漲太高，有一點風吹草動，股價就承受不了。-股市爆料同學會",
-        "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE14MWM4ZWF3Y0gxaDI2QUNTcjRCRHAtd0NQcmZwSFZxYkVrbmRWRjVDM0xvQnJDSkdqb2NDRFZHWFlBcVVocG56U2dRdndmbmdGZVZaSXdQMmo?oc=5",
-        "source": "CMoney",
-        "date": "2026-05-06",
-        "summary": "6782 視陽 - 視陽股價漲太高，有一點風吹草動，股價就承受不了。-股市爆料同學會 CMoney"
       },
       {
         "title": "明基材Q1虧損，醫療成長難抵顯示材料壓力 - 新聞",
@@ -4640,18 +4654,18 @@
         "summary": "視陽(6782)董事會通過114年度EPS14.08元，與去年同期EPS10.10元增加(2/25股價181元) genetinfo.com"
       },
       {
+        "title": "【即時新聞】視陽獲利創高！去年EPS達14.08元，今日宣布配息8.4元殖利率4.6%",
+        "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPQVU2TVhKLVktN05nSUhqWmRmbGNLQzl0WHVOT0tIcnE0akJDbnNkbFdYMl9wbVZwelBIRkpXVDBqOFE1WjUyN2x5cmVIZTJuR2p0UnBvVExVbmdDV2hnb2UxSVZpWHhVdmdMS3U1S1NISWIyMmZiZWl5c2dCU2NnUEVxYUZvYkY4T0ZTQlBFV2Y?oc=5",
+        "source": "CMoney投資網誌",
+        "date": "2026-02-25",
+        "summary": "【即時新聞】視陽獲利創高！去年EPS達14.08元，今日宣布配息8.4元殖利率4.6% CMoney投資網誌"
+      },
+      {
         "title": "營收連7年創高，獲利卻下滑？晶碩(6491) 2026 年轉強訊號看什麼？",
         "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFB2Uklrb1lMSzY1cjh2T2p1aTJFdVByU3B3a3Ytajc0bWZOOUhFWVlYU2dtTFNGS1RDNHdHLW9teVZTQm8tbnZwdFFaek05MFk?oc=5",
         "source": "news.cnyes.com",
         "date": "2026-02-11",
         "summary": "營收連7年創高，獲利卻下滑？晶碩(6491) 2026 年轉強訊號看什麼？ news.cnyes.com"
-      },
-      {
-        "title": "明基材1月營收月增7.9% 深耕新應用",
-        "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFB4VjJrM080THFEWkJTM2tzay1fLThETndRbnlUVElXQVV4REt5WkM3dl9aa2ROa1B4bUZhanBXSFQ3RTJtQUk5al9DRDVLTmg0bkhyTE12U0lrZ9IBX0FVX3lxTFByU09TckxvQ3pibWNpeDJpMUx4ODA3ejhKNUVPLXVVcWRFTFUwdHJ2TThsUENwS0I0TmpJM1ltUFZtTkJna0IyZzhscm43c2J3Y2Y2dTlRamxXOVRRcTFz?oc=5",
-        "source": "經濟日報",
-        "date": "2026-02-04",
-        "summary": "明基材1月營收月增7.9% 深耕新應用 經濟日報"
       },
       {
         "title": "晶碩1月營收年跳增31%",
@@ -4850,6 +4864,13 @@
         "summary": "《Genet法說筆記》矽水膠隱形眼鏡廠視陽(6782)上半年EPS 4.99元創新高，成長來自彩拋需求拉動(9/16日股價233.5元) genetinfo.com"
       },
       {
+        "title": "《Genet法說筆記》精華光學(1565)上半年中國市場衰退近八成力拼2023年Q3自動化升級提升競爭力- 生技投資第一站",
+        "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE9RbEhiRWJmY3NzZ0JZTkItd1pVdmZuc0VYMTBpbXBNN1FKdFMycnpoZEMtdHdmTTRheEE5Y1VmYlluc3F1TTd3SUZ0cXh2SElLeU90aldSTVpKVkUyME1YUGJZdDViZmZ2Tkc0NFY4TGFvSXpWRjFfaA?oc=5",
+        "source": "genetinfo.com",
+        "date": "2022-09-13",
+        "summary": "《Genet法說筆記》精華光學(1565)上半年中國市場衰退近八成力拼2023年Q3自動化升級提升競爭力- 生技投資第一站 genetinfo.com"
+      },
+      {
         "title": "⟪Genet法說筆記⟫亨泰光學(6747)研發長吳怡璁與經營團隊回應投資人七大提問- 生技投資第一站",
         "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTFB5aU0zUWwxcTBEYzJGVkt5dmZ2YlRpMEU0YjdYMk9WSWNKZE9ucjdpZTZ0eXctR1Z2QW9qTEozb3B4SXZ4c3ZYV2tUclJkZEI5YWFDTmc5dU9OV3ZvRHB1QjU0OVpRSkNfamljaXNCOEY5WDRlZ0FZZQ?oc=5",
         "source": "genetinfo.com",
@@ -4858,13 +4879,6 @@
       }
     ],
     "deal": [
-      {
-        "title": "英飛凌宣佈完成對ams OSRAM非光學類比/混合訊號感測器業務的收購",
-        "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFB4QXdaZl9UVjZZMFluOGV3aWp1Q1pSc29qUWVyaXhjeVRLMFhDVXdfbTNNc2E5SmNKaTc5X0dwcDJmNFAyU2c5ZHE0V3lwdVRSZUtxVWc3RjlKWFVOQjdDbQ?oc=5",
-        "source": "電子工程專輯",
-        "date": "2026-07-07",
-        "summary": "英飛凌宣佈完成對ams OSRAM非光學類比/混合訊號感測器業務的收購 電子工程專輯"
-      },
       {
         "title": "光學雙雄加碼投資衝新事業- 日報",
         "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE1uN0hGR1VUMmt3NlVWRmFKY1l1MjQyd2xseVFLRlBlSW9tbGpvUGtPMjI2UXJmWWNIeHJxUHhpMmhHbHhYRnJvaUk1X1N2U2pOamNCXzhCanFydklNYjQ0?oc=5",
@@ -4964,13 +4978,6 @@
         "summary": "焦點股》佐臻：台積電看好智慧眼鏡 逆風爆拉 自由財經"
       },
       {
-        "title": "AI投資新主線浮現！華爾街押注「光通訊股」接棒記憶體狂潮",
-        "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFBTYU9nbG45QXpZSlo3S05ZZVF4Tk40RjFSTWNzRTktalZGMWdkSFpORzJvTjFsMHdlQzA5dGhWU2xFNVRKV3JWNFBGSFE0NzQ?oc=5",
-        "source": "news.cnyes.com",
-        "date": "2026-05-18",
-        "summary": "AI投資新主線浮現！華爾街押注「光通訊股」接棒記憶體狂潮 news.cnyes.com"
-      },
-      {
         "title": "視陽看旺Q2營運提前擴產- 日報",
         "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE5zSnJCWW4xRmYxY3Rud3FBVTFjSXBjYmlSeENjQWxIeUlrdWd0YnVKSmdGbDFkdktGWS1ybHU3OVY0YzZlT3pmTVRzNWVVejdxX2JLaTZSYW1ZV1NrYU5n?oc=5",
         "source": "工商時報",
@@ -4990,6 +4997,13 @@
         "source": "MoneyDJ",
         "date": "2026-05-14",
         "summary": "AAOI：光學元件至少缺到明年、擴產台灣/德州 MoneyDJ"
+      },
+      {
+        "title": "Marvell收購瑞士光學公司，爲3.2T光模塊提前卡位：這不是擴張，是在搶下一個基礎設施入口$MRVL 這...",
+        "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOSndSSm9semhYXy0ybXFPUUdlZFBHN1V4Q0RCaHdkcHM2aHl6LW5XUThVX1lRcGFUOV9tMW5SRmxjd25GT2RsNDFkQ01kOUtnQXpPRTY4UGFvOVdzbGZhd0JTeXV0LWtnTUJBRGVDaXRzV0NGZWNNV292LUtwbHYyR0dGdnlhelM4bnZwNjcxd2g5bnAweV9pSkYtQnNVLVdEdllKRG9rZDlFalhIMkpJdW9pdVphaWNO?oc=5",
+        "source": "Moomoo",
+        "date": "2026-04-23",
+        "summary": "Marvell收購瑞士光學公司，爲3.2T光模塊提前卡位：這不是擴張，是在搶下一個基礎設施入口$MRVL 這... Moomoo"
       },
       {
         "title": "AAOI宣布擴產CEO：資料中心光學連接需求超預期- 新聞",
@@ -5132,6 +5146,13 @@
         "summary": "佈局 AI 輔助光學領域，蘋果收購「一人公司」invrs.io TechNews 科技新報"
       },
       {
+        "title": "英飛凌以5.7億歐元收購ams OSRAM非光學類比感測器業務 擴展感測器產品組合",
+        "link": "https://news.google.com/rss/articles/CBMivAJBVV95cUxOdTM2Z29xbHpyX0Z6dnNrNGJOay0zQkEtZi15al9qNlpHbnhOSDNUYThJZVc0WkpoRkRFN1pqOEw0MXdvbmdQdjlsT2plNkJsMm10N2VwdXJxS1JXVzFkemRpY2dFMmNoa1JrWXZYSnpjaXBvMm5zNnBPWHgyejY3LVlWRElkY0s5d2FsaFJpSmNoVWdNbUVhQ2F5VXI4Vzd1NFBMWHRyU2RwdlBlOFRpSjRqWlJJZ3JZZ0pGbU51YjhKZXJRcGltdTBwNW1CNExIWG43N3NNMngxZDB2VDlSZ0VYWUI4T1ZLLW5YbHQ3ZTNIVVNGVFJzcDZiVUltNHZ1OEJxX0kxcHMwZ0xTWkZNR0g3SVNyYm0ydTRUczB1M2JTQVBjX2Q1UlNNNElWQjhfMDZJNlJzTXBzN1hK?oc=5",
+        "source": "mem.com.tw",
+        "date": "2026-02-09",
+        "summary": "英飛凌以5.7億歐元收購ams OSRAM非光學類比感測器業務 擴展感測器產品組合 mem.com.tw"
+      },
+      {
         "title": "英飛凌收購ams OSRAM非光學類比/混合訊號感測器產品組合進一步鞏固在感測器領域的領導地位",
         "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9ySHRLVkJPYVdBX2ZLSEhYc2EtZ0xGeFNQeTRuR3NhSC1hZEdqbGo2RUhkc283UU8zNm9IWXhsTFJPRzl3aFJiQ2gxcXpSRmg1NHhJSmoxcGg4LXBRRjh2X1V1eHppLURUNmc?oc=5",
         "source": "COMPOTECH Asia",
@@ -5158,13 +5179,6 @@
         "source": "CMoney投資網誌",
         "date": "2026-02-02",
         "summary": "【即時新聞】晶碩擴產大計啟動，大溪廠產能將倍增至2千萬片 CMoney投資網誌"
-      },
-      {
-        "title": "Meta 調整 Reality Labs 投資重點 逐步降低虧損並聚焦 AI 眼鏡 #Facebook (246135)",
-        "link": "https://news.google.com/rss/articles/CBMiTkFVX3lxTFBQNVRnb2k3TFFIMlRibUZKT1JjVFgySWxjdUprT29tLUF1YTZoV2FBVkdtaVEycWtVQjdPeF81Rm14OHRjaExlQ2c2dUFmUQ?oc=5",
-        "source": "Cool3c",
-        "date": "2026-01-30",
-        "summary": "Meta 調整 Reality Labs 投資重點 逐步降低虧損並聚焦 AI 眼鏡 #Facebook (246135) Cool3c"
       },
       {
         "title": "近視控制技術成熟、吸引蔡司收購 亨泰從隱形冠軍躍上全球視光舞台",
@@ -5244,20 +5258,6 @@
         "summary": "晶碩、視陽齊擴產攻矽水膠商機- 日報 工商時報"
       },
       {
-        "title": "【活動】品牌教育新篇章：Oakley 動能體驗營揭開專業眼鏡的真實力量| 文章",
-        "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTFB5cUZZeDhZZHlIUzBvREVNZ1laZ2xIWXhHMnI1UFV0RDNoRGNrYnZBWkNzd3VDTFFtbV9XaW9iYVNLNmVTSnJPdENxWklPZW5pbl96ZDBmSnRNc1J1aHZDMUpQSzl4SUpScXVN?oc=5",
-        "source": "運動筆記",
-        "date": "2025-12-03",
-        "summary": "【活動】品牌教育新篇章：Oakley 動能體驗營揭開專業眼鏡的真實力量| 文章 運動筆記"
-      },
-      {
-        "title": "強化矽光子與共同封裝光學能力！貿聯-KY 正式收購「新富生光電」",
-        "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9UaFRfTk1ybWNaZFhmOGlPUDV5Q191UkZ1X2FWLUdqX1JGYVU3Ni1uaUJKQlZaVW1Pdm1qNVhNVnFnR0pPcm9NYklCWHU3bm8xQkN1VTRoTGpFSnF0TVRaSA?oc=5",
-        "source": "TechNews 科技新報",
-        "date": "2025-12-01",
-        "summary": "強化矽光子與共同封裝光學能力！貿聯-KY 正式收購「新富生光電」 TechNews 科技新報"
-      },
-      {
         "title": "20歲出社會、30歲考7張證照！大學光學總裁林丕容：用5億虧損悟出經營之道",
         "link": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE10ajJZM0dzTHh1MDVrZlhlWnRQSnZFVjNoWnBBVWNmc0ZVaERaOEhUSjBpWEgxU0xLVHVISlVHTW1RMEZuc21qY1FzaEpldw?oc=5",
         "source": "天下雜誌",
@@ -5293,25 +5293,11 @@
         "summary": "是德科技擴大布局！完成收購新思光學事業、安矽思 PowerArtist 業務 TechNews 科技新報"
       },
       {
-        "title": "眼鏡掰掰！中壯年瘋「老花雷射」需求飆四成　房產專家親揭驚人投資報酬率",
-        "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE92S1p2QkdJcmgyMDB1d0Y5OEppbzdBbzFDbWMtQlRhXzJidG1CbGp0YjlNWkpGU2RHYXZtRlVEcElXMk9FWVRGcHFsRTQ0S1BT0gFsQVVfeXFMUHl5RE5fZXhBazFYNW5QMkxXaGN2dW5JS2RzTXA4S3JDYzc5RW5kVjJCdlFSaHhETUszUVZxR1VxbHVPaUZ4ZGZvb0Z6M2VFMlhuR2tsTTl1SUpNelpNbHI0TUFldk5mUU9MdDhZ?oc=5",
-        "source": "ETtoday健康雲",
-        "date": "2025-10-23",
-        "summary": "眼鏡掰掰！中壯年瘋「老花雷射」需求飆四成 房產專家親揭驚人投資報酬率 ETtoday健康雲"
-      },
-      {
-        "title": "光學鏡頭廠積極跨足無人機、機器人市場，長線成長動能強勁",
-        "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTE8yVDhiX1VPS0g2aVBkcmJuaFNPZllEQzRJQTM0UWlqS1ByRmpWU0JROGxOR1hyLUdPRTdjNS1zQzI2MnhSbVZQUG5UUG5tOGNjeERXVWhXWFltaEZSd0ZDN21HZzV5ODJJNm45Mk9mc1lLUkZieHY1UXI1dw?oc=5",
-        "source": "財訊",
-        "date": "2025-09-19",
-        "summary": "光學鏡頭廠積極跨足無人機、機器人市場，長線成長動能強勁 財訊"
-      },
-      {
-        "title": "公公又要飆？鴻海AR眼鏡蓄勢爆發 投資人搶先布局...最快明年量產挑戰新一代人機互動霸主",
-        "link": "https://news.google.com/rss/articles/CBMikwRBVV95cUxNVWJZV0lwcnl5eVRsMTFlQWhnZ2NWRVVRMzJ5UEFRLUhsUkd6Z0U2RFptX2x0VmE3WVZHYzFkd2E0UzFYN2NkTENfLVJQQUc1SV9zV1lQa0xNMFJmOTRxSnNsdlFVUy1kSXZKSDk2N1h0b2wwaEZQNVRTanp0cHBIRXVnUnF2YzlMdHNCTDRlalAxT2FrZkRIUEtqVXFjS0ZsTUdDVFZlUmo3UTNXLWYybVM2aWFkNnoweE10V3h3cjkwQnB4MFR6NTBxd2hUTXdsZFJXMXFTdE8yZUYyTUljNklHeVp1ZXZNVGJzRVBjclJMNTVLc2xKWFdrOFY2anJvQjNNeFI5czdPclpneER2MmFDcmNiREpNeFRVa3dxRTgyWTJkRk5XbWQ5X1J3SlZEMmx2QkRNbDczSVhuQnlRNVZra1ZEX1RWYlV1cFFyeVJsSlBKQVFfbW41VG8wVEQxcXo2ZGR1VHlHUG5DVkZEQXpJaFlLLUVMaXdERkp3dHVPRzE4NFNLZ25zVF9MdFFwcGlEYkgxZFlaRDRwZENUWHpWYmRWbjF4SHhpWG56MW80ejNyNXVBeTBpSG9yS1ZlcHUzOGF2NDZQLTcwMVVzSkY2cS1YTkw4ZGoxSURPT0VRNnFkSmFBV3hqWXZ2SVZDTEVSbGFJZHN2Y011ZUcwNGx5VkM1Z09aM2piZG8zTldwVW8?oc=5",
+        "title": "黃仁勳出手投資了！跌破眼鏡聯手馬斯克這公司 鴻海、緯創等「5台供應鏈」爽受惠",
+        "link": "https://news.google.com/rss/articles/CBMivgNBVV95cUxOQXBSdHd4NERxZDZWVGNRaW9NZTU3VXp5QUliNEtsZjZDWGRLbHI1UEp6V0NfeTJrSUNHVFQwWnV0N2x1ZlJ1cWFXWnRJY0x3N1VwTG8tZHNvdHUxVkhuLWdJUE9KLW5CYVNFZDFsTmpndHFyZFRHZ055SERDRE9HbEpiaEU1WlV3VmFMMGJzNE9DYlhVaVJOcjlVN0dNR2toWU40RHNOQWU3TUozSFl4cFhQY0g2NWZpOGJqbTFxay1IVmdTZzlKR3MxTDE3VFFFOW5kdS1UMi1FQUliY3BIX3ZENHhkTndESzFYUHU0b1NWYVBaS2NDYXR6MUY5V2lqMk5ZclV1d2wzVW5uWHNBVGwtbzdKc3ZlNUhfNnpaNjNZazFqTHg3OUNNUVcyU2pIdk1Rem8xcWQwSEZXUmFDRVpaUFpGRXdKdnF4eG8zcEpjNFJEam5CZzFVSU5VSzc3czlZdG84NzFQVFY1QkZ0QjBSd3FQUWxhYWNqY1BDQVdiRXl0WUk2UzBINmY2WWRaUUdENlhjUUFDWWNxYVF1cUhmMmZ6MENNUlF6N0VoNVU1RTJSVTNqR3hGV2dmQQ?oc=5",
         "source": "Yahoo股市",
-        "date": "2025-08-19",
-        "summary": "公公又要飆？鴻海AR眼鏡蓄勢爆發 投資人搶先布局...最快明年量產挑戰新一代人機互動霸主 Yahoo股市"
+        "date": "2025-10-08",
+        "summary": "黃仁勳出手投資了！跌破眼鏡聯手馬斯克這公司 鴻海、緯創等「5台供應鏈」爽受惠 Yahoo股市"
       },
       {
         "title": "愛爾康斥15億美元收購Staar Surgical 攻植入隱形眼鏡市場",
@@ -5398,6 +5384,13 @@
         "summary": "德國蔡司斥資 54 億元併購！台灣「隱形眼鏡龍頭」確定 2026 下市 經理人"
       },
       {
+        "title": "台灣隱形眼鏡龍頭「亨泰光」爆下市！德國蔡司砸54億吃下全數股權",
+        "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE4xWTk2b2ppZk5lc3hWRDN0bDllMGNuekxyZFdCSjlRMUVKZ3JvV0ZWbDR1MS1PZ0lXZk5NbEhlVjN5NDZpNGNFN25xRk5hZ1E2cVHSAW5BVV95cUxOd01hbGdaYWhka2NGZFhKdnVzRl9pVC12SDRMLU05eHRCdEI4S3dFYUR1cG1WdTlvUF9yOG1ETnppWk5TZXplMklBNXVNdGlLRjF5OTZaUnNzYlBtcEYySmtaUWNsOTNQTXlUQmJ2UQ?oc=5",
+        "source": "ETtoday財經雲",
+        "date": "2025-06-09",
+        "summary": "台灣隱形眼鏡龍頭「亨泰光」爆下市！德國蔡司砸54億吃下全數股權 ETtoday財經雲"
+      },
+      {
         "title": "台灣知名公司被收購！100％股份全部轉讓，經營近60 年明年交割下市",
         "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE9WVzdqMEIxTU1EX0lYV2JjM0xFbzJ4Rnp4dWc0a2d1clZnVlJPRHMzVURJRHlmSEdkNE9WbXFtMW9TRFRqQ2dwQlUxWjJtZjg3?oc=5",
         "source": "風傳媒",
@@ -5405,11 +5398,39 @@
         "summary": "台灣知名公司被收購！100％股份全部轉讓，經營近60 年明年交割下市 風傳媒"
       },
       {
+        "title": "台灣大廠爆下市！外商將開54億收購「隱形眼鏡龍頭」",
+        "link": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE5RVXB5OXA3UUxwZk1nQzM3OGxyN3dzeHVZY3FwN2xmMHY1LTUtdXZWNXF5RVEtdWVoLTRrcUt3ZGRmYS1oQ3B1aFZhaw?oc=5",
+        "source": "三立新聞",
+        "date": "2025-06-09",
+        "summary": "台灣大廠爆下市！外商將開54億收購「隱形眼鏡龍頭」 三立新聞"
+      },
+      {
+        "title": "亨泰光獲德國蔡司併購！加速視力矯正產品國際市場布局",
+        "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE44R0RxSlQzM0xuazVOUkFkTW1fVzk2Q2ttbHRsR0hhOG5FLUdKNHBtUkdReUdpQmhiYzBUUFpFRWxNempUNGxzX0Z5cTBXZzdlRGM3QXlwZms5b1VqMzgwR21Rb0hCSDBE?oc=5",
+        "source": "環球生技月刊",
+        "date": "2025-06-05",
+        "summary": "亨泰光獲德國蔡司併購！加速視力矯正產品國際市場布局 環球生技月刊"
+      },
+      {
         "title": "台灣知名大廠被收購了！54億元賣掉、100％股份全轉讓，經營56 年將交割下市",
         "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTFBGemM0ZVk1WU5nME1aWlNPWF9DUHhfVU5tWktkRlJBSlpmQ3h2NkJlMjh5dHBVRFM0UFBQZmhza3Q3ZWI5blYxWHBWcm1pMlJp?oc=5",
         "source": "風傳媒",
         "date": "2025-06-05",
         "summary": "台灣知名大廠被收購了！54億元賣掉、100％股份全轉讓，經營56 年將交割下市 風傳媒"
+      },
+      {
+        "title": "德國蔡司以每股200元收購亨泰光100%股權 2026年Q1前完成交割下市",
+        "link": "https://news.google.com/rss/articles/CBMihANBVV95cUxPWXh2U3N4amhHZmpOR2ZPNUQwVFo4M3RxWnp4OHdDV0xEQThvczlhRFR6RmxWM2pVazkwVmMxZEtQdUNTNDE3REFDQlRwczBuR3E2NXlRUHFxekJLckdnNnpLdDEzcnNWeTlEQTF0TWJ0RjVPUG05V2k1NkU1ZUxVdHhvWmQwYnl5ZEMxVDFQdnhRaVFfQW04V3paSDBrV09aXzBndHlQTmVoNVZTaUdwZDJYanU5Y2dZc0JCcWM3bk1GTFczdHVEOU1ZNTBnaTh1a3FFQTh5ckwtSWRPR1ZtVEt6ZTh2akdaZkVRTkNVcVpKS0g2RVU5QktuR2FmR0Z2NGlfeWhBbmFUQVM5NWxUc09NdU1sT0NiYVl1ZVB5VFVTOVFnSUxReUFCbXlGN2h2SXFtYzNjRGx1TkpvdlZKbDh5VTIydzFqYklyOGMwQTJmRWhpNTFsWXZFRk5sSEg0RTROeDVlY2JhSnh6ZmhrVG1GYlJsRjZKeWh1QklQWGtsbnNZ?oc=5",
+        "source": "Yahoo 財經",
+        "date": "2025-06-04",
+        "summary": "德國蔡司以每股200元收購亨泰光100%股權 2026年Q1前完成交割下市 Yahoo 財經"
+      },
+      {
+        "title": "買1張賺到2.5萬！亨泰光被收購飆漲停 生計「這檔」亮第3顆紅燈「6天已漲36%」",
+        "link": "https://news.google.com/rss/articles/CBMivAJBVV95cUxQc08yWk10T0VnclNRbUxBVHJ1SERIcU1keFhFWnhvbVY0dW9jMzNPczA2dnZnbjFWRWp1OHFuSDhnZ2FwQUFaVmNVaG9yd3pOcmFpbzlxU2VoOXd6NllaX0VrYUFxeVh5UjZOa3hRU01FN2xqZDNxN2FsUE5RbVRFWmZybVp5aWlBSnVrTUlfeEViaVlXWDNVRGlxYWkyOTVSUVc0d0pwcTRGcXVZa2dnRzZtUDZ6aVdSNTFVbks4X09kU0VFeEE4aEVoSkE0QWlxOGRhT3lGS3hGQWlwdUctTk8wS1hiU05BRHhSRXhWbmEzRjZ6SzBSOEVsbVJCM1hJQm9MbDJ1R3ZraWw3WkVMQ2hrUHh4b2FWc1l0S0pKaFY1aXRXZDBSSkgydGw2UjRZOUF2SmhBeHNKQld5?oc=5",
+        "source": "Yahoo股市",
+        "date": "2025-06-04",
+        "summary": "買1張賺到2.5萬！亨泰光被收購飆漲停 生計「這檔」亮第3顆紅燈「6天已漲36%」 Yahoo股市"
       },
       {
         "title": "生技女王吸睛投資術(上集)｜眼科醫療產業鏈入門及投資盲點一次大公開｜豐雲學堂2026 年 07 月",
