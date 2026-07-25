@@ -1,8 +1,14 @@
 <!DOCTYPE html>
-<!-- 眼視光 Eye-Vision Hub | build r125 | 2026-07-11 | 公司資料全面查證+版本標示 -->
+<!-- 眼視光 Eye-Vision Hub | build r127 | 2026-07-11 | 公司資料全面查證+版本標示 -->
 <html lang="zh-Hant">
 <head>
 <meta charset="UTF-8">
+<meta property="og:type" content="website">
+<meta property="og:title" content="眼視光資訊中心 | Eye-Vision Industry Hub">
+<meta property="og:description" content="台灣與全球眼視光產業資訊:產業公司、產品技術、臨床文獻與試驗、眼科院所、學協會行事曆,每日自動更新。">
+<meta property="og:locale" content="zh_TW">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#0E7C86">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>眼視光資訊中心 · Eye-Vision Hub</title>
 <meta name="description" content="近視控制所有工具的臨床決策中心:角膜塑型、低濃度阿托品、離焦眼鏡、離焦軟式隱形眼鏡、重複低強度紅光、戶外活動。每日自動更新 PubMed 臨床文獻。">
@@ -121,6 +127,13 @@ h2{font-weight:700;font-size:clamp(24px,3vw,32px);margin:0 0 6px}
 .hero-stats .hs-item+.hs-item{padding-left:26px;border-left:1px solid var(--line)}
 .seg-count{margin-left:auto;font-family:var(--mono);font-size:12.5px;font-weight:700;color:var(--accent-ink);background:var(--accent-soft);border-radius:20px;padding:2px 11px}
 .home-block{margin-top:40px}
+.kf-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:12px;margin-top:14px}
+.kf-card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px 15px}
+.kf-num{font-family:var(--serif);font-size:26px;font-weight:800;color:var(--accent-ink);line-height:1.1}
+.kf-lab{font-size:13px;color:var(--ink);line-height:1.55;margin-top:7px}
+.kf-src{font-size:11px;color:var(--muted);margin-top:8px;font-family:var(--mono)}
+.kf-note{font-size:11.5px;color:var(--muted);margin-top:10px;line-height:1.6}
+@media(max-width:600px){.kf-grid{grid-template-columns:1fr 1fr;gap:9px}.kf-card{padding:12px}.kf-num{font-size:21px}.kf-lab{font-size:12px}}
 .home-block-first{margin-top:0}
 .hl-toggle{display:inline-flex;border:1px solid var(--line);border-radius:9px;overflow:hidden;margin-bottom:14px}
 .hl-toggle button{background:var(--card);color:var(--ink-soft);border:0;padding:7px 18px;font-size:13.5px;font-weight:700;cursor:pointer;font-family:var(--sans)}
@@ -266,9 +279,6 @@ h2{font-weight:700;font-size:clamp(24px,3vw,32px);margin:0 0 6px}
 .cl-row{font-size:13px;color:var(--ink-soft);line-height:1.6;margin:2px 0}
 .cl-row a{color:var(--accent-ink);text-decoration:none}
 .cl-hours{color:var(--ink);display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
-.cl-links{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}
-.cl-links a{font-size:12px;color:var(--accent-ink);background:var(--accent-soft);border-radius:7px;padding:5px 10px;text-decoration:none}
-.cl-links a:hover{background:var(--accent);color:#fff}
 .clinic-card{cursor:pointer;transition:.12s}
 .clinic-card:hover{border-color:var(--accent);box-shadow:0 3px 14px rgba(0,0,0,.06)}
 .cl-more{display:flex;align-items:center;justify-content:space-between;gap:8px;margin-top:11px;padding-top:9px;border-top:1px dashed var(--line)}
@@ -373,7 +383,6 @@ h2{font-weight:700;font-size:clamp(24px,3vw,32px);margin:0 0 6px}
 .fb-btn.ghost{background:var(--paper);color:var(--ink);border:1px solid var(--line)}
 .fb-btn.ghost:hover{border-color:var(--accent);color:var(--accent-ink)}
 .fb-chips{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:18px}
-.fb-chip{font-size:13px;font-weight:600;color:#1877F2;background:#EAF2FE;border:1px solid #D3E4FD;border-radius:20px;padding:7px 14px;transition:.15s}
 .fb-chip:hover{background:#1877F2;color:#fff;border-color:#1877F2}
 .fb-watch{border-top:1px solid var(--line-2);padding-top:16px}
 .fb-watch-h{font-size:13px;font-weight:700;color:var(--ink);margin-bottom:10px}
@@ -383,7 +392,6 @@ h2{font-weight:700;font-size:clamp(24px,3vw,32px);margin:0 0 6px}
 .fb-pages{display:flex;flex-wrap:wrap;gap:8px}
 .fb-page{display:inline-flex;align-items:center;gap:6px;background:var(--accent-soft);border-radius:20px;padding:5px 6px 5px 12px}
 .fb-page a{font-size:13px;font-weight:600;color:var(--accent-ink)}
-.fb-del{border:0;background:rgba(0,0,0,.08);color:var(--ink);width:20px;height:20px;border-radius:50%;cursor:pointer;font-size:11px;line-height:1}
 .fb-del:hover{background:var(--live);color:#fff}
 .fb-empty{font-size:12.5px;color:var(--muted)}
 
@@ -672,7 +680,7 @@ footer .build{margin-top:8px;font-size:11px}
       <a data-view="about">關於</a>
     </nav>
     <div class="topbar-right">
-      <span class="ver" title="版本(部署後對照用)">r125</span>
+      <span class="ver" title="版本(部署後對照用)">r127</span>
       <button id="backBtn" type="button" aria-label="返回上一頁">← 返回</button>
     </div>
   </div>
@@ -756,6 +764,20 @@ footer .build{margin-top:8px;font-size:11px}
       <div class="home-block-h"><span class="sec-eye">INDUSTRY MAP</span><h3>眼視光產業版圖</h3></div>
       <p class="sec-sub">眼視光橫跨光學、醫材、製藥與通路。點任一領域前往對應公司與分析;數字為<b>收錄家數</b>。</p>
       <div class="seg-map" id="segMap"></div>
+    </div>
+
+    <div class="home-block" id="keyFacts">
+      <div class="home-block-h"><span class="sec-eye">KEY FACTS</span><h3>產業關鍵數據</h3></div>
+      <p class="sec-sub">近視與眼視光市場的核心指標(數據為公開研究/官方統計之約值,標註來源年份)。</p>
+      <div class="kf-grid">
+        <div class="kf-card"><div class="kf-num">50%</div><div class="kf-lab">2050 年全球近視人口占比預估</div><div class="kf-src">Holden et al., Ophthalmology 2016</div></div>
+        <div class="kf-card"><div class="kf-num">~10%</div><div class="kf-lab">2050 年全球高度近視人口占比預估</div><div class="kf-src">Holden et al., 2016</div></div>
+        <div class="kf-card"><div class="kf-num">東亞最高</div><div class="kf-lab">台灣、韓國、新加坡等地學童近視盛行率居全球前列</div><div class="kf-src">多國流行病學研究</div></div>
+        <div class="kf-card"><div class="kf-num">991</div><div class="kf-lab">本站收錄台灣眼科院所家數(健保特約)</div><div class="kf-src">健保署開放資料,每週更新</div></div>
+        <div class="kf-card"><div class="kf-num">64</div><div class="kf-lab">收錄眼視光產業公司(國際+台灣)</div><div class="kf-src">本站整理</div></div>
+        <div class="kf-card"><div class="kf-num">62</div><div class="kf-lab">產品技術分類 · 173 項代表產品</div><div class="kf-src">本站整理</div></div>
+      </div>
+      <p class="kf-note">※ 流行病學數字為文獻預估值,實際依各國研究與年份而異;本站數據以官方開放資料為準。</p>
     </div>
 
     <div class="home-block" id="leadersBlock">
@@ -975,7 +997,7 @@ footer .build{margin-top:8px;font-size:11px}
     <div class="panel lit-panel">
       <div class="lit-head"><span class="sec-eye">EYE CLINICS</span><h3>台灣眼科院所(診所 + 醫院)</h3><span class="upd-badge">● 最後更新 <span id="clUpd">載入中…</span></span></div>
       <p class="lit-sub">資料來源:衛福部中央健康保險署「健保特約醫事機構」開放資料(每日自動更新),篩選有眼科者。含名稱、區域、地址、電話、看診時間。<b>負責醫師與各科門診醫師名單</b>健保開放資料未提供,請點各院所「健保院所查詢」連結查看。</p>
-      <div class="lit-search-row"><input id="clinicSearch" type="search" placeholder="搜尋院所:名稱／地址／區域(可中英)…" aria-label="搜尋眼科院所"><span id="clinicCount" class="lit-count"></span></div>
+      <div class="lit-search-row"><input id="clinicSearch" type="search" placeholder="搜尋院所:名稱/地址/區/醫師姓名(可中英)…" aria-label="搜尋眼科院所"><span id="clinicCount" class="lit-count"></span></div>
       <div class="range-row" id="clinicTypes"></div>
       <div class="range-row" id="clinicRegions"></div>
       <div class="range-row" id="clinicDists"></div>
@@ -989,7 +1011,7 @@ footer .build{margin-top:8px;font-size:11px}
   <div class="wrap">
     眼視光資訊中心 · Eye-Vision Industry Hub<br>
     資料來源:Google News · PubMed / NCBI · 每日/每 6 小時自動更新
-    <div class="build">build r125 · <span id="buildStamp"></span></div>
+    <div class="build">build r127 · <span id="buildStamp"></span></div>
   </div>
 </footer>
 
@@ -1717,7 +1739,7 @@ function clinicCardHTML(c,idx){
   const isC=(c.type||'').indexOf('診所')>=0;
   const _dl=docLinkOf(c);
   const ndoc=(c.doctors&&c.doctors.length)?('<span class="cl-doccount">👨‍⚕️ '+c.doctors.length+' 位醫師</span>'):(_dl?'<span class="cl-doccount">👨‍⚕️ 官網醫師陣容</span>':(c.ndoc?('<span class="cl-doccount">👨‍⚕️ 醫師 '+c.ndoc+' 位</span>'):''));
-  return '<div class="clinic-card" data-cl="'+idx+'" role="button" tabindex="0"><div class="cl-top"><span class="cl-type '+(isC?'cl-clinic':'cl-hosp')+'">'+(c.type||'院所')+'</span><span class="cl-region">'+(c.region||'')+'</span></div>'+
+  return '<div class="clinic-card" aria-label="院所卡片"" data-cl="'+idx+'" role="button" tabindex="0"><div class="cl-top"><span class="cl-type '+(isC?'cl-clinic':'cl-hosp')+'">'+(c.type||'院所')+'</span><span class="cl-region">'+(c.region||'')+'</span></div>'+
     '<h4 class="cl-name">'+c.name+'</h4>'+
     '<div class="cl-row">📍 '+(c.addr||'—')+'</div>'+
     (c.phone?('<div class="cl-row">📞 '+c.phone+'</div>'):'')+
@@ -1771,7 +1793,7 @@ function renderClinics(){
   if(CLINIC_TYPE!=='all')list=list.filter(function(c){return c.type===CLINIC_TYPE;});
   if(CLINIC_REGION!=='all'&&CLINIC_DIST!=='all')list=list.filter(function(c){return distOf(c)===CLINIC_DIST;});
   const q=(CLINIC_QUERY||'').trim();
-  if(q)list=list.filter(function(c){return biMatch([c.name,c.addr,c.region,c.type,c.phone].filter(Boolean).join(' '),q);});
+  if(q)list=list.filter(function(c){return biMatch([c.name,c.addr,c.region,c.type,c.phone,c.owner,(c.doctors||[]).map(function(d){return [d.name,d.title,d.spec,d.intro].filter(Boolean).join(' ');}).join(' ')].filter(Boolean).join(' '),q);});
   if(cnt)cnt.textContent='共 '+list.length.toLocaleString('en-US')+' 家';
   if(!list.length){grid.innerHTML='<div class="feed-empty">找不到符合的院所,可換關鍵字或切換區域。</div>';return;}
   const show=list.slice(0,CLINIC_SHOWN);
@@ -2237,47 +2259,11 @@ function initCompanies(){
     e.preventDefault(); const pr=cp.dataset.prod.split(':'); openCompanyProductAt(pr[0],pr[1]);
   });
   document.getElementById('coClose').addEventListener('click',()=>history.back());
-  m.addEventListener('click',e=>{ if(e.target===m)history.back(); });
-  document.addEventListener('keydown',e=>{ if(e.key==='Escape'&&m.classList.contains('on'))history.back(); });
+  // 背景點擊 / ESC 關閉(確保還原捲動)
+  m.addEventListener('click',e=>{ if(e.target===m) history.back(); });
+  document.addEventListener('keydown',e=>{ if(e.key==='Escape'&&m.classList.contains('on')) history.back(); });
 }
 
-/* =========================================================
-   活動 · 粉專追蹤(Google 鎖定 FB + 本機粉專清單;FB 無免費 API)
-   ========================================================= */
-const FB_PRESETS=["近視控制 活動","角膜塑型 講座","兒童近視 體驗會","隱形眼鏡 新品 活動","視力保健 義診","眼科診所 講座"];
-function gFbUrl(q){return 'https://www.google.com/search?q='+encodeURIComponent('site:facebook.com '+q);}
-function fbNativeUrl(q){return 'https://www.facebook.com/search/posts?q='+encodeURIComponent(q);}
-function fbGetPages(){try{return JSON.parse(localStorage.getItem('fbPages')||'[]');}catch(e){return[];}}
-function fbSavePages(a){try{localStorage.setItem('fbPages',JSON.stringify(a));}catch(e){}}
-function fbPageUrl(v){
-  v=(v||'').trim();
-  if(/^https?:\/\//i.test(v))return v;
-  if(/facebook\.com/i.test(v))return 'https://'+v.replace(/^\/+/,'');
-  return 'https://www.google.com/search?q='+encodeURIComponent('site:facebook.com '+v);
-}
-function renderFbPages(){
-  const box=document.getElementById('fbPages'); if(!box)return;
-  const pages=fbGetPages();
-  if(!pages.length){box.innerHTML='<span class="fb-empty">尚未加入粉專。加入後會記在這台裝置的瀏覽器,下次還在。</span>';return;}
-  box.innerHTML=pages.map((p,i)=>`<span class="fb-page"><a href="${fbPageUrl(p)}" target="_blank" rel="noopener">📌 ${p.replace(/^https?:\/\//,'')}</a><button class="fb-del" data-i="${i}" title="移除">✕</button></span>`).join('');
-}
-function renderFbLinks(){
-  const chips=document.getElementById('fbChips');
-  if(chips)chips.innerHTML=FB_PRESETS.map(q=>`<a class="fb-chip" href="${gFbUrl(q)}" target="_blank" rel="noopener">🔍 ${q}</a>`).join('');
-  const doGoogle=()=>{const v=(document.getElementById('fbInput').value||'').trim(); if(v)window.open(gFbUrl(v),'_blank','noopener');};
-  const doNative=()=>{const v=(document.getElementById('fbInput').value||'').trim(); if(v)window.open(fbNativeUrl(v),'_blank','noopener');};
-  const gi=document.getElementById('fbGoogle'), na=document.getElementById('fbNative'), inp=document.getElementById('fbInput');
-  if(gi)gi.addEventListener('click',doGoogle);
-  if(na)na.addEventListener('click',doNative);
-  if(inp)inp.addEventListener('keydown',e=>{if(e.key==='Enter')doGoogle();});
-  const add=()=>{const el=document.getElementById('fbPageInput'); const v=(el.value||'').trim(); if(!v)return; const pages=fbGetPages(); if(!pages.includes(v)){pages.push(v);fbSavePages(pages);} el.value=''; renderFbPages();};
-  const ab=document.getElementById('fbPageAdd'), pin=document.getElementById('fbPageInput');
-  if(ab)ab.addEventListener('click',add);
-  if(pin)pin.addEventListener('keydown',e=>{if(e.key==='Enter')add();});
-  const box=document.getElementById('fbPages');
-  if(box)box.addEventListener('click',e=>{const b=e.target.closest('.fb-del'); if(!b)return; const pages=fbGetPages(); pages.splice(+b.dataset.i,1); fbSavePages(pages); renderFbPages();});
-  renderFbPages();
-}
 const SEGMENTS=[
   {k:"lens",ico:"🔎",label:"鏡片 / 驗光",desc:"單光、漸進、離焦鏡片與驗光配鏡;EssilorLuxottica、蔡司、Hoya 等。",goto:"companies"},
   {k:"contactlens",ico:"👁",label:"隱形眼鏡",desc:"日/月拋、離焦軟鏡與角膜塑型;台廠晶碩、精華、視陽、亨泰光。",goto:"companies"},
@@ -2970,7 +2956,6 @@ initProducts();
 renderSegMap(); renderHeroStats(); renderLeaders();
 (function(){const hl=document.getElementById('homeLeaders'); if(hl)hl.addEventListener('click',e=>{const r=e.target.closest('[data-co]'); if(!r)return; switchView('companies'); openCompany(r.dataset.co);});
 const ht=document.getElementById('hlToggle'); if(ht)ht.addEventListener('click',e=>{const b=e.target.closest('button[data-metric]'); if(!b)return; LEAD_METRIC=b.dataset.metric; ht.querySelectorAll('button').forEach(x=>x.classList.toggle('on',x===b)); renderLeaders();});})();
-renderFbLinks();
 initRouter();
 document.addEventListener('click',function(e){
   const b=e.target.closest('.ai-btn');
