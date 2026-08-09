@@ -1,9 +1,4308 @@
 {
-  "updated": "2026-08-09 13:31 UTC",
+  "updated": "2026-08-09 19:12 UTC",
   "source": "ClinicalTrials.gov API v2(全球臨床試驗登錄)",
   "items": {
-    "myopia": [],
-    "contactlens": [],
+    "myopia": [
+      {
+        "nct": "NCT07751172",
+        "title": "EVALUATION OF ORTHOKERATOLOGY LENSES WITH A 5MM OPTIC ZONE DIAMETER",
+        "status": "NOT_YET_RECRUITING",
+        "status_zh": "尚未招募",
+        "phase": "不適用",
+        "type": "介入型",
+        "conditions": [
+          "Myopia",
+          "Astigmatism"
+        ],
+        "interventions": [
+          "DEVICE: Lens A (paflufocon D)"
+        ],
+        "sponsor": "CooperVision International Limited (CVIL)",
+        "country": "美國 等",
+        "enroll": 70,
+        "start": "2026-08",
+        "completion": "2026-12",
+        "updated": "2026-08-07"
+      },
+      {
+        "nct": "NCT05770661",
+        "title": "China Children Eye Study",
+        "status": "RECRUITING",
+        "status_zh": "招募中",
+        "phase": "",
+        "type": "觀察型",
+        "conditions": [
+          "Axial Length",
+          "Myopia",
+          "Child Development"
+        ],
+        "interventions": [],
+        "sponsor": "Shanghai Eye Disease Prevention and Treatment Center",
+        "country": "中國",
+        "enroll": 30000,
+        "start": "2023-03-10",
+        "completion": "2026-12-31",
+        "updated": "2026-08-07"
+      },
+      {
+        "nct": "NCT07747311",
+        "title": "Contact Lenses to Slow Myopia Progression in Adults",
+        "status": "NOT_YET_RECRUITING",
+        "status_zh": "尚未招募",
+        "phase": "不適用",
+        "type": "介入型",
+        "conditions": [
+          "Myopia",
+          "Myopia Progression"
+        ],
+        "interventions": [
+          "DEVICE: Dual Focus Soft Contact Lens",
+          "DEVICE: Single Vision Soft Contact Lens"
+        ],
+        "sponsor": "University of California, Berkeley",
+        "country": "美國",
+        "enroll": 152,
+        "start": "2026-09-01",
+        "completion": "2030-09-30",
+        "updated": "2026-08-05"
+      },
+      {
+        "nct": "NCT07746804",
+        "title": "School-based Myopia Prevention Trial for Children With Insufficient Hyperopic Reserve",
+        "status": "RECRUITING",
+        "status_zh": "招募中",
+        "phase": "不適用",
+        "type": "介入型",
+        "conditions": [
+          "Refractive Errors",
+          "Hyperopia",
+          "Myopia"
+        ],
+        "interventions": [
+          "OTHER: Auricular Acupressure",
+          "BEHAVIORAL: Eye Health Education"
+        ],
+        "sponsor": "Shanghai Eye Disease Prevention and Treatment Center",
+        "country": "中國",
+        "enroll": 130,
+        "start": "2026-06-01",
+        "completion": "2027-12",
+        "updated": "2026-08-05"
+      },
+      {
+        "nct": "NCT07748546",
+        "title": "The Rebound Effect on Repeated Low-Level Red Light Therapy for Myopia",
+        "status": "NOT_YET_RECRUITING",
+        "status_zh": "尚未招募",
+        "phase": "不適用",
+        "type": "介入型",
+        "conditions": [
+          "Myopia",
+          "Randomized Controlled Trial (RCT)"
+        ],
+        "interventions": [
+          "DEVICE: Repeated low-level red light (RLRL) therapy"
+        ],
+        "sponsor": "The First Affiliated Hospital of Anhui Medical University",
+        "country": "",
+        "enroll": 159,
+        "start": "2026-08-15",
+        "completion": "2028-07-15",
+        "updated": "2026-08-05"
+      },
+      {
+        "nct": "NCT07746778",
+        "title": "School-based Myopia Control Trial for Children With Premyopia or Myopia",
+        "status": "RECRUITING",
+        "status_zh": "招募中",
+        "phase": "不適用",
+        "type": "介入型",
+        "conditions": [
+          "Myopia",
+          "Refractive Errors"
+        ],
+        "interventions": [
+          "DEVICE: Defocus Spectacle Lenses",
+          "OTHER: Auricular Acupressure"
+        ],
+        "sponsor": "Shanghai Eye Disease Prevention and Treatment Center",
+        "country": "中國",
+        "enroll": 358,
+        "start": "2026-06-01",
+        "completion": "2027-12",
+        "updated": "2026-08-05"
+      },
+      {
+        "nct": "NCT07746752",
+        "title": "School-based Myopia Prevention Trial for Children With Adequate Hyperopic Reserve",
+        "status": "RECRUITING",
+        "status_zh": "招募中",
+        "phase": "不適用",
+        "type": "介入型",
+        "conditions": [
+          "Myopia",
+          "Refractive Errors",
+          "Hyperopia"
+        ],
+        "interventions": [
+          "BEHAVIORAL: Wearable Device-Supported Myopia Prevention Program",
+          "BEHAVIORAL: Eye Health Education"
+        ],
+        "sponsor": "Shanghai Eye Disease Prevention and Treatment Center",
+        "country": "中國",
+        "enroll": 104,
+        "start": "2026-06-01",
+        "completion": "2027-12",
+        "updated": "2026-08-05"
+      },
+      {
+        "nct": "NCT06176352",
+        "title": "A Study to Evaluate the Efficacy and Safety of Faricimab in Patients With Choroidal Neovascularization Secondary to Pathologic Myopia",
+        "status": "COMPLETED",
+        "status_zh": "已完成",
+        "phase": "三期",
+        "type": "介入型",
+        "conditions": [
+          "Choroidal Neovascularization Secondary to Pathologic Myopia"
+        ],
+        "interventions": [
+          "DRUG: Faricimab",
+          "DRUG: Ranibizumab",
+          "PROCEDURE: Sham Procedure"
+        ],
+        "sponsor": "Hoffmann-La Roche",
+        "country": "澳洲 等",
+        "enroll": 280,
+        "start": "2024-03-06",
+        "completion": "2026-05-22",
+        "updated": "2026-07-31"
+      },
+      {
+        "nct": "NCT03334253",
+        "title": "Low-Dose Atropine for Treatment of Myopia",
+        "status": "COMPLETED",
+        "status_zh": "已完成",
+        "phase": "三期",
+        "type": "介入型",
+        "conditions": [
+          "Myopia"
+        ],
+        "interventions": [
+          "DRUG: Atropine",
+          "OTHER: Placebo Eyedrops"
+        ],
+        "sponsor": "Jaeb Center for Health Research",
+        "country": "美國",
+        "enroll": 200,
+        "start": "2018-06-01",
+        "completion": "2022-09-12",
+        "updated": "2026-07-31"
+      },
+      {
+        "nct": "NCT06878118",
+        "title": "The A.R.R.E.S.T.® Contact Lens Study",
+        "status": "ACTIVE_NOT_RECRUITING",
+        "status_zh": "進行中(不招募)",
+        "phase": "不適用",
+        "type": "介入型",
+        "conditions": [
+          "Myopia",
+          "Myopia Progression"
+        ],
+        "interventions": [
+          "DEVICE: Single-vision contact lens",
+          "DEVICE: A.R.R.E.S.T.® contact lens"
+        ],
+        "sponsor": "nthalmic Pty Ltd",
+        "country": "中國 等",
+        "enroll": 80,
+        "start": "2025-07-06",
+        "completion": "2028-06-01",
+        "updated": "2026-07-31"
+      },
+      {
+        "nct": "NCT03918915",
+        "title": "The Safety and Efficacy of SYD-101 in Children With Myopia",
+        "status": "COMPLETED",
+        "status_zh": "已完成",
+        "phase": "三期",
+        "type": "介入型",
+        "conditions": [
+          "Nearsightedness",
+          "Near Sightedness",
+          "Near-sightedness"
+        ],
+        "interventions": [
+          "DRUG: SYD-101 0.01%",
+          "DRUG: SYD-101 0.03%",
+          "DRUG: Vehicle"
+        ],
+        "sponsor": "Sydnexis, Inc.",
+        "country": "美國 等",
+        "enroll": 852,
+        "start": "2019-04-24",
+        "completion": "2025-05-01",
+        "updated": "2026-07-30"
+      },
+      {
+        "nct": "NCT07264361",
+        "title": "Evaluation of the Safety and Efficacy of the D.D.C Dual-control Technology Spectacle Lenses in Delaying the Progression of Myopia: a Randomized Controlled Trial",
+        "status": "ACTIVE_NOT_RECRUITING",
+        "status_zh": "進行中(不招募)",
+        "phase": "不適用",
+        "type": "介入型",
+        "conditions": [
+          "Myopia, Progressive"
+        ],
+        "interventions": [
+          "DEVICE: D.D.C dual-control technology spcetacle lenses",
+          "DEVICE: Aspheric single-vision lenses"
+        ],
+        "sponsor": "Zhongshan Ophthalmic Center, Sun Yat-sen University",
+        "country": "中國",
+        "enroll": 316,
+        "start": "2026-03-23",
+        "completion": "2027-12-20",
+        "updated": "2026-07-28"
+      },
+      {
+        "nct": "NCT07724210",
+        "title": "Effectiveness of Digital Defocus Vision Training With Low-Concentration Atropine on the Prevention and Control of Myopia in Children: A Clinical Study",
+        "status": "NOT_YET_RECRUITING",
+        "status_zh": "尚未招募",
+        "phase": "不適用",
+        "type": "介入型",
+        "conditions": [
+          "Myopia",
+          "Prevention and Control"
+        ],
+        "interventions": [
+          "OTHER: For the experimental group,Virtual reality-based digital defocus training combined with 0.02% atropine eye drops",
+          "OTHER: For the control group, one drop of 0.02% atropine eye drops was instilled into each eye at bedtime daily, combined with full-time wear of fully corrected multi-zone positive optical defocus (DIMS) spe"
+        ],
+        "sponsor": "Beijing Tongren Hospital",
+        "country": "中國",
+        "enroll": 100,
+        "start": "2026-08-20",
+        "completion": "2027-12-31",
+        "updated": "2026-07-24"
+      },
+      {
+        "nct": "NCT07406906",
+        "title": "Dietary Supplement for Myopia Control",
+        "status": "NOT_YET_RECRUITING",
+        "status_zh": "尚未招募",
+        "phase": "不適用",
+        "type": "介入型",
+        "conditions": [
+          "Myopia"
+        ],
+        "interventions": [
+          "DIETARY_SUPPLEMENT: Oral dietary supplement provided in a capsule format (3 active capsules/ per day)",
+          "DIETARY_SUPPLEMENT: Oral dietary supplement provided in a capsule format (1 active capsule and 2 placebo capsules/per day)",
+          "OTHER: Placebo control (3 placebo capsules/per day)"
+        ],
+        "sponsor": "The Hong Kong Polytechnic University",
+        "country": "香港",
+        "enroll": 156,
+        "start": "2026-08-01",
+        "completion": "2026-12-30",
+        "updated": "2026-07-24"
+      },
+      {
+        "nct": "NCT07316998",
+        "title": "Incidence of Myopia in a Prospective Cohort of Emmetropic Children and Associated Ocular and Environmental Factors",
+        "status": "RECRUITING",
+        "status_zh": "招募中",
+        "phase": "",
+        "type": "觀察型",
+        "conditions": [
+          "Myopia"
+        ],
+        "interventions": [
+          "OTHER: annual follow-up"
+        ],
+        "sponsor": "Fondation Ophtalmologique Adolphe de Rothschild",
+        "country": "法國",
+        "enroll": 100,
+        "start": "2026-02-18",
+        "completion": "2031-02",
+        "updated": "2026-07-23"
+      },
+      {
+        "nct": "NCT05815784",
+        "title": "Myopia Control: a Comparison Study Between Atropine and MiSight",
+        "status": "ACTIVE_NOT_RECRUITING",
+        "status_zh": "進行中(不招募)",
+        "phase": "二期",
+        "type": "介入型",
+        "conditions": [
+          "Myopia"
+        ],
+        "interventions": [
+          "DRUG: Atropine",
+          "DEVICE: MiSight contact lenses"
+        ],
+        "sponsor": "Ann & Robert H Lurie Children's Hospital of Chicago",
+        "country": "美國",
+        "enroll": 348,
+        "start": "2023-05-02",
+        "completion": "2028-01-01",
+        "updated": "2026-07-22"
+      },
+      {
+        "nct": "NCT06647472",
+        "title": "Proteomic Analysis on Myopic Children Using Orthokeratology Lenses With Good or Poor Myopic Control",
+        "status": "ACTIVE_NOT_RECRUITING",
+        "status_zh": "進行中(不招募)",
+        "phase": "",
+        "type": "觀察型",
+        "conditions": [
+          "Myopia",
+          "Healthy",
+          "Orthokeratology"
+        ],
+        "interventions": [],
+        "sponsor": "Vejle Hospital",
+        "country": "丹麥",
+        "enroll": 20,
+        "start": "2024-11-15",
+        "completion": "2026-12",
+        "updated": "2026-07-21"
+      },
+      {
+        "nct": "NCT05840185",
+        "title": "Clinical Evaluation of a Myopia Control Lens in Slowing Myopia Progression (DAL)",
+        "status": "TERMINATED",
+        "status_zh": "已終止",
+        "phase": "不適用",
+        "type": "介入型",
+        "conditions": [
+          "Myopia"
+        ],
+        "interventions": [
+          "DEVICE: Test myopia control lenses (DAL)"
+        ],
+        "sponsor": "Essilor International",
+        "country": "新加坡",
+        "enroll": 41,
+        "start": "2023-08-10",
+        "completion": "2024-10-22",
+        "updated": "2026-07-21"
+      },
+      {
+        "nct": "NCT06775509",
+        "title": "Optical Quality of the Cornea in Orthokeratology",
+        "status": "COMPLETED",
+        "status_zh": "已完成",
+        "phase": "不適用",
+        "type": "介入型",
+        "conditions": [
+          "Myopia (Disorder)",
+          "Astigmatism"
+        ],
+        "interventions": [
+          "DEVICE: Ortho-K"
+        ],
+        "sponsor": "Institut Investigacio Sanitaria Pere Virgili",
+        "country": "西班牙",
+        "enroll": 23,
+        "start": "2025-01-13",
+        "completion": "2026-02-28",
+        "updated": "2026-07-21"
+      },
+      {
+        "nct": "NCT07566234",
+        "title": "Evaluation of Contact Lenses and Myopia.",
+        "status": "RECRUITING",
+        "status_zh": "招募中",
+        "phase": "不適用",
+        "type": "介入型",
+        "conditions": [
+          "Pre-myopia"
+        ],
+        "interventions": [
+          "DEVICE: Test Lens - Dual Focus"
+        ],
+        "sponsor": "CooperVision International Limited (CVIL)",
+        "country": "中國",
+        "enroll": 110,
+        "start": "2026-06-06",
+        "completion": "2029-05",
+        "updated": "2026-07-16"
+      },
+      {
+        "nct": "NCT07696468",
+        "title": "Comparison of Two Rotational Alignment Methods for Astigmatism Correction in SMILE Surgery",
+        "status": "NOT_YET_RECRUITING",
+        "status_zh": "尚未招募",
+        "phase": "不適用",
+        "type": "介入型",
+        "conditions": [
+          "Myopia",
+          "Refractive Ametropia"
+        ],
+        "interventions": [
+          "PROCEDURE: Device-assisted cyclotorsion control during SMILE",
+          "PROCEDURE: Manual limbal marking-guided cyclotorsion adjustment during SMILE"
+        ],
+        "sponsor": "Zhongshan Ophthalmic Center, Sun Yat-sen University",
+        "country": "中國",
+        "enroll": 52,
+        "start": "2026-07-13",
+        "completion": "2027-06-30",
+        "updated": "2026-07-15"
+      },
+      {
+        "nct": "NCT05562622",
+        "title": "Assessment of DOT Spectacles in Chinese Children",
+        "status": "ACTIVE_NOT_RECRUITING",
+        "status_zh": "進行中(不招募)",
+        "phase": "不適用",
+        "type": "介入型",
+        "conditions": [
+          "Juvenile Myopia",
+          "Myopia"
+        ],
+        "interventions": [
+          "DEVICE: Novel spectacle lens design",
+          "DEVICE: Spectacle lenses"
+        ],
+        "sponsor": "SightGlass Vision, Inc.",
+        "country": "中國",
+        "enroll": 195,
+        "start": "2023-02-05",
+        "completion": "2027-12-31",
+        "updated": "2026-07-13"
+      },
+      {
+        "nct": "NCT07679477",
+        "title": "Management of Myopia in University Students With DIMS-TED Spectacle Lenses",
+        "status": "ENROLLING_BY_INVITATION",
+        "status_zh": "邀請制招募",
+        "phase": "不適用",
+        "type": "介入型",
+        "conditions": [
+          "Myopia Progression"
+        ],
+        "interventions": [
+          "DEVICE: DIMS TED spectacle lenses",
+          "DEVICE: Single vision spectacle lenses"
+        ],
+        "sponsor": "University of Bradford",
+        "country": "英國",
+        "enroll": 38,
+        "start": "2025-10-01",
+        "completion": "2029-10-01",
+        "updated": "2026-07-13"
+      },
+      {
+        "nct": "NCT07567040",
+        "title": "Delaying the Onset of Nearsightedness Until Treatment (DONUT) Clinical Trial",
+        "status": "RECRUITING",
+        "status_zh": "招募中",
+        "phase": "三期",
+        "type": "介入型",
+        "conditions": [
+          "Myopia"
+        ],
+        "interventions": [
+          "DRUG: Atropine Sulfate 0.05% Oph Soln",
+          "DRUG: Placebo"
+        ],
+        "sponsor": "Ohio State University",
+        "country": "美國",
+        "enroll": 664,
+        "start": "2026-05-27",
+        "completion": "2028-05-15",
+        "updated": "2026-07-13"
+      },
+      {
+        "nct": "NCT07585877",
+        "title": "Effect of Branched-Chain Amino Acid Supplementation on Myopia Progression",
+        "status": "ACTIVE_NOT_RECRUITING",
+        "status_zh": "進行中(不招募)",
+        "phase": "不適用",
+        "type": "介入型",
+        "conditions": [
+          "Myopia Progressing",
+          "Myopia"
+        ],
+        "interventions": [
+          "DIETARY_SUPPLEMENT: Branched-Chain Amino Acids (BCAA) Supplementation"
+        ],
+        "sponsor": "Zhongda Hospital",
+        "country": "中國",
+        "enroll": 104,
+        "start": "2026-01-05",
+        "completion": "2027-01-30",
+        "updated": "2026-07-13"
+      },
+      {
+        "nct": "NCT07698977",
+        "title": "Inhibition of Myopia Progression With Optical Devices",
+        "status": "RECRUITING",
+        "status_zh": "招募中",
+        "phase": "",
+        "type": "觀察型",
+        "conditions": [
+          "Myopia Progression",
+          "Myopia",
+          "Myopia, Child Myopia Progression"
+        ],
+        "interventions": [
+          "DEVICE: Wearing myopia-control D.I.M.S. glasses while awake",
+          "DEVICE: DIMS (Defocus Incorporated Multiple Segments) lenses"
+        ],
+        "sponsor": "Semmelweis University",
+        "country": "Hungary",
+        "enroll": 50,
+        "start": "2026-06-02",
+        "completion": "2027-05-31",
+        "updated": "2026-07-13"
+      },
+      {
+        "nct": "NCT06110520",
+        "title": "Violet Light for the Suppression of Myopia",
+        "status": "TERMINATED",
+        "status_zh": "已終止",
+        "phase": "不適用",
+        "type": "介入型",
+        "conditions": [
+          "Myopia",
+          "Phototherapy"
+        ],
+        "interventions": [
+          "DEVICE: Violet Light Lamp",
+          "DEVICE: White Light Lamp"
+        ],
+        "sponsor": "Children's Hospital Medical Center, Cincinnati",
+        "country": "美國",
+        "enroll": 65,
+        "start": "2023-06-07",
+        "completion": "2026-07-06",
+        "updated": "2026-07-10"
+      },
+      {
+        "nct": "NCT00320593",
+        "title": "Correction of Myopia Evaluation Trial 2",
+        "status": "COMPLETED",
+        "status_zh": "已完成",
+        "phase": "三期",
+        "type": "介入型",
+        "conditions": [
+          "Myopia"
+        ],
+        "interventions": [
+          "DEVICE: Progressive Addition Lenses (PALs)",
+          "DEVICE: Single Vision Lenses (SVLs)"
+        ],
+        "sponsor": "Jaeb Center for Health Research",
+        "country": "美國",
+        "enroll": 118,
+        "start": "2005-04",
+        "completion": "2010-03",
+        "updated": "2026-07-09"
+      },
+      {
+        "nct": "NCT07691671",
+        "title": "Impact of Various Myopia Management Strategies on Asthenopia Among Pediatric and Adolescent Populations",
+        "status": "NOT_YET_RECRUITING",
+        "status_zh": "尚未招募",
+        "phase": "",
+        "type": "觀察型",
+        "conditions": [
+          "Myopia",
+          "Visual Fatigue"
+        ],
+        "interventions": [],
+        "sponsor": "Tianjin Medical University Eye Hospital",
+        "country": "",
+        "enroll": 600,
+        "start": "2026-07-05",
+        "completion": "2027-04-30",
+        "updated": "2026-07-09"
+      },
+      {
+        "nct": "NCT05285553",
+        "title": "MiSight 1 Day Post-Approval Study for Effectiveness and Visual Symptoms",
+        "status": "ACTIVE_NOT_RECRUITING",
+        "status_zh": "進行中(不招募)",
+        "phase": "不適用",
+        "type": "介入型",
+        "conditions": [
+          "Myopia"
+        ],
+        "interventions": [
+          "DEVICE: MiSight 1 Day",
+          "DEVICE: Proclear 1 day"
+        ],
+        "sponsor": "CooperVision, Inc.",
+        "country": "美國",
+        "enroll": 900,
+        "start": "2022-06-25",
+        "completion": "2030-06-30",
+        "updated": "2026-07-08"
+      },
+      {
+        "nct": "NCT07686289",
+        "title": "A Controlled Evaluation of Optical Defocus Parameters on Transient Changes in Axial Length Using Kubota Glass",
+        "status": "NOT_YET_RECRUITING",
+        "status_zh": "尚未招募",
+        "phase": "不適用",
+        "type": "介入型",
+        "conditions": [
+          "Myopia"
+        ],
+        "interventions": [
+          "DEVICE: KG1",
+          "DEVICE: KG2",
+          "DEVICE: KG3",
+          "DEVICE: KG4",
+          "DEVICE: KG5"
+        ],
+        "sponsor": "Kubota Vision Inc.",
+        "country": "",
+        "enroll": 35,
+        "start": "2026-07-06",
+        "completion": "2026-12-31",
+        "updated": "2026-07-07"
+      },
+      {
+        "nct": "NCT07683481",
+        "title": "Comparing Myopia Control Spectacle Lenses for Visual Comfort, Adaptation, and Satisfaction in Myopic Children",
+        "status": "NOT_YET_RECRUITING",
+        "status_zh": "尚未招募",
+        "phase": "不適用",
+        "type": "介入型",
+        "conditions": [
+          "Myopia"
+        ],
+        "interventions": [
+          "DEVICE: HADAL Spectacle Lenses",
+          "DEVICE: Stellest® Spectacle Lenses"
+        ],
+        "sponsor": "Essilor International",
+        "country": "",
+        "enroll": 20,
+        "start": "2026-06",
+        "completion": "2026-11",
+        "updated": "2026-07-06"
+      },
+      {
+        "nct": "NCT07674966",
+        "title": "An Investigation of Topical Ophthalmic Low-Dose Atropine on Pupil Size and Accommodation",
+        "status": "COMPLETED",
+        "status_zh": "已完成",
+        "phase": "一期",
+        "type": "介入型",
+        "conditions": [
+          "Myopia"
+        ],
+        "interventions": [
+          "DRUG: Atropine 0.01% Ophthalmic Solution",
+          "DRUG: Atropine 0.02% Ophthalmic Solution",
+          "DRUG: Atropine 0.05% Ophthalmic Solution"
+        ],
+        "sponsor": "University of California, Berkeley",
+        "country": "美國",
+        "enroll": 24,
+        "start": "2022-03-16",
+        "completion": "2022-10-09",
+        "updated": "2026-06-30"
+      },
+      {
+        "nct": "NCT07095894",
+        "title": "A RCT of Spectacles With Aspherical Lenslets or 0.05% Atropine for Myopia Control",
+        "status": "RECRUITING",
+        "status_zh": "招募中",
+        "phase": "三期",
+        "type": "介入型",
+        "conditions": [
+          "Myopia"
+        ],
+        "interventions": [
+          "DRUG: Atropine",
+          "DEVICE: Spectacles with HAL",
+          "DRUG: Placebo Eyedrops"
+        ],
+        "sponsor": "Jaeb Center for Health Research",
+        "country": "美國",
+        "enroll": 348,
+        "start": "2026-06-01",
+        "completion": "2029-06-01",
+        "updated": "2026-06-26"
+      },
+      {
+        "nct": "NCT06477081",
+        "title": "KLEx Versus FS-LASIK for the Treatment of Myopia and Compound Myopic Astigmatism",
+        "status": "ACTIVE_NOT_RECRUITING",
+        "status_zh": "進行中(不招募)",
+        "phase": "不適用",
+        "type": "介入型",
+        "conditions": [
+          "Myopia",
+          "Astigmatism",
+          "Myopic Astigmatism"
+        ],
+        "interventions": [
+          "PROCEDURE: FS-LASIK procedure",
+          "PROCEDURE: KLEx"
+        ],
+        "sponsor": "Instituto de Oftalmología Fundación Conde de Valenciana",
+        "country": "墨西哥",
+        "enroll": 80,
+        "start": "2024-08-01",
+        "completion": "2027-03-01",
+        "updated": "2026-06-25"
+      },
+      {
+        "nct": "NCT07645183",
+        "title": "Advanced Technology for Myopia Control in Children and Young Adults",
+        "status": "COMPLETED",
+        "status_zh": "已完成",
+        "phase": "不適用",
+        "type": "介入型",
+        "conditions": [
+          "Myopia (Disorder)",
+          "Refraction Error"
+        ],
+        "interventions": [
+          "DEVICE: Lenslet Spectacles",
+          "DEVICE: Violet Excitation Filter Glasses",
+          "DEVICE: Single Vision Lenses"
+        ],
+        "sponsor": "University of Faisalabad",
+        "country": "Pakistan",
+        "enroll": 90,
+        "start": "2025-07-01",
+        "completion": "2026-06-06",
+        "updated": "2026-06-25"
+      },
+      {
+        "nct": "NCT07668102",
+        "title": "Visual Performance of Highly Aspherical Lenslet Spectacles in Children (Ancillary to WS10246)",
+        "status": "COMPLETED",
+        "status_zh": "已完成",
+        "phase": "不適用",
+        "type": "介入型",
+        "conditions": [
+          "Myopia"
+        ],
+        "interventions": [
+          "DEVICE: HAL spectacle lens",
+          "DEVICE: Single Vision spectacle lens"
+        ],
+        "sponsor": "Essilor International",
+        "country": "美國",
+        "enroll": 88,
+        "start": "2024-05-22",
+        "completion": "2024-10-20",
+        "updated": "2026-06-25"
+      },
+      {
+        "nct": "NCT07340931",
+        "title": "Pilot Study on the Adaptation and Tolerance of Essilor® Myopia-control Spectacle Lenses",
+        "status": "RECRUITING",
+        "status_zh": "招募中",
+        "phase": "",
+        "type": "觀察型",
+        "conditions": [
+          "Myopia"
+        ],
+        "interventions": [],
+        "sponsor": "Nantes University Hospital",
+        "country": "法國",
+        "enroll": 50,
+        "start": "2026-01-20",
+        "completion": "2027-01-20",
+        "updated": "2026-06-24"
+      },
+      {
+        "nct": "NCT06148870",
+        "title": "Comparison of Efficacy Between Two Myopia Control Lenses",
+        "status": "COMPLETED",
+        "status_zh": "已完成",
+        "phase": "不適用",
+        "type": "介入型",
+        "conditions": [
+          "Myopia"
+        ],
+        "interventions": [
+          "DEVICE: Myopia Control Lens-1 (MCL1)",
+          "DEVICE: Myopia Control Lens-2 (MCL2)"
+        ],
+        "sponsor": "Essilor International",
+        "country": "新加坡",
+        "enroll": 50,
+        "start": "2023-11-29",
+        "completion": "2025-04-03",
+        "updated": "2026-06-23"
+      },
+      {
+        "nct": "NCT07253064",
+        "title": "Study Comparing Eye Growth Over Time in Children Using Two Myopia Control Lenses",
+        "status": "ACTIVE_NOT_RECRUITING",
+        "status_zh": "進行中(不招募)",
+        "phase": "不適用",
+        "type": "介入型",
+        "conditions": [
+          "Myopia"
+        ],
+        "interventions": [
+          "DEVICE: MCL 1",
+          "DEVICE: MCL 2"
+        ],
+        "sponsor": "Essilor International",
+        "country": "新加坡",
+        "enroll": 20,
+        "start": "2025-11-11",
+        "completion": "2026-09",
+        "updated": "2026-06-23"
+      },
+      {
+        "nct": "NCT05955638",
+        "title": "Management of Myopia in University Students Using Dual Focus Soft Contact Lenses",
+        "status": "ENROLLING_BY_INVITATION",
+        "status_zh": "邀請制招募",
+        "phase": "不適用",
+        "type": "介入型",
+        "conditions": [
+          "Myopia, Progressive"
+        ],
+        "interventions": [
+          "DEVICE: MiSight contact lenses",
+          "DEVICE: Proclear contact lenses"
+        ],
+        "sponsor": "University of Bradford",
+        "country": "英國",
+        "enroll": 84,
+        "start": "2024-01-01",
+        "completion": "2028-09-01",
+        "updated": "2026-06-23"
+      },
+      {
+        "nct": "NCT07653074",
+        "title": "Functional Vision and Quality of Life in a Modern Society - With Emphasis on Myopia and Cerebral Visual Impairment Among Youth",
+        "status": "RECRUITING",
+        "status_zh": "招募中",
+        "phase": "",
+        "type": "觀察型",
+        "conditions": [
+          "Myopia",
+          "Quality of Life"
+        ],
+        "interventions": [
+          "DIAGNOSTIC_TEST: ophthalmological examination"
+        ],
+        "sponsor": "Region Örebro County",
+        "country": "瑞典",
+        "enroll": 300,
+        "start": "2024-10-27",
+        "completion": "2029-05-30",
+        "updated": "2026-06-17"
+      },
+      {
+        "nct": "NCT05243836",
+        "title": "S.T.O.P.® Technology Contact Lenses Versus Dual-focus Contact Lenses for Slowing Down Myopia Progression in Children",
+        "status": "ACTIVE_NOT_RECRUITING",
+        "status_zh": "進行中(不招募)",
+        "phase": "不適用",
+        "type": "介入型",
+        "conditions": [
+          "Myopia"
+        ],
+        "interventions": [
+          "DEVICE: S.T.O.P® F2",
+          "DEVICE: S.T.O.P® DT",
+          "DEVICE: MiSight®"
+        ],
+        "sponsor": "nthalmic Pty Ltd",
+        "country": "中國 等",
+        "enroll": 441,
+        "start": "2023-08-04",
+        "completion": "2028-05",
+        "updated": "2026-06-17"
+      },
+      {
+        "nct": "NCT06137560",
+        "title": "Spectacle Films Utilising S.T.O.P.® Technology for Slowing Down Myopia Progression in Children",
+        "status": "ACTIVE_NOT_RECRUITING",
+        "status_zh": "進行中(不招募)",
+        "phase": "不適用",
+        "type": "介入型",
+        "conditions": [
+          "Myopia"
+        ],
+        "interventions": [
+          "DEVICE: Single vision spectacle lens",
+          "DEVICE: Single vision spectacle lens + S.T.O.P.® Kit 1",
+          "DEVICE: Single vision spectacle lens + S.T.O.P.® Kit 2",
+          "DEVICE: Single vision spectacle lens + S.T.O.P.® Film",
+          "DEVICE: Standard single vision spectacle lens + S.T.O.P.® Kit 1 or 2"
+        ],
+        "sponsor": "nthalmic Pty Ltd",
+        "country": "中國 等",
+        "enroll": 210,
+        "start": "2023-12-22",
+        "completion": "2028-03",
+        "updated": "2026-06-17"
+      },
+      {
+        "nct": "NCT05778201",
+        "title": "To Study the Effects of Baby Drink on Vision Care",
+        "status": "COMPLETED",
+        "status_zh": "已完成",
+        "phase": "早期一期",
+        "type": "介入型",
+        "conditions": [
+          "Myopia"
+        ],
+        "interventions": [
+          "BIOLOGICAL: Baby Drink group"
+        ],
+        "sponsor": "China Medical University Hospital",
+        "country": "台灣",
+        "enroll": 20,
+        "start": "2023-03-18",
+        "completion": "2023-08-31",
+        "updated": "2026-06-15"
+      },
+      {
+        "nct": "NCT07642999",
+        "title": "Longitudinal Measurements of Visual Diet in Children",
+        "status": "RECRUITING",
+        "status_zh": "招募中",
+        "phase": "",
+        "type": "觀察型",
+        "conditions": [
+          "Myopia",
+          "Visual Diet",
+          "Pupil",
+          "Viewing Distance",
+          "Illuminance",
+          "Wavelength"
+        ],
+        "interventions": [],
+        "sponsor": "State University of New York College of Optometry",
+        "country": "美國",
+        "enroll": 60,
+        "start": "2026-06-08",
+        "completion": "2031-06",
+        "updated": "2026-06-11"
+      },
+      {
+        "nct": "NCT07642934",
+        "title": "A Comparative Study of the Efficacy of Myopia Control Lenses With Different Mechanisms on Controlling Myopia Progression in Patients With Intermittent Exotropia",
+        "status": "NOT_YET_RECRUITING",
+        "status_zh": "尚未招募",
+        "phase": "不適用",
+        "type": "介入型",
+        "conditions": [
+          "Intermittent Exotropia",
+          "Myopia"
+        ],
+        "interventions": [
+          "DEVICE: DIMS glasses",
+          "DEVICE: DOT glasses"
+        ],
+        "sponsor": "Second Affiliated Hospital, Zhejiang University, School of Medicine",
+        "country": "",
+        "enroll": 120,
+        "start": "2026-06-01",
+        "completion": "2027-05-31",
+        "updated": "2026-06-11"
+      },
+      {
+        "nct": "NCT07626892",
+        "title": "Efficacy and Safety of 0.01%, 0.03%, and 0.05% Atropine Eye Drops in Reducing Myopia Progression",
+        "status": "COMPLETED",
+        "status_zh": "已完成",
+        "phase": "三期",
+        "type": "介入型",
+        "conditions": [
+          "Myopia Progression",
+          "Atropine"
+        ],
+        "interventions": [
+          "DRUG: Atropine sulphate eye drop 0.01%",
+          "DRUG: Atropine sulphate eye drop 0.03%",
+          "DRUG: Atropine sulphate eye drop 0.05%"
+        ],
+        "sponsor": "Khyber Medical College, Peshawar",
+        "country": "Pakistan",
+        "enroll": 95,
+        "start": "2024-06-03",
+        "completion": "2026-05-22",
+        "updated": "2026-06-10"
+      },
+      {
+        "nct": "NCT07537166",
+        "title": "0.01% and 0.025% Atropine Eye Drops Combined Auricular Acupoint Stimulation on Myopia Control and Corneal Endothelium Change",
+        "status": "ENROLLING_BY_INVITATION",
+        "status_zh": "邀請制招募",
+        "phase": "不適用",
+        "type": "介入型",
+        "conditions": [
+          "Acupressure"
+        ],
+        "interventions": [
+          "OTHER: Auricular acupoint stimulation",
+          "DRUG: 0.01% concentration atropine drops",
+          "DRUG: 0.025% atropine eye drops",
+          "OTHER: Artificial Tears (AT)"
+        ],
+        "sponsor": "China Medical University Hospital",
+        "country": "台灣",
+        "enroll": 420,
+        "start": "2026-04-11",
+        "completion": "2027-03-31",
+        "updated": "2026-06-04"
+      },
+      {
+        "nct": "NCT07511387",
+        "title": "Efficacy of a Novel Myopia Defocus Spectacle Lens in School-Aged Children",
+        "status": "ACTIVE_NOT_RECRUITING",
+        "status_zh": "進行中(不招募)",
+        "phase": "不適用",
+        "type": "介入型",
+        "conditions": [
+          "Myopia"
+        ],
+        "interventions": [
+          "OTHER: BCMC lens"
+        ],
+        "sponsor": "The Hong Kong Polytechnic University",
+        "country": "香港",
+        "enroll": 50,
+        "start": "2026-04-10",
+        "completion": "2027-03",
+        "updated": "2026-06-03"
+      },
+      {
+        "nct": "NCT04080128",
+        "title": "Examination of Myopia Progression and Soft Bifocal Contact Lens Myopia Control",
+        "status": "COMPLETED",
+        "status_zh": "已完成",
+        "phase": "",
+        "type": "觀察型",
+        "conditions": [
+          "Myopia"
+        ],
+        "interventions": [
+          "DEVICE: Contact lenses"
+        ],
+        "sponsor": "Ohio State University",
+        "country": "美國",
+        "enroll": 248,
+        "start": "2019-09-09",
+        "completion": "2024-01-04",
+        "updated": "2026-06-02"
+      },
+      {
+        "nct": "NCT07614113",
+        "title": "Atropine Alone vs Atropine Plus Bifocal Spectacles for Myopia Control in Children",
+        "status": "COMPLETED",
+        "status_zh": "已完成",
+        "phase": "不適用",
+        "type": "介入型",
+        "conditions": [
+          "Myopia",
+          "Progressive Myopia",
+          "Refractive Errors"
+        ],
+        "interventions": [
+          "DRUG: Atropine Sulfate 0.05% Ophthalmic Solution",
+          "DEVICE: Bifocal Spectacles"
+        ],
+        "sponsor": "University of Faisalabad",
+        "country": "Pakistan",
+        "enroll": 210,
+        "start": "2025-02-17",
+        "completion": "2026-05-15",
+        "updated": "2026-05-29"
+      },
+      {
+        "nct": "NCT05850936",
+        "title": "Effect of IOP Lowering on Progressive HM",
+        "status": "ACTIVE_NOT_RECRUITING",
+        "status_zh": "進行中(不招募)",
+        "phase": "不適用",
+        "type": "介入型",
+        "conditions": [
+          "High Myopia",
+          "Intraocular Pressure"
+        ],
+        "interventions": [
+          "DRUG: Assigned Interventions: IOP-lowering eye drops"
+        ],
+        "sponsor": "Sun Yat-sen University",
+        "country": "中國",
+        "enroll": 152,
+        "start": "2023-06-01",
+        "completion": "2028-11-30",
+        "updated": "2026-05-27"
+      },
+      {
+        "nct": "NCT06995911",
+        "title": "Virtual Far-sight Reading Device for Myopia Intervention Among Pre-myopic Children",
+        "status": "RECRUITING",
+        "status_zh": "招募中",
+        "phase": "不適用",
+        "type": "介入型",
+        "conditions": [
+          "Myopia",
+          "Pre-myopia"
+        ],
+        "interventions": [
+          "DEVICE: Virtual Far-sight Reading Device"
+        ],
+        "sponsor": "Shanghai Eye Disease Prevention and Treatment Center",
+        "country": "中國",
+        "enroll": 80,
+        "start": "2025-06-01",
+        "completion": "2026-05-31",
+        "updated": "2026-05-26"
+      },
+      {
+        "nct": "NCT06577948",
+        "title": "The P.A.U.S.E.® Spectacle Study",
+        "status": "ACTIVE_NOT_RECRUITING",
+        "status_zh": "進行中(不招募)",
+        "phase": "不適用",
+        "type": "介入型",
+        "conditions": [
+          "Myopia",
+          "Myopia Progression"
+        ],
+        "interventions": [
+          "DEVICE: Single vision spectacle lens",
+          "DEVICE: P.A.U.S.E. spectacle lens 1",
+          "DEVICE: P.A.U.S.E. spectacle lens 2"
+        ],
+        "sponsor": "nthalmic Pty Ltd",
+        "country": "越南",
+        "enroll": 205,
+        "start": "2024-09-14",
+        "completion": "2027-10",
+        "updated": "2026-05-20"
+      },
+      {
+        "nct": "NCT06692699",
+        "title": "The A.R.R.E.S.T.® Spectacle Film Study",
+        "status": "ACTIVE_NOT_RECRUITING",
+        "status_zh": "進行中(不招募)",
+        "phase": "不適用",
+        "type": "介入型",
+        "conditions": [
+          "Myopia",
+          "Myopia Progression"
+        ],
+        "interventions": [
+          "DEVICE: Single vision spectacle lens",
+          "DEVICE: A.R.R.E.S.T. spectacle film"
+        ],
+        "sponsor": "nthalmic Pty Ltd",
+        "country": "越南",
+        "enroll": 123,
+        "start": "2025-04-12",
+        "completion": "2028-07",
+        "updated": "2026-05-20"
+      },
+      {
+        "nct": "NCT07312214",
+        "title": "LED Red Light in Modulating Choroidal Microcirculation to Retard Retinal Atrophy in Pathological Myopia",
+        "status": "RECRUITING",
+        "status_zh": "招募中",
+        "phase": "不適用",
+        "type": "介入型",
+        "conditions": [
+          "Pathologic Myopia"
+        ],
+        "interventions": [
+          "DEVICE: LED red light",
+          "DEVICE: Sham LED red light"
+        ],
+        "sponsor": "Shanghai Eye Disease Prevention and Treatment Center",
+        "country": "中國",
+        "enroll": 158,
+        "start": "2025-12-31",
+        "completion": "2028-12-30",
+        "updated": "2026-05-15"
+      },
+      {
+        "nct": "NCT04923841",
+        "title": "Myopia Control Using Bright Light Therapy, Myopic Defocus and Atropine",
+        "status": "COMPLETED",
+        "status_zh": "已完成",
+        "phase": "不適用",
+        "type": "介入型",
+        "conditions": [
+          "Myopia"
+        ],
+        "interventions": [
+          "OTHER: High intensity light box for bright light therapy and single vision spectacle lenses",
+          "OTHER: High intensity light box for bright light therapy and Defocus Incorporated Multiple Segments (DIMS) spectacle lenses",
+          "OTHER: High intensity light box for bright light therapy and atropine 0.01% eye drop and and single vision spectacle lenses",
+          "OTHER: Atropine 0.01% eye drop and and single vision spectacle lenses"
+        ],
+        "sponsor": "The Hong Kong Polytechnic University",
+        "country": "香港",
+        "enroll": 577,
+        "start": "2021-09-09",
+        "completion": "2026-03-17",
+        "updated": "2026-05-12"
+      },
+      {
+        "nct": "NCT05650190",
+        "title": "Spectacle Lens Visual Acuity Assessments Study",
+        "status": "ACTIVE_NOT_RECRUITING",
+        "status_zh": "進行中(不招募)",
+        "phase": "不適用",
+        "type": "介入型",
+        "conditions": [
+          "Myopia",
+          "Myopia Progression",
+          "Juvenile Myopia"
+        ],
+        "interventions": [
+          "DEVICE: Novel spectacle lens design",
+          "DEVICE: Spectacle lenses"
+        ],
+        "sponsor": "SightGlass Vision, Inc.",
+        "country": "美國",
+        "enroll": 51,
+        "start": "2022-12-08",
+        "completion": "2026-12-31",
+        "updated": "2026-05-05"
+      },
+      {
+        "nct": "NCT03623074",
+        "title": "Control of Myopia Using Novel Spectacle Lens Designs",
+        "status": "ACTIVE_NOT_RECRUITING",
+        "status_zh": "進行中(不招募)",
+        "phase": "不適用",
+        "type": "介入型",
+        "conditions": [
+          "Juvenile Myopia"
+        ],
+        "interventions": [
+          "DEVICE: Novel spectacle lens design",
+          "DEVICE: Spectacle lenses"
+        ],
+        "sponsor": "SightGlass Vision, Inc.",
+        "country": "美國 等",
+        "enroll": 266,
+        "start": "2018-07-16",
+        "completion": "2026-12-31",
+        "updated": "2026-05-05"
+      },
+      {
+        "nct": "NCT05893979",
+        "title": "Myopia Control Spectacle Lens Cessation Study",
+        "status": "ACTIVE_NOT_RECRUITING",
+        "status_zh": "進行中(不招募)",
+        "phase": "不適用",
+        "type": "介入型",
+        "conditions": [
+          "Myopia",
+          "Myopia Progression",
+          "Juvenile Myopia"
+        ],
+        "interventions": [
+          "DEVICE: Spectacle Lenses"
+        ],
+        "sponsor": "SightGlass Vision, Inc.",
+        "country": "美國",
+        "enroll": 90,
+        "start": "2023-06-23",
+        "completion": "2027-07-31",
+        "updated": "2026-05-05"
+      },
+      {
+        "nct": "NCT04700111",
+        "title": "Lag of Accommodation With DOT Spectacle Lenses",
+        "status": "ACTIVE_NOT_RECRUITING",
+        "status_zh": "進行中(不招募)",
+        "phase": "不適用",
+        "type": "介入型",
+        "conditions": [
+          "Myopia, Myopia Progression, Lag of Accommodation, Hyperopic Retinal Blur, Reduction in Contrast"
+        ],
+        "interventions": [
+          "DEVICE: DOT Pattern",
+          "DEVICE: Control Spectacles"
+        ],
+        "sponsor": "SightGlass Vision, Inc.",
+        "country": "加拿大",
+        "enroll": 30,
+        "start": "2022-02-01",
+        "completion": "2026-12-31",
+        "updated": "2026-05-05"
+      },
+      {
+        "nct": "NCT05617794",
+        "title": "Effect of Diffusion Optics Technology (DOT) Spectacle Lenses on Choroidal Thickness",
+        "status": "ACTIVE_NOT_RECRUITING",
+        "status_zh": "進行中(不招募)",
+        "phase": "不適用",
+        "type": "介入型",
+        "conditions": [
+          "Myopia",
+          "Myopia Progression",
+          "Juvenile Myopia"
+        ],
+        "interventions": [
+          "DEVICE: Diffusion Optics Technology (DOT) Pattern Spectacle Lens",
+          "DEVICE: Control Spectacle Lens"
+        ],
+        "sponsor": "SightGlass Vision, Inc.",
+        "country": "加拿大",
+        "enroll": 30,
+        "start": "2023-01-18",
+        "completion": "2026-12-31",
+        "updated": "2026-05-05"
+      },
+      {
+        "nct": "NCT04947735",
+        "title": "CYPRESS Efficacy and Safety Study Extension",
+        "status": "ACTIVE_NOT_RECRUITING",
+        "status_zh": "進行中(不招募)",
+        "phase": "不適用",
+        "type": "介入型",
+        "conditions": [
+          "Juvenile Myopia",
+          "Myopia"
+        ],
+        "interventions": [
+          "DEVICE: Novel spectacle lens design",
+          "DEVICE: Spectacle lenses"
+        ],
+        "sponsor": "SightGlass Vision, Inc.",
+        "country": "美國 等",
+        "enroll": 200,
+        "start": "2021-07-19",
+        "completion": "2026-12-31",
+        "updated": "2026-05-05"
+      },
+      {
+        "nct": "NCT03818880",
+        "title": "Choroidal Response to Novel Spectacle Lens to Control Myopia Progression",
+        "status": "ACTIVE_NOT_RECRUITING",
+        "status_zh": "進行中(不招募)",
+        "phase": "不適用",
+        "type": "介入型",
+        "conditions": [
+          "Myopia, Progressive"
+        ],
+        "interventions": [
+          "DEVICE: Novel spectacle lens design"
+        ],
+        "sponsor": "SightGlass Vision, Inc.",
+        "country": "加拿大",
+        "enroll": 10,
+        "start": "2018-12-18",
+        "completion": "2026-12-31",
+        "updated": "2026-05-05"
+      },
+      {
+        "nct": "NCT07229365",
+        "title": "Children's Viewing Behavior",
+        "status": "RECRUITING",
+        "status_zh": "招募中",
+        "phase": "不適用",
+        "type": "介入型",
+        "conditions": [
+          "Myopia",
+          "Myopia Progression",
+          "Juvenile Myopia"
+        ],
+        "interventions": [
+          "DEVICE: Novel spectacle lens design",
+          "DEVICE: Spectacle lenses"
+        ],
+        "sponsor": "SightGlass Vision, Inc.",
+        "country": "美國",
+        "enroll": 20,
+        "start": "2025-12-22",
+        "completion": "2027-07-01",
+        "updated": "2026-04-30"
+      },
+      {
+        "nct": "NCT07229352",
+        "title": "Mobility Performance in Daily Activities Among Children Wearing Spectacle Lenses",
+        "status": "RECRUITING",
+        "status_zh": "招募中",
+        "phase": "不適用",
+        "type": "介入型",
+        "conditions": [
+          "Myopia",
+          "Myopia Progression",
+          "Juvenile Myopia"
+        ],
+        "interventions": [
+          "DEVICE: Novel spectacle lens design",
+          "DEVICE: Spectacle lenses"
+        ],
+        "sponsor": "SightGlass Vision, Inc.",
+        "country": "美國",
+        "enroll": 20,
+        "start": "2026-02-02",
+        "completion": "2027-07-01",
+        "updated": "2026-04-30"
+      },
+      {
+        "nct": "NCT07291960",
+        "title": "Retinal Clinical Assessment With AI-derived Quantitative Information",
+        "status": "NOT_YET_RECRUITING",
+        "status_zh": "尚未招募",
+        "phase": "",
+        "type": "觀察型",
+        "conditions": [
+          "no Obvious Abnormalities",
+          "Diabetic Retinopathy (DR)",
+          "AMD",
+          "Cup-to-disc Ratio Bigger Than 0.5",
+          "Pathological Myopia",
+          "Macular Hole"
+        ],
+        "interventions": [
+          "DIAGNOSTIC_TEST: AI-derived retinal quantitative information-assisted reporting"
+        ],
+        "sponsor": "Beijing Tongren Hospital",
+        "country": "",
+        "enroll": 29,
+        "start": "2026-04-15",
+        "completion": "2026-05-15",
+        "updated": "2026-04-29"
+      },
+      {
+        "nct": "NCT06563700",
+        "title": "Novel Lenses for Myopia Progression Trial",
+        "status": "ACTIVE_NOT_RECRUITING",
+        "status_zh": "進行中(不招募)",
+        "phase": "不適用",
+        "type": "介入型",
+        "conditions": [
+          "Myopia, Progressive"
+        ],
+        "interventions": [
+          "OTHER: spectacle lens",
+          "OTHER: single vision lens"
+        ],
+        "sponsor": "Shanghai Eye Disease Prevention and Treatment Center",
+        "country": "中國",
+        "enroll": 342,
+        "start": "2024-08-16",
+        "completion": "2027-07-31",
+        "updated": "2026-04-28"
+      },
+      {
+        "nct": "NCT07547748",
+        "title": "Evaluation of a County-Based Eye Health Service Model in Rural Chinese Children",
+        "status": "RECRUITING",
+        "status_zh": "招募中",
+        "phase": "",
+        "type": "觀察型",
+        "conditions": [
+          "Myopia",
+          "Strabismus",
+          "Eye Health"
+        ],
+        "interventions": [
+          "OTHER: School-based Eye Health Screening"
+        ],
+        "sponsor": "Zhongshan Ophthalmic Center, Sun Yat-sen University",
+        "country": "中國",
+        "enroll": 20000,
+        "start": "2025-01-01",
+        "completion": "2028-12-31",
+        "updated": "2026-04-23"
+      },
+      {
+        "nct": "NCT07547072",
+        "title": "Choroidal Response to the Modified Defocus Incorporated Multiple Segments Spectacle Lenses",
+        "status": "NOT_YET_RECRUITING",
+        "status_zh": "尚未招募",
+        "phase": "不適用",
+        "type": "介入型",
+        "conditions": [
+          "Myopia"
+        ],
+        "interventions": [
+          "OTHER: Modified Defocus Incorporated Multiple Segments lens (D1)",
+          "OTHER: Modified Defocus Incorporated Multiple Segments lens (D2)"
+        ],
+        "sponsor": "The Hong Kong Polytechnic University",
+        "country": "",
+        "enroll": 108,
+        "start": "2026-04-25",
+        "completion": "2028-02-29",
+        "updated": "2026-04-23"
+      },
+      {
+        "nct": "NCT07462897",
+        "title": "Evaluation of the Effectiveness of a New Generation of Myopia Control Lens on the Progression of Myopia in Children Aged 6 to 14 Years",
+        "status": "RECRUITING",
+        "status_zh": "招募中",
+        "phase": "不適用",
+        "type": "介入型",
+        "conditions": [
+          "Myopia Progression"
+        ],
+        "interventions": [
+          "DEVICE: MCL1",
+          "DEVICE: MCL2"
+        ],
+        "sponsor": "Essilor International",
+        "country": "法國",
+        "enroll": 76,
+        "start": "2026-03-18",
+        "completion": "2028-05",
+        "updated": "2026-04-23"
+      },
+      {
+        "nct": "NCT07547085",
+        "title": "Myopia Control Using Novel Soft Contact Lenses",
+        "status": "NOT_YET_RECRUITING",
+        "status_zh": "尚未招募",
+        "phase": "不適用",
+        "type": "介入型",
+        "conditions": [
+          "Myopia"
+        ],
+        "interventions": [
+          "OTHER: Lens A",
+          "OTHER: Lens B"
+        ],
+        "sponsor": "The Hong Kong Polytechnic University",
+        "country": "",
+        "enroll": 126,
+        "start": "2026-04-16",
+        "completion": "2029-07-14",
+        "updated": "2026-04-23"
+      },
+      {
+        "nct": "NCT05888792",
+        "title": "Myopia Control Efficacy of Second-generation DIMS Spectacle Lenses on Fast Progressing Myopes",
+        "status": "ACTIVE_NOT_RECRUITING",
+        "status_zh": "進行中(不招募)",
+        "phase": "不適用",
+        "type": "介入型",
+        "conditions": [
+          "Myopia"
+        ],
+        "interventions": [
+          "OTHER: Variant of Defocus Incorporated Spectacle lens (DG2)"
+        ],
+        "sponsor": "The Hong Kong Polytechnic University",
+        "country": "香港",
+        "enroll": 118,
+        "start": "2023-07-29",
+        "completion": "2028-12-31",
+        "updated": "2026-04-22"
+      },
+      {
+        "nct": "NCT05888805",
+        "title": "Myopia Control Efficacy of Second-generation DIMS Spectacle Lenses on Fast Progressing Myopes - Auxiliary Group",
+        "status": "ACTIVE_NOT_RECRUITING",
+        "status_zh": "進行中(不招募)",
+        "phase": "不適用",
+        "type": "介入型",
+        "conditions": [
+          "Myopia"
+        ],
+        "interventions": [
+          "OTHER: DIMS spectacle lens"
+        ],
+        "sponsor": "The Hong Kong Polytechnic University",
+        "country": "香港",
+        "enroll": 59,
+        "start": "2023-07-29",
+        "completion": "2028-12-31",
+        "updated": "2026-04-22"
+      },
+      {
+        "nct": "NCT06358755",
+        "title": "Combination Effect of Optical Defocus and Low Dose Atropine in Myopia Control",
+        "status": "ACTIVE_NOT_RECRUITING",
+        "status_zh": "進行中(不招募)",
+        "phase": "不適用",
+        "type": "介入型",
+        "conditions": [
+          "Myopia"
+        ],
+        "interventions": [
+          "DEVICE: Defocus Incorporated Multiple Segments lenses",
+          "DEVICE: single vision spectacle lenses",
+          "DRUG: Low dose atropine"
+        ],
+        "sponsor": "The Hong Kong Polytechnic University",
+        "country": "香港",
+        "enroll": 112,
+        "start": "2024-07-12",
+        "completion": "2027-01-31",
+        "updated": "2026-04-22"
+      },
+      {
+        "nct": "NCT07535658",
+        "title": "Efficacy of Multi-Type Photolithography Flat Microstructure Lenses for Childhood Myopia Control",
+        "status": "NOT_YET_RECRUITING",
+        "status_zh": "尚未招募",
+        "phase": "不適用",
+        "type": "介入型",
+        "conditions": [
+          "Myopia"
+        ],
+        "interventions": [
+          "DEVICE: wearing photolithography plano microstructure lenses with multi-point defocus design, non-fading optical property",
+          "DEVICE: wearing Plano microstructure lenses featuring multi-point defocus design with aspherical lenslets (Essilor Stellest)",
+          "DEVICE: wearing Photolithography Plano Microstructure Lenses incorporates a multi-point defocus optical architecture , featuring photochromic properties with a light transmittance of 55% post-activation",
+          "DEVICE: wearing Photolithography Plano Microstructure Lenses incorporates a multi-point defocus optical architecture , featuring photochromic properties with a light transmittance of 35% post-activation",
+          "DEVICE: wearing Photolithography Plano Microstructure Lenses designed to reduce contrast sensitivity and featuring a non-fading optical property"
+        ],
+        "sponsor": "Shanghai Eye Disease Prevention and Treatment Center",
+        "country": "中國",
+        "enroll": 255,
+        "start": "2026-04-15",
+        "completion": "2027-12-31",
+        "updated": "2026-04-17"
+      },
+      {
+        "nct": "NCT07535749",
+        "title": "The Effect of Myopia-Control Contact Lenses in New Zealand Chinese Children",
+        "status": "RECRUITING",
+        "status_zh": "招募中",
+        "phase": "三期",
+        "type": "介入型",
+        "conditions": [
+          "Myopia Progression"
+        ],
+        "interventions": [
+          "DEVICE: MiSight Contact Lenses (CooperVision)",
+          "DEVICE: Albiliti 1-Day (Johnson and Johnson, VisionCare)"
+        ],
+        "sponsor": "Aston University",
+        "country": "紐西蘭",
+        "enroll": 66,
+        "start": "2026-03-21",
+        "completion": "2026-12-30",
+        "updated": "2026-04-17"
+      },
+      {
+        "nct": "NCT07533149",
+        "title": "Targeted Lens Intervention for Myopic Anisometropia in Children",
+        "status": "NOT_YET_RECRUITING",
+        "status_zh": "尚未招募",
+        "phase": "不適用",
+        "type": "介入型",
+        "conditions": [
+          "Anisometropia",
+          "Myopia"
+        ],
+        "interventions": [
+          "DEVICE: More myopic eye: MCL1; Less myopic eye: MCL2"
+        ],
+        "sponsor": "Essilor International",
+        "country": "新加坡",
+        "enroll": 20,
+        "start": "2026-04",
+        "completion": "2027-07",
+        "updated": "2026-04-16"
+      },
+      {
+        "nct": "NCT07522242",
+        "title": "Safety and Efficacy of T10430 Eye Drops in Controlling Paediatric Myopia Progression",
+        "status": "RECRUITING",
+        "status_zh": "招募中",
+        "phase": "二期",
+        "type": "介入型",
+        "conditions": [
+          "Myopia"
+        ],
+        "interventions": [
+          "DRUG: T10430 lower dose",
+          "DRUG: T10430 middle dose",
+          "DRUG: T10430 higher dose",
+          "DRUG: Vehicle"
+        ],
+        "sponsor": "Laboratoires Thea",
+        "country": "Jordan 等",
+        "enroll": 200,
+        "start": "2026-01-21",
+        "completion": "2027-11",
+        "updated": "2026-04-13"
+      },
+      {
+        "nct": "NCT06873048",
+        "title": "Short-term Study of Two Soft Contact Lenses in Wearers With Low Astigmatism",
+        "status": "COMPLETED",
+        "status_zh": "已完成",
+        "phase": "不適用",
+        "type": "介入型",
+        "conditions": [
+          "Astigmatism",
+          "Myopia",
+          "Hyperopia"
+        ],
+        "interventions": [
+          "DEVICE: Control Contact Lens (stenfilcon A Sphere)",
+          "DEVICE: Test Contact Lens (stenfilcon A Toric)"
+        ],
+        "sponsor": "CooperVision International Limited (CVIL)",
+        "country": "加拿大",
+        "enroll": 32,
+        "start": "2025-02-26",
+        "completion": "2025-07-11",
+        "updated": "2026-04-08"
+      },
+      {
+        "nct": "NCT07104773",
+        "title": "Clinical Investigation of Proclear® 1 Day and MyDay® Sphere Contact Lenses",
+        "status": "COMPLETED",
+        "status_zh": "已完成",
+        "phase": "不適用",
+        "type": "介入型",
+        "conditions": [
+          "Ametropia",
+          "Myopia"
+        ],
+        "interventions": [
+          "DEVICE: Control Lens (omafilcon A)",
+          "DEVICE: Test Lens (stenfilcon A)"
+        ],
+        "sponsor": "CooperVision International Limited (CVIL)",
+        "country": "加拿大",
+        "enroll": 44,
+        "start": "2025-07-24",
+        "completion": "2025-08-21",
+        "updated": "2026-04-08"
+      },
+      {
+        "nct": "NCT07514039",
+        "title": "Photolithography Microstructure Myopia Management Lenses in Preventing and Controlling Myopia in Children and Adolescents",
+        "status": "ENROLLING_BY_INVITATION",
+        "status_zh": "邀請制招募",
+        "phase": "不適用",
+        "type": "介入型",
+        "conditions": [
+          "Myopia, Child Myopia Progression"
+        ],
+        "interventions": [
+          "DEVICE: Myopia management lens"
+        ],
+        "sponsor": "Shanghai Eye Disease Prevention and Treatment Center",
+        "country": "中國",
+        "enroll": 252,
+        "start": "2026-02-01",
+        "completion": "2027-12-31",
+        "updated": "2026-04-07"
+      },
+      {
+        "nct": "NCT07440134",
+        "title": "Visual and Postural Behavior in Myopic and Non-Myopic Teenagers",
+        "status": "RECRUITING",
+        "status_zh": "招募中",
+        "phase": "不適用",
+        "type": "介入型",
+        "conditions": [
+          "Teenagers",
+          "Myopia"
+        ],
+        "interventions": [
+          "DEVICE: Ophtalmic measurements",
+          "BEHAVIORAL: Visuo-postual measurements"
+        ],
+        "sponsor": "Essilor International",
+        "country": "法國",
+        "enroll": 100,
+        "start": "2026-04-03",
+        "completion": "2027-05",
+        "updated": "2026-04-03"
+      },
+      {
+        "nct": "NCT07497672",
+        "title": "Evaluation of Novel Spectacles Intended for Myopia Management in a Short-Term Study",
+        "status": "NOT_YET_RECRUITING",
+        "status_zh": "尚未招募",
+        "phase": "不適用",
+        "type": "介入型",
+        "conditions": [
+          "Myopia: Refractive Error"
+        ],
+        "interventions": [
+          "DEVICE: Habitual myopia glasses",
+          "DEVICE: Myopia Glasses A",
+          "DEVICE: Myopia Glasses B"
+        ],
+        "sponsor": "Myoptechs, Inc",
+        "country": "",
+        "enroll": 20,
+        "start": "2026-04-15",
+        "completion": "2026-12-15",
+        "updated": "2026-04-01"
+      },
+      {
+        "nct": "NCT07494799",
+        "title": "Efficacy of Different Interventions for Progressive Myopia After Orthokeratology Lens Wear",
+        "status": "NOT_YET_RECRUITING",
+        "status_zh": "尚未招募",
+        "phase": "",
+        "type": "觀察型",
+        "conditions": [
+          "Progressive Myopia",
+          "Pediatric Myopia",
+          "Orthokeratology-related Myopia Progression"
+        ],
+        "interventions": [
+          "DEVICE: OK Lens Continuation Group",
+          "DRUG: OK Lens + 0.01% Atropine Group",
+          "DEVICE: OK Lens with Reduced Optical Zone Group",
+          "DEVICE: OK Lens + Low-Intensity Red Light Group"
+        ],
+        "sponsor": "Tianjin Medical University Eye Hospital",
+        "country": "",
+        "enroll": 3890,
+        "start": "2026-04-01",
+        "completion": "2027-04-01",
+        "updated": "2026-04-01"
+      },
+      {
+        "nct": "NCT07335146",
+        "title": "Eye Imaging for the Study of Childhood Myopia",
+        "status": "RECRUITING",
+        "status_zh": "招募中",
+        "phase": "不適用",
+        "type": "介入型",
+        "conditions": [
+          "Hyperopia and Myopia"
+        ],
+        "interventions": [
+          "DEVICE: Ophtalmic measurements to estimate geometrical distances",
+          "DEVICE: MRI",
+          "DEVICE: Ophtalmic measurements to measure wavefront aberrations"
+        ],
+        "sponsor": "Essilor International",
+        "country": "法國",
+        "enroll": 100,
+        "start": "2026-02-18",
+        "completion": "2027-12",
+        "updated": "2026-03-30"
+      },
+      {
+        "nct": "NCT06278974",
+        "title": "Comparing Myopia Treatments in Youth: Defocus Spectacles, Glasses, and Ortho-K",
+        "status": "RECRUITING",
+        "status_zh": "招募中",
+        "phase": "",
+        "type": "觀察型",
+        "conditions": [
+          "Myopia",
+          "Cost-effectiveness Analysis",
+          "Quality of Life"
+        ],
+        "interventions": [],
+        "sponsor": "He Eye Hospital",
+        "country": "中國",
+        "enroll": 90,
+        "start": "2023-11-10",
+        "completion": "2027-07-01",
+        "updated": "2026-03-23"
+      },
+      {
+        "nct": "NCT05886348",
+        "title": "The Evaluation of Safety and Myopia Progression Control Using Novel Spectacle Lens",
+        "status": "ACTIVE_NOT_RECRUITING",
+        "status_zh": "進行中(不招募)",
+        "phase": "不適用",
+        "type": "介入型",
+        "conditions": [
+          "Myopia"
+        ],
+        "interventions": [
+          "DEVICE: Model-A Novel spectacle lens",
+          "DEVICE: Model-B Novel spectacle lens",
+          "DEVICE: Single vision spectacle lens"
+        ],
+        "sponsor": "HOYA Lens Thailand LTD.",
+        "country": "中國",
+        "enroll": 249,
+        "start": "2023-07-31",
+        "completion": "2027-05-31",
+        "updated": "2026-03-23"
+      },
+      {
+        "nct": "NCT07129798",
+        "title": "Efficacy and Safety of Myopic Macular Hole Closure Surgery Without Endotamponade Agent",
+        "status": "ACTIVE_NOT_RECRUITING",
+        "status_zh": "進行中(不招募)",
+        "phase": "不適用",
+        "type": "介入型",
+        "conditions": [
+          "Macular Hole",
+          "Myopia"
+        ],
+        "interventions": [
+          "PROCEDURE: ILM flap with no endotamponade technique"
+        ],
+        "sponsor": "Chinese University of Hong Kong",
+        "country": "香港",
+        "enroll": 20,
+        "start": "2024-01-18",
+        "completion": "2026-12-26",
+        "updated": "2026-03-18"
+      },
+      {
+        "nct": "NCT07478419",
+        "title": "Machine Learning Prediction of 1-Year Refractive Error After SMILE",
+        "status": "COMPLETED",
+        "status_zh": "已完成",
+        "phase": "",
+        "type": "觀察型",
+        "conditions": [
+          "Myopia",
+          "Myopic Astigmatism",
+          "Refractive Error - Myopia Axial"
+        ],
+        "interventions": [],
+        "sponsor": "Tongji University",
+        "country": "中國",
+        "enroll": 1100,
+        "start": "2018-09-01",
+        "completion": "2026-01-31",
+        "updated": "2026-03-17"
+      },
+      {
+        "nct": "NCT07473401",
+        "title": "Retinal Oxygen Metabolism in Children With Myopia",
+        "status": "NOT_YET_RECRUITING",
+        "status_zh": "尚未招募",
+        "phase": "",
+        "type": "觀察型",
+        "conditions": [
+          "Myopia"
+        ],
+        "interventions": [],
+        "sponsor": "Medical University of Vienna",
+        "country": "奧地利",
+        "enroll": 80,
+        "start": "2026-05-11",
+        "completion": "2027-01-02",
+        "updated": "2026-03-16"
+      },
+      {
+        "nct": "NCT07475585",
+        "title": "Effects of Auricular Point Pressing With Pellets in Children With Insufficient Hyperopia Reserve",
+        "status": "NOT_YET_RECRUITING",
+        "status_zh": "尚未招募",
+        "phase": "不適用",
+        "type": "介入型",
+        "conditions": [
+          "Myopia",
+          "Ear Acupressure Pellets",
+          "Hyperopia Reserve",
+          "Low-concentration Atropine Eye Drops",
+          "Eye Axis"
+        ],
+        "interventions": [
+          "BEHAVIORAL: Ear acupoint pressure pellet intervention group",
+          "DRUG: Atropine intervention group",
+          "COMBINATION_PRODUCT: Joint intervention Group",
+          "OTHER: control group"
+        ],
+        "sponsor": "Fangbiao Tao",
+        "country": "",
+        "enroll": 380,
+        "start": "2026-03-30",
+        "completion": "2027-07-30",
+        "updated": "2026-03-16"
+      },
+      {
+        "nct": "NCT03152747",
+        "title": "Influence of Posterior Vitreous Detachment on Retinal Detachment After Lens Surgery in Myopic Eyes",
+        "status": "COMPLETED",
+        "status_zh": "已完成",
+        "phase": "",
+        "type": "觀察型",
+        "conditions": [
+          "Myopia",
+          "Cataract",
+          "Pseudophakic Retinal Detachment",
+          "Refractive Lens Exchange"
+        ],
+        "interventions": [],
+        "sponsor": "Prim. Prof. Dr. Oliver Findl, MBA",
+        "country": "奧地利",
+        "enroll": 609,
+        "start": "2017-04-27",
+        "completion": "2025-09-14",
+        "updated": "2026-03-13"
+      },
+      {
+        "nct": "NCT07465900",
+        "title": "Slowing Axial Elongation in Pediatric Myopia Using C.A.R.E. Technology",
+        "status": "COMPLETED",
+        "status_zh": "已完成",
+        "phase": "不適用",
+        "type": "介入型",
+        "conditions": [
+          "Myopia Progression"
+        ],
+        "interventions": [
+          "DEVICE: Cylindrical Annular Refractive Element (C.A.R.E.) Spectacle Lenses"
+        ],
+        "sponsor": "Benha University",
+        "country": "埃及",
+        "enroll": 100,
+        "start": "2024-01-15",
+        "completion": "2025-03-15",
+        "updated": "2026-03-12"
+      },
+      {
+        "nct": "NCT05818033",
+        "title": "Safety and Effectiveness of CARE1.02 Spectacle Lens in Myopia Control",
+        "status": "COMPLETED",
+        "status_zh": "已完成",
+        "phase": "不適用",
+        "type": "介入型",
+        "conditions": [
+          "Myopia"
+        ],
+        "interventions": [
+          "DEVICE: CARE1.02",
+          "DEVICE: Single-vision spectacle lens"
+        ],
+        "sponsor": "Zhongshan Ophthalmic Center, Sun Yat-sen University",
+        "country": "中國",
+        "enroll": 796,
+        "start": "2023-04-25",
+        "completion": "2025-06-12",
+        "updated": "2026-03-12"
+      },
+      {
+        "nct": "NCT05740930",
+        "title": "Effectiveness and Safety of Partition Multi-point Defocused Myopia Management Spectacle Lens in Myopia Control",
+        "status": "COMPLETED",
+        "status_zh": "已完成",
+        "phase": "不適用",
+        "type": "介入型",
+        "conditions": [
+          "Myopia"
+        ],
+        "interventions": [
+          "OTHER: Partition defocus myopia management spectacle lens",
+          "OTHER: Spectacle lenses with aspherical lenslets"
+        ],
+        "sponsor": "Zhongshan Ophthalmic Center, Sun Yat-sen University",
+        "country": "中國",
+        "enroll": 194,
+        "start": "2023-03-20",
+        "completion": "2025-05-27",
+        "updated": "2026-03-12"
+      },
+      {
+        "nct": "NCT06647160",
+        "title": "Safety and Efficacy of Blue Star MAX-5 Lenses in Myopia Control",
+        "status": "ACTIVE_NOT_RECRUITING",
+        "status_zh": "進行中(不招募)",
+        "phase": "不適用",
+        "type": "介入型",
+        "conditions": [
+          "Myopia, Progressive"
+        ],
+        "interventions": [
+          "DEVICE: Blue star MAX-5 spectacle lens",
+          "DEVICE: Single-vision spectacle lens"
+        ],
+        "sponsor": "Zhongshan Ophthalmic Center, Sun Yat-sen University",
+        "country": "中國",
+        "enroll": 200,
+        "start": "2024-11-01",
+        "completion": "2027-03-30",
+        "updated": "2026-03-12"
+      },
+      {
+        "nct": "NCT04699357",
+        "title": "The Effect and Safety of Different Doses of Atropine on Myopic Progression of Highly Myopic Children: Multi-centered Randomized Clinical Trial",
+        "status": "COMPLETED",
+        "status_zh": "已完成",
+        "phase": "不適用",
+        "type": "介入型",
+        "conditions": [
+          "High Myopia"
+        ],
+        "interventions": [
+          "DRUG: Atropine"
+        ],
+        "sponsor": "Shanghai Eye Disease Prevention and Treatment Center",
+        "country": "中國",
+        "enroll": 219,
+        "start": "2021-07-04",
+        "completion": "2024-09-01",
+        "updated": "2026-03-12"
+      },
+      {
+        "nct": "NCT07456488",
+        "title": "The Effect of 0.01% Atropine Eye Drops on Axial Length and Refraction in Myopic Children Compared to a Control Group",
+        "status": "RECRUITING",
+        "status_zh": "招募中",
+        "phase": "二期",
+        "type": "介入型",
+        "conditions": [
+          "Focus on Axial Length"
+        ],
+        "interventions": [
+          "DRUG: Atropine 0.01% eye drops"
+        ],
+        "sponsor": "Liaquat National Hospital & Medical College",
+        "country": "Pakistan",
+        "enroll": 60,
+        "start": "2025-07-13",
+        "completion": "2026-04-30",
+        "updated": "2026-03-06"
+      }
+    ],
+    "contactlens": [
+      {
+        "nct": "NCT05325931",
+        "title": "1-Week Dispensing Evaluation of Kalifilcon A Daily Disposable Multifocal Compared to Ultra for Presbyopia",
+        "status": "COMPLETED",
+        "status_zh": "已完成",
+        "phase": "不適用",
+        "type": "介入型",
+        "conditions": [
+          "Presbyopia"
+        ],
+        "interventions": [
+          "DEVICE: kalifilcon A Daily Disposable Multifocal",
+          "DEVICE: samfilcon A for Presbyopia"
+        ],
+        "sponsor": "Bausch & Lomb Incorporated",
+        "country": "美國",
+        "enroll": 30,
+        "start": "2022-02-25",
+        "completion": "2022-03-28",
+        "updated": "2026-08-06"
+      },
+      {
+        "nct": "NCT07747311",
+        "title": "Contact Lenses to Slow Myopia Progression in Adults",
+        "status": "NOT_YET_RECRUITING",
+        "status_zh": "尚未招募",
+        "phase": "不適用",
+        "type": "介入型",
+        "conditions": [
+          "Myopia",
+          "Myopia Progression"
+        ],
+        "interventions": [
+          "DEVICE: Dual Focus Soft Contact Lens",
+          "DEVICE: Single Vision Soft Contact Lens"
+        ],
+        "sponsor": "University of California, Berkeley",
+        "country": "美國",
+        "enroll": 152,
+        "start": "2026-09-01",
+        "completion": "2030-09-30",
+        "updated": "2026-08-05"
+      },
+      {
+        "nct": "NCT04840563",
+        "title": "Surface Refractive Index Shift of Kalifilcon A Compared With Dailies Total1 and Precision1 Lenses",
+        "status": "COMPLETED",
+        "status_zh": "已完成",
+        "phase": "不適用",
+        "type": "介入型",
+        "conditions": [
+          "Contact Lens Wear"
+        ],
+        "interventions": [
+          "DEVICE: kalifilcon A daily disposable spherical soft contact lens",
+          "DEVICE: Dailies Total1 (delefilcon A) daily disposable spherical soft contact lens",
+          "DEVICE: Precision1 (verofilcon A) daily disposable spherical soft contact lens"
+        ],
+        "sponsor": "Bausch & Lomb Incorporated",
+        "country": "美國",
+        "enroll": 10,
+        "start": "2021-04-07",
+        "completion": "2021-04-15",
+        "updated": "2026-08-05"
+      },
+      {
+        "nct": "NCT06878118",
+        "title": "The A.R.R.E.S.T.® Contact Lens Study",
+        "status": "ACTIVE_NOT_RECRUITING",
+        "status_zh": "進行中(不招募)",
+        "phase": "不適用",
+        "type": "介入型",
+        "conditions": [
+          "Myopia",
+          "Myopia Progression"
+        ],
+        "interventions": [
+          "DEVICE: Single-vision contact lens",
+          "DEVICE: A.R.R.E.S.T.® contact lens"
+        ],
+        "sponsor": "nthalmic Pty Ltd",
+        "country": "中國 等",
+        "enroll": 80,
+        "start": "2025-07-06",
+        "completion": "2028-06-01",
+        "updated": "2026-07-31"
+      },
+      {
+        "nct": "NCT07705893",
+        "title": "Treating Contact Lens Discomfort With Varenicline Solution Nasal Spray 0.03mg",
+        "status": "RECRUITING",
+        "status_zh": "招募中",
+        "phase": "不適用",
+        "type": "介入型",
+        "conditions": [
+          "Dry Eye"
+        ],
+        "interventions": [
+          "DRUG: Tyrvaya"
+        ],
+        "sponsor": "Ocular Aesthetics, LLC dba Ocular Clinical Trials",
+        "country": "美國",
+        "enroll": 50,
+        "start": "2026-07-28",
+        "completion": "2027-03",
+        "updated": "2026-07-30"
+      },
+      {
+        "nct": "NCT07566234",
+        "title": "Evaluation of Contact Lenses and Myopia.",
+        "status": "RECRUITING",
+        "status_zh": "招募中",
+        "phase": "不適用",
+        "type": "介入型",
+        "conditions": [
+          "Pre-myopia"
+        ],
+        "interventions": [
+          "DEVICE: Test Lens - Dual Focus"
+        ],
+        "sponsor": "CooperVision International Limited (CVIL)",
+        "country": "中國",
+        "enroll": 110,
+        "start": "2026-06-06",
+        "completion": "2029-05",
+        "updated": "2026-07-16"
+      },
+      {
+        "nct": "NCT07705763",
+        "title": "Comparison of Ketorolac Tromethamine 0.5%-Soaked Bandage Contact Lenses Versus Non-Medicated Bandage Contact Lenses on Postoperative Pain Control After Photorefractive Keratectomy",
+        "status": "NOT_YET_RECRUITING",
+        "status_zh": "尚未招募",
+        "phase": "不適用",
+        "type": "介入型",
+        "conditions": [
+          "Refraction Error",
+          "Photorefractive Keratectomy"
+        ],
+        "interventions": [
+          "DEVICE: Ketorolac Tromethamine 0.5%-Soaked Bandage Contact Lenses",
+          "DEVICE: Contact Bandage Lenses"
+        ],
+        "sponsor": "Madina Teaching Hospital Faisalabad",
+        "country": "Pakistan",
+        "enroll": 60,
+        "start": "2026-08-01",
+        "completion": "2026-10-31",
+        "updated": "2026-07-15"
+      },
+      {
+        "nct": "NCT06758076",
+        "title": "A Clinical Comparison of Two Soft Contact Lenses (C24-755)",
+        "status": "COMPLETED",
+        "status_zh": "已完成",
+        "phase": "不適用",
+        "type": "介入型",
+        "conditions": [
+          "Hyperopia",
+          "Myopia"
+        ],
+        "interventions": [
+          "DEVICE: Lens 1 (ocufilcon D)",
+          "DEVICE: Lens 2 (somofilcon A)"
+        ],
+        "sponsor": "CooperVision, Inc.",
+        "country": "英國",
+        "enroll": 52,
+        "start": "2024-11-18",
+        "completion": "2025-01-31",
+        "updated": "2026-07-08"
+      },
+      {
+        "nct": "NCT06864858",
+        "title": "Clinical Evaluation of Two Cosmetic Contact Lenses",
+        "status": "COMPLETED",
+        "status_zh": "已完成",
+        "phase": "不適用",
+        "type": "介入型",
+        "conditions": [
+          "Visual Acuity"
+        ],
+        "interventions": [
+          "DEVICE: etafilcon A with PVP with cosmetic pattern contact lens",
+          "DEVICE: 1-DAY ACUVUE® DEFINE® with LACREON®, FRESH Honey"
+        ],
+        "sponsor": "Johnson & Johnson Vision Care, Inc.",
+        "country": "美國",
+        "enroll": 53,
+        "start": "2025-03-30",
+        "completion": "2025-05-05",
+        "updated": "2026-07-06"
+      },
+      {
+        "nct": "NCT07076160",
+        "title": "Pilot Dispensing Study of Two Marketed Daily Disposable Multifocal Contact Lenses",
+        "status": "COMPLETED",
+        "status_zh": "已完成",
+        "phase": "不適用",
+        "type": "介入型",
+        "conditions": [
+          "Visual Acuity",
+          "Presbyopia"
+        ],
+        "interventions": [
+          "DEVICE: INFUSE® One Day Multifocal",
+          "DEVICE: ACUVUE® OASYS MAX 1-Day Multifocal Contact Lens"
+        ],
+        "sponsor": "Johnson & Johnson Vision Care, Inc.",
+        "country": "美國",
+        "enroll": 74,
+        "start": "2025-07-24",
+        "completion": "2025-09-20",
+        "updated": "2026-07-06"
+      },
+      {
+        "nct": "NCT07174596",
+        "title": "Evaluation of Approved Contact Lenses",
+        "status": "COMPLETED",
+        "status_zh": "已完成",
+        "phase": "不適用",
+        "type": "介入型",
+        "conditions": [
+          "Visual Acuity"
+        ],
+        "interventions": [
+          "DEVICE: B+L Infuse spherical soft contact lenses",
+          "DEVICE: J&J ACUVUE OASYS 1-Day spherical soft contact lenses"
+        ],
+        "sponsor": "Johnson & Johnson Vision Care, Inc.",
+        "country": "美國",
+        "enroll": 85,
+        "start": "2025-09-11",
+        "completion": "2025-10-27",
+        "updated": "2026-07-06"
+      },
+      {
+        "nct": "NCT06749496",
+        "title": "Evaluation of Delefilcon A and Senofilcon A Daily Disposable Toric Soft Contact Lenses Over One Week of Wear",
+        "status": "COMPLETED",
+        "status_zh": "已完成",
+        "phase": "不適用",
+        "type": "介入型",
+        "conditions": [
+          "Astigmatism"
+        ],
+        "interventions": [
+          "DEVICE: Test Lens",
+          "DEVICE: Control Lens"
+        ],
+        "sponsor": "Johnson & Johnson Vision Care, Inc.",
+        "country": "美國",
+        "enroll": 134,
+        "start": "2025-01-07",
+        "completion": "2025-03-20",
+        "updated": "2026-07-06"
+      },
+      {
+        "nct": "NCT07559188",
+        "title": "Proof-of-Concept for a Novel Optical Aperture Contact Lens in Presbyopia and Keratoconus",
+        "status": "NOT_YET_RECRUITING",
+        "status_zh": "尚未招募",
+        "phase": "不適用",
+        "type": "介入型",
+        "conditions": [
+          "Keratoconus",
+          "Presbyopia",
+          "Scleral Contact Lenses",
+          "Pinhole"
+        ],
+        "interventions": [
+          "DEVICE: NOA lens type 1",
+          "DEVICE: NOA lens type 2"
+        ],
+        "sponsor": "Azalea Vision",
+        "country": "比利時 等",
+        "enroll": 16,
+        "start": "2026-10-01",
+        "completion": "2027-03-31",
+        "updated": "2026-07-02"
+      },
+      {
+        "nct": "NCT04418999",
+        "title": "Safety and Efficacy of Intracanalicular Dexamethasone Compared to Loteprednol Etabonate in Patients With Keratoconus",
+        "status": "COMPLETED",
+        "status_zh": "已完成",
+        "phase": "早期一期",
+        "type": "介入型",
+        "conditions": [
+          "Keratoconus",
+          "Dry Eye",
+          "Allergy"
+        ],
+        "interventions": [
+          "DRUG: dexamethasone ophthalmic insert 0.4 mg, for intracanalicular use",
+          "DRUG: Loteprednol Etabonate 0.38% Ophthalmic Gel/Jelly"
+        ],
+        "sponsor": "Illinois College of Optometry",
+        "country": "美國",
+        "enroll": 36,
+        "start": "2020-09-01",
+        "completion": "2021-12-31",
+        "updated": "2026-06-24"
+      },
+      {
+        "nct": "NCT05955638",
+        "title": "Management of Myopia in University Students Using Dual Focus Soft Contact Lenses",
+        "status": "ENROLLING_BY_INVITATION",
+        "status_zh": "邀請制招募",
+        "phase": "不適用",
+        "type": "介入型",
+        "conditions": [
+          "Myopia, Progressive"
+        ],
+        "interventions": [
+          "DEVICE: MiSight contact lenses",
+          "DEVICE: Proclear contact lenses"
+        ],
+        "sponsor": "University of Bradford",
+        "country": "英國",
+        "enroll": 84,
+        "start": "2024-01-01",
+        "completion": "2028-09-01",
+        "updated": "2026-06-23"
+      },
+      {
+        "nct": "NCT05243836",
+        "title": "S.T.O.P.® Technology Contact Lenses Versus Dual-focus Contact Lenses for Slowing Down Myopia Progression in Children",
+        "status": "ACTIVE_NOT_RECRUITING",
+        "status_zh": "進行中(不招募)",
+        "phase": "不適用",
+        "type": "介入型",
+        "conditions": [
+          "Myopia"
+        ],
+        "interventions": [
+          "DEVICE: S.T.O.P® F2",
+          "DEVICE: S.T.O.P® DT",
+          "DEVICE: MiSight®"
+        ],
+        "sponsor": "nthalmic Pty Ltd",
+        "country": "中國 等",
+        "enroll": 441,
+        "start": "2023-08-04",
+        "completion": "2028-05",
+        "updated": "2026-06-17"
+      },
+      {
+        "nct": "NCT07638943",
+        "title": "Refitting Satisfied INFUSE One-Day Multifocal Wearers to DAILIES TOTAL1 Multifocal Contact Lenses",
+        "status": "RECRUITING",
+        "status_zh": "招募中",
+        "phase": "不適用",
+        "type": "介入型",
+        "conditions": [
+          "Contact Lens Comfort and Successful Refitting",
+          "Presbyopia"
+        ],
+        "interventions": [
+          "DEVICE: DAILIES TOTAL1 Multifocal (delefilcon A)"
+        ],
+        "sponsor": "Gordon Schanzlin New Vision",
+        "country": "美國",
+        "enroll": 30,
+        "start": "2026-05-20",
+        "completion": "2027-02-28",
+        "updated": "2026-06-11"
+      },
+      {
+        "nct": "NCT07223086",
+        "title": "Use of Tinted Contact Lenses for Concussion-Related Light Sensitivity",
+        "status": "RECRUITING",
+        "status_zh": "招募中",
+        "phase": "不適用",
+        "type": "介入型",
+        "conditions": [
+          "Concussion, Mild",
+          "Photophobia",
+          "Contact Lens"
+        ],
+        "interventions": [
+          "DEVICE: Narrow band (tinted) contact lenses",
+          "DEVICE: broad band (clear) contact lenses"
+        ],
+        "sponsor": "University of Alabama at Birmingham",
+        "country": "美國",
+        "enroll": 60,
+        "start": "2026-05-08",
+        "completion": "2027-04-01",
+        "updated": "2026-06-11"
+      },
+      {
+        "nct": "NCT06778057",
+        "title": "Clinical Performance of Three Daily Disposable Silicone Hydrogel Contact Lenses",
+        "status": "COMPLETED",
+        "status_zh": "已完成",
+        "phase": "不適用",
+        "type": "介入型",
+        "conditions": [
+          "Visual Acuity"
+        ],
+        "interventions": [
+          "DEVICE: Test Lens 1",
+          "DEVICE: Test Lens 2",
+          "DEVICE: Test Lens 3"
+        ],
+        "sponsor": "Johnson & Johnson Vision Care, Inc.",
+        "country": "英國",
+        "enroll": 22,
+        "start": "2024-12-29",
+        "completion": "2025-10-16",
+        "updated": "2026-06-05"
+      },
+      {
+        "nct": "NCT06751225",
+        "title": "Evaluation of Wear Experience With a Weekly Replacement Soft Contact Lens in Neophyte Lens Wearers With Astigmatism",
+        "status": "COMPLETED",
+        "status_zh": "已完成",
+        "phase": "不適用",
+        "type": "介入型",
+        "conditions": [
+          "Astigmatism Bilateral"
+        ],
+        "interventions": [
+          "DEVICE: One week replacement soft contact lenses"
+        ],
+        "sponsor": "Ohio State University",
+        "country": "美國",
+        "enroll": 40,
+        "start": "2025-01-21",
+        "completion": "2025-11-04",
+        "updated": "2026-06-04"
+      },
+      {
+        "nct": "NCT04080128",
+        "title": "Examination of Myopia Progression and Soft Bifocal Contact Lens Myopia Control",
+        "status": "COMPLETED",
+        "status_zh": "已完成",
+        "phase": "",
+        "type": "觀察型",
+        "conditions": [
+          "Myopia"
+        ],
+        "interventions": [
+          "DEVICE: Contact lenses"
+        ],
+        "sponsor": "Ohio State University",
+        "country": "美國",
+        "enroll": 248,
+        "start": "2019-09-09",
+        "completion": "2024-01-04",
+        "updated": "2026-06-02"
+      },
+      {
+        "nct": "NCT07600645",
+        "title": "Contact Lens Trial Fitting Experience",
+        "status": "NOT_YET_RECRUITING",
+        "status_zh": "尚未招募",
+        "phase": "不適用",
+        "type": "介入型",
+        "conditions": [
+          "Presbyopia"
+        ],
+        "interventions": [
+          "DEVICE: Lens A ( stenfilcon A )"
+        ],
+        "sponsor": "CooperVision International Limited (CVIL)",
+        "country": "美國",
+        "enroll": 25,
+        "start": "2026-05-31",
+        "completion": "2026-09-01",
+        "updated": "2026-05-22"
+      },
+      {
+        "nct": "NCT07586982",
+        "title": "Clinical Performance of Verofilcon A Toric Contact Lenses",
+        "status": "RECRUITING",
+        "status_zh": "招募中",
+        "phase": "不適用",
+        "type": "介入型",
+        "conditions": [
+          "Contact Lenses",
+          "Presbyopia"
+        ],
+        "interventions": [
+          "DEVICE: Total 30 multi foric contact lenses"
+        ],
+        "sponsor": "Southern College of Optometry",
+        "country": "美國",
+        "enroll": 32,
+        "start": "2026-04",
+        "completion": "2026-09",
+        "updated": "2026-05-14"
+      },
+      {
+        "nct": "NCT07557030",
+        "title": "Optimization for Toric Contact Lenses",
+        "status": "NOT_YET_RECRUITING",
+        "status_zh": "尚未招募",
+        "phase": "不適用",
+        "type": "介入型",
+        "conditions": [
+          "Astigmatism",
+          "Ametropia"
+        ],
+        "interventions": [
+          "DEVICE: Lens 1 ( stenfilcon A )",
+          "DEVICE: Lens 2 ( comfilcon A )"
+        ],
+        "sponsor": "CooperVision International Limited (CVIL)",
+        "country": "美國",
+        "enroll": 45,
+        "start": "2026-05",
+        "completion": "2026-08",
+        "updated": "2026-05-06"
+      },
+      {
+        "nct": "NCT06905912",
+        "title": "Comparison Between Spectacles and Contact Lenses",
+        "status": "NOT_YET_RECRUITING",
+        "status_zh": "尚未招募",
+        "phase": "不適用",
+        "type": "介入型",
+        "conditions": [
+          "Photophobia"
+        ],
+        "interventions": [
+          "DEVICE: Biomedics55 Premier contact lenses, and Altius Tinted Contact Lenses"
+        ],
+        "sponsor": "University of Oklahoma",
+        "country": "美國",
+        "enroll": 200,
+        "start": "2026-07-01",
+        "completion": "2027-12-31",
+        "updated": "2026-05-05"
+      },
+      {
+        "nct": "NCT04024293",
+        "title": "Intraocular Pressure Measured by a Novel Sensing Contact Lens Versus Tonometry",
+        "status": "RECRUITING",
+        "status_zh": "招募中",
+        "phase": "不適用",
+        "type": "介入型",
+        "conditions": [
+          "Glaucoma",
+          "Ocular Hypertension"
+        ],
+        "interventions": [
+          "DEVICE: Goldfish (GF)"
+        ],
+        "sponsor": "Sensimed AG",
+        "country": "瑞士",
+        "enroll": 12,
+        "start": "2025-10-01",
+        "completion": "2026-05",
+        "updated": "2026-04-30"
+      },
+      {
+        "nct": "NCT03923101",
+        "title": "The Homburg Keratoconus Center (HKC)",
+        "status": "RECRUITING",
+        "status_zh": "招募中",
+        "phase": "",
+        "type": "觀察型",
+        "conditions": [
+          "Keratoconus"
+        ],
+        "interventions": [
+          "DIAGNOSTIC_TEST: Topographic, tomographic and biomechanical analysis."
+        ],
+        "sponsor": "Universität des Saarlandes",
+        "country": "德國",
+        "enroll": 5000,
+        "start": "2011-01-01",
+        "completion": "2036-01-01",
+        "updated": "2026-04-27"
+      },
+      {
+        "nct": "NCT07547085",
+        "title": "Myopia Control Using Novel Soft Contact Lenses",
+        "status": "NOT_YET_RECRUITING",
+        "status_zh": "尚未招募",
+        "phase": "不適用",
+        "type": "介入型",
+        "conditions": [
+          "Myopia"
+        ],
+        "interventions": [
+          "OTHER: Lens A",
+          "OTHER: Lens B"
+        ],
+        "sponsor": "The Hong Kong Polytechnic University",
+        "country": "",
+        "enroll": 126,
+        "start": "2026-04-16",
+        "completion": "2029-07-14",
+        "updated": "2026-04-23"
+      },
+      {
+        "nct": "NCT07535749",
+        "title": "The Effect of Myopia-Control Contact Lenses in New Zealand Chinese Children",
+        "status": "RECRUITING",
+        "status_zh": "招募中",
+        "phase": "三期",
+        "type": "介入型",
+        "conditions": [
+          "Myopia Progression"
+        ],
+        "interventions": [
+          "DEVICE: MiSight Contact Lenses (CooperVision)",
+          "DEVICE: Albiliti 1-Day (Johnson and Johnson, VisionCare)"
+        ],
+        "sponsor": "Aston University",
+        "country": "紐西蘭",
+        "enroll": 66,
+        "start": "2026-03-21",
+        "completion": "2026-12-30",
+        "updated": "2026-04-17"
+      },
+      {
+        "nct": "NCT06869044",
+        "title": "A Clinical Comparison of Proclear® 1 Day Multifocal and Clariti® 1 Day Multifocal 3 Add",
+        "status": "COMPLETED",
+        "status_zh": "已完成",
+        "phase": "不適用",
+        "type": "介入型",
+        "conditions": [
+          "Myopia",
+          "Hyperopia",
+          "Presbyopia"
+        ],
+        "interventions": [
+          "DEVICE: omafilcon A lens",
+          "DEVICE: Low ADD power somofilcon A lens",
+          "DEVICE: Medium ADD power somofilcon A lens",
+          "DEVICE: High ADD power somofilcon A lens"
+        ],
+        "sponsor": "CooperVision International Limited (CVIL)",
+        "country": "美國",
+        "enroll": 67,
+        "start": "2025-02-11",
+        "completion": "2025-06-26",
+        "updated": "2026-04-13"
+      },
+      {
+        "nct": "NCT06873048",
+        "title": "Short-term Study of Two Soft Contact Lenses in Wearers With Low Astigmatism",
+        "status": "COMPLETED",
+        "status_zh": "已完成",
+        "phase": "不適用",
+        "type": "介入型",
+        "conditions": [
+          "Astigmatism",
+          "Myopia",
+          "Hyperopia"
+        ],
+        "interventions": [
+          "DEVICE: Control Contact Lens (stenfilcon A Sphere)",
+          "DEVICE: Test Contact Lens (stenfilcon A Toric)"
+        ],
+        "sponsor": "CooperVision International Limited (CVIL)",
+        "country": "加拿大",
+        "enroll": 32,
+        "start": "2025-02-26",
+        "completion": "2025-07-11",
+        "updated": "2026-04-08"
+      },
+      {
+        "nct": "NCT07444658",
+        "title": "Performance of Two Daily Disposable Multifocal Contact Lenses",
+        "status": "RECRUITING",
+        "status_zh": "招募中",
+        "phase": "不適用",
+        "type": "介入型",
+        "conditions": [
+          "Presbyopia"
+        ],
+        "interventions": [
+          "DEVICE: Lens A (kalfilcon A)",
+          "DEVICE: Lens B (stenfilcon A)"
+        ],
+        "sponsor": "CooperVision International Limited (CVIL)",
+        "country": "美國",
+        "enroll": 35,
+        "start": "2026-02-24",
+        "completion": "2026-05-31",
+        "updated": "2026-04-08"
+      },
+      {
+        "nct": "NCT07104773",
+        "title": "Clinical Investigation of Proclear® 1 Day and MyDay® Sphere Contact Lenses",
+        "status": "COMPLETED",
+        "status_zh": "已完成",
+        "phase": "不適用",
+        "type": "介入型",
+        "conditions": [
+          "Ametropia",
+          "Myopia"
+        ],
+        "interventions": [
+          "DEVICE: Control Lens (omafilcon A)",
+          "DEVICE: Test Lens (stenfilcon A)"
+        ],
+        "sponsor": "CooperVision International Limited (CVIL)",
+        "country": "加拿大",
+        "enroll": 44,
+        "start": "2025-07-24",
+        "completion": "2025-08-21",
+        "updated": "2026-04-08"
+      },
+      {
+        "nct": "NCT07510620",
+        "title": "Single-Arm Study of a Treatment for Dry Eye in People Who Struggle to Wear Contact Lenses",
+        "status": "RECRUITING",
+        "status_zh": "招募中",
+        "phase": "四期",
+        "type": "介入型",
+        "conditions": [
+          "Dry Eye"
+        ],
+        "interventions": [
+          "DRUG: Lacrifill"
+        ],
+        "sponsor": "Vision Innovation Centers of Pennsylvania, LLC d/b/a Eye Care Specialists",
+        "country": "美國",
+        "enroll": 30,
+        "start": "2025-12-12",
+        "completion": "2026-08",
+        "updated": "2026-04-03"
+      },
+      {
+        "nct": "NCT06689696",
+        "title": "24-hour Wear Performance and Safety Study of Smartlens miLens Contact Lens for IOP Monitoring",
+        "status": "COMPLETED",
+        "status_zh": "已完成",
+        "phase": "",
+        "type": "觀察型",
+        "conditions": [
+          "Glaucoma",
+          "GLAUCOMA 1, OPEN ANGLE, D (Disorder)",
+          "Ocular Hypertension",
+          "Ocular Hypertension (OH)",
+          "Ocular Hypertension Glaucoma",
+          "IOP"
+        ],
+        "interventions": [
+          "DEVICE: miLens system"
+        ],
+        "sponsor": "Smartlens, Inc.",
+        "country": "美國",
+        "enroll": 86,
+        "start": "2025-02-19",
+        "completion": "2026-01-06",
+        "updated": "2026-04-01"
+      },
+      {
+        "nct": "NCT07303920",
+        "title": "Wear Experience With Daily Disposable Contact Lenses for Astigmatism Over a Long-Wear Day",
+        "status": "RECRUITING",
+        "status_zh": "招募中",
+        "phase": "不適用",
+        "type": "介入型",
+        "conditions": [
+          "Astigmatism"
+        ],
+        "interventions": [
+          "DEVICE: Daily disposable contact lenses for astigmatism"
+        ],
+        "sponsor": "Ohio State University",
+        "country": "美國",
+        "enroll": 40,
+        "start": "2026-03-04",
+        "completion": "2026-06-30",
+        "updated": "2026-03-25"
+      },
+      {
+        "nct": "NCT07488208",
+        "title": "Comparison of Two Contact Lens Designs",
+        "status": "COMPLETED",
+        "status_zh": "已完成",
+        "phase": "不適用",
+        "type": "介入型",
+        "conditions": [
+          "Computer Vision Syndrome",
+          "Accommodation"
+        ],
+        "interventions": [
+          "DEVICE: Stenfilcon A contact lens designs with and without Digital Boost technology that incorporate a 0.3D add power into the lens"
+        ],
+        "sponsor": "Southern College of Optometry",
+        "country": "美國",
+        "enroll": 30,
+        "start": "2025-05-22",
+        "completion": "2025-09-02",
+        "updated": "2026-03-25"
+      },
+      {
+        "nct": "NCT06698731",
+        "title": "A Randomized, Active-Controlled, Double-Masked, Crossover Study to Evaluate the Clinical Performance of Deseyne (Vifilcon C) Daily Disposable Soft Contact Lens for Presbyopia Extended Depth of Focus (EDOF)",
+        "status": "COMPLETED",
+        "status_zh": "已完成",
+        "phase": "不適用",
+        "type": "介入型",
+        "conditions": [
+          "Presbyopia Condition"
+        ],
+        "interventions": [
+          "DEVICE: Test lens",
+          "DEVICE: Control lens"
+        ],
+        "sponsor": "Bruno Vision Care",
+        "country": "美國",
+        "enroll": 78,
+        "start": "2024-10-28",
+        "completion": "2025-01-15",
+        "updated": "2026-03-17"
+      },
+      {
+        "nct": "NCT06609018",
+        "title": "Clinical Investigation of Buttermere (LENS 271) Soft Contact Lenses",
+        "status": "COMPLETED",
+        "status_zh": "已完成",
+        "phase": "不適用",
+        "type": "介入型",
+        "conditions": [
+          "Myopia"
+        ],
+        "interventions": [
+          "DEVICE: Test Lenses (stenfilcon A)",
+          "DEVICE: Control Lenses (omafilcon A)"
+        ],
+        "sponsor": "CooperVision, Inc.",
+        "country": "英國",
+        "enroll": 73,
+        "start": "2024-08-01",
+        "completion": "2025-03-05",
+        "updated": "2026-02-24"
+      },
+      {
+        "nct": "NCT06758089",
+        "title": "A Clinical Comparison of Two Soft Toric Contact Lenses",
+        "status": "COMPLETED",
+        "status_zh": "已完成",
+        "phase": "不適用",
+        "type": "介入型",
+        "conditions": [
+          "Astigmatism"
+        ],
+        "interventions": [
+          "DEVICE: Lens 1 (ocufilcon D)",
+          "DEVICE: Lens 2 (somofilcon A)"
+        ],
+        "sponsor": "CooperVision International Limited (CVIL)",
+        "country": "英國",
+        "enroll": 42,
+        "start": "2024-11-08",
+        "completion": "2024-12-19",
+        "updated": "2026-02-18"
+      },
+      {
+        "nct": "NCT07406399",
+        "title": "Low Concentration Atropine Combined With Soft Contact Lens in Controlling Myopia Progression in Children With High Myopia",
+        "status": "COMPLETED",
+        "status_zh": "已完成",
+        "phase": "四期",
+        "type": "介入型",
+        "conditions": [
+          "High Myopia",
+          "Low Concentration Atropine",
+          "Soft Contact Lens",
+          "Children"
+        ],
+        "interventions": [
+          "DEVICE: soft peripheral defocus contact lenses",
+          "DRUG: Atropine 0.04%",
+          "DRUG: Atropine (0.01%)",
+          "DEVICE: Single Vision Spectacles"
+        ],
+        "sponsor": "Beijing Tongren Hospital",
+        "country": "中國",
+        "enroll": 120,
+        "start": "2023-06-30",
+        "completion": "2026-01-30",
+        "updated": "2026-02-12"
+      },
+      {
+        "nct": "NCT06649019",
+        "title": "Evaluation of Lens Rotation in Habitual Wearers of Toric, Soft Contact Lenses",
+        "status": "COMPLETED",
+        "status_zh": "已完成",
+        "phase": "不適用",
+        "type": "介入型",
+        "conditions": [
+          "Visual Acuity"
+        ],
+        "interventions": [
+          "DEVICE: ACUVUE OASYS 1-Day for Astigmatism (AO1DfA)",
+          "DEVICE: Dailies Total 1 for Astigmatism (DT1fA)"
+        ],
+        "sponsor": "Johnson & Johnson Vision Care, Inc.",
+        "country": "英國",
+        "enroll": 6,
+        "start": "2024-12-06",
+        "completion": "2024-12-16",
+        "updated": "2026-02-11"
+      },
+      {
+        "nct": "NCT06450132",
+        "title": "Changes in Eye Shape With Myopia Management Interventions",
+        "status": "ACTIVE_NOT_RECRUITING",
+        "status_zh": "進行中(不招募)",
+        "phase": "四期",
+        "type": "介入型",
+        "conditions": [
+          "Myopia"
+        ],
+        "interventions": [
+          "DRUG: Atropine Ophthalmic",
+          "DEVICE: MiSight 1-day disposable contact lenses"
+        ],
+        "sponsor": "Ohio State University",
+        "country": "美國",
+        "enroll": 75,
+        "start": "2024-08-01",
+        "completion": "2026-07-31",
+        "updated": "2026-01-27"
+      },
+      {
+        "nct": "NCT07370168",
+        "title": "Do Daily Disposable Soft Contact Lenses Require Frequent Checks After the Initial Fitting is Complete in Adults Under 40 With No Contraindications",
+        "status": "ENROLLING_BY_INVITATION",
+        "status_zh": "邀請制招募",
+        "phase": "",
+        "type": "觀察型",
+        "conditions": [
+          "Healthy",
+          "Healthy Participants"
+        ],
+        "interventions": [],
+        "sponsor": "Aston University",
+        "country": "英國",
+        "enroll": 300,
+        "start": "2025-10-07",
+        "completion": "2027-08",
+        "updated": "2026-01-27"
+      },
+      {
+        "nct": "NCT07322211",
+        "title": "A Study to Evaluate the Clinical Performance and Safety of UNICON Silicone Hydrogel Daily Disposable Soft Contact Lenses",
+        "status": "RECRUITING",
+        "status_zh": "招募中",
+        "phase": "不適用",
+        "type": "介入型",
+        "conditions": [
+          "Refractive Ametropia"
+        ],
+        "interventions": [
+          "DEVICE: Treatment"
+        ],
+        "sponsor": "Unicon Optical Co. Ltd.",
+        "country": "台灣",
+        "enroll": 35,
+        "start": "2026-01-20",
+        "completion": "2026-10-31",
+        "updated": "2026-01-22"
+      },
+      {
+        "nct": "NCT06745375",
+        "title": "Assessment of the Relationship of Soft Contact Lens Fit and Power (Fit & Lens pOwer Soft lenSes)",
+        "status": "ENROLLING_BY_INVITATION",
+        "status_zh": "邀請制招募",
+        "phase": "不適用",
+        "type": "介入型",
+        "conditions": [
+          "Healthy Participants Study",
+          "Contact Lens Wear",
+          "Contact Lens Fit"
+        ],
+        "interventions": [
+          "DEVICE: contact lens wear"
+        ],
+        "sponsor": "Aston University",
+        "country": "英國",
+        "enroll": 38,
+        "start": "2026-01-30",
+        "completion": "2026-12-31",
+        "updated": "2026-01-21"
+      },
+      {
+        "nct": "NCT07345416",
+        "title": "A Clinical Trial Assessing the Efficacy and Safety of ST-1 Silicone Hydrogel Daily Disposable Soft Contact Lenses Compared to Miru 1day UpSide",
+        "status": "NOT_YET_RECRUITING",
+        "status_zh": "尚未招募",
+        "phase": "不適用",
+        "type": "介入型",
+        "conditions": [
+          "Myopia",
+          "Soft Contact Lenses",
+          "Daily Disposable Soft Contact Lenses"
+        ],
+        "interventions": [
+          "DEVICE: ST-1",
+          "DEVICE: Miru 1day UpSide"
+        ],
+        "sponsor": "Menicon Co., Ltd.",
+        "country": "台灣",
+        "enroll": 63,
+        "start": "2026-05-01",
+        "completion": "2026-12-31",
+        "updated": "2026-01-15"
+      },
+      {
+        "nct": "NCT06064617",
+        "title": "Accommodative Behaviors in Multifocal Contact Lenses",
+        "status": "COMPLETED",
+        "status_zh": "已完成",
+        "phase": "不適用",
+        "type": "介入型",
+        "conditions": [
+          "Accommodation Disorder"
+        ],
+        "interventions": [
+          "DEVICE: Center-Near (+2.50D) Coopervision Biofinity Multifocal Contact Lens",
+          "DEVICE: Center Distance (+2.50 D) Coopervision Biofinity Multifocal Contact Lens"
+        ],
+        "sponsor": "Ohio State University",
+        "country": "美國",
+        "enroll": 20,
+        "start": "2023-11-01",
+        "completion": "2024-04-30",
+        "updated": "2026-01-08"
+      },
+      {
+        "nct": "NCT06461455",
+        "title": "Clinical Performance Evaluation of Two Frequent Replacement Silicone Hydrogel Multifocal Toric Contact Lenses",
+        "status": "COMPLETED",
+        "status_zh": "已完成",
+        "phase": "不適用",
+        "type": "介入型",
+        "conditions": [
+          "Presbyopia",
+          "Astigmatism"
+        ],
+        "interventions": [
+          "DEVICE: Lehfilcon A multifocal for astigmatism contact lenses",
+          "DEVICE: Samfilcon A multifocal for astigmatism contact lenses",
+          "DEVICE: CLEAR CARE® Cleaning & Disinfecting Solution",
+          "DEVICE: Lehfilcon A multifocal for astigmatism contact lenses",
+          "DEVICE: CLEAR CARE® Cleaning & Disinfecting Solution"
+        ],
+        "sponsor": "Alcon Research",
+        "country": "美國",
+        "enroll": 95,
+        "start": "2024-07-26",
+        "completion": "2024-12-31",
+        "updated": "2025-12-24"
+      },
+      {
+        "nct": "NCT07054606",
+        "title": "A Study to Evaluate Concomitant Perfluorohexyloctane Use With Contact Lens Wear",
+        "status": "COMPLETED",
+        "status_zh": "已完成",
+        "phase": "四期",
+        "type": "介入型",
+        "conditions": [
+          "Dry Eye"
+        ],
+        "interventions": [
+          "DRUG: Perfluorohexyloctane ophthalmic solution"
+        ],
+        "sponsor": "Bausch & Lomb Incorporated",
+        "country": "美國",
+        "enroll": 104,
+        "start": "2025-07-02",
+        "completion": "2025-11-03",
+        "updated": "2025-12-18"
+      },
+      {
+        "nct": "NCT07290829",
+        "title": "Conformity of Conjunctival Hyperemia Assessment in Soft Contact Lens Wearers Using Image J Analysis and Efron Degree System",
+        "status": "COMPLETED",
+        "status_zh": "已完成",
+        "phase": "不適用",
+        "type": "介入型",
+        "conditions": [
+          "Soft Contact Lenses"
+        ],
+        "interventions": [
+          "DEVICE: hydrogel soft contact lens"
+        ],
+        "sponsor": "Indonesia University",
+        "country": "Indonesia",
+        "enroll": 52,
+        "start": "2019-03-28",
+        "completion": "2025-08-28",
+        "updated": "2025-12-18"
+      },
+      {
+        "nct": "NCT06967298",
+        "title": "Total30 For Contact Lens Dropouts",
+        "status": "COMPLETED",
+        "status_zh": "已完成",
+        "phase": "不適用",
+        "type": "介入型",
+        "conditions": [
+          "Dry Eye",
+          "Contact Lens Complication",
+          "Contact Lenses"
+        ],
+        "interventions": [
+          "DEVICE: T30 Contact lenses"
+        ],
+        "sponsor": "Southern College of Optometry",
+        "country": "美國",
+        "enroll": 60,
+        "start": "2024-04-23",
+        "completion": "2024-11-28",
+        "updated": "2025-12-03"
+      },
+      {
+        "nct": "NCT04225611",
+        "title": "Therapeutic Contact Lens Drug Delivery System (TCL-DDS) in Patients With Recurrent Cystoid Macular Edema",
+        "status": "RECRUITING",
+        "status_zh": "招募中",
+        "phase": "一期/二期",
+        "type": "介入型",
+        "conditions": [
+          "Cystoid Macular Edema"
+        ],
+        "interventions": [
+          "DRUG: Dexamethasone"
+        ],
+        "sponsor": "Massachusetts Eye and Ear Infirmary",
+        "country": "美國",
+        "enroll": 6,
+        "start": "2021-03-15",
+        "completion": "2027-12-31",
+        "updated": "2025-11-26"
+      },
+      {
+        "nct": "NCT06955403",
+        "title": "Acuvue Oaysis Contact Lens Wearers Being Refit Into P7 Contact Lenses",
+        "status": "RECRUITING",
+        "status_zh": "招募中",
+        "phase": "不適用",
+        "type": "介入型",
+        "conditions": [
+          "Contact Lens Comfort"
+        ],
+        "interventions": [
+          "DEVICE: Precision 7 contact lenses"
+        ],
+        "sponsor": "Southern College of Optometry",
+        "country": "美國",
+        "enroll": 40,
+        "start": "2025-04-15",
+        "completion": "2025-11-30",
+        "updated": "2025-11-26"
+      },
+      {
+        "nct": "NCT05102383",
+        "title": "Evaluation of Wear Experience With a Water Surface Daily Disposable Contact Lens",
+        "status": "COMPLETED",
+        "status_zh": "已完成",
+        "phase": "不適用",
+        "type": "介入型",
+        "conditions": [
+          "Contact Lens"
+        ],
+        "interventions": [
+          "DEVICE: Comfilcon A Toric contact lenses",
+          "DEVICE: Verofilcon A for Astigmatism Daily Disposable contact lenses"
+        ],
+        "sponsor": "Ohio State University",
+        "country": "美國",
+        "enroll": 34,
+        "start": "2021-11-15",
+        "completion": "2022-04-19",
+        "updated": "2025-11-25"
+      },
+      {
+        "nct": "NCT05509608",
+        "title": "Evaluating a New Sensor That Measures the Health of the Retina in Normally-sighted Subjects",
+        "status": "ENROLLING_BY_INVITATION",
+        "status_zh": "邀請制招募",
+        "phase": "早期一期",
+        "type": "介入型",
+        "conditions": [
+          "Electrode Site Reaction"
+        ],
+        "interventions": [
+          "DEVICE: RM Electrode",
+          "DEVICE: ERG Jet Electrode"
+        ],
+        "sponsor": "RetMap, Inc",
+        "country": "美國",
+        "enroll": 90,
+        "start": "2023-03-01",
+        "completion": "2025-12-31",
+        "updated": "2025-11-14"
+      },
+      {
+        "nct": "NCT07224542",
+        "title": "Smart Soft Contact Lenses for Monitoring Glaucoma",
+        "status": "ENROLLING_BY_INVITATION",
+        "status_zh": "邀請制招募",
+        "phase": "不適用",
+        "type": "介入型",
+        "conditions": [
+          "Glaucoma"
+        ],
+        "interventions": [
+          "DEVICE: Bare Contact Lens",
+          "DEVICE: Clinical IOP Measure",
+          "DEVICE: Experimental Contact Lens Sensor"
+        ],
+        "sponsor": "Indiana University",
+        "country": "美國",
+        "enroll": 120,
+        "start": "2025-10-19",
+        "completion": "2028-09-30",
+        "updated": "2025-11-05"
+      },
+      {
+        "nct": "NCT06308666",
+        "title": "Performance of DAILIES TOTAL1 Daily Disposable Contact Lenses in Habitual Soft Lens Wearers Who Report Substantial Digital Device Use",
+        "status": "COMPLETED",
+        "status_zh": "已完成",
+        "phase": "不適用",
+        "type": "介入型",
+        "conditions": [
+          "Myopia"
+        ],
+        "interventions": [
+          "DEVICE: Delefilcon A contact lenses"
+        ],
+        "sponsor": "University of Waterloo",
+        "country": "加拿大",
+        "enroll": 41,
+        "start": "2024-03-18",
+        "completion": "2024-10-23",
+        "updated": "2025-10-31"
+      },
+      {
+        "nct": "NCT06377488",
+        "title": "Evaluation of the Clinical Performance of Daily Disposable Silicone Hydrogel Multifocal Toric Contact Lenses",
+        "status": "COMPLETED",
+        "status_zh": "已完成",
+        "phase": "不適用",
+        "type": "介入型",
+        "conditions": [
+          "Visual Acuity"
+        ],
+        "interventions": [
+          "DEVICE: JJVC Investigational Multifocal Toric Contact Lens manufactured in Senofilcon A (C3) material with UV blocker / HEV filter"
+        ],
+        "sponsor": "Johnson & Johnson Vision Care, Inc.",
+        "country": "美國",
+        "enroll": 176,
+        "start": "2024-04-22",
+        "completion": "2024-06-24",
+        "updated": "2025-10-28"
+      },
+      {
+        "nct": "NCT06382064",
+        "title": "Evaluation of Wear Experience With One Week Reusable Contact Lenses in Habitual Two Week Reusable Lens Wearers",
+        "status": "COMPLETED",
+        "status_zh": "已完成",
+        "phase": "不適用",
+        "type": "介入型",
+        "conditions": [
+          "Myopia"
+        ],
+        "interventions": [
+          "DEVICE: Biweekly replacement contact lenses",
+          "DEVICE: One week replacement contact lenses"
+        ],
+        "sponsor": "Ohio State University",
+        "country": "美國",
+        "enroll": 71,
+        "start": "2024-04-16",
+        "completion": "2024-12-09",
+        "updated": "2025-10-20"
+      },
+      {
+        "nct": "NCT04500574",
+        "title": "Latanoprost Eluting Contact Lens for Treating Glaucoma and Ocular Hypertension",
+        "status": "TERMINATED",
+        "status_zh": "已終止",
+        "phase": "一期",
+        "type": "介入型",
+        "conditions": [
+          "Glaucoma",
+          "Ocular Hypertension"
+        ],
+        "interventions": [
+          "DRUG: Latanoprost eluting contact lens",
+          "DRUG: Topical Latanoprost"
+        ],
+        "sponsor": "Massachusetts Eye and Ear Infirmary",
+        "country": "美國",
+        "enroll": 1,
+        "start": "2024-04-03",
+        "completion": "2025-10-10",
+        "updated": "2025-10-15"
+      },
+      {
+        "nct": "NCT06611410",
+        "title": "1 Week Crossover Study Between Two Soft Contact Lenses",
+        "status": "COMPLETED",
+        "status_zh": "已完成",
+        "phase": "不適用",
+        "type": "介入型",
+        "conditions": [
+          "Myopia"
+        ],
+        "interventions": [
+          "DEVICE: Test Lenses (stenfilcon A)",
+          "DEVICE: Control Lenses (omafilcon A)"
+        ],
+        "sponsor": "CooperVision, Inc.",
+        "country": "美國",
+        "enroll": 10,
+        "start": "2024-06-05",
+        "completion": "2024-07-26",
+        "updated": "2025-10-15"
+      },
+      {
+        "nct": "NCT06469242",
+        "title": "Clinical Performance of Two Frequent Replacement Silicone Hydrogel Multifocal Contact Lenses",
+        "status": "COMPLETED",
+        "status_zh": "已完成",
+        "phase": "不適用",
+        "type": "介入型",
+        "conditions": [
+          "Presbyopia"
+        ],
+        "interventions": [
+          "DEVICE: Serafilcon A multifocal contact lenses",
+          "DEVICE: Senofilcon A multifocal contact lenses",
+          "DEVICE: CLEAR CARE® Cleaning & Disinfecting Solution"
+        ],
+        "sponsor": "Alcon Research",
+        "country": "美國",
+        "enroll": 106,
+        "start": "2024-07-18",
+        "completion": "2024-10-08",
+        "updated": "2025-10-09"
+      },
+      {
+        "nct": "NCT05927753",
+        "title": "Study to Evaluate the Clinical Performance of Deseyne (Vifilcon C) Daily Disposable Soft Contact Lens",
+        "status": "COMPLETED",
+        "status_zh": "已完成",
+        "phase": "不適用",
+        "type": "介入型",
+        "conditions": [
+          "Refractive Error - Myopia Bilateral"
+        ],
+        "interventions": [
+          "DEVICE: Deseyne Daily Disposable Contact Lens (Test Device)"
+        ],
+        "sponsor": "Bruno Vision Care",
+        "country": "美國",
+        "enroll": 81,
+        "start": "2023-06-08",
+        "completion": "2024-01-08",
+        "updated": "2025-10-02"
+      },
+      {
+        "nct": "NCT06716385",
+        "title": "A Clinical Trial to Evaluate the Vision Correction Safety and Efficacy of MSiHy Silicone Hydrogel Soft Contact Lens",
+        "status": "COMPLETED",
+        "status_zh": "已完成",
+        "phase": "不適用",
+        "type": "介入型",
+        "conditions": [
+          "Myopia",
+          "Refractive Errors"
+        ],
+        "interventions": [
+          "DEVICE: MSiHy Silicone Hydrogel Soft Contact Lens",
+          "DEVICE: Monthly Silicone Hydrogel Contact Lenses (oA)"
+        ],
+        "sponsor": "Visco Vision Inc.",
+        "country": "台灣",
+        "enroll": 134,
+        "start": "2024-10-09",
+        "completion": "2025-08-07",
+        "updated": "2025-10-02"
+      },
+      {
+        "nct": "NCT06716372",
+        "title": "A Clinical Trial to Evaluate the Vision Correction Safety and Efficacy of DSiHy Silicone Hydrogel Soft Contact Lens",
+        "status": "COMPLETED",
+        "status_zh": "已完成",
+        "phase": "不適用",
+        "type": "介入型",
+        "conditions": [
+          "Myopia",
+          "Refractive Errors"
+        ],
+        "interventions": [
+          "DEVICE: DSiHy Silicone Hydrogel Soft Contact Lens",
+          "DEVICE: Daily Silicone Hydrogel Contact Lenses (oB)"
+        ],
+        "sponsor": "Visco Vision Inc.",
+        "country": "台灣",
+        "enroll": 134,
+        "start": "2024-10-07",
+        "completion": "2025-08-20",
+        "updated": "2025-10-02"
+      },
+      {
+        "nct": "NCT06475053",
+        "title": "Visual Performance of Center Distance Daily Disposable Multifocal Lenses",
+        "status": "ACTIVE_NOT_RECRUITING",
+        "status_zh": "進行中(不招募)",
+        "phase": "不適用",
+        "type": "介入型",
+        "conditions": [
+          "Myopia"
+        ],
+        "interventions": [
+          "DEVICE: NaturalVue Enhanced Multifocal 1 Day contact lens",
+          "DEVICE: MiSight 1 Day contact lens"
+        ],
+        "sponsor": "Visioneering Technologies, Inc",
+        "country": "美國",
+        "enroll": 30,
+        "start": "2024-07-31",
+        "completion": "2025-12-31",
+        "updated": "2025-09-22"
+      },
+      {
+        "nct": "NCT05159765",
+        "title": "Progressive Myopia Treatment Evaluation for NaturalVue Multifocal Contact Lens Trial",
+        "status": "ACTIVE_NOT_RECRUITING",
+        "status_zh": "進行中(不招募)",
+        "phase": "不適用",
+        "type": "介入型",
+        "conditions": [
+          "Myopia"
+        ],
+        "interventions": [
+          "DEVICE: Single vision contact lenses",
+          "DEVICE: Multifocal contact lenses"
+        ],
+        "sponsor": "Visioneering Technologies, Inc",
+        "country": "美國 等",
+        "enroll": 144,
+        "start": "2022-01-22",
+        "completion": "2026-02",
+        "updated": "2025-09-22"
+      },
+      {
+        "nct": "NCT06989658",
+        "title": "Feasibility and Tolerability Study of Smart Contact Lens With Healthy Subjects and Patients With Stargardt's Disease",
+        "status": "NOT_YET_RECRUITING",
+        "status_zh": "尚未招募",
+        "phase": "不適用",
+        "type": "介入型",
+        "conditions": [
+          "Stargardt Disease"
+        ],
+        "interventions": [
+          "DEVICE: SCL miniaturized scleral lens positioning"
+        ],
+        "sponsor": "Centre Hospitalier National d'Ophtalmologie des Quinze-Vingts",
+        "country": "法國",
+        "enroll": 32,
+        "start": "2025-10",
+        "completion": "2028-02",
+        "updated": "2025-09-18"
+      },
+      {
+        "nct": "NCT06085352",
+        "title": "Evaluate the TetraLens, a Tetracaine Releasing Therapeutic Bandage Contact Lens in Patients Undergoing PRK Procedure",
+        "status": "COMPLETED",
+        "status_zh": "已完成",
+        "phase": "早期一期",
+        "type": "介入型",
+        "conditions": [
+          "Ocular Pain"
+        ],
+        "interventions": [
+          "DRUG: TetraLens bandage contact lens",
+          "DEVICE: Control Acuvue Oasys Bandage contact Lens"
+        ],
+        "sponsor": "Vance Thompson Vision",
+        "country": "美國",
+        "enroll": 10,
+        "start": "2023-06-26",
+        "completion": "2024-01-25",
+        "updated": "2025-09-17"
+      },
+      {
+        "nct": "NCT06588400",
+        "title": "AOSEPT (CLEAR CARE) PLUS Study",
+        "status": "WITHDRAWN",
+        "status_zh": "已撤回",
+        "phase": "不適用",
+        "type": "介入型",
+        "conditions": [
+          "Contact Lens Care"
+        ],
+        "interventions": [
+          "DEVICE: AOSEPT Plus and AOCup lens case",
+          "DEVICE: AOSEPT Plus with HydraGlyde and AOCup lens case",
+          "DEVICE: Habitual contact lenses"
+        ],
+        "sponsor": "Alcon Research",
+        "country": "美國",
+        "enroll": "",
+        "start": "2025-10",
+        "completion": "2026-01",
+        "updated": "2025-09-16"
+      },
+      {
+        "nct": "NCT06592521",
+        "title": "OPTI-FREE Family STUDY",
+        "status": "WITHDRAWN",
+        "status_zh": "已撤回",
+        "phase": "不適用",
+        "type": "介入型",
+        "conditions": [
+          "Contact Lens Care"
+        ],
+        "interventions": [
+          "DEVICE: OPTI-FREE EXPRESS MPDS and Alcon contact lens case",
+          "DEVICE: OPTI-FREE PureMoist MPDS and Alcon contact lens case",
+          "DEVICE: OPTI-FREE REPLENISH MPDS and Alcon contact lens case",
+          "DEVICE: Habitual contact lenses"
+        ],
+        "sponsor": "Alcon Research",
+        "country": "美國",
+        "enroll": "",
+        "start": "2025-10",
+        "completion": "2026-01",
+        "updated": "2025-09-16"
+      },
+      {
+        "nct": "NCT04313725",
+        "title": "Evaluation of Tangible Boost for Patients With Stevens Johnson Syndrome, Sjogren's Syndrome, and Graft Vs Host Disease",
+        "status": "TERMINATED",
+        "status_zh": "已終止",
+        "phase": "不適用",
+        "type": "介入型",
+        "conditions": [
+          "Stevens-Johnson Syndrome",
+          "Graft Versus Host Disease in Eye",
+          "Sjogren's Syndrome",
+          "Dry Eye"
+        ],
+        "interventions": [
+          "DEVICE: Tangible Boost",
+          "OTHER: Placebo"
+        ],
+        "sponsor": "Tangible Science",
+        "country": "美國",
+        "enroll": 28,
+        "start": "2020-02-24",
+        "completion": "2023-06-21",
+        "updated": "2025-09-16"
+      },
+      {
+        "nct": "NCT07155551",
+        "title": "Measuring Changes In Choroidal Thickness Induced By Prototype Soft Contact Lenses Worn For 1 Hour",
+        "status": "RECRUITING",
+        "status_zh": "招募中",
+        "phase": "不適用",
+        "type": "介入型",
+        "conditions": [
+          "Myopia; Refractive Error"
+        ],
+        "interventions": [
+          "DEVICE: Lens A",
+          "DEVICE: Lens B",
+          "DEVICE: Lens C"
+        ],
+        "sponsor": "Myoptechs, Inc",
+        "country": "加拿大",
+        "enroll": 20,
+        "start": "2025-08-25",
+        "completion": "2025-12",
+        "updated": "2025-09-04"
+      },
+      {
+        "nct": "NCT06884202",
+        "title": "Evaluation of Delefilcon A Contact Lenses",
+        "status": "COMPLETED",
+        "status_zh": "已完成",
+        "phase": "不適用",
+        "type": "介入型",
+        "conditions": [
+          "Refractive Errors",
+          "Myopia"
+        ],
+        "interventions": [
+          "DEVICE: Delefilcon A contact lenses with different base curves and diameters",
+          "DEVICE: Delefilcon A contact lenses with standard base curves and diameters"
+        ],
+        "sponsor": "Alcon Research",
+        "country": "美國",
+        "enroll": 257,
+        "start": "2025-04-28",
+        "completion": "2025-08-26",
+        "updated": "2025-09-03"
+      },
+      {
+        "nct": "NCT06921967",
+        "title": "Effect of Corneal and Scleral RGP Lenses on Ocular Health and Visual Quality in Keratoconus",
+        "status": "RECRUITING",
+        "status_zh": "招募中",
+        "phase": "不適用",
+        "type": "介入型",
+        "conditions": [
+          "Keratoconus",
+          "Irregular Astigmatism"
+        ],
+        "interventions": [
+          "DEVICE: Rose K2",
+          "DEVICE: Onefit MED"
+        ],
+        "sponsor": "University of Aarhus",
+        "country": "丹麥",
+        "enroll": 50,
+        "start": "2025-08-15",
+        "completion": "2028-02-29",
+        "updated": "2025-08-24"
+      },
+      {
+        "nct": "NCT06490302",
+        "title": "Clinical Evaluation of Two Toric Soft Contact Lenses",
+        "status": "COMPLETED",
+        "status_zh": "已完成",
+        "phase": "不適用",
+        "type": "介入型",
+        "conditions": [
+          "Astigmatism"
+        ],
+        "interventions": [
+          "DEVICE: Lens A (ocufilcon D)",
+          "DEVICE: Lens B (fanfilcon A)"
+        ],
+        "sponsor": "CooperVision, Inc.",
+        "country": "墨西哥",
+        "enroll": 40,
+        "start": "2024-05-24",
+        "completion": "2024-06-28",
+        "updated": "2025-08-22"
+      },
+      {
+        "nct": "NCT05886881",
+        "title": "Air Optix Extended Wear Contact Lenses",
+        "status": "COMPLETED",
+        "status_zh": "已完成",
+        "phase": "",
+        "type": "觀察型",
+        "conditions": [
+          "Refractive Errors"
+        ],
+        "interventions": [
+          "DEVICE: Lotrafilcon B spherical soft contact lenses",
+          "DEVICE: Lotrafilcon B spherical soft contact lenses with comfort additive",
+          "DEVICE: Lotrafilcon B toric soft contact lenses with comfort additive",
+          "DEVICE: Comfilcon A spherical soft contact lenses",
+          "DEVICE: Comfilcon A toric soft contact lenses"
+        ],
+        "sponsor": "Alcon Research",
+        "country": "美國",
+        "enroll": 505,
+        "start": "2023-08-03",
+        "completion": "2025-04-15",
+        "updated": "2025-08-14"
+      },
+      {
+        "nct": "NCT05886894",
+        "title": "Air Optix Plus HydraGlyde Multifocal Daily/Extended Wear Contact Lenses",
+        "status": "COMPLETED",
+        "status_zh": "已完成",
+        "phase": "",
+        "type": "觀察型",
+        "conditions": [
+          "Refractive Errors"
+        ],
+        "interventions": [
+          "DEVICE: Lotrafilcon B multifocal soft contact lenses",
+          "DEVICE: Comfilcon A multifocal soft contact lenses"
+        ],
+        "sponsor": "Alcon Research",
+        "country": "美國",
+        "enroll": 351,
+        "start": "2023-08-08",
+        "completion": "2025-06-20",
+        "updated": "2025-08-14"
+      },
+      {
+        "nct": "NCT07120165",
+        "title": "Effectiveness of Myopia Control Interventions : A Comparison of Myopia Control in European Children, Adolescents and Young Adults With Defocus Incorporated Multiple Segments (DIMS) and Highly Aspherical Lenslets (HAL) Spectacles, Atropine, Lenses and Combined Treatments",
+        "status": "COMPLETED",
+        "status_zh": "已完成",
+        "phase": "",
+        "type": "觀察型",
+        "conditions": [
+          "Myopia"
+        ],
+        "interventions": [
+          "OTHER: Demographic data collection",
+          "OTHER: Ophthalmological history",
+          "OTHER: Ophthalmological data at each examination",
+          "OTHER: Potential adverse events"
+        ],
+        "sponsor": "Centre Hospitalier Universitaire de Saint Etienne",
+        "country": "法國",
+        "enroll": 114,
+        "start": "2024-10-20",
+        "completion": "2025-05-07",
+        "updated": "2025-08-13"
+      },
+      {
+        "nct": "NCT06847230",
+        "title": "How Does DT1 Sphere Perform in Current and Successful Acuvue MAX Wearers?",
+        "status": "COMPLETED",
+        "status_zh": "已完成",
+        "phase": "不適用",
+        "type": "介入型",
+        "conditions": [
+          "Contact Lens Comfort and Successful Refitting"
+        ],
+        "interventions": [
+          "DEVICE: Dailies total 1 contact lenses"
+        ],
+        "sponsor": "Southern College of Optometry",
+        "country": "美國",
+        "enroll": 36,
+        "start": "2024-07-15",
+        "completion": "2024-11-30",
+        "updated": "2025-08-12"
+      },
+      {
+        "nct": "NCT06438601",
+        "title": "A Clinical Comparison of Two Multifocal Toric Soft Contact Lenses",
+        "status": "COMPLETED",
+        "status_zh": "已完成",
+        "phase": "不適用",
+        "type": "介入型",
+        "conditions": [
+          "Astigmatism",
+          "Presbyopia"
+        ],
+        "interventions": [
+          "DEVICE: Lens A (omafilcon A)",
+          "DEVICE: Lens B (comfilcon A)"
+        ],
+        "sponsor": "CooperVision, Inc.",
+        "country": "英國",
+        "enroll": 36,
+        "start": "2024-04-24",
+        "completion": "2024-08-15",
+        "updated": "2025-08-11"
+      },
+      {
+        "nct": "NCT06170658",
+        "title": "1 Week Crossover Dispensing Study Between Two Soft Contact Lenses",
+        "status": "COMPLETED",
+        "status_zh": "已完成",
+        "phase": "不適用",
+        "type": "介入型",
+        "conditions": [
+          "Myopia"
+        ],
+        "interventions": [
+          "DEVICE: Test Lenses (stenfilcon A)",
+          "DEVICE: Control Lenses (omafilcon A)"
+        ],
+        "sponsor": "CooperVision, Inc.",
+        "country": "加拿大",
+        "enroll": 30,
+        "start": "2023-12-11",
+        "completion": "2024-08-21",
+        "updated": "2025-08-06"
+      },
+      {
+        "nct": "NCT07091825",
+        "title": "Evaluating the Efficacy and Safety of Contact Lens Lubricant in Rigid Gas Permeable Corneal Contact Lens Wearers",
+        "status": "RECRUITING",
+        "status_zh": "招募中",
+        "phase": "不適用",
+        "type": "介入型",
+        "conditions": [
+          "Myopia"
+        ],
+        "interventions": [
+          "DEVICE: LACRIFRESH OCU-DRY 0.3% OSD",
+          "DEVICE: Rigid contact lens lubricant"
+        ],
+        "sponsor": "Avizor SA",
+        "country": "中國",
+        "enroll": 152,
+        "start": "2025-06-27",
+        "completion": "2026-06-30",
+        "updated": "2025-07-29"
+      },
+      {
+        "nct": "NCT06328660",
+        "title": "Refitting Multifocal Contact Lens Wearers With a Different Multifocal Contact Lens",
+        "status": "COMPLETED",
+        "status_zh": "已完成",
+        "phase": "不適用",
+        "type": "介入型",
+        "conditions": [
+          "Presbyopia"
+        ],
+        "interventions": [
+          "DEVICE: Lens 1",
+          "DEVICE: Lens 2"
+        ],
+        "sponsor": "CooperVision International Limited (CVIL)",
+        "country": "英國",
+        "enroll": 66,
+        "start": "2024-02-15",
+        "completion": "2024-05-21",
+        "updated": "2025-07-28"
+      },
+      {
+        "nct": "NCT06483113",
+        "title": "DAILIES TOTAL1® Soft Contact Lenses - Post-Market Clinical Follow-up Study",
+        "status": "TERMINATED",
+        "status_zh": "已終止",
+        "phase": "",
+        "type": "觀察型",
+        "conditions": [
+          "Myopia",
+          "Hyperopia",
+          "Presbyopia",
+          "Astigmatism"
+        ],
+        "interventions": [
+          "DEVICE: Delefilcon A spherical soft contact lenses",
+          "DEVICE: Delefilcon A toric soft contact lenses",
+          "DEVICE: Delefilcon A multifocal soft contact lenses"
+        ],
+        "sponsor": "Alcon Research",
+        "country": "美國",
+        "enroll": 192,
+        "start": "2024-11-26",
+        "completion": "2025-02-27",
+        "updated": "2025-07-20"
+      },
+      {
+        "nct": "NCT05126953",
+        "title": "2-Hour Dispensing Evaluation of Samfilcon A Lenses With EPG01 Packaging Solution Compared to Commercially Available B+L Ultra Lenses",
+        "status": "COMPLETED",
+        "status_zh": "已完成",
+        "phase": "不適用",
+        "type": "介入型",
+        "conditions": [
+          "Contact Lens Wearer"
+        ],
+        "interventions": [
+          "DEVICE: samfilcon A Lenses with EPG01 Packaging Solution",
+          "DEVICE: Commercially Available B+L Ultra Lenses"
+        ],
+        "sponsor": "Bausch & Lomb Incorporated",
+        "country": "美國",
+        "enroll": 30,
+        "start": "2021-09-21",
+        "completion": "2021-09-23",
+        "updated": "2025-07-20"
+      },
+      {
+        "nct": "NCT06408649",
+        "title": "Post-market Clinical Follow-up Study of Alcon TOTAL30® Contact Lenses (Lehfilcon A)",
+        "status": "TERMINATED",
+        "status_zh": "已終止",
+        "phase": "",
+        "type": "觀察型",
+        "conditions": [
+          "Ametropia",
+          "Myopia",
+          "Hyperopia",
+          "Astigmatism"
+        ],
+        "interventions": [
+          "DEVICE: Lehfilcon A spherical contact lenses",
+          "DEVICE: Lehfilcon A toric contact lenses"
+        ],
+        "sponsor": "Alcon Research",
+        "country": "美國",
+        "enroll": 129,
+        "start": "2024-11-15",
+        "completion": "2025-04-22",
+        "updated": "2025-07-20"
+      },
+      {
+        "nct": "NCT07001306",
+        "title": "Long-term Effects of SCL-wearing on Corneal Neuromediators and Postoperative Rehabilitation After SMILE",
+        "status": "COMPLETED",
+        "status_zh": "已完成",
+        "phase": "",
+        "type": "觀察型",
+        "conditions": [
+          "Contact Lens Complication",
+          "Small Incision Lenticule Extraction"
+        ],
+        "interventions": [],
+        "sponsor": "yuhao shao",
+        "country": "中國",
+        "enroll": 90,
+        "start": "2023-06-01",
+        "completion": "2025-05-20",
+        "updated": "2025-07-20"
+      },
+      {
+        "nct": "NCT06462456",
+        "title": "Post-market Clinical Follow-up Study of Alcon PRECISION1™ Spherical and PRECISION1™ for Astigmatism Soft Contact Lenses",
+        "status": "TERMINATED",
+        "status_zh": "已終止",
+        "phase": "",
+        "type": "觀察型",
+        "conditions": [
+          "Refractive Errors"
+        ],
+        "interventions": [
+          "DEVICE: Verofilcon A spherical soft contact lenses",
+          "DEVICE: Verofilcon A toric soft contact lenses"
+        ],
+        "sponsor": "Alcon Research",
+        "country": "美國",
+        "enroll": 140,
+        "start": "2024-08-30",
+        "completion": "2025-03-11",
+        "updated": "2025-07-20"
+      },
+      {
+        "nct": "NCT07066865",
+        "title": "Evaluation of the Safety and Effectiveness of omniLenz in Patient With Ocular Graft vs Host Disease",
+        "status": "COMPLETED",
+        "status_zh": "已完成",
+        "phase": "不適用",
+        "type": "介入型",
+        "conditions": [
+          "Ocular Graft Versus Host Disease"
+        ],
+        "interventions": [
+          "DEVICE: omniLenz"
+        ],
+        "sponsor": "Farwaniya Hospital",
+        "country": "Kuwait",
+        "enroll": 3,
+        "start": "2022-04-01",
+        "completion": "2024-04-01",
+        "updated": "2025-07-15"
+      },
+      {
+        "nct": "NCT04857723",
+        "title": "Adaptation To and Satisfaction With Contact Lens Wear In Myopic Young Adults",
+        "status": "COMPLETED",
+        "status_zh": "已完成",
+        "phase": "",
+        "type": "介入型",
+        "conditions": [
+          "Myopia"
+        ],
+        "interventions": [
+          "DEVICE: daily disposable contact lens"
+        ],
+        "sponsor": "CooperVision, Inc.",
+        "country": "加拿大",
+        "enroll": 29,
+        "start": "2021-07-22",
+        "completion": "2022-06-04",
+        "updated": "2025-07-14"
+      },
+      {
+        "nct": "NCT05129124",
+        "title": "Insertion Clinical Study to Evaluate the Orientation Characteristics of Multiple Kalifilcon A Daily Disposable Toric LD213001 Contact Lenses",
+        "status": "COMPLETED",
+        "status_zh": "已完成",
+        "phase": "不適用",
+        "type": "介入型",
+        "conditions": [
+          "Astigmatism"
+        ],
+        "interventions": [
+          "DEVICE: kalifilcon A Daily Disposable Toric LD213001 Contact Lenses",
+          "DEVICE: Commercially available Ultra for Astigmatism Contact Lenses"
+        ],
+        "sponsor": "Bausch & Lomb Incorporated",
+        "country": "美國",
+        "enroll": 30,
+        "start": "2021-11-30",
+        "completion": "2022-01-13",
+        "updated": "2025-07-10"
+      },
+      {
+        "nct": "NCT06985875",
+        "title": "Clinical Trial for the Evaluation of Safety and Efficacy of Drop 0.4%",
+        "status": "NOT_YET_RECRUITING",
+        "status_zh": "尚未招募",
+        "phase": "三期",
+        "type": "介入型",
+        "conditions": [
+          "Eye Dryness"
+        ],
+        "interventions": [
+          "DEVICE: Multidose mosturizing solution DROP 0.4%",
+          "DEVICE: Multidose mosturizing solution Avizor Eye Drops 0.2% Preserved"
+        ],
+        "sponsor": "Avizor SA",
+        "country": "",
+        "enroll": 79,
+        "start": "2025-07",
+        "completion": "2025-12-31",
+        "updated": "2025-07-09"
+      },
+      {
+        "nct": "NCT06182358",
+        "title": "Impact of XDEMVY® on Demodex Blepharitis in Soft Contact Lens Wearers",
+        "status": "COMPLETED",
+        "status_zh": "已完成",
+        "phase": "四期",
+        "type": "介入型",
+        "conditions": [
+          "Demodex Blepharitis"
+        ],
+        "interventions": [
+          "DRUG: Lotilaner ophthalmic solution, 0.25%",
+          "DRUG: Vehicle control"
+        ],
+        "sponsor": "Tarsus Pharmaceuticals, Inc.",
+        "country": "美國",
+        "enroll": 145,
+        "start": "2023-12-27",
+        "completion": "2025-01-27",
+        "updated": "2025-07-02"
+      },
+      {
+        "nct": "NCT06069609",
+        "title": "Orientation Characteristics of Daily Disposable Toric Contact Lenses",
+        "status": "COMPLETED",
+        "status_zh": "已完成",
+        "phase": "不適用",
+        "type": "介入型",
+        "conditions": [
+          "Astigmatism"
+        ],
+        "interventions": [
+          "DEVICE: kalifilcon A Daily Disposable Toric",
+          "DEVICE: Acuvue Oasys 1-Day for Astigmatism"
+        ],
+        "sponsor": "Bausch & Lomb Incorporated",
+        "country": "美國",
+        "enroll": 30,
+        "start": "2023-08-11",
+        "completion": "2023-08-15",
+        "updated": "2025-07-01"
+      },
+      {
+        "nct": "NCT05129072",
+        "title": "Insertion Clinical Study to Evaluate the Aberration Characteristics of Kalifilcon A Toric Lenses",
+        "status": "COMPLETED",
+        "status_zh": "已完成",
+        "phase": "不適用",
+        "type": "介入型",
+        "conditions": [
+          "Contact Lens Wearer"
+        ],
+        "interventions": [
+          "DEVICE: kalifilcon A Daily Disposable Toric LD213001 lens in SKUs +6D, +3D, 0D, -3D, -6D, and -9D"
+        ],
+        "sponsor": "Bausch & Lomb Incorporated",
+        "country": "美國",
+        "enroll": 75,
+        "start": "2021-08-25",
+        "completion": "2021-09-24",
+        "updated": "2025-06-24"
+      },
+      {
+        "nct": "NCT06161012",
+        "title": "Evaluation of Delefilcon A and Senofilcon A Daily Disposable Toric Soft Contact Lenses Over Two Weeks of Wear",
+        "status": "COMPLETED",
+        "status_zh": "已完成",
+        "phase": "不適用",
+        "type": "介入型",
+        "conditions": [
+          "Ocular Physiology"
+        ],
+        "interventions": [
+          "DEVICE: Senofilcon A contact lenses (TEST)",
+          "DEVICE: Delefilcon A contact lenses (CONTROL)"
+        ],
+        "sponsor": "Johnson & Johnson Vision Care, Inc.",
+        "country": "美國",
+        "enroll": 67,
+        "start": "2023-11-16",
+        "completion": "2024-02-13",
+        "updated": "2025-06-22"
+      },
+      {
+        "nct": "NCT06493383",
+        "title": "Lotrafilcon B Plano Cosmetic Contact Lenses Study",
+        "status": "WITHDRAWN",
+        "status_zh": "已撤回",
+        "phase": "不適用",
+        "type": "介入型",
+        "conditions": [
+          "Cosmetic Appearance"
+        ],
+        "interventions": [
+          "DEVICE: Lotrafilcon B plano cosmetic contact lenses"
+        ],
+        "sponsor": "Alcon Research",
+        "country": "美國",
+        "enroll": "",
+        "start": "2025-01",
+        "completion": "2026-05",
+        "updated": "2025-06-12"
+      },
+      {
+        "nct": "NCT06517316",
+        "title": "Cosmetic Contact Lenses Post-Market Clinical Follow-up Study",
+        "status": "WITHDRAWN",
+        "status_zh": "已撤回",
+        "phase": "不適用",
+        "type": "介入型",
+        "conditions": [
+          "Cosmetic Appearance"
+        ],
+        "interventions": [
+          "DEVICE: Nelfilcon A plano cosmetic contact lenses"
+        ],
+        "sponsor": "Alcon Research",
+        "country": "美國",
+        "enroll": "",
+        "start": "2025-01",
+        "completion": "2026-03",
+        "updated": "2025-06-12"
+      }
+    ],
     "lens": [
       {
         "nct": "NCT00344331",
