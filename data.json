@@ -1,8 +1,20 @@
 {
-  "updated": "2026-09-05 22:31 UTC",
+  "updated": "2026-09-06 22:36 UTC",
   "source": "PubMed(NCBI)+ Europe PMC;不限年份(相關性/高被引跨年代);中文為免費自動翻譯",
   "items": {
     "myopia": [
+      {
+        "title": "Comparative Evaluation of the Efficacy, Safety, and Corneal Dynamics of Overnight Orthokeratology in Teenagers and Adults With Myopia: A Prospective, Open-Label Study in Taiwan.",
+        "journal": "J Ophthalmol",
+        "date": "2026",
+        "pmid": "42699018",
+        "summary": "These findings suggest that orthokeratology is an effective option for temporary correction of low-to-moderate myopia in both teenagers and adults. Within the limitations of the sample size, orthokeratology may be considered a safe and effective myopia correction option for adults.",
+        "abstract": "BACKGROUND: Myopia is a global public health concern, and its prevalence has been increasing year by year worldwide. Orthokeratology uses gas-permeable contact lenses to reshape the corneal contour and correct low-to-moderate myopia. Orthokeratology has also been shown to reduce myopia progression in children. For adults, ortho-K lenses remain a viable option for myopia correction; however, their usage rate is relatively low due to maintenance difficulties and safety concerns. To date, few studies have compared the efficacy, safety, and corneal dynamics of ortho-K use between teenagers and adults. METHODS: Subjects with myopia of either sex aged between 12 and 65 years were enrolled in this prospective open-label study. The subjects were fitted with Progressive Boston Orthokeratology Shaping Lenses for overnight wear and were instructed to wear (before going to sleep) the lenses for > 7 ",
+        "country": "台灣",
+        "ptype": "",
+        "zh": "",
+        "zh_sum": ""
+      },
       {
         "title": "Changes in horizontal and vertical peripheral refraction and their predictive value for myopia control after orthokeratology: a 2-year prospective study.",
         "journal": "Front Med (Lausanne)",
@@ -527,18 +539,6 @@
         "summary": "",
         "abstract": "",
         "country": "",
-        "ptype": "",
-        "zh": "",
-        "zh_sum": ""
-      },
-      {
-        "title": "Effects of Morning and Evening Narrowband Blue Light and Myopic Defocus on Axial Length in Humans.",
-        "journal": "Curr Eye Res",
-        "date": "2026",
-        "pmid": "42572912",
-        "summary": "The short-term narrowband blue light exposure led to a significant decrease in axial length in the morning than evening exposure, with a likely influence on the daily variation of the morning-evening difference in axial length. …",
-        "abstract": "PURPOSE: To investigate the effects of morning and evening narrowband blue light exposure on axial length, and to examine the short-term effect of morning blue light combined with myopic defocus on axial length. METHODS: For objective 1, 18 individuals underwent 60 minutes of narrowband blue light exposure (460 nm) in the morning (9:00-11:00 AM) and evening (5:00-7:00 PM) of the same day. The axial length values were normalized to the average of the morning and evening axial length values. For objective 2, 27 young adults were exposed to 60 minutes of narrowband blue light while wearing a + 3.00 D lens over the right eye. Broadband white light was the control condition in both experiments. Axial length was measured using Lenstar LS900. RESULTS: In the first objective, a significant reduction in axial length was observed after exposure to morning blue light compared to evening blue light ",
-        "country": "印度",
         "ptype": "",
         "zh": "",
         "zh_sum": ""
@@ -1446,6 +1446,18 @@
     ],
     "contactlens": [
       {
+        "title": "Effect of a modified soft contact lens combined with a noncontact wide-angle viewing system during vitrectomy.",
+        "journal": "Medicine (Baltimore)",
+        "date": "2026",
+        "pmid": "42700088",
+        "summary": "MSCL use effectively protects the cornea and improves intraoperative visualization during vitrectomy without adversely affecting postoperative ocular surface comfort.",
+        "abstract": "BACKGROUND: To evaluate the efficacy of a modified soft contact lens (MSCL) in maintaining intraoperative visual clarity and protecting the cornea during vitrectomy using a noncontact wide-angle viewing system. METHODS: Patients undergoing pars plana vitrectomy were randomly assigned to a balanced salt solution (BSS) group or an MSCL group. All surgeries were performed with a noncontact wide-angle viewing system. In the BSS group, the cornea was intermittently irrigated with BSS, whereas an MSCL was applied throughout surgery in the MSCL group. Surgical time, vitrectomy duration, intraoperative visual clarity, and frequency of corneal irrigation were recorded. Corneal epithelial edema, fluorescein staining, tear film breakup time, and central corneal thickness were assessed preoperatively and at 1 day, 1 week, and 1 month postoperatively. Ocular Surface Disease Index scores were evaluate",
+        "country": "中國",
+        "ptype": "隨機對照試驗(RCT)",
+        "zh": "",
+        "zh_sum": ""
+      },
+      {
         "title": "The Dry Eye dAily Life (DEAL) Questionnaire: Psychometric Validation of a New Instrument for Measuring the Impact of Dry Eye on Daily Life and Patient Satisfaction While Using Eye Drops.",
         "journal": "Clin Ophthalmol",
         "date": "2026",
@@ -1922,7 +1934,7 @@
         "abstract": "PURPOSE: To evaluate the effect of a low-molecular weight hyaluronic acid derivative (HAD), incorporated into a multipurpose disinfecting solution (MPS), on symptoms and signs of comfort during contact lens wear. METHODS: Contact lens wearers with dry eye symptoms (CLDEQ-8 ≥ 12) were enrolled across three clinical trials. Participants wore comfilcon A contact lenses and used cleadew MPS with or without HAD for eight weeks, with monthly lens replacement. The first trial compared HAD-containing MPS with habitual lens care, the second compared non-HAD MPS (containing identical excipients) with habitual care, and the third directly compared HAD and non-HAD MPS. Follow-up assessments included CLDEQ-8, tear meniscus height, non-invasive tear break-up time (NITBUT), meibomian gland morphology, lipid layer thickness (LLT), tear volume (phenol red thread test), and ocular surface health assessed ",
         "country": "澳洲",
         "ptype": "",
-        "zh": "",
+        "zh": "含有玻尿酸的隱形眼鏡消毒液可以提高隱形眼鏡的舒適度。",
         "zh_sum": ""
       },
       {
@@ -1971,18 +1983,6 @@
         "country": "澳洲",
         "ptype": "文獻回顧",
         "zh": "隱形眼鏡領域的當代研究問題以及下一步研究方向？",
-        "zh_sum": ""
-      },
-      {
-        "title": "Advances in loading-release-repair strategies of hydrogels for anterior segment disease therapy.",
-        "journal": "Front Immunol",
-        "date": "2026",
-        "pmid": "42483199",
-        "summary": "Anterior segment (AS) diseases are a major group of ocular disorders that impair ocular surface homeostasis, optical transparency, aqueous humor circulation, and postoperative visual quality, including Dry Eye Disease (DED), corneal injury, Infectious Keratitis (IK), uveitis, glaucoma, and Posterior Capsule Opacification (PCO). …",
-        "abstract": "Anterior segment (AS) diseases are a major group of ocular disorders that impair ocular surface homeostasis, optical transparency, aqueous humor circulation, and postoperative visual quality, including Dry Eye Disease (DED), corneal injury, Infectious Keratitis (IK), uveitis, glaucoma, and Posterior Capsule Opacification (PCO). The therapeutic goal of these diseases extends beyond symptom relief toward the establishment of integrated treatment systems capable of overcoming complex ocular barriers and actively regulating the pathological immune microenvironment and inflammatory cascades through efficient drug loading, controlled release, and tissue repair. However, conventional ophthalmic formulations such as eye drops and ointments remain limited by tear dilution, blinking clearance, nasolacrimal drainage, corneal epithelial barriers, restriction by the Blood-Aqueous Barrier (BAB), and p",
-        "country": "中國",
-        "ptype": "文獻回顧",
-        "zh": "用於眼前節疾病治療的水凝膠負載-釋放-修復策略的進展。",
         "zh_sum": ""
       },
       {
@@ -2250,6 +2250,18 @@
         "zh_sum": ""
       },
       {
+        "title": "Childhood and lifetime risk comparison of myopia control with contact lenses.",
+        "journal": "Cont Lens Anterior Eye",
+        "date": "2020",
+        "pmid": "31796370",
+        "summary": "The comparative lifetime risks of contact lens wear commenced at age 8 for myopia control are less than the lifetime risks of vision impairment with myopia more than 6D or axial length more than 26 mm. …",
+        "abstract": "PURPOSE: The relative risks of ocular pathology with increasing myopia have been described; the absolute lifetime risk of vision impairment from myopia is yet to be compared to the childhood and lifetime risks of contact lens wear for myopia control. METHODS: Using peer-reviewed data, the absolute risks of microbial keratitis (MK) in daily disposable soft, reusable soft and orthokeratology contact lens (CL) wear were calculated over both a childhood (age 8-18) and a lifetime (age 8-65) of CL wear. This was compared to the previously published cumulative risk of vision impairment by age 75 based on increasing myopia and axial length. Data were converted utilizing the Council of International Organizations of Medical Sciences (CIOMS) classification system for frequency of adverse events, with 95 % confidence intervals included. RESULTS: The lifetime risk of vision impairment in axial lengt",
+        "country": "澳洲",
+        "ptype": "比較性研究",
+        "zh": "",
+        "zh_sum": ""
+      },
+      {
         "title": "Non-contact lens related",
         "journal": "Indian J Ophthalmol",
         "date": "2017",
@@ -2282,18 +2294,6 @@
         "abstract": "SIGNIFICANCE: This study investigated the development of an antimicrobial coating on silicone hydrogel contact lenses that may have the capacity to reduce contact lens-related infection and inflammatory events. PURPOSE: The purpose of this study was to develop an effective antimicrobial coating for silicone hydrogel contact lenses by attachment of Mel4 peptide. METHODS: Lotrafilcon A, comfilcon A, somofilcon A, senofilcon A, and lotrafilcon B silicone hydrogel contact lenses were plasma coated with acrylic acid followed by Mel4 antimicrobial peptide immobilization by covalent coupling. Peptide immobilization was quantified by x-ray electron spectroscopy. Contact lens diameter, base curve, center thickness, and lens surface wettability were measured by captive-bubble contact-angle technique. Antimicrobial activity of the lenses was determined against Pseudomonas aeruginosa and Staphylococ",
         "country": "荷蘭",
         "ptype": "",
-        "zh": "",
-        "zh_sum": ""
-      },
-      {
-        "title": "Childhood and lifetime risk comparison of myopia control with contact lenses.",
-        "journal": "Cont Lens Anterior Eye",
-        "date": "2020",
-        "pmid": "31796370",
-        "summary": "The comparative lifetime risks of contact lens wear commenced at age 8 for myopia control are less than the lifetime risks of vision impairment with myopia more than 6D or axial length more than 26 mm. …",
-        "abstract": "PURPOSE: The relative risks of ocular pathology with increasing myopia have been described; the absolute lifetime risk of vision impairment from myopia is yet to be compared to the childhood and lifetime risks of contact lens wear for myopia control. METHODS: Using peer-reviewed data, the absolute risks of microbial keratitis (MK) in daily disposable soft, reusable soft and orthokeratology contact lens (CL) wear were calculated over both a childhood (age 8-18) and a lifetime (age 8-65) of CL wear. This was compared to the previously published cumulative risk of vision impairment by age 75 based on increasing myopia and axial length. Data were converted utilizing the Council of International Organizations of Medical Sciences (CIOMS) classification system for frequency of adverse events, with 95 % confidence intervals included. RESULTS: The lifetime risk of vision impairment in axial lengt",
-        "country": "澳洲",
-        "ptype": "比較性研究",
         "zh": "",
         "zh_sum": ""
       },
@@ -2586,18 +2586,6 @@
         "zh_sum": ""
       },
       {
-        "title": "Contact lens hydrophobicity and roughness effects on bacterial adhesion.",
-        "journal": "Optom Vis Sci",
-        "date": "2010",
-        "pmid": "20375748",
-        "summary": "Our results suggest that more hydrophobic CLs are more prone to S. epidermidis adhesion. Although the Ra appears to be related to S. epidermidis adhesion, the influence of Rku and Rsk on this variable remains unclear.",
-        "abstract": "PURPOSE: This study was designed to assess whether hydrogel contact lens (CL) surface hydrophobicity and roughness affect Staphylococcus epidermidis adhesion. METHODS: Bacterial adhesion experiments were performed on two unworn silicone hydrogel and three unworn conventional hydrogel CLs using the S.epidermidis strain CECT 4184. Microbial colonization was assessed by conducting counts expressed as colony-forming units. CL hydrophobicity was determined through water contact angle measurements and the roughness parameters such as mean surface roughness (Ra), kurtosis (Rku), and skewness (Rsk) were determined through atomic force microscopy in Tapping Mode. RESULTS: The conventional CLs showed similar water contact angles (p > 0.05) and were classified as hydrophilic. The silicone hydrogel CLs yielded hydrophobic contact angles with no significant differences between them (p > 0.05). The le",
-        "country": "西班牙",
-        "ptype": "",
-        "zh": "隱形眼鏡的疏水性和粗糙度對細菌黏附的影響。",
-        "zh_sum": ""
-      },
-      {
         "title": "Soft contact lens surface profile by atomic force microscopy.",
         "journal": "Optom Vis Sci",
         "date": "2010",
@@ -2607,6 +2595,18 @@
         "country": "西班牙",
         "ptype": "",
         "zh": "透過原子力顯微鏡觀察軟隱形眼鏡表面輪廓。",
+        "zh_sum": ""
+      },
+      {
+        "title": "Contact lens hydrophobicity and roughness effects on bacterial adhesion.",
+        "journal": "Optom Vis Sci",
+        "date": "2010",
+        "pmid": "20375748",
+        "summary": "Our results suggest that more hydrophobic CLs are more prone to S. epidermidis adhesion. Although the Ra appears to be related to S. epidermidis adhesion, the influence of Rku and Rsk on this variable remains unclear.",
+        "abstract": "PURPOSE: This study was designed to assess whether hydrogel contact lens (CL) surface hydrophobicity and roughness affect Staphylococcus epidermidis adhesion. METHODS: Bacterial adhesion experiments were performed on two unworn silicone hydrogel and three unworn conventional hydrogel CLs using the S.epidermidis strain CECT 4184. Microbial colonization was assessed by conducting counts expressed as colony-forming units. CL hydrophobicity was determined through water contact angle measurements and the roughness parameters such as mean surface roughness (Ra), kurtosis (Rku), and skewness (Rsk) were determined through atomic force microscopy in Tapping Mode. RESULTS: The conventional CLs showed similar water contact angles (p > 0.05) and were classified as hydrophilic. The silicone hydrogel CLs yielded hydrophobic contact angles with no significant differences between them (p > 0.05). The le",
+        "country": "西班牙",
+        "ptype": "",
+        "zh": "隱形眼鏡的疏水性和粗糙度對細菌黏附的影響。",
         "zh_sum": ""
       },
       {
@@ -2888,6 +2888,114 @@
     ],
     "lens": [
       {
+        "title": "Correlation Between Quantitative Contrast Sensitivity Function and Spherical Equivalent Under Uncorrected and Corrected Conditions in Children with Ametropia.",
+        "journal": "Clin Ophthalmol",
+        "date": "2026",
+        "pmid": "42701794",
+        "summary": "In children without myopia, uncorrected qCSF closely matched the corrected results supporting its use for screening, whereas in children with myopia, the difference between uncorrected and corrected qCSF increased linearly with the degree of myopia. …",
+        "abstract": "BACKGROUND: This study investigated the correlation between quantitative contrast sensitivity function (qCSF) and spherical equivalent (SE) under uncorrected and corrected conditions in children with ametropia. METHODS: All participants completed comprehensive ophthalmic evaluations, including manifest refraction and qCSF testing performed under uncorrected and corrected visual acuity conditions. The qCSF parameters included the area under the log contrast sensitivity function (AULCSF), contrast sensitivity function acuity, and contrast sensitivity at spatial frequencies of 1.0-18.0 cycles per degree (cpd). The analysis was stratified by age and SE. RESULTS: A total of 114 eyes from 57 children (29 boys and 28 girls; mean age: 8.56 ± 2.09 years) were included. The mean SE was -0.60 ± 1.04 D (range: -3.125 to +3 D). In children with myopia, the qCSF results were significantly better after",
+        "country": "中國",
+        "ptype": "",
+        "zh": "",
+        "zh_sum": ""
+      },
+      {
+        "title": "Exploratory Pilot Study on the Tolerability and Ocular Surface Effects of Liposomal Ozonated Oil Compared with Standard Prophylaxis in Cataract Surgery. The CAREST Study.",
+        "journal": "Clin Ophthalmol",
+        "date": "2026",
+        "pmid": "42701626",
+        "summary": "Liposomal ozonated oil was well tolerated and showed comparable clinical outcomes to standard prophylaxis following cataract surgery. The findings of this pilot study suggest potential benefits for ocular surface outcomes that warrant confirmation in adequately powered studies with larger sample sizes and longer follow-up. …",
+        "abstract": "PURPOSE: To obtain preliminary data on the tolerability and ocular surface outcomes of liposomal ozonated oil compared with standard prophylaxis in cataract surgery. PATIENTS AND METHODS: This open-label, prospective, contralateral-eye controlled pilot study included 60 eyes from 33 adult patients undergoing bilateral cataract surgery. For each patient, one eye was treated with liposomal ozonated oil (one drop, four times daily) from 3 days before surgery until 21 days postoperatively, while the contralateral eye received standard treatment. The study outcomes included treatment tolerability, postoperative infectious complications, ocular signs and symptoms, Tear Break-Up Time (TBUT), Ocular Surface Disease Index (OSDI), visual acuity, anterior chamber reaction (Tyndall effect), and patient-reported discomfort. Assessments were performed at postoperative day 21, with exploratory follow-u",
+        "country": "西班牙",
+        "ptype": "",
+        "zh": "",
+        "zh_sum": ""
+      },
+      {
+        "title": "Associations of Cone Density and Choroidal Thickness with Age: A Cross-Sectional Study.",
+        "journal": "Ophthalmol Sci",
+        "date": "2026",
+        "pmid": "42701357",
+        "summary": "The cones showed significant correlation with the choroid and age. Reduced choroidal thickness and older age were associated with lower cone density, highlighting the interdependent aging of vascular and structural parameters in age-related visual impairment.",
+        "abstract": "PURPOSE: To investigate the interrelationships among choroidal blood supply, photoreceptor structure, and visual function during normal aging using OCT and adaptive optics (AO). DESIGN: A cross-sectional study. SUBJECTS: A total of 68 participants aged 20-70 years were included in this study. METHODS: All enrolled participants underwent a complete ophthalmological examination, including best-corrected visual acuity, axial length, OCT, and AO fundus photography. Photoreceptor images captured by AO imaging were used to calculate the cone density. A choroidal thickness map was obtained from OCT images using a custom algorithm. MAIN OUTCOME MEASURES: Detailed analysis was performed for the differences and correlations among cone density, choroidal thickness, and age. RESULTS: Compared with group 1 (G1, aged 20-34 years), the cone densities of group 3 (G3, aged 50-64 years) and group 4 (G4, a",
+        "country": "中國",
+        "ptype": "",
+        "zh": "",
+        "zh_sum": ""
+      },
+      {
+        "title": "Neonatal Oculomotor, Optomotor, Vestibulo-ocular, Protective Blink, and Pupillary Light Reflexes Following Perinatal Brain Trauma: Implications for Early Visual Rehabilitation in Mild Traumatic Brain Injury and Concussion.",
+        "journal": "J Child Neurol",
+        "date": "2026",
+        "pmid": "42701326",
+        "summary": "Perinatal brain trauma, including hypoxic-ischemic encephalopathy and mechanical injury during pregnancy, labor, or delivery, represents an early-acquired brain injury that disrupts the identical subcortical, brainstem, cerebellar, and emerging cortical visual, oculomotor, and vestibulo-ocular pathways commonly impaired in mild traumatic  …",
+        "abstract": "Perinatal brain trauma, including hypoxic-ischemic encephalopathy and mechanical injury during pregnancy, labor, or delivery, represents an early-acquired brain injury that disrupts the identical subcortical, brainstem, cerebellar, and emerging cortical visual, oculomotor, and vestibulo-ocular pathways commonly impaired in mild traumatic brain injury (mTBI) or concussion. This topical review examines five key neonatal reflexes: optomotor (optokinetic nystagmus [OKN], head-turning, fix-and-follow), oculomotor (reflexive saccades, doll's eye), vestibulo-ocular (VOR), pupillary light (PLR including relative afferent pupillary defect and alpha-omega pupil), and protective blink reflexes, as rapid, non-invasive biomarkers of pathway integrity in newborns. These hardwired reflexes, robust at birth but cortically refined by 3-6 months, are highly vulnerable to perinatal trauma; their absence, a",
+        "country": "美國",
+        "ptype": "文獻回顧",
+        "zh": "",
+        "zh_sum": ""
+      },
+      {
+        "title": "Redefining Fibrinogen Self-Assembly at the Air-Water Interface: An Intriguing Story with Multiple Layers.",
+        "journal": "J Am Chem Soc",
+        "date": "2026",
+        "pmid": "42701242",
+        "summary": "Layer-by-layer self-assembled structures of the blood-clotting glycoprotein fibrinogen have been resolved at a fluid interface using neutron reflectometry and complementary techniques to reveal an unexpected mechanism that contradicts a long-established adsorption model. …",
+        "abstract": "Layer-by-layer self-assembled structures of the blood-clotting glycoprotein fibrinogen have been resolved at a fluid interface using neutron reflectometry and complementary techniques to reveal an unexpected mechanism that contradicts a long-established adsorption model. The widely accepted monolayer tilt model, inferred over two decades ago from ellipsometry data, involves progressive tilting of a monolayer of fibrinogen molecules from parallel with the interface with increasing interfacial coverage until, at saturation, the molecules adopt a more vertical conformation. Our new structural framework is fundamentally different in that fibrinogen is shown unequivocally to orient parallel with the interface in multiple discrete layers, and, with increasing bulk concentration, there is enhanced layer thickness, greater coverage of the submerged layers and, in cases, the presence of additiona",
+        "country": "",
+        "ptype": "",
+        "zh": "",
+        "zh_sum": ""
+      },
+      {
+        "title": "A half century of research in amblyopia - A psychophysicist's (very) personal perspective.",
+        "journal": "Vision Res",
+        "date": "2026",
+        "pmid": "42701080",
+        "summary": "Amblyopia is, aside from refractive error, the largest cause of vision loss in infants and young children. It also provides a window into the effects of atypical visual development. …",
+        "abstract": "Amblyopia is, aside from refractive error, the largest cause of vision loss in infants and young children. It also provides a window into the effects of atypical visual development. This article traces my decades long interest in trying to understand amblyopia from the perspective of a psychophysicist, outlining some of the key questions and findings and the factors that made my journey possible. It's been quite a journey!",
+        "country": "美國",
+        "ptype": "",
+        "zh": "",
+        "zh_sum": ""
+      },
+      {
+        "title": "The effect of overnight corneal refractive therapy (CRT) lenses on vision and corneal curvature in Chinese myopes: A prospective, multi-Centre study.",
+        "journal": "Cont Lens Anterior Eye",
+        "date": "2026",
+        "pmid": "42700627",
+        "summary": "The CRT® orthokeratology lenses are able to temporarily flatten the cornea during overnight wear, temporarily correct myopia, and effectively improve UDVA after lens removal in a large proportion of predominantly paediatric Chinese eyes.",
+        "abstract": "PURPOSE: To evaluate the effects of orthokeratology lenses (Paragon CRT® 100 [CRT 100] and CRT Dual Axis® [CRT-E], Paragon Vision Sciences, a CooperVision company) on vision and corneal curvature in myopic Chinese children and adults. METHODS: This was a 12-month, multi-centre, bilateral-dispensing, single-arm clinical trial. Subjects were eligible for enrolment if both eyes had -0.50 to -4.00 DS, up to -1.50 DC, and no corneal abnormality. Uncorrected distance visual acuity (UDVA), manifest refraction spherical equivalent (MRSE), and corneal curvature were assessed at baseline and at follow-up visits after lens-wear periods of 1 day, 1 week, 2 weeks, and 1, 3, 6, 9, and 12 months. RESULTS: Four sites in China enrolled 254 subjects aged 8 to 43 years (median: 11 years). Data were collected from both eyes of all subjects. Mean UDVA and MRSE were significantly improved compared to baseline",
+        "country": "中國",
+        "ptype": "",
+        "zh": "",
+        "zh_sum": ""
+      },
+      {
+        "title": "Consensus on Diagnostic Criteria, Clinical Symptoms, and Risk Factors for Visual Fatigue: A Modified Delphi Study.",
+        "journal": "Ophthalmol Ther",
+        "date": "2026",
+        "pmid": "42700358",
+        "summary": "This consensus provides a foundational framework for addressing the growing global burden of visual fatigue by defining it as a distinct functional disease and providing a structured diagnostic framework and a stepwise management approach. It offers a foundation for the global standard of care for visual fatigue.",
+        "abstract": "INTRODUCTION: Visual fatigue is becoming increasingly prevalent globally, while universally accepted definitions and standardized diagnostic criteria remain lacking. This study aims to develop consensus-based recommendations on the definition, diagnostic criteria, core symptoms, risk factors, and assessment of visual fatigue, using a modified Delphi process to support standardized clinical and epidemiologic practice. METHODS: A modified Delphi process was conducted with an international panel of experts in optometry, ophthalmology, and related disciplines. Two rounds of questionnaires were used to generate candidate definitions, diagnostic criteria, symptoms, risk factors, assessment methods and management principles. A subsequent hybrid meeting was held to discuss unresolved items and consolidate the final recommendations. RESULTS: Of 20 experts invited, 14 participated in the panel (re",
+        "country": "中國",
+        "ptype": "",
+        "zh": "",
+        "zh_sum": ""
+      },
+      {
+        "title": "Clinical Validation of a Comprehensive Vision Screener for Assessing Visual Fitness for Drivers in Mumbai, India.",
+        "journal": "Clin Optom (Auckl)",
+        "date": "2026",
+        "pmid": "42699719",
+        "summary": "The portable vision screener demonstrated high accuracy and strong agreement with standard clinical tests for visual functional tests. It enables rapid, comprehensive assessment of visual functions, making it a practical tool for large-scale vision screening in OHCs or mobile eye screening camps.",
+        "abstract": "PURPOSE: To determine the agreement of an all-in-one portable vision screener (VS) with a standard battery of optometrist-administered tests. The purpose is to understand the feasibility of rapid screening for visual functions before providing occupational visual fitness. PATIENTS AND METHODS: A Prospective cross-sectional study was performed among licensed public transport drivers at community eye camps in Mumbai. Distance and near vision, contrast sensitivity (CS), stereopsis, colour vision (CV), and peripheral visual field were assessed using standard tests, including the LogMAR, Titmus Fly, Ishihara, and confrontation test, respectively. The same assessments were repeated using an all-in-one portable screener (VS). The total testing time was recorded for each test. Receiver Operating Characteristic (ROC) curves and Bland-Altman plots were used for statistical analyses. RESULTS: A tot",
+        "country": "印度",
+        "ptype": "",
+        "zh": "",
+        "zh_sum": ""
+      },
+      {
         "title": "Cumulative Loss of Inner Retinal Neurons in Healthy and Glaucoma Subjects.",
         "journal": "Invest Ophthalmol Vis Sci",
         "date": "2026",
@@ -3152,18 +3260,6 @@
         "zh_sum": ""
       },
       {
-        "title": "Tear proteomic atlas of local host-response states in herpes simplex keratitis.",
-        "journal": "Ocul Surf",
-        "date": "2026",
-        "pmid": "42679892",
-        "summary": "This comprehensive tear proteomic atlas provides a molecular resource for investigating local host-response heterogeneity in HSK and prioritizes candidate tear markers for future prospective and independent validation.",
-        "abstract": "PURPOSE: Herpes simplex keratitis (HSK) is a leading cause of infectious corneal blindness, yet local host-response programs underlying active disease, recurrence, and stromal involvement remain incompletely understood. This study aimed to establish a deep tear proteomic atlas of HSK and characterize phenotype-associated local host-response states. METHODS: Data-independent acquisition mass spectrometry was used to profile tear proteins from HSK-affected eyes (n=20), contralateral unaffected eyes (n=12), and healthy control eyes (n=25). Differential abundance testing, co-expression network analysis, functional enrichment, and exploratory analyses of recurrence status and clinical phenotypes were performed. Bootstrap LASSO prioritized candidate tear host-response signatures, and cross-omic concordance was examined using an independent RNA-seq dataset. RESULTS: We quantified 4,656 proteins",
-        "country": "中國",
-        "ptype": "",
-        "zh": "",
-        "zh_sum": ""
-      },
-      {
         "title": "Opportunities and Challenges of Implementing Solar-Powered Digital Health in Low-Resource Settings: A Mixed-Methods Study.",
         "journal": "Inquiry",
         "date": "2026",
@@ -3328,102 +3424,6 @@
         "abstract": "TOPIC: To evaluate the visual and refractive outcomes of corneal refractive surgery (PRK, LASIK, and SMILE) for hyperopic and mixed astigmatism. The clinical question addressed was: in adults with hyperopic or mixed astigmatism, how effective and safe are modern corneal refractive procedures, without alternative surgical comparators, in reducing refractive cylinder and improving uncorrected distance visual acuity? CLINICAL RELEVANCE: Hyperopic and mixed astigmatism are less predictable to correct than myopic errors due to biomechanical and ablation-profile complexity. Historically, these treatments showed higher regression and retreatment rates. With advances in excimer and femtosecond platforms, updated evidence is needed to inform clinical decision-making and patient counseling regarding expected efficacy, predictability, and safety. METHODS: A systematic review and meta-analysis were ",
         "country": "西班牙",
         "ptype": "文獻回顧",
-        "zh": "",
-        "zh_sum": ""
-      },
-      {
-        "title": "Discriminative Abilities of Macular and Retinal Nerve Fiber Layer Thickness in Multiple Sclerosis and Optic Neuritis.",
-        "journal": "J Curr Ophthalmol",
-        "date": "2026",
-        "pmid": "42667073",
-        "summary": "RNFL thinning is a robust structural biomarker for MS and prior ON, whereas average macular thickness has limited standalone diagnostic utility for ON, though specific outer macular sectors show moderate discriminative value.",
-        "abstract": "PURPOSE: To determine the discriminative abilities of macular and retinal nerve fiber layer (RNFL) thicknesses in multiple sclerosis (MS) from normal and to identify optic neuritis (ON) in MS patients. METHODS: This cross-sectional case-control study included 133 participants aged 30-45 years: 66 definite MS patients (18 with ON) and 67 age- and sex-matched healthy controls. MS diagnosis was established ≥5 years before enrollment. Exclusion criteria were other neurological/retinal diseases, high refractive error (> ±6.00 diopter), media opacities, glaucoma, or intraocular surgery. All underwent spectral-domain optical coherence tomography (Cirrus High-Definition Optical Coherence Tomography) under pharmacologic mydriasis to measure RNFL and macular thicknesses. RESULTS: MS patients without ON showed significantly reduced macular thickness in inner superior, outer inferior, outer superior",
-        "country": "伊朗",
-        "ptype": "",
-        "zh": "",
-        "zh_sum": ""
-      },
-      {
-        "title": "Correction: Acute retinal necrosis presenting exudative retinal detachment: a case report.",
-        "journal": "Front Med (Lausanne)",
-        "date": "2026",
-        "pmid": "42666725",
-        "summary": "[This corrects the article DOI: 10.3389/fmed.2026.1746774.].",
-        "abstract": "[This corrects the article DOI: 10.3389/fmed.2026.1746774.].",
-        "country": "中國",
-        "ptype": "",
-        "zh": "",
-        "zh_sum": ""
-      },
-      {
-        "title": "A practical starting guide to tear fluid biobanking.",
-        "journal": "Adv Ophthalmol Pract Res",
-        "date": "2026",
-        "pmid": "42666517",
-        "summary": "By providing clear and practical guidance, this review supports the standardization of tear fluid biobanking, thereby enhancing the value of these samples for future research and clinical applications.",
-        "abstract": "BACKGROUND: Tear fluid is increasingly recognized as a minimally invasive source of biomarkers in various diseases with broad potential for diagnostics and disease monitoring. Biobanking tear fluid samples provides valuable access to high-quality biological samples while reducing the need for new collection efforts. Ensuring appropriate collection and storage conditions is critical for maintaining sample integrity. However, standardized guidelines and operating protocols for tear fluid biobanking are still lacking. MAIN TEXT: This review synthesizes existing literature on tear fluid biobanking, complemented by additional sources such as reports and online guidelines on biobanking standards and recommendations. Together, these insights provide a practical guide for researchers and institutions aiming to establish a tear fluid biobank or integrate tear fluid samples into existing biobankin",
-        "country": "荷蘭",
-        "ptype": "文獻回顧",
-        "zh": "",
-        "zh_sum": ""
-      },
-      {
-        "title": "MIDAS: A multimodal interview-based framework for depression assessment from clinical interviews.",
-        "journal": "Acta Psychol (Amst)",
-        "date": "2026",
-        "pmid": "42664926",
-        "summary": "Automated depression assessment from clinical interviews is a challenging intelligent healthcare task because depressive states are reflected not only in verbal responses, but also in acoustic and visual-behavioral cues. …",
-        "abstract": "Automated depression assessment from clinical interviews is a challenging intelligent healthcare task because depressive states are reflected not only in verbal responses, but also in acoustic and visual-behavioral cues. Existing multimodal methods have improved prediction performance, but many still process interviews as generic long sequences and provide limited structured evidence for interpreting model outputs. This paper presents MIDAS, an interview-aware multimodal framework that preserves the question-response structure of clinical interviews for depression assessment. MIDAS organizes interviews into question-response pairs to preserve the interaction structure of clinical interviews, and integrates linguistic, acoustic, and visual-behavioral representations through gated multimodal fusion and shared large language model-based contextual modeling. The framework jointly supports de",
-        "country": "中國",
-        "ptype": "",
-        "zh": "",
-        "zh_sum": ""
-      },
-      {
-        "title": "Sprint Mechanics Differ Between Pre-injury and Return-to-Sport After Hamstring Strain Injury: A Comparative Statistical Analysis with Machine Learning.",
-        "journal": "Med Sci Sports Exerc",
-        "date": "2026",
-        "pmid": "42663402",
-        "summary": "Collegiate football players showed reduced horizontal acceleration upon RTS following HSI, most evident during initial swing. Augmented ML models accurately distinguished conditions, with thigh and pelvis features most influential. These findings highlight the potential of IMU-based interpretable ML to support RTS decisions.",
-        "abstract": "PURPOSE: To compare horizontal and vertical accelerations of lower limbs and pelvis during sprinting in collegiate football players between pre-injury (baseline) and return-to-sport (RTS) following hamstring strain injury (HSI). METHODS: This secondary analysis used inertial measurement unit (IMU) data from 14 NCAA Division I athletes enrolled in the Hamstring Injury (HAMIR) study, collected during on-field sprinting under both conditions. Statistical parametric mapping (SPM) was applied to detect between-condition acceleration differences, and supervised ML models with data augmentation were used to classify conditions. Model-intrinsic interpretability was used to quantify feature contributions to predictions. RESULTS: Exploratory SPM analyses indicated that the healthy limb showed the most pronounced differences in horizontal thigh and shank acceleration during initial swing at RTS, wh",
-        "country": "澳洲",
-        "ptype": "",
-        "zh": "",
-        "zh_sum": ""
-      },
-      {
-        "title": "Safety and Efficacy of Optimal Keratoplasty in Reduction of Hyperopia and Hyperopic Presbyopia: A Retrospective Observational Study.",
-        "journal": "Clin Ophthalmol",
-        "date": "2026",
-        "pmid": "42662486",
-        "summary": "Optimal keratoplasty appears to be safe and efficacious for improving both UDVA and UNVA in eyes with hyperopic presbyopia, The procedure is noninvasive, simple, rapid, comfortable and repeatable. UDVA improvement is long lasting (2 years or more), although UNVA improvement is temporary. …",
-        "abstract": "PURPOSE: To evaluate the safety and efficacy of the VIS Optimal Keratoplasty device and procedure for treating eyes with hyperopia and hyperopic presbyopia to achieve uncorrected distance visual acuity (UDVA) and uncorrected near visual acuity (UNVA) improvements. SETTING: Bahamas Vision Centre, Nassau, New Providence, The Bahamas. METHODS: 114 eyes of 57 patients with low to moderate hyperopic presbyopia (MRSE = 0.88 to 3.25 D; mean add ± standard deviation (SD) = 2.08 ± 0.43 D) received primary treatments (Txs) by the VIS NTK Optimal Keratoplasty device; 44 and 22 patients also received secondary and ternary Txs, respectively. Patients were treated to produce best UDVA and best UNVA in both eyes using a multifocal vision protocol. Safety and efficacy measures with follow-up (f/u) extending to 24 months post-Tx were analyzed. RESULTS: Safety - There were no clinically significant advers",
-        "country": "",
-        "ptype": "",
-        "zh": "",
-        "zh_sum": ""
-      },
-      {
-        "title": "When trifocal IOLs disappoint: diagnostic and management pathway.",
-        "journal": "Ther Adv Ophthalmol",
-        "date": "2026",
-        "pmid": "42662165",
-        "summary": "Trifocal presbyopia-correcting intraocular lenses (IOLs) are widely used in cataract surgery and refractive lens exchange to expand functional vision across distance, intermediate, and near ranges and to reduce spectacle dependence. …",
-        "abstract": "Trifocal presbyopia-correcting intraocular lenses (IOLs) are widely used in cataract surgery and refractive lens exchange to expand functional vision across distance, intermediate, and near ranges and to reduce spectacle dependence. Despite generally favorable visual outcomes, some patients experience postoperative dissatisfaction related to dysphotopsia, reduced visual quality, or unmet functional expectations. Evidence suggests that, at 1 year, trifocal IOLs show no clear differences versus bifocal IOLs in uncorrected distance or near visual acuity, while uncorrected intermediate acuity may be improved, although certainty is low and reporting of adverse visual phenomena and quality-of-life outcomes is limited. Comparative studies with bifocal and extended depth-of-focus lenses suggest that trifocal IOLs may provide stronger near performance and greater spectacle independence, although ",
-        "country": "伊朗",
-        "ptype": "文獻回顧",
-        "zh": "",
-        "zh_sum": ""
-      },
-      {
-        "title": "Validation of the symptom questionnaire for visual dysfunctions (SQVD): a psychometric analysis within the Nepalese population.",
-        "journal": "Clin Exp Optom",
-        "date": "2026",
-        "pmid": "42661442",
-        "summary": "The Nepali version of SQVD demonstrates robust psychometric properties and good diagnostic performance, supporting its use as a standardised instrument for assessing visual symptoms associated with visual dysfunctions in adult clinical populations in Nepal.",
-        "abstract": "CLINICAL RELEVANCE: Patient-reported visual symptoms provide important information that may not be captured by clinical tests alone. Standardised symptom questionnaires can support the assessment of visual complaints associated with refractive, accommodative, and binocular vision dysfunctions in routine optometric practice. BACKGROUND: Patient-reported symptom questionnaires are valuable instruments for assessing visual symptoms associated with visual dysfunctions; however, cultural and linguistic adaptation is essential to ensure measurement validity. The Symptom Questionnaire for Visual Dysfunctions (SQVD) has demonstrated strong psychometric properties in previous validations but has not yet been validated in the Nepalese population. METHODS: A multicentre, cross-sectional validation study was conducted in six eye hospitals in Nepal. Adults aged 18-65 years completed the Nepali versio",
-        "country": "",
-        "ptype": "",
         "zh": "",
         "zh_sum": ""
       },
@@ -4330,6 +4330,30 @@
     ],
     "refractive": [
       {
+        "title": "Artificial intelligence in endodontics: A comprehensive review of applications and advancement.",
+        "journal": "Bioinformation",
+        "date": "2026",
+        "pmid": "42701764",
+        "summary": "The transformative impact of artificial intelligence (AI) on endodontics is gaining momentum. It highlights advancements in diagnostic accuracy, treatment planning and patient management. …",
+        "abstract": "The transformative impact of artificial intelligence (AI) on endodontics is gaining momentum. It highlights advancements in diagnostic accuracy, treatment planning and patient management. By integrating machine learning algorithms and imaging techniques, AI enhances clinical decision-making, reduces procedural errors and improves patient outcomes. Thus, data shows the current applications, challenges and future directions, proposing that AI will shape the future of endodontic practice and enhance the quality of dental care.",
+        "country": "印度",
+        "ptype": "",
+        "zh": "",
+        "zh_sum": ""
+      },
+      {
+        "title": "CFAST: a simplified and culturally adapted stroke education tool for Chinese communities.",
+        "journal": "Front Stroke",
+        "date": "2026",
+        "pmid": "42698446",
+        "summary": "The newly developed CFAST mnemonic achieved superior short-term comprehension and recall compared with Stroke-120 and demonstrated scalability across communities. Our findings support its feasibility for public stroke education in Chinese populations.",
+        "abstract": "BACKGROUND/OBJECTIVES: Rapid recognition of stroke symptoms in Chinese populations is poor, and improving the timely and reliable identification of patients could significantly expedite the administration of stroke therapy. This study aimed to develop and evaluate CFAST (\"Zhongfeng, shuo-xiao-dong\" meaning \"stroke, speech, smile, move\"), compare its learning efficiency, comprehension, and 1-h recall with Stroke-120, and validate its performance in a larger pragmatic cohort. METHODS: Phase 1 involved a comparison of standardized community sessions using CFAST (n = 192) or Stroke-120 (n = 192). The primary outcome was 1-h recall ability post-training (0-3-point checklist). The secondary outcomes were learning efficiency (time taken to recite the mnemonic) and immediate comprehension (0-3 elements explained correctly). In Phase 2, CFAST was implemented alone among 3,688 participants. RESULT",
+        "country": "中國",
+        "ptype": "",
+        "zh": "",
+        "zh_sum": ""
+      },
+      {
         "title": "Management of a Symptomatic Maxillary Implant Adjacent to the Schneiderian Membrane Using Cone Beam Computed Tomography (CBCT)-Guided Explantation and Reimplantation: A Case Report.",
         "journal": "Cureus",
         "date": "2026",
@@ -4841,30 +4865,6 @@
         "summary": "Artificial intelligence (AI) has rapidly emerged as a transformative tool in digital smile design, offering automated and data-driven esthetic solutions. However, the comparative perception of AI-generated smiles and those designed by dental professionals remains unclear. …",
         "abstract": "Artificial intelligence (AI) has rapidly emerged as a transformative tool in digital smile design, offering automated and data-driven esthetic solutions. However, the comparative perception of AI-generated smiles and those designed by dental professionals remains unclear. To compare the esthetic perception, preference, and acceptance of smiles designed by artificial intelligence and dental professionals using standard esthetic principles among laypeople and dental professionals. A prospective, cross-sectional visual preference study was conducted involving 180 participants, including dental professionals and laypersons. Two patients (one male and one female) were selected, and for each, two smile designs were created: one using AI and the other by a dentist following standard esthetic guidelines. Participants evaluated both designs using a 5-point Likert scale based on extraoral and intr",
         "country": "沙烏地",
-        "ptype": "",
-        "zh": "",
-        "zh_sum": ""
-      },
-      {
-        "title": "Update of the human early life exposome (HELIX) cohort: a European population-based exposome cohort-cohort profile.",
-        "journal": "BMJ Open",
-        "date": "2026",
-        "pmid": "42624585",
-        "summary": "PURPOSE: The Human Early Life Exposome (HELIX) cohort was established to assess a wide range of environmental exposures (the exposome) during early life and study the effects of the early life exposome on child and adolescent health outcomes and molecular omics signatures. …",
-        "abstract": "PURPOSE: The Human Early Life Exposome (HELIX) cohort was established to assess a wide range of environmental exposures (the exposome) during early life and study the effects of the early life exposome on child and adolescent health outcomes and molecular omics signatures. Here, we describe the second follow-up of the HELIX cohort during adolescence, including measurements available and population characteristics. PARTICIPANTS: HELIX is a collaborative study across six established and ongoing population-based birth cohort studies in six European countries (France, Greece, Lithuania, Norway, Spain and the United Kingdom). The cohort includes 1663 mother-child pairs recruited during pregnancy from 2003 to 2009 and followed up during childhood at 6-12 years from 2013 to 2016. This update summarises the most recent follow-up during adolescence (12-18 years) which took place from 2020 to 2022",
-        "country": "西班牙",
-        "ptype": "",
-        "zh": "",
-        "zh_sum": ""
-      },
-      {
-        "title": "Twelve-Month Visual, Refractive, and Ocular Wavefront Outcomes of SmartSight KLEx, Pooling Original and NOVA Workflows, on the SCHWIND ATOS: A Single-Surgeon Cohort Study.",
-        "journal": "Ophthalmol Ther",
-        "date": "2026",
-        "pmid": "42622959",
-        "summary": "In this large single-surgeon series, pooling data from the original SmartSight workflow and the SmartSight NOVA, KLEx on the SCHWIND ATOS delivered accurate, safe, and stable 12-month outcomes with excellent uncorrected vision and only modest higher-order aberration induction. …",
-        "abstract": "INTRODUCTION: To report the visual, refractive, astigmatic, and ocular higher-order aberration (HOA) outcomes of keratorefractive lenticule extraction (KLEx) with the SCHWIND ATOS femtosecond laser platform in a large single-surgeon cohort. METHODS: In this retrospective consecutive series, 2518 eyes of 1292 patients underwent single-surgeon KLEx (SmartSight procedure, SCHWIND ATOS platform) for myopia or myopic astigmatism. Data from two treatment workflows were pooled: the original SmartSight lenticule workflow (1886 eyes) and, from 2025, SmartSight NOVA with CenTrax-assisted centration (632 eyes); workflow-stratified outcomes are reported separately in Table 4. Refraction, uncorrected and corrected distance visual acuity ( (UDVA and CDVA, respectively), and pyramidal-wavefront aberrometry (OSIRIS-T corneal topographer and ocular aberrometer; 4 and 6 mm) were recorded for 12 months of ",
-        "country": "",
         "ptype": "",
         "zh": "",
         "zh_sum": ""
@@ -5470,18 +5470,6 @@
         "zh_sum": ""
       },
       {
-        "title": "Medical malpractice predictors and risk factors for ophthalmologists performing LASIK and PRK surgery.",
-        "journal": "Trans Am Ophthalmol Soc",
-        "date": "2003",
-        "pmid": "14971582",
-        "summary": "The chances of incurring a malpractice claim or suit for PRK or LASIK correlates significantly with higher surgical volume and a history of a prior claim or suit. Additional risk factors that increase in importance with higher surgical volume include gender, advertising, preoperative time spent with patient, and comanagement with optometr …",
-        "abstract": "PURPOSE: To identify physician predictors in laser-assisted in-situ keratomileusis (LASIK) and photorefractive keratectomy (PRK) surgery that correlate with a higher risk for malpractice liability claims and lawsuits. METHODOLOGY: A retrospective, longitudinal, cohort study comparing physician characteristics of 100 consecutive Ophthalmic Mutual Insurance Company (OMIC) LASIK and PRK claims and suits to demographic and practice pattern data for all active refractive surgeons insured by OMIC between 1996 and 2002. Background information and data were obtained from OMIC underwriting applications, a physician practice pattern survey, and claims file records. Using an outcome of whether or not a physician had a prior history of a claim or suit, logistic regression analyses were used separately for each predictor as well as controlling for refractive surgery volume. RESULTS: Logistic regressi",
-        "country": "美國",
-        "ptype": "",
-        "zh": "",
-        "zh_sum": ""
-      },
-      {
         "title": "Multiple regression and vector analyses of laser in situ keratomileusis for myopia and astigmatism.",
         "journal": "J Refract Surg",
         "date": "1999",
@@ -5634,6 +5622,18 @@
         "abstract": "",
         "country": "",
         "ptype": "",
+        "zh": "",
+        "zh_sum": ""
+      },
+      {
+        "title": "Initial resident refractive surgical experience: outcomes of PRK and LASIK for myopia.",
+        "journal": "J Refract Surg",
+        "date": "2011",
+        "pmid": "20540469",
+        "summary": "Supervised refractive surgery residents can achieve excellent visual outcomes in patients operated during their initial refractive experience. Photorefractive keratectomy was associated with better visual outcome than LASIK.",
+        "abstract": "PURPOSE: To evaluate and compare the outcome of initial resident surgical experience with photorefractive keratectomy (PRK) and LASIK. METHODS: Retrospective review of all cases performed with the VISX Star S4 platform (Abbott Medical Optics) between July 1, 2003 and June 30, 2007. Inclusion criteria were spherical equivalent of -0.50 to -10.00 diopters (D), refractive astigmatic error of ≤3.00 D, intention to provide full distance correction, and minimum 3-month postoperative follow-up after initial ablation or retreatment (if performed). RESULTS: A total of 153 cases performed by 20 different residents met the inclusion criteria; 38 eyes underwent PRK and 115 eyes had LASIK. After initial treatment, mean Snellen uncorrected distance visual acuity (UDVA) after PRK was 20/17.3 and after LASIK was 20/19.5. Photorefractive keratectomy was associated with a significantly better approximatio",
+        "country": "美國",
+        "ptype": "比較性研究",
         "zh": "",
         "zh_sum": ""
       },
@@ -6828,6 +6828,18 @@
         "zh_sum": ""
       },
       {
+        "title": "Intraoperative performance and postoperative outcomes of endocapsular ring implantation in pediatric eyes.",
+        "journal": "J Cataract Refract Surg",
+        "date": "2008",
+        "pmid": "18721710",
+        "summary": "Implantation of the Cionni CTR and single-piece AcrySof IOL in the capsular bag in pediatric eyes with subluxated lenses was safe and effective and led to a stable IOL with few significant complications.",
+        "abstract": "PURPOSE: To study the intraoperative performance and postoperative outcomes of Cionni modified capsule tension ring (CTR) and intraocular lens (IOL) implantation in the capsular bag in pediatric eyes with ectopia lentis. SETTING: John A. Moran Eye Center, Salt Lake City, Utah, USA. METHODS: Thirty-five eyes (22 children) with ectopia lentis and visually significant cataract that had lens aspiration and in-the-bag implantation of single-piece AcrySof IOL and Cionni CTR were included. Single- and double-eyelet CTRs were used. The rings were sutured to the sclera using 9-0 or 10-0 polypropylene (Prolene) sutures. Preoperative and postoperative best corrected visual acuity (BCVA), intraoperative performance, IOL centration, and complications were studied. RESULTS: The mean patient age was 8.2 years +/- 5.1 (SD) and the median follow-up, 28 months. A double-eyelet CTR was implanted in 12 eyes",
+        "country": "美國",
+        "ptype": "",
+        "zh": "",
+        "zh_sum": ""
+      },
+      {
         "title": "[Phacoemulsification and acrylic intraocular lens in uveitis: a comparative study].",
         "journal": "Arch Soc Esp Oftalmol",
         "date": "2012",
@@ -7063,18 +7075,6 @@
         "summary": "The aim of this study was to evaluate clinical outcomes after toric intraocular lens implantation for astigmatism correction in patients undergoing cataract surgery. This prospective observational study included eyes undergoing cataract surgery at Sestre milosrdnice University Hospital Center between February and September 2011. …",
         "abstract": "The aim of this study was to evaluate clinical outcomes after toric intraocular lens implantation for astigmatism correction in patients undergoing cataract surgery. This prospective observational study included eyes undergoing cataract surgery at Sestre milosrdnice University Hospital Center between February and September 2011. The study enrolled eyes that had visually significant cataract and preexisting regular corneal astigmatism of 1.50 D or greater. Phacoemulsification was performed and all eyes received an AT TORBI 709 M toric foldable intraocular lens. At 3 months, the uncorrected distance visual acuity was 0.8 or better in 9 of 10 eyes. At 3 months postoperatively, the median reduction in refractive cylinder was statistically significant (P < 0.05). The median intraocular lens axis rotation was 3.0 degrees interquartile range (2.0-4.0 degrees). Our results showed AT TORBI 709 IO",
         "country": "",
-        "ptype": "",
-        "zh": "",
-        "zh_sum": ""
-      },
-      {
-        "title": "Outcomes of pseudophakic toric intraocular lens implantation in Keratoconic eyes with cataract.",
-        "journal": "J Refract Surg",
-        "date": "2012",
-        "pmid": "23310966",
-        "summary": "Pseudophakic toric IOLs are an effective option and provide good vision in eyes with stable mild to moderate keratoconus and cataract.",
-        "abstract": "PURPOSE: To evaluate the outcomes of pseudophakic toric intraocular lens (IOL) implantation in eyes with stable keratoconus and cataract. METHODS: Retrospective, noncomparative, case series of 12 eyes from 9 patients (mean age: 63.4±3.5 years) with stable mild to moderate keratoconus and cataract who underwent pseudophakic toric IOL implantation (AT TORBI 709M, AcriTec). Uncorrected distance visual acuity (UDVA), corrected distance visual acuity (CDVA), manifest refraction, keratometric findings, adverse events, and postoperative complications were recorded for all eyes. RESULTS: Mean postoperative follow-up was 9.0+8.8 months. At last postoperative follow-up, UDVA was 20/40 or better in 75% and CDVA was 20/40 or better in 83.3% of eyes. Postoperative mean refractive sphere (pre- vs postoperative: -4.80±5.60 vs 0.30±0.50 diopters [D]) and cylinder (pre- vs postoperative: 3.00+1.00 D vs 0",
-        "country": "英國",
         "ptype": "",
         "zh": "",
         "zh_sum": ""
@@ -8656,6 +8656,42 @@
     ],
     "retina": [
       {
+        "title": "The Evolving Burden of Age-Related Macular Degeneration in China (1990-2023): Insights from an Aging Society and the Anti-VEGF Era.",
+        "journal": "Clin Epidemiol",
+        "date": "2026",
+        "pmid": "42701791",
+        "summary": "Despite a declining age-standardized burden, China's absolute AMD burden remains substantial due to rapid population aging and other challenges. The temporal association between anti-VEGF therapy availability and the accelerated burden decline suggests a potential contribution of this treatment, though causality cannot be directly inferre …",
+        "abstract": "BACKGROUND: Age-related macular degeneration (AMD) is a leading cause of vision loss in the elderly. China bears the world's largest AMD burden. This study analyzes the evolving AMD burden in China (1990-2023) and the impact of anti-VEGF therapy. METHODS: We analyzed data from the Global Burden of Disease (GBD) 2023 study using joinpoint regression, decomposition analysis, and Bayesian modeling. A supplementary meta-analysis of single-arm studies was conducted to assess anti-VEGF efficacy in Chinese patients. RESULTS: From 1990 to 2023, China's age-standardized prevalence rate (ASPR) and disability-adjusted life year rate (ASDR) for AMD decreased by -0.67% and -1.48% annually, respectively. In 2023, China accounted for 35.82% of global cases and 30.25% of global DALYs. A supplementary meta-analysis of 13 single-arm observational studies showed a pooled efficacy rate of 74% for anti-VEGF ",
+        "country": "中國",
+        "ptype": "",
+        "zh": "",
+        "zh_sum": ""
+      },
+      {
+        "title": "Optic Nerve Head Cotton Wool Spots Mimicking Inflammatory Optic Neuropathy in Central Retinal Vein Occlusion.",
+        "journal": "Cureus",
+        "date": "2026",
+        "pmid": "42701723",
+        "summary": "Central retinal vein occlusion (CRVO) typically presents with optic disc edema, venous dilation, and widespread retinal hemorrhages; however, atypical optic nerve head findings can mimic neuro-inflammatory or infiltrative disease, posing a diagnostic challenge. …",
+        "abstract": "Central retinal vein occlusion (CRVO) typically presents with optic disc edema, venous dilation, and widespread retinal hemorrhages; however, atypical optic nerve head findings can mimic neuro-inflammatory or infiltrative disease, posing a diagnostic challenge. We report a 67-year-old woman with diabetes mellitus, rheumatoid arthritis, hypertension, and hyperlipidemia who presented for routine evaluation without visual symptoms and was found to have non-proliferative diabetic retinopathy bilaterally and clinical signs of non-ischemic CRVO in the left eye, including optic disc edema, hyperemia, and intraretinal hemorrhages. Optical coherence tomography (OCT) demonstrated mild macular thickening, and fluorescein angiography (FA) showed scattered hyperfluorescent foci with minimal leakage. Two months after intravitreal faricimab injection, macular edema resolved and visual acuity improved; ",
+        "country": "美國",
+        "ptype": "病例報告",
+        "zh": "",
+        "zh_sum": ""
+      },
+      {
+        "title": "Faricimab in neovascular age-related macular degeneration: aqueous humor cytokine profiling and biomarker correlations.",
+        "journal": "Front Med (Lausanne)",
+        "date": "2026",
+        "pmid": "42698447",
+        "summary": "Faricimab dual-blockades VEGF/Ang-2, reducing their aqueous levels, improving CMT/whole retinal thickness and visual acuity. However, post-treatment HGF/IP-10 upregulation indicates compensatory inflammatory-angiogenic remodeling. IP-10 may serve as a potential correlative biomarker linked to subclinical capillary rarefaction. …",
+        "abstract": "PURPOSE: To investigate aqueous humor cytokine profile changes in neovascular age-related macular degeneration (nAMD) patients before and after intravitreal faricimab injection, and their correlation with biomarkers. METHODS: Twenty-three nAMD patients and 10 cataract controls were enrolled. Aqueous humor was collected from nAMD patients at baseline and 12 weeks post-faricimab injection, and from controls during phacoemulsification. Twelve cytokines were quantified via multiplex bead-based immunoassay. OCTA measured central macular thickness (CMT) and retinal vessel density in nAMD eyes. RESULTS: Baseline vascular endothelial growth factor (VEGF), Angiopoietin-2 (Ang-2) and HGF levels were higher in nAMD patients than controls. Post-treatment, VEGF and Ang-2 decreased below control levels, while hepatocyte growth factor (HGF) and interferon gamma protein 10 (IP-10) increased significantl",
+        "country": "中國",
+        "ptype": "",
+        "zh": "",
+        "zh_sum": ""
+      },
+      {
         "title": "Real-World Applicability of Anti-VEGF Trial Criteria for Diabetic Macular Edema.",
         "journal": "Am J Ophthalmol",
         "date": "2026",
@@ -8673,7 +8709,7 @@
         "date": "2026",
         "pmid": "42697514",
         "summary": "Diabetic retinopathy (DR) causes preventable vision loss, yet treatments remain reactive. Fenofibrate showed ophthalmic benefits in cardiovascular trials, and LENS (2024) expanded the evidence. …",
-        "abstract": "Diabetic retinopathy (DR) causes preventable vision loss, yet treatments remain reactive. Fenofibrate showed ophthalmic benefits in cardiovascular trials, and LENS (2024) expanded the evidence. Under a pre-registered PRISMA 2020 protocol we searched four databases to June 25, 2026 for randomized trials of fenofibrate reporting an ophthalmic outcome in adults with diabetes, applied RoB 2 and GRADE, and pooled dichotomous outcomes as random-effects risk ratios (RR). Ten studies met inclusion criteria: six completed with extractable results and four ongoing; three completed trials contributed to the primary pooled outcome. All enrolled predominantly type 2 diabetes (one trial 26% type 1, no type-specific estimate). For DR progression, three trials (N = 3,756) gave RR 0.77 (95% CI 0.68-0.88;HKSJ 0.60-0.99; I2 0%; moderate certainty), 45 fewer events per 1,000; stratification gave 0.80 (0.68-",
+        "abstract": "Diabetic retinopathy (DR) causes preventable vision loss, yet treatments remain reactive. Fenofibrate showed ophthalmic benefits in cardiovascular trials, and LENS (2024) expanded the evidence. Under a pre-registered PRISMA 2020 protocol we searched four databases to June 25, 2026 for randomized trials of fenofibrate reporting an ophthalmic outcome in adults with diabetes, applied RoB 2 and GRADE, and pooled dichotomous outcomes as random-effects risk ratios (RR). Ten studies met inclusion criteria: six completed with extractable results and four ongoing; three completed trials contributed to the primary pooled outcome. All enrolled predominantly type 2 diabetes (one trial 26% type 1, no type-specific estimate). For DR progression, three trials (N = 3,756) gave RR 0.77 (95% CI 0.68-0.88;HKSJ 0.60-0.99; I2 0%; moderate certainty), 45 fewer events per 1,000; stratification gave 0.80 (0.68-",
         "country": "",
         "ptype": "文獻回顧",
         "zh": "",
@@ -9160,42 +9196,6 @@
         "zh_sum": ""
       },
       {
-        "title": "Biomarker-Guided Management in Vitreoretinal Diseases: Integrating Imaging, Pharmacotherapy, and Surgical Decision-Making-A Narrative Review.",
-        "journal": "Retina",
-        "date": "2026",
-        "pmid": "42627258",
-        "summary": "A biomarker-guided approach provides a clinically actionable framework for personalized vitreoretinal care. The integration of multimodal imaging with pharmacologic and surgical decision-making represents a critical step toward precision medicine, with the potential to improve outcomes and reduce treatment burden.",
-        "abstract": "PURPOSE: To synthesize current evidence on imaging biomarkers in vitreoretinal diseases and to review the potential for a biomarker-guided framework integrating imaging, pharmacotherapy, and surgical decision-making in contemporary clinical practice. METHODS: This narrative review integrates published evidence and clinical insights on optical coherence tomography (OCT) and OCT angiography (OCTA)-derived biomarkers, focusing on their role in predicting disease behavior, therapeutic response, and surgical indications. RESULTS: Key imaging biomarkers-including disorganization of the retinal inner layers (DRIL), hyperreflective foci (HRF), intraretinal and subretinal fluid patterns, and vascular perfusion changes-demonstrate significant value in stratifying disease phenotype and guiding management. Biomarker-based approaches enable differentiation between angiogenic and inflammatory patterns",
-        "country": "",
-        "ptype": "",
-        "zh": "",
-        "zh_sum": ""
-      },
-      {
-        "title": "Cost-neutral adoption of anti-VEGF therapies in neovascular age-related macular degeneration.",
-        "journal": "Expert Rev Pharmacoecon Outcomes Res",
-        "date": "2026",
-        "pmid": "42627194",
-        "summary": "Break-even pricing generates explicit cost-neutral thresholds under outcome equivalence. While jurisdiction-specific, the framework is transferable and supports consistent pricing decisions in single-payer systems.",
-        "abstract": "OBJECTIVE: In therapeutic classes characterized by outcome equivalence, the decision problem shifts from incremental cost-effectiveness to cost-neutral pricing. This study formalizes a break-even pricing framework, translating real-world utilization and costs into cost-neutral price thresholds, using anti-VEGF therapies for neovascular age-related macular degeneration (nAMD) as a case study. METHODS: A cost-minimization framework was applied from a public payer perspective in a single-payer system (Cyprus). Five anti-VEGF agents were evaluated over 3 years with 3.5% discounting. Injection frequencies were derived as weighted averages of treat-and-extend and pro re nata regimens from Phase 3/4 trials, with year 3 extrapolated from year 2. Break-even prices were defined as unit prices yielding equal discounted per-patient costs versus comparators. First-line thresholds used bevacizumab; se",
-        "country": "荷蘭",
-        "ptype": "",
-        "zh": "",
-        "zh_sum": ""
-      },
-      {
-        "title": "Four-Year Outcomes of Faricimab in Diabetic Macular Edema in the RHONE-X Extension Trial: A Podcast.",
-        "journal": "Ophthalmol Ther",
-        "date": "2026",
-        "pmid": "42622958",
-        "summary": "Diabetic macula edema (DME) is a leading cause of vision loss among people with diabetes and requires long-term management strategies that balance efficacy, safety, and durability. …",
-        "abstract": "Diabetic macula edema (DME) is a leading cause of vision loss among people with diabetes and requires long-term management strategies that balance efficacy, safety, and durability. Although antivascular endothelial growth factor (VEGF) therapies have improved outcomes, challenges remain in achieving sustained disease control and reducing intravitreal injection frequency. Faricimab is a dual angiopoietin-2/anti-VEGF-A inhibitor designed for intraocular use, which targets the vascular and inflammatory components of DME. The phase 3 YOSEMITE and RHINE clinical trials demonstrated the efficacy, durability, and safety of faricimab throughout 2 years in treatment-naive and previously treated patients with DME. RHONE-X (NCT04432831) was a phase 3, multicenter, nonrandomized, open-label extension trial of the YOSEMITE/RHINE clinical trials that assessed the long-term safety and efficacy of faric",
-        "country": "美國",
-        "ptype": "文獻回顧",
-        "zh": "",
-        "zh_sum": ""
-      },
-      {
         "title": "Intravitreal aflibercept (VEGF trap-eye) in wet age-related macular degeneration.",
         "journal": "Ophthalmology",
         "date": "2012",
@@ -9292,6 +9292,18 @@
         "zh_sum": ""
       },
       {
+        "title": "Polypoidal choroidal vasculopathy in Canada.",
+        "journal": "Can J Ophthalmol",
+        "date": "2020",
+        "pmid": "31879067",
+        "summary": "Polypoidal choroidal vasculopathy (PCV) is an exudative age-related macular degeneration (AMD) subtype found more frequently among Asians than Caucasians. If untreated, it may lead to severe vision loss. …",
+        "abstract": "Polypoidal choroidal vasculopathy (PCV) is an exudative age-related macular degeneration (AMD) subtype found more frequently among Asians than Caucasians. If untreated, it may lead to severe vision loss. PCV appears to be frequently underdiagnosed in Canada, although misdiagnosis of PCV as AMD carries the risk of inadequate treatment and unsatisfactory clinical outcomes. Diagnosis can be made on the basis of multimodal imaging, including optical coherence tomography (OCT) and OCT angiography combined with colour fundus photography, or by other imaging techniques; the gold-standard indocyanine green angiography (ICGA) is not widely used in Canada. Treatment involves anti-vascular endothelial growth factor (anti-VEGF) agents (bevacizumab, ranibizumab, or aflibercept), alone or in combination with photodynamic therapy (PDT). Recent clinical trials have shown that ranibizumab in combination ",
+        "country": "",
+        "ptype": "文獻回顧",
+        "zh": "",
+        "zh_sum": ""
+      },
+      {
         "title": "Factors affecting compliance to intravitreal anti-vascular endothelial growth factor therapy in Indian patients with retinal vein occlusion, age-related macular degeneration, and diabetic macular edema.",
         "journal": "Indian J Ophthalmol",
         "date": "2020",
@@ -9348,18 +9360,6 @@
         "abstract": "BACKGROUND: To investigate visual and anatomical outcomes in eyes with exudative age-related macular degeneration treated with intravitreal aflibercept following prior treatment with intravitreal ranibizumab. MATERIALS AND METHODS: Retrospective, single-center study of 192 eyes treated with 0.5 mg intravitreal ranibizumab every 4 weeks for three consecutive doses followed by a variable dose schedule. After more than 12 months of ranibizumab treatment, eyes that required ranibizumab injections at 4-week or 6-week intervals were switched to aflibercept therapy. RESULTS: After 12-69 months (42 months ± 18 months, mean ± standard deviation [SD]) of treatment with intravitreal ranibizumab, 80 eyes were changed to 2 mg intravitreal aflibercept treatment with follow-up after 12-18 months (16 months ± 1 month, mean ± SD). Thirty-nine eyes had persistent macular fluid after treatment with ranibiz",
         "country": "澳洲",
         "ptype": "",
-        "zh": "",
-        "zh_sum": ""
-      },
-      {
-        "title": "Polypoidal choroidal vasculopathy in Canada.",
-        "journal": "Can J Ophthalmol",
-        "date": "2020",
-        "pmid": "31879067",
-        "summary": "Polypoidal choroidal vasculopathy (PCV) is an exudative age-related macular degeneration (AMD) subtype found more frequently among Asians than Caucasians. If untreated, it may lead to severe vision loss. …",
-        "abstract": "Polypoidal choroidal vasculopathy (PCV) is an exudative age-related macular degeneration (AMD) subtype found more frequently among Asians than Caucasians. If untreated, it may lead to severe vision loss. PCV appears to be frequently underdiagnosed in Canada, although misdiagnosis of PCV as AMD carries the risk of inadequate treatment and unsatisfactory clinical outcomes. Diagnosis can be made on the basis of multimodal imaging, including optical coherence tomography (OCT) and OCT angiography combined with colour fundus photography, or by other imaging techniques; the gold-standard indocyanine green angiography (ICGA) is not widely used in Canada. Treatment involves anti-vascular endothelial growth factor (anti-VEGF) agents (bevacizumab, ranibizumab, or aflibercept), alone or in combination with photodynamic therapy (PDT). Recent clinical trials have shown that ranibizumab in combination ",
-        "country": "",
-        "ptype": "文獻回顧",
         "zh": "",
         "zh_sum": ""
       },
@@ -10098,6 +10098,30 @@
     ],
     "dryeye": [
       {
+        "title": "Autologous platelet-rich plasma eyedrops for severe dry eye disease unresponsive to autologous serum: A prospective single-arm interventional study.",
+        "journal": "Ther Adv Ophthalmol",
+        "date": "2026",
+        "pmid": "42699038",
+        "summary": "Autologous PRP eyedrops were associated with short-term improvements in symptoms and selected ocular surface signs in AS-refractory severe DED, which were not sustained after switching to AS.",
+        "abstract": "BACKGROUND: Some patients with dry eye disease (DED) respond sub-optimally to autologous serum (AS) therapy. Platelet-rich plasma (PRP), a blood-derived preparation with higher platelet-derived growth factor concentrations, may benefit patients refractory to AS. OBJECTIVES: To evaluate the short-term efficacy and safety of topical autologous PRP eyedrops in patients with severe DED unresponsive to AS. DESIGN: Prospective single-arm interventional study with AS re-challenge. METHODS: Twenty eyes (10 patients) with severe DED unresponsive to 100% AS were enrolled. Participants applied 100% autologous PRP eyedrops six times daily for 6 weeks, then 100% AS eyedrops for 6 weeks. Ocular Surface Disease Index (OSDI) scores, conjunctival and corneal staining (NEI scores), tear film break-up time (TBUT), Schirmer test were evaluated at baseline, weeks 1, 4, 6, and 12. Subbasal nerve and dendritic",
+        "country": "泰國",
+        "ptype": "",
+        "zh": "",
+        "zh_sum": ""
+      },
+      {
+        "title": "Electroacupuncture promotes the repair of lacrimal glands damage in dry-eye animal models by modulating the BDNF/CREB signaling pathway.",
+        "journal": "J Tradit Complement Med",
+        "date": "2026",
+        "pmid": "42698597",
+        "summary": "Experimental results showed that EA facilitates the restoration of damaged LGs, extends BUT, decreases FL, and enhances SIT by regulating the proteins involved in the BDNF/CREB pathway. Consequently, these improvements effectively alleviate the symptoms associated with DED.",
+        "abstract": "BACKGROUND AND AIM: Dry eye disease (DED) is an eye disorder with global prevalence. Its treatment using electroacupuncture (EA) has shown exceptional clinical efficacy. This study aimed to examine the effectiveness of EA in treating DED and explore its underlying molecular mechanisms. EXPERIMENTAL PROCEDURE: A rabbit model of aqueous-deficient dry eye was established by subcutaneous injection of scopolamine hydrobromide. The EA and EA plus K252a (EA + K252a) groups underwent EA treatment (20 Hz, 0.5 ms, and 1 mA) for 15 min per session. The sham acupuncture (SA) group received blunt-tipped needling. These interventions were performed once daily for 14 days. At day 28 of the experiment, the role of the BDNF/CREB pathway was examined by administration of the TrkB antagonist K252a. K252a was bilaterally injected into the lacrimal glands (LGs) in both the K252a and EA + K252a groups. Outcom",
+        "country": "中國",
+        "ptype": "",
+        "zh": "",
+        "zh_sum": ""
+      },
+      {
         "title": "Evaluation of Ocular Surface Inflammation and Corneal Microstructural Changes in Pterygium Using in Vivo Confocal Microscopy: A Comparative Study of Surgical Techniques.",
         "journal": "Semin Ophthalmol",
         "date": "2026",
@@ -10610,30 +10634,6 @@
         "abstract": "Nutrition plays a crucial role in the prevention and management of dry eye disease (DED. Polyunsaturated fatty acids ω-3 and ω-6, known for their anti-inflammatory properties, improve ocular surface health. Similarly, antioxidants found in diets like the Mediterranean diet stabilize the tear film and reduce oxidative stress (OXs); however, food additives can negatively impact both general health and DED. The gut microbiome and the gut-eye axis play a critical role, as gut dysbiosis amplifies systemic inflammation, disrupts immune balance, and diminishes the production of protective metabolites such as short-chain fatty acids. The ocular microbiome further supports homeostasis and immunity by safeguarding against external pathogens. Factors such as diet, aging, and antibiotic use negatively impact microbial diversity. Probiotics, prebiotics, and fecal microbiota transplantation are emergi",
         "country": "西班牙",
         "ptype": "文獻回顧",
-        "zh": "",
-        "zh_sum": ""
-      },
-      {
-        "title": "Preoperative and postoperative risk factors for persistent dry eye after corneal refractive surgery in ultra-high myopia: a retrospective cohort study.",
-        "journal": "Am J Transl Res",
-        "date": "2026",
-        "pmid": "42630490",
-        "summary": "Persistent dry eye after refractive surgery for ultra-high myopia is influenced by multiple factors. Preoperative OSDI, CFS, TBUT, systemic history, MGD, daily screen time, medication adherence, and inflammation play important roles. Individualized perioperative management targeting these factors may improve prognosis.",
-        "abstract": "OBJECTIVE: To identify risk factors for persistent dry eye after refractive surgery in patients with ultra-high myopia and their prognostic value. METHODS: Data from 260 patients were analyzed. Least absolute shrinkage and selection operator regression screened preoperative variables. Random forest, Extreme Gradient Boosting, multivariate logistic regression, mediation, and interaction analyses were used to identify predictors and mechanisms of persistent dry eye (≥ 3 months). RESULTS: Persistent dry eye occurred in 33.1% of patients (86/260). Eight preoperative predictors were identified. Elevated Ocular Surface Disease Index (OSDI) (odds ratio [OR] = 1.483) and corneal fluorescein staining (CFS) (OR = 7.154) were independent risk factors; prolonged tear film breakup time (TBUT) (OR = 0.292), no systemic history (OR = 0.042), and normal meibomian gland dysfunction (MGD) (OR = 0.042) wer",
-        "country": "中國",
-        "ptype": "",
-        "zh": "",
-        "zh_sum": ""
-      },
-      {
-        "title": "Compounded 0.03% Tacrolimus in Cross-Linked Hyaluronate Improves Ocular Surface Health in Dogs With Evaporative Dry Eye Disease.",
-        "journal": "Vet Ophthalmol",
-        "date": "2026",
-        "pmid": "42629626",
-        "summary": "Twice-daily administration of compounded XHA/tacrolimus resulted in significant improvements in tear quantity, stability, and corneoconjunctival integrity. Combining immunomodulation with long-acting lubrication in a single formulation offers a promising, practical therapeutic strategy for efficiently managing canine qualitative dry eye d …",
-        "abstract": "OBJECTIVE: To assess the clinical effects of a compounded 0.03% tacrolimus in 0.75% cross-linked hyaluronic acid (XHA) on tear quantity, quality, and ocular surface health in dogs with evaporative dry eye disease (EDED). PROCEDURES: Sixteen client-owned dogs diagnosed with EDED (normal aqueous production yet reduced stability) were enrolled in this prospective, open-label clinical trial. Patients were treated with the compounded formulation in affected eyes twice daily for 45 days. Ophthalmic assessments, including Schirmer tear test-1 (STT-1), tear film breakup time (TFBUT), punctate fluorescein staining (PFS), lissamine green staining, and conjunctival hyperemia scoring, were performed during designated morning appointments at Day 0, Day 15, and Day 45. Data were analyzed using repeated-measures ANOVA and post hoc tests. RESULTS: STT-1 values increased significantly from 18.7 ± 2.3 mm/",
-        "country": "以色列",
-        "ptype": "",
         "zh": "",
         "zh_sum": ""
       },
