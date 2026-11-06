@@ -1,0 +1,18 @@
+name: Probe data source
+on:
+  workflow_dispatch:
+    inputs:
+      datasets:
+        description: 'data.gov.tw dataset ids (comma)'
+        default: '9576,151955,9123'
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.11'}
+      - run: pip install requests
+      - run: python probe.py
+        env:
+          DATASETS: ${{ github.event.inputs.datasets }}
