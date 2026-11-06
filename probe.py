@@ -13,8 +13,12 @@ for ds in ids:
         for d in r.get("distribution",[]): print("  dist:",d.get("resourceFormat"),d.get("resourceDownloadUrl"))
         csvs=[d.get("resourceDownloadUrl") for d in r.get("distribution",[]) if (d.get("resourceFormat") or "").upper()=="CSV"]
         if csvs:
-            rr=requests.get(csvs[0],headers=HEAD,timeout=120); raw=rr.content
+            rr=requests.get(csvs[0],headers=HEAD,timeout=180); raw=rr.content
             print("csv bytes:",len(raw),"ctype:",rr.headers.get("Content-Type"))
+            if raw[:2]==b"PK":
+                import zipfile
+                z=zipfile.ZipFile(io.BytesIO(raw)); names=z.namelist(); print("zip members:",names)
+                raw=z.read(names[0])
             txt=None
             for enc in ("utf-8-sig","utf-8","big5","cp950"):
                 try: txt=raw.decode(enc); print("enc:",enc); break
