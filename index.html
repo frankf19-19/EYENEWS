@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- 眼視光 Eye-Vision Hub | build r132 | 2026-07-11 | 公司資料全面查證+版本標示 -->
+<!-- 眼視光 Eye-Vision Hub | build r133 | 2026-07-11 | 公司資料全面查證+版本標示 -->
 <html lang="zh-Hant">
 <head>
 <meta charset="UTF-8">
@@ -348,6 +348,14 @@ h2{font-weight:700;font-size:clamp(24px,3vw,32px);margin:0 0 6px}
 .cal-orgs{display:flex;flex-wrap:wrap;gap:8px;margin:2px 0 12px}
 .cal-org{font-size:12.5px;color:var(--accent-ink);background:var(--accent-soft);border:1px solid var(--accent);border-radius:8px;padding:6px 11px;text-decoration:none;font-weight:600}
 .cal-org:hover{background:var(--accent);color:#fff}
+.zh-wrap{margin:6px 0}
+.zh-btn{font-size:12px;font-weight:700;color:var(--accent-ink);background:var(--accent-soft);border:1px solid var(--accent);border-radius:7px;padding:5px 10px;cursor:pointer;font-family:var(--sans)}
+.zh-btn:hover{background:var(--accent);color:#fff}
+.zh-out{background:var(--paper);border-left:3px solid var(--accent);border-radius:8px;padding:9px 12px;font-size:13.5px;line-height:1.7}
+.zh-t{font-weight:700;margin-bottom:4px}
+.zh-a{color:var(--ink-soft)}
+.zh-note{font-size:11px;color:var(--muted);margin-top:5px}
+.muted{color:var(--muted)}
 .fi-ahead{display:inline-block;font-size:10px;font-weight:700;color:#9A6E3A;background:#FBEEDA;border:1px solid #E0A21A;border-radius:5px;padding:1px 6px;margin-left:7px;font-family:var(--sans);vertical-align:1px}
 .cal-new{font-size:11px;font-weight:700;color:var(--live);background:#FDECE9;border:1px solid var(--live);border-radius:20px;padding:2px 9px;margin-left:6px;vertical-align:2px}
 .ev-new{font-size:11px;font-weight:700;color:#fff;background:var(--live);border-radius:5px;padding:1px 6px;margin-right:6px}
@@ -691,11 +699,79 @@ footer .build{margin-top:8px;font-size:11px}
   .hero-cta .btn{padding:10px 16px;font-size:14px}
   .hero-stats{margin-top:14px}
 }
+
+/* ===== 桌機:側邊欄版面(≥1024px) ===== */
+.sidebar{display:none}
+.totop{position:fixed;right:18px;bottom:22px;width:40px;height:40px;border-radius:50%;border:1px solid var(--line);background:var(--card);color:var(--accent-ink);font-size:18px;font-weight:700;cursor:pointer;box-shadow:0 3px 14px rgba(0,0,0,.12);opacity:0;pointer-events:none;transition:.2s;z-index:55}
+.totop.show{opacity:1;pointer-events:auto}
+@media(max-width:700px){.totop{bottom:72px}}
+.page-title{display:none}
+@media(min-width:1024px){
+  body{padding-left:248px}
+  .sidebar{display:flex;flex-direction:column;position:fixed;left:0;top:0;bottom:0;width:248px;background:var(--card);border-right:1px solid var(--line);z-index:60;padding:18px 14px 14px;overflow-y:auto;scrollbar-width:thin}
+  .sb-brand{display:flex;align-items:center;gap:10px;padding:2px 8px 16px;border-bottom:1px solid var(--line-2);margin-bottom:10px}
+  .sb-name{font-family:var(--serif);font-weight:900;font-size:19px;line-height:1.1}
+  .sb-tag{font-family:var(--mono);font-size:9.5px;letter-spacing:.1em;color:var(--muted);margin-top:3px}
+  .sb-nav{display:flex;flex-direction:column;gap:2px}
+  .sb-nav a{display:flex;align-items:center;gap:10px;padding:9px 10px;border-radius:10px;cursor:pointer;color:var(--ink-soft);font-size:14px;font-weight:600;text-decoration:none;flex-wrap:wrap;transition:.12s;line-height:1.25}
+  .sb-nav a i{font-style:normal;font-size:17px;width:22px;text-align:center}
+  .sb-nav a small{flex-basis:100%;padding-left:32px;font-size:11px;font-weight:400;color:var(--muted);margin-top:-1px}
+  .sb-nav a:hover{background:var(--paper);color:var(--ink)}
+  .sb-nav a.on{background:var(--accent);color:#fff}
+  .sb-nav a.on small{color:rgba(255,255,255,.8)}
+  .sb-sec{margin-top:16px;padding-top:14px;border-top:1px solid var(--line-2)}
+  .sb-sec-h{font-family:var(--mono);font-size:10.5px;letter-spacing:.08em;color:var(--muted);padding:0 8px 8px}
+  .sb-sec-sub{font-weight:400;opacity:.8}
+  .sb-pf{display:flex;flex-direction:column;gap:3px}
+  .sb-pf .pfbtn{display:block;padding:6px 10px;border-radius:8px;border:1px solid transparent;background:transparent;font-size:13px}
+  .sb-pf .pfbtn:hover{background:var(--paper)}
+  .sb-pf .pfbtn.on{background:#E0A21A;color:#fff}
+  .sb-foot{margin-top:auto;padding:14px 8px 0;display:flex;align-items:center;gap:10px;border-top:1px solid var(--line-2)}
+  /* 頂欄:精簡為頁面標題列 */
+  .topbar .brand,.topbar .nav,.topbar .quickbar-in,.topbar .pfbar,.topbar .ver,.topbar .auto-upd{display:none!important}
+  .page-title{display:block;font-family:var(--serif);font-size:20px;font-weight:800;color:var(--ink)}
+  .topbar-in{min-height:52px}
+  .wrap{max-width:1240px}
+}
 @media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
 
 </style>
 </head>
 <body>
+<aside class="sidebar" id="sidebar" aria-label="主選單">
+  <div class="sb-brand">
+    <svg width="28" height="28" viewBox="0 0 26 26" fill="none" aria-hidden="true"><circle cx="13" cy="13" r="12" stroke="#151B22" stroke-width="1.4"/><circle cx="13" cy="13" r="7" stroke="#0E7C86" stroke-width="1.4"/><circle cx="13" cy="13" r="2.6" fill="#0E7C86"/></svg>
+    <div><div class="sb-name">眼視光</div><div class="sb-tag">EYE-VISION HUB · 台灣</div></div>
+  </div>
+  <nav class="sb-nav" id="sbNav">
+    <a data-goto="overview" class="on"><i>🏠</i>總覽<small>本週動態 · 龍頭榜</small></a>
+    <a data-goto="taiwan"><i>📰</i>台灣訊息<small>新聞 · TFDA 許可證 · 行事曆</small></a>
+    <a data-goto="clinical"><i>📚</i>臨床文獻 / 試驗<small>PubMed · ClinicalTrials.gov 即時</small></a>
+    <a data-goto="clinics"><i>🏥</i>眼科院所<small>全台 1,000+ 家</small></a>
+    <a data-goto="companies"><i>🏢</i>產業公司<small>國際大廠 · 台灣</small></a>
+    <a data-goto="products"><i>💊</i>產品技術<small>62 類 · 173 項</small></a>
+    <a data-goto="global"><i>🌐</i>全球訊息</a>
+    <a data-goto="about"><i>ℹ️</i>關於</a>
+  </nav>
+  <div class="sb-sec">
+    <div class="sb-sec-h">產品篩選 <span class="sb-sec-sub">各頁同步</span></div>
+    <div class="sb-pf">
+      <a class="pfbtn on" data-pf="all">全部</a>
+      <a class="pfbtn" data-pf="ok">🌙 角膜塑型</a>
+      <a class="pfbtn" data-pf="cl">👁 隱形眼鏡</a>
+      <a class="pfbtn" data-pf="myopia">🎯 近視控制</a>
+      <a class="pfbtn" data-pf="lens">🔎 鏡片/驗光</a>
+      <a class="pfbtn" data-pf="iol">💎 白內障/IOL</a>
+      <a class="pfbtn" data-pf="refractive">⚡ 屈光雷射</a>
+      <a class="pfbtn" data-pf="dryeye">💧 乾眼/眼藥</a>
+      <a class="pfbtn" data-pf="glaucoma">🌊 青光眼</a>
+      <a class="pfbtn" data-pf="retina">🟣 視網膜/黃斑</a>
+      <a class="pfbtn" data-pf="device">🩺 診斷儀器</a>
+    </div>
+  </div>
+  <div class="sb-foot"><span class="ver" id="sbVer">r133</span><span class="auto-upd" id="autoUpd2">⟳ 自動更新</span></div>
+</aside>
+<button class="totop" id="toTop" type="button" aria-label="回到頂部" title="回到頂部">↑</button>
 
 <svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs><radialGradient id="gEye" cx="42%" cy="38%" r="72%"><stop offset="0" stop-color="#FFFFFF"/><stop offset="0.65" stop-color="#F3F7FC"/><stop offset="1" stop-color="#E2E9F2"/></radialGradient><radialGradient id="gLens" cx="45%" cy="38%" r="68%"><stop offset="0" stop-color="#EDF3FF"/><stop offset="1" stop-color="#BFD2F3"/></radialGradient><radialGradient id="gClear" cx="50%" cy="42%" r="62%"><stop offset="0" stop-color="#EDFCF3"/><stop offset="1" stop-color="#C8EFDA"/></radialGradient><radialGradient id="gLED" cx="42%" cy="38%" r="62%"><stop offset="0" stop-color="#FFB0A4"/><stop offset="0.5" stop-color="#DE5648"/><stop offset="1" stop-color="#AE362C"/></radialGradient><radialGradient id="gSun" cx="42%" cy="38%" r="66%"><stop offset="0" stop-color="#FFE59A"/><stop offset="1" stop-color="#F2A017"/></radialGradient><linearGradient id="gDev" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#3C424C"/><stop offset="1" stop-color="#21252D"/></linearGradient><filter id="soft" x="-25%" y="-25%" width="150%" height="150%"><feDropShadow dx="0" dy="2.5" stdDeviation="3.2" flood-color="#0C1E38" flood-opacity="0.16"/></filter><filter id="glow" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="3.2" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter></defs></svg>
 
@@ -712,6 +788,7 @@ footer .build{margin-top:8px;font-size:11px}
       </svg>
       眼視光<small>OPTICS DESK</small>
     </div>
+    <div class="page-title" id="pageTitle">總覽</div>
     <nav class="nav" id="mainNav">
       <a data-view="overview" class="on">產業總覽</a>
       <a data-view="taiwan">台灣訊息</a>
@@ -723,7 +800,7 @@ footer .build{margin-top:8px;font-size:11px}
       <a data-view="about">關於</a>
     </nav>
     <div class="topbar-right">
-      <span class="ver" title="版本(部署後對照用)">r132</span>
+      <span class="ver" title="版本(部署後對照用)">r133</span>
       <span class="auto-upd" id="autoUpd" title="頁面開啟期間每 10 分鐘自動重抓">⟳ 自動更新</span>
       <button id="backBtn" type="button" aria-label="返回上一頁">← 返回</button>
     </div>
@@ -1101,7 +1178,7 @@ footer .build{margin-top:8px;font-size:11px}
   <div class="wrap">
     眼視光資訊中心 · Eye-Vision Industry Hub<br>
     資料來源:Google News · PubMed / NCBI · 每日/每 6 小時自動更新
-    <div class="build">build r132 · <span id="buildStamp"></span></div>
+    <div class="build">build r133 · <span id="buildStamp"></span></div>
   </div>
 </footer>
 
@@ -1461,6 +1538,7 @@ function litItemHTML(it){
     <h4><a href="${link}" target="_blank" rel="noopener">${head}</a></h4>
     ${sub}
     <div class="fi-meta">${it.journal||""}${it.pmid?" · PMID "+it.pmid:""}</div>
+    ${(!it.zh&&it.title)?zhBtnHTML(zhRegister(it.title,it.abstract||it.summary||"")):""}
     ${(it.src||it.country||it.ptype)?`<div class="lit-badges">${it.src?`<span class="lit-badge">📚 ${it.src}</span>`:""}${it.country?`<span class="lit-badge">🌍 ${it.country}</span>`:""}${it.ptype?`<span class="lit-badge">🔬 ${it.ptype}</span>`:""}</div>`:""}
     ${point?`<div class="fi-point">臨床效果/結論:${point}</div>`:""}
     ${tagsHTML(it.title,it.zh,it.zh_sum,it.summary,it.journal)}
@@ -2026,7 +2104,8 @@ async function autoRefreshAll(force){
   if(typeof loadTwStocks==='function')jobs.push(loadTwStocks());
   if(typeof loadClinics==='function')jobs.push(loadClinics());
   try{await Promise.allSettled(jobs);}catch(e){}
-  const b=document.getElementById('autoUpd'); if(b){ const t=new Date(); b.textContent='⟳ 自動更新 '+t.getHours().toString().padStart(2,'0')+':'+t.getMinutes().toString().padStart(2,'0'); b.title='頁面開啟期間每 10 分鐘自動重抓;資料源由 GitHub Actions 每小時~每日更新'; }
+  const t=new Date(); const txt='⟳ 自動更新 '+t.getHours().toString().padStart(2,'0')+':'+t.getMinutes().toString().padStart(2,'0'); const b2=document.getElementById('autoUpd2'); if(b2)b2.textContent=txt;
+  const b=document.getElementById('autoUpd'); if(b){ b.textContent=txt; b.title='頁面開啟期間每 10 分鐘自動重抓;資料源由 GitHub Actions 每小時~每日更新'; }
 }
 setInterval(function(){autoRefreshAll(false);},10*60*1000);
 document.addEventListener('visibilitychange',function(){ if(document.visibilityState==='visible')autoRefreshAll(false); });
@@ -2064,8 +2143,7 @@ function setPF(k, fromUser){
   const hs=document.getElementById('pfStatus'); if(hs)hs.textContent=PF==='all'?'':('目前只顯示:'+pfLabel());
 }
 function initPF(){
-  const bar=document.getElementById('pfBar'); if(!bar)return;
-  bar.addEventListener('click',e=>{const b=e.target.closest('.pfbtn'); if(!b)return; e.preventDefault(); setPF(b.dataset.pf===PF?'all':b.dataset.pf, true);});
+  document.addEventListener('click',e=>{const b=e.target.closest('.pfbtn'); if(!b)return; e.preventDefault(); setPF(b.dataset.pf===PF?'all':b.dataset.pf, true);});
   let saved=''; try{saved=localStorage.getItem('eyehub_pf')||'';}catch(e){}
   if(saved&&PF_DEF[saved]){ PF=saved; document.querySelectorAll('.pfbtn').forEach(b=>b.classList.toggle('on', b.dataset.pf===PF)); }
 }
@@ -2123,6 +2201,29 @@ function initDigest(){
   const c=document.getElementById('wlChips'); if(c)c.addEventListener('click',e=>{ const x=e.target.closest('.wl-x'); if(!x)return; const w=getWatch(); w.splice(+x.dataset.i,1); saveWatch(w); renderDigest(); });
   renderDigest();
 }
+
+// ===== 一鍵中文(免費翻譯端點,按需呼叫;本機快取)=====
+const TR_CACHE={};
+async function zhTranslate(text){
+  const key=text.slice(0,2000); if(TR_CACHE[key])return TR_CACHE[key];
+  const url='https://translate.googleapis.com/translate_a/single?client=gtx&sl=auto&tl=zh-TW&dt=t&q='+encodeURIComponent(key);
+  const r=await fetch(url); if(!r.ok)throw new Error('translate '+r.status);
+  const j=await r.json(); const out=(j&&j[0]||[]).map(x=>x&&x[0]||'').join('');
+  TR_CACHE[key]=out; return out;
+}
+function zhBtnHTML(id){ return '<div class="zh-wrap" id="zh-'+id+'"><button type="button" class="zh-btn" data-zh="'+id+'">🈶 一鍵中文(標題+摘要)</button></div>'; }
+const ZH_SRC={};
+async function doZh(id){
+  const box=document.getElementById('zh-'+id); if(!box)return; const src=ZH_SRC[id]; if(!src)return;
+  box.innerHTML='<div class="zh-out muted">翻譯中…</div>';
+  try{
+    const t=await zhTranslate(src.title||''); const a=src.abs?await zhTranslate(src.abs):'';
+    box.innerHTML='<div class="zh-out"><div class="zh-t">'+t+'</div>'+(a?('<div class="zh-a">'+a+'</div>'):'<div class="muted" style="font-size:12px">此筆無摘要可翻</div>')+'<div class="zh-note">※ 機器翻譯僅供快速瀏覽,以原文為準</div></div>';
+  }catch(e){ box.innerHTML='<div class="zh-out muted">翻譯服務暫時無法使用,請稍後再試。</div>'; }
+}
+document.addEventListener('click',function(e){ const b=e.target.closest('[data-zh]'); if(!b)return; e.preventDefault(); doZh(b.dataset.zh); });
+let ZH_SEQ=0;
+function zhRegister(title,abs){ const id=(++ZH_SEQ); ZH_SRC[id]={title:title||'',abs:(abs||'').slice(0,2000)}; return id; }
 async function loadEvents(){
   try{const r=await fetch('events.json?_='+Date.now()); if(r.ok){const d=await r.json(); if(d&&d.events&&d.events.length)EVENTS_DATA=d;}}catch(e){}
   if(!EVENTS_DATA)EVENTS_DATA=EVENTS_SEED;
@@ -3000,6 +3101,9 @@ function applyView(name){
   document.querySelectorAll('#mainNav a').forEach(a=>a.classList.toggle('on', a.dataset.view===name));
   document.querySelectorAll('.botnav-item').forEach(a=>a.classList.toggle('on', a.dataset.goto===name));
   document.querySelectorAll('.qbtn[data-goto]').forEach(a=>a.classList.toggle('on', a.dataset.goto===name));
+  document.querySelectorAll('#sbNav a').forEach(a=>a.classList.toggle('on', a.dataset.goto===name));
+  const PT={overview:'總覽',taiwan:'台灣訊息',global:'全球訊息',companies:'產業公司',products:'產品技術',clinical:'臨床文獻 / 試驗',clinics:'眼科院所',myopia:'近視控制工具',about:'關於'};
+  const pt=document.getElementById('pageTitle'); if(pt)pt.textContent=PT[name]||'';
   var ql=document.querySelector('.qbtn[data-quick="leaders"]'); if(ql)ql.classList.toggle('on', name==='overview');
   const bb=document.getElementById('backBtn'); if(bb)bb.style.display=(name==='overview')?'none':'';
   if(name==='myopia'){document.querySelectorAll('.bar-fill').forEach(f=>{f.style.width=f.dataset.pct+'%';});}
@@ -3011,7 +3115,9 @@ function switchView(name,seg){
   if(name==='taiwan')setTimeout(markEventsSeen,2000);
   if(name==='companies'&&seg){CO_TAB=seg;CO_QUERY='';const cse=document.getElementById('coSearch');if(cse)cse.value='';coTabsHTML(seg);renderCompanies();}
 }
+function initToTop(){ const t=document.getElementById('toTop'); if(!t)return; window.addEventListener('scroll',function(){ t.classList.toggle('show', window.scrollY>600); },{passive:true}); t.addEventListener('click',function(){ window.scrollTo({top:0,behavior:'smooth'}); }); }
 function initRouter(){
+  initToTop();
   document.getElementById('mainNav').addEventListener('click',e=>{
     const a=e.target.closest('a[data-view]'); if(!a)return;
     e.preventDefault(); switchView(a.dataset.view);
@@ -3047,7 +3153,7 @@ const TRIAL_STATUS_ZH={RECRUITING:"招募中",NOT_YET_RECRUITING:"尚未招募",
 function mapLiveStudy(s){
   const p=s.protocolSection||{};
   const id=p.identificationModule||{}, st=p.statusModule||{}, sp=(p.sponsorCollaboratorsModule||{}).leadSponsor||{};
-  const dm=p.designModule||{}, cm=p.conditionsModule||{}, ai=p.armsInterventionsModule||{}, cl=p.contactsLocationsModule||{};
+  const dm=p.designModule||{}, cm=p.conditionsModule||{}, ai=p.armsInterventionsModule||{}, cl=p.contactsLocationsModule||{}, dsc=p.descriptionModule||{};
   const status=st.overallStatus||"";
   const _cs=[...new Set((cl.locations||[]).map(l=>l&&l.country).filter(Boolean))]; const country=_cs.includes('Taiwan')?'Taiwan'+(_cs.length>1?(' +'+(_cs.length-1)):''):(_cs[0]||"");
   return {nct:id.nctId, title:id.briefTitle||id.officialTitle||id.acronym||id.nctId||"(未命名試驗)",
@@ -3055,7 +3161,7 @@ function mapLiveStudy(s){
     sponsor:sp.name||"", enroll:(dm.enrollmentInfo||{}).count||"",
     start:(st.startDateStruct||{}).date||"", completion:(st.completionDateStruct||{}).date||"",
     updated:(st.lastUpdatePostDateStruct||{}).date||"", status:status, status_zh:TRIAL_STATUS_ZH[status]||status,
-    type:dm.studyType||"", phase:(dm.phases||[]).filter(x=>x&&x!=="NA").join("/"), country:country, _key:"live"};
+    type:dm.studyType||"", phase:(dm.phases||[]).filter(x=>x&&x!=="NA").join("/"), country:country, abstract:(dsc.briefSummary||""), _key:"live"};
 }
 async function liveTrialSearch(){
   const inp=document.getElementById('trialSearch'); const q=(inp?inp.value:'').trim();
@@ -3089,6 +3195,7 @@ function trialItemHTML(it){
     <div class="fi-top"><span class="fi-tag">${LIT_LABEL[it._key]||"試驗"}</span><span class="fi-date mono">${it.nct||""}</span></div>
     <h4><a href="${link}" target="_blank" rel="noopener">${it.title}</a></h4>
     <div class="fi-meta">${meta}</div>
+    ${zhBtnHTML(zhRegister(it.title,[it.abstract||"",cond?("Conditions: "+cond):"",intr?("Interventions: "+intr):""].filter(Boolean).join("\n")))}
     ${badges?`<div class="lit-badges">${badges}</div>`:""}
     ${point?`<div class="fi-point">${point}</div>`:""}
     ${aiPanel(
