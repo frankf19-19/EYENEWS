@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- 眼視光 Eye-Vision Hub | build r128 | 2026-07-11 | 公司資料全面查證+版本標示 -->
+<!-- 眼視光 Eye-Vision Hub | build r129 | 2026-07-11 | 公司資料全面查證+版本標示 -->
 <html lang="zh-Hant">
 <head>
 <meta charset="UTF-8">
@@ -317,6 +317,8 @@ h2{font-weight:700;font-size:clamp(24px,3vw,32px);margin:0 0 6px}
 .cl-doc-i{font-size:12.5px;color:var(--ink-soft);line-height:1.6;margin:4px 0 4px 8px}
 .cl-doc-link{font-size:12px;color:var(--accent-ink);margin-left:8px}
 @media(max-width:600px){.clinic-grid{grid-template-columns:1fr}}
+.tw-btn{margin-left:auto;border-color:#E0533D!important;color:#9A2F22}
+.tw-btn.on{background:#E0533D!important;color:#fff!important}
 .cal-orgs{display:flex;flex-wrap:wrap;gap:8px;margin:2px 0 12px}
 .cal-org{font-size:12.5px;color:var(--accent-ink);background:var(--accent-soft);border:1px solid var(--accent);border-radius:8px;padding:6px 11px;text-decoration:none;font-weight:600}
 .cal-org:hover{background:var(--accent);color:#fff}
@@ -695,13 +697,14 @@ footer .build{margin-top:8px;font-size:11px}
       <a data-view="about">關於</a>
     </nav>
     <div class="topbar-right">
-      <span class="ver" title="版本(部署後對照用)">r128</span>
+      <span class="ver" title="版本(部署後對照用)">r129</span>
       <button id="backBtn" type="button" aria-label="返回上一頁">← 返回</button>
     </div>
   </div>
   <div class="wrap quickbar-in" id="quickbar">
     <a class="qbtn" data-quick="leaders">🔥 龍頭榜</a>
     <a class="qbtn" data-goto="taiwan">📰 台灣訊息</a>
+    <a class="qbtn" data-quick="tfda">🏛️ TFDA 許可證</a>
     <a class="qbtn" data-quick="calendar">📅 學協會行事曆</a>
     <a class="qbtn" data-goto="global">🌐 全球訊息</a>
     <a class="qbtn" data-goto="companies">🏢 產業公司</a>
@@ -869,9 +872,22 @@ footer .build{margin-top:8px;font-size:11px}
         <h3>📅 學協會行事曆 <span id="calNewBadge"></span></h3>
         <span class="upd-badge">● 最後更新 <span id="calUpd">載入中…</span></span>
       </div>
-      <p class="lit-sub">中華民國眼科醫學會的學術活動、年會、年中會、國際會議與驗光/護理課程(每日自動抓取官網)。視光全聯會官網為動態平台無法自動抓取,請用下方連結。</p>
+      <p class="lit-sub">中華民國眼科醫學會與視光全聯會的活動入口。※ 兩官網目前皆有反爬蟲保護(Cloudflare / 動態平台),無法自動抓取活動清單,請直接點下方連結查看最新行事曆;另可用上方捷徑「台灣訊息」的「活動/衛教」分類看新聞中的研討會訊息。</p>
       <div class="cal-orgs" id="calOrgs"></div>
       <div class="feed" id="calFeed"></div>
+    </div>
+
+    <div class="panel lit-panel" style="margin-bottom:16px">
+      <div class="lit-head">
+        <h3>🏛️ TFDA 眼科許可證動態</h3>
+        <span class="upd-badge">● 最後更新 <span id="tfdaUpd">載入中…</span></span>
+      </div>
+      <p class="lit-sub">食藥署開放資料(每週更新):眼科醫療器材與眼用藥品許可證的<b>最新核准</b>與<b>近期註銷</b>——誰拿到新證、誰的產品退出市場。可依類型快速篩選,點證號查官方登錄。</p>
+      <div class="kf-grid" id="tfdaStats" style="margin:0 0 12px"></div>
+      <div class="lit-search-row"><input id="tfdaSearch" type="search" placeholder="搜尋品名/申請商/製造商/證號(可中英)…" aria-label="搜尋許可證"><span id="tfdaCount" class="lit-count"></span></div>
+      <div class="range-row" id="tfdaKind"></div>
+      <div class="range-row" id="tfdaTags"></div>
+      <div class="feed" id="tfdaFeed"></div>
     </div>
 
     <div class="panel lit-panel">
@@ -1033,7 +1049,7 @@ footer .build{margin-top:8px;font-size:11px}
   <div class="wrap">
     眼視光資訊中心 · Eye-Vision Industry Hub<br>
     資料來源:Google News · PubMed / NCBI · 每日/每 6 小時自動更新
-    <div class="build">build r128 · <span id="buildStamp"></span></div>
+    <div class="build">build r129 · <span id="buildStamp"></span></div>
   </div>
 </footer>
 
@@ -1355,7 +1371,7 @@ function renderFeedTabs(active){
     `<button class="lit-tab ${t.k===active?'on':''}" data-k="${t.k}">${t.l}</button>`).join('');
 }
 
-let LIT_DATA=null, ACTIVE_TAB="all", LIT_QUERY="", LIT_YEARS="all";
+let LIT_DATA=null, ACTIVE_TAB="all", LIT_QUERY="", LIT_YEARS="all", LIT_TW=false, TRIAL_TW=false;
 
 function escHTML(s){return (s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');}
 function escAttr(s){return (s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');}
@@ -1410,7 +1426,8 @@ function litItemHTML(it){
 function renderLitYears(){
   const el=document.getElementById('litYears'); if(!el)return;
   const opts=[["all","全部"],["3","近3年"],["6","近6年"],["old","6年以上(經典)"]];
-  el.innerHTML=opts.map(o=>`<button class="range-btn ${o[0]===LIT_YEARS?'on':''}" data-y="${o[0]}">${o[1]}</button>`).join('');
+  el.innerHTML=opts.map(o=>`<button class="range-btn ${o[0]===LIT_YEARS?'on':''}" data-y="${o[0]}">${o[1]}</button>`).join('')+
+    `<button class="range-btn tw-btn ${LIT_TW?'on':''}" data-tw="1" title="只看台灣機構(作者單位含 Taiwan)發表的文獻">🇹🇼 台灣機構</button>`;
 }
 function yearOK(it){
   if(LIT_YEARS==='all')return true;
@@ -1539,7 +1556,7 @@ async function fetchLit(append){
   else if(LIT_YEARS==='6'){epmcYear=' AND (PUB_YEAR:['+(y-6)+' TO '+y+'])'; LIT_DF_OA='from_publication_date:'+(y-6)+'-01-01'; LIT_DF_CR='from-pub-date:'+(y-6)+'-01-01';}
   else if(LIT_YEARS==='old'){epmcYear=' AND (PUB_YEAR:[1900 TO '+(y-6)+'])'; LIT_DF_OA='to_publication_date:'+(y-6)+'-12-31'; LIT_DF_CR='until-pub-date:'+(y-6)+'-12-31';}
   const EYEQ='(eye OR ophthalmology OR ophthalmic OR ocular OR vision OR retina OR cornea OR glaucoma OR cataract OR myopia OR refractive OR optometry OR "contact lens" OR "intraocular lens")';
-  const termE=(q?('('+term+') AND '+EYEQ):term)+' AND (SRC:MED OR SRC:PMC)'+epmcYear;
+  const termE=(q?('('+term+') AND '+EYEQ):term)+' AND (SRC:MED OR SRC:PMC)'+epmcYear+(LIT_TW?' AND (AFF:Taiwan OR AFF:"Taipei" OR AFF:"Taichung" OR AFF:"Kaohsiung" OR AFF:"Tainan")':'');
   if(!append){ LIT_ITEMS=[]; LIT_SEEN={}; LIT_PAGE=0; LIT_EPMC_CURSOR='*'; if(feed)feed.innerHTML='<div class="feed-empty">正在查詢 PubMed + PMC 全庫…</div>'; if(cnt)cnt.textContent=''; }
   else { LIT_PAGE++; const lm=document.getElementById('litMore'); if(lm){lm.textContent='載入中…'; lm.disabled=true;} }
   try{
@@ -1574,7 +1591,7 @@ function initLit(){
   renderLitYears();
   document.getElementById('litYears').addEventListener('click',e=>{
     const b=e.target.closest('.range-btn'); if(!b)return;
-    LIT_YEARS=b.dataset.y; renderLitYears(); fetchLit(false);
+    if(b.dataset.tw){LIT_TW=!LIT_TW;} else {LIT_YEARS=b.dataset.y;} renderLitYears(); fetchLit(false);
   });
   document.getElementById('litTabs').addEventListener('click',e=>{
     const b=e.target.closest('.lit-tab'); if(!b)return;
@@ -1889,6 +1906,62 @@ function renderTwStocks(){
 async function loadTwStocks(){
   try{const r=await fetch('tw_stocks.json?_='+Date.now()); if(r.ok)TWS_DATA=await r.json();}catch(e){}
   renderTwStocks();
+}
+
+let TFDA=null, TFDA_KIND="dev_recent", TFDA_TAG="all", TFDA_Q="", TFDA_SHOWN=30, TFDA_TIMER=null;
+const TFDA_KINDS=[["dev_recent","🩺 醫材·最新核准"],["drug_recent","💧 眼藥·最新核准"],["dev_cancelled","⛔ 醫材·近期註銷"]];
+function tfdaList(){ if(!TFDA)return []; const [k,w]=TFDA_KIND.split('_'); return ((TFDA[k]||{})[w])||[]; }
+function tfdaLicUrl(it){ return it.doc?('https://info.fda.gov.tw/MLMS/H0001D.aspx?Type=Lic&LicId='+encodeURIComponent(it.doc)):'https://info.fda.gov.tw/MLMS/H0001.aspx'; }
+function renderTfdaStats(){
+  const el=document.getElementById('tfdaStats'); if(!el||!TFDA)return;
+  const d=(TFDA.dev||{}).stats||{}, g=(TFDA.drug||{}).stats||{}; const y=new Date().getFullYear();
+  const top=(d.top_applicants||[])[0]; 
+  el.innerHTML=[
+    {n:(d.active||0).toLocaleString(),l:'眼科醫材 有效許可證'},
+    {n:d.new_this_year||0,l:y+' 年新核准醫材'},
+    {n:(g.active||0).toLocaleString(),l:'眼用藥品 有效許可證'},
+    {n:g.new_this_year||0,l:y+' 年新核准眼藥'},
+  ].map(s=>'<div class="kf-card"><div class="kf-num">'+s.n+'</div><div class="kf-lab">'+s.l+'</div></div>').join('');
+}
+function renderTfdaBars(){
+  const kb=document.getElementById('tfdaKind'); if(kb)kb.innerHTML=TFDA_KINDS.map(k=>'<button class="range-btn'+(TFDA_KIND===k[0]?' on':'')+'" data-k="'+k[0]+'">'+k[1]+'</button>').join('');
+  const tb=document.getElementById('tfdaTags'); if(!tb)return;
+  const cnt={}; tfdaList().forEach(it=>(it.tags||[]).forEach(t=>cnt[t]=(cnt[t]||0)+1));
+  const tags=Object.keys(cnt).sort((a,b)=>cnt[b]-cnt[a]);
+  tb.innerHTML='<button class="range-btn'+(TFDA_TAG==='all'?' on':'')+'" data-t="all">全部</button>'+tags.map(t=>'<button class="range-btn'+(TFDA_TAG===t?' on':'')+'" data-t="'+t+'">'+t+' '+cnt[t]+'</button>').join('');
+}
+function tfdaItemHTML(it){
+  const isC=TFDA_KIND.endsWith('cancelled');
+  const date=isC?(it.cancelled+' 註銷'):(it.issued+' 核准');
+  const meta=[it.cls?('第'+it.cls+'等級'):'', it.sub||it.form||'', it.origin||'', it.country?('製造:'+it.country):''].filter(Boolean).join(' · ');
+  const tags=(it.tags||[]).map(t=>'<span class="fi-tag">'+t+'</span>').join(' ');
+  return '<div class="feed-item"><div class="fi-top">'+tags+'<span class="fi-date mono">'+date+(it.expires&&!isC?(' · 效期至 '+it.expires):'')+'</span></div>'+
+    '<h4><a href="'+tfdaLicUrl(it)+'" target="_blank" rel="noopener">'+it.name+'</a></h4>'+
+    (it.en?('<div class="fi-meta" style="font-family:var(--mono);font-size:12px">'+it.en+'</div>'):'')+
+    '<div class="fi-meta">申請商:<b>'+(it.applicant||'—')+'</b>'+(it.maker&&it.maker!==it.applicant?(' · 製造商:'+it.maker):'')+'</div>'+
+    (it.ind?('<div class="fi-meta">適應症:'+it.ind+'</div>'):'')+
+    '<div class="fi-meta mono" style="font-size:11.5px;color:var(--muted)">'+it.lic+(meta?(' · '+meta):'')+(isC&&it.reason?(' · '+it.reason):'')+'</div></div>';
+}
+function renderTfda(){
+  const feed=document.getElementById('tfdaFeed'), cnt=document.getElementById('tfdaCount'); if(!feed)return;
+  if(!TFDA||(!tfdaList().length)){feed.innerHTML='<div class="feed-empty">尚無資料(待每週自動更新)。</div>'; if(cnt)cnt.textContent=''; return;}
+  let list=tfdaList();
+  if(TFDA_TAG!=='all')list=list.filter(it=>(it.tags||[]).includes(TFDA_TAG));
+  const q=(TFDA_Q||'').trim(); if(q)list=list.filter(it=>biMatch([it.name,it.en,it.applicant,it.maker,it.lic,it.sub,it.form,it.comp,it.ind].filter(Boolean).join(' '),q));
+  if(cnt)cnt.textContent='共 '+list.length+' 筆';
+  if(!list.length){feed.innerHTML='<div class="feed-empty">找不到符合的許可證。</div>';return;}
+  feed.innerHTML=list.slice(0,TFDA_SHOWN).map(tfdaItemHTML).join('')+(list.length>TFDA_SHOWN?'<button class="trial-more-btn" id="tfdaMore" type="button">載入更多 ↓('+(list.length-TFDA_SHOWN)+')</button>':'');
+  const lm=document.getElementById('tfdaMore'); if(lm)lm.addEventListener('click',()=>{TFDA_SHOWN+=30; renderTfda();});
+}
+function initTfda(){
+  const kb=document.getElementById('tfdaKind'); if(kb)kb.addEventListener('click',e=>{const b=e.target.closest('.range-btn'); if(!b)return; TFDA_KIND=b.dataset.k; TFDA_TAG='all'; TFDA_SHOWN=30; renderTfdaBars(); renderTfda();});
+  const tb=document.getElementById('tfdaTags'); if(tb)tb.addEventListener('click',e=>{const b=e.target.closest('.range-btn'); if(!b)return; TFDA_TAG=b.dataset.t; TFDA_SHOWN=30; renderTfdaBars(); renderTfda();});
+  const se=document.getElementById('tfdaSearch'); if(se)se.addEventListener('input',()=>{TFDA_Q=se.value; TFDA_SHOWN=30; clearTimeout(TFDA_TIMER); TFDA_TIMER=setTimeout(renderTfda,200);});
+}
+async function loadTfda(){
+  try{const r=await fetch('tfda_eye.json?_='+Date.now()); if(r.ok)TFDA=await r.json();}catch(e){}
+  const u=document.getElementById('tfdaUpd'); if(u)u.textContent=(TFDA&&TFDA.updated)||'—';
+  renderTfdaStats(); renderTfdaBars(); renderTfda();
 }
 async function loadEvents(){
   try{const r=await fetch('events.json?_='+Date.now()); if(r.ok){const d=await r.json(); if(d&&d.events&&d.events.length)EVENTS_DATA=d;}}catch(e){}
@@ -2784,7 +2857,8 @@ function initRouter(){
   });
   document.body.addEventListener('click',e=>{
     const q=e.target.closest('[data-quick]'); if(!q)return; e.preventDefault();
-    if(q.dataset.quick==='calendar'){ switchView('taiwan'); setTimeout(function(){var el=document.getElementById('calFeed'); if(el)el.scrollIntoView({behavior:'smooth',block:'start'});},180); }
+    if(q.dataset.quick==='tfda'){ switchView('taiwan'); setTimeout(function(){var el=document.getElementById('tfdaStats'); if(el)el.scrollIntoView({behavior:'smooth',block:'start'});},180); }
+    else if(q.dataset.quick==='calendar'){ switchView('taiwan'); setTimeout(function(){var el=document.getElementById('calFeed'); if(el)el.scrollIntoView({behavior:'smooth',block:'start'});},180); }
     else if(q.dataset.quick==='leaders'){ switchView('overview'); setTimeout(function(){var el=document.getElementById('leadersBlock'); if(el)el.scrollIntoView({behavior:'smooth',block:'start'});},220); }
   });
   const bb=document.getElementById('backBtn');
@@ -2810,7 +2884,7 @@ function mapLiveStudy(s){
   const id=p.identificationModule||{}, st=p.statusModule||{}, sp=(p.sponsorCollaboratorsModule||{}).leadSponsor||{};
   const dm=p.designModule||{}, cm=p.conditionsModule||{}, ai=p.armsInterventionsModule||{}, cl=p.contactsLocationsModule||{};
   const status=st.overallStatus||"";
-  const country=((cl.locations||[]).find(l=>l&&l.country)||{}).country||"";
+  const _cs=[...new Set((cl.locations||[]).map(l=>l&&l.country).filter(Boolean))]; const country=_cs.includes('Taiwan')?'Taiwan'+(_cs.length>1?(' +'+(_cs.length-1)):''):(_cs[0]||"");
   return {nct:id.nctId, title:id.briefTitle||id.officialTitle||id.acronym||id.nctId||"(未命名試驗)",
     conditions:cm.conditions||[], interventions:(ai.interventions||[]).map(x=>x.name).filter(Boolean),
     sponsor:sp.name||"", enroll:(dm.enrollmentInfo||{}).count||"",
@@ -2873,7 +2947,8 @@ function renderTrialTabs(active){
 function renderTrialStatus(){
   const el=document.getElementById('trialStatus'); if(!el)return;
   const opts=[["all","全部"],["RECRUITING","招募中"],["ACTIVE_NOT_RECRUITING","進行中"],["COMPLETED","已完成"]];
-  el.innerHTML=opts.map(o=>`<button class="range-btn ${o[0]===TRIAL_STATUS?'on':''}" data-s="${o[0]}">${o[1]}</button>`).join('');
+  el.innerHTML=opts.map(o=>`<button class="range-btn ${o[0]===TRIAL_STATUS?'on':''}" data-s="${o[0]}">${o[1]}</button>`).join('')+
+    `<button class="range-btn tw-btn ${TRIAL_TW?'on':''}" data-tw="1" title="只看在台灣有執行地點的試驗">🇹🇼 台灣執行</button>`;
 }
 function trialMatch(it,q){
   if(!q)return true;
@@ -2947,6 +3022,7 @@ async function fetchTrials(append,broad){
   else if(TRIAL_TAB==='all'){ params.set('query.term','myopia OR "contact lens" OR "intraocular lens" OR glaucoma OR "dry eye" OR "refractive surgery" OR orthokeratology OR "macular degeneration"'); }
   else { const c=TRIAL_CATS[TRIAL_TAB]||{}; if(c.cond)params.set('query.cond',c.cond); if(c.term)params.set('query.term',c.term); }
   if(TRIAL_STATUS && TRIAL_STATUS!=='all' && !q) params.set('filter.overallStatus', TRIAL_STATUS);
+  if(TRIAL_TW) params.set('query.locn','Taiwan');
   if(append && TRIAL_TOKEN) params.set('pageToken', TRIAL_TOKEN);
   if(!append){ TRIAL_ITEMS=[]; TRIAL_TOKEN=null; if(feed)feed.innerHTML='<div class="feed-empty">正在查詢 ClinicalTrials.gov 全庫…</div>'; if(cnt)cnt.textContent=''; }
   else { const lm=document.getElementById('trialMore'); if(lm){lm.textContent='載入中…'; lm.disabled=true;} }
@@ -2985,7 +3061,7 @@ function initTrials(){
   const tt=document.getElementById('trialTabs');
   if(tt)tt.addEventListener('click',e=>{const b=e.target.closest('.lit-tab'); if(!b)return; TRIAL_TAB=b.dataset.k; renderTrialTabs(TRIAL_TAB); fetchTrials(false);});
   const ts=document.getElementById('trialStatus');
-  if(ts)ts.addEventListener('click',e=>{const b=e.target.closest('.range-btn'); if(!b)return; TRIAL_STATUS=b.dataset.s; renderTrialStatus(); fetchTrials(false);});
+  if(ts)ts.addEventListener('click',e=>{const b=e.target.closest('.range-btn'); if(!b)return; if(b.dataset.tw){TRIAL_TW=!TRIAL_TW;} else {TRIAL_STATUS=b.dataset.s;} renderTrialStatus(); fetchTrials(false);});
   const tse=document.getElementById('trialSearch');
   if(tse){
     tse.addEventListener('input',()=>{TRIAL_QUERY=tse.value; clearTimeout(TRIAL_TIMER); TRIAL_TIMER=setTimeout(()=>fetchTrials(false),450);});
@@ -3005,7 +3081,7 @@ renderBars();
 renderTools();
 initLightbox();
 animateBars();
-loadLit(); loadEvents(); initClinics(); loadClinics(); loadTwStocks();
+loadLit(); loadEvents(); initClinics(); loadClinics(); loadTwStocks(); initTfda(); loadTfda();
 loadTrials();
 loadNews();
 loadGlobal();

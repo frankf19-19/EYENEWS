@@ -65,8 +65,17 @@ def d8(s):
     s = (s or "").strip().replace("/", "-")
     return s if re.match(r"^\d{4}-\d{2}-\d{2}$", s) else ""
 
-def tags_of(text):
-    return [t for t, rx in TAGS if rx.search(text)]
+DEV_TAGS = {"角膜塑型","隱形眼鏡","人工水晶體","眼科雷射","診斷儀器","手術器械/耗材","人工淚液/護理","阿托品"}
+DRUG_TAGS = {"阿托品","青光眼藥","乾眼藥","抗VEGF/眼內注射","抗生素/抗發炎","抗過敏","人工淚液/護理"}
+def tags_of(text, kind="dev"):
+    allow = DEV_TAGS if kind == "dev" else DRUG_TAGS
+    return [t for t, rx in TAGS if t in allow and rx.search(text)]
+def dedup(items):
+    seen, out = set(), []
+    for it in items:
+        if it["lic"] in seen: continue
+        seen.add(it["lic"]); out.append(it)
+    return out
 
 def clean(s): return re.sub(r"\s+", " ", (s or "")).strip()
 
@@ -111,7 +120,7 @@ def build_drugs():
             "issued": d8(r.get("發證日期")), "expires": d8(r.get("有效日期")),
             "status": clean(r.get("註銷狀態")), "cancelled": d8(r.get("註銷日期")), "reason": clean(r.get("註銷理由")),
             "origin": "輸入" if "輸" in (r.get("許可證字號") or "") else "製造",
-            "tags": tags_of(name + " " + en + " " + comp + " " + ind),
+            "tags": tags_of(name + " " + en + " " + comp + " " + ind, "drug"),
         })
     return out
 
@@ -127,7 +136,7 @@ def summarize(items, kind):
             "top_applicants": top_app, "top_categories": top_cat, "tag_counts": tagc}
 
 def main():
-    devs = build_devices(); drugs = build_drugs()
+    devs = dedup(build_devices()); drugs = dedup(build_drugs())
     log("eye devices:", len(devs), "| eye drugs:", len(drugs))
     if not devs and not drugs:
         log("!! nothing parsed — keeping existing tfda_eye.json"); return
