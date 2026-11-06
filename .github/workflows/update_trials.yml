@@ -2,7 +2,7 @@ name: Update global clinical trials
 
 on:
   schedule:
-    - cron: '30 */6 * * *'      # 每 6 小時(錯開其他工作流)
+    - cron: '50 */3 * * *'      # 每 3 小時(快取備援;頁面為即時直連)
   workflow_dispatch:
 
 permissions:

@@ -1,7 +1,7 @@
 name: Update Eye Clinics
 on:
   schedule:
-    - cron: '0 23 * * 1'
+    - cron: '15 22 * * *'   # 每日(健保資料每日更新)
   workflow_dispatch:
 permissions:
   contents: write

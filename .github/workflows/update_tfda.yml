@@ -1,7 +1,7 @@
 name: Update TFDA eye licenses
 on:
   schedule:
-    - cron: '20 22 * * 2'   # 每週三 UTC 22:20 ≈ 台灣週三 06:20(食藥署每週更新)
+    - cron: '25 22 * * *'   # 每日檢查(有變動才 commit)
   workflow_dispatch:
 permissions:
   contents: write

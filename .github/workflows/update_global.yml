@@ -2,7 +2,7 @@ name: Update global news
 
 on:
   schedule:
-    - cron: '30 22 * * *'      # 每日 22:30 UTC ≈ 台灣隔日 06:30
+    - cron: '35 */2 * * *'      # 每 2 小時
   workflow_dispatch:
 
 permissions:

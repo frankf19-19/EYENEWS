@@ -2,7 +2,7 @@ name: Update Taiwan news
 
 on:
   schedule:
-    - cron: '0 */6 * * *'      # 每 6 小時
+    - cron: '5 * * * *'      # 每小時
   workflow_dispatch:
 
 permissions:
