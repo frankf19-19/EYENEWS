@@ -19,7 +19,8 @@ QUERIES = {
     "contactlens": '隱形眼鏡 when:6y',
     "lens":        '(鏡片 OR 驗光 OR 眼鏡) 光學 when:6y',
     "device":      '眼科 (醫材 OR 器材 OR 儀器) when:6y',
-    "pharma":      '(眼藥 OR 乾眼 OR 白內障 OR 青光眼) when:6y',
+    "pharma":      '(眼藥 OR 眼藥水 OR 乾眼 OR 阿托品 OR 青光眼藥 OR 參天 OR 愛爾康) when:6y',
+    "disease":     '(白內障 OR 青光眼 OR 視網膜 OR 黃斑部 OR 近視雷射 OR 眼科手術 OR 人工水晶體) when:6y',
     "health":      '視力保健 OR 護眼 OR 眼睛健康 when:6y',
     "industry":    '(眼科 OR 光學 OR 隱形眼鏡) (產業 OR 營收 OR 上市 OR 公司) when:6y',
     "events":      '(眼科 OR 視光 OR 驗光 OR 近視 OR 隱形眼鏡 OR 角膜塑型) (講座 OR 研討會 OR 年會 OR 學會 OR 繼續教育 OR 工作坊 OR 論壇 OR 衛教 OR 體驗會 OR 發表會 OR 記者會 OR 義診 OR 展) when:6y',
@@ -112,6 +113,63 @@ def parse(raw, limit):
     return out
 
 
+# ---------- 後處理:相關性、雜訊、跨分類去重、重新歸類 ----------
+EYE_RE = re.compile(r"眼|視|近視|遠視|散光|老花|隱形|鏡片|眼鏡|角膜|塑型|白內障|青光眼|乾眼|驗光|視網膜|黃斑|水晶體|OK鏡|阿托品|"
+                    r"晶碩|視陽|精華|大學光|亨泰|明基材|金可|寶島|望隼|優你康|全福|仁新|晉弘|承業醫|大立光|"
+                    r"蔡司|愛爾康|Alcon|博士倫|嬌生|庫柏|CooperVision|參天|Santen|依視路|Essilor|Hoya|Zeiss|Acuvue|Topcon|Nidek")
+NOISE_RE = re.compile(r"綠色護眼|護眼色|護眼模式|護眼燈|護眼螢幕|護眼桌燈|星座|運勢|食譜|減肥|占卜|電競|手遊|筆電|手機評測|顯示器|電視")
+# 重新歸類規則(先命中先贏);None 表示維持原分類
+RECAT = [
+    (re.compile(r"角膜塑型|OK ?鏡|近視控制|近視防控|離焦|阿托品|低濃度|眼軸"), "myopia"),
+    (re.compile(r"白內障|青光眼|視網膜|黃斑|雷射|LASIK|SMILE|手術|人工水晶體|飛秒|ICL|玻璃體"), "disease"),
+    (re.compile(r"併購|收購|入股|募資|IPO|擴廠|建廠|策略聯盟|代理權|合資"), "deal"),
+    (re.compile(r"營收|財報|法說|股價|獲利|財測|掛牌|EPS|股利|盤中|漲停|跌停|目標價"), "business"),
+    (re.compile(r"講座|研討會|年會|繼續教育|工作坊|論壇|衛教|體驗會|發表會|記者會|義診|展覽|展出"), "events"),
+    (re.compile(r"隱形眼鏡|日拋|月拋|矽水膠|彩拋|角膜變色"), "contactlens"),
+    (re.compile(r"OCT|眼底|醫材|器材|儀器|驗光機|地形圖|眼壓計"), "device"),
+    (re.compile(r"眼藥|眼藥水|乾眼|人工淚液|點眼|藥水|藥物"), "pharma"),
+    (re.compile(r"鏡片|驗光|配鏡|眼鏡行|鏡框|太陽眼鏡|漸進|變色片"), "lens"),
+]
+# 跨分類去重優先序(越前越優先保留)
+PRIORITY = ["myopia","contactlens","disease","device","pharma","lens","deal","business","industry","events","health"]
+
+def postprocess(items):
+    # 攤平
+    flat = []
+    for k, arr in items.items():
+        for it in arr:
+            it = dict(it); it["_k"] = k; flat.append(it)
+    before = len(flat)
+    # 相關性 + 雜訊
+    kept = []
+    for it in flat:
+        t = it.get("title", "")
+        if not EYE_RE.search(t):      # 標題沒有任何眼視光相關詞 → 丟
+            continue
+        if NOISE_RE.search(t):        # 已知雜訊 → 丟
+            continue
+        # 重新歸類
+        for rx, cat in RECAT:
+            if rx.search(t):
+                it["_k"] = cat; break
+        kept.append(it)
+    # 跨分類去重:同標題只留優先序最高的分類
+    best = {}
+    for it in kept:
+        key = re.sub(r"[\s　，,。.!！?？:：\-－「」『』()（）]", "", it.get("title", ""))[:40]
+        pr = PRIORITY.index(it["_k"]) if it["_k"] in PRIORITY else 99
+        if key not in best or pr < best[key][0]:
+            best[key] = (pr, it)
+    out = {k: [] for k in items.keys()}
+    for _, it in best.values():
+        k = it.pop("_k")
+        out.setdefault(k, []).append(it)
+    for k in out:
+        out[k].sort(key=lambda x: x.get("date", ""), reverse=True)
+    sys.stderr.write(f"postprocess: {before} -> {sum(len(v) for v in out.values())} (去重/過濾後)\n")
+    return out
+
+
 def main():
     result = {
         "updated": datetime.datetime.utcnow().strftime("%Y-%m-%d %H:%M UTC"),
@@ -125,6 +183,7 @@ def main():
         sys.stderr.write(f"[{key}] {len(arts)} items\n")
         time.sleep(1.0)
 
+    result["items"] = postprocess(result["items"])
     total = sum(len(v) for v in result["items"].values())
     if total == 0 and __import__("os").path.exists("news.json"):
         sys.stderr.write("No results — keeping existing news.json\n")

@@ -13,7 +13,17 @@ except ImportError:
 
 BASE = "https://www.oph.org.tw"
 HEAD = {"User-Agent": "Mozilla/5.0 (EyeVisionHub-Calendar/1.0)"}
-DATE_RE = re.compile(r"(\d{4})/(\d{2})/(\d{2})")
+DATE_RE = re.compile(r"(\d{4})[/\-.年]\s*(\d{1,2})[/\-.月]\s*(\d{1,2})|(?<!\d)(1[01]\d)[/\-.年]\s*(\d{1,2})[/\-.月]\s*(\d{1,2})")
+def _norm_dates(found):
+    out = []
+    for g in found:
+        if g[0]:
+            y, m, d = int(g[0]), int(g[1]), int(g[2])
+        else:
+            y, m, d = int(g[3]) + 1911, int(g[4]), int(g[5])
+        if 1 <= m <= 12 and 1 <= d <= 31:
+            out.append((y, m, d))
+    return out
 
 SOURCES = [
     ("domestic", "/events/events.php?type=3"),   # 國內活動
@@ -24,7 +34,7 @@ SOURCES = [
 ]
 
 def to_iso(y, m, d):
-    return "%s-%s-%s" % (y, m, d)
+    return "%04d-%02d-%02d" % (int(y), int(m), int(d))
 
 def normalize_link(href):
     if href.startswith("http"):
@@ -39,19 +49,24 @@ def scrape(cat, path):
         r = requests.get(BASE + path, headers=HEAD, timeout=25)
         r.encoding = "utf-8"
         soup = BeautifulSoup(r.text, "html.parser")
+        links = soup.find_all("a", href=True)
+        cand = [a["href"] for a in links if ("content.php" in a["href"] or "meeting_info.php" in a["href"] or "course" in a["href"])]
+        sys.stderr.write("[%s] HTTP %s, %d bytes, %d links, %d candidate hrefs; sample: %s\n" % (cat, r.status_code, len(r.text), len(links), len(cand), cand[:3]))
+        if not cand:
+            sys.stderr.write("[%s] page text sample: %s\n" % (cat, re.sub(r"\s+", " ", soup.get_text(" ", strip=True))[:300]))
     except Exception as e:
         sys.stderr.write("[%s] fetch fail: %s\n" % (cat, e))
         return out
     for a in soup.find_all("a", href=True):
         href = a["href"]
-        if ("content.php?id=" not in href) and ("meeting_info.php?id=" not in href):
+        if not re.search(r"(content|meeting_info|course_info|course)\.php\?.*id=", href):
             continue
         title = a.get_text(strip=True)
         if not title or len(title) < 4:
             continue
         cont = a.find_parent(["li", "div", "article", "td", "tr"]) or a.parent
         txt = cont.get_text("\n", strip=True) if cont else ""
-        dates = DATE_RE.findall(txt)
+        dates = _norm_dates(DATE_RE.findall(txt))
         if not dates:
             continue
         date = to_iso(*dates[0])
@@ -114,6 +129,9 @@ def main():
     for e in ded:
         e["first_seen"] = prev.get(e["link"]) or today
 
+    if not ded:
+        sys.stderr.write("!! 0 events parsed — keeping existing events.json, NOT overwriting\n")
+        return
     data = {
         "updated": datetime.datetime.utcnow().strftime("%Y-%m-%d %H:%M UTC"),
         "links": [
