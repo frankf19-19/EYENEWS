@@ -11,6 +11,7 @@ import requests
 HEAD = {"User-Agent": "Mozilla/5.0 (EyeVisionHub-TWStocks/1.0)", "Accept": "application/json"}
 TWSE = "https://openapi.twse.com.tw/v1/exchangeReport/STOCK_DAY_ALL"
 TPEX = "https://www.tpex.org.tw/openapi/v1/tpex_mainboard_daily_close_quotes"
+TPEX_ESB = "https://www.tpex.org.tw/openapi/v1/tpex_esb_latest_statistics"  # 興櫃
 
 # 追蹤清單:代號 → (顯示名, 公司 id(對應 COMPANIES), 類別)
 WATCH = {
@@ -20,7 +21,6 @@ WATCH = {
     "8215": ("明基材料", "benqm", "隱形眼鏡/材料"),
     "4150": ("優你康", "unicon", "隱形眼鏡"),
     "4771": ("望隼科技", "visionsky", "隱形眼鏡"),
-    "8406": ("金可-KY", "ginko", "隱形眼鏡/通路"),
     "3218": ("大學光", "dagroup", "眼科通路"),
     "5312": ("寶島科", "formosa-optical", "眼鏡通路"),
     "6885": ("全福生技", "brim", "眼藥新藥"),
@@ -83,9 +83,32 @@ def fetch_tpex():
         log("TPEx fail:", e)
     return out
 
+def fetch_tpex_esb():
+    """興櫃(優你康、仁新等)"""
+    out = {}
+    try:
+        r = requests.get(TPEX_ESB, headers=HEAD, timeout=60)
+        rows = r.json()
+        log("TPEx ESB rows:", len(rows), "| sample keys:", list(rows[0].keys()) if rows else [])
+        for d in rows:
+            code = str(pick(d, "SecuritiesCompanyCode", "Code") or "").strip()
+            if code in WATCH:
+                close = num(pick(d, "LatestPrice", "Close", "Latest", "Last"))
+                prev = num(pick(d, "PreviousAverage", "Previous", "Reference"))
+                chg = num(pick(d, "Change"))
+                if chg is None and close is not None and prev:
+                    chg = close - prev
+                out[code] = {"close": close, "change": chg, "open": num(pick(d, "Open")), "high": num(pick(d, "High")),
+                             "low": num(pick(d, "Low")), "vol": num(pick(d, "TradingShares", "Volume")), "market": "興櫃"}
+                log("  ESB", code, {k: d[k] for k in list(d.keys())[:10]})
+    except Exception as e:
+        log("TPEx ESB fail:", e)
+    return out
+
 def main():
     today = datetime.date.today().isoformat()
     quotes = {}
+    quotes.update(fetch_tpex_esb())
     quotes.update(fetch_tpex())
     quotes.update(fetch_twse())  # 上市覆蓋(同代號不會重複)
     log("matched:", len(quotes), "/", len(WATCH), "→", sorted(quotes.keys()))
