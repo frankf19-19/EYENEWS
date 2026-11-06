@@ -1,0 +1,26 @@
+name: Update TFDA eye licenses
+on:
+  schedule:
+    - cron: '20 22 * * 2'   # 每週三 UTC 22:20 ≈ 台灣週三 06:20(食藥署每週更新)
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.11'}
+      - run: pip install requests
+      - run: python update_tfda.py
+      - name: Commit
+        run: |
+          git config user.name "github-actions"
+          git config user.email "actions@github.com"
+          git add tfda_eye.json
+          if git diff --staged --quiet; then echo "no change"; else
+            git commit -m "auto: update TFDA eye licenses"
+            git pull --rebase --autostash origin main || true
+            git push
+          fi
