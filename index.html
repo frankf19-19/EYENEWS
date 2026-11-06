@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- 眼視光 Eye-Vision Hub | build r134 | 2026-07-11 | 公司資料全面查證+版本標示 -->
+<!-- 眼視光 Eye-Vision Hub | build r135 | 2026-07-11 | 公司資料全面查證+版本標示 -->
 <html lang="zh-Hant">
 <head>
 <meta charset="UTF-8">
@@ -733,6 +733,79 @@ footer .build{margin-top:8px;font-size:11px}
   .topbar-in{min-height:52px}
   .wrap{max-width:1240px}
 }
+
+/* ===== r135 手機 App 化:精簡頂欄 / 底部抽屜 / 全站搜尋 / 台灣分頁 ===== */
+.tb-ico,.tb-pf{display:none}
+.tb-ico{align-items:center;justify-content:center;gap:6px;height:36px;padding:0 12px;border-radius:10px;border:1px solid var(--line);background:var(--card);color:var(--ink);font-size:13px;font-weight:600;cursor:pointer}
+.tb-ico:hover{border-color:var(--accent)}
+.tb-ico kbd{font-family:var(--mono);font-size:10.5px;color:var(--muted);border:1px solid var(--line);border-radius:4px;padding:0 5px}
+@media(min-width:701px){#gsBtn{display:inline-flex}}
+.seg{display:flex;gap:6px;background:var(--paper-2);border:1px solid var(--line);border-radius:14px;padding:5px;margin:0 0 16px}
+.seg a{flex:1;text-align:center;padding:10px 6px;border-radius:10px;font-size:14px;font-weight:700;color:var(--ink-soft);cursor:pointer;white-space:nowrap;transition:.15s;position:relative}
+.seg a.on{background:var(--card);color:var(--accent-ink);box-shadow:0 1px 6px rgba(0,0,0,.08)}
+.seg a .dot{position:absolute;top:6px;right:10px;width:7px;height:7px;border-radius:50%;background:#D9483B}
+[data-twp][hidden]{display:none!important}
+.sheet-ov{position:fixed;inset:0;background:rgba(15,22,30,.45);z-index:90;opacity:0;transition:opacity .2s}
+.sheet-ov.on{opacity:1}
+.sheet{position:fixed;left:0;right:0;bottom:0;z-index:91;background:var(--card);border-radius:20px 20px 0 0;max-height:88vh;display:flex;flex-direction:column;transform:translateY(100%);transition:transform .26s cubic-bezier(.2,.8,.2,1);box-shadow:0 -10px 40px rgba(0,0,0,.2);padding-bottom:env(safe-area-inset-bottom)}
+.sheet.on{transform:none}
+.sheet[hidden],.sheet-ov[hidden]{display:none}
+.sheet-grab{width:40px;height:5px;border-radius:3px;background:var(--line);margin:9px auto 0}
+.sheet-head{display:flex;align-items:center;justify-content:space-between;padding:10px 18px 8px}
+.sheet-head b{font-family:var(--serif);font-size:18px}
+#sheetClose{width:34px;height:34px;border-radius:50%;border:0;background:var(--paper-2);font-size:15px;cursor:pointer;color:var(--ink-soft)}
+.sheet-body{overflow-y:auto;padding:4px 18px 20px;-webkit-overflow-scrolling:touch;overscroll-behavior:contain}
+@media(min-width:701px){.sheet{left:50%;right:auto;bottom:auto;top:7vh;width:min(680px,92vw);border-radius:16px;transform:translate(-50%,-14px);opacity:0;transition:.18s;max-height:82vh}.sheet.on{transform:translate(-50%,0);opacity:1}.sheet-grab{display:none}}
+.sh-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:9px}
+.sh-tile{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:5px;min-height:78px;padding:10px 6px;border-radius:14px;border:1px solid var(--line);background:var(--paper);font-size:13px;font-weight:700;color:var(--ink);text-align:center;cursor:pointer;text-decoration:none}
+.sh-tile i{font-style:normal;font-size:24px;line-height:1}
+.sh-tile small{font-size:10.5px;font-weight:500;color:var(--muted)}
+.sh-tile:active{transform:scale(.97)}
+.sh-h{font-family:var(--mono);font-size:11px;letter-spacing:.08em;color:var(--muted);margin:16px 2px 8px}
+.sh-pf{display:grid;grid-template-columns:1fr 1fr;gap:9px}
+.sh-pf .pfbtn{display:flex;align-items:center;min-height:48px;padding:0 14px;border-radius:12px;border:1px solid var(--line);background:var(--paper);font-size:14.5px;font-weight:700;color:var(--ink);cursor:pointer}
+.sh-pf .pfbtn.on{background:#E0A21A;border-color:#E0A21A;color:#fff}
+.sh-note{font-size:12px;color:var(--muted);margin:12px 2px 0;line-height:1.6}
+.gs-in{width:100%;font-size:16px;padding:13px 14px;border-radius:12px;border:1.5px solid var(--accent);background:var(--paper);outline:none}
+.gs-res{margin-top:6px}
+.gs-g{margin-top:14px}
+.gs-gh{display:flex;align-items:center;justify-content:space-between;font-size:12.5px;font-weight:700;color:var(--muted);margin:0 2px 6px}
+.gs-gh a{font-weight:700;color:var(--accent-ink);cursor:pointer}
+.gs-it{display:block;padding:10px 12px;border-radius:11px;border:1px solid var(--line-2);background:var(--paper);margin-bottom:6px;color:var(--ink);text-decoration:none;cursor:pointer}
+.gs-it b{display:block;font-size:14px;line-height:1.4;font-weight:700}
+.gs-it small{display:block;font-size:11.5px;color:var(--muted);margin-top:2px}
+.gs-it:hover{border-color:var(--accent)}
+.gs-it mark{background:#FFE59A;color:inherit;border-radius:3px;padding:0 1px}
+.gs-hint{font-size:13px;color:var(--muted);line-height:1.7;margin-top:12px}
+.gs-hint a{display:inline-block;margin:4px 6px 0 0;padding:6px 12px;border-radius:16px;background:var(--paper-2);color:var(--ink-soft);font-weight:600;cursor:pointer}
+@media(max-width:700px){
+  .topbar{margin-top:0;transition:transform .22s ease}
+  .topbar.tb-hide{transform:translateY(-110%)}
+  .topbar .nav,.topbar .quickbar-in,.topbar .pfbar,.topbar .brand small,.topbar .auto-upd,#backBtn{display:none!important}
+  .topbar-in{min-height:54px;flex-wrap:nowrap;gap:10px}
+  .brand{font-size:0;gap:0}
+  .page-title{display:block;flex:1;min-width:0;font-family:var(--serif);font-size:18px;font-weight:800;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .topbar-right{gap:7px;margin-left:0}
+  .tb-ico{display:inline-flex;width:40px;padding:0;font-size:17px}
+  .tb-ico .tb-lab,.tb-ico kbd{display:none}
+  .tb-pf{display:inline-flex;align-items:center;gap:4px;height:36px;max-width:132px;padding:0 12px;border-radius:18px;border:1px solid var(--line);background:var(--card);font-size:13px;font-weight:700;color:var(--ink-soft);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;cursor:pointer}
+  .tb-pf.on{background:#E0A21A;border-color:#E0A21A;color:#fff}
+  .lit-tabs,.range-row{flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none;-webkit-overflow-scrolling:touch;padding-bottom:4px}
+  .lit-tabs::-webkit-scrollbar,.range-row::-webkit-scrollbar{display:none}
+  .lit-tab,.range-btn{flex:0 0 auto;white-space:nowrap;min-height:36px;display:inline-flex;align-items:center;font-size:13px}
+  .zh-btn{min-height:36px}
+  .sec-sub,.lit-sub{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;cursor:pointer}
+  .sec-sub.open,.lit-sub.open{display:block}
+  .sec{padding:22px 0}
+  .hero-cta{display:none}
+  .hero{padding:12px 0 0!important;min-height:0!important}
+  .hero-grid{min-height:0!important}
+  #view-overview .home-block:first-of-type,#digestBlock{margin-top:8px!important;padding-top:8px!important}
+  input[type=search],input[type=text],select{font-size:16px!important}
+  .seg a{font-size:13.5px;padding:11px 4px}
+  .botnav-item{min-height:48px;justify-content:center}
+}
+
 @media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
 
 </style>
@@ -769,7 +842,7 @@ footer .build{margin-top:8px;font-size:11px}
       <a class="pfbtn" data-pf="device">🩺 診斷儀器</a>
     </div>
   </div>
-  <div class="sb-foot"><span class="ver" id="sbVer">r134</span><span class="auto-upd" id="autoUpd2">⟳ 自動更新</span></div>
+  <div class="sb-foot"><span class="ver" id="sbVer">r135</span><span class="auto-upd" id="autoUpd2">⟳ 自動更新</span></div>
 </aside>
 <button class="totop" id="toTop" type="button" aria-label="回到頂部" title="回到頂部">↑</button>
 
@@ -800,8 +873,10 @@ footer .build{margin-top:8px;font-size:11px}
       <a data-view="about">關於</a>
     </nav>
     <div class="topbar-right">
-      <span class="ver" title="版本(部署後對照用)">r134</span>
+      <span class="ver" title="版本(部署後對照用)">r135</span>
       <span class="auto-upd" id="autoUpd" title="頁面開啟期間每 10 分鐘自動重抓">⟳ 自動更新</span>
+      <button id="gsBtn" class="tb-ico" type="button" aria-label="全站搜尋" title="全站搜尋(快捷鍵 /)">🔍<span class="tb-lab">全站搜尋</span><kbd>/</kbd></button>
+      <button id="mfBtn" class="tb-pf" type="button" aria-label="產品篩選">篩選 ▾</button>
       <button id="backBtn" type="button" aria-label="返回上一頁">← 返回</button>
     </div>
   </div>
@@ -996,7 +1071,8 @@ footer .build{margin-top:8px;font-size:11px}
     <h2>台灣眼視光訊息</h2>
     <p class="sec-sub">每 6 小時自動查詢 Google News(台灣/繁中)近<b>六年</b>的眼視光新聞,涵蓋近視控制、隱形眼鏡、鏡片驗光、眼科醫材、眼藥、視力保健、產業公司與<b>活動/衛教</b>。可依<b>分類</b>與<b>時間範圍</b>篩選(預設近 3 月,每則標示幾天/幾月前),往下「顯示更多」。</p>
 
-    <div class="panel lit-panel" style="margin-bottom:16px">
+    <div class="seg" id="twSeg" role="tablist"><a data-tw="news" class="on" role="tab">📰 新聞</a><a data-tw="tfda" role="tab">🏛️ TFDA 許可證</a><a data-tw="cal" role="tab">📅 行事曆</a></div>
+    <div class="panel lit-panel" data-twp="cal" hidden style="margin-bottom:16px">
       <div class="lit-head">
         <h3>📅 學協會行事曆 <span id="calNewBadge"></span></h3>
         <span class="upd-badge">● 最後更新 <span id="calUpd">載入中…</span></span>
@@ -1006,7 +1082,7 @@ footer .build{margin-top:8px;font-size:11px}
       <div class="feed" id="calFeed"></div>
     </div>
 
-    <div class="panel lit-panel" style="margin-bottom:16px">
+    <div class="panel lit-panel" data-twp="tfda" hidden style="margin-bottom:16px">
       <div class="lit-head">
         <h3>🏛️ TFDA 眼科許可證動態</h3>
         <span class="upd-badge">● 最後更新 <span id="tfdaUpd">載入中…</span></span>
@@ -1019,7 +1095,7 @@ footer .build{margin-top:8px;font-size:11px}
       <div class="feed" id="tfdaFeed"></div>
     </div>
 
-    <div class="panel lit-panel">
+    <div class="panel lit-panel" data-twp="news">
       <div class="lit-head">
         <h3>新聞 · 活動(近一年)</h3>
         <span class="upd-badge">● 最後更新 <span id="newsUpd">載入中…</span></span>
@@ -1178,7 +1254,7 @@ footer .build{margin-top:8px;font-size:11px}
   <div class="wrap">
     眼視光資訊中心 · Eye-Vision Industry Hub<br>
     資料來源:Google News · PubMed / NCBI · 每日/每 6 小時自動更新
-    <div class="build">build r134 · <span id="buildStamp"></span></div>
+    <div class="build">build r135 · <span id="buildStamp"></span></div>
   </div>
 </footer>
 
@@ -3128,8 +3204,8 @@ function initRouter(){
   });
   document.body.addEventListener('click',e=>{
     const q=e.target.closest('[data-quick]'); if(!q)return; e.preventDefault();
-    if(q.dataset.quick==='tfda'){ switchView('taiwan'); setTimeout(function(){var el=document.getElementById('tfdaStats'); if(el)el.scrollIntoView({behavior:'smooth',block:'start'});},180); }
-    else if(q.dataset.quick==='calendar'){ switchView('taiwan'); setTimeout(function(){var el=document.getElementById('calFeed'); if(el)el.scrollIntoView({behavior:'smooth',block:'start'});},180); }
+    if(q.dataset.quick==='tfda'){ switchView('taiwan'); setTW('tfda'); setTimeout(function(){var el=document.getElementById('twSeg'); if(el)el.scrollIntoView({behavior:'smooth',block:'start'});},180); }
+    else if(q.dataset.quick==='calendar'){ switchView('taiwan'); setTW('cal'); setTimeout(function(){var el=document.getElementById('twSeg'); if(el)el.scrollIntoView({behavior:'smooth',block:'start'});},180); }
     else if(q.dataset.quick==='leaders'){ switchView('overview'); setTimeout(function(){var el=document.getElementById('leadersBlock'); if(el)el.scrollIntoView({behavior:'smooth',block:'start'});},220); }
   });
   const bb=document.getElementById('backBtn');
@@ -3386,9 +3462,174 @@ document.getElementById('buildStamp').textContent=new Date().toISOString().slice
 <nav class="botnav" aria-label="主導覽">
   <a class="botnav-item" data-goto="overview"><span class="bn-ico">🏠</span><span class="bn-lab">總覽</span></a>
   <a class="botnav-item" data-goto="taiwan"><span class="bn-ico">📰</span><span class="bn-lab">台灣</span></a>
-  <a class="botnav-item" data-goto="companies"><span class="bn-ico">🏢</span><span class="bn-lab">公司</span></a>
-  <a class="botnav-item" data-goto="products"><span class="bn-ico">💊</span><span class="bn-lab">產品</span></a>
   <a class="botnav-item" data-goto="clinical"><span class="bn-ico">📚</span><span class="bn-lab">文獻</span></a>
+  <a class="botnav-item" data-goto="clinics"><span class="bn-ico">🏥</span><span class="bn-lab">院所</span></a>
+  <a class="botnav-item" id="bnMore" data-sheet="more"><span class="bn-ico">☰</span><span class="bn-lab">更多</span></a>
 </nav>
+
+<div class="sheet-ov" id="sheetOv" hidden></div>
+<div class="sheet" id="sheet" role="dialog" aria-modal="true" aria-labelledby="sheetTitle" hidden>
+  <div class="sheet-grab"></div>
+  <div class="sheet-head"><b id="sheetTitle"></b><button id="sheetClose" type="button" aria-label="關閉">✕</button></div>
+  <div class="sheet-body" id="sheetBody"></div>
+</div>
+<script>
+/* ===== r135:底部抽屜 / 全站搜尋 / 台灣分頁 / 手機頂欄 ===== */
+function setTW(k){
+  if(!/^(news|tfda|cal)$/.test(k))k='news';
+  document.querySelectorAll('#twSeg a').forEach(a=>a.classList.toggle('on',a.dataset.tw===k));
+  document.querySelectorAll('[data-twp]').forEach(p=>{p.hidden=(p.dataset.twp!==k);});
+  if(k==='cal'){try{markEventsSeen();}catch(e){} var d=document.querySelector('#twSeg .dot'); if(d)d.remove();}
+}
+(function(){
+  var sg=document.getElementById('twSeg');
+  if(sg)sg.addEventListener('click',function(e){var a=e.target.closest('[data-tw]');if(!a)return;e.preventDefault();setTW(a.dataset.tw);});
+  // 行事曆有新活動 → 分頁上加紅點
+  setTimeout(function(){var b=document.getElementById('calNewBadge');var t=document.querySelector('#twSeg [data-tw="cal"]');if(b&&t&&b.textContent.trim()&&!t.querySelector('.dot')){var d=document.createElement('span');d.className='dot';t.appendChild(d);}},4000);
+})();
+
+var SHEET_KIND='';
+function gsE(s){return String(s==null?'':s).replace(/[&<>"]/g,function(c){return{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c];});}
+function openSheet(kind){
+  var sh=document.getElementById('sheet'),ov=document.getElementById('sheetOv'),T=document.getElementById('sheetTitle'),B=document.getElementById('sheetBody');
+  SHEET_KIND=kind;
+  if(kind==='more'){
+    T.textContent='更多';
+    B.innerHTML='<div class="sh-grid">'
+      +'<a class="sh-tile" data-goto="companies"><i>🏢</i>產業公司<small>國際大廠 · 台灣</small></a>'
+      +'<a class="sh-tile" data-goto="products"><i>💊</i>產品技術<small>62 類 · 173 項</small></a>'
+      +'<a class="sh-tile" data-goto="global"><i>🌐</i>全球訊息<small>國際新聞</small></a>'
+      +'<a class="sh-tile" data-goto="taiwan"><i>📰</i>台灣訊息<small>新聞</small></a>'
+      +'<a class="sh-tile" data-goto="myopia"><i>🎯</i>近視工具<small>衛教/計算</small></a>'
+      +'<a class="sh-tile" data-goto="about"><i>ℹ️</i>關於<small>資料來源</small></a>'
+      +'</div><div class="sh-h">快速前往</div><div class="sh-grid">'
+      +'<a class="sh-tile" data-quick="leaders"><i>🔥</i>龍頭榜</a>'
+      +'<a class="sh-tile" data-quick="tfda"><i>🏛️</i>TFDA 許可證</a>'
+      +'<a class="sh-tile" data-quick="calendar"><i>📅</i>學協會行事曆</a>'
+      +'</div><div class="sh-h">工具</div><div class="sh-grid">'
+      +'<a class="sh-tile" data-sheet="search"><i>🔍</i>全站搜尋</a>'
+      +'<a class="sh-tile" data-sheet="filter"><i>🎛️</i>產品篩選<small>'+gsE(PF==='all'?'目前:全部':pfLabel())+'</small></a>'
+      +'<a class="sh-tile" data-totop="1"><i>⬆️</i>回到頂部</a>'
+      +'</div><p class="sh-note">版本 '+gsE((document.getElementById('sbVer')||{}).textContent||'')+' · 頁面開啟時每 10 分鐘自動更新新聞</p>';
+  }else if(kind==='filter'){
+    T.textContent='產品篩選(各頁同步)';
+    var h='<div class="sh-pf"><a class="pfbtn'+(PF==='all'?' on':'')+'" data-pf="all">✅ 全部</a>';
+    document.querySelectorAll('#pfBar .pfbtn').forEach(function(b){ if(b.dataset.pf==='all')return; h+='<a class="pfbtn'+(b.dataset.pf===PF?' on':'')+'" data-pf="'+b.dataset.pf+'">'+gsE(b.textContent)+'</a>'; });
+    B.innerHTML=h+'</div><p class="sh-note">選一個產品類別後,台灣新聞、全球新聞、TFDA、公司、產品、臨床文獻與試驗都只顯示該類;再點一次同一類即取消。</p>';
+  }else if(kind==='search'){
+    T.textContent='全站搜尋';
+    B.innerHTML='<input id="gsIn" class="gs-in" type="search" placeholder="輸入關鍵字:Euclid、角膜塑型、阿托品、大學眼科…" autocomplete="off" enterkeyhint="search"><div class="gs-res" id="gsRes"></div>';
+    var inp=document.getElementById('gsIn'); var tm=null;
+    inp.addEventListener('input',function(){clearTimeout(tm);tm=setTimeout(function(){gsRun(inp.value);},160);});
+    gsRun('');
+  }
+  ov.hidden=false; sh.hidden=false;
+  requestAnimationFrame(function(){ov.classList.add('on');sh.classList.add('on');});
+  document.body.style.overflow='hidden';
+  if(kind==='search')setTimeout(function(){var i=document.getElementById('gsIn');if(i)i.focus();},120);
+}
+function closeSheet(){
+  var sh=document.getElementById('sheet'),ov=document.getElementById('sheetOv');
+  if(sh.hidden)return;
+  sh.classList.remove('on');ov.classList.remove('on');SHEET_KIND='';
+  setTimeout(function(){sh.hidden=true;ov.hidden=true;},230);
+  var cm=document.getElementById('coModal'),pm=document.getElementById('prodModal');
+  if(!(cm&&cm.classList.contains('on'))&&!(pm&&pm.classList.contains('on')))document.body.style.overflow='';
+}
+function gsMark(t,q){
+  t=gsE(t); var toks=(q||'').trim().split(/\s+/).filter(function(x){return x.length>0;});
+  toks.forEach(function(k){ var re=new RegExp('('+k.replace(/[.*+?^${}()|[\]\\]/g,'\\$&')+')','ig'); t=t.replace(re,'<mark>$1</mark>'); });
+  return t;
+}
+var GS_LAST={};
+function gsRun(q){
+  var box=document.getElementById('gsRes'); if(!box)return;
+  q=(q||'').trim();
+  if(!q){
+    box.innerHTML='<div class="gs-hint">一次搜尋:台灣新聞、全球新聞、公司、產品、眼科院所、TFDA 許可證(可打中文或英文)。<br>試試:'
+      +['角膜塑型','Euclid','阿托品','隱形眼鏡','白內障','大學眼科','乾眼'].map(function(k){return '<a data-gsq="'+k+'">'+k+'</a>';}).join('')+'</div>';
+    return;
+  }
+  var G=[], MAX=5;
+  function grp(key,label,arr,toHTML,view){ if(!arr.length)return; G.push('<div class="gs-g"><div class="gs-gh"><span>'+label+' · '+arr.length+(arr.length>=200?'+':'')+' 筆</span>'+(view?'<a data-gsall="'+view+'">看全部 →</a>':'')+'</div>'+arr.slice(0,MAX).map(toHTML).join('')+'</div>'); }
+  function newsOf(D){ var out=[],seen={}; if(D&&D.items)Object.keys(D.items).forEach(function(k){(D.items[k]||[]).forEach(function(it){ if(!it||seen[it.link])return; seen[it.link]=1; if(biMatch([it.title,it.source,it.summary,it.keypoint].join(' '),q))out.push(it); });}); out.sort(function(a,b){return (b.date||'').localeCompare(a.date||'');}); return out.slice(0,200); }
+  var nhtml=function(it){return '<a class="gs-it" href="'+gsE(it.link)+'" target="_blank" rel="noopener"><b>'+gsMark(it.keypoint||it.title,q)+'</b><small>'+gsE(it.source||'')+' · '+gsE(it.date||'')+'</small></a>';};
+  try{grp('tw','📰 台灣新聞',newsOf(NEWS_DATA),nhtml,'taiwan');}catch(e){}
+  try{
+    var co=(COMPANIES||[]).filter(function(c){return biMatch([c.n,c.en,c.code,c.market,c.r,c.scope,c.note,(c.tags||[]).join(' '),(c.products||[]).map(function(p){return p.n+' '+(p.d||'');}).join(' ')].join(' '),q);});
+    grp('co','🏢 產業公司',co,function(c){return '<a class="gs-it" data-gsco="'+gsE(c.id)+'"><b>'+gsMark(c.n,q)+(c.en&&c.en!==c.n?' <small style="display:inline">'+gsE(c.en)+'</small>':'')+'</b><small>'+gsE((c.r||'')+(c.code?' · '+c.code:'')+' · '+((c.products||[]).slice(0,3).map(function(p){return p.n;}).join('、')))+'</small></a>';},'companies');
+  }catch(e){}
+  try{
+    var pr=[]; Object.keys(PROD||{}).forEach(function(dm){(PROD[dm]||[]).forEach(function(cat,i){ var hay=[cat.n,cat.tag,cat.d,cat.tw,(cat.items||[]).map(function(x){return [x.m,x.p,x.fn,x.intro].join(' ');}).join(' ')].join(' '); if(biMatch(hay,q))pr.push({dm:dm,i:i,cat:cat}); });});
+    grp('pr','💊 產品技術',pr,function(o){return '<a class="gs-it" data-gspr="'+o.dm+':'+o.i+'"><b>'+gsMark(o.cat.n,q)+'</b><small>'+gsE(((o.cat.items||[]).slice(0,3).map(function(x){return x.m;}).join('、'))||o.cat.tag||'')+'</small></a>';},'products');
+  }catch(e){}
+  try{
+    if(CLINICS_DATA&&CLINICS_DATA.clinics){
+      var L=CLINICS_DATA.clinics, cl=[];
+      for(var i=0;i<L.length&&cl.length<200;i++){var c=L[i]; if(biMatch([c.name,c.addr,c.region,c.type,c.phone,(c.doctors||[]).map(function(d){return (d.name||'')+' '+(d.spec||'');}).join(' ')].join(' '),q))cl.push(i);}
+      grp('cl','🏥 眼科院所',cl,function(ix){var c=L[ix];return '<a class="gs-it" data-gscl="'+ix+'"><b>'+gsMark(c.name,q)+'</b><small>'+gsE((c.type||'')+' · '+(c.addr||'')+(c.phone?' · '+c.phone:''))+'</small></a>';},'clinics');
+    }
+  }catch(e){}
+  try{
+    if(typeof TFDA!=='undefined'&&TFDA){
+      var tf=[].concat((TFDA.dev&&TFDA.dev.recent)||[],(TFDA.drug&&TFDA.drug.recent)||[]).filter(function(it){return biMatch([it.name,it.en,it.applicant,it.maker,it.lic,(it.tags||[]).join(' ')].join(' '),q);}).slice(0,200);
+      grp('tf','🏛️ TFDA 許可證',tf,function(it){return '<a class="gs-it" href="'+gsE(tfdaLicUrl(it))+'" target="_blank" rel="noopener"><b>'+gsMark(it.name||it.en,q)+'</b><small>'+gsE((it.applicant||'')+' · '+(it.issued||'')+' · '+(it.lic||''))+'</small></a>';},'tfda');
+    }
+  }catch(e){}
+  try{grp('gl','🌐 全球新聞',newsOf(G_DATA),nhtml,'global');}catch(e){}
+  var clin='<div class="gs-g"><div class="gs-gh"><span>📚 臨床(即時查 PubMed / ClinicalTrials.gov)</span></div>'
+    +'<a class="gs-it" data-gsall="lit"><b>在臨床文獻搜尋「'+gsE(q)+'」→</b><small>Europe PMC · PubMed + PMC 全文</small></a>'
+    +'<a class="gs-it" data-gsall="trial"><b>在臨床試驗搜尋「'+gsE(q)+'」→</b><small>ClinicalTrials.gov 全球試驗</small></a></div>';
+  box.innerHTML=(G.length?G.join(''):'<div class="gs-hint">站內資料找不到「'+gsE(q)+'」。可試試換個寫法(中/英文),或直接查臨床資料庫 ↓</div>')+clin;
+}
+function gsGoAll(view){
+  var q=(document.getElementById('gsIn')||{}).value||'';
+  var map={taiwan:'newsSearch',global:'gSearch',companies:'coSearch',products:'prodSearch',clinics:'clinicSearch',tfda:'tfdaSearch',lit:'litSearch',trial:'trialSearch'};
+  closeSheet();
+  if(view==='tfda'){switchView('taiwan');setTW('tfda');}
+  else if(view==='taiwan'){switchView('taiwan');setTW('news');}
+  else if(view==='lit'||view==='trial'){switchView('clinical');var sb=document.querySelector('.clin-sub[data-sub="'+view+'"]');if(sb)sb.click();}
+  else switchView(view);
+  setTimeout(function(){var el=document.getElementById(map[view]);if(!el)return;el.value=q;el.dispatchEvent(new Event('input',{bubbles:true}));el.dispatchEvent(new KeyboardEvent('keydown',{key:'Enter',bubbles:true}));el.scrollIntoView({behavior:'smooth',block:'center'});},260);
+}
+function updMF(){
+  var b=document.getElementById('mfBtn'); if(!b)return;
+  if(PF==='all'){b.textContent='篩選 ▾';b.classList.remove('on');}
+  else{b.textContent=pfLabel()+' ▾';b.classList.add('on');}
+}
+(function(){
+  document.getElementById('sheetOv').addEventListener('click',closeSheet);
+  document.getElementById('sheetClose').addEventListener('click',closeSheet);
+  document.getElementById('gsBtn').addEventListener('click',function(){openSheet('search');});
+  document.getElementById('mfBtn').addEventListener('click',function(){openSheet('filter');});
+  document.addEventListener('click',function(e){
+    var s=e.target.closest('[data-sheet]'); if(s){e.preventDefault();openSheet(s.dataset.sheet);return;}
+    var t=e.target.closest('#sheet [data-totop]'); if(t){closeSheet();window.scrollTo({top:0,behavior:'smooth'});return;}
+    var qk=e.target.closest('#sheet [data-gsq]'); if(qk){var i=document.getElementById('gsIn');i.value=qk.dataset.gsq;gsRun(i.value);return;}
+    var a=e.target.closest('#sheet [data-gsall]'); if(a){e.preventDefault();gsGoAll(a.dataset.gsall);return;}
+    var c=e.target.closest('#sheet [data-gsco]'); if(c){closeSheet();setTimeout(function(){openCompany(c.dataset.gsco);},60);return;}
+    var p=e.target.closest('#sheet [data-gspr]'); if(p){var x=p.dataset.gspr.split(':');closeSheet();setTimeout(function(){openProduct(x[0],+x[1]);},60);return;}
+    var k=e.target.closest('#sheet [data-gscl]'); if(k){var ix=+k.dataset.gscl;closeSheet();setTimeout(function(){openClinicDetail(CLINICS_DATA.clinics[ix]);},60);return;}
+    if(e.target.closest('#sheet [data-goto],#sheet [data-quick]')){closeSheet();return;}
+    if(e.target.closest('.pfbtn')){setTimeout(function(){updMF(); if(SHEET_KIND==='filter')closeSheet();},0);return;}
+    var sub=e.target.closest('.sec-sub,.lit-sub'); if(sub&&innerWidth<=700&&!e.target.closest('a'))sub.classList.toggle('open');
+  });
+  document.addEventListener('keydown',function(e){
+    if(e.key==='Escape'&&SHEET_KIND){closeSheet();return;}
+    if(e.key==='/'&&!SHEET_KIND&&!/INPUT|TEXTAREA|SELECT/.test((document.activeElement||{}).tagName||'')){e.preventDefault();openSheet('search');}
+  });
+  window.addEventListener('popstate',function(){if(SHEET_KIND)closeSheet();});
+  // 手機:往下捲自動收起頂欄,往上捲再出現
+  var tb=document.querySelector('.topbar'), last=window.scrollY;
+  window.addEventListener('scroll',function(){
+    var y=window.scrollY;
+    if(window.innerWidth>700){tb.classList.remove('tb-hide');last=y;return;}
+    if(y>last+8&&y>140)tb.classList.add('tb-hide'); else if(y<last-8||y<80)tb.classList.remove('tb-hide');
+    last=y;
+  },{passive:true});
+  updMF();
+  if(location.hash==='#taiwan')setTW('news');
+})();
+</script>
 </body>
 </html>
