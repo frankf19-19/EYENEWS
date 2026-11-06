@@ -1874,7 +1874,7 @@ function renderTwStocks(){
     items.map(function(s){
       const cls=s.change>0?'up':(s.change<0?'down':'flat'); const sign=s.change>0?'+':'';
       return '<div class="tws-row" data-co="'+(s.cid||'')+'" role="button" tabindex="0">'+
-        '<span class="tws-nm"><b>'+s.name+'</b><small>'+s.code+' · '+s.market+'</small></span>'+
+        '<span class="tws-nm"><b>'+s.name+'</b><small>'+s.code+' · '+s.market+(s.stale?' · 前日':'')+'</small></span>'+
         '<span class="tws-cat">'+(s.cat||'')+'</span>'+
         '<span class="tws-r mono">'+(s.close!=null?s.close.toFixed(2):'—')+'</span>'+
         '<span class="tws-r mono '+cls+'">'+sign+(s.change!=null?s.change.toFixed(2):'—')+'</span>'+

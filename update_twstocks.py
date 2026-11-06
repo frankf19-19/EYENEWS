@@ -48,11 +48,22 @@ def pick(d, *cands):
                 return v
     return None
 
+def get_json(url, tries=3):
+    import time
+    last = None
+    for i in range(tries):
+        try:
+            r = requests.get(url, headers=HEAD, timeout=90)
+            r.raise_for_status()
+            return r.json()
+        except Exception as e:
+            last = e; log("  retry", i + 1, url.split("/")[2], e); time.sleep(5 * (i + 1))
+    raise last
+
 def fetch_twse():
     out = {}
     try:
-        r = requests.get(TWSE, headers=HEAD, timeout=60)
-        rows = r.json()
+        rows = get_json(TWSE)
         log("TWSE rows:", len(rows), "| sample keys:", list(rows[0].keys()) if rows else [])
         for d in rows:
             code = str(pick(d, "Code") or "").strip()
@@ -70,8 +81,7 @@ def fetch_twse():
 def fetch_tpex():
     out = {}
     try:
-        r = requests.get(TPEX, headers=HEAD, timeout=60)
-        rows = r.json()
+        rows = get_json(TPEX)
         log("TPEx rows:", len(rows), "| sample keys:", list(rows[0].keys()) if rows else [])
         for d in rows:
             code = str(pick(d, "SecuritiesCompanyCode", "Code") or "").strip()
@@ -87,8 +97,7 @@ def fetch_tpex_esb():
     """興櫃(優你康、仁新等)"""
     out = {}
     try:
-        r = requests.get(TPEX_ESB, headers=HEAD, timeout=60)
-        rows = r.json()
+        rows = get_json(TPEX_ESB)
         log("TPEx ESB rows:", len(rows), "| sample keys:", list(rows[0].keys()) if rows else [])
         for d in rows:
             code = str(pick(d, "SecuritiesCompanyCode", "Code") or "").strip()
@@ -125,10 +134,20 @@ def main():
             prev_date = old.get("date", "")
         except Exception:
             pass
+    old_items = {}
+    if os.path.exists("tw_stocks.json"):
+        try:
+            for it in json.load(open("tw_stocks.json", encoding="utf-8")).get("items", []):
+                old_items[it["code"]] = it
+        except Exception:
+            pass
     items = []
     for code, (name, cid, cat) in WATCH.items():
         q = quotes.get(code)
         if not q or q.get("close") is None:
+            if code in old_items:
+                o = dict(old_items[code]); o["stale"] = True; items.append(o)
+                log("  stale fallback:", code, name)
             continue
         close, chg = q["close"], q.get("change") or 0.0
         prev = close - chg
